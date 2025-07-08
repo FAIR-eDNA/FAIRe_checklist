@@ -1,0 +1,10 @@
+scientificNameAuthorship:
+  description: The authorship information for the scientificName
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: Bloch, 1790
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
+  identifier: http://rs.tdwg.org/dwc/terms/scientificNameAuthorship

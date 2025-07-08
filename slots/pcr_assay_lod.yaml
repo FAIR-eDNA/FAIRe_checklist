@@ -1,0 +1,9 @@
+pcr_assay_lod:
+  description: Assay's limit of detection (LOD) (the lowest amount of target taxon
+    DNA that can be detected with a defined level of confidence).
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory
+    example: '51.0'
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

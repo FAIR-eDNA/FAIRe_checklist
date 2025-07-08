@@ -1,0 +1,7 @@
+std_type:
+  description: The type of standard used for standard curves
+  range: std_type_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: synthetic double-stranded DNA

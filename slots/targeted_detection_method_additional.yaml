@@ -1,0 +1,7 @@
+targeted_detection_method_additional:
+  description: Additional information on Targeted assay detection method, that has
+    not been shared in the given record.
+  range: string
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Optional

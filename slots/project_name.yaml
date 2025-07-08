@@ -1,0 +1,11 @@
+project_name:
+  description: Name of the project within which the sequencing was organized
+  range: string
+  annotations:
+    section: Project
+    requirement_level: Recommended
+    example: Forest soil metagenome
+    skos:exactMatch:
+    - https://w3id.org/mixs/project_name
+    - http://rs.gbif.org/terms/1.0/project_name
+  identifier: https://w3id.org/mixs/0000092

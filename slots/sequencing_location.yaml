@@ -1,0 +1,11 @@
+sequencing_location:
+  description: The location the sequencing run was performed. Indicate the name of
+    the lab or core facility where samples were sequenced
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Optional
+    example: University of Maryland Genomics Resource Center
+    skos:exactMatch:
+    - https://w3id.org/mixs/sequencing_location
+  identifier: https://w3id.org/mixs/0001156

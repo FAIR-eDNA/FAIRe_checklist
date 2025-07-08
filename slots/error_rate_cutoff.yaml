@@ -1,0 +1,7 @@
+error_rate_cutoff:
+  description: error rate threshold
+  range: float
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: '25.0'

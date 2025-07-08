@@ -1,0 +1,11 @@
+pcr_primer_name_reverse:
+  description: Name of the pcr_primer_reverse. If multiple primers are listed in pcr_primer_reverse,
+    list the names respectively, separated by pipe ( | ).
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    example: mlCOIintR
+    skos:exactMatch:
+    - http://rs.gbif.org/terms/1.0/pcr_primer_name_reverse
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

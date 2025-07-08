@@ -1,0 +1,7 @@
+samp_size_unit:
+  description: Unit for samp_size
+  range: samp_size_unit_enum
+  annotations:
+    section: Sample collection
+    requirement_level: Highly recommended
+    example: L

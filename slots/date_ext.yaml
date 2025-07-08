@@ -1,0 +1,7 @@
+date_ext:
+  description: Date of nucleic acid extraction, written in ISO 8601 format
+  range: string
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Optional
+    example: 2008-01-23T19:23-06:00

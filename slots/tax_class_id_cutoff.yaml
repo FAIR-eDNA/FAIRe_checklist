@@ -1,0 +1,8 @@
+tax_class_id_cutoff:
+  description: Minimum percent identity for taxonomic assignment. Unit = %
+  range: float
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: '%'
+    example: '90.0'

@@ -1,0 +1,11 @@
+output_read_count:
+  description: The number of filtered sequence reads for each sample, that made it
+    through bioinformatic filtering and used for final/subsequent analyses. Unit =
+    reads
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: reads
+    example: '16847'
+  identifier: https://w3id.org/nmdc/output_read_count

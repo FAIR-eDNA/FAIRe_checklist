@@ -1,0 +1,10 @@
+genus:
+  description: The full scientific name of the genus
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: Lutjanus
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/genus
+  identifier: http://rs.tdwg.org/dwc/terms/genus

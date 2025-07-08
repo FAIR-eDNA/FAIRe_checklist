@@ -1,0 +1,7 @@
+platform:
+  description: General sequencing platform used.
+  range: platform_enum
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Highly recommended
+    example: ILLUMINA

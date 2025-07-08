@@ -1,0 +1,11 @@
+identificationRemarks:
+  description: Comments or notes about the taxonomic assignment.
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Optional
+    example: Taxonomic assignment was performed at the most precise taxonomic level
+      common to the hypothetical taxa.
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/identificationRemarks
+  identifier: http://rs.tdwg.org/dwc/terms/identificationRemarks

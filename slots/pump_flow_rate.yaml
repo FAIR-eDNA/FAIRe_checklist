@@ -1,0 +1,7 @@
+pump_flow_rate:
+  description: Pump flow rate of filtration if applicable
+  range: float
+  annotations:
+    section: Sample preparation
+    requirement_level: Optional
+    example: '0.2'

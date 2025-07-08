@@ -1,0 +1,8 @@
+efficiency:
+  description: qPCR amplification efficiency calculated from slope. Unit = %
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Highly recommended
+    unit: '%'
+    example: '95.0'

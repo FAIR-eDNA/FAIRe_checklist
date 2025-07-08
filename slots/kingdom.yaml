@@ -1,0 +1,10 @@
+kingdom:
+  description: The full scientific name of the kingdom
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: Animalia
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/kingdom
+  identifier: http://rs.tdwg.org/dwc/terms/kingdom

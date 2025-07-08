@@ -1,0 +1,11 @@
+amplificationReactionVolume:
+  description: The total PCR reaction volume. Unit = µL
+  range: float
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    unit: µL
+    example: '22.0'
+    skos:exactMatch:
+    - http://rs.gbif.org/terms/1.0/amplificationReactionVolume
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

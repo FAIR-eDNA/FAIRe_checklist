@@ -1,0 +1,8 @@
+pcr_primer_vol_forward:
+  description: Volume of pcr_primer_forward per reaction. Unit = µL
+  range: float
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    unit: µL
+    example: '2.0'

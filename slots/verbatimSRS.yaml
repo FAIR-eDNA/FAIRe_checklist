@@ -1,0 +1,12 @@
+verbatimSRS:
+  description: The ellipsoid, geodetic datum, or spatial reference system (SRS) upon
+    which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates
+    are based.
+  range: verbatimSRS_enum
+  annotations:
+    section: Sample collection
+    requirement_level: Optional
+    example: NAD84
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/verbatimSRS
+  identifier: http://rs.tdwg.org/dwc/terms/verbatimSRS

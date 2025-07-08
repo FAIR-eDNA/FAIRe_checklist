@@ -1,0 +1,9 @@
+pcr2_cond:
+  description: (If bacroding_pcr_appr = "two-step PCR") Description of reaction conditions
+    and components of in the second PCR. The recommended format is ´initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
+    elongation:degrees_minutes;total cycles´, where possible.
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35

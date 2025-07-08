@@ -1,0 +1,7 @@
+lib_id:
+  description: An identifier of a library (an amplicon of a sample with unique MIDs)
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Mandatory
+    example: S01_MiSeq_run20230922

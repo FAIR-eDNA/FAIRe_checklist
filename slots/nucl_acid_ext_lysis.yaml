@@ -1,0 +1,10 @@
+nucl_acid_ext_lysis:
+  description: The approach used to lyse DNA-containing material. For example, physical
+    methods may involve freeze-thaw cycles or the uses of bead mills, homogenizers
+    and sonicators. Thermal methods apply high temperatures, often used in combination
+    with other methods.
+  range: nucl_acid_ext_lysis_enum
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Recommended
+    example: enzymatic

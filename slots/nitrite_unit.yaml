@@ -1,0 +1,7 @@
+nitrite_unit:
+  description: The unit of nitrite
+  range: nitrite_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: µmol/L

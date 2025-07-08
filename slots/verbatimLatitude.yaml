@@ -1,0 +1,12 @@
+verbatimLatitude:
+  description: The original latitude in any format (i.e. deg/min/sec, UTM) before
+    converting to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimGeodeticDatum
+    should be stored as well.
+  range: string
+  annotations:
+    section: Sample collection
+    requirement_level: Optional
+    example: 41 05 54.03S
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/verbatimLatitude
+  identifier: http://rs.tdwg.org/dwc/terms/verbatimLatitude

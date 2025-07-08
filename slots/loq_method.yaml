@@ -1,0 +1,7 @@
+loq_method:
+  description: Method used for determining LOQ e.g., DOI of a published procedure
+  range: string
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: 'DOI: 10.1002/edn3.220'

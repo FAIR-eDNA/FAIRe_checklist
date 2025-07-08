@@ -1,0 +1,9 @@
+estimatedNumberOfCopies_error:
+  description: The measure of variability (e.g., standard error) associated with the
+    estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents
+    an average calculated from multiple technical replicates per sample.
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: '0.14'

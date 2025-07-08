@@ -1,0 +1,10 @@
+automaticThresholdQuantificationCycle:
+  description: Whether the threshold was set by the instrument (1) or manually (0).
+  range: boolean
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Optional
+    example: '1'
+    skos:exactMatch:
+    - http://rs.gbif.org/terms/1.0/automaticThresholdQuantificationCycle
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

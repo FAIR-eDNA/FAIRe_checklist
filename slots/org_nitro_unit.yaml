@@ -1,0 +1,7 @@
+org_nitro_unit:
+  description: The unit of org_nitro
+  range: org_nitro_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: µmol/L

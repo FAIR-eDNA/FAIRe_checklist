@@ -1,0 +1,8 @@
+checksum_filename:
+  description: The checksum of the forward sequence reads file (filename), used to
+    verify the integrity and identity of the corresponding data file
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: e61e08bfd3ad5eb5d6e7da9e95b5feed
