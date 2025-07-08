@@ -1,0 +1,11 @@
+min_reads_cutoff:
+  description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read abundance,
+    noise (e.g., (relative) read counts) detected in blanks. Answer either numeric
+    value with the unit specified under the terms min_reads_cutoff_unit, "noise detected
+    in blanks", or "other: FREE TEXT DESCRIPTION".'
+  range: min_reads_cutoff_enum
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: select from min_reeds_cutoff_unit
+    example: '5.0'

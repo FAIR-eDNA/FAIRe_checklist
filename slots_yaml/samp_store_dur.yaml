@@ -1,0 +1,16 @@
+samp_store_dur:
+  description: 'Duration for which the sample was stored prior to DNA extraction,
+    written in ISO 8601 format (i.e., P14D for 14 days period. P1Y6M for 1 year and
+    6 months period. P1W/4W for some time between 1 and 4 weeks). Note: If a sample
+    was processed before DNA extraction (e.g., filtration, homogenisation, subsampling),
+    enter the storage duration before the process here, and the storage duration of
+    the processed sample under the term prepped_samp_store_temp.'
+  range: string
+  annotations:
+    section: Sample storage
+    requirement_level: Highly recommended
+    example: P1Y6M
+    skos:exactMatch:
+    - https://w3id.org/mixs/samp_store_dur
+  pattern: PnYnMnWnDTnHnMnS
+  identifier: https://w3id.org/mixs/0000116

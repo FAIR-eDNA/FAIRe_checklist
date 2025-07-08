@@ -1,0 +1,9 @@
+neg_cont_0_1:
+  description: Were negative controls applied during the project? Yes = 1, No = 0.
+    For further details, record the types of negative controls under the term neg_cont_type
+    in sampleMetadata
+  range: boolean
+  annotations:
+    section: Project
+    requirement_level: Highly recommended
+    example: '1'

@@ -1,0 +1,12 @@
+materialSampleID:
+  description: An identifier for the physical sample (as opposed to the extracted
+    DNA sample defined by samp_name). In the absence of a persistent global unique
+    identifier, construct one from a combination of identifiers in the record.
+  range: string
+  annotations:
+    section: Sample relations
+    requirement_level: Recommended
+    example: GOMECC4_27N_Sta1_Deep
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/materialSampleID
+  identifier: http://rs.tdwg.org/dwc/terms/materialSampleID

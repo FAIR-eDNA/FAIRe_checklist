@@ -1,0 +1,8 @@
+block_ref:
+  description: Reference of a blocking primer. Enter "custom" if it was developed
+    during the current project
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Optional
+    example: https://doi.org/10.1038/s41598-020-60779-9

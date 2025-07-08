@@ -1,0 +1,7 @@
+project_contact:
+  description: A contact person and their contact (i.e., email address) for data enquiry
+  range: string
+  annotations:
+    section: Project
+    requirement_level: Mandatory
+    example: xxxx@yyyy.com

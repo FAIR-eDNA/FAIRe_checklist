@@ -1,0 +1,7 @@
+samp_vol_we_dna_ext_unit:
+  description: Unit for samp_vol_we_dna_ext
+  range: samp_vol_we_dna_ext_unit_enum
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Highly recommended
+    example: mL

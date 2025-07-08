@@ -1,0 +1,10 @@
+bibliographicCitation:
+  description: A bibliographic reference for the resource.
+  range: string
+  annotations:
+    section: Data management
+    requirement_level: Recommended
+    example: 'DOI: 10.1111/mec.15382'
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/bibliographicCitation
+  identifier: http://purl.org/dc/terms/bibliographicCitation

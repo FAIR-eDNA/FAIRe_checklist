@@ -1,0 +1,8 @@
+biological_rep:
+  description: The number of biological replicates collected at each sampling point
+    and/or for each experimental treatment in the study.
+  range: string
+  annotations:
+    section: Sample collection
+    requirement_level: Recommended
+    example: '5'

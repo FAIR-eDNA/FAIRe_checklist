@@ -1,0 +1,7 @@
+pcr_assay_loq_unit:
+  description: unit for pcr_assay_loq
+  range: pcr_assay_loq_unit_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory
+    example: ng/µL

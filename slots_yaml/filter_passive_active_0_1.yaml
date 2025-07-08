@@ -1,0 +1,9 @@
+filter_passive_active_0_1:
+  description: Whether water/ air samples were collected using active (i.e. pump,
+    fan) or passive (i.e. submerged materials in water/air) filtration approach. Active
+    = 1, Passive = 0
+  range: boolean
+  annotations:
+    section: Sample preparation
+    requirement_level: Recommended
+    example: '1'

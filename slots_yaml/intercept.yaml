@@ -1,0 +1,8 @@
+intercept:
+  description: Intercept of a qPCR standard curve. This shall be specific to each
+    pcr_plate_id.
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: '39.37'

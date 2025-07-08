@@ -1,0 +1,10 @@
+pcr_assay_loq:
+  description: Assay's limit of quantification (LOQ) (the lowest amount of target
+    taxon DNA that can be quantitatively determined with a stated precision under
+    the stated experimental conditions).
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory
+    example: '184.0'
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

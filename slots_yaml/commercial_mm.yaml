@@ -1,0 +1,8 @@
+commercial_mm:
+  description: Name, brand, and manufacture of commercial, pre-made master mix (if
+    commercial master mix was used)
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Highly recommended
+    example: Luna® Universal qPCR Master Mix, New England Biolabs

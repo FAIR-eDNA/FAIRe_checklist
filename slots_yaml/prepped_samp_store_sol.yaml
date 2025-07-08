@@ -1,0 +1,11 @@
+prepped_samp_store_sol:
+  description: 'Solution within which the prepared sample was stored prior to DNA
+    extraction. Note: The storage solution of the original environmental sample (e.g.,
+    water, soil) should be recorded under samp_store_sol, while the current term is
+    for the "processed" sample such as filter paper, homogenised and subsampled sediment,
+    prepared for DNA extraction.'
+  range: prepped_samp_store_sol_enum
+  annotations:
+    section: Sample preparation
+    requirement_level: Recommended
+    example: lysis buffer

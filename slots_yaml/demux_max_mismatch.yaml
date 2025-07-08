@@ -1,0 +1,9 @@
+demux_max_mismatch:
+  description: Maximum mismatch allowed at the index bases for demultiplexing. Unit
+    = base pair
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: base pair
+    example: '0'

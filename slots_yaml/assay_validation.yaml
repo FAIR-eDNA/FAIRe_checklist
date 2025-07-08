@@ -1,0 +1,11 @@
+assay_validation:
+  description: How was the assay validated for specificity? e.g., in-silico, in-vitro,
+    in-situ validations, sanger sequencing, repeat analysis with alternate assay,
+    intra/inter species tests
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    example: The assay was validated through a multi-step process, including in-silico
+      analysis, in-vitro testing, in-situ trials, and final confirmation with Sanger
+      sequencing.

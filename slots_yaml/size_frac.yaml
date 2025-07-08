@@ -1,0 +1,12 @@
+size_frac:
+  description: Filtering pore size used in sample filtration. Unit = µm
+  range: float
+  annotations:
+    section: Sample preparation
+    requirement_level: Highly recommended
+    unit: µm
+    example: '0.22'
+    skos:exactMatch:
+    - https://w3id.org/mixs/size_frac
+    - http://rs.gbif.org/terms/1.0/size_frac
+  identifier: https://w3id.org/mixs/0000017

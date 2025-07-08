@@ -1,0 +1,8 @@
+checksum_filename2:
+  description: The checksum of the reverse sequence reads file (filename2), used to
+    verify the integrity and identity of the corresponding data file
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: b3ea95ec13dae594bcb292dcf1b1ac7f

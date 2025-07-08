@@ -1,0 +1,7 @@
+host_height_unit:
+  description: The unit of host_height
+  range: host_height_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: cm

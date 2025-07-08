@@ -1,0 +1,15 @@
+pcr_cond:
+  description: Description of reaction conditions and components of PCR. The recommended
+    format is ´initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
+    elongation:degrees_minutes;total cycles´, where possible. If two-step PCR was
+    applied for a metabarcoding approach, enter the second PCR protocol under the
+    term pcr2_cond in the library preparation/sequencing section.
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Highly recommended
+    example: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35
+    skos:exactMatch:
+    - https://w3id.org/mixs/pcr_cond
+    - http://rs.gbif.org/terms/1.0/pcr_cond
+  identifier: https://w3id.org/mixs/0000049

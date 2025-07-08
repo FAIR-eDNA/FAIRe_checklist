@@ -1,0 +1,16 @@
+samp_store_temp:
+  description: 'Temperature at which the sample was stored. Enter either the fixed
+    term "ambient temperature" or a numeric value. Note: If a sample was processed
+    before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
+    storage temperature before the process here, and the storage temperature of the
+    processed sample (i.e., filter paper) under a term prepped_samp_store_temp. Unit
+    = degree Celsius'
+  range: samp_store_temp_enum
+  annotations:
+    section: Sample storage
+    requirement_level: Highly recommended
+    unit: degree Celsius
+    example: '-80.0'
+    skos:exactMatch:
+    - https://w3id.org/mixs/samp_store_temp
+  identifier: https://w3id.org/mixs/0000110

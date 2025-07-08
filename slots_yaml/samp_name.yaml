@@ -1,0 +1,14 @@
+samp_name:
+  description: Sample Name is a name that you choose for the sample. It can have any
+    format, but we suggest that you make it concise, unique and consistent within
+    your lab, and as informative as possible. Every Sample Name from a single Submitter
+    must be unique.
+  range: string
+  annotations:
+    section: Sample information
+    requirement_level: Mandatory
+    example: S01_1
+    skos:exactMatch:
+    - https://w3id.org/mixs/samp_name
+    - http://rs.gbif.org/terms/1.0/samp_name
+  identifier: https://w3id.org/mixs/0001107

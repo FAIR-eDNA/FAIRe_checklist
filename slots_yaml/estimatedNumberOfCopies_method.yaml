@@ -1,0 +1,7 @@
+estimatedNumberOfCopies_method:
+  description: Method to output estimatedNumberOfCopies
+  range: estimatedNumberOfCopies_method_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: Ct/Cq with standard curve | Ct/Cq with standard bionomial data

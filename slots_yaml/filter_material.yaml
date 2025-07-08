@@ -1,0 +1,8 @@
+filter_material:
+  description: Material of filter
+  range: filter_material_enum
+  annotations:
+    section: Sample preparation
+    requirement_level: Highly recommended
+    example: cellulose ester
+  identifier: https://w3id.org/nmdc/filter_material

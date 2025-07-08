@@ -1,0 +1,7 @@
+tot_diss_nitro_unit:
+  description: The unit of tot_diss_nitro
+  range: tot_diss_nitro_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: µg/L

@@ -1,0 +1,15 @@
+geo_loc_name:
+  description: 'The geographical origin of the sample as defined by the country or
+    sea name followed by regions and localities. Country or sea names should be chosen
+    from the INSDC Geographic Location Name List INSDC country list (http://insdc.org/country.html).
+    Fixed format following <country or sea names>:<region>,<locality>. E.g., "USA:
+    Maryland, Bethesda" , "Atlantic Ocean:Charlie Gibbs Fracture Zone"'
+  range: string
+  annotations:
+    section: Sample collection
+    requirement_level: Mandatory
+    example: 'USA: Maryland, Bethesda'
+    skos:exactMatch:
+    - https://w3id.org/mixs/geo_loc_name
+  pattern: <country or sea names>:<region>,<locality>
+  identifier: https://w3id.org/mixs/0000010

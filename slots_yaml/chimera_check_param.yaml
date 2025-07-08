@@ -1,0 +1,7 @@
+chimera_check_param:
+  description: Parameters used to filter chimera sequences if note default
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: β parameter >=1

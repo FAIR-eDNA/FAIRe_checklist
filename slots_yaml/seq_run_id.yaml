@@ -1,0 +1,9 @@
+seq_run_id:
+  description: A brief, concise identifier for sequencing run with no spaces or special
+    characters, ensuring machine readability. This ID will be used in file names as
+    'seq_run_id'.
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Mandatory
+    example: run20230922

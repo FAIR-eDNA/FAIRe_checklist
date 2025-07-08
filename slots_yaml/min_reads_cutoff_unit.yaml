@@ -1,0 +1,7 @@
+min_reads_cutoff_unit:
+  description: The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
+  range: min_reads_cutoff_unit_enum
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: '%'

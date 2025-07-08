@@ -1,0 +1,7 @@
+diss_oxygen_unit:
+  description: The unit of diss_oxygen
+  range: diss_oxygen_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: mmol/kg

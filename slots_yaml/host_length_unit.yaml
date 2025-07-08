@@ -1,0 +1,7 @@
+host_length_unit:
+  description: The unit of host_length
+  range: host_length_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: mm

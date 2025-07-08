@@ -1,0 +1,10 @@
+bioinfo_method_additional:
+  description: Additional information on bioinformatics, that has not been shared
+    in the given record.
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Optional
+    example: The min_reads_cutoff was 1 read, but singletons were kept if the same
+      sequence was detected in multiple samples. Data was curated using r-package
+      LULU, minimum_mismatch cutoff 90%
