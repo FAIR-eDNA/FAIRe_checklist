@@ -9,7 +9,7 @@ OUTPUT_SCHEMA = "schema.yaml"
 
 # Base schema structure
 schema = {
-    "id": "https://w3id.org/fairie/schema",
+    "id": "tbd: a value like https://w3id.org/fairie/schema",
     "name": "faire_checklist",
     "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
     "version": "0.6.0",
