@@ -1,0 +1,49 @@
+import os
+import yaml
+
+# Path to the directory containing individual slot YAML files
+SLOTS_DIR = "slots"
+
+# Output path for merged schema
+OUTPUT_SCHEMA = "schema.yaml"
+
+# Base schema structure
+schema = {
+    "id": "https://w3id.org/fairie/schema",
+    "name": "faire_checklist",
+    "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
+    "version": "0.6.0",
+    "prefixes": {
+        "linkml": "https://w3id.org/linkml/",
+        "schema": "https://schema.org/",
+        "dwc": "http://rs.tdwg.org/dwc/terms/",
+        "mixs": "https://w3id.org/mixs/",
+        "skos": "http://www.w3.org/2004/02/skos/core#"
+    },
+    "default_prefix": "faire",
+    "imports": ["linkml:types"],
+    "slots": {},
+    "enums": {},
+    "classes": {
+        "MetadataChecklist": {
+            "description": "A metadata record based on the FAIRe checklist.",
+            "slots": []
+        }
+    }
+}
+
+# Merge slots
+for file_name in os.listdir(SLOTS_DIR):
+    if file_name.endswith(".yaml"):
+        slot_path = os.path.join(SLOTS_DIR, file_name)
+        with open(slot_path, "r") as f:
+            slot_content = yaml.safe_load(f)
+            for slot_name, slot_def in slot_content.items():
+                schema["slots"][slot_name] = slot_def
+                schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+
+# Save merged schema
+with open(OUTPUT_SCHEMA, "w") as f:
+    yaml.dump(schema, f, sort_keys=False, allow_unicode=True)
+
+print(f"✅ Merged schema written to {OUTPUT_SCHEMA}")
