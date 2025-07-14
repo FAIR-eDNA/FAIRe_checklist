@@ -1,0 +1,7 @@
+accession_id:
+  description: Accession ID of the best matching sequence from a reference database
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: MG002616.1

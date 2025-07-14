@@ -1,6 +1,8 @@
 # FAIRe_checklist
 
-This repository stores the current and previous versions of the FAIRe metadata checklist, along with a detailed version history.
+This repository stores the current and previous versions of the FAIRe metadata checklist, along with a detailed version history. Recent updates include a draft for migration to LinkML. The starting point for the slots defined in `/slots` was this [Google Sheet](https://docs.google.com/spreadsheets/d/1htVmmXxm0y3teqIxpCSWKgVqfE3QyEC_/edit?gid=1681711496#gid=1681711496). The file `schema.yml` is regenerated on each commit from the yaml files in `/slots`. 
+
+`schema.yaml` should not be edited by hand.
 
 ---
 

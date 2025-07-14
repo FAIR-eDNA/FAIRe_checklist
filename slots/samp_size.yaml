@@ -1,0 +1,15 @@
+samp_size:
+  description: 'Amount or size of original sample (volume, mass or area) that was
+    collected from the environment. Specify the unit under the term samp_size_unit.
+    Note: the amount or size of (sub)sample processed for DNA extraction should be
+    entered under the term samp_vol_we_dna_ext.'
+  range: float
+  annotations:
+    section: Sample collection
+    requirement_level: Highly recommended
+    unit: Select from sampl_size_unit
+    example: '5.0'
+    skos:exactMatch:
+    - https://w3id.org/mixs/samp_size
+    - http://rs.gbif.org/terms/1.0/samp_size
+  identifier: https://w3id.org/mixs/0000001

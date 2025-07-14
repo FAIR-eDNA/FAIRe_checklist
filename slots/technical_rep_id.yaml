@@ -1,0 +1,8 @@
+technical_rep_id:
+  description: An integer uniquely identifying a specific PCR technical replicate
+    within a sample.
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Mandatory
+    example: '1'

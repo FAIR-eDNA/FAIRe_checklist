@@ -1,0 +1,8 @@
+pcr_primer_vol_reverse:
+  description: Volume of pcr_primer_reverse per reaction. Unit = µL
+  range: float
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    unit: µL
+    example: '2.0'

@@ -1,0 +1,7 @@
+nitrate_unit:
+  description: The unit of nitrate
+  range: nitrate_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: µmol/L

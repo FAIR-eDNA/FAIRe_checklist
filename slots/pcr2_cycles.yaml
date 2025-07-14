@@ -1,0 +1,9 @@
+pcr2_cycles:
+  description: (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in the
+    second step PCR. Unit = cycles
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    unit: cycles
+    example: '40'

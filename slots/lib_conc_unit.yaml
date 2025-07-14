@@ -1,0 +1,7 @@
+lib_conc_unit:
+  description: Unit for lib_conc
+  range: lib_conc_unit_enum
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: pM

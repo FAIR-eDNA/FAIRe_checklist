@@ -1,0 +1,7 @@
+demux_tool:
+  description: Software and the version used to demultiplex sequence reads
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: DADA2 1.26

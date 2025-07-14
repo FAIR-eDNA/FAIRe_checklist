@@ -1,0 +1,7 @@
+nucl_acid_ext_sep:
+  description: The approach used to separate DNA from a mixture.
+  range: nucl_acid_ext_sep_enum
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Recommended
+    example: column-based

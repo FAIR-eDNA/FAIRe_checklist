@@ -1,0 +1,8 @@
+precip_chem_prep:
+  description: Chemicals used in precipitation at the sample preparation step prior
+    to DNA extraction, if precipitation was performed
+  range: precip_chem_prep_enum
+  annotations:
+    section: Sample preparation
+    requirement_level: Highly recommended
+    example: ethanol | sodium chloride

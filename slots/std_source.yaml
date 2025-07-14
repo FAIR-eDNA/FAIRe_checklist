@@ -1,0 +1,7 @@
+std_source:
+  description: The source of standard used for standard curves
+  range: string
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Optional
+    example: ThermoFisher

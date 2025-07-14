@@ -1,0 +1,10 @@
+phylum:
+  description: The full scientific name of the phylum or division
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: Chordata
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/phylum
+  identifier: http://rs.tdwg.org/dwc/terms/phylum

@@ -1,0 +1,9 @@
+input_read_count:
+  description: The total number of raw sequence reads for each sample. Unit = reads
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: reads
+    example: '20485'
+  identifier: https://w3id.org/nmdc/input_read_count

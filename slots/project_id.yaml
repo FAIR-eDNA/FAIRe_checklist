@@ -1,0 +1,9 @@
+project_id:
+  description: A brief, concise project identifier with no spaces or special characters,
+    ensuring machine readability. This ID will be used in data file names as 'project_id'.
+  range: string
+  annotations:
+    section: Project
+    requirement_level: Mandatory
+    example: noaa-aoml-gomecc4
+  identifier: https://w3id.org/nmdc/project_id

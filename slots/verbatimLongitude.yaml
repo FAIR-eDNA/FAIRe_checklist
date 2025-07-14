@@ -1,0 +1,12 @@
+verbatimLongitude:
+  description: The original longitude in any format (i.e. deg/min/sec, UTM) before
+    converting to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimGeodeticDatum
+    should be stored as well.
+  range: string
+  annotations:
+    section: Sample collection
+    requirement_level: Optional
+    example: 121d 10' 34" W
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/verbatimLongitude
+  identifier: http://rs.tdwg.org/dwc/terms/verbatimLongitude

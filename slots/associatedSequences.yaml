@@ -1,0 +1,12 @@
+associatedSequences:
+  description: A list (concatenated and separated) of identifiers (publication, global
+    unique identifier, URI) of genetic sequence information associated with the samp_name
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
+      | https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/associatedSequences
+  identifier: http://rs.tdwg.org/dwc/terms/associatedSequences

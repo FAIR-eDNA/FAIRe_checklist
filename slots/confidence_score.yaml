@@ -1,0 +1,9 @@
+confidence_score:
+  description: Confidence score for the taxonomic assignment, such as from bootstrapping.
+    If multiple species were assigned to one ASV/OTU, a range can be entered separated
+    by  "-" (e.g., 0.996-0.998)
+  range: float
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: '0.997'

@@ -1,0 +1,15 @@
+maximumDepthInMeters:
+  description: The greater depth of a range of depth (vertical distance below the
+    local surface) at which a sample was collected. For sediment or soil samples depth
+    is measured from sediment or soil surface, respectively. If there is only one
+    single point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters
+    are the same. Unit = meter
+  range: float
+  annotations:
+    section: Environment
+    requirement_level: Recommended
+    unit: meter
+    example: '0.2'
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
+  identifier: http://rs.tdwg.org/dwc/terms/maximumDepthInMeters

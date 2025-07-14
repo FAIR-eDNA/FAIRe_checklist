@@ -1,0 +1,7 @@
+diss_inorg_carb_unit:
+  description: The unit of diss_inorg_carb
+  range: diss_inorg_carb_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: mmol/kg

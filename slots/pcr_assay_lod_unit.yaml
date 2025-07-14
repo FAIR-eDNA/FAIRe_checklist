@@ -1,0 +1,7 @@
+pcr_assay_lod_unit:
+  description: Unit for pcr_assay_lod
+  range: pcr_assay_lod_unit_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory
+    example: ng/µL

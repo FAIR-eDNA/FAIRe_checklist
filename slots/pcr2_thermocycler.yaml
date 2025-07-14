@@ -1,0 +1,8 @@
+pcr2_thermocycler:
+  description: (If bacroding_pcr_appr = "two-step PCR") The manufacturer and model
+    of a thermocycler used in the second step PCR
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Optional
+    example: Thermo Fisher Scientific, QuantStudio 6

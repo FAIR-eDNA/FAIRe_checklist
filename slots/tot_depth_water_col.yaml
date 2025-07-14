@@ -1,0 +1,14 @@
+tot_depth_water_col:
+  description: Measurement of total depth of water column. For example, if a sea surface
+    water sample was collected at a sampling site where the water depth was 15m, enter
+    15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters. Unit
+    = meter
+  range: float
+  annotations:
+    section: Environment
+    requirement_level: Recommended
+    unit: meter
+    example: '15.0'
+    skos:exactMatch:
+    - https://w3id.org/mixs/tot_depth_water_col
+  identifier: https://w3id.org/mixs/0000634

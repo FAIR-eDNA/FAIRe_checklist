@@ -1,0 +1,7 @@
+seq_kit:
+  description: The name of sequencing kit
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Highly recommended
+    example: NextSeq 500/550 v2.5

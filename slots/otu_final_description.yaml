@@ -1,0 +1,9 @@
+otu_final_description:
+  description: A description of the data curation and processing steps applied to
+    the final OTU/ASV table
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: Removal of ASVs that were assigned to non-targeted species. Removal of
+      control samples.

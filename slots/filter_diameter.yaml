@@ -1,0 +1,8 @@
+filter_diameter:
+  description: Diameter of a filter if circular. Unit = mm
+  range: float
+  annotations:
+    section: Sample preparation
+    requirement_level: Recommended
+    unit: mm
+    example: '47.0'

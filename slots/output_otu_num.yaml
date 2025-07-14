@@ -1,0 +1,7 @@
+output_otu_num:
+  description: Total number of OTUs or ASVs for each sample
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: '86'

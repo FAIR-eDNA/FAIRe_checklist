@@ -1,0 +1,7 @@
+barcoding_pcr_appr:
+  description: PCR approach for metabarcoding
+  range: barcoding_pcr_appr_enum
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Highly recommended
+    example: two-step PCR

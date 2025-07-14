@@ -1,0 +1,17 @@
+quantificationCycle:
+  description: The number of cycles required for the fluorescent signal to cross a
+    given value threshold above the baseline for each technical replicate. Quantification
+    cycle (Cq), threshold cycle (Ct), crossing point (Cp), and take-off point (TOP)
+    refer to the same value from the real-time instrument. Use of quantification cycle
+    (Cq), is preferable according to the RDML (Real-Time PCR Data Markup Language)
+    data standard (http://www.rdml.org). Use "NA" (not zero) to indicate no amplification
+    occurred. Unit = Cycle
+  range: float
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory
+    unit: cycle
+    example: '37.9450950622558'
+    skos:exactMatch:
+    - http://rs.gbif.org/terms/1.0/quantificationCycle
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -1,0 +1,7 @@
+thermocycler:
+  description: The manufacturer and model of a thermocycler used
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Optional
+    example: Thermo Fisher Scientific, QuantStudio 6

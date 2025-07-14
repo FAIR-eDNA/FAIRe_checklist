@@ -1,0 +1,9 @@
+pcr2_annealingTemp:
+  description: (If bacroding_pcr_appr = "two-step PCR") The reaction temperature during
+    the annealing phase of the second step PCR. Unit = degree Celsius
+  range: float
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    unit: degree Celsius
+    example: '60.0'

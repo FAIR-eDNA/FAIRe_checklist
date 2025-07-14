@@ -1,0 +1,7 @@
+taxonID_db:
+  description: The taxonomy database corresponding to taxonID.
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Highly recommended
+    example: NCBI

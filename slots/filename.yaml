@@ -1,0 +1,8 @@
+filename:
+  description: A file name of raw sequencing data. If paired end, fill filename2 for
+    the reverse read
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Recommended
+    example: S01_R1.fastq

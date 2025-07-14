@@ -1,0 +1,8 @@
+screen_contam_method:
+  description: How were contaminations screened and applied in data curation/analyses/interpretation?
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Highly recommended
+    example: Taxa detected in negative controls were checked, and the read counts
+      were applied as a cutoff to call presence.

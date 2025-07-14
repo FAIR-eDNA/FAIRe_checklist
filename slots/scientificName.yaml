@@ -1,0 +1,10 @@
+scientificName:
+  description: The full scientific name of the genus and species
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Highly recommended
+    example: Lutjanus erythropterus
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/scientificName
+  identifier: http://rs.tdwg.org/dwc/terms/scientificName

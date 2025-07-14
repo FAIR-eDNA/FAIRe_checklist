@@ -1,0 +1,16 @@
+env_broad_scale:
+  description: 'Major environmental system your sample came from. The systems identified
+    should have a coarse spatial grain, to provide the general environmental context
+    of where the sampling was done. Select from ENVO’s biome class: http://purl.obolibrary.org/obo/ENVO_00000428.
+    Examples include; estuarine biome [ENVO:01000020], tropical moist broadleaf forest
+    biome [ENVO:01000228],'
+  range: string
+  annotations:
+    section: Sample collection
+    requirement_level: Mandatory
+    example: estuarine biome [ENVO:01000020]
+    skos:exactMatch:
+    - https://w3id.org/mixs/env_broad_scale
+    - http://rs.gbif.org/terms/1.0/env_broad_scale
+  pattern: termLabel [termID]
+  identifier: https://w3id.org/mixs/0000012
