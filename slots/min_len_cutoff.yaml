@@ -1,0 +1,8 @@
+min_len_cutoff:
+  description: Minimum length threshold. Unit = base pair
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    unit: base pair
+    example: '120'

@@ -1,0 +1,11 @@
+accessRights:
+  description: Information about who can access the resource or an indication of its
+    security status.
+  range: string
+  annotations:
+    section: Data management
+    requirement_level: Recommended
+    example: not-for-profit use only
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/accessRights
+  identifier: http://purl.org/dc/terms/accessRights

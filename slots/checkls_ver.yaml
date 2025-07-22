@@ -1,0 +1,8 @@
+checkls_ver:
+  description: The version number of the FAIR eDNA (FAIRe) metadata checklist used
+    to format the data
+  range: float
+  annotations:
+    section: Data management
+    requirement_level: Mandatory
+    example: '1.2'

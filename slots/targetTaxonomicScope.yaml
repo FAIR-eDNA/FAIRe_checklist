@@ -1,0 +1,10 @@
+targetTaxonomicScope:
+  description: The taxonomic group(s) targeted in the study. This can differ from
+    the targetTaxonomicPCR. For example, the targetTaxonomicPCR may be Chordata while
+    the targetTaxonomicScope is Chondrichthyes (bony fish, sharks and rays).
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Recommended
+    example: teleost
+  identifier: http://rs.tdwg.org/eco/terms/targetTaxonomicScope

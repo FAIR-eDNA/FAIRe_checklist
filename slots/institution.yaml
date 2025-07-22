@@ -1,0 +1,8 @@
+institution:
+  description: An institution having custody of the object(s) or information referred
+    to in the record.
+  range: string
+  annotations:
+    section: Project
+    requirement_level: Recommended
+    example: Curtin University

@@ -1,0 +1,8 @@
+otu_num_tax_assigned:
+  description: Total number of OTUs or ASVs assigned to taxa based on the study-specific
+    thresholds for each sample
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: '49'

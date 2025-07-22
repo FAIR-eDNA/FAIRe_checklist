@@ -1,0 +1,10 @@
+family:
+  description: The full scientific name of the family
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Recommended
+    example: Lutjanidae
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/family
+  identifier: http://rs.tdwg.org/dwc/terms/family

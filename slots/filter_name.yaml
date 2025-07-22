@@ -1,0 +1,7 @@
+filter_name:
+  description: Commercial names and brand of filter
+  range: string
+  annotations:
+    section: Sample preparation
+    requirement_level: Recommended
+    example: Merck Sterivex

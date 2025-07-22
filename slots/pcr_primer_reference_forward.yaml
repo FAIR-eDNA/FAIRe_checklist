@@ -1,0 +1,10 @@
+pcr_primer_reference_forward:
+  description: Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers
+    are listed in pcr_primer_forward, list the references respectively, separated
+    by pipe ( | ).
+  range: string
+  annotations:
+    section: PCR
+    requirement_level: Highly recommended
+    example: https://doi.org/10.1186/1742-9994-10-34
+  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

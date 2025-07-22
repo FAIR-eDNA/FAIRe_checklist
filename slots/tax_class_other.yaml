@@ -1,0 +1,8 @@
+tax_class_other:
+  description: Additional information on parameters and cutoffs used for taxonomic
+    assignment, that have not been shared in the given record.
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+  identifier: https://w3id.org/mixs/0000064

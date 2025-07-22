@@ -1,0 +1,11 @@
+license:
+  description: A legal document giving official permission to do something with the
+    resource.
+  range: string
+  annotations:
+    section: Data management
+    requirement_level: Recommended
+    example: http://creativecommons.org/licenses/by/4.0/legalcode
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/license
+  identifier: https://dwc.tdwg.org/terms/#dcterms:license

@@ -1,0 +1,7 @@
+seq_id:
+  description: Query sequence ID. Must be unique within the dataset
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Mandatory
+    example: ASV1

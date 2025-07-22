@@ -1,0 +1,7 @@
+estimatedNumberOfCopies_unit:
+  description: Unit for estimatedNumberOfCopies
+  range: estimatedNumberOfCopies_unit_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Recommended
+    example: other:copies/mg of sediment sample

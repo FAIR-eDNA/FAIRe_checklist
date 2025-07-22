@@ -1,0 +1,7 @@
+org_matter_unit:
+  description: The unit of org_matter
+  range: org_matter_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: other:mg/m3

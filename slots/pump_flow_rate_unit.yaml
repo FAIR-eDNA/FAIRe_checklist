@@ -1,0 +1,7 @@
+pump_flow_rate_unit:
+  description: Unit for pump_flow_rate
+  range: pump_flow_rate_unit_enum
+  annotations:
+    section: Sample preparation
+    requirement_level: Optional
+    example: m3/s

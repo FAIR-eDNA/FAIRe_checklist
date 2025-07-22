@@ -1,0 +1,7 @@
+trim_param:
+  description: Parameters and cutoffs used to trim if not default
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: ADAPTER;min_overlap=5

@@ -1,0 +1,7 @@
+host_tot_mass_unit:
+  description: The unit of host_tot_mass
+  range: host_tot_mass_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: g

@@ -1,0 +1,15 @@
+lib_screen:
+  description: Specific enrichment or screening methods applied before and/or after
+    creating libraries
+  range: string
+  annotations:
+    section: Library preparation sequencing
+    requirement_level: Highly recommended
+    example: The library was size selected using a Pippin-Prep (Sage Science, Beverly,
+      USA), purified using the Qiaquick PCR Purification Kit (Qiagen), quantified
+      using a Qubit (Invitrogen) and diluted to 2 nM before loading it onto a MiSeq
+      Flow Cell
+    skos:exactMatch:
+    - https://w3id.org/mixs/lib_screen
+    - http://rs.gbif.org/terms/1.0/lib_screen
+  identifier: https://w3id.org/mixs/0000043

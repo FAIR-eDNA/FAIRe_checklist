@@ -1,0 +1,7 @@
+tot_inorg_nitro_unit:
+  description: The unit of tot_inorg_nitro
+  range: tot_inorg_nitro_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: µg/L

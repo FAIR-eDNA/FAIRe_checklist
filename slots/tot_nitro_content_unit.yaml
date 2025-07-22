@@ -1,0 +1,7 @@
+tot_nitro_content_unit:
+  description: The unit of tot_nitro_content
+  range: tot_nitro_content_unit_enum
+  annotations:
+    section: Environment
+    requirement_level: Optional
+    example: other:mg N/kg of soil

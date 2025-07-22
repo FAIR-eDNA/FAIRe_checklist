@@ -1,0 +1,36 @@
+name: Rebuild Schema
+
+on:
+  push:
+    branches:
+      - main
+      - '**'  # optional: run on all branches
+  pull_request:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Merge slots into schema.yaml
+        run: python merge_slots.py
+
+      - name: Commit and push updated schema
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add schema.yaml
+          git commit -m "Auto-regenerate schema.yaml from slots" || echo "No changes to commit"
+          git push
+

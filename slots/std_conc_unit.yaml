@@ -1,0 +1,6 @@
+std_conc_unit:
+  description: Unit for input quantity of qPCR standard DNA
+  range: std_conc_unit_enum
+  annotations:
+    section: Targeted assay detection
+    requirement_level: Mandatory

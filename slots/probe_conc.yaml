@@ -1,0 +1,12 @@
+probe_conc:
+  description: The stock concentration of the probe if applicable. This refers specifically
+    to the concentration of the probe stock solution, not the final concentration
+    in the PCR reaction. For example, using 1 µL of a 5 µM (stock concentration) probe
+    in a 25 µL reaction results in a final concentration of 0.2 µM. Hence the entry
+    for this term would be 5. Unit = µM
+  range: float
+  annotations:
+    section: PCR
+    requirement_level: Highly recommended
+    unit: nM
+    example: '100.0'

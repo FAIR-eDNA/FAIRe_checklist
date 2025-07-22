@@ -1,0 +1,14 @@
+otu_db:
+  description: List of reference database(s) (i.e. sequences not generated as part
+    of the current study) along with version number, that were used to assign taxonomy
+    to OTUs or ASVs. If custom database was used, enter 'custom' here, and provide
+    the information of the database under the term otu_db_custom
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Highly recommended
+    example: NCBI GenBank Release 260.0 | custom
+    skos:exactMatch:
+    - https://w3id.org/mixs/otu_db
+    - http://rs.gbif.org/terms/1.0/otu_db
+  identifier: https://w3id.org/mixs/0000087

@@ -1,0 +1,7 @@
+concentration_unit:
+  description: The unit of total DNA concentration after extraction
+  range: concentration_unit_enum
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Recommended
+    example: ng/µl

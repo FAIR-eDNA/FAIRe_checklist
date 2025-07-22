@@ -1,0 +1,10 @@
+sop_bioinformatics:
+  description: Standard operating procedures, references, link to scripts, that were
+    used in quality filtering, assembly and/or annotation of genomes, metagenomes
+    or environmental sequences
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: https://github.com/mahsa-mousavi/eDNAFlow
+  identifier: https://w3id.org/mixs/0000090

@@ -1,0 +1,11 @@
+recordedBy:
+  description: A list (concatenated and separated) of names of people responsible
+    for the submitted dataset
+  range: string
+  annotations:
+    section: Project
+    requirement_level: Mandatory
+    example: José E. Crespo
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/recordedBy
+  identifier: https://dwc.tdwg.org/list/#dwc_recordedBy

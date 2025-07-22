@@ -1,0 +1,12 @@
+taxonID:
+  description: An identifier for the assigned taxon (or taxa in the case of multiple
+    hits). May be a global unique identifier or an identifier specific to the data
+    set.
+  range: string
+  annotations:
+    section: OTU/ASV
+    requirement_level: Highly recommended
+    example: '218797.0'
+    skos:exactMatch:
+    - http://rs.tdwg.org/dwc/terms/taxonID
+  identifier: http://rs.tdwg.org/dwc/terms/taxonID

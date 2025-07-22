@@ -1,0 +1,9 @@
+nucl_acid_ext_modify:
+  description: Description of modification made from a commercial or established protocol
+    (nucl_acid_ext), if made.
+  range: string
+  annotations:
+    section: Nucleic acid extraction
+    requirement_level: Recommended
+    example: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and
+      eluted in 100 µL of buffer EB, instead of 180 µL, 20 µL and 200 µL respectively

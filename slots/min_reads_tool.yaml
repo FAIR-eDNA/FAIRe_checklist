@@ -1,0 +1,7 @@
+min_reads_tool:
+  description: Software and the version to remove reads below minimum read threshold
+  range: string
+  annotations:
+    section: Bioinformatics
+    requirement_level: Recommended
+    example: DADA2 1.26
