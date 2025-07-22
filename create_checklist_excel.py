@@ -38,7 +38,7 @@ ws.cell(row=glossary_start + 1, column=2, value="Term").font = bold_font
 ws.cell(row=glossary_start + 1, column=3, value="Definition").font = bold_font
 
 # Write glossary terms in col B and C
-for i, (term, definition) in enumerate(glossary["glossary"].items(), start=glossary_start + 2):
+for i, (term, definition) in enumerate(glossary.items(), start=glossary_start + 2):
     ws.cell(row=i, column=2, value=term)
     ws.cell(row=i, column=3, value=definition)
 
