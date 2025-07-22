@@ -43,6 +43,6 @@ for i, (term, definition) in enumerate(glossary.items(), start=glossary_start + 
     ws.cell(row=i, column=3, value=definition)
 
 # === Save to file ===
-output_file = "FAIRe_checklist_v1.0.2.xlsx"
+output_file = "FAIRe_checklist_v1.0.2_test.xlsx"
 wb.save(output_file)
 print(f"✅ README sheet written to {output_file}")
