@@ -29,6 +29,9 @@ jobs:
       - name: Merge slots into schema.yaml
         run: python merge_slots.py
 
+      - name: Create Excel version of checklist
+        run: python create_checklist_excel.py
+
       - name: Commit and push updated schema (only on main)
         if: github.ref == 'refs/heads/main'
         run: |
