@@ -1,14 +1,14 @@
 import os
 import yaml
+from collections import OrderedDict
 
 # Path to the directory containing individual slot YAML files
 SLOTS_DIR = "slots"
-
-# Output path for merged schema
 OUTPUT_SCHEMA = "schema.yaml"
+GLOSSARY_FILENAME = "glossary_annotation.yaml"
 
 # Base schema structure
-schema = {
+schema = OrderedDict({
     "id": "tbd: a value like https://w3id.org/fairie/schema",
     "name": "faire_checklist",
     "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
@@ -21,34 +21,37 @@ schema = {
         "skos": "http://www.w3.org/2004/02/skos/core#"
     },
     "default_prefix": "faire",
-    "imports": ["linkml:types"],
-    "slots": {},
-    "enums": {},
-    "classes": {
-        "MetadataChecklist": {
-            "description": "A metadata record based on the FAIRe checklist.",
-            "slots": []
-        }
-    }
-}
+    "imports": ["linkml:types"]
+})
 
-# Load glossary annotations if present
-glossary_path = os.path.join(SLOTS_DIR, "glossary_annotation.yaml")
+# Load glossary (if exists) and insert first
+glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
 if os.path.exists(glossary_path):
     with open(glossary_path, "r") as g:
         glossary_block = yaml.safe_load(g)
-        schema.update(glossary_block)
+        schema["annotations"] = glossary_block.get("annotations", {})
 
-# Merge slot files (skip glossary)
-for file_name in os.listdir(SLOTS_DIR):
-    if not file_name.endswith(".yaml") or file_name == "glossary_annotation.yaml":
-        continue
+# Initialize empty containers
+schema["slots"] = OrderedDict()
+schema["enums"] = OrderedDict()
+schema["classes"] = {
+    "MetadataChecklist": {
+        "description": "A metadata record based on the FAIRe checklist.",
+        "slots": []
+    }
+}
 
+# Process all non-glossary YAML files alphabetically
+slot_files = sorted(
+    f for f in os.listdir(SLOTS_DIR)
+    if f.endswith(".yaml") and f != GLOSSARY_FILENAME
+)
+
+for file_name in slot_files:
     slot_path = os.path.join(SLOTS_DIR, file_name)
     with open(slot_path, "r") as f:
         slot_content = yaml.safe_load(f)
 
-        # Support both flat and nested slot formats
         if "name" in slot_content:
             slot_name = slot_content["name"]
             schema["slots"][slot_name] = slot_content
@@ -58,7 +61,7 @@ for file_name in os.listdir(SLOTS_DIR):
                 schema["slots"][slot_name] = slot_def
                 schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
 
-# Optional: sort slot names in class definition
+# Sort class slot list
 schema["classes"]["MetadataChecklist"]["slots"].sort()
 
 # Header comment
@@ -70,7 +73,7 @@ header_comment = (
     "# ============================\n\n"
 )
 
-# Save merged schema
+# Save to disk
 with open(OUTPUT_SCHEMA, "w") as f:
     f.write(header_comment)
     yaml.dump(schema, f, sort_keys=False, allow_unicode=True)
