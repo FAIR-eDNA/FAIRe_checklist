@@ -5,8 +5,10 @@ on:
   push:
     branches:
       - main
-      - '**'  # optional: run on all branches
   pull_request:
+
+permissions:
+  contents: write  # needed for push step on main
 
 jobs:
   rebuild:
@@ -27,11 +29,11 @@ jobs:
       - name: Merge slots into schema.yaml
         run: python merge_slots.py
 
-      - name: Commit and push updated schema
+      - name: Commit and push updated schema (only on main)
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add schema.yaml
           git commit -m "Auto-regenerate schema.yaml from slots" || echo "No changes to commit"
           git push
-
