@@ -1,6 +1,7 @@
 name: Rebuild Schema
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
