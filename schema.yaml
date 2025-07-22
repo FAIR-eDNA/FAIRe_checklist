@@ -58,7 +58,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/accessRights
   accession_id:
@@ -73,7 +74,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: New
+      source:
+      - New
   accession_id_ref_db:
     name: accession_id_ref_db
     description: Reference database (i.e. sequences not generated as part of the current
@@ -90,7 +92,9 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000087
   adapter_forward:
@@ -107,7 +111,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000048
   adapter_reverse:
@@ -124,7 +130,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   alt:
     name: alt
     description: Heights of objects such as airplanes, space shuttles, rockets, atmospheric
@@ -145,7 +152,8 @@ slots:
       sample_type_specificity:
       - Air
       - HostAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000094
   amp_vis_method:
@@ -162,7 +170,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       qPCR:
         meaning: qPCR
@@ -193,7 +202,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   amplificationReactionVolume:
@@ -208,7 +219,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   annealingTemp:
@@ -226,7 +239,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   assay_name:
@@ -246,7 +261,8 @@ slots:
       - stdData
       - eLowQuantData
       requirement_level_code: M
-      source: New
+      source:
+      - New
   assay_type:
     name: assay_type
     description: The method used in the eDNA study to detect taxon/taxa of interest
@@ -264,7 +280,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       targeted:
         meaning: targeted
@@ -287,7 +304,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   associatedSequences:
     name: associatedSequences
     description: A list (concatenated and separated) of identifiers (publication,
@@ -304,7 +322,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/associatedSequences
   associated_resource:
@@ -322,7 +341,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000091
   automaticBaselineValue:
@@ -340,7 +360,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   automaticThresholdQuantificationCycle:
@@ -357,7 +379,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   barcoding_pcr_appr:
@@ -371,7 +395,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIEM (Klymus et al., 2024)
+      source:
+      - MIEM (Klymus et al., 2024)
     enum_values:
       one-step PCR:
         meaning: one-step PCR
@@ -395,7 +420,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   bibliographicCitation:
@@ -409,7 +436,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/bibliographicCitation
   bioinfo_method_additional:
@@ -426,7 +454,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   biological_rep:
     name: biological_rep
     description: The number of biological replicates collected at each sampling point
@@ -439,7 +468,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   biological_rep_relation:
     name: biological_rep_relation
     description: This term lists the samp_name of biological replicates associated
@@ -455,7 +485,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
       fixed_format: (a list of) samp_name
   block_ref:
     name: block_ref
@@ -469,7 +500,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   block_seq:
     name: block_seq
     description: Blocking primer sequence in the 5' to 3' direction
@@ -481,7 +513,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   block_taxa:
     name: block_taxa
     description: Taxonomic name(s) of the organism(s) targeted by a blocking primer
@@ -495,7 +528,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   checkls_ver:
     name: checkls_ver
     description: The version number of the FAIR eDNA (FAIRe) metadata checklist used
@@ -508,7 +542,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   checksum_filename:
     name: checksum_filename
     description: The checksum of the forward sequence reads file (filename), used
@@ -521,7 +556,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   checksum_filename2:
     name: checksum_filename2
     description: The checksum of the reverse sequence reads file (filename2), used
@@ -534,7 +570,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   checksum_method:
     name: checksum_method
     description: The specific algorithm or technique used to compute the checksum
@@ -548,7 +585,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       MD5:
         meaning: MD5
@@ -572,7 +610,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000052
   chimera_check_param:
@@ -586,7 +626,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   chlorophyll:
     name: chlorophyll
     description: Concentration of chlorophyll. Unit = mg/m3
@@ -604,7 +645,8 @@ slots:
       - Soil
       - Sediment
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000177
   class:
@@ -621,7 +663,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/class
   code_repo:
@@ -635,7 +678,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: NOAA
+      source:
+      - NOAA
   commercial_mm:
     name: commercial_mm
     description: Name, brand, and manufacture of commercial, pre-made master mix (if
@@ -648,7 +692,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   concentration:
     name: concentration
     description: Concentration of total DNA after extraction
@@ -662,7 +707,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   concentration_method:
@@ -679,7 +725,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   concentration_unit:
@@ -693,7 +740,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       ng/µl:
         meaning: ng/µl
@@ -715,7 +763,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: New
+      source:
+      - New
   custom_mm:
     name: custom_mm
     description: composition of custom master mix, including the names, volumes and
@@ -734,7 +783,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   dataGeneralizations:
     name: dataGeneralizations
     description: Actions taken to make the shared data (i.e. location, date) less
@@ -752,7 +802,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/dataGeneralizations
   date_ext:
@@ -766,7 +817,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   decimalLatitude:
     name: decimalLatitude
     description: The geographic latitude in decimal degrees using WGS84 datum. Positive
@@ -785,7 +837,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/decimalLatitude
   decimalLongitude:
@@ -806,7 +859,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/decimalLongitude
   demux_max_mismatch:
@@ -822,7 +876,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   demux_tool:
     name: demux_tool
     description: Software and the version used to demultiplex sequence reads
@@ -834,7 +889,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   detected_notDetected:
     name: detected_notDetected
     description: Detection of the targeted taxon for each biological replicate, based
@@ -852,7 +908,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   detection_criteria:
     name: detection_criteria
     description: Criteria to determine positive detection. For example, a certain
@@ -869,7 +926,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   diss_inorg_carb:
     name: diss_inorg_carb
     description: Dissolved inorganic carbon concentration in the sample, typically
@@ -888,7 +946,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000434
   diss_inorg_carb_unit:
@@ -908,7 +967,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -953,7 +1013,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000698
   diss_inorg_nitro_unit:
@@ -973,7 +1034,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -1019,7 +1081,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000433
   diss_org_carb_unit:
@@ -1039,7 +1102,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -1085,7 +1149,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000162
   diss_org_nitro_unit:
@@ -1105,7 +1170,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -1150,7 +1216,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000119
   diss_oxygen_unit:
@@ -1170,7 +1237,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       mg/L:
         meaning: mg/L
@@ -1209,7 +1277,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   dna_cleanup_method:
     name: dna_cleanup_method
     description: A description of DNA clean-up method. Provide the name of a commercial
@@ -1223,7 +1292,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   dna_sequence:
     name: dna_sequence
     description: The DNA sequence
@@ -1237,7 +1307,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: M
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   dna_store_loc:
@@ -1252,7 +1323,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   efficiency:
     name: efficiency
     description: qPCR amplification efficiency calculated from slope. Unit = %
@@ -1265,7 +1337,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   elev:
     name: elev
     description: Elevation of the sampling site is its height above a fixed reference
@@ -1286,7 +1359,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000093
   env_broad_scale:
@@ -1309,7 +1383,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000012
@@ -1333,7 +1409,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000013
@@ -1360,7 +1438,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000014
@@ -1375,7 +1455,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   error_rate_tool:
     name: error_rate_tool
     description: Software to remove reads above error rate threshold
@@ -1387,7 +1468,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   error_rate_type:
     name: error_rate_type
     description: The type/unit of error rate for the error rate threshold
@@ -1399,7 +1481,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       Phred score:
         meaning: Phred score
@@ -1423,7 +1506,9 @@ slots:
       - ampData
       - eLowQuantData
       requirement_level_code: R
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   estimatedNumberOfCopies_error:
@@ -1440,7 +1525,8 @@ slots:
       - ampData
       - eLowQuantData
       requirement_level_code: R
-      source: New
+      source:
+      - New
   estimatedNumberOfCopies_error_type:
     name: estimatedNumberOfCopies_error_type
     description: The specific type of variability measure (e.g., standard error, standard
@@ -1454,7 +1540,8 @@ slots:
       - ampData
       - eLowQuantData
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       standard error:
         meaning: standard error
@@ -1475,7 +1562,8 @@ slots:
       data_type:
       - ampData
       requirement_level_code: R
-      source: MIQE
+      source:
+      - MIQE
     enum_values:
       Ct/Cq with standard curve:
         meaning: Ct/Cq with standard curve
@@ -1500,7 +1588,8 @@ slots:
       - ampData
       - eLowQuantData
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       copies/reaction:
         meaning: copies/reaction
@@ -1538,7 +1627,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: DwC | MIxS
+      source:
+      - DwC
+      - MIxS
       fixed_format: yyyy-mm-ddThh:mm:ss+-hh:mm
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011
@@ -1558,7 +1649,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: Humboldt extension
+      source:
+      - Humboldt extension
       fixed_format: PnYnMnWnDTnHnMnS
     skos:exactMatch:
     - http://rs.tdwg.org/eco/terms/eventDurationValue
@@ -1576,7 +1668,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/family
   filename:
@@ -1591,7 +1684,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   filename2:
     name: filename2
     description: A raw sequencing data file name of reverse reads if lib_layout =
@@ -1604,7 +1698,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   filter_diameter:
     name: filter_diameter
     description: Diameter of a filter if circular. Unit = mm
@@ -1620,7 +1715,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   filter_material:
     name: filter_material
     description: Material of filter
@@ -1638,7 +1734,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: NMDC
+      source:
+      - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/filter_material
     enum_values:
@@ -1672,7 +1769,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
   filter_passive_active_0_1:
     name: filter_passive_active_0_1
     description: Whether water/ air samples were collected using active (i.e. pump,
@@ -1689,7 +1787,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
   filter_surface_area:
     name: filter_surface_area
     description: Surface area of a filter. Unit = mm2
@@ -1705,7 +1804,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   genus:
     name: genus
     description: The full scientific name of the genus
@@ -1720,7 +1820,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/genus
   geo_loc_name:
@@ -1740,7 +1841,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS
+      source:
+      - MIxS
       fixed_format: <country or sea names>:<region>,<locality>
     skos:exactMatch:
     - https://w3id.org/mixs/0000010
@@ -1758,7 +1860,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   host_height:
     name: host_height
     description: The height of subject
@@ -1773,7 +1876,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000264
   host_height_unit:
@@ -1790,7 +1894,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: New
+      source:
+      - New
     enum_values:
       mm:
         meaning: mm
@@ -1814,7 +1919,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000256
   host_length_unit:
@@ -1831,7 +1937,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: New
+      source:
+      - New
     enum_values:
       mm:
         meaning: mm
@@ -1859,7 +1966,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000251
@@ -1881,7 +1989,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000248
   host_tot_mass:
@@ -1898,7 +2007,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000263
   host_tot_mass_unit:
@@ -1915,7 +2025,8 @@ slots:
       sample_type_specificity:
       - HostAssociated
       - SymbiontAssociated
-      source: New
+      source:
+      - New
     enum_values:
       mg:
         meaning: mg
@@ -1943,7 +2054,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - Air
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000100
   identificationRemarks:
@@ -1961,7 +2073,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/identificationRemarks
   informationWithheld:
@@ -1976,7 +2089,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/informationWithheld
   inhibition_check:
@@ -1995,7 +2109,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   inhibition_check_0_1:
     name: inhibition_check_0_1
     description: Was the inhibition checked? Yes = 1, No = 0
@@ -2007,7 +2122,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   input_read_count:
     name: input_read_count
     description: The total number of raw sequence reads for each sample. Unit = reads
@@ -2022,7 +2138,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: NMDC
+      source:
+      - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/input_read_count
   institution:
@@ -2037,7 +2154,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   institutionID:
     name: institutionID
     description: An identifier for the institution having custody of the object(s)
@@ -2052,7 +2170,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/institutionID
   instrument:
@@ -2067,7 +2186,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: INSDC
+      source:
+      - INSDC
   intercept:
     name: intercept
     description: Intercept of a qPCR standard curve. This shall be specific to each
@@ -2080,7 +2200,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: R
-      source: MIQE
+      source:
+      - MIQE
   kingdom:
     name: kingdom
     description: The full scientific name of the kingdom
@@ -2095,7 +2216,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/kingdom
   lib_conc:
@@ -2110,7 +2232,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   lib_conc_meth:
     name: lib_conc_meth
     description: Method to estimate lib_conc
@@ -2122,7 +2245,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   lib_conc_unit:
     name: lib_conc_unit
     description: Unit for lib_conc
@@ -2134,7 +2258,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       ng/µL:
         meaning: ng/µL
@@ -2156,7 +2281,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -2171,7 +2297,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000041
     enum_values:
@@ -2196,7 +2324,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000043
   license:
@@ -2211,7 +2341,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/terms/#dcterms:license
   light_intensity:
@@ -2233,7 +2364,8 @@ slots:
       - Air
       - MicrobialMatBiofilm
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000706
   lod_method:
@@ -2247,7 +2379,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   loq_method:
     name: loq_method
     description: Method used for determining LOQ e.g., DOI of a published procedure
@@ -2259,7 +2392,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   materialSampleID:
     name: materialSampleID
     description: An identifier for the physical sample (as opposed to the extracted
@@ -2275,7 +2409,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/materialSampleID
   maximumDepthInMeters:
@@ -2303,7 +2438,8 @@ slots:
       - HostAssociated
       - MicrobialMatBiofilm
       - SymbiontAssociated
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
   merge_min_overlap:
@@ -2319,7 +2455,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   merge_tool:
     name: merge_tool
     description: Software and the version to merge paired end reads
@@ -2331,7 +2468,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   mid_forward:
     name: mid_forward
     description: Forward multiplex Identifiers (MIDs), that was used to specifically
@@ -2347,7 +2485,9 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: O
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000047
   mid_reverse:
@@ -2365,7 +2505,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   min_len_cutoff:
     name: min_len_cutoff
     description: Minimum length threshold. Unit = base pair
@@ -2378,7 +2519,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   min_len_tool:
     name: min_len_tool
     description: Software and the version to remove reads shorter than minimum length
@@ -2391,7 +2533,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   min_reads_cutoff:
     name: min_reads_cutoff
     description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read
@@ -2407,7 +2550,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   min_reads_cutoff_unit:
     name: min_reads_cutoff_unit
     description: The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
@@ -2419,7 +2563,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       reads:
         meaning: reads
@@ -2438,7 +2583,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   minimumDepthInMeters:
     name: minimumDepthInMeters
     description: The lesser depth of a range of depth (vertical distance below the
@@ -2464,7 +2610,8 @@ slots:
       - HostAssociated
       - MicrobialMatBiofilm
       - SymbiontAssociated
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
   mod_date:
@@ -2484,7 +2631,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: NMDC
+      source:
+      - NMDC
       fixed_format: yyyy-mm-dd
     skos:exactMatch:
     - https://w3id.org/nmdc/mod_date
@@ -2501,7 +2649,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   neg_cont_type:
     name: neg_cont_type
     description: 'A negative control type used in an investigation. See Table 2 in
@@ -2520,7 +2669,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001321
     enum_values:
@@ -2553,7 +2703,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000425
   nitrate_unit:
@@ -2573,7 +2724,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -2618,7 +2770,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000426
   nitrite_unit:
@@ -2638,7 +2791,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -2683,7 +2837,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000504
   nitro_unit:
@@ -2703,7 +2858,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -2745,7 +2901,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000038
   nucl_acid_ext:
@@ -2765,7 +2922,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000037
   nucl_acid_ext_kit:
@@ -2782,7 +2941,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: HR
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001223
   nucl_acid_ext_lysis:
@@ -2799,7 +2959,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       physical:
         meaning: physical
@@ -2824,7 +2985,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   nucl_acid_ext_modify:
     name: nucl_acid_ext_modify
     description: Description of modification made from a commercial or established
@@ -2840,7 +3002,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   nucl_acid_ext_sep:
     name: nucl_acid_ext_sep
     description: The approach used to separate DNA from a mixture.
@@ -2852,7 +3015,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       column-based:
         meaning: column-based
@@ -2880,7 +3044,8 @@ slots:
       data_type:
       - eLowQuantData
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   order:
     name: order
     description: The full scientific name of the order
@@ -2895,7 +3060,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/order
   org_carb:
@@ -2915,7 +3081,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000508
   org_carb_unit:
@@ -2935,7 +3102,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -2980,7 +3148,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000204
   org_matter_unit:
@@ -3000,7 +3169,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -3045,7 +3215,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000205
   org_nitro_unit:
@@ -3065,7 +3236,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -3109,7 +3281,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000085
   otu_clust_tool:
@@ -3123,7 +3297,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   otu_db:
     name: otu_db
     description: List of reference database(s) (i.e. sequences not generated as part
@@ -3140,7 +3315,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000087
   otu_db_custom:
@@ -3156,7 +3333,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   otu_final_description:
     name: otu_final_description
     description: A description of the data curation and processing steps applied to
@@ -3170,7 +3348,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   otu_num_tax_assigned:
     name: otu_num_tax_assigned
     description: Total number of OTUs or ASVs assigned to taxa based on the study-specific
@@ -3183,7 +3362,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   otu_raw_description:
     name: otu_raw_description
     description: A description of the data curation and processing steps applied to
@@ -3196,7 +3376,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   otu_seq_comp_appr:
     name: otu_seq_comp_appr
     description: Alignment tool/software used for taxonomic assignment
@@ -3210,7 +3391,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000086
   output_otu_num:
@@ -3224,7 +3407,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   output_read_count:
     name: output_read_count
     description: The number of filtered sequence reads for each sample, that made
@@ -3241,7 +3425,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: NMDC
+      source:
+      - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/output_read_count
   parent_project_id:
@@ -3256,7 +3441,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   part_org_carb:
     name: part_org_carb
     description: Concentration of particulate organic carbon
@@ -3274,7 +3460,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000515
   part_org_carb_unit:
@@ -3294,7 +3481,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -3339,7 +3527,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000719
   part_org_nitro_unit:
@@ -3359,7 +3548,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -3399,7 +3589,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   pcr2_analysis_software:
     name: pcr2_analysis_software
     description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
@@ -3412,7 +3603,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   pcr2_annealingTemp:
     name: pcr2_annealingTemp
     description: (If bacroding_pcr_appr = "two-step PCR") The reaction temperature
@@ -3426,7 +3618,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_commercial_mm:
     name: pcr2_commercial_mm
     description: (If bacroding_pcr_appr = "two-step PCR") Name, brand, and manufacture
@@ -3440,7 +3633,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_cond:
     name: pcr2_cond
     description: (If bacroding_pcr_appr = "two-step PCR") Description of reaction
@@ -3455,7 +3649,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
       fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
         elongation:degrees_minutes;total cycles
   pcr2_custom_mm:
@@ -3477,7 +3672,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_cycles:
     name: pcr2_cycles
     description: (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in
@@ -3491,7 +3687,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_dna_vol:
     name: pcr2_dna_vol
     description: (If bacroding_pcr_appr = "two-step PCR") Volume of DNA added in each
@@ -3505,7 +3702,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_method_additional:
     name: pcr2_method_additional
     description: (If bacroding_pcr_appr = "two-step PCR") Additional information on
@@ -3521,7 +3719,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   pcr2_plate_id:
     name: pcr2_plate_id
     description: (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
@@ -3534,7 +3733,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr2_thermocycler:
     name: pcr2_thermocycler
     description: (If bacroding_pcr_appr = "two-step PCR") The manufacturer and model
@@ -3547,7 +3747,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   pcr_0_1:
     name: pcr_0_1
     description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches
@@ -3560,7 +3761,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   pcr_analysis_software:
     name: pcr_analysis_software
     description: The program used to analyse the PCR runs. If two-step PCR was applied
@@ -3576,7 +3778,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_assay_lod:
@@ -3595,7 +3798,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_assay_lod_LL:
@@ -3610,7 +3815,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_lod_UL:
     name: pcr_assay_lod_UL
     description: 'Upper 95% confidence limit for LOD for a given number of technical
@@ -3623,7 +3829,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_lod_techreps:
     name: pcr_assay_lod_techreps
     description: 'The number of technical replicates that the LOD is applied to. See
@@ -3636,7 +3843,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_lod_unit:
     name: pcr_assay_lod_unit
     description: Unit for pcr_assay_lod
@@ -3649,7 +3857,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       copies/reaction:
         meaning: copies/reaction
@@ -3678,7 +3887,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_assay_loq_LL:
@@ -3693,7 +3904,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_loq_UL:
     name: pcr_assay_loq_UL
     description: 'Upper 95% confidence limit for LOQ for a given number of technical
@@ -3706,7 +3918,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_loq_techreps:
     name: pcr_assay_loq_techreps
     description: 'The number of technical replicates that the LOQ is applied to. See
@@ -3719,7 +3932,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_assay_loq_unit:
     name: pcr_assay_loq_unit
     description: unit for pcr_assay_loq
@@ -3732,7 +3946,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       copies/reaction:
         meaning: copies/reaction
@@ -3761,7 +3976,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
       fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
         elongation:degrees_minutes;total cycles
     skos:exactMatch:
@@ -3782,7 +3999,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: NMDC
+      source:
+      - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/pcr_cycles
   pcr_dna_vol:
@@ -3797,7 +4015,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   pcr_method_additional:
     name: pcr_method_additional
     description: Additional information on PCR or PCR-free method, that has not been
@@ -3814,7 +4033,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   pcr_plate_id:
     name: pcr_plate_id
     description: PCR plate ID. This identifier is particularly crucial when location-specific
@@ -3833,7 +4053,8 @@ slots:
       - ampData
       - stdData
       requirement_level_code: M
-      source: New
+      source:
+      - New
   pcr_primer_conc_forward:
     name: pcr_primer_conc_forward
     description: The stock concentration of the forward PCR primer (pcr_primer_forward).
@@ -3850,7 +4071,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIQE
+      source:
+      - MIQE
   pcr_primer_conc_reverse:
     name: pcr_primer_conc_reverse
     description: The stock concentration of the reverse PCR primer (pcr_primer_reverse).
@@ -3867,7 +4089,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIQE
+      source:
+      - MIQE
   pcr_primer_forward:
     name: pcr_primer_forward
     description: Forward PCR primer (5' - 3') that were used to amplify the sequence
@@ -3890,7 +4113,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_name_forward:
@@ -3907,7 +4131,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_name_reverse:
@@ -3924,7 +4149,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_reference_forward:
@@ -3942,7 +4168,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_reference_reverse:
@@ -3960,7 +4187,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_reverse:
@@ -3985,7 +4213,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   pcr_primer_vol_forward:
@@ -4000,7 +4229,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_primer_vol_reverse:
     name: pcr_primer_vol_reverse
     description: Volume of pcr_primer_reverse per reaction. Unit = µL
@@ -4013,7 +4243,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   pcr_rep:
     name: pcr_rep
     description: The number of PCR technical replicates. For metabarcoding, each replicate
@@ -4026,7 +4257,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   percent_match:
     name: percent_match
     description: The percentage of sequence identity between a query sequence obtained
@@ -4042,7 +4274,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: New
+      source:
+      - New
   percent_query_cover:
     name: percent_query_cover
     description: The percentage coverage of the query sequence that aligns with a
@@ -4058,7 +4291,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: New
+      source:
+      - New
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -4077,7 +4311,8 @@ slots:
       - Soil
       - Sediment
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001001
   ph_meth:
@@ -4096,7 +4331,8 @@ slots:
       - Soil
       - Sediment
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001106
   phix_perc:
@@ -4111,7 +4347,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   phylum:
     name: phylum
     description: The full scientific name of the phylum or division
@@ -4126,7 +4363,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/phylum
   platform:
@@ -4140,7 +4378,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: INSDC
+      source:
+      - INSDC
     enum_values:
       ILLUMINA:
         meaning: ILLUMINA
@@ -4189,7 +4428,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000325
   pos_cont_0_1:
@@ -4205,7 +4445,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   pos_cont_type:
     name: pos_cont_type
     description: 'A positive control type used in an investigation. See Table 2 in
@@ -4222,7 +4463,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001322
   precip_chem_prep:
@@ -4244,7 +4486,8 @@ slots:
       - Water
       - Soil
       - Sediment
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
     enum_values:
       ethanol:
         meaning: ethanol
@@ -4274,7 +4517,8 @@ slots:
       - Water
       - Soil
       - Sediment
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   precip_temp_prep:
     name: precip_temp_prep
     description: Temperature used in precipitation at the sample preparation step
@@ -4295,7 +4539,8 @@ slots:
       - Water
       - Soil
       - Sediment
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   precip_time_prep:
     name: precip_time_prep
     description: Duration of precipitation at the sample preparation step prior to
@@ -4316,7 +4561,8 @@ slots:
       - Water
       - Soil
       - Sediment
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   prefilter_material:
     name: prefilter_material
     description: Material used to pre-filter/pre-sort the sample
@@ -4331,7 +4577,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
   prep_method_additional:
     name: prep_method_additional
     description: Additional information on sample preparation, storage and preservation
@@ -4348,7 +4595,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - ALL
-      source: New
+      source:
+      - New
   prepped_samp_store_dur:
     name: prepped_samp_store_dur
     description: 'Duration for which the prepared sample was stored prior to DNA extraction,
@@ -4368,7 +4616,8 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: New
+      source:
+      - New
       fixed_format: PnYnMnWnDTnHnMnS
   prepped_samp_store_sol:
     name: prepped_samp_store_sol
@@ -4387,7 +4636,8 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: New
+      source:
+      - New
     enum_values:
       ethanol:
         meaning: ethanol
@@ -4424,7 +4674,8 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: Thalinger et al., 2021
+      source:
+      - Thalinger et al., 2021
   probeQuencher:
     name: probeQuencher
     description: Type of quencher used. The quencher molecule quenches the fluorescence
@@ -4441,7 +4692,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
     enum_values:
@@ -4471,7 +4724,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   probe_conc:
@@ -4490,7 +4745,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   probe_ref:
     name: probe_ref
     description: Reference (i.e. DOI) of the probe_seq
@@ -4502,7 +4758,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   probe_seq:
     name: probe_seq
     description: If applicable, probe sequence in the 5' to 3' direction
@@ -4514,7 +4771,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   project_contact:
     name: project_contact
     description: A contact person and their contact (i.e., email address) for data
@@ -4527,7 +4785,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   project_id:
     name: project_id
     description: A brief, concise project identifier with no spaces or special characters,
@@ -4540,7 +4799,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: NMDC | NOAA
+      source:
+      - NMDC
+      - NOAA
     skos:exactMatch:
     - https://w3id.org/nmdc/project_id
   project_name:
@@ -4554,7 +4815,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000092
   pump_flow_rate:
@@ -4571,7 +4834,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
   pump_flow_rate_unit:
     name: pump_flow_rate_unit
     description: Unit for pump_flow_rate
@@ -4586,7 +4850,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
     enum_values:
       m3/s:
         meaning: m3/s
@@ -4624,7 +4889,9 @@ slots:
       - ampData
       - stdData
       requirement_level_code: M
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   r2:
@@ -4639,7 +4906,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: HR
-      source: MIQE
+      source:
+      - MIQE
   ratioOfAbsorbance260_280:
     name: ratioOfAbsorbance260_280
     description: Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
@@ -4654,7 +4922,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DNA-derived data extension
+      source:
+      - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   recordedBy:
@@ -4671,7 +4940,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/list/#dwc_recordedBy
   recordedByID:
@@ -4688,7 +4958,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/list/#dwc_recordedByID
   rel_cont_id:
@@ -4703,7 +4974,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   rfu:
     name: rfu
     description: Relative Fluorescence Units (RFU). No unit
@@ -4717,7 +4989,8 @@ slots:
       - ampData
       - stdData
       requirement_level_code: O
-      source: New
+      source:
+      - New
   rightsHolder:
     name: rightsHolder
     description: A person or organization owning or managing rights over the resource.
@@ -4729,7 +5002,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/rightsHolder
   salinity:
@@ -4755,7 +5029,8 @@ slots:
       - HostAssociated
       - MicrobialMatBiofilm
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000183
   samp_category:
@@ -4771,7 +5046,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       sample:
         meaning: sample
@@ -4801,7 +5077,9 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000002
   samp_collect_method:
@@ -4820,7 +5098,9 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0001225
   samp_mat_process:
@@ -4841,7 +5121,9 @@ slots:
       requirement_level_code: R
       sample_type_specificity:
       - ALL
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000016
   samp_name:
@@ -4861,7 +5143,9 @@ slots:
       - stdData
       - experimentRunMetadata
       requirement_level_code: M
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0001107
   samp_size:
@@ -4883,7 +5167,9 @@ slots:
       requirement_level_code: HR
       sample_type_specificity:
       - ALL
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000001
   samp_size_unit:
@@ -4899,7 +5185,8 @@ slots:
       requirement_level_code: HR
       sample_type_specificity:
       - ALL
-      source: New
+      source:
+      - New
     enum_values:
       mL:
         meaning: mL
@@ -4941,7 +5228,8 @@ slots:
       requirement_level_code: HR
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
       fixed_format: PnYnMnWnDTnHnMnS
     skos:exactMatch:
     - https://w3id.org/mixs/0000116
@@ -4956,7 +5244,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000755
   samp_store_method_additional:
@@ -4973,7 +5262,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - ALL
-      source: New
+      source:
+      - New
   samp_store_sol:
     name: samp_store_sol
     description: 'Solution within which the sample was stored. Note: If a sample was
@@ -4993,7 +5283,8 @@ slots:
       requirement_level_code: HR
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001317
     enum_values:
@@ -5031,7 +5322,8 @@ slots:
       requirement_level_code: HR
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000110
   samp_vol_we_dna_ext:
@@ -5052,7 +5344,9 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000111
   samp_vol_we_dna_ext_unit:
@@ -5066,7 +5360,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
     enum_values:
       mL:
         meaning: mL
@@ -5101,7 +5396,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000827
   sample_composed_of:
@@ -5119,7 +5415,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: INSDC
+      source:
+      - INSDC
       fixed_format: (a list of) samp_name
   sample_derived_from:
     name: sample_derived_from
@@ -5137,7 +5434,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: INSDC
+      source:
+      - INSDC
       fixed_format: (a list of) samp_name
   scientificName:
     name: scientificName
@@ -5153,7 +5451,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: HR
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/scientificName
   scientificNameAuthorship:
@@ -5170,7 +5469,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
   screen_contam_method:
@@ -5186,7 +5486,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   screen_geograph_method:
     name: screen_geograph_method
     description: How were species distribution information screened and applied?
@@ -5200,7 +5501,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   screen_nontarget_method:
     name: screen_nontarget_method
     description: How were non-target species screened and applied?
@@ -5215,7 +5517,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   screen_other:
     name: screen_other
     description: Description of other screening criteria and approaches
@@ -5226,7 +5529,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   seq_id:
     name: seq_id
     description: Query sequence ID. Must be unique within the dataset
@@ -5240,7 +5544,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: M
-      source: New
+      source:
+      - New
   seq_kit:
     name: seq_kit
     description: The name of sequencing kit
@@ -5252,7 +5557,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   seq_method_additional:
     name: seq_method_additional
     description: Additional information on library preparation and sequencing method,
@@ -5265,7 +5571,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   seq_run_id:
     name: seq_run_id
     description: A brief, concise identifier for sequencing run with no spaces or
@@ -5280,7 +5587,8 @@ slots:
       data_type:
       - experimentRunMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   sequencing_location:
     name: sequencing_location
     description: The location the sequencing run was performed. Indicate the name
@@ -5293,7 +5601,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001156
   size_frac:
@@ -5311,7 +5620,9 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000017
   size_frac_low:
@@ -5333,7 +5644,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000735
   slope:
@@ -5347,7 +5659,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: R
-      source: MIQE
+      source:
+      - MIQE
   solar_irradiance:
     name: solar_irradiance
     description: Description and/or the amount of solar energy that arrives at a specific
@@ -5368,7 +5681,8 @@ slots:
       - Soil
       - Sediment
       - Air
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000112
   sop_bioinformatics:
@@ -5387,7 +5701,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000090
   specificEpithet:
@@ -5404,7 +5720,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: R
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/specificEpithet
   stationed_sample_dur:
@@ -5426,7 +5743,8 @@ slots:
       sample_type_specificity:
       - Water
       - Air
-      source: New
+      source:
+      - New
       fixed_format: PnYnMnWnDTnHnMnS
   std_conc:
     name: std_conc
@@ -5440,7 +5758,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: M
-      source: New
+      source:
+      - New
   std_conc_unit:
     name: std_conc_unit
     description: Unit for input quantity of qPCR standard DNA
@@ -5452,7 +5771,8 @@ slots:
       data_type:
       - stdData
       requirement_level_code: M
-      source: New
+      source:
+      - New
     enum_values:
       copies/reaction:
         meaning: copies/reaction
@@ -5479,7 +5799,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   std_source:
     name: std_source
     description: The source of standard used for standard curves
@@ -5491,7 +5812,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   std_type:
     name: std_type
     description: The type of standard used for standard curves
@@ -5503,7 +5825,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
     enum_values:
       synthetic double-stranded DNA:
         meaning: synthetic double-stranded DNA
@@ -5528,7 +5851,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   study_factor:
     name: study_factor
     description: The variable(s) examined in the study, including those of direct
@@ -5541,7 +5865,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   suspend_part_matter:
     name: suspend_part_matter
     description: Concentration of suspended particulate matter. Unit = mg/L
@@ -5556,7 +5881,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - Water
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000741
   targetTaxonomicAssay:
@@ -5572,7 +5898,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: New
+      source:
+      - New
   targetTaxonomicScope:
     name: targetTaxonomicScope
     description: The taxonomic group(s) targeted in the study. This can differ from
@@ -5586,7 +5913,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: Humboldt extension
+      source:
+      - Humboldt extension
     skos:exactMatch:
     - http://rs.tdwg.org/eco/terms/targetTaxonomicScope
   target_gene:
@@ -5602,7 +5930,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000044
     enum_values:
@@ -5676,7 +6006,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000045
   targeted_detection_method_additional:
@@ -5690,7 +6022,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   tax_assign_cat:
     name: tax_assign_cat
     description: 'High-level category of taxonomic assignment approach. Examples using
@@ -5705,7 +6038,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: HR
-      source: New
+      source:
+      - New
     enum_values:
       sequence similarity:
         meaning: sequence similarity
@@ -5731,7 +6065,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   tax_class_id_cutoff:
     name: tax_class_id_cutoff
     description: Minimum percent identity for taxonomic assignment. Unit = %
@@ -5744,7 +6079,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   tax_class_other:
     name: tax_class_other
     description: Additional information on parameters and cutoffs used for taxonomic
@@ -5758,7 +6094,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: MIxS | DNA-derived data extension
+      source:
+      - MIxS
+      - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000064
   tax_class_query_cutoff:
@@ -5773,7 +6111,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   taxonID:
     name: taxonID
     description: An identifier for the assigned taxon (or taxa in the case of multiple
@@ -5790,7 +6129,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: HR
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/taxonID
   taxonID_db:
@@ -5805,7 +6145,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: HR
-      source: New
+      source:
+      - New
   taxonRank:
     name: taxonRank
     description: The taxonomic rank of the most specific name in the scientificName
@@ -5818,7 +6159,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: HR
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/taxonRank
     enum_values:
@@ -5851,7 +6193,8 @@ slots:
       - ampData
       - stdData
       requirement_level_code: M
-      source: New
+      source:
+      - New
   temp:
     name: temp
     description: Temperature of the sample at the time of sampling in degree Celsius
@@ -5866,7 +6209,8 @@ slots:
       requirement_level_code: O
       sample_type_specificity:
       - ALL
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000113
   thermocycler:
@@ -5880,7 +6224,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: O
-      source: MIQE
+      source:
+      - MIQE
   thresholdQuantificationCycle:
     name: thresholdQuantificationCycle
     description: Threshold for change in fluorescence signal between cycles. No unit.
@@ -5894,7 +6239,9 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: M
-      source: DNA-derived data extension | MIQE
+      source:
+      - DNA-derived data extension
+      - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
   tidal_stage:
@@ -5911,7 +6258,8 @@ slots:
       sample_type_specificity:
       - Water
       - Sediment
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000750
   tot_carb:
@@ -5931,7 +6279,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000525
   tot_carb_unit:
@@ -5951,7 +6300,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6002,7 +6352,8 @@ slots:
       - HostAssociated
       - MicrobialMatBiofilm
       - SymbiontAssociated
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000634
   tot_diss_nitro:
@@ -6023,7 +6374,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000744
   tot_diss_nitro_unit:
@@ -6043,7 +6395,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6088,7 +6441,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000745
   tot_inorg_nitro_unit:
@@ -6108,7 +6462,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6155,7 +6510,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000102
   tot_nitro_cont_meth:
@@ -6175,7 +6531,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000338
   tot_nitro_content:
@@ -6195,7 +6552,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000530
   tot_nitro_content_unit:
@@ -6215,7 +6573,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6260,7 +6619,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6305,7 +6665,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000337
   tot_org_carb:
@@ -6325,7 +6686,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000533
   tot_org_carb_unit:
@@ -6345,7 +6707,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6390,7 +6753,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000747
   tot_part_carb_unit:
@@ -6410,7 +6774,8 @@ slots:
       - Sediment
       - Air
       - MicrobialMatBiofilm
-      source: New
+      source:
+      - New
     enum_values:
       µM:
         meaning: µM
@@ -6452,7 +6817,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: NOAA
+      source:
+      - NOAA
   trim_param:
     name: trim_param
     description: Parameters and cutoffs used to trim if not default
@@ -6464,7 +6830,8 @@ slots:
       data_type:
       - projectMetadata
       requirement_level_code: R
-      source: New
+      source:
+      - New
   turbidity:
     name: turbidity
     description: Measure of the amount of cloudiness or haziness in water caused by
@@ -6482,7 +6849,8 @@ slots:
       - Water
       - Sediment
       - MicrobialMatBiofilm
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000191
   verbatimCoordinateSystem:
@@ -6499,7 +6867,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
     enum_values:
@@ -6524,7 +6893,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimEventDate
   verbatimEventTime:
@@ -6539,7 +6909,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: New
+      source:
+      - New
   verbatimIdentification:
     name: verbatimIdentification
     description: A string representing the taxonomic identification as it appeared
@@ -6557,7 +6928,8 @@ slots:
       - taxaRaw
       - taxaFinal
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimIdentification
   verbatimLatitude:
@@ -6575,7 +6947,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimLatitude
   verbatimLongitude:
@@ -6593,7 +6966,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimLongitude
   verbatimSRS:
@@ -6611,7 +6985,8 @@ slots:
       data_type:
       - sampleMetadata
       requirement_level_code: O
-      source: DwC
+      source:
+      - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimSRS
     enum_values:
@@ -6647,7 +7022,8 @@ slots:
       sample_type_specificity:
       - Water
       - Sediment
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000203
   wind_direction:
@@ -6669,7 +7045,8 @@ slots:
       - Soil
       - Sediment
       - Air
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000757
   wind_speed:
@@ -6689,7 +7066,8 @@ slots:
       - Soil
       - Sediment
       - Air
-      source: MIxS
+      source:
+      - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000118
 enums: {}
