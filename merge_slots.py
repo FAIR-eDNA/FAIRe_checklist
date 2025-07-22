@@ -38,9 +38,15 @@ for file_name in os.listdir(SLOTS_DIR):
         slot_path = os.path.join(SLOTS_DIR, file_name)
         with open(slot_path, "r") as f:
             slot_content = yaml.safe_load(f)
-            for slot_name, slot_def in slot_content.items():
-                schema["slots"][slot_name] = slot_def
+            # Support flat files where the slot name is in the 'name' field
+            if "name" in slot_content:
+                slot_name = slot_content["name"]
+                schema["slots"][slot_name] = slot_content
                 schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+            else:
+                for slot_name, slot_def in slot_content.items():
+                    schema["slots"][slot_name] = slot_def
+                    schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
 
 header_comment = (
     "# ============================\n"
