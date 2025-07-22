@@ -1,10 +1,23 @@
-verbatimCoordinateSystem:
-  description: The coordinate format of the verbatimLatitude and verbatimLongitude
-  range: verbatimCoordinateSystem_enum
-  annotations:
-    section: Sample collection
-    requirement_level: Optional
-    example: degrees minutes seconds
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
-  identifier: http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
+name: verbatimCoordinateSystem
+description: The coordinate format of the verbatimLatitude and verbatimLongitude
+range: verbatimCoordinateSystem_enum
+annotations:
+  section: Sample collection
+  requirement_level: Optional
+  example: degrees minutes seconds
+  modifications_made:
+  - description
+  - field_type
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
+enum_values:
+  decimal degrees:
+    meaning: decimal degrees
+  degrees minutes seconds:
+    meaning: degrees minutes seconds
+  UTM:
+    meaning: UTM
+  'other:':
+    meaning: 'other:'

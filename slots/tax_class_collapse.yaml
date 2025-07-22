@@ -1,10 +1,12 @@
-tax_class_collapse:
-  description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest
-    common ancestor
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: Taxonomic levels were dropped to the lowest common ancestor (LCA) with
-      the similarity thresholds of 99%, and also based on % identify thresholds (>98%
-      species, 95-98% genus, 90-95% family).
+name: tax_class_collapse
+description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
+  ancestor
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: Taxonomic levels were dropped to the lowest common ancestor (LCA) with
+    the similarity thresholds of 99%, and also based on % identify thresholds (>98%
+    species, 95-98% genus, 90-95% family).
+  data_type:
+  - projectMetadata

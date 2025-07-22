@@ -1,11 +1,14 @@
-pcr_primer_name_forward:
-  description: Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
-    list the names respectively, separated by pipe ( | ).
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Recommended
-    example: mlCOIintF
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/pcr_primer_name_forward
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: pcr_primer_name_forward
+description: Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
+  list the names respectively, separated by pipe ( | ).
+range: string
+annotations:
+  section: PCR
+  requirement_level: Recommended
+  example: mlCOIintF
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

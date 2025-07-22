@@ -1,7 +1,18 @@
-host_height_unit:
-  description: The unit of host_height
-  range: host_height_unit_enum
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: cm
+name: host_height_unit
+description: The unit of host_height
+range: host_height_unit_enum
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: cm
+  data_type:
+  - sampleMetadata
+enum_values:
+  mm:
+    meaning: mm
+  cm:
+    meaning: cm
+  m:
+    meaning: m
+  'other:':
+    meaning: 'other:'

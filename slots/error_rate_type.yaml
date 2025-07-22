@@ -1,7 +1,16 @@
-error_rate_type:
-  description: The type/unit of error rate for the error rate threshold
-  range: error_rate_type_enum
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: Phred score
+name: error_rate_type
+description: The type/unit of error rate for the error rate threshold
+range: error_rate_type_enum
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: Phred score
+  data_type:
+  - projectMetadata
+enum_values:
+  Phred score:
+    meaning: Phred score
+  expected error rate:
+    meaning: expected error rate
+  'other:':
+    meaning: 'other:'

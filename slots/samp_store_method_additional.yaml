@@ -1,8 +1,10 @@
-samp_store_method_additional:
-  description: Additional information on sample storage method, that has not been
-    shared in the given record.
-  range: string
-  annotations:
-    section: Sample storage
-    requirement_level: Optional
-    example: The sample was thawed overnight at room temperature prior to DNA extraction
+name: samp_store_method_additional
+description: Additional information on sample storage method, that has not been shared
+  in the given record.
+range: string
+annotations:
+  section: Sample storage
+  requirement_level: Optional
+  example: The sample was thawed overnight at room temperature prior to DNA extraction
+  data_type:
+  - sampleMetadata

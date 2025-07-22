@@ -1,13 +1,18 @@
-decimalLatitude:
-  description: The geographic latitude in decimal degrees using WGS84 datum. Positive
-    values are north of the Equator, negative values are south of it. Legal values
-    lie between -90 and 90, inclusive. The desired minimum number of decimal places
-    is the hundred-thousandth (0.00001) to achieve meter scale resolution.
-  range: float
-  annotations:
-    section: Sample collection
-    requirement_level: Mandatory
-    example: '-41.09834'
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/decimalLatitude
-  identifier: http://rs.tdwg.org/dwc/terms/decimalLatitude
+name: decimalLatitude
+description: The geographic latitude in decimal degrees using WGS84 datum. Positive
+  values are north of the Equator, negative values are south of it. Legal values lie
+  between -90 and 90, inclusive. The desired minimum number of decimal places is the
+  hundred-thousandth (0.00001) to achieve meter scale resolution.
+range: float
+annotations:
+  section: Sample collection
+  requirement_level: Mandatory
+  example: '-41.09834'
+  requirement_level_condition: Mandatory unless specified under the term informationWithheld,
+    or samp_category = negative control, positive control, or PCR standard
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/decimalLatitude

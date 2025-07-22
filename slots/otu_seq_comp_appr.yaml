@@ -1,11 +1,13 @@
-otu_seq_comp_appr:
-  description: Alignment tool/software used for taxonomic assignment
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Highly recommended
-    example: blastn;2.6.0+
-    skos:exactMatch:
-    - https://w3id.org/mixs/otu_seq_comp_appr
-    - http://rs.gbif.org/terms/1.0/otu_seq_comp_appr
-  identifier: https://w3id.org/mixs/0000086
+name: otu_seq_comp_appr
+description: Alignment tool/software used for taxonomic assignment
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Highly recommended
+  example: blastn;2.6.0+
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000086

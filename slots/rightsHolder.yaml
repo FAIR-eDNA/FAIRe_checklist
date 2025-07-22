@@ -1,10 +1,11 @@
-rightsHolder:
-  description: A person or organization owning or managing rights over the resource.
-  range: string
-  annotations:
-    section: Data management
-    requirement_level: Recommended
-    example: The Regents of the University of California
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/rightsHolder
-  identifier: http://purl.org/dc/terms/rightsHolder
+name: rightsHolder
+description: A person or organization owning or managing rights over the resource.
+range: string
+annotations:
+  section: Data management
+  requirement_level: Recommended
+  example: The Regents of the University of California
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- http://purl.org/dc/terms/rightsHolder

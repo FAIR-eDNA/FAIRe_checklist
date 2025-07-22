@@ -1,8 +1,10 @@
-pcr2_plate_id:
-  description: (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
-    PCR
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: 20240802_pcr1
+name: pcr2_plate_id
+description: (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
+  PCR
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: 20240802_pcr1
+  data_type:
+  - projectMetadata

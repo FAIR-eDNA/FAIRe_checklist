@@ -1,8 +1,20 @@
-estimatedNumberOfCopies_error_type:
-  description: The specific type of variability measure (e.g., standard error, standard
-    deviation) used to describe estimatedNumberOfCopies_error.
-  range: estimatedNumberOfCopies_error_type_enum
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: standard error
+name: estimatedNumberOfCopies_error_type
+description: The specific type of variability measure (e.g., standard error, standard
+  deviation) used to describe estimatedNumberOfCopies_error.
+range: estimatedNumberOfCopies_error_type_enum
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: standard error
+  data_type:
+  - ampData
+  - eLowQuantData
+enum_values:
+  standard error:
+    meaning: standard error
+  standard deviation:
+    meaning: standard deviation
+  95% confidence interval:
+    meaning: 95% confidence interval
+  'other:':
+    meaning: 'other:'

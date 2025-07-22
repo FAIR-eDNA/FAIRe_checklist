@@ -1,10 +1,11 @@
-tot_org_c_meth:
-  description: Reference or method used in determining total organic carbon
-  range: string
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: https://www.epa.gov/sites/default/files/2015-12/documents/9060a.pdf
-    skos:exactMatch:
-    - https://w3id.org/mixs/tot_org_c_meth
-  identifier: https://w3id.org/mixs/0000337
+name: tot_org_c_meth
+description: Reference or method used in determining total organic carbon
+range: string
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: https://www.epa.gov/sites/default/files/2015-12/documents/9060a.pdf
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000337

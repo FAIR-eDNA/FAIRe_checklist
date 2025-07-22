@@ -1,9 +1,11 @@
-pcr2_commercial_mm:
-  description: (If bacroding_pcr_appr = "two-step PCR") Name, brand, and manufacture
-    of commercial, pre-made master mix  in the second step PCR (if commercial master
-    mix was used)
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: Luna® Universal qPCR Master Mix, New England Biolabs
+name: pcr2_commercial_mm
+description: (If bacroding_pcr_appr = "two-step PCR") Name, brand, and manufacture
+  of commercial, pre-made master mix  in the second step PCR (if commercial master
+  mix was used)
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: "Luna\xAE Universal qPCR Master Mix, New England Biolabs"
+  data_type:
+  - projectMetadata

@@ -1,11 +1,13 @@
-thresholdQuantificationCycle:
-  description: Threshold for change in fluorescence signal between cycles. No unit.
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Mandatory
-    unit: No unit
-    example: '0.3'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/thresholdQuantificationCycle
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: thresholdQuantificationCycle
+description: Threshold for change in fluorescence signal between cycles. No unit.
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Mandatory
+  example: '0.3'
+  unit: No unit
+  requirement_level_condition: If assay_type = targeted & amp_vis_method = qPCR
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -1,9 +1,11 @@
-pcr2_dna_vol:
-  description: (If bacroding_pcr_appr = "two-step PCR") Volume of DNA added in each
-    reaction in the second step PCR. Unit = µL
-  range: float
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    unit: µL
-    example: '2.0'
+name: pcr2_dna_vol
+description: "(If bacroding_pcr_appr = \"two-step PCR\") Volume of DNA added in each\
+  \ reaction in the second step PCR. Unit = \xB5L"
+range: float
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: '2.0'
+  unit: "\xB5L"
+  data_type:
+  - projectMetadata

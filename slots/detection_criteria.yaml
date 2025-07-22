@@ -1,8 +1,14 @@
-detection_criteria:
-  description: Criteria to determine positive detection. For example, a certain number
-    of positive amplifications per sample, sanger sequencing of amplicons
-  range: string
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Mandatory
-    example: The minimum number of PCR replicates of 2 with positive amplification
+name: detection_criteria
+description: Criteria to determine positive detection. For example, a certain number
+  of positive amplifications per sample, sanger sequencing of amplicons
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Mandatory
+  example: The minimum number of PCR replicates of 2 with positive amplification
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - projectMetadata

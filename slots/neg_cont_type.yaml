@@ -1,14 +1,31 @@
-neg_cont_type:
-  description: A negative control type used in an investigation. See Table 2 in Klymus
-    et al. 2024 (DOI) for the description of each control type, how and why it's created.
-    For example, process negative is a sample added during processing that lacks target
-    DNA, such as blank filter papers.
-  range: neg_cont_type_enum
-  annotations:
-    section: Sample information
-    requirement_level: Mandatory
-    example: field negative | process negative | extraction negative | PCR negative
-    skos:exactMatch:
-    - https://w3id.org/mixs/neg_cont_type
-    - http://rs.gbif.org/terms/1.0/neg_cont_type
-  identifier: https://w3id.org/mixs/0001321
+name: neg_cont_type
+description: 'A negative control type used in an investigation. See Table 2 in Klymus
+  et al. 2024 (DOI: 10.3897/mbmg.8.128689) for the description of each control type,
+  how and why it''s created. For example, process negative is a sample added during
+  processing that lacks target DNA, such as blank filter papers.'
+range: neg_cont_type_enum
+annotations:
+  section: Sample information
+  requirement_level: Mandatory
+  example: field negative | process negative | extraction negative | PCR negative
+  requirement_level_condition: If samp_category = negative control
+  modifications_made:
+  - description
+  - field_type
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0001321
+enum_values:
+  site negative:
+    meaning: site negative
+  field negative:
+    meaning: field negative
+  process negative:
+    meaning: process negative
+  extraction negative:
+    meaning: extraction negative
+  PCR negative:
+    meaning: PCR negative
+  'other:':
+    meaning: 'other:'

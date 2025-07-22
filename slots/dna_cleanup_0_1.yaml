@@ -1,7 +1,9 @@
-dna_cleanup_0_1:
-  description: Was the extracted DNA cleaned/purified? Yes = 1, No =0
-  range: boolean
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Recommended
-    example: '1'
+name: dna_cleanup_0_1
+description: Was the extracted DNA cleaned/purified? Yes = 1, No =0
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Recommended
+  example: '1'
+  data_type:
+  - sampleMetadata

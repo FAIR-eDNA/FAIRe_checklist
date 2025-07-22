@@ -1,7 +1,9 @@
-code_repo:
-  description: Link to public repository where analysis code is archived
-  range: string
-  annotations:
-    section: Data management
-    requirement_level: Recommended
-    example: https://github.com/aomlomics/gomecc
+name: code_repo
+description: Link to public repository where analysis code is archived
+range: string
+annotations:
+  section: Data management
+  requirement_level: Recommended
+  example: https://github.com/aomlomics/gomecc
+  data_type:
+  - projectMetadata

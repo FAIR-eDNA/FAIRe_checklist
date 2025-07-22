@@ -1,10 +1,14 @@
-order:
-  description: The full scientific name of the order
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Recommended
-    example: Perciformes
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/order
-  identifier: http://rs.tdwg.org/dwc/terms/order
+name: order
+description: The full scientific name of the order
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Recommended
+  example: Perciformes
+  modifications_made:
+  - description
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/order

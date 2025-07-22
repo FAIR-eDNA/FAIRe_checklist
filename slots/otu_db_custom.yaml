@@ -1,9 +1,11 @@
-otu_db_custom:
-  description: Description of custom reference database(s) (i.e. coverage of taxa,
-    region) if applied to assign taxonomy to OTUs or ASVs
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Optional
-    example: Unpublished custom database, containing COI sequences of 209 fish species
-      collected from Western Australia (study area)
+name: otu_db_custom
+description: Description of custom reference database(s) (i.e. coverage of taxa, region)
+  if applied to assign taxonomy to OTUs or ASVs
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Optional
+  example: Unpublished custom database, containing COI sequences of 209 fish species
+    collected from Western Australia (study area)
+  data_type:
+  - projectMetadata

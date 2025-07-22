@@ -1,11 +1,14 @@
-detected_notDetected:
-  description: Detection of the targeted taxon for each biological replicate, based
-    on the specified detection criteria (detailed under the term 'detection_criteria').
-    Detected = 1, Not detected = 0. For projects employing multiple assays, this term
-    should be specified separately for each assay. The term name should include the
-    assay identifier in the format detected_notDetected_<assay_name> (e.g., detected_notDetected_eSERU5).
-  range: boolean
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Mandatory
-    example: '1'
+name: detected_notDetected
+description: Detection of the targeted taxon for each biological replicate, based
+  on the specified detection criteria (detailed under the term 'detection_criteria').
+  Detected = 1, Not detected = 0. For projects employing multiple assays, this term
+  should be specified separately for each assay. The term name should include the
+  assay identifier in the format detected_notDetected_<assay_name> (e.g., detected_notDetected_eSERU5).
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Mandatory
+  example: '1'
+  requirement_level_condition: If assay_type = targeted
+  data_type:
+  - sampleMetadata

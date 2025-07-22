@@ -1,7 +1,9 @@
-otu_clust_tool:
-  description: Software and the version used for OTU/ASV clustering
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: q2-dada2 2019.1.0
+name: otu_clust_tool
+description: Software and the version used for OTU/ASV clustering
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: q2-dada2 2019.1.0
+  data_type:
+  - projectMetadata

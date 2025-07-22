@@ -1,8 +1,11 @@
-rfu:
-  description: Relative Fluorescence Units (RFU). No unit
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Optional
-    unit: No unit
-    example: '7862.41'
+name: rfu
+description: Relative Fluorescence Units (RFU). No unit
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Optional
+  example: '7862.41'
+  unit: No unit
+  data_type:
+  - ampData
+  - stdData

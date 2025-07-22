@@ -1,7 +1,30 @@
-samp_size_unit:
-  description: Unit for samp_size
-  range: samp_size_unit_enum
-  annotations:
-    section: Sample collection
-    requirement_level: Highly recommended
-    example: L
+name: samp_size_unit
+description: Unit for samp_size
+range: samp_size_unit_enum
+annotations:
+  section: Sample collection
+  requirement_level: Highly recommended
+  example: L
+  data_type:
+  - sampleMetadata
+enum_values:
+  mL:
+    meaning: mL
+  L:
+    meaning: L
+  mg:
+    meaning: mg
+  g:
+    meaning: g
+  kg:
+    meaning: kg
+  cm2:
+    meaning: cm2
+  m2:
+    meaning: m2
+  cm3:
+    meaning: cm3
+  m3:
+    meaning: m3
+  'other:':
+    meaning: 'other:'

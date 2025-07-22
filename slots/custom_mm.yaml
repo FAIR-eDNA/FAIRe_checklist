@@ -1,14 +1,16 @@
-custom_mm:
-  description: composition of custom master mix, including the names, volumes and
-    concentrations of additives (i.e., salts, buffers, enzyme and other components)
-    (if custom master mix was used)
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: 'Each PCR reaction comprised: 1 x Taq Gold buffer (Applied Biosystems
-      [ABI], USA), 2 nM MgCl2 (ABI, USA), 0.4 mg/mL BSA (Fisher Biotec, Australia),
-      0.25 mM dNTPs (Astral Scientific, Australia), 0.4 μM each of forward and reverse
-      primers (Integrated DNA Technologies, Australia), 0.6 μL of 1/10,000 SYBR Green
-      dye (Life Technologies, USA), 1 U of Taq polymerase Gold (ABI, USA), 2 μL of
-      DNA, and made up to 25 μL with PCR grade water'
+name: custom_mm
+description: composition of custom master mix, including the names, volumes and concentrations
+  of additives (i.e., salts, buffers, enzyme and other components) (if custom master
+  mix was used)
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: "Each PCR reaction comprised: 1 x Taq Gold buffer (Applied Biosystems [ABI],\
+    \ USA), 2 nM MgCl2 (ABI, USA), 0.4 mg/mL BSA (Fisher Biotec, Australia), 0.25\
+    \ mM dNTPs (Astral Scientific, Australia), 0.4 \u03BCM each of forward and reverse\
+    \ primers (Integrated DNA Technologies, Australia), 0.6 \u03BCL of 1/10,000 SYBR\
+    \ Green dye (Life Technologies, USA), 1 U of Taq polymerase Gold (ABI, USA), 2\
+    \ \u03BCL of DNA, and made up to 25 \u03BCL with PCR grade water"
+  data_type:
+  - projectMetadata

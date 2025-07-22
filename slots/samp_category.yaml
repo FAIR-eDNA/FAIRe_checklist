@@ -1,9 +1,22 @@
-samp_category:
-  description: A type/category of a sample. 'Sample" includes biological and technical
-    replicates. If negative or positive control was selected, provide further information
-    under the terms fill neg_cont_type and pos_cont_type.
-  range: samp_category_enum
-  annotations:
-    section: Sample information
-    requirement_level: Mandatory
-    example: sample
+name: samp_category
+description: A type/category of a sample. 'Sample" includes biological and technical
+  replicates. If negative or positive control was selected, provide further information
+  under the terms fill neg_cont_type and pos_cont_type.
+range: samp_category_enum
+annotations:
+  section: Sample information
+  requirement_level: Mandatory
+  example: sample
+  data_type:
+  - sampleMetadata
+enum_values:
+  sample:
+    meaning: sample
+  negative control:
+    meaning: negative control
+  positive control:
+    meaning: positive control
+  PCR standard:
+    meaning: PCR standard
+  'other:':
+    meaning: 'other:'

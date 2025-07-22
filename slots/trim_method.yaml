@@ -1,8 +1,12 @@
-trim_method:
-  description: Method for trimming primer and/or adapter sequences, including version
-    and parameters
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: cutadapt v4.9
+name: trim_method
+description: Method for trimming primer and/or adapter sequences, including version
+  and parameters
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: cutadapt v4.9
+  modifications_made:
+  - field_name
+  data_type:
+  - projectMetadata

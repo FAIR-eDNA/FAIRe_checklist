@@ -1,7 +1,10 @@
-lib_id:
-  description: An identifier of a library (an amplicon of a sample with unique MIDs)
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Mandatory
-    example: S01_MiSeq_run20230922
+name: lib_id
+description: An identifier of a library (an amplicon of a sample with unique MIDs)
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Mandatory
+  example: S01_MiSeq_run20230922
+  requirement_level_condition: If assay_type = metabarcoding
+  data_type:
+  - experimentRunMetadata

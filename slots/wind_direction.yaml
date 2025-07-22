@@ -1,11 +1,14 @@
-wind_direction:
-  description: Wind direction (the direction from which a wind originates) at the
-    time of sampling
-  range: string
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: NW
-    skos:exactMatch:
-    - https://w3id.org/mixs/wind_direction
-  identifier: https://w3id.org/mixs/0000757
+name: wind_direction
+description: Wind direction (the direction from which a wind originates) at the time
+  of sampling
+range: string
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: NW
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000757

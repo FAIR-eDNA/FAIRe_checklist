@@ -1,18 +1,22 @@
-pcr_primer_forward:
-  description: Forward PCR primer (5' - 3') that were used to amplify the sequence
-    of the targeted gene. The primer sequence should NOT contain MIDs and adapter
-    sequences, and should be reported in uppercase letters. If multiple forward primers
-    are present in a single PCR reaction, either report them separately in separate
-    submissions (with separate OTU tables for each primer set), or list the primers
-    here separated by pipe ( | ) and provide one OTU table resulting from all the
-    primers applied here. The latter is recommended only when the multiple primers
-    target the same gene region and thus a single OTU table was generated from the
-    multiplexed PCR. This term is required except for PCR free methods.
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Mandatory
-    example: GGWACWGGWTGAACWGTWTAYCCYCC
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/pcr_primer_forward
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: pcr_primer_forward
+description: Forward PCR primer (5' - 3') that were used to amplify the sequence of
+  the targeted gene. The primer sequence should NOT contain MIDs and adapter sequences,
+  and should be reported in uppercase letters. If multiple forward primers are present
+  in a single PCR reaction, either report them separately in separate submissions
+  (with separate OTU tables for each primer set), or list the primers here separated
+  by pipe ( | ) and provide one OTU table resulting from all the primers applied here.
+  The latter is recommended only when the multiple primers target the same gene region
+  and thus a single OTU table was generated from the multiplexed PCR. This term is
+  required except for PCR free methods.
+range: string
+annotations:
+  section: PCR
+  requirement_level: Mandatory
+  example: GGWACWGGWTGAACWGTWTAYCCYCC
+  requirement_level_condition: If pcr_0_1 is 1
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -1,11 +1,12 @@
-wind_speed:
-  description: Speed of wind measured at the time of sampling. Unit = m/s
-  range: float
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    unit: m/s
-    example: '5.14'
-    skos:exactMatch:
-    - https://w3id.org/mixs/wind_speed
-  identifier: https://w3id.org/mixs/0000118
+name: wind_speed
+description: Speed of wind measured at the time of sampling. Unit = m/s
+range: float
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: '5.14'
+  unit: m/s
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000118

@@ -1,13 +1,14 @@
-annealingTemp:
-  description: The reaction temperature during the annealing phase of PCR. If two-step
-    PCR was applied for a metabarcoding approach, enter the second PCR protocol under
-    the term pcr2_* in the library preparation/sequencing section. Unit = degree Celsius
-  range: float
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    unit: degree Celsius
-    example: '60.0'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/annealingTemp
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: annealingTemp
+description: The reaction temperature during the annealing phase of PCR. If two-step
+  PCR was applied for a metabarcoding approach, enter the second PCR protocol under
+  the term pcr2_* in the library preparation/sequencing section. Unit = degree Celsius
+range: float
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: '60.0'
+  unit: degree Celsius
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

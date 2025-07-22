@@ -1,11 +1,12 @@
-informationWithheld:
-  description: Additional information that exists, but that has not been shared in
-    the given record.
-  range: string
-  annotations:
-    section: Data management
-    requirement_level: Optional
-    example: location information not given for endangered species
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/informationWithheld
-  identifier: http://rs.tdwg.org/dwc/terms/informationWithheld
+name: informationWithheld
+description: Additional information that exists, but that has not been shared in the
+  given record.
+range: string
+annotations:
+  section: Data management
+  requirement_level: Optional
+  example: location information not given for endangered species
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/informationWithheld

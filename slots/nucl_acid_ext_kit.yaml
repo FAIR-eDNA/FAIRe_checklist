@@ -1,11 +1,14 @@
-nucl_acid_ext_kit:
-  description: The name of the extraction kit used to recover the nucleic acid fraction
-    of an input material
-  range: string
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Highly recommended
-    example: Qiagen PowerSoil Kit
-    skos:exactMatch:
-    - https://w3id.org/mixs/nucl_acid_ext_kit
-  identifier: https://w3id.org/mixs/0001223
+name: nucl_acid_ext_kit
+description: The name of the extraction kit used to recover the nucleic acid fraction
+  of an input material
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Highly recommended
+  example: Qiagen PowerSoil Kit
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0001223

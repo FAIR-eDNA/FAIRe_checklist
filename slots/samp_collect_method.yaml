@@ -1,11 +1,14 @@
-samp_collect_method:
-  description: The method employed for collecting the sample. Provide a link to a
-    paper/ handbook/ standard operation protocol if any.
-  range: string
-  annotations:
-    section: Sample collection
-    requirement_level: Recommended
-    example: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
-    skos:exactMatch:
-    - https://w3id.org/mixs/samp_collect_method
-  identifier: https://w3id.org/mixs/0001225
+name: samp_collect_method
+description: The method employed for collecting the sample. Provide a link to a paper/
+  handbook/ standard operation protocol if any.
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Recommended
+  example: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0001225

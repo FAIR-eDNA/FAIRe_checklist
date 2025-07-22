@@ -1,8 +1,14 @@
-concentration_method:
-  description: Description of method/instrument used for concentration measurement
-  range: string
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Optional
-    example: Qubit 4.0 Fluorometer (Invitrogen)
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: concentration_method
+description: Description of method/instrument used for concentration measurement
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Optional
+  example: Qubit 4.0 Fluorometer (Invitrogen)
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

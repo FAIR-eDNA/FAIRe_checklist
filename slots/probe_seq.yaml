@@ -1,7 +1,9 @@
-probe_seq:
-  description: If applicable, probe sequence in the 5' to 3' direction
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: CTTGTTTGTTTGATCAATTC
+name: probe_seq
+description: If applicable, probe sequence in the 5' to 3' direction
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: CTTGTTTGTTTGATCAATTC
+  data_type:
+  - projectMetadata

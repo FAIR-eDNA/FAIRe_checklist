@@ -1,7 +1,36 @@
-org_nitro_unit:
-  description: The unit of org_nitro
-  range: org_nitro_unit_enum
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: µmol/L
+name: org_nitro_unit
+description: The unit of org_nitro
+range: org_nitro_unit_enum
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: "\xB5mol/L"
+  data_type:
+  - sampleMetadata
+enum_values:
+  "\xB5M":
+    meaning: "\xB5M"
+  mol/m3:
+    meaning: mol/m3
+  mmol/m3:
+    meaning: mmol/m3
+  "\xB5mol/m3":
+    meaning: "\xB5mol/m3"
+  mol/L:
+    meaning: mol/L
+  mmol/L:
+    meaning: mmol/L
+  "\xB5mol/L":
+    meaning: "\xB5mol/L"
+  mg/L:
+    meaning: mg/L
+  "\xB5g/L":
+    meaning: "\xB5g/L"
+  "\xB5mol/kg":
+    meaning: "\xB5mol/kg"
+  mmol/kg:
+    meaning: mmol/kg
+  parts per million:
+    meaning: parts per million
+  'other:':
+    meaning: 'other:'

@@ -1,8 +1,10 @@
-pcr2_analysis_software:
-  description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
-    the PCR runs  in the second step PCR
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Optional
-    example: BIO-RAD QuantaSoft
+name: pcr2_analysis_software
+description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
+  the PCR runs  in the second step PCR
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Optional
+  example: BIO-RAD QuantaSoft
+  data_type:
+  - projectMetadata

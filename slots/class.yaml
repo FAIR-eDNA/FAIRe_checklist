@@ -1,10 +1,14 @@
-class:
-  description: The full scientific name of the class
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Recommended
-    example: Actinopterygii
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/class
-  identifier: http://rs.tdwg.org/dwc/terms/class
+name: class
+description: The full scientific name of the class
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Recommended
+  example: Actinopterygii
+  modifications_made:
+  - description
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/class

@@ -1,13 +1,15 @@
-prepped_samp_store_dur:
-  description: 'Duration for which the prepared sample was stored prior to DNA extraction,
-    written in ISO 8601 format (i.e., P14D for 14 days period. P1Y6M for 1 year and
-    6 months period. P1W/4W for some time between 1 and 4 weeks). Note: The storage
-    duration of the original environmental sample (e.g., water, soil) should be recorded
-    under samp_store_dur, while the current term is for the "processed" sample such
-    as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.'
-  range: string
-  annotations:
-    section: Sample preparation
-    requirement_level: Recommended
-    example: P1Y6M
-  pattern: PnYnMnWnDTnHnMnS
+name: prepped_samp_store_dur
+description: 'Duration for which the prepared sample was stored prior to DNA extraction,
+  written in ISO 8601 format (i.e., P14D for 14 days period. P1Y6M for 1 year and
+  6 months period. P1W/4W for some time between 1 and 4 weeks). Note: The storage
+  duration of the original environmental sample (e.g., water, soil) should be recorded
+  under samp_store_dur, while the current term is for the "processed" sample such
+  as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.'
+range: string
+annotations:
+  section: Sample preparation
+  requirement_level: Recommended
+  example: P1Y6M
+  fixed_format: PnYnMnWnDTnHnMnS
+  data_type:
+  - sampleMetadata

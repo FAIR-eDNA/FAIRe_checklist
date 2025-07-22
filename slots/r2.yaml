@@ -1,8 +1,10 @@
-r2:
-  description: R-squared value of a qPCR standard curve. This shall be specific to
-    each pcr_plate_id.
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Highly recommended
-    example: '0.9867'
+name: r2
+description: R-squared value of a qPCR standard curve. This shall be specific to each
+  pcr_plate_id.
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Highly recommended
+  example: '0.9867'
+  data_type:
+  - stdData

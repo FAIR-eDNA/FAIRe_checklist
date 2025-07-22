@@ -1,8 +1,10 @@
-dna_store_loc:
-  description: Location at which extracted DNA was stored, usually name of a specific
-    freezer/room
-  range: string
-  annotations:
-    section: Sample storage
-    requirement_level: Optional
-    example: UWA, IOMRC, Lv4 -80Freezer2
+name: dna_store_loc
+description: Location at which extracted DNA was stored, usually name of a specific
+  freezer/room
+range: string
+annotations:
+  section: Sample storage
+  requirement_level: Optional
+  example: UWA, IOMRC, Lv4 -80Freezer2
+  data_type:
+  - sampleMetadata

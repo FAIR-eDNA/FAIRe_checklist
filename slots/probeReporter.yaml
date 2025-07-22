@@ -1,13 +1,14 @@
-probeReporter:
-  description: Type of fluorophore (reporter) used. Probe anneals within amplified
-    target DNA. Polymerase activity degrades the probe that has annealed to the template,
-    and the probe releases the fluorophore from it and breaks the proximity to the
-    quencher, thus allowing fluorescence of the fluorophore.
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: FAM
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/probeReporter
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: probeReporter
+description: Type of fluorophore (reporter) used. Probe anneals within amplified target
+  DNA. Polymerase activity degrades the probe that has annealed to the template, and
+  the probe releases the fluorophore from it and breaks the proximity to the quencher,
+  thus allowing fluorescence of the fluorophore.
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: FAM
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

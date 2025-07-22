@@ -1,11 +1,15 @@
-automaticBaselineValue:
-  description: Whether the baseline value was set by the instrument (1) or manually
-    (0).
-  range: boolean
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Optional
-    example: '1'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/automaticBaselineValue
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: automaticBaselineValue
+description: Whether the baseline value was set by the instrument (1) or manually
+  (0).
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Optional
+  example: '1'
+  modifications_made:
+  - description
+  - field_type
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

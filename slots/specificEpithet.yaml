@@ -1,10 +1,14 @@
-specificEpithet:
-  description: The name of the first or species epithet of the scientificName.
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Recommended
-    example: erythropterus
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/specificEpithet
-  identifier: http://rs.tdwg.org/dwc/terms/specificEpithet
+name: specificEpithet
+description: The name of the first or species epithet of the scientificName.
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Recommended
+  example: erythropterus
+  modifications_made:
+  - description
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/specificEpithet

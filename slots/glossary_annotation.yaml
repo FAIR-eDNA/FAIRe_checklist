@@ -1,0 +1,27 @@
+annotations:
+  glossary:
+    Checklist: A list of eDNA metadata terms, that are mandatory, highly recommended,
+      recommended or optional to fill
+    (Data) term: A standardised field name used in data tables (e.g., column headers
+      in sampleMetadata)
+    MIDs: Multiplexing identifier tags to label DNA fragments originating from different
+      samples, that are used to demultiplex the sequence data after sequencing
+    Library: DNA amplified during the (library) preparation of a single sample. In
+      other words, an amplicon with unique MIDs.
+    Library pool: A pool of library that was loaded onto the sequencing platform for
+      a sequencing run.
+    Reference database: A collection of DNA sequences from known organisms, used for
+      taxonomic identification of ASVs/OTUs
+    ASV: Amplicon sequence variant. A unique sequence of DNA sequences recovered after
+      the removal of erroneous sequences that were generated during PCR and sequencing.
+    OTU: Operational taxonomic unit. A cluster of similar sequences that are grouped
+      together based on a defined similarity threshold (e.g., 97%)
+    Primer: A short single-stranded sequence of nucleotides that provides a starting
+      point for DNA synthesis. Two primers (forward and reverse) are used in PCR.
+    Assay: The complete set of reagents, protocols, and procedures used to perform
+      the PCR amplification and to detect and measure the amplified product. It includes
+      the primers, the DNA polymerase, the reaction buffer, dNTPs, and any additional
+      components or steps required for the specific type of PCR being performed.
+    Cq: The threshold cycle. The cycle number at which the fluorescence generated
+      within a reaction exceeds the threshold level.
+    Ct: The quantification cycle. Cq and Ct are synonymous terms.

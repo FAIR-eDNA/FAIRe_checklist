@@ -1,7 +1,30 @@
-samp_vol_we_dna_ext_unit:
-  description: Unit for samp_vol_we_dna_ext
-  range: samp_vol_we_dna_ext_unit_enum
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Highly recommended
-    example: mL
+name: samp_vol_we_dna_ext_unit
+description: Unit for samp_vol_we_dna_ext
+range: samp_vol_we_dna_ext_unit_enum
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Highly recommended
+  example: mL
+  data_type:
+  - sampleMetadata
+enum_values:
+  mL:
+    meaning: mL
+  L:
+    meaning: L
+  mg:
+    meaning: mg
+  g:
+    meaning: g
+  kg:
+    meaning: kg
+  cm2:
+    meaning: cm2
+  m2:
+    meaning: m2
+  cm3:
+    meaning: cm3
+  m3:
+    meaning: m3
+  'other:':
+    meaning: 'other:'

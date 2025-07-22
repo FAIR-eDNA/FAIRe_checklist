@@ -1,8 +1,10 @@
-study_factor:
-  description: The variable(s) examined in the study, including those of direct interests
-    to address study aims and covariates.
-  range: string
-  annotations:
-    section: Project
-    requirement_level: Optional
-    example: benthic habitat types | diurnal time series | filter types
+name: study_factor
+description: The variable(s) examined in the study, including those of direct interests
+  to address study aims and covariates.
+range: string
+annotations:
+  section: Project
+  requirement_level: Optional
+  example: benthic habitat types | diurnal time series | filter types
+  data_type:
+  - projectMetadata

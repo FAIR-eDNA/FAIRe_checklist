@@ -1,12 +1,14 @@
-inhibition_check:
-  description: Description of method applied to detect inhibition and any adjustments
-    made to improve PCR performance, such as sample dilution or the use of inhibitor-tolerant
-    reagents.
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Optional
-    example: The extracted DNA was tested using a serial dilution approach (undiluted,
-      1:10, 1:100). qPCR was performed on each dilution to evaluate amplification
-      efficiency and inhibition. The dillution with optimal performance with reduced
-      inhibition was selected for subsequent analysis in the workflow.
+name: inhibition_check
+description: Description of method applied to detect inhibition and any adjustments
+  made to improve PCR performance, such as sample dilution or the use of inhibitor-tolerant
+  reagents.
+range: string
+annotations:
+  section: PCR
+  requirement_level: Optional
+  example: The extracted DNA was tested using a serial dilution approach (undiluted,
+    1:10, 1:100). qPCR was performed on each dilution to evaluate amplification efficiency
+    and inhibition. The dillution with optimal performance with reduced inhibition
+    was selected for subsequent analysis in the workflow.
+  data_type:
+  - projectMetadata

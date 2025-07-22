@@ -1,14 +1,17 @@
-ampliconSize:
-  description: The length of the amplicon in basepairs EXCLUDING the primers, adapters
-    and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160). If using
-    Excel, format the cell as text to prevent it from being auto-formatted as a date.
-    Unit = basepairs
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    unit: basepairs
-    example: '83'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/ampliconSize
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: ampliconSize
+description: The length of the amplicon in basepairs EXCLUDING the primers, adapters
+  and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160). If using
+  Excel, format the cell as text to prevent it from being auto-formatted as a date.
+  Unit = basepairs
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: '83'
+  unit: basepairs
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

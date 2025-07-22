@@ -1,11 +1,17 @@
-eventDurationValue:
-  description: The duration of the sampling event, written in ISO 8601 format (i.e.,
-    P1DT3H for 1 day and 3 hours period. P1Y6M for 1 year and 6 months period. T30M/45M
-    for some time between 30 and 45 minutes).
-  range: string
-  annotations:
-    section: Sample collection
-    requirement_level: Optional
-    example: T1H25M
-  pattern: PnYnMnWnDTnHnMnS
-  identifier: http://rs.tdwg.org/eco/terms/eventDurationValue
+name: eventDurationValue
+description: The duration of the sampling event, written in ISO 8601 format (i.e.,
+  P1DT3H for 1 day and 3 hours period. P1Y6M for 1 year and 6 months period. T30M/45M
+  for some time between 30 and 45 minutes).
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Optional
+  example: T1H25M
+  modifications_made:
+  - description
+  - field_type
+  fixed_format: PnYnMnWnDTnHnMnS
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/eco/terms/eventDurationValue

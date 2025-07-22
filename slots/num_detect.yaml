@@ -1,8 +1,10 @@
-num_detect:
-  description: 'Number of detection using the eLow Quant approach (described in DOI:
-    10.1002/edn3.220)'
-  range: string
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Highly recommended
-    example: '2'
+name: num_detect
+description: 'Number of detection using the eLow Quant approach (described in DOI:
+  10.1002/edn3.220)'
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Highly recommended
+  example: '2'
+  data_type:
+  - eLowQuantData

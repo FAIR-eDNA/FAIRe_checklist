@@ -1,8 +1,10 @@
-phix_perc:
-  description: '% of PhiX added into a library, if applicable. Unit = %'
-  range: float
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    unit: '%'
-    example: '15.0'
+name: phix_perc
+description: '% of PhiX added into a library, if applicable. Unit = %'
+range: float
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: '15.0'
+  unit: '%'
+  data_type:
+  - experimentRunMetadata

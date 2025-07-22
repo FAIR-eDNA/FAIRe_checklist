@@ -1,7 +1,9 @@
-probe_ref:
-  description: Reference (i.e. DOI) of the probe_seq
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: 10.1007/s00227-017-3141-x
+name: probe_ref
+description: Reference (i.e. DOI) of the probe_seq
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: 10.1007/s00227-017-3141-x
+  data_type:
+  - projectMetadata

@@ -1,11 +1,16 @@
-pcr_cycles:
-  description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
-    approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
-    section. Unit = cycles
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    unit: cycles
-    example: '40'
-  identifier: https://w3id.org/nmdc/pcr_cycles
+name: pcr_cycles
+description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
+  approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
+  section. Unit = cycles
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: '40'
+  unit: cycles
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://w3id.org/nmdc/pcr_cycles

@@ -1,8 +1,10 @@
-min_len_tool:
-  description: Software and the version to remove reads shorter than minimum length
-    threshold
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: OBITools3
+name: min_len_tool
+description: Software and the version to remove reads shorter than minimum length
+  threshold
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: OBITools3
+  data_type:
+  - projectMetadata

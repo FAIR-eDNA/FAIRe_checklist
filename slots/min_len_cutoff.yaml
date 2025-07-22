@@ -1,8 +1,10 @@
-min_len_cutoff:
-  description: Minimum length threshold. Unit = base pair
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    unit: base pair
-    example: '120'
+name: min_len_cutoff
+description: Minimum length threshold. Unit = base pair
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: '120'
+  unit: base pair
+  data_type:
+  - projectMetadata

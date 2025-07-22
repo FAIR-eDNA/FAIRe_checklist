@@ -1,10 +1,11 @@
-samp_weather:
-  description: The weather on the sampling day
-  range: string
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: foggy
-    skos:exactMatch:
-    - https://w3id.org/mixs/samp_weather
-  identifier: https://w3id.org/mixs/0000827
+name: samp_weather
+description: The weather on the sampling day
+range: string
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: foggy
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000827

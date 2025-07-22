@@ -1,9 +1,20 @@
-checksum_method:
-  description: The specific algorithm or technique used to compute the checksum (checksum_filename,
-    checksum_filename2) for verifying data integrity. Examples include MD5, SHA-256,
-    and CRC-32.
-  range: checksum_method_enum
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: MD5
+name: checksum_method
+description: The specific algorithm or technique used to compute the checksum (checksum_filename,
+  checksum_filename2) for verifying data integrity. Examples include MD5, SHA-256,
+  and CRC-32.
+range: checksum_method_enum
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: MD5
+  data_type:
+  - projectMetadata
+enum_values:
+  MD5:
+    meaning: MD5
+  SHA-256:
+    meaning: SHA-256
+  CRC-32:
+    meaning: CRC-32
+  'other:':
+    meaning: 'other:'

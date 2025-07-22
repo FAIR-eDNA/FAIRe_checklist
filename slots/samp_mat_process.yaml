@@ -1,14 +1,15 @@
-samp_mat_process:
-  description: Any processing applied to the sample during or after retrieving the
-    sample from environment (i.e. sieving, filtration, precipitation, homogenising,
-    subsampling).
-  range: string
-  annotations:
-    section: Sample preparation
-    requirement_level: Recommended
-    example: Water samples were pre-filtered using a sieve (200 micrometers), then
-      filtered using a peristaltic pump (pore size 0.45 micrometers).
-    skos:exactMatch:
-    - https://w3id.org/mixs/samp_mat_process
-    - http://rs.gbif.org/terms/1.0/samp_mat_process
-  identifier: https://w3id.org/mixs/0000016
+name: samp_mat_process
+description: Any processing applied to the sample during or after retrieving the sample
+  from environment (i.e. sieving, filtration, precipitation, homogenising, subsampling).
+range: string
+annotations:
+  section: Sample preparation
+  requirement_level: Recommended
+  example: Water samples were pre-filtered using a sieve (200 micrometers), then filtered
+    using a peristaltic pump (pore size 0.45 micrometers).
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000016

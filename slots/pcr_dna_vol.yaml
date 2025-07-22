@@ -1,8 +1,10 @@
-pcr_dna_vol:
-  description: Volume of DNA added in each PCR reaction. Unit = µL
-  range: float
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    unit: µL
-    example: '2.0'
+name: pcr_dna_vol
+description: "Volume of DNA added in each PCR reaction. Unit = \xB5L"
+range: float
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: '2.0'
+  unit: "\xB5L"
+  data_type:
+  - projectMetadata

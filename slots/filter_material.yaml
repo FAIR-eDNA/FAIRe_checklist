@@ -1,8 +1,31 @@
-filter_material:
-  description: Material of filter
-  range: filter_material_enum
-  annotations:
-    section: Sample preparation
-    requirement_level: Highly recommended
-    example: cellulose ester
-  identifier: https://w3id.org/nmdc/filter_material
+name: filter_material
+description: Material of filter
+range: filter_material_enum
+annotations:
+  section: Sample preparation
+  requirement_level: Highly recommended
+  example: cellulose ester
+  modifications_made:
+  - description
+  - field_type
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/nmdc/filter_material
+enum_values:
+  cellulose:
+    meaning: cellulose
+  cellulose ester:
+    meaning: cellulose ester
+  glass fiber:
+    meaning: glass fiber
+  thermoplastic membrane:
+    meaning: thermoplastic membrane
+  track etched polycarbonate:
+    meaning: track etched polycarbonate
+  nylon:
+    meaning: nylon
+  polyethersulfone:
+    meaning: polyethersulfone
+  'other:':
+    meaning: 'other:'

@@ -1,12 +1,20 @@
-lib_layout:
-  description: Specify whether to expect single, paired, or other configuration of
-    reads
-  range: lib_layout_enum
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: paired end
-    skos:exactMatch:
-    - https://w3id.org/mixs/lib_layout
-    - http://rs.gbif.org/terms/1.0/lib_layout
-  identifier: https://w3id.org/mixs/0000041
+name: lib_layout
+description: Specify whether to expect single, paired, or other configuration of reads
+range: lib_layout_enum
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: paired end
+  modifications_made:
+  - field_type
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000041
+enum_values:
+  paired end:
+    meaning: paired end
+  single end:
+    meaning: single end
+  'other:':
+    meaning: 'other:'

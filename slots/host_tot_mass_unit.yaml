@@ -1,7 +1,18 @@
-host_tot_mass_unit:
-  description: The unit of host_tot_mass
-  range: host_tot_mass_unit_enum
-  annotations:
-    section: Environment
-    requirement_level: Optional
-    example: g
+name: host_tot_mass_unit
+description: The unit of host_tot_mass
+range: host_tot_mass_unit_enum
+annotations:
+  section: Environment
+  requirement_level: Optional
+  example: g
+  data_type:
+  - sampleMetadata
+enum_values:
+  mg:
+    meaning: mg
+  g:
+    meaning: g
+  kg:
+    meaning: kg
+  'other:':
+    meaning: 'other:'

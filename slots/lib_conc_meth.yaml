@@ -1,7 +1,9 @@
-lib_conc_meth:
-  description: Method to estimate lib_conc
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: Qubit Fluoromete
+name: lib_conc_meth
+description: Method to estimate lib_conc
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: Qubit Fluoromete
+  data_type:
+  - experimentRunMetadata

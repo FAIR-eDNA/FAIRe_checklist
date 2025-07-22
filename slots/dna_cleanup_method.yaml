@@ -1,8 +1,11 @@
-dna_cleanup_method:
-  description: A description of DNA clean-up method. Provide the name of a commercial
-    kit if used.
-  range: string
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Recommended
-    example: Zymo DNA Clean & Concentrator Kits
+name: dna_cleanup_method
+description: A description of DNA clean-up method. Provide the name of a commercial
+  kit if used.
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Recommended
+  example: Zymo DNA Clean & Concentrator Kits
+  requirement_level_condition: If dna_cleanup_0_1 is 1
+  data_type:
+  - sampleMetadata

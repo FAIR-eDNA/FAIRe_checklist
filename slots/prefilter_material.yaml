@@ -1,7 +1,9 @@
-prefilter_material:
-  description: Material used to pre-filter/pre-sort the sample
-  range: string
-  annotations:
-    section: Sample preparation
-    requirement_level: Optional
-    example: nylon
+name: prefilter_material
+description: Material used to pre-filter/pre-sort the sample
+range: string
+annotations:
+  section: Sample preparation
+  requirement_level: Optional
+  example: nylon
+  data_type:
+  - sampleMetadata

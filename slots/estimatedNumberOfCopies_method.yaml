@@ -1,7 +1,20 @@
-estimatedNumberOfCopies_method:
-  description: Method to output estimatedNumberOfCopies
-  range: estimatedNumberOfCopies_method_enum
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: Ct/Cq with standard curve | Ct/Cq with standard bionomial data
+name: estimatedNumberOfCopies_method
+description: Method to output estimatedNumberOfCopies
+range: estimatedNumberOfCopies_method_enum
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: Ct/Cq with standard curve | Ct/Cq with standard bionomial data
+  data_type:
+  - ampData
+enum_values:
+  Ct/Cq with standard curve:
+    meaning: Ct/Cq with standard curve
+  Ct/Cq with standard bionomial data:
+    meaning: Ct/Cq with standard bionomial data
+  direct output from the PCR instrument used:
+    meaning: direct output from the PCR instrument used
+  gel fluorescence intensities:
+    meaning: gel fluorescence intensities
+  'other:':
+    meaning: 'other:'

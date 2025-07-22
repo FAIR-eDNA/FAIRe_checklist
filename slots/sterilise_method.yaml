@@ -1,9 +1,11 @@
-sterilise_method:
-  description: the protocols to minimise contaminations in the field and/or laboratory
-  range: string
-  annotations:
-    section: Project
-    requirement_level: Highly recommended
-    example: Sampling bottles were rinsed with 10% bleached and DI water. Single-use
-      syringes and capsule filters were used for filtration. Single-use gloves were
-      used to collect and filter each sample.
+name: sterilise_method
+description: the protocols to minimise contaminations in the field and/or laboratory
+range: string
+annotations:
+  section: Project
+  requirement_level: Highly recommended
+  example: Sampling bottles were rinsed with 10% bleached and DI water. Single-use
+    syringes and capsule filters were used for filtration. Single-use gloves were
+    used to collect and filter each sample.
+  data_type:
+  - projectMetadata

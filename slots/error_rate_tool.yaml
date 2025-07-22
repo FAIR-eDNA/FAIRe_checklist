@@ -1,7 +1,9 @@
-error_rate_tool:
-  description: Software to remove reads above error rate threshold
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: FASTQC v0.12.1
+name: error_rate_tool
+description: Software to remove reads above error rate threshold
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: FASTQC v0.12.1
+  data_type:
+  - projectMetadata

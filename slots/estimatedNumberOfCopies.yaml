@@ -1,11 +1,16 @@
-estimatedNumberOfCopies:
-  description: Estimated concentration of target molecules. Describe the approach
-    taken to estimate it under the term estaimtedNumberOfCopies_method.
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: '35.92426489978709'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/estimatedNumberOfCopies
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: estimatedNumberOfCopies
+description: Estimated concentration of target molecules. Describe the approach taken
+  to estimate it under the term estaimtedNumberOfCopies_method.
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: '35.92426489978709'
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  modifications_made:
+  - description
+  data_type:
+  - ampData
+  - eLowQuantData
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

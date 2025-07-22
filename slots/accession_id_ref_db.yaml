@@ -1,9 +1,16 @@
-accession_id_ref_db:
-  description: Reference database (i.e. sequences not generated as part of the current
-    study) of the best matching sequence (accesssion_id)
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Recommended
-    example: NCBI
-  identifier: https://w3id.org/mixs/0000087
+name: accession_id_ref_db
+description: Reference database (i.e. sequences not generated as part of the current
+  study) of the best matching sequence (accesssion_id)
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Recommended
+  example: NCBI
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- https://w3id.org/mixs/0000087

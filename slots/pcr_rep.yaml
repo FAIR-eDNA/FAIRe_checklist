@@ -1,8 +1,10 @@
-pcr_rep:
-  description: The number of PCR technical replicates. For metabarcoding, each replicate
-    should employ an identical MID.
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: '3'
+name: pcr_rep
+description: The number of PCR technical replicates. For metabarcoding, each replicate
+  should employ an identical MID.
+range: string
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: '3'
+  data_type:
+  - projectMetadata

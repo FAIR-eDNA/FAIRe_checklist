@@ -1,20 +1,22 @@
-eventDate:
-  description: 'The date and time of sampling, either as an instance (single point
-    in time) or interval. Must follow ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time
-    zone must be specified after the timestamp (e.g., "2008-01-23T19:23-06:00" in
-    the time zone six hours earlier than UTC, "2008-01-23T19:23Z" at UTC time). In
-    case no exact time is available, the date/time can be right truncated i.e. all
-    of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10Z; 2008-01-23;
-    2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant. A date and time
-    range can be specified using a forward slash (/) to separate the start and end
-    values (e.g., 2008-01-23T19:23-06:00/2008-01-23T19:53-06:00). A duration can also
-    be provided using the eventDurationValue term.'
-  range: string
-  annotations:
-    section: Sample collection
-    requirement_level: Mandatory
-    example: 2008-01-23T19:23-06:00
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/eventDate
-  pattern: yyyy-mm-ddThh:mm:ss+-hh:mm
-  identifier: http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011
+name: eventDate
+description: 'The date and time of sampling, either as an instance (single point in
+  time) or interval. Must follow ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time zone
+  must be specified after the timestamp (e.g., "2008-01-23T19:23-06:00" in the time
+  zone six hours earlier than UTC, "2008-01-23T19:23Z" at UTC time). In case no exact
+  time is available, the date/time can be right truncated i.e. all of these are valid
+  times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10Z; 2008-01-23; 2008-01; 2008;
+  Except: 2008-01; 2008 all are ISO8601 compliant. A date and time range can be specified
+  using a forward slash (/) to separate the start and end values (e.g., 2008-01-23T19:23-06:00/2008-01-23T19:53-06:00).
+  A duration can also be provided using the eventDurationValue term.'
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Mandatory
+  example: 2008-01-23T19:23-06:00
+  modifications_made:
+  - description
+  fixed_format: yyyy-mm-ddThh:mm:ss+-hh:mm
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011

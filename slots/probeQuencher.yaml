@@ -1,13 +1,29 @@
-probeQuencher:
-  description: Type of quencher used. The quencher molecule quenches the fluorescence
-    emitted by the fluorophore when excited by the cycler’s light source As long as
-    fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
-    signals.
-  range: probeQuencher_enum
-  annotations:
-    section: PCR
-    requirement_level: Highly recommended
-    example: MGB
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/probeQuencher
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: probeQuencher
+description: "Type of quencher used. The quencher molecule quenches the fluorescence\
+  \ emitted by the fluorophore when excited by the cycler\u2019s light source As long\
+  \ as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence\
+  \ signals."
+range: probeQuencher_enum
+annotations:
+  section: PCR
+  requirement_level: Highly recommended
+  example: MGB
+  modifications_made:
+  - field_type
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+enum_values:
+  Zero-End Quencher (ZEN):
+    meaning: Zero-End Quencher (ZEN)
+  TAMRA:
+    meaning: TAMRA
+  lowa Black:
+    meaning: lowa Black
+  Minor Groove Binder (MGB):
+    meaning: Minor Groove Binder (MGB)
+  Black Hole Quencher (BHQ):
+    meaning: Black Hole Quencher (BHQ)
+  'other:':
+    meaning: 'other:'

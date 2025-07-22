@@ -1,7 +1,24 @@
-nucl_acid_ext_sep:
-  description: The approach used to separate DNA from a mixture.
-  range: nucl_acid_ext_sep_enum
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Recommended
-    example: column-based
+name: nucl_acid_ext_sep
+description: The approach used to separate DNA from a mixture.
+range: nucl_acid_ext_sep_enum
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Recommended
+  example: column-based
+  data_type:
+  - sampleMetadata
+enum_values:
+  column-based:
+    meaning: column-based
+  magnetic beads:
+    meaning: magnetic beads
+  centrifugation:
+    meaning: centrifugation
+  precipitation:
+    meaning: precipitation
+  phenol chloroform:
+    meaning: phenol chloroform
+  gel electrophoresis:
+    meaning: gel electrophoresis
+  'other:':
+    meaning: 'other:'

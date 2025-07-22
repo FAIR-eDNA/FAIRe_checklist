@@ -1,8 +1,11 @@
-targetTaxonomicAssay:
-  description: Taxa or species name targeted by the primers, probes, and/or other
-    approaches applied in the PCR.
-  range: string
-  annotations:
-    section: PCR
-    requirement_level: Mandatory
-    example: verteberate
+name: targetTaxonomicAssay
+description: Taxa or species name targeted by the primers, probes, and/or other approaches
+  applied in the PCR.
+range: string
+annotations:
+  section: PCR
+  requirement_level: Mandatory
+  example: verteberate
+  requirement_level_condition: If pcr_0_1 is 1. Else, recommended
+  data_type:
+  - projectMetadata

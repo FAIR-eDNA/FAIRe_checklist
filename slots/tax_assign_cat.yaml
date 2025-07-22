@@ -1,10 +1,23 @@
-tax_assign_cat:
-  description: 'High-level category of taxonomic assignment approach. Examples using
-    sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH. Examples using sequence
-    composition: naive Bayes classifier, CLARK, Kraken. Examples using phylogeny:
-    SEPP, EPA-ng, pplacer. Examples using probabilistic: PROTAX, TIPP.'
-  range: tax_assign_cat_enum
-  annotations:
-    section: Bioinformatics
-    requirement_level: Highly recommended
-    example: sequence similarity
+name: tax_assign_cat
+description: 'High-level category of taxonomic assignment approach. Examples using
+  sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH. Examples using sequence composition:
+  naive Bayes classifier, CLARK, Kraken. Examples using phylogeny: SEPP, EPA-ng, pplacer.
+  Examples using probabilistic: PROTAX, TIPP.'
+range: tax_assign_cat_enum
+annotations:
+  section: Bioinformatics
+  requirement_level: Highly recommended
+  example: sequence similarity
+  data_type:
+  - projectMetadata
+enum_values:
+  sequence similarity:
+    meaning: sequence similarity
+  sequence composition:
+    meaning: sequence composition
+  phylogeny:
+    meaning: phylogeny
+  probabilistic:
+    meaning: probabilistic
+  'other:':
+    meaning: 'other:'

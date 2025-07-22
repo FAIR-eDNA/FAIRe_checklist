@@ -1,8 +1,10 @@
-pcr_assay_loq_techreps:
-  description: 'The number of technical replicates that the LOQ is applied to. See
-    DOI: 10.1002/edn3.220'
-  range: string
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: '8'
+name: pcr_assay_loq_techreps
+description: 'The number of technical replicates that the LOQ is applied to. See DOI:
+  10.1002/edn3.220'
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: '8'
+  data_type:
+  - projectMetadata

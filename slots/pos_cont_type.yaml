@@ -1,15 +1,16 @@
-pos_cont_type:
-  description: A positive control type used in an investigation. See Table 2 in Klymus
-    et al. 2024 (DOI) for the description of each control type, how and why it's created.
-    For example, PCR positive is a introduced target material to monitor for PCR success,
-    including moch community samples. Provide further details (e.g., synthetic DNA)
-    where applicable.
-  range: string
-  annotations:
-    section: Sample information
-    requirement_level: Mandatory
-    example: PCR positive of synthetic DNA
-    skos:exactMatch:
-    - https://w3id.org/mixs/pos_cont_type
-    - http://rs.gbif.org/terms/1.0/pos_cont_type
-  identifier: https://w3id.org/mixs/0001322
+name: pos_cont_type
+description: 'A positive control type used in an investigation. See Table 2 in Klymus
+  et al. 2024 (DOI: 10.3897/mbmg.8.128689) for the description of each control type,
+  how and why it''s created. For example, PCR positive is a introduced target material
+  to monitor for PCR success, including moch community samples. Provide further details
+  (e.g., synthetic DNA) where applicable.'
+range: string
+annotations:
+  section: Sample information
+  requirement_level: Mandatory
+  example: PCR positive of synthetic DNA
+  requirement_level_condition: If samp_category = positive control
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0001322

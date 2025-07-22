@@ -1,8 +1,11 @@
-screen_geograph_method:
-  description: How were species distribution information screened and applied?
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: Distribution information was checked using FishBase, and species that
-      did not reside in the study area were removed.
+name: screen_geograph_method
+description: How were species distribution information screened and applied?
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: Distribution information was checked using FishBase, and species that did
+    not reside in the study area were removed.
+  requirement_level_condition: if screen_geograph_0_1 is 1
+  data_type:
+  - projectMetadata

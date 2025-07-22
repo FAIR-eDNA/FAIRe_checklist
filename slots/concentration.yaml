@@ -1,10 +1,13 @@
-concentration:
-  description: Concentration of total DNA after extraction
-  range: float
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Recommended
-    example: '67.5'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/concentration
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: concentration
+description: Concentration of total DNA after extraction
+range: float
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Recommended
+  example: '67.5'
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

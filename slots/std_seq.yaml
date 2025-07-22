@@ -1,7 +1,9 @@
-std_seq:
-  description: DNA sequences of standard
-  range: string
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: GTCTCTCCCTGTATATCGTCATGACATCTTCAGCCTTCCTCACATTAAAAACCAACAACTCTTTAACCATCAATACTCTCGCAACTTCATGAACTAAATCCCGACCCTTGCCGCATTAACCGCTCT
+name: std_seq
+description: DNA sequences of standard
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: GTCTCTCCCTGTATATCGTCATGACATCTTCAGCCTTCCTCACATTAAAAACCAACAACTCTTTAACCATCAATACTCTCGCAACTTCATGAACTAAATCCCGACCCTTGCCGCATTAACCGCTCT
+  data_type:
+  - projectMetadata

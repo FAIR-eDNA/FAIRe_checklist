@@ -1,12 +1,15 @@
-associated_resource:
-  description: A related resource that is referenced, cited, or otherwise associated
-    to the sequence. i.e., links to a project website, submitted raw sequence data
-    and environmental metadata.
-  range: string
-  annotations:
-    section: Data management
-    requirement_level: Optional
-    example: http://www.earthmicrobiome.org/
-    skos:exactMatch:
-    - https://w3id.org/mixs/associated_resource
-  identifier: https://w3id.org/mixs/0000091
+name: associated_resource
+description: A related resource that is referenced, cited, or otherwise associated
+  to the sequence. i.e., links to a project website, submitted raw sequence data and
+  environmental metadata.
+range: string
+annotations:
+  section: Data management
+  requirement_level: Optional
+  example: http://www.earthmicrobiome.org/
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000091

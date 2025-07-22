@@ -1,12 +1,16 @@
-verbatimIdentification:
-  description: A string representing the taxonomic identification as it appeared in
-    the original record (i.e. the database used such as NCBI). This could be the identification
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Optional
-    example: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae;
-      Lutjanus; Lutjanus_erythropterus
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/verbatimIdentification
-  identifier: http://rs.tdwg.org/dwc/terms/verbatimIdentification
+name: verbatimIdentification
+description: A string representing the taxonomic identification as it appeared in
+  the original record (i.e. the database used such as NCBI). This could be the identification
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Optional
+  example: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae;
+    Lutjanus; Lutjanus_erythropterus
+  modifications_made:
+  - description
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/verbatimIdentification

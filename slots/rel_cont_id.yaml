@@ -1,8 +1,10 @@
-rel_cont_id:
-  description: (A list of) samp_id of the negative and positive controls related to
-    each sample
-  range: string
-  annotations:
-    section: Sample relations
-    requirement_level: Recommended
-    example: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1
+name: rel_cont_id
+description: (A list of) samp_id of the negative and positive controls related to
+  each sample
+range: string
+annotations:
+  section: Sample relations
+  requirement_level: Recommended
+  example: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1
+  data_type:
+  - sampleMetadata

@@ -1,16 +1,21 @@
-env_local_scale:
-  description: 'The entity or entities which are in your sample or specimen’s local
-    vicinity and which you believe have significant causal influences on your sample.
-    Select from ENVO''s layer class: http://purl.obolibrary.org/obo/ENVO_01000281.
-    Examples include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface
-    layer [ENVO:01001302], shrub layer [ENVO:01000336]'
-  range: string
-  annotations:
-    section: Sample collection
-    requirement_level: Mandatory
-    example: estuarine coastal surface layer [ENVO:01001302]
-    skos:exactMatch:
-    - https://w3id.org/mixs/env_local_scale
-    - http://rs.gbif.org/terms/1.0/env_local_scale
-  pattern: termLabel [termID]
-  identifier: https://w3id.org/mixs/0000013
+name: env_local_scale
+description: "The entity or entities which are in your sample or specimen\u2019s local\
+  \ vicinity and which you believe have significant causal influences on your sample.\
+  \ Select from ENVO's layer class: http://purl.obolibrary.org/obo/ENVO_01000281.\
+  \ Examples include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface\
+  \ layer [ENVO:01001302], shrub layer [ENVO:01000336]"
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Mandatory
+  example: estuarine coastal surface layer [ENVO:01001302]
+  requirement_level_condition: Mandatory unless samp_category = negative control,
+    positive control, or PCR standard
+  modifications_made:
+  - description
+  - field_type
+  fixed_format: termLabel [termID]
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000013

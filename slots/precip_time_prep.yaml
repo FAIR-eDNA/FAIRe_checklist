@@ -1,9 +1,14 @@
-precip_time_prep:
-  description: Duration of precipitation at the sample preparation step prior to DNA
-    extraction, if precipitation was performed. Unit = minute
-  range: float
-  annotations:
-    section: Sample preparation
-    requirement_level: Highly recommended
-    unit: minute
-    example: '45.0'
+name: precip_time_prep
+description: Duration of precipitation at the sample preparation step prior to DNA
+  extraction, if precipitation was performed. Unit = minute
+range: float
+annotations:
+  section: Sample preparation
+  requirement_level: Highly recommended
+  example: '45.0'
+  unit: minute
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - sampleMetadata

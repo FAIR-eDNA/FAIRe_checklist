@@ -1,11 +1,13 @@
-biological_rep_relation:
-  description: This term lists the samp_name of biological replicates associated with
-    the current sample. For example, if three biological replicates ("S01_1", "S01_2",
-    and "S01_3") were collected from the same sampling site, the value for biological_rep_relation
-    in each of these replicates would be "S01_1 | S01_2 | S01_3".
-  range: string
-  annotations:
-    section: Sample relations
-    requirement_level: Optional
-    example: S01_1 | S01_2 | S01_3
-  pattern: (a list of) samp_name
+name: biological_rep_relation
+description: This term lists the samp_name of biological replicates associated with
+  the current sample. For example, if three biological replicates ("S01_1", "S01_2",
+  and "S01_3") were collected from the same sampling site, the value for biological_rep_relation
+  in each of these replicates would be "S01_1 | S01_2 | S01_3".
+range: string
+annotations:
+  section: Sample relations
+  requirement_level: Optional
+  example: S01_1 | S01_2 | S01_3
+  fixed_format: (a list of) samp_name
+  data_type:
+  - sampleMetadata

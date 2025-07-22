@@ -1,7 +1,11 @@
-seq_id:
-  description: Query sequence ID. Must be unique within the dataset
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Mandatory
-    example: ASV1
+name: seq_id
+description: Query sequence ID. Must be unique within the dataset
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Mandatory
+  example: ASV1
+  requirement_level_condition: If assay_type = metabarcoding
+  data_type:
+  - taxaRaw
+  - taxaFinal

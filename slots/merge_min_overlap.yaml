@@ -1,8 +1,10 @@
-merge_min_overlap:
-  description: Minimum overlaps required to merge paired end reads. Unit = base pair
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    unit: base pair
-    example: '12'
+name: merge_min_overlap
+description: Minimum overlaps required to merge paired end reads. Unit = base pair
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: '12'
+  unit: base pair
+  data_type:
+  - projectMetadata

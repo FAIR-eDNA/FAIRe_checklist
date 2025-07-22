@@ -1,14 +1,17 @@
-dataGeneralizations:
-  description: Actions taken to make the shared data (i.e. location, date) less specific
-    or complete than in its original form. Suggests that alternative data of higher
-    quality may be available on request. Note this is not related to genetic generalisation
-    within bioinformatic workflows (i.e., OTU clustering).
-  range: string
-  annotations:
-    section: Data management
-    requirement_level: Optional
-    example: Coordinates generalized from original GPS coordinates to the nearest
-      half degree grid cell.
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/dataGeneralizations
-  identifier: http://rs.tdwg.org/dwc/terms/dataGeneralizations
+name: dataGeneralizations
+description: Actions taken to make the shared data (i.e. location, date) less specific
+  or complete than in its original form. Suggests that alternative data of higher
+  quality may be available on request. Note this is not related to genetic generalisation
+  within bioinformatic workflows (i.e., OTU clustering).
+range: string
+annotations:
+  section: Data management
+  requirement_level: Optional
+  example: Coordinates generalized from original GPS coordinates to the nearest half
+    degree grid cell.
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/dataGeneralizations

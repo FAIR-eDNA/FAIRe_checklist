@@ -1,7 +1,10 @@
-std_conc:
-  description: Input quantity of qPCR standard DNA
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Mandatory
-    example: '2500.0'
+name: std_conc
+description: Input quantity of qPCR standard DNA
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Mandatory
+  example: '2500.0'
+  requirement_level_condition: if samp_category = PCR standard
+  data_type:
+  - stdData

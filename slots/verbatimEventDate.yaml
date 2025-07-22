@@ -1,10 +1,13 @@
-verbatimEventDate:
-  description: Sample collection date before formatting
-  range: string
-  annotations:
-    section: Sample collection
-    requirement_level: Optional
-    example: 23-January-2008
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/verbatimEventDate
-  identifier: http://rs.tdwg.org/dwc/terms/verbatimEventDate
+name: verbatimEventDate
+description: Sample collection date before formatting
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Optional
+  example: 23-January-2008
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/verbatimEventDate

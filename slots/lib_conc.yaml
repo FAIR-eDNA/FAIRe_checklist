@@ -1,8 +1,10 @@
-lib_conc:
-  description: The concentration of the prepared library pool that was loaded onto
-    the sequencing platform for a sequencing run.
-  range: float
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: '10.0'
+name: lib_conc
+description: The concentration of the prepared library pool that was loaded onto the
+  sequencing platform for a sequencing run.
+range: float
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: '10.0'
+  data_type:
+  - experimentRunMetadata

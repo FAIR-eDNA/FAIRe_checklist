@@ -1,8 +1,15 @@
-pool_dna_num:
-  description: The number of extracts that were pooled in to one sample before PCR
-  range: string
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Recommended
-    example: '2'
-  identifier: https://w3id.org/mixs/0000325
+name: pool_dna_num
+description: The number of extracts that were pooled in to one sample before PCR
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Recommended
+  example: '2'
+  modifications_made:
+  - description
+  - field_type
+  - field_name
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000325

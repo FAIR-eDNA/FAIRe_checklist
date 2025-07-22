@@ -1,8 +1,10 @@
-pcr_assay_loq_UL:
-  description: 'Upper 95% confidence limit for LOQ for a given number of technical
-    replicates. See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit'
-  range: float
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    unit: same as pcr_assay_loq_unit
+name: pcr_assay_loq_UL
+description: 'Upper 95% confidence limit for LOQ for a given number of technical replicates.
+  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit'
+range: float
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  unit: same as pcr_assay_loq_unit
+  data_type:
+  - projectMetadata

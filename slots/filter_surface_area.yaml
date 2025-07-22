@@ -1,8 +1,10 @@
-filter_surface_area:
-  description: Surface area of a filter. Unit = mm2
-  range: float
-  annotations:
-    section: Sample preparation
-    requirement_level: Recommended
-    unit: mm2
-    example: '1734.94'
+name: filter_surface_area
+description: Surface area of a filter. Unit = mm2
+range: float
+annotations:
+  section: Sample preparation
+  requirement_level: Recommended
+  example: '1734.94'
+  unit: mm2
+  data_type:
+  - sampleMetadata

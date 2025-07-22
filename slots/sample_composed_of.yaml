@@ -1,12 +1,14 @@
-sample_composed_of:
-  description: This term contains a list of samp_name values that represent the original
-    samples combined to form the current sample. For example, if environmental samples
-    "S01" and "S02" were pooled into a single sample "S03" at any stage (e.g., before
-    or after DNA extraction), then the value for sample_composed_of in "S03" would
-    be "S01 | S02".
-  range: string
-  annotations:
-    section: Sample relations
-    requirement_level: Optional
-    example: S01 | S02
-  pattern: (a list of) samp_name
+name: sample_composed_of
+description: This term contains a list of samp_name values that represent the original
+  samples combined to form the current sample. For example, if environmental samples
+  "S01" and "S02" were pooled into a single sample "S03" at any stage (e.g., before
+  or after DNA extraction), then the value for sample_composed_of in "S03" would be
+  "S01 | S02".
+range: string
+annotations:
+  section: Sample relations
+  requirement_level: Optional
+  example: S01 | S02
+  fixed_format: (a list of) samp_name
+  data_type:
+  - sampleMetadata

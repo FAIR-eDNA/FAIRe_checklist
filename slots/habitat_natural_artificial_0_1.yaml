@@ -1,10 +1,12 @@
-habitat_natural_artificial_0_1:
-  description: Whether samples were taken from natural (0) or artificial (1) habitat.
-    The examples of artificial habitat include mesocosm tank in lab, enclosure in
-    zoo etc., including semi-natural systems. The definition of natural habitat is
-    locations uncontrolled by researchers
-  range: boolean
-  annotations:
-    section: Sample collection
-    requirement_level: Recommended
-    example: '0'
+name: habitat_natural_artificial_0_1
+description: Whether samples were taken from natural (0) or artificial (1) habitat.
+  The examples of artificial habitat include mesocosm tank in lab, enclosure in zoo
+  etc., including semi-natural systems. The definition of natural habitat is locations
+  uncontrolled by researchers
+range: string
+annotations:
+  section: Sample collection
+  requirement_level: Recommended
+  example: '0'
+  data_type:
+  - sampleMetadata

@@ -1,9 +1,12 @@
-seq_run_id:
-  description: A brief, concise identifier for sequencing run with no spaces or special
-    characters, ensuring machine readability. This ID will be used in file names as
-    'seq_run_id'.
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Mandatory
-    example: run20230922
+name: seq_run_id
+description: A brief, concise identifier for sequencing run with no spaces or special
+  characters, ensuring machine readability. This ID will be used in file names as
+  'seq_run_id'.
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Mandatory
+  example: run20230922
+  requirement_level_condition: If assay_type = metabarcoding
+  data_type:
+  - experimentRunMetadata

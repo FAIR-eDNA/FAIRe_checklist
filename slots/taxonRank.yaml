@@ -1,10 +1,29 @@
-taxonRank:
-  description: The taxonomic rank of the most specific name in the scientificName
-  range: taxonRank_enum
-  annotations:
-    section: OTU/ASV
-    requirement_level: Highly recommended
-    example: genus
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/taxonRank
-  identifier: http://rs.tdwg.org/dwc/terms/taxonRank
+name: taxonRank
+description: The taxonomic rank of the most specific name in the scientificName
+range: taxonRank_enum
+annotations:
+  section: OTU/ASV
+  requirement_level: Highly recommended
+  example: genus
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- http://rs.tdwg.org/dwc/terms/taxonRank
+enum_values:
+  kingdom:
+    meaning: kingdom
+  phylum:
+    meaning: phylum
+  class:
+    meaning: class
+  order:
+    meaning: order
+  family:
+    meaning: family
+  genus:
+    meaning: genus
+  species:
+    meaning: species
+  'other:':
+    meaning: 'other:'

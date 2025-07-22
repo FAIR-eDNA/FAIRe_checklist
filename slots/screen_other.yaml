@@ -1,6 +1,8 @@
-screen_other:
-  description: Description of other screening criteria and approaches
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
+name: screen_other
+description: Description of other screening criteria and approaches
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  data_type:
+  - projectMetadata

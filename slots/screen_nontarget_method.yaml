@@ -1,9 +1,12 @@
-screen_nontarget_method:
-  description: How were non-target species screened and applied?
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: Non-targeted species (i.e. domestic animals, humans and non-marine species)
-      were removed from the curated OTU table and downstream data analyses. OTUs that
-      were assigned to species in WoRMS were kept in the curated OTU table.
+name: screen_nontarget_method
+description: How were non-target species screened and applied?
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: Non-targeted species (i.e. domestic animals, humans and non-marine species)
+    were removed from the curated OTU table and downstream data analyses. OTUs that
+    were assigned to species in WoRMS were kept in the curated OTU table.
+  requirement_level_condition: if screen_nontarget_0_1 is 1
+  data_type:
+  - projectMetadata

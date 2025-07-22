@@ -1,6 +1,24 @@
-std_conc_unit:
-  description: Unit for input quantity of qPCR standard DNA
-  range: std_conc_unit_enum
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Mandatory
+name: std_conc_unit
+description: Unit for input quantity of qPCR standard DNA
+range: std_conc_unit_enum
+annotations:
+  section: Targeted assay detection
+  requirement_level: Mandatory
+  requirement_level_condition: if samp_category = PCR standard
+  data_type:
+  - stdData
+enum_values:
+  copies/reaction:
+    meaning: copies/reaction
+  "copies/\xB5L of DNA extract":
+    meaning: "copies/\xB5L of DNA extract"
+  "copies/\xB5L of reaction":
+    meaning: "copies/\xB5L of reaction"
+  ng/reaction:
+    meaning: ng/reaction
+  "ng/\xB5L of DNA extract":
+    meaning: "ng/\xB5L of DNA extract"
+  "ng/\xB5L of reaction":
+    meaning: "ng/\xB5L of reaction"
+  'other:':
+    meaning: 'other:'

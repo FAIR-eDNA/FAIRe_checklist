@@ -1,15 +1,17 @@
-nucl_acid_ext:
-  description: A link to a literature reference, electronic resource or a standard
-    operating procedure (SOP), that describes the material separation to recover the
-    nucleic acid fraction from a sample. If a custom extraction method has been developed
-    and applied to the samples within this dataset, it is Highly recommended to make
-    the SOP available and provide the link here.
-  range: string
-  annotations:
-    section: Nucleic acid extraction
-    requirement_level: Highly recommended
-    example: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
-    skos:exactMatch:
-    - https://w3id.org/mixs/nucl_acid_ext
-    - http://rs.gbif.org/terms/1.0/nucl_acid_ext
-  identifier: https://w3id.org/mixs/0000037
+name: nucl_acid_ext
+description: A link to a literature reference, electronic resource or a standard operating
+  procedure (SOP), that describes the material separation to recover the nucleic acid
+  fraction from a sample. If a custom extraction method has been developed and applied
+  to the samples within this dataset, it is Highly recommended to make the SOP available
+  and provide the link here.
+range: string
+annotations:
+  section: Nucleic acid extraction
+  requirement_level: Highly recommended
+  example: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
+  modifications_made:
+  - description
+  data_type:
+  - sampleMetadata
+skos:exactMatch:
+- https://w3id.org/mixs/0000037

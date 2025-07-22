@@ -1,8 +1,10 @@
-tax_class_query_cutoff:
-  description: Minimum percent query coverage for taxonomic assignment. Unit = %
-  range: float
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    unit: '%'
-    example: '98.0'
+name: tax_class_query_cutoff
+description: Minimum percent query coverage for taxonomic assignment. Unit = %
+range: float
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: '98.0'
+  unit: '%'
+  data_type:
+  - projectMetadata

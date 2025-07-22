@@ -1,7 +1,26 @@
-estimatedNumberOfCopies_unit:
-  description: Unit for estimatedNumberOfCopies
-  range: estimatedNumberOfCopies_unit_enum
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Recommended
-    example: other:copies/mg of sediment sample
+name: estimatedNumberOfCopies_unit
+description: Unit for estimatedNumberOfCopies
+range: estimatedNumberOfCopies_unit_enum
+annotations:
+  section: Targeted assay detection
+  requirement_level: Recommended
+  example: other:copies/mg of sediment sample
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  data_type:
+  - ampData
+  - eLowQuantData
+enum_values:
+  copies/reaction:
+    meaning: copies/reaction
+  "copies/\xB5L of DNA extract":
+    meaning: "copies/\xB5L of DNA extract"
+  "copies/\xB5L of reaction":
+    meaning: "copies/\xB5L of reaction"
+  ng/reaction:
+    meaning: ng/reaction
+  "ng/\xB5L of DNA extract":
+    meaning: "ng/\xB5L of DNA extract"
+  "ng/\xB5L of reaction":
+    meaning: "ng/\xB5L of reaction"
+  'other:':
+    meaning: 'other:'

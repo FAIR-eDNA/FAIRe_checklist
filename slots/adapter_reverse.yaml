@@ -1,8 +1,12 @@
-adapter_reverse:
-  description: Reverse sequencing adapter. The sequence should be reported in uppercase
-    letters
-  range: string
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Recommended
-    example: CAAGCAGAAGACGGCATACGAGAT
+name: adapter_reverse
+description: Reverse sequencing adapter. The sequence should be reported in uppercase
+  letters
+range: string
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Recommended
+  example: CAAGCAGAAGACGGCATACGAGAT
+  modifications_made:
+  - Forward and reverse separated
+  data_type:
+  - projectMetadata

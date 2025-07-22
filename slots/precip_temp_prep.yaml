@@ -1,9 +1,14 @@
-precip_temp_prep:
-  description: Chemicals used in precipitation at the sample preparation step prior
-    to DNA extraction, if precipitation was performed. Unit = degree Celsius
-  range: precip_temp_prep_enum
-  annotations:
-    section: Sample preparation
-    requirement_level: Highly recommended
-    unit: degree Celsius
-    example: '10.0'
+name: precip_temp_prep
+description: Temperature used in precipitation at the sample preparation step prior
+  to DNA extraction, if precipitation was performed. Unit = degree Celsius
+range: string
+annotations:
+  section: Sample preparation
+  requirement_level: Highly recommended
+  example: '10.0'
+  unit: degree Celsius
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - sampleMetadata

@@ -1,7 +1,9 @@
-merge_tool:
-  description: Software and the version to merge paired end reads
-  range: string
-  annotations:
-    section: Bioinformatics
-    requirement_level: Recommended
-    example: AdapterRemoval 2.3.3
+name: merge_tool
+description: Software and the version to merge paired end reads
+range: string
+annotations:
+  section: Bioinformatics
+  requirement_level: Recommended
+  example: AdapterRemoval 2.3.3
+  data_type:
+  - projectMetadata

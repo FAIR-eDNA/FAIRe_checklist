@@ -1,13 +1,14 @@
-baselineValue:
-  description: The number of cycles when fluorescence signal from the target amplification
-    is below background fluorescence not originated from the real target amplification.
-    Unit = cycle
-  range: string
-  annotations:
-    section: Targeted assay detection
-    requirement_level: Optional
-    unit: cycle
-    example: '15'
-    skos:exactMatch:
-    - http://rs.gbif.org/terms/1.0/baselineValue
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: baselineValue
+description: The number of cycles when fluorescence signal from the target amplification
+  is below background fluorescence not originated from the real target amplification.
+  Unit = cycle
+range: string
+annotations:
+  section: Targeted assay detection
+  requirement_level: Optional
+  example: '15'
+  unit: cycle
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

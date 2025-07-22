@@ -1,8 +1,13 @@
-dna_sequence:
-  description: The DNA sequence
-  range: string
-  annotations:
-    section: OTU/ASV
-    requirement_level: Mandatory
-    example: GGTGTTTAAATTTCGGTCTGTAAGAAGTATTGTAATCCCAGCCGCTAGGACTGGAAGGGAAAGAAGGAGAAGGACAGCTGTAATTAGCACGGCTCAGACAAACAAGGGTGTCTGGTATTGGGAAATAGCTGGGGGTTTCATGTTAATAATTGTGGTAATAAAATTGATAGCACCAAGGATTGAAGAGACCCCGGCTAGGTGGAGAGAA
-  identifier: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+name: dna_sequence
+description: The DNA sequence
+range: string
+annotations:
+  section: OTU/ASV
+  requirement_level: Mandatory
+  example: GGTGTTTAAATTTCGGTCTGTAAGAAGTATTGTAATCCCAGCCGCTAGGACTGGAAGGGAAAGAAGGAGAAGGACAGCTGTAATTAGCACGGCTCAGACAAACAAGGGTGTCTGGTATTGGGAAATAGCTGGGGGTTTCATGTTAATAATTGTGGTAATAAAATTGATAGCACCAAGGATTGAAGAGACCCCGGCTAGGTGGAGAGAA
+  requirement_level_condition: If assay_type = metabarcoding
+  data_type:
+  - taxaRaw
+  - taxaFinal
+skos:exactMatch:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

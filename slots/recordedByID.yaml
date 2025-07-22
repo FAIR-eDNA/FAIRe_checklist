@@ -1,11 +1,14 @@
-recordedByID:
-  description: A list (concatenated and separated) of the globally unique identifier
-    for the people responsible for the submitted dataset
-  range: string
-  annotations:
-    section: Project
-    requirement_level: Recommended
-    example: https://orcid.org/0000-0002-1825-0097  |  https://orcid.org/0000-0002-1825-0098
-    skos:exactMatch:
-    - http://rs.tdwg.org/dwc/terms/recordedByID
-  identifier: https://dwc.tdwg.org/list/#dwc_recordedByID
+name: recordedByID
+description: A list (concatenated and separated) of the globally unique identifier
+  for the people responsible for the submitted dataset
+range: string
+annotations:
+  section: Project
+  requirement_level: Recommended
+  example: "https://orcid.org/0000-0002-1825-0097\_ | \_https://orcid.org/0000-0002-1825-0098"
+  modifications_made:
+  - description
+  data_type:
+  - projectMetadata
+skos:exactMatch:
+- https://dwc.tdwg.org/list/#dwc_recordedByID

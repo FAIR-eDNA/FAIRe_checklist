@@ -1,9 +1,14 @@
-precip_force_prep:
-  description: Centrifuge force used in precipitation at the sample preparation step
-    prior to DNA extraction, if precipitation was performed. Unit = x g
-  range: float
-  annotations:
-    section: Sample preparation
-    requirement_level: Highly recommended
-    unit: x g
-    example: '20000.0'
+name: precip_force_prep
+description: Centrifuge force used in precipitation at the sample preparation step
+  prior to DNA extraction, if precipitation was performed. Unit = x g
+range: float
+annotations:
+  section: Sample preparation
+  requirement_level: Highly recommended
+  example: '20000.0'
+  unit: x g
+  modifications_made:
+  - field_name
+  - description
+  data_type:
+  - sampleMetadata

@@ -1,7 +1,42 @@
-platform:
-  description: General sequencing platform used.
-  range: platform_enum
-  annotations:
-    section: Library preparation sequencing
-    requirement_level: Highly recommended
-    example: ILLUMINA
+name: platform
+description: General sequencing platform used.
+range: platform_enum
+annotations:
+  section: Library preparation sequencing
+  requirement_level: Highly recommended
+  example: ILLUMINA
+  data_type:
+  - projectMetadata
+enum_values:
+  ILLUMINA:
+    meaning: ILLUMINA
+  BGISEQ:
+    meaning: BGISEQ
+  CAPILLARY:
+    meaning: CAPILLARY
+  DNBSEQ:
+    meaning: DNBSEQ
+  ELEMENT:
+    meaning: ELEMENT
+  GENAPSYS:
+    meaning: GENAPSYS
+  GENEMIND:
+    meaning: GENEMIND
+  HELICOS:
+    meaning: HELICOS
+  ION_TORRENT:
+    meaning: ION_TORRENT
+  LS454:
+    meaning: LS454
+  OXFORD_NANOPORE:
+    meaning: OXFORD_NANOPORE
+  PACBIO_SMRT:
+    meaning: PACBIO_SMRT
+  TAPESTRI:
+    meaning: TAPESTRI
+  VELA_DIAGNOSTICS:
+    meaning: VELA_DIAGNOSTICS
+  ULTIMA:
+    meaning: ULTIMA
+  'other:':
+    meaning: 'other:'

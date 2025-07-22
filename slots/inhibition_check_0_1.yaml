@@ -1,7 +1,9 @@
-inhibition_check_0_1:
-  description: Was the inhibition checked? Yes = 1, No = 0
-  range: boolean
-  annotations:
-    section: PCR
-    requirement_level: Optional
-    example: '1'
+name: inhibition_check_0_1
+description: Was the inhibition checked? Yes = 1, No = 0
+range: string
+annotations:
+  section: PCR
+  requirement_level: Optional
+  example: '1'
+  data_type:
+  - projectMetadata
