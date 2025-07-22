@@ -11,7 +11,8 @@ annotations:
   sample_type_specificity:
   - HostAssociated
   - SymbiontAssociated
-  source: New
+  source:
+  - New
 enum_values:
   mm:
     meaning: mm

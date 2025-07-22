@@ -10,7 +10,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: M
-  source: New
+  source:
+  - New
 enum_values:
   sample:
     meaning: sample

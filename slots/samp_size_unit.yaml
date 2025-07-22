@@ -10,7 +10,8 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source: New
+  source:
+  - New
 enum_values:
   mL:
     meaning: mL

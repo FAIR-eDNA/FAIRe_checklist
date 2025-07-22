@@ -16,6 +16,7 @@ annotations:
   sample_type_specificity:
   - Air
   - HostAssociated
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000094

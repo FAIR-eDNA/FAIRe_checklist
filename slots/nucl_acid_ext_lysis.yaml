@@ -11,7 +11,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: R
-  source: New
+  source:
+  - New
 enum_values:
   physical:
     meaning: physical

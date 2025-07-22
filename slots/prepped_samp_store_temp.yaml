@@ -20,4 +20,5 @@ annotations:
   requirement_level_code: R
   sample_type_specificity:
   - ALL
-  source: Thalinger et al., 2021
+  source:
+  - Thalinger et al., 2021

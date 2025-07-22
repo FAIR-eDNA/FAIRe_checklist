@@ -9,7 +9,8 @@ annotations:
   data_type:
   - projectMetadata
   requirement_level_code: M
-  source: New
+  source:
+  - New
 enum_values:
   copies/reaction:
     meaning: copies/reaction

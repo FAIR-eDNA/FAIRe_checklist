@@ -10,6 +10,7 @@ annotations:
   data_type:
   - projectMetadata
   requirement_level_code: R
-  source: New
+  source:
+  - New
   fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
     elongation:degrees_minutes;total cycles

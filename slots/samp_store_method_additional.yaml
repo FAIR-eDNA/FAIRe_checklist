@@ -11,4 +11,5 @@ annotations:
   requirement_level_code: O
   sample_type_specificity:
   - ALL
-  source: New
+  source:
+  - New

@@ -9,4 +9,5 @@ annotations:
   data_type:
   - stdData
   requirement_level_code: M
-  source: New
+  source:
+  - New

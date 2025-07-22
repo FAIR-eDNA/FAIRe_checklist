@@ -10,6 +10,7 @@ annotations:
   - taxaRaw
   - taxaFinal
   requirement_level_code: M
-  source: DNA-derived data extension
+  source:
+  - DNA-derived data extension
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

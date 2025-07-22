@@ -8,7 +8,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: HR
-  source: New
+  source:
+  - New
 enum_values:
   mL:
     meaning: mL

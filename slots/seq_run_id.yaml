@@ -11,4 +11,5 @@ annotations:
   data_type:
   - experimentRunMetadata
   requirement_level_code: M
-  source: New
+  source:
+  - New

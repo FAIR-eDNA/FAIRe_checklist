@@ -9,7 +9,8 @@ annotations:
   - taxaRaw
   - taxaFinal
   requirement_level_code: HR
-  source: DwC
+  source:
+  - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/taxonRank
 enum_values:

@@ -11,7 +11,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: O
-  source: DwC
+  source:
+  - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 enum_values:

@@ -14,7 +14,8 @@ annotations:
   - Sediment
   - Air
   - MicrobialMatBiofilm
-  source: New
+  source:
+  - New
 enum_values:
   "\xB5M":
     meaning: "\xB5M"

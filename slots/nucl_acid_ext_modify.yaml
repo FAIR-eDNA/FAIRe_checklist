@@ -13,4 +13,5 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: R
-  source: Thalinger et al., 2021
+  source:
+  - Thalinger et al., 2021

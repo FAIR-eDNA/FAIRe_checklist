@@ -18,7 +18,9 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: M
-  source: DwC | MIxS
+  source:
+  - DwC
+  - MIxS
   fixed_format: yyyy-mm-ddThh:mm:ss+-hh:mm
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011

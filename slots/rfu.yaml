@@ -10,4 +10,5 @@ annotations:
   - ampData
   - stdData
   requirement_level_code: O
-  source: New
+  source:
+  - New

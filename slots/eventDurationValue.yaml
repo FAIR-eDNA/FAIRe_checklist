@@ -13,7 +13,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: O
-  source: Humboldt extension
+  source:
+  - Humboldt extension
   fixed_format: PnYnMnWnDTnHnMnS
 skos:exactMatch:
 - http://rs.tdwg.org/eco/terms/eventDurationValue

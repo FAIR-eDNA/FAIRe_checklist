@@ -14,7 +14,8 @@ annotations:
   sample_type_specificity:
   - Water
   - Air
-  source: NMDC
+  source:
+  - NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/filter_material
 enum_values:

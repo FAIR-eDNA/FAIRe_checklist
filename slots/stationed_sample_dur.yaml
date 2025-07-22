@@ -16,5 +16,6 @@ annotations:
   sample_type_specificity:
   - Water
   - Air
-  source: New
+  source:
+  - New
   fixed_format: PnYnMnWnDTnHnMnS

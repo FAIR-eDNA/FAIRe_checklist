@@ -13,6 +13,7 @@ annotations:
   sample_type_specificity:
   - Water
   - Sediment
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000203

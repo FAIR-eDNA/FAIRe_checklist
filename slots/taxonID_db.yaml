@@ -9,4 +9,5 @@ annotations:
   - taxaRaw
   - taxaFinal
   requirement_level_code: HR
-  source: New
+  source:
+  - New

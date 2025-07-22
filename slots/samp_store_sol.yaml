@@ -16,7 +16,8 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001317
 enum_values:

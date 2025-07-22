@@ -12,4 +12,5 @@ annotations:
   sample_type_specificity:
   - Water
   - Air
-  source: Thalinger et al., 2021
+  source:
+  - Thalinger et al., 2021

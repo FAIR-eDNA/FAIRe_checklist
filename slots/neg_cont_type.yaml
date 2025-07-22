@@ -15,7 +15,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: M
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001321
 enum_values:

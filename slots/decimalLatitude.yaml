@@ -15,6 +15,7 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: M
-  source: DwC
+  source:
+  - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/decimalLatitude

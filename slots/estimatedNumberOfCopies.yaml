@@ -13,6 +13,8 @@ annotations:
   - ampData
   - eLowQuantData
   requirement_level_code: R
-  source: DNA-derived data extension | MIQE
+  source:
+  - DNA-derived data extension
+  - MIQE
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

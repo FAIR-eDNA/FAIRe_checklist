@@ -11,5 +11,6 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: O
-  source: New
+  source:
+  - New
   fixed_format: (a list of) samp_name

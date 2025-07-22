@@ -13,4 +13,5 @@ annotations:
   data_type:
   - projectMetadata
   requirement_level_code: R
-  source: MIQE
+  source:
+  - MIQE

@@ -12,5 +12,6 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: O
-  source: INSDC
+  source:
+  - INSDC
   fixed_format: (a list of) samp_name

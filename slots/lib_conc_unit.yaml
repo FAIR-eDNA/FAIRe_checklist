@@ -8,7 +8,8 @@ annotations:
   data_type:
   - experimentRunMetadata
   requirement_level_code: R
-  source: New
+  source:
+  - New
 enum_values:
   "ng/\xB5L":
     meaning: "ng/\xB5L"

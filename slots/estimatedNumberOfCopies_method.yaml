@@ -8,7 +8,8 @@ annotations:
   data_type:
   - ampData
   requirement_level_code: R
-  source: MIQE
+  source:
+  - MIQE
 enum_values:
   Ct/Cq with standard curve:
     meaning: Ct/Cq with standard curve

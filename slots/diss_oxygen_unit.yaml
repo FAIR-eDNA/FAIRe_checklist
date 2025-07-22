@@ -14,7 +14,8 @@ annotations:
   - Sediment
   - Air
   - MicrobialMatBiofilm
-  source: New
+  source:
+  - New
 enum_values:
   mg/L:
     meaning: mg/L

@@ -11,6 +11,7 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: HR
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001223

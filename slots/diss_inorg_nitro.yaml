@@ -14,6 +14,7 @@ annotations:
   - Sediment
   - Air
   - MicrobialMatBiofilm
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000698

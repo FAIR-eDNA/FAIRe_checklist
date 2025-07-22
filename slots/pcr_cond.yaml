@@ -14,7 +14,9 @@ annotations:
   data_type:
   - projectMetadata
   requirement_level_code: HR
-  source: MIxS | DNA-derived data extension
+  source:
+  - MIxS
+  - DNA-derived data extension
   fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
     elongation:degrees_minutes;total cycles
 skos:exactMatch:

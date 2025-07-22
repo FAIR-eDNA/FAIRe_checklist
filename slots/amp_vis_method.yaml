@@ -11,7 +11,8 @@ annotations:
   data_type:
   - projectMetadata
   requirement_level_code: M
-  source: New
+  source:
+  - New
 enum_values:
   qPCR:
     meaning: qPCR

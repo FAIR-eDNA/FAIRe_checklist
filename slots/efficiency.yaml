@@ -9,4 +9,5 @@ annotations:
   data_type:
   - stdData
   requirement_level_code: HR
-  source: MIQE
+  source:
+  - MIQE

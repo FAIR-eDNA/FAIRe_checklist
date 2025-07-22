@@ -14,7 +14,8 @@ annotations:
   data_type:
   - sampleMetadata
   requirement_level_code: M
-  source: MIxS
+  source:
+  - MIxS
   fixed_format: <country or sea names>:<region>,<locality>
 skos:exactMatch:
 - https://w3id.org/mixs/0000010

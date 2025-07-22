@@ -16,6 +16,7 @@ annotations:
   - Soil
   - Sediment
   - Air
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000757

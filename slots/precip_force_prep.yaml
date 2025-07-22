@@ -17,4 +17,5 @@ annotations:
   - Water
   - Soil
   - Sediment
-  source: Thalinger et al., 2021
+  source:
+  - Thalinger et al., 2021

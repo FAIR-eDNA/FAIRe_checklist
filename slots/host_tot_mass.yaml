@@ -11,6 +11,7 @@ annotations:
   sample_type_specificity:
   - HostAssociated
   - SymbiontAssociated
-  source: MIxS
+  source:
+  - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000263

@@ -22,6 +22,7 @@ annotations:
   - HostAssociated
   - MicrobialMatBiofilm
   - SymbiontAssociated
-  source: DwC
+  source:
+  - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters

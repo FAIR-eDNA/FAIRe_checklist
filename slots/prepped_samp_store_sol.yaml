@@ -14,7 +14,8 @@ annotations:
   requirement_level_code: R
   sample_type_specificity:
   - ALL
-  source: New
+  source:
+  - New
 enum_values:
   ethanol:
     meaning: ethanol

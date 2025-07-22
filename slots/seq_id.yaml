@@ -10,4 +10,5 @@ annotations:
   - taxaRaw
   - taxaFinal
   requirement_level_code: M
-  source: New
+  source:
+  - New

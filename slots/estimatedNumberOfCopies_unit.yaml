@@ -10,7 +10,8 @@ annotations:
   - ampData
   - eLowQuantData
   requirement_level_code: R
-  source: New
+  source:
+  - New
 enum_values:
   copies/reaction:
     meaning: copies/reaction

@@ -12,6 +12,7 @@ annotations:
   data_type:
   - experimentRunMetadata
   requirement_level_code: R
-  source: NMDC
+  source:
+  - NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/output_read_count

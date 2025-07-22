@@ -13,6 +13,7 @@ annotations:
   - taxaRaw
   - taxaFinal
   requirement_level_code: O
-  source: DwC
+  source:
+  - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/verbatimIdentification
