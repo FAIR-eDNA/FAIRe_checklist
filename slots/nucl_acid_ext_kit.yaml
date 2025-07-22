@@ -5,10 +5,12 @@ range: string
 annotations:
   section: Nucleic acid extraction
   requirement_level: Highly recommended
-  example: Qiagen PowerSoil Kit
   modifications_made:
   - description
+  example: Qiagen PowerSoil Kit
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001223

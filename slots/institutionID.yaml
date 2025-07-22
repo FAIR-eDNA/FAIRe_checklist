@@ -10,5 +10,7 @@ annotations:
   example: https://ror.org/042r9xb17
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/institutionID

@@ -5,11 +5,13 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Recommended
-  example: '16847'
-  unit: reads
   modifications_made:
   - description
+  example: '16847'
+  unit: reads
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/output_read_count

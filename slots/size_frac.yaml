@@ -8,5 +8,10 @@ annotations:
   unit: "\xB5m"
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Air
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000017

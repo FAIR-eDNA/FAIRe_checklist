@@ -8,3 +8,8 @@ annotations:
   unit: mm
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - Water
+  - Air
+  source: Thalinger et al., 2021

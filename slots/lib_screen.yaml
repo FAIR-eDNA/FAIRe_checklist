@@ -10,5 +10,7 @@ annotations:
     a Qubit (Invitrogen) and diluted to 2 nM before loading it onto a MiSeq Flow Cell
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000043

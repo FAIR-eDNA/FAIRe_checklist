@@ -7,5 +7,7 @@ annotations:
   example: Forest soil metagenome
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000092

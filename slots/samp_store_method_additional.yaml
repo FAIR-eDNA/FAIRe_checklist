@@ -8,3 +8,7 @@ annotations:
   example: The sample was thawed overnight at room temperature prior to DNA extraction
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - ALL
+  source: New

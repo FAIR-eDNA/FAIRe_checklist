@@ -8,9 +8,11 @@ range: string
 annotations:
   section: Sample information
   requirement_level: Mandatory
-  example: PCR positive of synthetic DNA
   requirement_level_condition: If samp_category = positive control
+  example: PCR positive of synthetic DNA
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001322

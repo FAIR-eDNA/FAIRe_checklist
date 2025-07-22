@@ -5,12 +5,18 @@ range: precip_chem_prep_enum
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: ethanol | sodium chloride
   modifications_made:
   - field_name
   - description
+  example: ethanol | sodium chloride
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  source: Thalinger et al., 2021
 enum_values:
   ethanol:
     meaning: ethanol

@@ -6,11 +6,16 @@ range: float
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: '20.0'
-  unit: "\xB5m"
   modifications_made:
   - field_type
+  example: '20.0'
+  unit: "\xB5m"
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Air
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000735

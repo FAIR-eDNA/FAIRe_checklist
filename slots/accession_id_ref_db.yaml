@@ -5,12 +5,14 @@ range: string
 annotations:
   section: OTU/ASV
   requirement_level: Recommended
-  example: NCBI
   modifications_made:
   - field_name
   - description
+  example: NCBI
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level_code: R
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000087

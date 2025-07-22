@@ -8,11 +8,13 @@ range: string
 annotations:
   section: Sample collection
   requirement_level: Mandatory
-  example: 'USA: Maryland, Bethesda'
   modifications_made:
   - description
-  fixed_format: <country or sea names>:<region>,<locality>
+  example: 'USA: Maryland, Bethesda'
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: MIxS
+  fixed_format: <country or sea names>:<region>,<locality>
 skos:exactMatch:
 - https://w3id.org/mixs/0000010

@@ -8,7 +8,9 @@ range: string
 annotations:
   section: Targeted assay detection
   requirement_level: Mandatory
-  example: '1'
   requirement_level_condition: If assay_type = targeted
+  example: '1'
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: New

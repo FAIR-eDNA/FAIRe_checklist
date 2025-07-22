@@ -4,10 +4,12 @@ range: pcr_assay_lod_unit_enum
 annotations:
   section: Targeted assay detection
   requirement_level: Mandatory
-  example: "ng/\xB5L"
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  example: "ng/\xB5L"
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: New
 enum_values:
   copies/reaction:
     meaning: copies/reaction

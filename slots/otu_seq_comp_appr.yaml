@@ -4,10 +4,12 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Highly recommended
-  example: blastn;2.6.0+
   modifications_made:
   - description
+  example: blastn;2.6.0+
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000086

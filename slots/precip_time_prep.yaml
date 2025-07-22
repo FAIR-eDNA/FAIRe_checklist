@@ -5,10 +5,16 @@ range: float
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: '45.0'
-  unit: minute
   modifications_made:
   - field_name
   - description
+  example: '45.0'
+  unit: minute
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  source: Thalinger et al., 2021

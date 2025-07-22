@@ -8,3 +8,5 @@ annotations:
   example: e61e08bfd3ad5eb5d6e7da9e95b5feed
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: New

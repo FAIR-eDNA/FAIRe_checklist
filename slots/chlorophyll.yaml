@@ -8,5 +8,12 @@ annotations:
   unit: mg/m3
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  - MicrobialMatBiofilm
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000177

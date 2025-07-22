@@ -6,10 +6,12 @@ range: amp_vis_method_enum
 annotations:
   section: Targeted assay detection
   requirement_level: Mandatory
-  example: qPCR
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  example: qPCR
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: New
 enum_values:
   qPCR:
     meaning: qPCR

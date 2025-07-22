@@ -5,10 +5,12 @@ range: string
 annotations:
   section: PCR
   requirement_level: Recommended
-  example: https://phylogenomics.me/protocols/16s-pcr-protocol/
   modifications_made:
   - description
+  example: https://phylogenomics.me/protocols/16s-pcr-protocol/
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000038

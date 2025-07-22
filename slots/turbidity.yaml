@@ -9,5 +9,11 @@ annotations:
   unit: nephelometric turbidity unit (ntu)
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Sediment
+  - MicrobialMatBiofilm
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000191

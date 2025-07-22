@@ -9,3 +9,5 @@ annotations:
   example: "Luna\xAE Universal qPCR Master Mix, New England Biolabs"
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

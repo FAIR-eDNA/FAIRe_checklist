@@ -8,5 +8,7 @@ annotations:
   example: noaa-aoml-gomecc4
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: NMDC | NOAA
 skos:exactMatch:
 - https://w3id.org/nmdc/project_id

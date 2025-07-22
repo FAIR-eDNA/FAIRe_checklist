@@ -5,10 +5,16 @@ range: string
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: '10.0'
-  unit: degree Celsius
   modifications_made:
   - field_name
   - description
+  example: '10.0'
+  unit: degree Celsius
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  source: Thalinger et al., 2021

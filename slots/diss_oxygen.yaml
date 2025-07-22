@@ -7,5 +7,13 @@ annotations:
   example: '175.0'
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  - Air
+  - MicrobialMatBiofilm
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000119

@@ -7,3 +7,5 @@ annotations:
   example: ADAPTER;min_overlap=5
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

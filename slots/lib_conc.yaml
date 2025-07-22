@@ -8,3 +8,5 @@ annotations:
   example: '10.0'
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: New

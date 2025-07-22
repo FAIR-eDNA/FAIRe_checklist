@@ -9,3 +9,5 @@ annotations:
   example: Lutjanus malabaricus
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

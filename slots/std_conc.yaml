@@ -4,7 +4,9 @@ range: float
 annotations:
   section: Targeted assay detection
   requirement_level: Mandatory
-  example: '2500.0'
   requirement_level_condition: if samp_category = PCR standard
+  example: '2500.0'
   data_type:
   - stdData
+  requirement_level_code: M
+  source: New

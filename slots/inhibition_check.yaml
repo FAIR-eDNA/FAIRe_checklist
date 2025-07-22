@@ -12,3 +12,5 @@ annotations:
     was selected for subsequent analysis in the workflow.
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

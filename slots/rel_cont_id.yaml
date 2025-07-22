@@ -8,3 +8,5 @@ annotations:
   example: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: New

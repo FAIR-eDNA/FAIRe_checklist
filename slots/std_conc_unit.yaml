@@ -7,6 +7,8 @@ annotations:
   requirement_level_condition: if samp_category = PCR standard
   data_type:
   - stdData
+  requirement_level_code: M
+  source: New
 enum_values:
   copies/reaction:
     meaning: copies/reaction

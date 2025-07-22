@@ -4,12 +4,17 @@ range: filter_material_enum
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: cellulose ester
   modifications_made:
   - description
   - field_type
+  example: cellulose ester
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Air
+  source: NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/filter_material
 enum_values:

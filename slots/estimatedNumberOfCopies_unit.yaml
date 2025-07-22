@@ -4,11 +4,13 @@ range: estimatedNumberOfCopies_unit_enum
 annotations:
   section: Targeted assay detection
   requirement_level: Recommended
-  example: other:copies/mg of sediment sample
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  example: other:copies/mg of sediment sample
   data_type:
   - ampData
   - eLowQuantData
+  requirement_level_code: R
+  source: New
 enum_values:
   copies/reaction:
     meaning: copies/reaction

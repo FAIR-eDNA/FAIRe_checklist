@@ -12,6 +12,8 @@ annotations:
   example: targeted
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: New
 enum_values:
   targeted:
     meaning: targeted

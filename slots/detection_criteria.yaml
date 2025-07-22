@@ -5,10 +5,12 @@ range: string
 annotations:
   section: Targeted assay detection
   requirement_level: Mandatory
-  example: The minimum number of PCR replicates of 2 with positive amplification
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made:
   - field_name
   - description
+  example: The minimum number of PCR replicates of 2 with positive amplification
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: Thalinger et al., 2021

@@ -7,3 +7,5 @@ annotations:
   example: NextSeq 500/550 v2.5
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New

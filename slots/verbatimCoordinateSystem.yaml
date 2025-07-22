@@ -4,12 +4,14 @@ range: verbatimCoordinateSystem_enum
 annotations:
   section: Sample collection
   requirement_level: Optional
-  example: degrees minutes seconds
   modifications_made:
   - description
   - field_type
+  example: degrees minutes seconds
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 enum_values:

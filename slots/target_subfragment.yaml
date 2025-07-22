@@ -8,5 +8,7 @@ annotations:
   example: V6
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000045

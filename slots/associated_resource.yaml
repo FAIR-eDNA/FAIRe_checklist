@@ -6,10 +6,12 @@ range: string
 annotations:
   section: Data management
   requirement_level: Optional
-  example: http://www.earthmicrobiome.org/
   modifications_made:
   - description
+  example: http://www.earthmicrobiome.org/
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000091

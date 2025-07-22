@@ -7,12 +7,16 @@ range: samp_store_sol_enum
 annotations:
   section: Sample storage
   requirement_level: Highly recommended
-  example: none
   modifications_made:
   - description
   - field_type
+  example: none
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - ALL
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001317
 enum_values:

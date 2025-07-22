@@ -7,3 +7,5 @@ annotations:
   example: '1'
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: New

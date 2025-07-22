@@ -5,8 +5,10 @@ range: string
 annotations:
   section: Library preparation sequencing
   requirement_level: Recommended
-  example: CAAGCAGAAGACGGCATACGAGAT
   modifications_made:
   - Forward and reverse separated
+  example: CAAGCAGAAGACGGCATACGAGAT
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

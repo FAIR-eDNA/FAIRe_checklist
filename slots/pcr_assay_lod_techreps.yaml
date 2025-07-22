@@ -8,3 +8,5 @@ annotations:
   example: '8'
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

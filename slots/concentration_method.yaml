@@ -4,11 +4,13 @@ range: string
 annotations:
   section: Nucleic acid extraction
   requirement_level: Optional
-  example: Qubit 4.0 Fluorometer (Invitrogen)
   modifications_made:
   - field_name
   - description
+  example: Qubit 4.0 Fluorometer (Invitrogen)
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: DNA-derived data extension
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

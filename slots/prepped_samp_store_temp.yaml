@@ -9,11 +9,15 @@ range: string
 annotations:
   section: Sample preparation
   requirement_level: Recommended
-  example: ambient temperature
-  unit: degree Celsius
   modifications_made:
   - field_name
   - description
   - field_type
+  example: ambient temperature
+  unit: degree Celsius
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - ALL
+  source: Thalinger et al., 2021

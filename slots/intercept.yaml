@@ -7,3 +7,5 @@ annotations:
   example: '39.37'
   data_type:
   - stdData
+  requirement_level_code: R
+  source: MIQE

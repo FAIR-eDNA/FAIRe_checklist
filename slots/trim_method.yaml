@@ -5,8 +5,10 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Recommended
-  example: cutadapt v4.9
   modifications_made:
   - field_name
+  example: cutadapt v4.9
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: NOAA

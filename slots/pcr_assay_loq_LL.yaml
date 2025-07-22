@@ -8,3 +8,5 @@ annotations:
   unit: same as pcr_assay_loq_unit
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

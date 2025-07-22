@@ -8,3 +8,5 @@ annotations:
   unit: '%'
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: New

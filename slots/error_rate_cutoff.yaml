@@ -7,3 +7,5 @@ annotations:
   example: '25.0'
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

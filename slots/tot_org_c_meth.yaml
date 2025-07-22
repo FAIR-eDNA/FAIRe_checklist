@@ -7,5 +7,13 @@ annotations:
   example: https://www.epa.gov/sites/default/files/2015-12/documents/9060a.pdf
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  - Air
+  - MicrobialMatBiofilm
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000337

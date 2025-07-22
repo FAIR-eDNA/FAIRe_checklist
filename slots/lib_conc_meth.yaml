@@ -7,3 +7,5 @@ annotations:
   example: Qubit Fluoromete
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: New

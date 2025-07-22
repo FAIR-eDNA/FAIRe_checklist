@@ -8,3 +8,5 @@ annotations:
   example: UWA, IOMRC, Lv4 -80Freezer2
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: New

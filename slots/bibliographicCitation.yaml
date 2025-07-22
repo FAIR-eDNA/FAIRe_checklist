@@ -7,5 +7,7 @@ annotations:
   example: 'DOI: 10.1111/mec.15382'
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - http://purl.org/dc/terms/bibliographicCitation

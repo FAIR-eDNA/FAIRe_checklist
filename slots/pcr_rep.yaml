@@ -8,3 +8,5 @@ annotations:
   example: '3'
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New

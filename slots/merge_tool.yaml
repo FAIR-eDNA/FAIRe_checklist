@@ -7,3 +7,5 @@ annotations:
   example: AdapterRemoval 2.3.3
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

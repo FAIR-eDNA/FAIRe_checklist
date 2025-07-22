@@ -4,11 +4,13 @@ range: string
 annotations:
   section: OTU/ASV
   requirement_level: Recommended
-  example: Bloch, 1790
   modifications_made:
   - description
+  example: Bloch, 1790
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/scientificNameAuthorship

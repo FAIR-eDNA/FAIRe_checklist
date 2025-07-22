@@ -5,10 +5,12 @@ range: string
 annotations:
   section: Project
   requirement_level: Mandatory
-  example: "Jos\xE9 E. Crespo"
   modifications_made:
   - description
+  example: "Jos\xE9 E. Crespo"
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: DwC
 skos:exactMatch:
 - https://dwc.tdwg.org/list/#dwc_recordedBy

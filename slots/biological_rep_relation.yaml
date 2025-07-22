@@ -8,6 +8,8 @@ annotations:
   section: Sample relations
   requirement_level: Optional
   example: S01_1 | S01_2 | S01_3
-  fixed_format: (a list of) samp_name
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: New
+  fixed_format: (a list of) samp_name

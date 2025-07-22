@@ -14,3 +14,5 @@ annotations:
     \ \u03BCL of DNA, and made up to 25 \u03BCL with PCR grade water"
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: MIQE

@@ -8,3 +8,5 @@ annotations:
   example: S01_R2.fastq
   data_type:
   - experimentRunMetadata
+  requirement_level_code: R
+  source: New

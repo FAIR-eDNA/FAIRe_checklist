@@ -7,3 +7,5 @@ annotations:
   example: CTTGTTTGTTTGATCAATTC
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New

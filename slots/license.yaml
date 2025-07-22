@@ -8,5 +8,7 @@ annotations:
   example: http://creativecommons.org/licenses/by/4.0/legalcode
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - https://dwc.tdwg.org/terms/#dcterms:license

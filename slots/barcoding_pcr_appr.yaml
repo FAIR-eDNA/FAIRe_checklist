@@ -7,6 +7,8 @@ annotations:
   example: two-step PCR
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: MIEM (Klymus et al., 2024)
 enum_values:
   one-step PCR:
     meaning: one-step PCR

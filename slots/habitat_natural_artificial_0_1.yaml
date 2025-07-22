@@ -10,3 +10,5 @@ annotations:
   example: '0'
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: Thalinger et al., 2021

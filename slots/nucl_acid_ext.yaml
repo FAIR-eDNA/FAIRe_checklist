@@ -8,10 +8,12 @@ range: string
 annotations:
   section: Nucleic acid extraction
   requirement_level: Highly recommended
-  example: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
   modifications_made:
   - description
+  example: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000037

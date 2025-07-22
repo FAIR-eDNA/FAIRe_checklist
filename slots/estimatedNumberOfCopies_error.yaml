@@ -10,3 +10,5 @@ annotations:
   data_type:
   - ampData
   - eLowQuantData
+  requirement_level_code: R
+  source: New

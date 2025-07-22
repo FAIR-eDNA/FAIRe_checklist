@@ -7,12 +7,14 @@ range: float
 annotations:
   section: Sample collection
   requirement_level: Mandatory
-  example: '-41.09834'
   requirement_level_condition: Mandatory unless specified under the term informationWithheld,
     or samp_category = negative control, positive control, or PCR standard
   modifications_made:
   - description
+  example: '-41.09834'
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/decimalLatitude

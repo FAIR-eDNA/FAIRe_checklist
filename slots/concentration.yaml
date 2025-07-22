@@ -4,10 +4,12 @@ range: float
 annotations:
   section: Nucleic acid extraction
   requirement_level: Recommended
-  example: '67.5'
   modifications_made:
   - description
+  example: '67.5'
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: DNA-derived data extension
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -8,11 +8,20 @@ range: float
 annotations:
   section: Environment
   requirement_level: Recommended
-  example: '0.2'
-  unit: meter
   modifications_made:
   - description
+  example: '0.2'
+  unit: meter
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  - HostAssociated
+  - MicrobialMatBiofilm
+  - SymbiontAssociated
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters

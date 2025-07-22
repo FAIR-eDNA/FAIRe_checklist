@@ -4,9 +4,11 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Recommended
+  requirement_level_condition: if screen_nontarget_0_1 is 1
   example: Non-targeted species (i.e. domestic animals, humans and non-marine species)
     were removed from the curated OTU table and downstream data analyses. OTUs that
     were assigned to species in WoRMS were kept in the curated OTU table.
-  requirement_level_condition: if screen_nontarget_0_1 is 1
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

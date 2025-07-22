@@ -8,3 +8,5 @@ annotations:
   example: '0.9867'
   data_type:
   - stdData
+  requirement_level_code: HR
+  source: MIQE

@@ -7,6 +7,8 @@ annotations:
   example: synthetic double-stranded DNA
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New
 enum_values:
   synthetic double-stranded DNA:
     meaning: synthetic double-stranded DNA

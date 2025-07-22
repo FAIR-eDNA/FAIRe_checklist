@@ -8,3 +8,5 @@ annotations:
   example: PhiX was spiked in at 15%
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

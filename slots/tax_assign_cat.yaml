@@ -10,6 +10,8 @@ annotations:
   example: sequence similarity
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New
 enum_values:
   sequence similarity:
     meaning: sequence similarity

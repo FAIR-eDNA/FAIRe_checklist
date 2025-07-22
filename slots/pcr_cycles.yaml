@@ -6,11 +6,13 @@ range: string
 annotations:
   section: PCR
   requirement_level: Highly recommended
-  example: '40'
-  unit: cycles
   modifications_made:
   - description
+  example: '40'
+  unit: cycles
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/pcr_cycles

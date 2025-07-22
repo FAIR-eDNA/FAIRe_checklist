@@ -13,3 +13,5 @@ annotations:
   - experimentRunMetadata
   - stdData
   - eLowQuantData
+  requirement_level_code: M
+  source: New

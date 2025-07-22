@@ -7,6 +7,14 @@ annotations:
   example: "\xB5g/L"
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  - Air
+  - MicrobialMatBiofilm
+  source: New
 enum_values:
   "\xB5M":
     meaning: "\xB5M"

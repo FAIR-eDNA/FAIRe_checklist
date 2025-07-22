@@ -10,3 +10,7 @@ annotations:
     Prepped_samp_store_temp was ambient, average of 22 degree Celsius
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - ALL
+  source: New

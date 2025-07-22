@@ -7,11 +7,13 @@ range: float
 annotations:
   section: Nucleic acid extraction
   requirement_level: Highly recommended
-  example: '1500.0'
-  unit: select from samp_vol_ext_unit
   modifications_made:
   - description
+  example: '1500.0'
+  unit: select from samp_vol_ext_unit
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000111

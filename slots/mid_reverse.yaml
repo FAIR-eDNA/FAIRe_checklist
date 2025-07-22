@@ -5,8 +5,10 @@ range: string
 annotations:
   section: Library preparation sequencing
   requirement_level: Optional
-  example: AACAAGCC
   modifications_made:
   - Forward and reverse separated
+  example: AACAAGCC
   data_type:
   - experimentRunMetadata
+  requirement_level_code: O
+  source: New

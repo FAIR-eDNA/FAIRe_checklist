@@ -5,10 +5,16 @@ range: float
 annotations:
   section: Sample preparation
   requirement_level: Highly recommended
-  example: '20000.0'
-  unit: x g
   modifications_made:
   - field_name
   - description
+  example: '20000.0'
+  unit: x g
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - Water
+  - Soil
+  - Sediment
+  source: Thalinger et al., 2021

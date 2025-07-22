@@ -10,3 +10,5 @@ annotations:
     cutoff 90%
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

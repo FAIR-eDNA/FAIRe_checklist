@@ -8,5 +8,7 @@ annotations:
   example: not-for-profit use only
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - http://purl.org/dc/terms/accessRights

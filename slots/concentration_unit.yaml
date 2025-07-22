@@ -7,6 +7,8 @@ annotations:
   example: "ng/\xB5l"
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: New
 enum_values:
   "ng/\xB5l":
     meaning: "ng/\xB5l"

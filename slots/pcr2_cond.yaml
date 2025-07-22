@@ -7,7 +7,9 @@ annotations:
   section: Library preparation sequencing
   requirement_level: Recommended
   example: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35
-  fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
-    elongation:degrees_minutes;total cycles
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New
+  fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
+    elongation:degrees_minutes;total cycles

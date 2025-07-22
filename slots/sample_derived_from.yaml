@@ -9,6 +9,8 @@ annotations:
   section: Sample relations
   requirement_level: Optional
   example: S01
-  fixed_format: (a list of) samp_name
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: INSDC
+  fixed_format: (a list of) samp_name

@@ -7,3 +7,5 @@ annotations:
   example: 'DOI: 10.1002/edn3.220'
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

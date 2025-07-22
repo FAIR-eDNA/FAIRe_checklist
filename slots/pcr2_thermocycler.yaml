@@ -8,3 +8,5 @@ annotations:
   example: Thermo Fisher Scientific, QuantStudio 6
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

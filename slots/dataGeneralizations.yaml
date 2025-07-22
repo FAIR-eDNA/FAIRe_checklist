@@ -7,11 +7,13 @@ range: string
 annotations:
   section: Data management
   requirement_level: Optional
-  example: Coordinates generalized from original GPS coordinates to the nearest half
-    degree grid cell.
   modifications_made:
   - description
+  example: Coordinates generalized from original GPS coordinates to the nearest half
+    degree grid cell.
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/dataGeneralizations

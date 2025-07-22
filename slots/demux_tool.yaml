@@ -7,3 +7,5 @@ annotations:
   example: DADA2 1.26
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

@@ -7,6 +7,10 @@ annotations:
   example: L
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - ALL
+  source: New
 enum_values:
   mL:
     meaning: mL

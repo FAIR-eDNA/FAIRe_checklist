@@ -7,3 +7,5 @@ annotations:
   example: 10.1007/s00227-017-3141-x
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New

@@ -11,6 +11,10 @@ annotations:
   example: lysis buffer
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - ALL
+  source: New
 enum_values:
   ethanol:
     meaning: ethanol

@@ -5,10 +5,12 @@ range: string
 annotations:
   section: Library preparation sequencing
   requirement_level: Optional
-  example: GTGAATAT
   modifications_made:
   - Forward and reverse separated
+  example: GTGAATAT
   data_type:
   - experimentRunMetadata
+  requirement_level_code: O
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000047

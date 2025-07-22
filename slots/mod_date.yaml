@@ -8,11 +8,13 @@ range: string
 annotations:
   section: Data management
   requirement_level: Recommended
-  example: '2014-09-09'
   modifications_made:
   - description
-  fixed_format: yyyy-mm-dd
+  example: '2014-09-09'
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: NMDC
+  fixed_format: yyyy-mm-dd
 skos:exactMatch:
 - https://w3id.org/nmdc/mod_date

@@ -8,5 +8,7 @@ annotations:
   example: location information not given for endangered species
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/informationWithheld

@@ -5,10 +5,12 @@ range: string
 annotations:
   section: Project
   requirement_level: Recommended
-  example: "https://orcid.org/0000-0002-1825-0097\_ | \_https://orcid.org/0000-0002-1825-0098"
   modifications_made:
   - description
+  example: "https://orcid.org/0000-0002-1825-0097\_ | \_https://orcid.org/0000-0002-1825-0098"
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: DwC
 skos:exactMatch:
 - https://dwc.tdwg.org/list/#dwc_recordedByID

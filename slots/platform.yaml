@@ -7,6 +7,8 @@ annotations:
   example: ILLUMINA
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: INSDC
 enum_values:
   ILLUMINA:
     meaning: ILLUMINA

@@ -8,14 +8,16 @@ range: string
 annotations:
   section: Sample collection
   requirement_level: Mandatory
-  example: estuarine coastal surface layer [ENVO:01001302]
   requirement_level_condition: Mandatory unless samp_category = negative control,
     positive control, or PCR standard
   modifications_made:
   - description
   - field_type
-  fixed_format: termLabel [termID]
+  example: estuarine coastal surface layer [ENVO:01001302]
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: MIxS | DNA-derived data extension
+  fixed_format: termLabel [termID]
 skos:exactMatch:
 - https://w3id.org/mixs/0000013

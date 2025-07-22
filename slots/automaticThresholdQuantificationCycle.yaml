@@ -4,11 +4,13 @@ range: string
 annotations:
   section: Targeted assay detection
   requirement_level: Optional
-  example: '1'
   modifications_made:
   - description
   - field_type
+  example: '1'
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: DNA-derived data extension | MIQE
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -7,5 +7,10 @@ annotations:
   example: '54.0'
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - HostAssociated
+  - SymbiontAssociated
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000256

@@ -6,7 +6,9 @@ range: string
 annotations:
   section: Library preparation sequencing
   requirement_level: Mandatory
-  example: run20230922
   requirement_level_condition: If assay_type = metabarcoding
+  example: run20230922
   data_type:
   - experimentRunMetadata
+  requirement_level_code: M
+  source: New

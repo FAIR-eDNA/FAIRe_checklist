@@ -7,11 +7,15 @@ range: float
 annotations:
   section: Sample collection
   requirement_level: Highly recommended
-  example: '5.0'
-  unit: Select from sampl_size_unit
   modifications_made:
   - description
+  example: '5.0'
+  unit: Select from sampl_size_unit
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - ALL
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000001

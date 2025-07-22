@@ -6,10 +6,12 @@ range: string
 annotations:
   section: PCR
   requirement_level: Highly recommended
-  example: https://doi.org/10.1186/1742-9994-10-34
   modifications_made:
   - Forward and reverse separated
+  example: https://doi.org/10.1186/1742-9994-10-34
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: DNA-derived data extension
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

@@ -7,6 +7,11 @@ annotations:
   example: m3/s
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Air
+  source: New
 enum_values:
   m3/s:
     meaning: m3/s

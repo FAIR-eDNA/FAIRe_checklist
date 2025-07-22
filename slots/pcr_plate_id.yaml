@@ -8,9 +8,11 @@ range: string
 annotations:
   section: PCR
   requirement_level: Mandatory
-  example: 20240802_pcr1
   requirement_level_condition: If assay_type = targeted
+  example: 20240802_pcr1
   data_type:
   - experimentRunMetadata
   - ampData
   - stdData
+  requirement_level_code: M
+  source: New

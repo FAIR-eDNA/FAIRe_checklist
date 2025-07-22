@@ -7,3 +7,5 @@ annotations:
   example: xxxx@yyyy.com
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: New

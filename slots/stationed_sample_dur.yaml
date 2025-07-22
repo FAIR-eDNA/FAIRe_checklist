@@ -10,6 +10,11 @@ annotations:
   section: Sample preparation
   requirement_level: Recommended
   example: T1H30M
-  fixed_format: PnYnMnWnDTnHnMnS
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - Water
+  - Air
+  source: New
+  fixed_format: PnYnMnWnDTnHnMnS

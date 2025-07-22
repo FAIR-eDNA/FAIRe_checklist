@@ -5,7 +5,9 @@ range: string
 annotations:
   section: Nucleic acid extraction
   requirement_level: Recommended
-  example: Zymo DNA Clean & Concentrator Kits
   requirement_level_condition: If dna_cleanup_0_1 is 1
+  example: Zymo DNA Clean & Concentrator Kits
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: New

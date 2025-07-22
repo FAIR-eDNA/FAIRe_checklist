@@ -9,5 +9,7 @@ annotations:
   example: teleost
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: Humboldt extension
 skos:exactMatch:
 - http://rs.tdwg.org/eco/terms/targetTaxonomicScope

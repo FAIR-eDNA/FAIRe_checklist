@@ -7,3 +7,5 @@ annotations:
   example: 2008-01-23T19:23-06:00
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: New

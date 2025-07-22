@@ -8,3 +8,5 @@ annotations:
   example: Illumina HiSeq 1500 [OBI_0003386]
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: INSDC

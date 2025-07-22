@@ -5,10 +5,14 @@ range: string
 annotations:
   section: Sample collection
   requirement_level: Recommended
-  example: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
   modifications_made:
   - description
+  example: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - ALL
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0001225

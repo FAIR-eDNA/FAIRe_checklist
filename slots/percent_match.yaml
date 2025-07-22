@@ -11,3 +11,5 @@ annotations:
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level_code: R
+  source: New

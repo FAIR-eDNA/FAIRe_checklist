@@ -6,12 +6,14 @@ range: string
 annotations:
   section: Sample collection
   requirement_level: Optional
-  example: T1H25M
   modifications_made:
   - description
   - field_type
-  fixed_format: PnYnMnWnDTnHnMnS
+  example: T1H25M
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  source: Humboldt extension
+  fixed_format: PnYnMnWnDTnHnMnS
 skos:exactMatch:
 - http://rs.tdwg.org/eco/terms/eventDurationValue

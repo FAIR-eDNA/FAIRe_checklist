@@ -8,5 +8,9 @@ annotations:
   unit: mg/L
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000741

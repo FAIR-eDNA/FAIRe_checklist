@@ -7,10 +7,14 @@ range: string
 annotations:
   section: Sample collection
   requirement_level: Recommended
-  example: push core
   modifications_made:
   - description
+  example: push core
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - ALL
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000002

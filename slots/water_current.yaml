@@ -9,5 +9,10 @@ annotations:
   unit: m/s
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Sediment
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000203

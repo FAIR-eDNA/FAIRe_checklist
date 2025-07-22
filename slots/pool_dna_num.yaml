@@ -4,12 +4,14 @@ range: string
 annotations:
   section: Nucleic acid extraction
   requirement_level: Recommended
-  example: '2'
   modifications_made:
   - description
   - field_type
   - field_name
+  example: '2'
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000325

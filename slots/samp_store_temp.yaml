@@ -9,12 +9,16 @@ range: string
 annotations:
   section: Sample storage
   requirement_level: Highly recommended
-  example: '-80.0'
-  unit: degree Celsius
   modifications_made:
   - description
   - field_type
+  example: '-80.0'
+  unit: degree Celsius
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - ALL
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000110

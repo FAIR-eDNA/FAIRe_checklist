@@ -5,11 +5,15 @@ range: string
 annotations:
   section: Sample preparation
   requirement_level: Recommended
-  example: Water samples were pre-filtered using a sieve (200 micrometers), then filtered
-    using a peristaltic pump (pore size 0.45 micrometers).
   modifications_made:
   - description
+  example: Water samples were pre-filtered using a sieve (200 micrometers), then filtered
+    using a peristaltic pump (pore size 0.45 micrometers).
   data_type:
   - sampleMetadata
+  requirement_level_code: R
+  sample_type_specificity:
+  - ALL
+  source: MIxS | DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000016

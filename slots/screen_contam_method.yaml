@@ -4,8 +4,10 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Highly recommended
+  requirement_level_condition: if screen_contam_0_1 is 1
   example: Taxa detected in negative controls were checked, and the read counts were
     applied as a cutoff to call presence.
-  requirement_level_condition: if screen_contam_0_1 is 1
   data_type:
   - projectMetadata
+  requirement_level_code: HR
+  source: New

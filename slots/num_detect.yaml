@@ -8,3 +8,5 @@ annotations:
   example: '2'
   data_type:
   - eLowQuantData
+  requirement_level_code: HR
+  source: New

@@ -8,3 +8,5 @@ annotations:
   example: BIO-RAD QuantaSoft
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

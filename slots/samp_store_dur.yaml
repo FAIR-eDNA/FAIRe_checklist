@@ -9,11 +9,15 @@ range: string
 annotations:
   section: Sample storage
   requirement_level: Highly recommended
-  example: P1Y6M
   modifications_made:
   - description
-  fixed_format: PnYnMnWnDTnHnMnS
+  example: P1Y6M
   data_type:
   - sampleMetadata
+  requirement_level_code: HR
+  sample_type_specificity:
+  - ALL
+  source: MIxS
+  fixed_format: PnYnMnWnDTnHnMnS
 skos:exactMatch:
 - https://w3id.org/mixs/0000116

@@ -8,3 +8,5 @@ annotations:
   example: https://doi.org/10.1038/s41598-020-60779-9
   data_type:
   - projectMetadata
+  requirement_level_code: O
+  source: New

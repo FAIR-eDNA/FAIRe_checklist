@@ -4,8 +4,10 @@ range: string
 annotations:
   section: Bioinformatics
   requirement_level: Recommended
+  requirement_level_condition: if screen_geograph_0_1 is 1
   example: Distribution information was checked using FishBase, and species that did
     not reside in the study area were removed.
-  requirement_level_condition: if screen_geograph_0_1 is 1
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

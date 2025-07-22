@@ -4,8 +4,10 @@ range: string
 annotations:
   section: OTU/ASV
   requirement_level: Mandatory
-  example: ASV1
   requirement_level_condition: If assay_type = metabarcoding
+  example: ASV1
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level_code: M
+  source: New

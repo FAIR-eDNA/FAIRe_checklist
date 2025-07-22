@@ -7,3 +7,8 @@ annotations:
   example: nylon
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - Water
+  - Air
+  source: New

@@ -7,6 +7,11 @@ annotations:
   example: cm
   data_type:
   - sampleMetadata
+  requirement_level_code: O
+  sample_type_specificity:
+  - HostAssociated
+  - SymbiontAssociated
+  source: New
 enum_values:
   mm:
     meaning: mm

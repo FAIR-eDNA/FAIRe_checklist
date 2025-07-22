@@ -5,7 +5,9 @@ range: string
 annotations:
   section: PCR
   requirement_level: Mandatory
-  example: verteberate
   requirement_level_condition: If pcr_0_1 is 1. Else, recommended
+  example: verteberate
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: New

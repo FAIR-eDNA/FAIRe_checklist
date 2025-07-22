@@ -12,11 +12,13 @@ range: string
 annotations:
   section: PCR
   requirement_level: Mandatory
-  example: GGWACWGGWTGAACWGTWTAYCCYCC
   requirement_level_condition: If pcr_0_1 is 1
   modifications_made:
   - description
+  example: GGWACWGGWTGAACWGTWTAYCCYCC
   data_type:
   - projectMetadata
+  requirement_level_code: M
+  source: DNA-derived data extension
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

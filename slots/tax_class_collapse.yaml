@@ -10,3 +10,5 @@ annotations:
     species, 95-98% genus, 90-95% family).
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New

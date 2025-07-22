@@ -9,6 +9,8 @@ annotations:
   data_type:
   - ampData
   - eLowQuantData
+  requirement_level_code: R
+  source: New
 enum_values:
   standard error:
     meaning: standard error

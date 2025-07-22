@@ -7,13 +7,15 @@ range: neg_cont_type_enum
 annotations:
   section: Sample information
   requirement_level: Mandatory
-  example: field negative | process negative | extraction negative | PCR negative
   requirement_level_condition: If samp_category = negative control
   modifications_made:
   - description
   - field_type
+  example: field negative | process negative | extraction negative | PCR negative
   data_type:
   - sampleMetadata
+  requirement_level_code: M
+  source: MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0001321
 enum_values:

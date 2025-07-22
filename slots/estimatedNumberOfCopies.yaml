@@ -5,12 +5,14 @@ range: float
 annotations:
   section: Targeted assay detection
   requirement_level: Recommended
-  example: '35.92426489978709'
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made:
   - description
+  example: '35.92426489978709'
   data_type:
   - ampData
   - eLowQuantData
+  requirement_level_code: R
+  source: DNA-derived data extension | MIQE
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

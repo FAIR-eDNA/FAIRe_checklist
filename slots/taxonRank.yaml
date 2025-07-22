@@ -8,6 +8,8 @@ annotations:
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level_code: HR
+  source: DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/taxonRank
 enum_values:

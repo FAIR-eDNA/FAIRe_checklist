@@ -9,6 +9,8 @@ annotations:
   example: MD5
   data_type:
   - projectMetadata
+  requirement_level_code: R
+  source: New
 enum_values:
   MD5:
     meaning: MD5
