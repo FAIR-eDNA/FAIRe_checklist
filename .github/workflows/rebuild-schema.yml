@@ -23,8 +23,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install PyYAML
-        run: pip install pyyaml
+      - name: Install Python dependencies
+        run: pip install openpyxl pyyaml
 
       - name: Merge slots into schema.yaml
         run: python merge_slots.py
