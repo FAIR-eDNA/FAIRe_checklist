@@ -64,6 +64,23 @@ for file_name in slot_files:
 # Sort class slot list
 schema["classes"]["MetadataChecklist"]["slots"].sort()
 
+
+# Convert OrderedDicts to regular dicts before dumping
+from collections import OrderedDict
+import yaml
+
+# Helper function to recursively convert OrderedDict to dict
+def convert_ordered_dict(obj):
+    if isinstance(obj, OrderedDict):
+        return {k: convert_ordered_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_ordered_dict(i) for i in obj]
+    else:
+        return obj
+
+# Cleaned-up version of schema
+clean_schema = convert_ordered_dict(schema)
+
 # Header comment
 header_comment = (
     "# ============================\n"
@@ -73,9 +90,9 @@ header_comment = (
     "# ============================\n\n"
 )
 
-# Save to disk
-with open(OUTPUT_SCHEMA, "w") as f:
+# Write to file
+with open("schema.yaml", "w") as f:
     f.write(header_comment)
-    yaml.dump(schema, f, sort_keys=False, allow_unicode=True)
+    yaml.dump(clean_schema, f, sort_keys=False, allow_unicode=True)
 
 print(f"✅ Merged schema written to {OUTPUT_SCHEMA}")
