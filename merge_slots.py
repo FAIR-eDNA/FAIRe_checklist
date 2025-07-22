@@ -1,14 +1,14 @@
 import os
 import yaml
+from collections import OrderedDict
 
 # Path to the directory containing individual slot YAML files
 SLOTS_DIR = "slots"
-
-# Output path for merged schema
 OUTPUT_SCHEMA = "schema.yaml"
+GLOSSARY_FILENAME = "glossary_annotation.yaml"
 
 # Base schema structure
-schema = {
+schema = OrderedDict({
     "id": "tbd: a value like https://w3id.org/fairie/schema",
     "name": "faire_checklist",
     "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
@@ -21,27 +21,67 @@ schema = {
         "skos": "http://www.w3.org/2004/02/skos/core#"
     },
     "default_prefix": "faire",
-    "imports": ["linkml:types"],
-    "slots": {},
-    "enums": {},
-    "classes": {
-        "MetadataChecklist": {
-            "description": "A metadata record based on the FAIRe checklist.",
-            "slots": []
-        }
+    "imports": ["linkml:types"]
+})
+
+# Load glossary (if exists) and insert first
+glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
+if os.path.exists(glossary_path):
+    with open(glossary_path, "r") as g:
+        glossary_block = yaml.safe_load(g)
+        schema["annotations"] = glossary_block.get("annotations", {})
+
+# Initialize empty containers
+schema["slots"] = OrderedDict()
+schema["enums"] = OrderedDict()
+schema["classes"] = {
+    "MetadataChecklist": {
+        "description": "A metadata record based on the FAIRe checklist.",
+        "slots": []
     }
 }
 
-# Merge slots
-for file_name in os.listdir(SLOTS_DIR):
-    if file_name.endswith(".yaml"):
-        slot_path = os.path.join(SLOTS_DIR, file_name)
-        with open(slot_path, "r") as f:
-            slot_content = yaml.safe_load(f)
+# Process all non-glossary YAML files alphabetically
+slot_files = sorted(
+    f for f in os.listdir(SLOTS_DIR)
+    if f.endswith(".yaml") and f != GLOSSARY_FILENAME
+)
+
+for file_name in slot_files:
+    slot_path = os.path.join(SLOTS_DIR, file_name)
+    with open(slot_path, "r") as f:
+        slot_content = yaml.safe_load(f)
+
+        if "name" in slot_content:
+            slot_name = slot_content["name"]
+            schema["slots"][slot_name] = slot_content
+            schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+        else:
             for slot_name, slot_def in slot_content.items():
                 schema["slots"][slot_name] = slot_def
                 schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
 
+# Sort class slot list
+schema["classes"]["MetadataChecklist"]["slots"].sort()
+
+
+# Convert OrderedDicts to regular dicts before dumping
+from collections import OrderedDict
+import yaml
+
+# Helper function to recursively convert OrderedDict to dict
+def convert_ordered_dict(obj):
+    if isinstance(obj, OrderedDict):
+        return {k: convert_ordered_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_ordered_dict(i) for i in obj]
+    else:
+        return obj
+
+# Cleaned-up version of schema
+clean_schema = convert_ordered_dict(schema)
+
+# Header comment
 header_comment = (
     "# ============================\n"
     "# AUTO-GENERATED FILE\n"
@@ -50,9 +90,9 @@ header_comment = (
     "# ============================\n\n"
 )
 
-# Save merged schema
-with open(OUTPUT_SCHEMA, "w") as f:
+# Write to file
+with open("schema.yaml", "w") as f:
     f.write(header_comment)
-    yaml.dump(schema, f, sort_keys=False, allow_unicode=True)
+    yaml.dump(clean_schema, f, sort_keys=False, allow_unicode=True)
 
 print(f"✅ Merged schema written to {OUTPUT_SCHEMA}")
