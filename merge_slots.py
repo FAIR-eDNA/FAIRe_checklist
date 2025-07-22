@@ -32,22 +32,36 @@ schema = {
     }
 }
 
-# Merge slots
-for file_name in os.listdir(SLOTS_DIR):
-    if file_name.endswith(".yaml"):
-        slot_path = os.path.join(SLOTS_DIR, file_name)
-        with open(slot_path, "r") as f:
-            slot_content = yaml.safe_load(f)
-            # Support flat files where the slot name is in the 'name' field
-            if "name" in slot_content:
-                slot_name = slot_content["name"]
-                schema["slots"][slot_name] = slot_content
-                schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
-            else:
-                for slot_name, slot_def in slot_content.items():
-                    schema["slots"][slot_name] = slot_def
-                    schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+# Load glossary annotations if present
+glossary_path = os.path.join(SLOTS_DIR, "glossary_annotation.yaml")
+if os.path.exists(glossary_path):
+    with open(glossary_path, "r") as g:
+        glossary_block = yaml.safe_load(g)
+        schema.update(glossary_block)
 
+# Merge slot files (skip glossary)
+for file_name in os.listdir(SLOTS_DIR):
+    if not file_name.endswith(".yaml") or file_name == "glossary_annotation.yaml":
+        continue
+
+    slot_path = os.path.join(SLOTS_DIR, file_name)
+    with open(slot_path, "r") as f:
+        slot_content = yaml.safe_load(f)
+
+        # Support both flat and nested slot formats
+        if "name" in slot_content:
+            slot_name = slot_content["name"]
+            schema["slots"][slot_name] = slot_content
+            schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+        else:
+            for slot_name, slot_def in slot_content.items():
+                schema["slots"][slot_name] = slot_def
+                schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+
+# Optional: sort slot names in class definition
+schema["classes"]["MetadataChecklist"]["slots"].sort()
+
+# Header comment
 header_comment = (
     "# ============================\n"
     "# AUTO-GENERATED FILE\n"
