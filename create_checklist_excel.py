@@ -124,7 +124,7 @@ for i, (term, definition) in enumerate(glossary.items(), start=start_row + 2):
     ws_readme.cell(row=i, column=3, value=str(definition))
 
 # === Add checklist tab ===
-ws_checklists = wb.create_sheet("checklists")
+ws_checklists = wb.create_sheet("checklist")
 for col_num, col_name in enumerate(ordered_columns, start=1):
     cell = ws_checklists.cell(row=1, column=col_num, value=col_name)
     cell.font = bold
