@@ -24,7 +24,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install Python dependencies
-        run: pip install openpyxl pyyaml
+        run: pip install openpyxl pyyaml pandas
 
       - name: Merge slots into schema.yaml
         run: python merge_slots.py
