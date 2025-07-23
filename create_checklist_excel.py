@@ -2,12 +2,26 @@ import yaml
 from openpyxl import Workbook
 from openpyxl.styles import Font
 
-# === Load glossary from local YAML file ===
+# === Load glossary_annotation.yaml ===
 with open("slots/glossary_annotation.yaml", "r") as f:
-    glossary = yaml.safe_load(f)
+    data = yaml.safe_load(f)
 
-# === Static instructions block ===
-readme_instructions = [
+# === Extract glossary block safely ===
+if isinstance(data, dict) and "glossary" in data and isinstance(data["glossary"], dict):
+    glossary = data["glossary"]
+elif isinstance(data, dict):
+    glossary = data
+else:
+    raise ValueError("Expected a dictionary of term: definition pairs or a 'glossary' block.")
+
+# === Create workbook ===
+wb = Workbook()
+ws = wb.active
+ws.title = "README"
+bold = Font(bold=True)
+
+# === Instructions block ===
+instructions = [
     'Date and time must be recorded following ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time zone must be specified after the timestamp e.g., "2008-01-23T19:23-06:00" in the time zone six hours earlier than UTC, or "2008-01-23T19:23Z" at UTC time. In Excel, format the cell as text to prevent from automatic conversion to other date fromats.',
     "Time duration must be recorded following ISO 8601 durations (PnYnMnWnDTnHnMnS for P<date>T<time>). e.g., P1Y1M1DT1H1M1.1S = One year, one month, one day, one hour, one minute, one second, and 100 milliseconds",
     "A date and time range can be specified using a forward slash (/) to separate the start and end values (e.g., 2008-01-23T19:23-06:00/2008-01-23T19:53-06:00).",
@@ -20,29 +34,22 @@ readme_instructions = [
     "When a value is missing from a mandatory term, it is required to provide the reason using the INSDC missing value controlled vocabulary (https://www.insdc.org/submitting-standards/missing-value-reporting/). See https://fair-edna.github.io/guidelines.html#missing-values for the full list of values."
 ]
 
-# === Create workbook and apply formatting ===
-wb = Workbook()
-ws = wb.active
-ws.title = "README"
-bold_font = Font(bold=True)
-
-# Write Instructions header in col A, then lines in col B
-ws.cell(row=1, column=1, value="Instructions for data submitters:").font = bold_font
-for i, line in enumerate(readme_instructions, start=2):
+# === Write instructions block ===
+ws.cell(row=1, column=1, value="Instructions for data submitters:").font = bold
+for i, line in enumerate(instructions, start=2):
     ws.cell(row=i, column=2, value=line)
 
-# Blank row + Glossary block
-glossary_start = len(readme_instructions) + 3
-ws.cell(row=glossary_start, column=1, value="Terms and definitions:").font = bold_font
-ws.cell(row=glossary_start + 1, column=2, value="Term").font = bold_font
-ws.cell(row=glossary_start + 1, column=3, value="Definition").font = bold_font
+# === Write glossary block ===
+start_row = len(instructions) + 3
+ws.cell(row=start_row, column=1, value="Terms and definitions:").font = bold
+ws.cell(row=start_row + 1, column=2, value="Term").font = bold
+ws.cell(row=start_row + 1, column=3, value="Definition").font = bold
 
-# Write glossary terms in col B and C
-for i, (term, definition) in enumerate(glossary.items(), start=glossary_start + 2):
-    ws.cell(row=i, column=2, value=term)
-    ws.cell(row=i, column=3, value=definition)
+for i, (term, definition) in enumerate(glossary.items(), start=start_row + 2):
+    ws.cell(row=i, column=2, value=str(term))
+    ws.cell(row=i, column=3, value=str(definition))
 
-# === Save to file ===
-output_file = "FAIRe_checklist_v1.0.2_test.xlsx"
-wb.save(output_file)
-print(f"✅ README sheet written to {output_file}")
+# === Save file ===
+wb.save("FAIRe_checklist_v1.0.2_test.xlsx")
+print("✅ Excel file written: FAIRe_checklist_v1.0.2_test.xlsx")
+
