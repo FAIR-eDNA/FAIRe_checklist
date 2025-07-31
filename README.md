@@ -1,11 +1,13 @@
 # FAIRe_checklist
 
-This repository stores the current and previous versions of the FAIRe metadata checklist, along with a detailed version history. Recent updates include a draft for migration to LinkML. The starting point for the slots defined in `/slots` was `FAIRe_checklist_v1.0.2.xlsx`. 
+This repository stores the current and previous versions of the FAIRe metadata checklist, along with a detailed version history. Recent updates include a draft model for migration to LinkML and programmatic generation of documentation. The starting point for the slots defined in `/slots` was `FAIRe_checklist_v1.0.2.xlsx`. 
+
+[![](https://mermaid.ink/img/pako:eNptj8tOwzAQRX_FmhVIaUiaxCReIPUFLFggxIoEIRM7iSUnLn6Ilrb_jpsWFgjLC8_4nLmaHdSKcSDQSPVZd1Rb9PBUDcifWVnBigmLLNc9OvUueNiGyEhlzZXhH2-ChVvay8sKXtFkcoPm3nl0pkNWoTth7927_zmp8yOwf9aibbk2e7QoTwCa1Vao4UwtRmruhGSeWZam7nhPx5AzsRwJMaydRY3Se7QqV5uaS3QrJDf_jvlLQACtFgyI1Y4H0Pv96LGE3dGuwPpMXgHxT8Yb6qStoBoOXlvT4UWp_sfUyrUdkIZK4yu3ZtTypaCtpv1vV_OBcb1QbrBAsqgYhwDZwQZIPJ2GSRqluMijvMD-BrAFgvMwLtICR3GCMxwV-SGArzE2CnGeFNdpkmdTHGdJhg_fItyLHQ?type=png)](https://mermaid.live/edit#pako:eNptj8tOwzAQRX_FmhVIaUiaxCReIPUFLFggxIoEIRM7iSUnLn6Ilrb_jpsWFgjLC8_4nLmaHdSKcSDQSPVZd1Rb9PBUDcifWVnBigmLLNc9OvUueNiGyEhlzZXhH2-ChVvay8sKXtFkcoPm3nl0pkNWoTth7927_zmp8yOwf9aibbk2e7QoTwCa1Vao4UwtRmruhGSeWZam7nhPx5AzsRwJMaydRY3Se7QqV5uaS3QrJDf_jvlLQACtFgyI1Y4H0Pv96LGE3dGuwPpMXgHxT8Yb6qStoBoOXlvT4UWp_sfUyrUdkIZK4yu3ZtTypaCtpv1vV_OBcb1QbrBAsqgYhwDZwQZIPJ2GSRqluMijvMD-BrAFgvMwLtICR3GCMxwV-SGArzE2CnGeFNdpkmdTHGdJhg_fItyLHQ)
+_In an effort to be transparent and controlled, we have created a programmatic workflow for incorporating revisions into the FAIRe checklist._
 
 ### Do not edit the following files by hand:
 - The file `schema.yaml` is regenerated on each commit from the yaml files in `/slots`. 
-- Two `.xlsx` files are generated from `schema.yaml`, beginning with v1.0.3 of the checklist. 
-
+- Two `.xlsx` files are generated from `schema.yaml`, beginning with v1.0.3 of the checklist.
 
 ---
 
