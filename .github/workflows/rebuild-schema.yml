@@ -30,13 +30,16 @@ jobs:
         run: python merge_slots.py
 
       - name: Create Excel version of checklist
-        run: python create_checklist_excel.py
+        run: python generate_checklist_excel.py
+
+      - name: Create Excel Templates from checklist
+        run: python generate_FULLtemplate_excel.py
 
       - name: Commit and push updated schema (only on main)
         if: github.ref == 'refs/heads/main'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add schema.yaml FAIRe_checklist_v1.0.2_test.xlsx
-          git commit -m "Auto-regenerate schema.yaml from slots" || echo "No changes to commit"
+          git add schema.yaml *.xlsx
+          git commit -m "Auto-regenerate schema.yaml from slots, excel files from schema.yaml" || echo "No changes to commit"
           git push
