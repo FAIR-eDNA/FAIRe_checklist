@@ -19,3 +19,4 @@ annotations:
   fixed_format: yyyy-mm-dd
 skos:exactMatch:
 - https://w3id.org/nmdc/mod_date
+term_type: fixed format

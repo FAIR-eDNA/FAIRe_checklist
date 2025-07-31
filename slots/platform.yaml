@@ -43,3 +43,4 @@ enum_values:
     meaning: ULTIMA
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

@@ -33,3 +33,4 @@ enum_values:
     meaning: JGD2000
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

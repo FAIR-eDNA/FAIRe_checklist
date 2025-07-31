@@ -18,3 +18,4 @@ annotations:
   fixed_format: PnYnMnWnDTnHnMnS
 skos:exactMatch:
 - http://rs.tdwg.org/eco/terms/eventDurationValue
+term_type: fixed format

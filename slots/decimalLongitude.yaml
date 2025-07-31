@@ -19,3 +19,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/decimalLongitude
+term_type: unspecified

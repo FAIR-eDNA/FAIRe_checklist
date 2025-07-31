@@ -12,3 +12,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://purl.org/dc/terms/bibliographicCitation
+term_type: unspecified

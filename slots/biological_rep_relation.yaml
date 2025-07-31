@@ -14,3 +14,4 @@ annotations:
   source:
   - New
   fixed_format: (a list of) samp_name
+term_type: fixed format

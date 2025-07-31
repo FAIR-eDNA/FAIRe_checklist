@@ -33,3 +33,4 @@ enum_values:
     meaning: m3
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

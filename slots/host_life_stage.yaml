@@ -20,3 +20,4 @@ annotations:
   fixed_format: termLabel [termID]
 skos:exactMatch:
 - https://w3id.org/mixs/0000251
+term_type: fixed format

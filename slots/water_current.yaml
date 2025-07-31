@@ -17,3 +17,4 @@ annotations:
   - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000203
+term_type: unspecified

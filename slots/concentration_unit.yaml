@@ -17,3 +17,4 @@ enum_values:
     meaning: "copies/\xB5l"
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

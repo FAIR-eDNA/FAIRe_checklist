@@ -23,3 +23,4 @@ annotations:
   - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000110
+term_type: numeric or controlled vocabulary

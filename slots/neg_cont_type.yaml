@@ -32,3 +32,4 @@ enum_values:
     meaning: PCR negative
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

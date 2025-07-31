@@ -29,3 +29,4 @@ enum_values:
     meaning: none
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

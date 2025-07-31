@@ -14,3 +14,4 @@ annotations:
   - MIQE
 skos:exactMatch:
 - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+term_type: unspecified

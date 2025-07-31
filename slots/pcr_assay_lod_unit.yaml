@@ -22,3 +22,4 @@ enum_values:
     meaning: "ng/\xB5L"
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

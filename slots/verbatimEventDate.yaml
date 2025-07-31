@@ -14,3 +14,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/verbatimEventDate
+term_type: unspecified

@@ -17,3 +17,4 @@ enum_values:
     meaning: '%'
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

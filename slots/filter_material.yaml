@@ -35,3 +35,4 @@ enum_values:
     meaning: polyethersulfone
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

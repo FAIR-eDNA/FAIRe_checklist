@@ -24,3 +24,4 @@ annotations:
   - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000183
+term_type: unspecified

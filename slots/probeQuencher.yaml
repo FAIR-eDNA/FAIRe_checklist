@@ -31,3 +31,4 @@ enum_values:
     meaning: Black Hole Quencher (BHQ)
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

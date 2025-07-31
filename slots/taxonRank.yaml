@@ -30,3 +30,4 @@ enum_values:
     meaning: species
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

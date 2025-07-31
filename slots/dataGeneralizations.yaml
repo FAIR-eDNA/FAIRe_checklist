@@ -18,3 +18,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/dataGeneralizations
+term_type: unspecified

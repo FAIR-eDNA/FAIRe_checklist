@@ -28,3 +28,4 @@ enum_values:
     meaning: L/h
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

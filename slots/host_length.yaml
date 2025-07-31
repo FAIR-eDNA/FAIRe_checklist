@@ -15,3 +15,4 @@ annotations:
   - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000256
+term_type: unspecified

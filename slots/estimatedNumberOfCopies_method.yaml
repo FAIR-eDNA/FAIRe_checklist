@@ -21,3 +21,4 @@ enum_values:
     meaning: gel fluorescence intensities
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

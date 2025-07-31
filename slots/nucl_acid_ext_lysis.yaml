@@ -26,3 +26,4 @@ enum_values:
     meaning: osmotic
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

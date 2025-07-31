@@ -24,3 +24,4 @@ enum_values:
     meaning: UTM
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

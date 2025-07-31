@@ -10,3 +10,7 @@ annotations:
   requirement_level_code: R
   source:
   - New
+term_type: Boolean
+enum_range:
+- value: '1'
+- value: '0'

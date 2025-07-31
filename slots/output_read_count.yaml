@@ -16,3 +16,4 @@ annotations:
   - NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/output_read_count
+term_type: unspecified

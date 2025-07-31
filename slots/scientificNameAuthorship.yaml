@@ -15,3 +15,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
+term_type: unspecified

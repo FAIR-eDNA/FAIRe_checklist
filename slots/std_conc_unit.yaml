@@ -25,3 +25,4 @@ enum_values:
     meaning: "ng/\xB5L of reaction"
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

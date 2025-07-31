@@ -13,3 +13,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/informationWithheld
+term_type: unspecified

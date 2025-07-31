@@ -27,3 +27,4 @@ enum_values:
     meaning: sodium chloride
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

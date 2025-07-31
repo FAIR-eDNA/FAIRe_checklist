@@ -24,3 +24,4 @@ enum_values:
     meaning: probabilistic
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

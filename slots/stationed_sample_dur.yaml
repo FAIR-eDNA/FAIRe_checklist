@@ -19,3 +19,4 @@ annotations:
   source:
   - New
   fixed_format: PnYnMnWnDTnHnMnS
+term_type: fixed format

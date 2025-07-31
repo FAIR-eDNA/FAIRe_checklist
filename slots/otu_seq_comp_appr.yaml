@@ -15,3 +15,4 @@ annotations:
   - DNA-derived data extension
 skos:exactMatch:
 - https://w3id.org/mixs/0000086
+term_type: unspecified

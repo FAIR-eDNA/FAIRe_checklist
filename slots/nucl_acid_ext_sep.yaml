@@ -25,3 +25,4 @@ enum_values:
     meaning: gel electrophoresis
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

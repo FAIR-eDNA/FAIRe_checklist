@@ -17,3 +17,4 @@ annotations:
   - NMDC
 skos:exactMatch:
 - https://w3id.org/nmdc/pcr_cycles
+term_type: unspecified

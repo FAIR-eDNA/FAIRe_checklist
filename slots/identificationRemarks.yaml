@@ -16,3 +16,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/identificationRemarks
+term_type: unspecified

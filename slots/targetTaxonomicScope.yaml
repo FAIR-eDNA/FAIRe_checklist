@@ -14,3 +14,4 @@ annotations:
   - Humboldt extension
 skos:exactMatch:
 - http://rs.tdwg.org/eco/terms/targetTaxonomicScope
+term_type: unspecified

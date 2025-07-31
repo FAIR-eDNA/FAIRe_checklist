@@ -22,3 +22,4 @@ enum_values:
     meaning: m
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

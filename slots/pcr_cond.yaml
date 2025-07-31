@@ -21,3 +21,4 @@ annotations:
     elongation:degrees_minutes;total cycles
 skos:exactMatch:
 - https://w3id.org/mixs/0000049
+term_type: unspecified

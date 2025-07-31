@@ -14,3 +14,4 @@ annotations:
   - NOAA
 skos:exactMatch:
 - https://w3id.org/nmdc/project_id
+term_type: unspecified

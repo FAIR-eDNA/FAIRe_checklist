@@ -21,3 +21,4 @@ enum_values:
     meaning: 95% confidence interval
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

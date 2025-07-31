@@ -26,3 +26,4 @@ annotations:
   fixed_format: termLabel [termID]
 skos:exactMatch:
 - https://w3id.org/mixs/0000014
+term_type: fixed format

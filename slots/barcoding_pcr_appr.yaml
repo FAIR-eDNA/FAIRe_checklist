@@ -19,3 +19,4 @@ enum_values:
     meaning: ligation-based
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

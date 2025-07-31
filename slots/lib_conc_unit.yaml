@@ -19,3 +19,4 @@ enum_values:
     meaning: pM
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

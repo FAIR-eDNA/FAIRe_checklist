@@ -13,3 +13,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - https://dwc.tdwg.org/terms/#dcterms:license
+term_type: unspecified

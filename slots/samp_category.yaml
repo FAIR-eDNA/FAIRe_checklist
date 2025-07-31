@@ -23,3 +23,4 @@ enum_values:
     meaning: PCR standard
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

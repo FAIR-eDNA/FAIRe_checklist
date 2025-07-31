@@ -74,3 +74,4 @@ enum_values:
     meaning: D-loop
   'other:':
     meaning: 'other:'
+term_type: controlled vocabulary

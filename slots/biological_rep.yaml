@@ -11,3 +11,4 @@ annotations:
   requirement_level_code: R
   source:
   - New
+term_type: integer

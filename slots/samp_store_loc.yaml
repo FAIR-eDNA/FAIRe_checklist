@@ -12,3 +12,4 @@ annotations:
   - MIxS
 skos:exactMatch:
 - https://w3id.org/mixs/0000755
+term_type: unspecified

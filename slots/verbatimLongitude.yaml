@@ -16,3 +16,4 @@ annotations:
   - DwC
 skos:exactMatch:
 - http://rs.tdwg.org/dwc/terms/verbatimLongitude
+term_type: unspecified
