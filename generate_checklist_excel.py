@@ -2,6 +2,7 @@ import yaml
 import pandas as pd
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
+from checklist_term_order import term_order
 
 # === Load glossary_annotation.yaml ===
 with open("slots/glossary_annotation.yaml", "r") as f:
@@ -91,8 +92,11 @@ for slot_name, slot in slots.items():
 
 checklist_df = pd.DataFrame(records)[ordered_columns]
 checklist_df["section"] = pd.Categorical(checklist_df["section"], categories=custom_section_order, ordered=True)
-checklist_df = checklist_df.sort_values(by=["section", "data_type", "term_name"], na_position="last")
-
+if "checklist" in term_order:
+    ordered_terms = term_order["checklist"]
+    checklist_df["__term_index"] = checklist_df["term_name"].apply(lambda x: ordered_terms.index(x) if x in ordered_terms else float("inf"))
+    checklist_df = checklist_df.sort_values("__term_index").drop(columns="__term_index")
+    
 # === Create Excel workbook ===
 wb = Workbook()
 ws_readme = wb.active
