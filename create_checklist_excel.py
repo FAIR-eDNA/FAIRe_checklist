@@ -29,6 +29,9 @@ with open("schema.yaml", "r") as f:
     schema = yaml.safe_load(f)
 slots = schema.get("slots", {})
 
+# Extract version from schema
+schema_version = schema.get("version", "unknown")
+
 # === Ordered columns ===
 ordered_columns = [
     "data_type", "section", "term_name", "description", "requirement_level_code",
@@ -147,6 +150,6 @@ for row_idx, row in enumerate(checklist_df.itertuples(index=False), start=2):
             cell.fill = requirement_fill
 
 # === Save final workbook ===
-output_path = "FAIRe_checklist_v1.0.2_test.xlsx"
-wb.save(output_path)
-print(f"✅ Excel file written: {output_path}")
+output_filename = f"FAIRe_checklist_v{schema_version}.xlsx"
+wb.save(output_filename)
+print(f"✅ Excel file written: {output_filename}")
