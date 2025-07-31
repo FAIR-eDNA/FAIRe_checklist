@@ -1,55 +1,98 @@
+import os
 import yaml
-from openpyxl import Workbook
-from openpyxl.styles import Font
+from collections import OrderedDict
 
-# === Load and validate glossary YAML ===
-with open("slots/glossary_annotation.yaml", "r") as f:
-    data = yaml.safe_load(f)
+# Path to the directory containing individual slot YAML files
+SLOTS_DIR = "slots"
+OUTPUT_SCHEMA = "schema.yaml"
+GLOSSARY_FILENAME = "glossary_annotation.yaml"
 
-# Handle case where top-level key is 'glossary', or it's already flat
-if "glossary" in data:
-    glossary = data["glossary"]
-else:
-    glossary = data
+# Base schema structure
+schema = OrderedDict({
+    "id": "tbd: a value like https://w3id.org/fairie/schema",
+    "name": "faire_checklist",
+    "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
+    "version": "0.6.0",
+    "prefixes": {
+        "linkml": "https://w3id.org/linkml/",
+        "schema": "https://schema.org/",
+        "dwc": "http://rs.tdwg.org/dwc/terms/",
+        "mixs": "https://w3id.org/mixs/",
+        "skos": "http://www.w3.org/2004/02/skos/core#"
+    },
+    "default_prefix": "faire",
+    "imports": ["linkml:types"]
+})
 
-if not isinstance(glossary, dict):
-    raise ValueError("Expected glossary to be a dictionary of term: definition pairs.")
+# Load glossary (if exists) and insert first
+glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
+if os.path.exists(glossary_path):
+    with open(glossary_path, "r") as g:
+        glossary_block = yaml.safe_load(g)
+        schema["annotations"] = glossary_block.get("annotations", {})
 
-# === Setup workbook ===
-wb = Workbook()
-ws = wb.active
-ws.title = "README"
-bold = Font(bold=True)
+# Initialize empty containers
+schema["slots"] = OrderedDict()
+schema["enums"] = OrderedDict()
+schema["classes"] = {
+    "MetadataChecklist": {
+        "description": "A metadata record based on the FAIRe checklist.",
+        "slots": []
+    }
+}
 
-# === Add instructions section ===
-instructions = [
-    'Date and time must be recorded following ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time zone must be specified after the timestamp e.g., "2008-01-23T19:23-06:00" in the time zone six hours earlier than UTC, or "2008-01-23T19:23Z" at UTC time. In Excel, format the cell as text to prevent from automatic conversion to other date fromats.',
-    "Time duration must be recorded following ISO 8601 durations (PnYnMnWnDTnHnMnS for P<date>T<time>). e.g., P1Y1M1DT1H1M1.1S = One year, one month, one day, one hour, one minute, one second, and 100 milliseconds",
-    "A date and time range can be specified using a forward slash (/) to separate the start and end values (e.g., 2008-01-23T19:23-06:00/2008-01-23T19:53-06:00).",
-    "Use space vertical bar space ( | ) to separate multiple values in a list. i.e., x | y | z",
-    "Use hyphen (-) to indicate a range of numeric or integer values. In Excel, format the cell as text to prevent it from being auto-formatted as a date.",
-    "For numeric fields, enter only numbers and do not enter units. Read the descriptions for the standard unit.",
-    "For Boolean type of questions, always read the descriptions and answer with 0 or 1.",
-    'When "other" is selected in a controlled vocabulary term, write the answer using the format of "other: FREE TEXT DESCRIPTION".',
-    "If suitable term names are not available in the current checklist, users should search for them in existing standards, such as MIxS (https://genomicsstandardsconsortium.github.io/mixs/) and DwC (https://dwc.tdwg.org/terms/), and use these standardized terms where possible. If relevant terms cannot be found in these resources, users may add new terms using clear, concise, and descriptive names within related tables.",
-    "When a value is missing from a mandatory term, it is required to provide the reason using the INSDC missing value controlled vocabulary (https://www.insdc.org/submitting-standards/missing-value-reporting/). See https://fair-edna.github.io/guidelines.html#missing-values for the full list of values."
-]
+# Process all non-glossary YAML files alphabetically
+slot_files = sorted(
+    f for f in os.listdir(SLOTS_DIR)
+    if f.endswith(".yaml") and f != GLOSSARY_FILENAME
+)
 
-# Section header
-ws.cell(row=1, column=1, value="Instructions for data submitters:").font = bold
-for i, line in enumerate(instructions, start=2):
-    ws.cell(row=i, column=2, value=line)
+for file_name in slot_files:
+    slot_path = os.path.join(SLOTS_DIR, file_name)
+    with open(slot_path, "r") as f:
+        slot_content = yaml.safe_load(f)
 
-# === Add glossary section ===
-glossary_start = len(instructions) + 3
-ws.cell(row=glossary_start, column=1, value="Terms and definitions:").font = bold
-ws.cell(row=glossary_start + 1, column=2, value="Term").font = bold
-ws.cell(row=glossary_start + 1, column=3, value="Definition").font = bold
+        if "name" in slot_content:
+            slot_name = slot_content["name"]
+            schema["slots"][slot_name] = slot_content
+            schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
+        else:
+            for slot_name, slot_def in slot_content.items():
+                schema["slots"][slot_name] = slot_def
+                schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
 
-for i, (term, definition) in enumerate(glossary.items(), start=glossary_start + 2):
-    ws.cell(row=i, column=2, value=str(term))
-    ws.cell(row=i, column=3, value=str(definition))
+# Sort class slot list
+schema["classes"]["MetadataChecklist"]["slots"].sort()
 
-# Save file
-wb.save("faire_readme_formatted.xlsx")
-print("✅ Excel file written: faire_readme_formatted.xlsx")
+
+# Convert OrderedDicts to regular dicts before dumping
+from collections import OrderedDict
+import yaml
+
+# Helper function to recursively convert OrderedDict to dict
+def convert_ordered_dict(obj):
+    if isinstance(obj, OrderedDict):
+        return {k: convert_ordered_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_ordered_dict(i) for i in obj]
+    else:
+        return obj
+
+# Cleaned-up version of schema
+clean_schema = convert_ordered_dict(schema)
+
+# Header comment
+header_comment = (
+    "# ============================\n"
+    "# AUTO-GENERATED FILE\n"
+    "# This file was automatically rebuilt from individual slot YAML files.\n"
+    "# DO NOT EDIT THIS FILE BY HAND.\n"
+    "# ============================\n\n"
+)
+
+# Write to file
+with open("schema.yaml", "w") as f:
+    f.write(header_comment)
+    yaml.dump(clean_schema, f, sort_keys=False, allow_unicode=True)
+
+print(f"✅ Merged schema written to {OUTPUT_SCHEMA}")
