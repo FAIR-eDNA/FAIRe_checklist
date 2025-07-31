@@ -62,6 +62,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/accessRights
+    term_type: unspecified
   accession_id:
     name: accession_id
     description: Accession ID of the best matching sequence from a reference database
@@ -76,6 +77,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   accession_id_ref_db:
     name: accession_id_ref_db
     description: Reference database (i.e. sequences not generated as part of the current
@@ -97,6 +99,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000087
+    term_type: unspecified
   adapter_forward:
     name: adapter_forward
     description: Forward sequencing adapter. The sequence should be reported in uppercase
@@ -116,6 +119,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000048
+    term_type: unspecified
   adapter_reverse:
     name: adapter_reverse
     description: Reverse sequencing adapter. The sequence should be reported in uppercase
@@ -132,6 +136,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   alt:
     name: alt
     description: Heights of objects such as airplanes, space shuttles, rockets, atmospheric
@@ -156,6 +161,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000094
+    term_type: unspecified
   amp_vis_method:
     name: amp_vis_method
     description: Amplicon visualisation method (i.e., qPCR, dPCR, gel electrophoresis,
@@ -185,6 +191,7 @@ slots:
         meaning: LAMP
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   ampliconSize:
     name: ampliconSize
     description: The length of the amplicon in basepairs EXCLUDING the primers, adapters
@@ -207,6 +214,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   amplificationReactionVolume:
     name: amplificationReactionVolume
     description: The total PCR reaction volume. Unit = µL
@@ -224,6 +232,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   annealingTemp:
     name: annealingTemp
     description: The reaction temperature during the annealing phase of PCR. If two-step
@@ -244,6 +253,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   assay_name:
     name: assay_name
     description: A brief, concise identifier for assay with no spaces or special characters,
@@ -263,6 +273,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   assay_type:
     name: assay_type
     description: The method used in the eDNA study to detect taxon/taxa of interest
@@ -289,6 +300,7 @@ slots:
         meaning: metabarcoding
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   assay_validation:
     name: assay_validation
     description: How was the assay validated for specificity? e.g., in-silico, in-vitro,
@@ -306,6 +318,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   associatedSequences:
     name: associatedSequences
     description: A list (concatenated and separated) of identifiers (publication,
@@ -326,6 +339,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/associatedSequences
+    term_type: unspecified
   associated_resource:
     name: associated_resource
     description: A related resource that is referenced, cited, or otherwise associated
@@ -345,6 +359,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000091
+    term_type: unspecified
   automaticBaselineValue:
     name: automaticBaselineValue
     description: Whether the baseline value was set by the instrument (1) or manually
@@ -365,6 +380,10 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   automaticThresholdQuantificationCycle:
     name: automaticThresholdQuantificationCycle
     description: Whether the threshold was set by the instrument (1) or manually (0).
@@ -384,6 +403,10 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   barcoding_pcr_appr:
     name: barcoding_pcr_appr
     description: PCR approach for metabarcoding
@@ -406,6 +429,7 @@ slots:
         meaning: ligation-based
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   baselineValue:
     name: baselineValue
     description: The number of cycles when fluorescence signal from the target amplification
@@ -425,6 +449,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   bibliographicCitation:
     name: bibliographicCitation
     description: A bibliographic reference for the resource.
@@ -440,6 +465,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/bibliographicCitation
+    term_type: unspecified
   bioinfo_method_additional:
     name: bioinfo_method_additional
     description: Additional information on bioinformatics, that has not been shared
@@ -456,6 +482,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   biological_rep:
     name: biological_rep
     description: The number of biological replicates collected at each sampling point
@@ -470,6 +497,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: integer
   biological_rep_relation:
     name: biological_rep_relation
     description: This term lists the samp_name of biological replicates associated
@@ -488,6 +516,7 @@ slots:
       source:
       - New
       fixed_format: (a list of) samp_name
+    term_type: fixed format
   block_ref:
     name: block_ref
     description: Reference of a blocking primer. Enter "custom" if it was developed
@@ -502,6 +531,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   block_seq:
     name: block_seq
     description: Blocking primer sequence in the 5' to 3' direction
@@ -515,6 +545,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   block_taxa:
     name: block_taxa
     description: Taxonomic name(s) of the organism(s) targeted by a blocking primer
@@ -530,6 +561,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   checkls_ver:
     name: checkls_ver
     description: The version number of the FAIR eDNA (FAIRe) metadata checklist used
@@ -544,6 +576,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: numeric
   checksum_filename:
     name: checksum_filename
     description: The checksum of the forward sequence reads file (filename), used
@@ -558,6 +591,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   checksum_filename2:
     name: checksum_filename2
     description: The checksum of the reverse sequence reads file (filename2), used
@@ -572,6 +606,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   checksum_method:
     name: checksum_method
     description: The specific algorithm or technique used to compute the checksum
@@ -596,6 +631,7 @@ slots:
         meaning: CRC-32
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   chimera_check_method:
     name: chimera_check_method
     description: Description of chimera check approaches (i.e. denovo, reference-based),
@@ -615,6 +651,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000052
+    term_type: unspecified
   chimera_check_param:
     name: chimera_check_param
     description: Parameters used to filter chimera sequences if note default
@@ -628,6 +665,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   chlorophyll:
     name: chlorophyll
     description: Concentration of chlorophyll. Unit = mg/m3
@@ -649,6 +687,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000177
+    term_type: unspecified
   class:
     name: class
     description: The full scientific name of the class
@@ -667,6 +706,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/class
+    term_type: unspecified
   code_repo:
     name: code_repo
     description: Link to public repository where analysis code is archived
@@ -680,6 +720,7 @@ slots:
       requirement_level_code: R
       source:
       - NOAA
+    term_type: unspecified
   commercial_mm:
     name: commercial_mm
     description: Name, brand, and manufacture of commercial, pre-made master mix (if
@@ -694,6 +735,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   concentration:
     name: concentration
     description: Concentration of total DNA after extraction
@@ -711,6 +753,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   concentration_method:
     name: concentration_method
     description: Description of method/instrument used for concentration measurement
@@ -729,6 +772,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   concentration_unit:
     name: concentration_unit
     description: The unit of total DNA concentration after extraction
@@ -749,6 +793,7 @@ slots:
         meaning: copies/µl
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   confidence_score:
     name: confidence_score
     description: Confidence score for the taxonomic assignment, such as from bootstrapping.
@@ -765,6 +810,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   custom_mm:
     name: custom_mm
     description: composition of custom master mix, including the names, volumes and
@@ -785,6 +831,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   dataGeneralizations:
     name: dataGeneralizations
     description: Actions taken to make the shared data (i.e. location, date) less
@@ -806,6 +853,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/dataGeneralizations
+    term_type: unspecified
   date_ext:
     name: date_ext
     description: Date of nucleic acid extraction, written in ISO 8601 format
@@ -819,6 +867,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: fixed format
   decimalLatitude:
     name: decimalLatitude
     description: The geographic latitude in decimal degrees using WGS84 datum. Positive
@@ -841,6 +890,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/decimalLatitude
+    term_type: unspecified
   decimalLongitude:
     name: decimalLongitude
     description: The geographic longitude in decimal degrees using WGS84 datum. Positive
@@ -863,6 +913,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/decimalLongitude
+    term_type: unspecified
   demux_max_mismatch:
     name: demux_max_mismatch
     description: Maximum mismatch allowed at the index bases for demultiplexing. Unit
@@ -878,6 +929,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   demux_tool:
     name: demux_tool
     description: Software and the version used to demultiplex sequence reads
@@ -891,6 +943,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   detected_notDetected:
     name: detected_notDetected
     description: Detection of the targeted taxon for each biological replicate, based
@@ -910,6 +963,10 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   detection_criteria:
     name: detection_criteria
     description: Criteria to determine positive detection. For example, a certain
@@ -928,6 +985,7 @@ slots:
       requirement_level_code: M
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   diss_inorg_carb:
     name: diss_inorg_carb
     description: Dissolved inorganic carbon concentration in the sample, typically
@@ -950,6 +1008,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000434
+    term_type: unspecified
   diss_inorg_carb_unit:
     name: diss_inorg_carb_unit
     description: The unit of diss_inorg_carb
@@ -996,6 +1055,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   diss_inorg_nitro:
     name: diss_inorg_nitro
     description: Concentration of dissolved inorganic nitrogen
@@ -1017,6 +1077,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000698
+    term_type: unspecified
   diss_inorg_nitro_unit:
     name: diss_inorg_nitro_unit
     description: The unit of diss_inorg_nitro
@@ -1063,6 +1124,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   diss_org_carb:
     name: diss_org_carb
     description: Concentration of dissolved organic carbon in the sample, liquid portion
@@ -1085,6 +1147,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000433
+    term_type: unspecified
   diss_org_carb_unit:
     name: diss_org_carb_unit
     description: The unit of diss_org_carb
@@ -1131,6 +1194,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   diss_org_nitro:
     name: diss_org_nitro
     description: Dissolved organic nitrogen concentration measured as; total dissolved
@@ -1153,6 +1217,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000162
+    term_type: unspecified
   diss_org_nitro_unit:
     name: diss_org_nitro_unit
     description: The unit of diss_org_nitro
@@ -1199,6 +1264,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   diss_oxygen:
     name: diss_oxygen
     description: Concentration of dissolved oxygen
@@ -1220,6 +1286,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000119
+    term_type: unspecified
   diss_oxygen_unit:
     name: diss_oxygen_unit
     description: The unit of diss_oxygen
@@ -1266,6 +1333,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   dna_cleanup_0_1:
     name: dna_cleanup_0_1
     description: Was the extracted DNA cleaned/purified? Yes = 1, No =0
@@ -1279,6 +1347,10 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   dna_cleanup_method:
     name: dna_cleanup_method
     description: A description of DNA clean-up method. Provide the name of a commercial
@@ -1294,6 +1366,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   dna_sequence:
     name: dna_sequence
     description: The DNA sequence
@@ -1311,6 +1384,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   dna_store_loc:
     name: dna_store_loc
     description: Location at which extracted DNA was stored, usually name of a specific
@@ -1325,6 +1399,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   efficiency:
     name: efficiency
     description: qPCR amplification efficiency calculated from slope. Unit = %
@@ -1339,6 +1414,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   elev:
     name: elev
     description: Elevation of the sampling site is its height above a fixed reference
@@ -1363,6 +1439,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000093
+    term_type: unspecified
   env_broad_scale:
     name: env_broad_scale
     description: 'Major environmental system your sample came from. The systems identified
@@ -1389,6 +1466,7 @@ slots:
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000012
+    term_type: fixed format
   env_local_scale:
     name: env_local_scale
     description: 'The entity or entities which are in your sample or specimen’s local
@@ -1415,6 +1493,7 @@ slots:
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000013
+    term_type: fixed format
   env_medium:
     name: env_medium
     description: 'Environmental material or materials (pipe separated) immediately
@@ -1444,6 +1523,7 @@ slots:
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000014
+    term_type: fixed format
   error_rate_cutoff:
     name: error_rate_cutoff
     description: error rate threshold
@@ -1457,6 +1537,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   error_rate_tool:
     name: error_rate_tool
     description: Software to remove reads above error rate threshold
@@ -1470,6 +1551,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   error_rate_type:
     name: error_rate_type
     description: The type/unit of error rate for the error rate threshold
@@ -1490,6 +1572,7 @@ slots:
         meaning: expected error rate
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   estimatedNumberOfCopies:
     name: estimatedNumberOfCopies
     description: Estimated concentration of target molecules. Describe the approach
@@ -1511,6 +1594,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   estimatedNumberOfCopies_error:
     name: estimatedNumberOfCopies_error
     description: The measure of variability (e.g., standard error) associated with
@@ -1527,6 +1611,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   estimatedNumberOfCopies_error_type:
     name: estimatedNumberOfCopies_error_type
     description: The specific type of variability measure (e.g., standard error, standard
@@ -1551,6 +1636,7 @@ slots:
         meaning: 95% confidence interval
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   estimatedNumberOfCopies_method:
     name: estimatedNumberOfCopies_method
     description: Method to output estimatedNumberOfCopies
@@ -1575,6 +1661,7 @@ slots:
         meaning: gel fluorescence intensities
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   estimatedNumberOfCopies_unit:
     name: estimatedNumberOfCopies_unit
     description: Unit for estimatedNumberOfCopies
@@ -1605,6 +1692,7 @@ slots:
         meaning: ng/µL of reaction
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   eventDate:
     name: eventDate
     description: 'The date and time of sampling, either as an instance (single point
@@ -1633,6 +1721,7 @@ slots:
       fixed_format: yyyy-mm-ddThh:mm:ss+-hh:mm
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011
+    term_type: fixed format
   eventDurationValue:
     name: eventDurationValue
     description: The duration of the sampling event, written in ISO 8601 format (i.e.,
@@ -1654,6 +1743,7 @@ slots:
       fixed_format: PnYnMnWnDTnHnMnS
     skos:exactMatch:
     - http://rs.tdwg.org/eco/terms/eventDurationValue
+    term_type: fixed format
   family:
     name: family
     description: The full scientific name of the family
@@ -1672,6 +1762,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/family
+    term_type: unspecified
   filename:
     name: filename
     description: A file name of raw sequencing data. If paired end, fill filename2
@@ -1686,6 +1777,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   filename2:
     name: filename2
     description: A raw sequencing data file name of reverse reads if lib_layout =
@@ -1700,6 +1792,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   filter_diameter:
     name: filter_diameter
     description: Diameter of a filter if circular. Unit = mm
@@ -1717,6 +1810,7 @@ slots:
       - Air
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   filter_material:
     name: filter_material
     description: Material of filter
@@ -1755,6 +1849,7 @@ slots:
         meaning: polyethersulfone
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   filter_name:
     name: filter_name
     description: Commercial names and brand of filter
@@ -1771,6 +1866,7 @@ slots:
       - Air
       source:
       - New
+    term_type: unspecified
   filter_passive_active_0_1:
     name: filter_passive_active_0_1
     description: Whether water/ air samples were collected using active (i.e. pump,
@@ -1789,6 +1885,10 @@ slots:
       - Air
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   filter_surface_area:
     name: filter_surface_area
     description: Surface area of a filter. Unit = mm2
@@ -1806,6 +1906,7 @@ slots:
       - Air
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   genus:
     name: genus
     description: The full scientific name of the genus
@@ -1824,6 +1925,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/genus
+    term_type: unspecified
   geo_loc_name:
     name: geo_loc_name
     description: 'The geographical origin of the sample as defined by the country
@@ -1846,6 +1948,7 @@ slots:
       fixed_format: <country or sea names>:<region>,<locality>
     skos:exactMatch:
     - https://w3id.org/mixs/0000010
+    term_type: fixed format
   habitat_natural_artificial_0_1:
     name: habitat_natural_artificial_0_1
     description: Whether samples were taken from natural (0) or artificial (1) habitat.
@@ -1862,6 +1965,10 @@ slots:
       requirement_level_code: R
       source:
       - Thalinger et al., 2021
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   host_height:
     name: host_height
     description: The height of subject
@@ -1880,6 +1987,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000264
+    term_type: unspecified
   host_height_unit:
     name: host_height_unit
     description: The unit of host_height
@@ -1905,6 +2013,7 @@ slots:
         meaning: m
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   host_length:
     name: host_length
     description: The length of subject
@@ -1923,6 +2032,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000256
+    term_type: unspecified
   host_length_unit:
     name: host_length_unit
     description: The unit of host_length
@@ -1948,6 +2058,7 @@ slots:
         meaning: m
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   host_life_stage:
     name: host_life_stage
     description: Description of life stage of host. Select from UBERON's life cycle
@@ -1971,6 +2082,7 @@ slots:
       fixed_format: termLabel [termID]
     skos:exactMatch:
     - https://w3id.org/mixs/0000251
+    term_type: fixed format
   host_species:
     name: host_species
     description: The scientific name of host species. i.e. predator species where
@@ -1993,6 +2105,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000248
+    term_type: unspecified
   host_tot_mass:
     name: host_tot_mass
     description: Total mass of the host at collection, the unit depends on host.
@@ -2011,6 +2124,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000263
+    term_type: unspecified
   host_tot_mass_unit:
     name: host_tot_mass_unit
     description: The unit of host_tot_mass
@@ -2036,6 +2150,7 @@ slots:
         meaning: kg
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   humidity:
     name: humidity
     description: Amount of water vapour in the air, at the time of sampling relative
@@ -2058,6 +2173,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000100
+    term_type: unspecified
   identificationRemarks:
     name: identificationRemarks
     description: Comments or notes about the taxonomic assignment.
@@ -2077,6 +2193,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/identificationRemarks
+    term_type: unspecified
   informationWithheld:
     name: informationWithheld
     description: Additional information that exists, but that has not been shared
@@ -2093,6 +2210,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/informationWithheld
+    term_type: unspecified
   inhibition_check:
     name: inhibition_check
     description: Description of method applied to detect inhibition and any adjustments
@@ -2111,6 +2229,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   inhibition_check_0_1:
     name: inhibition_check_0_1
     description: Was the inhibition checked? Yes = 1, No = 0
@@ -2124,6 +2243,10 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   input_read_count:
     name: input_read_count
     description: The total number of raw sequence reads for each sample. Unit = reads
@@ -2142,6 +2265,7 @@ slots:
       - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/input_read_count
+    term_type: unspecified
   institution:
     name: institution
     description: An institution having custody of the object(s) or information referred
@@ -2156,6 +2280,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   institutionID:
     name: institutionID
     description: An identifier for the institution having custody of the object(s)
@@ -2174,6 +2299,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/institutionID
+    term_type: unspecified
   instrument:
     name: instrument
     description: Sequencing instrument (manufacturer and model) used. Where possible
@@ -2188,6 +2314,7 @@ slots:
       requirement_level_code: HR
       source:
       - INSDC
+    term_type: fixed format
   intercept:
     name: intercept
     description: Intercept of a qPCR standard curve. This shall be specific to each
@@ -2202,6 +2329,7 @@ slots:
       requirement_level_code: R
       source:
       - MIQE
+    term_type: unspecified
   kingdom:
     name: kingdom
     description: The full scientific name of the kingdom
@@ -2220,6 +2348,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/kingdom
+    term_type: unspecified
   lib_conc:
     name: lib_conc
     description: The concentration of the prepared library pool that was loaded onto
@@ -2234,6 +2363,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   lib_conc_meth:
     name: lib_conc_meth
     description: Method to estimate lib_conc
@@ -2247,6 +2377,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   lib_conc_unit:
     name: lib_conc_unit
     description: Unit for lib_conc
@@ -2269,6 +2400,7 @@ slots:
         meaning: pM
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   lib_id:
     name: lib_id
     description: An identifier of a library (an amplicon of a sample with unique MIDs)
@@ -2283,6 +2415,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   lib_layout:
     name: lib_layout
     description: Specify whether to expect single, paired, or other configuration
@@ -2309,6 +2442,7 @@ slots:
         meaning: single end
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   lib_screen:
     name: lib_screen
     description: Specific enrichment or screening methods applied before and/or after
@@ -2329,6 +2463,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000043
+    term_type: unspecified
   license:
     name: license
     description: A legal document giving official permission to do something with
@@ -2345,6 +2480,7 @@ slots:
       - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/terms/#dcterms:license
+    term_type: unspecified
   light_intensity:
     name: light_intensity
     description: Measurement of light intensity. Unit = lux
@@ -2368,6 +2504,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000706
+    term_type: unspecified
   lod_method:
     name: lod_method
     description: Method used for determining LOD e.g., DOI of a published procedure
@@ -2381,6 +2518,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   loq_method:
     name: loq_method
     description: Method used for determining LOQ e.g., DOI of a published procedure
@@ -2394,6 +2532,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   materialSampleID:
     name: materialSampleID
     description: An identifier for the physical sample (as opposed to the extracted
@@ -2413,6 +2552,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/materialSampleID
+    term_type: unspecified
   maximumDepthInMeters:
     name: maximumDepthInMeters
     description: The greater depth of a range of depth (vertical distance below the
@@ -2442,6 +2582,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
+    term_type: unspecified
   merge_min_overlap:
     name: merge_min_overlap
     description: Minimum overlaps required to merge paired end reads. Unit = base
@@ -2457,6 +2598,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   merge_tool:
     name: merge_tool
     description: Software and the version to merge paired end reads
@@ -2470,6 +2612,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   mid_forward:
     name: mid_forward
     description: Forward multiplex Identifiers (MIDs), that was used to specifically
@@ -2490,6 +2633,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000047
+    term_type: unspecified
   mid_reverse:
     name: mid_reverse
     description: Reverse multiplex Identifiers (MIDs), that was used to specifically
@@ -2507,6 +2651,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   min_len_cutoff:
     name: min_len_cutoff
     description: Minimum length threshold. Unit = base pair
@@ -2521,6 +2666,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   min_len_tool:
     name: min_len_tool
     description: Software and the version to remove reads shorter than minimum length
@@ -2535,6 +2681,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   min_reads_cutoff:
     name: min_reads_cutoff
     description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read
@@ -2552,6 +2699,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   min_reads_cutoff_unit:
     name: min_reads_cutoff_unit
     description: The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
@@ -2572,6 +2720,7 @@ slots:
         meaning: '%'
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   min_reads_tool:
     name: min_reads_tool
     description: Software and the version to remove reads below minimum read threshold
@@ -2585,6 +2734,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   minimumDepthInMeters:
     name: minimumDepthInMeters
     description: The lesser depth of a range of depth (vertical distance below the
@@ -2614,6 +2764,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
+    term_type: unspecified
   mod_date:
     name: mod_date
     description: 'The last date on which the database information was modified, following
@@ -2636,6 +2787,7 @@ slots:
       fixed_format: yyyy-mm-dd
     skos:exactMatch:
     - https://w3id.org/nmdc/mod_date
+    term_type: fixed format
   neg_cont_0_1:
     name: neg_cont_0_1
     description: Were negative controls applied during the project? Yes = 1, No =
@@ -2651,6 +2803,10 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   neg_cont_type:
     name: neg_cont_type
     description: 'A negative control type used in an investigation. See Table 2 in
@@ -2686,6 +2842,7 @@ slots:
         meaning: PCR negative
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   nitrate:
     name: nitrate
     description: Concentration of nitrate in the sample
@@ -2707,6 +2864,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000425
+    term_type: unspecified
   nitrate_unit:
     name: nitrate_unit
     description: The unit of nitrate
@@ -2753,6 +2911,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   nitrite:
     name: nitrite
     description: Concentration of nitrite in the sample
@@ -2774,6 +2933,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000426
+    term_type: unspecified
   nitrite_unit:
     name: nitrite_unit
     description: The unit of nitrite
@@ -2820,6 +2980,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   nitro:
     name: nitro
     description: Concentration of nitrogen (total)
@@ -2841,6 +3002,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000504
+    term_type: unspecified
   nitro_unit:
     name: nitro_unit
     description: The unit of nitro
@@ -2887,6 +3049,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   nucl_acid_amp:
     name: nucl_acid_amp
     description: A link to a literature reference, electronic resource or a standard
@@ -2905,6 +3068,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000038
+    term_type: unspecified
   nucl_acid_ext:
     name: nucl_acid_ext
     description: A link to a literature reference, electronic resource or a standard
@@ -2927,6 +3091,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000037
+    term_type: unspecified
   nucl_acid_ext_kit:
     name: nucl_acid_ext_kit
     description: The name of the extraction kit used to recover the nucleic acid fraction
@@ -2945,6 +3110,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001223
+    term_type: unspecified
   nucl_acid_ext_lysis:
     name: nucl_acid_ext_lysis
     description: The approach used to lyse DNA-containing material. For example, physical
@@ -2974,6 +3140,7 @@ slots:
         meaning: osmotic
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   nucl_acid_ext_method_additional:
     name: nucl_acid_ext_method_additional
     description: Additional information on nucleic acid extraction method, that has
@@ -2987,6 +3154,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   nucl_acid_ext_modify:
     name: nucl_acid_ext_modify
     description: Description of modification made from a commercial or established
@@ -3004,6 +3172,7 @@ slots:
       requirement_level_code: R
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   nucl_acid_ext_sep:
     name: nucl_acid_ext_sep
     description: The approach used to separate DNA from a mixture.
@@ -3032,6 +3201,7 @@ slots:
         meaning: gel electrophoresis
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   num_detect:
     name: num_detect
     description: 'Number of detection using the eLow Quant approach (described in
@@ -3046,6 +3216,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   order:
     name: order
     description: The full scientific name of the order
@@ -3064,6 +3235,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/order
+    term_type: unspecified
   org_carb:
     name: org_carb
     description: Concentration of organic carbon
@@ -3085,6 +3257,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000508
+    term_type: unspecified
   org_carb_unit:
     name: org_carb_unit
     description: The unit of org_carb
@@ -3131,6 +3304,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   org_matter:
     name: org_matter
     description: Concentration of organic matter
@@ -3152,6 +3326,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000204
+    term_type: unspecified
   org_matter_unit:
     name: org_matter_unit
     description: The unit of org_matter
@@ -3198,6 +3373,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   org_nitro:
     name: org_nitro
     description: Concentration of organic nitrogen
@@ -3219,6 +3395,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000205
+    term_type: unspecified
   org_nitro_unit:
     name: org_nitro_unit
     description: The unit of org_nitro
@@ -3265,6 +3442,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   otu_clust_cutoff:
     name: otu_clust_cutoff
     description: The percentage similarity threshold used for OTU/ASV clustering.
@@ -3286,6 +3464,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000085
+    term_type: unspecified
   otu_clust_tool:
     name: otu_clust_tool
     description: Software and the version used for OTU/ASV clustering
@@ -3299,6 +3478,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   otu_db:
     name: otu_db
     description: List of reference database(s) (i.e. sequences not generated as part
@@ -3320,6 +3500,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000087
+    term_type: unspecified
   otu_db_custom:
     name: otu_db_custom
     description: Description of custom reference database(s) (i.e. coverage of taxa,
@@ -3335,6 +3516,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   otu_final_description:
     name: otu_final_description
     description: A description of the data curation and processing steps applied to
@@ -3350,6 +3532,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   otu_num_tax_assigned:
     name: otu_num_tax_assigned
     description: Total number of OTUs or ASVs assigned to taxa based on the study-specific
@@ -3364,6 +3547,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   otu_raw_description:
     name: otu_raw_description
     description: A description of the data curation and processing steps applied to
@@ -3378,6 +3562,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   otu_seq_comp_appr:
     name: otu_seq_comp_appr
     description: Alignment tool/software used for taxonomic assignment
@@ -3396,6 +3581,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000086
+    term_type: unspecified
   output_otu_num:
     name: output_otu_num
     description: Total number of OTUs or ASVs for each sample
@@ -3409,6 +3595,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   output_read_count:
     name: output_read_count
     description: The number of filtered sequence reads for each sample, that made
@@ -3429,6 +3616,7 @@ slots:
       - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/output_read_count
+    term_type: unspecified
   parent_project_id:
     name: parent_project_id
     description: An identifier or name of the overarching (parent) project that encompasses
@@ -3443,6 +3631,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   part_org_carb:
     name: part_org_carb
     description: Concentration of particulate organic carbon
@@ -3464,6 +3653,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000515
+    term_type: unspecified
   part_org_carb_unit:
     name: part_org_carb_unit
     description: The unit of part_org_carb
@@ -3510,6 +3700,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   part_org_nitro:
     name: part_org_nitro
     description: Concentration of particulate organic nitrogen
@@ -3531,6 +3722,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000719
+    term_type: unspecified
   part_org_nitro_unit:
     name: part_org_nitro_unit
     description: The unit of part_org_nitro
@@ -3577,6 +3769,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   pcr2_amplificationReactionVolume:
     name: pcr2_amplificationReactionVolume
     description: The total PCR reaction volume in the second step PCR. Unit = µL
@@ -3591,6 +3784,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   pcr2_analysis_software:
     name: pcr2_analysis_software
     description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
@@ -3605,6 +3799,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   pcr2_annealingTemp:
     name: pcr2_annealingTemp
     description: (If bacroding_pcr_appr = "two-step PCR") The reaction temperature
@@ -3620,6 +3815,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_commercial_mm:
     name: pcr2_commercial_mm
     description: (If bacroding_pcr_appr = "two-step PCR") Name, brand, and manufacture
@@ -3635,6 +3831,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_cond:
     name: pcr2_cond
     description: (If bacroding_pcr_appr = "two-step PCR") Description of reaction
@@ -3653,6 +3850,7 @@ slots:
       - New
       fixed_format: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
         elongation:degrees_minutes;total cycles
+    term_type: unspecified
   pcr2_custom_mm:
     name: pcr2_custom_mm
     description: (If bacroding_pcr_appr = "two-step PCR") composition of custom master
@@ -3674,6 +3872,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_cycles:
     name: pcr2_cycles
     description: (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in
@@ -3689,6 +3888,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_dna_vol:
     name: pcr2_dna_vol
     description: (If bacroding_pcr_appr = "two-step PCR") Volume of DNA added in each
@@ -3704,6 +3904,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_method_additional:
     name: pcr2_method_additional
     description: (If bacroding_pcr_appr = "two-step PCR") Additional information on
@@ -3721,6 +3922,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   pcr2_plate_id:
     name: pcr2_plate_id
     description: (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
@@ -3735,6 +3937,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr2_thermocycler:
     name: pcr2_thermocycler
     description: (If bacroding_pcr_appr = "two-step PCR") The manufacturer and model
@@ -3749,6 +3952,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   pcr_0_1:
     name: pcr_0_1
     description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches
@@ -3763,6 +3967,10 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   pcr_analysis_software:
     name: pcr_analysis_software
     description: The program used to analyse the PCR runs. If two-step PCR was applied
@@ -3782,6 +3990,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_assay_lod:
     name: pcr_assay_lod
     description: Assay's limit of detection (LOD) (the lowest amount of target taxon
@@ -3803,6 +4012,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_assay_lod_LL:
     name: pcr_assay_lod_LL
     description: 'Lower 95% confidence limit for LOD for a given number of technical
@@ -3817,6 +4027,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_lod_UL:
     name: pcr_assay_lod_UL
     description: 'Upper 95% confidence limit for LOD for a given number of technical
@@ -3831,6 +4042,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_lod_techreps:
     name: pcr_assay_lod_techreps
     description: 'The number of technical replicates that the LOD is applied to. See
@@ -3845,6 +4057,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_lod_unit:
     name: pcr_assay_lod_unit
     description: Unit for pcr_assay_lod
@@ -3870,6 +4083,7 @@ slots:
         meaning: ng/µL
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   pcr_assay_loq:
     name: pcr_assay_loq
     description: Assay's limit of quantification (LOQ) (the lowest amount of target
@@ -3892,6 +4106,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_assay_loq_LL:
     name: pcr_assay_loq_LL
     description: 'Lower 95% confidence limit for LOQ for a given number of technical
@@ -3906,6 +4121,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_loq_UL:
     name: pcr_assay_loq_UL
     description: 'Upper 95% confidence limit for LOQ for a given number of technical
@@ -3920,6 +4136,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_loq_techreps:
     name: pcr_assay_loq_techreps
     description: 'The number of technical replicates that the LOQ is applied to. See
@@ -3934,6 +4151,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_assay_loq_unit:
     name: pcr_assay_loq_unit
     description: unit for pcr_assay_loq
@@ -3959,6 +4177,7 @@ slots:
         meaning: ng/µL
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   pcr_cond:
     name: pcr_cond
     description: Description of reaction conditions and components of PCR. The recommended
@@ -3983,6 +4202,7 @@ slots:
         elongation:degrees_minutes;total cycles
     skos:exactMatch:
     - https://w3id.org/mixs/0000049
+    term_type: unspecified
   pcr_cycles:
     name: pcr_cycles
     description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
@@ -4003,6 +4223,7 @@ slots:
       - NMDC
     skos:exactMatch:
     - https://w3id.org/nmdc/pcr_cycles
+    term_type: unspecified
   pcr_dna_vol:
     name: pcr_dna_vol
     description: Volume of DNA added in each PCR reaction. Unit = µL
@@ -4017,6 +4238,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   pcr_method_additional:
     name: pcr_method_additional
     description: Additional information on PCR or PCR-free method, that has not been
@@ -4035,6 +4257,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   pcr_plate_id:
     name: pcr_plate_id
     description: PCR plate ID. This identifier is particularly crucial when location-specific
@@ -4055,6 +4278,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   pcr_primer_conc_forward:
     name: pcr_primer_conc_forward
     description: The stock concentration of the forward PCR primer (pcr_primer_forward).
@@ -4073,6 +4297,7 @@ slots:
       requirement_level_code: R
       source:
       - MIQE
+    term_type: unspecified
   pcr_primer_conc_reverse:
     name: pcr_primer_conc_reverse
     description: The stock concentration of the reverse PCR primer (pcr_primer_reverse).
@@ -4091,6 +4316,7 @@ slots:
       requirement_level_code: R
       source:
       - MIQE
+    term_type: unspecified
   pcr_primer_forward:
     name: pcr_primer_forward
     description: Forward PCR primer (5' - 3') that were used to amplify the sequence
@@ -4117,6 +4343,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_name_forward:
     name: pcr_primer_name_forward
     description: Name of the pcr_primer_forward. If multiple primers are listed in
@@ -4135,6 +4362,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_name_reverse:
     name: pcr_primer_name_reverse
     description: Name of the pcr_primer_reverse. If multiple primers are listed in
@@ -4153,6 +4381,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_reference_forward:
     name: pcr_primer_reference_forward
     description: Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers
@@ -4172,6 +4401,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_reference_reverse:
     name: pcr_primer_reference_reverse
     description: Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers
@@ -4191,6 +4421,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_reverse:
     name: pcr_primer_reverse
     description: Reverse PCR primer (5' - 3') that were used to amplify the sequence
@@ -4217,6 +4448,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   pcr_primer_vol_forward:
     name: pcr_primer_vol_forward
     description: Volume of pcr_primer_forward per reaction. Unit = µL
@@ -4231,6 +4463,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_primer_vol_reverse:
     name: pcr_primer_vol_reverse
     description: Volume of pcr_primer_reverse per reaction. Unit = µL
@@ -4245,6 +4478,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   pcr_rep:
     name: pcr_rep
     description: The number of PCR technical replicates. For metabarcoding, each replicate
@@ -4259,6 +4493,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   percent_match:
     name: percent_match
     description: The percentage of sequence identity between a query sequence obtained
@@ -4276,6 +4511,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   percent_query_cover:
     name: percent_query_cover
     description: The percentage coverage of the query sequence that aligns with a
@@ -4293,6 +4529,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   ph:
     name: ph
     description: Ph measurement of the sample, or liquid portion of sample, or aqueous
@@ -4315,6 +4552,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001001
+    term_type: unspecified
   ph_meth:
     name: ph_meth
     description: Reference or method used in determining pH
@@ -4335,6 +4573,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001106
+    term_type: unspecified
   phix_perc:
     name: phix_perc
     description: '% of PhiX added into a library, if applicable. Unit = %'
@@ -4349,6 +4588,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   phylum:
     name: phylum
     description: The full scientific name of the phylum or division
@@ -4367,6 +4607,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/phylum
+    term_type: unspecified
   platform:
     name: platform
     description: General sequencing platform used.
@@ -4413,6 +4654,7 @@ slots:
         meaning: ULTIMA
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   pool_dna_num:
     name: pool_dna_num
     description: The number of extracts that were pooled in to one sample before PCR
@@ -4432,6 +4674,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000325
+    term_type: unspecified
   pos_cont_0_1:
     name: pos_cont_0_1
     description: Were positive controls applied during the project? Yes = 1, No =
@@ -4447,6 +4690,10 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: Boolean
+    enum_range:
+    - value: '1'
+    - value: '0'
   pos_cont_type:
     name: pos_cont_type
     description: 'A positive control type used in an investigation. See Table 2 in
@@ -4467,6 +4714,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001322
+    term_type: unspecified
   precip_chem_prep:
     name: precip_chem_prep
     description: Chemicals used in precipitation at the sample preparation step prior
@@ -4497,6 +4745,7 @@ slots:
         meaning: sodium chloride
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   precip_force_prep:
     name: precip_force_prep
     description: Centrifuge force used in precipitation at the sample preparation
@@ -4519,6 +4768,7 @@ slots:
       - Sediment
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   precip_temp_prep:
     name: precip_temp_prep
     description: Temperature used in precipitation at the sample preparation step
@@ -4541,6 +4791,7 @@ slots:
       - Sediment
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   precip_time_prep:
     name: precip_time_prep
     description: Duration of precipitation at the sample preparation step prior to
@@ -4563,6 +4814,7 @@ slots:
       - Sediment
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   prefilter_material:
     name: prefilter_material
     description: Material used to pre-filter/pre-sort the sample
@@ -4579,6 +4831,7 @@ slots:
       - Air
       source:
       - New
+    term_type: unspecified
   prep_method_additional:
     name: prep_method_additional
     description: Additional information on sample preparation, storage and preservation
@@ -4597,6 +4850,7 @@ slots:
       - ALL
       source:
       - New
+    term_type: unspecified
   prepped_samp_store_dur:
     name: prepped_samp_store_dur
     description: 'Duration for which the prepared sample was stored prior to DNA extraction,
@@ -4619,6 +4873,7 @@ slots:
       source:
       - New
       fixed_format: PnYnMnWnDTnHnMnS
+    term_type: fixed format
   prepped_samp_store_sol:
     name: prepped_samp_store_sol
     description: 'Solution within which the prepared sample was stored prior to DNA
@@ -4651,6 +4906,7 @@ slots:
         meaning: none
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   prepped_samp_store_temp:
     name: prepped_samp_store_temp
     description: 'Temperature at which the prepared sample was stored prior to DNA
@@ -4676,6 +4932,7 @@ slots:
       - ALL
       source:
       - Thalinger et al., 2021
+    term_type: unspecified
   probeQuencher:
     name: probeQuencher
     description: Type of quencher used. The quencher molecule quenches the fluorescence
@@ -4710,6 +4967,7 @@ slots:
         meaning: Black Hole Quencher (BHQ)
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   probeReporter:
     name: probeReporter
     description: Type of fluorophore (reporter) used. Probe anneals within amplified
@@ -4729,6 +4987,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   probe_conc:
     name: probe_conc
     description: The stock concentration of the probe if applicable. This refers specifically
@@ -4747,6 +5006,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   probe_ref:
     name: probe_ref
     description: Reference (i.e. DOI) of the probe_seq
@@ -4760,6 +5020,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   probe_seq:
     name: probe_seq
     description: If applicable, probe sequence in the 5' to 3' direction
@@ -4773,6 +5034,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   project_contact:
     name: project_contact
     description: A contact person and their contact (i.e., email address) for data
@@ -4787,6 +5049,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   project_id:
     name: project_id
     description: A brief, concise project identifier with no spaces or special characters,
@@ -4804,6 +5067,7 @@ slots:
       - NOAA
     skos:exactMatch:
     - https://w3id.org/nmdc/project_id
+    term_type: unspecified
   project_name:
     name: project_name
     description: Name of the project within which the sequencing was organized
@@ -4820,6 +5084,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000092
+    term_type: unspecified
   pump_flow_rate:
     name: pump_flow_rate
     description: Pump flow rate of filtration if applicable
@@ -4836,6 +5101,7 @@ slots:
       - Air
       source:
       - New
+    term_type: unspecified
   pump_flow_rate_unit:
     name: pump_flow_rate_unit
     description: Unit for pump_flow_rate
@@ -4867,6 +5133,7 @@ slots:
         meaning: L/h
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   quantificationCycle:
     name: quantificationCycle
     description: The number of cycles required for the fluorescent signal to cross
@@ -4894,6 +5161,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   r2:
     name: r2
     description: R-squared value of a qPCR standard curve. This shall be specific
@@ -4908,6 +5176,7 @@ slots:
       requirement_level_code: HR
       source:
       - MIQE
+    term_type: unspecified
   ratioOfAbsorbance260_280:
     name: ratioOfAbsorbance260_280
     description: Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
@@ -4926,6 +5195,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   recordedBy:
     name: recordedBy
     description: A list (concatenated and separated) of names of people responsible
@@ -4944,6 +5214,7 @@ slots:
       - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/list/#dwc_recordedBy
+    term_type: free text
   recordedByID:
     name: recordedByID
     description: A list (concatenated and separated) of the globally unique identifier
@@ -4962,6 +5233,7 @@ slots:
       - DwC
     skos:exactMatch:
     - https://dwc.tdwg.org/list/#dwc_recordedByID
+    term_type: unspecified
   rel_cont_id:
     name: rel_cont_id
     description: (A list of) samp_id of the negative and positive controls related
@@ -4976,6 +5248,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   rfu:
     name: rfu
     description: Relative Fluorescence Units (RFU). No unit
@@ -4991,6 +5264,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   rightsHolder:
     name: rightsHolder
     description: A person or organization owning or managing rights over the resource.
@@ -5006,6 +5280,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://purl.org/dc/terms/rightsHolder
+    term_type: unspecified
   salinity:
     name: salinity
     description: The total concentration of all dissolved salts in a liquid or solid
@@ -5033,6 +5308,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000183
+    term_type: unspecified
   samp_category:
     name: samp_category
     description: A type/category of a sample. 'Sample" includes biological and technical
@@ -5059,6 +5335,7 @@ slots:
         meaning: PCR standard
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   samp_collect_device:
     name: samp_collect_device
     description: The device used to collect an environmental sample. This term accepts
@@ -5082,6 +5359,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000002
+    term_type: unspecified
   samp_collect_method:
     name: samp_collect_method
     description: The method employed for collecting the sample. Provide a link to
@@ -5103,6 +5381,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0001225
+    term_type: unspecified
   samp_mat_process:
     name: samp_mat_process
     description: Any processing applied to the sample during or after retrieving the
@@ -5126,6 +5405,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000016
+    term_type: unspecified
   samp_name:
     name: samp_name
     description: Sample Name is a name that you choose for the sample. It can have
@@ -5148,6 +5428,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0001107
+    term_type: unspecified
   samp_size:
     name: samp_size
     description: 'Amount or size of original sample (volume, mass or area) that was
@@ -5172,6 +5453,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000001
+    term_type: unspecified
   samp_size_unit:
     name: samp_size_unit
     description: Unit for samp_size
@@ -5208,6 +5490,7 @@ slots:
         meaning: m3
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   samp_store_dur:
     name: samp_store_dur
     description: 'Duration for which the sample was stored prior to DNA extraction,
@@ -5233,6 +5516,7 @@ slots:
       fixed_format: PnYnMnWnDTnHnMnS
     skos:exactMatch:
     - https://w3id.org/mixs/0000116
+    term_type: fixed format
   samp_store_loc:
     name: samp_store_loc
     description: Location at which sample was stored, usually name of a specific freezer/room
@@ -5248,6 +5532,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000755
+    term_type: unspecified
   samp_store_method_additional:
     name: samp_store_method_additional
     description: Additional information on sample storage method, that has not been
@@ -5264,6 +5549,7 @@ slots:
       - ALL
       source:
       - New
+    term_type: unspecified
   samp_store_sol:
     name: samp_store_sol
     description: 'Solution within which the sample was stored. Note: If a sample was
@@ -5300,6 +5586,7 @@ slots:
         meaning: none
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   samp_store_temp:
     name: samp_store_temp
     description: 'Temperature at which the sample was stored. Enter either the fixed
@@ -5326,6 +5613,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000110
+    term_type: numeric or controlled vocabulary
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     description: Volume or mass of sample or subsamples that was processed for DNA
@@ -5349,6 +5637,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000111
+    term_type: unspecified
   samp_vol_we_dna_ext_unit:
     name: samp_vol_we_dna_ext_unit
     description: Unit for samp_vol_we_dna_ext
@@ -5383,6 +5672,7 @@ slots:
         meaning: m3
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   samp_weather:
     name: samp_weather
     description: The weather on the sampling day
@@ -5400,6 +5690,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000827
+    term_type: unspecified
   sample_composed_of:
     name: sample_composed_of
     description: This term contains a list of samp_name values that represent the
@@ -5418,6 +5709,7 @@ slots:
       source:
       - INSDC
       fixed_format: (a list of) samp_name
+    term_type: fixed format
   sample_derived_from:
     name: sample_derived_from
     description: This term refers to the samp_name of the original (or parent) sample
@@ -5437,6 +5729,7 @@ slots:
       source:
       - INSDC
       fixed_format: (a list of) samp_name
+    term_type: fixed format
   scientificName:
     name: scientificName
     description: The full scientific name of the genus and species
@@ -5455,6 +5748,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/scientificName
+    term_type: unspecified
   scientificNameAuthorship:
     name: scientificNameAuthorship
     description: The authorship information for the scientificName
@@ -5473,6 +5767,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
+    term_type: unspecified
   screen_contam_method:
     name: screen_contam_method
     description: How were contaminations screened and applied in data curation/analyses/interpretation?
@@ -5488,6 +5783,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   screen_geograph_method:
     name: screen_geograph_method
     description: How were species distribution information screened and applied?
@@ -5503,6 +5799,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   screen_nontarget_method:
     name: screen_nontarget_method
     description: How were non-target species screened and applied?
@@ -5519,6 +5816,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   screen_other:
     name: screen_other
     description: Description of other screening criteria and approaches
@@ -5531,6 +5829,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   seq_id:
     name: seq_id
     description: Query sequence ID. Must be unique within the dataset
@@ -5546,6 +5845,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   seq_kit:
     name: seq_kit
     description: The name of sequencing kit
@@ -5559,6 +5859,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   seq_method_additional:
     name: seq_method_additional
     description: Additional information on library preparation and sequencing method,
@@ -5573,6 +5874,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   seq_run_id:
     name: seq_run_id
     description: A brief, concise identifier for sequencing run with no spaces or
@@ -5589,6 +5891,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   sequencing_location:
     name: sequencing_location
     description: The location the sequencing run was performed. Indicate the name
@@ -5605,6 +5908,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0001156
+    term_type: unspecified
   size_frac:
     name: size_frac
     description: Filtering pore size used in sample filtration. Unit = µm
@@ -5625,6 +5929,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000017
+    term_type: unspecified
   size_frac_low:
     name: size_frac_low
     description: Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
@@ -5648,6 +5953,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000735
+    term_type: unspecified
   slope:
     name: slope
     description: Slope of a qPCR standard curve. This shall be specific to each pcr_plate_id.
@@ -5661,6 +5967,7 @@ slots:
       requirement_level_code: R
       source:
       - MIQE
+    term_type: unspecified
   solar_irradiance:
     name: solar_irradiance
     description: Description and/or the amount of solar energy that arrives at a specific
@@ -5685,6 +5992,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000112
+    term_type: unspecified
   sop_bioinformatics:
     name: sop_bioinformatics
     description: Standard operating procedures, references, link to scripts, that
@@ -5706,6 +6014,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000090
+    term_type: unspecified
   specificEpithet:
     name: specificEpithet
     description: The name of the first or species epithet of the scientificName.
@@ -5724,6 +6033,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/specificEpithet
+    term_type: unspecified
   stationed_sample_dur:
     name: stationed_sample_dur
     description: Duration of on-site, stationed sampling (i.e., the filter deployment
@@ -5746,6 +6056,7 @@ slots:
       source:
       - New
       fixed_format: PnYnMnWnDTnHnMnS
+    term_type: fixed format
   std_conc:
     name: std_conc
     description: Input quantity of qPCR standard DNA
@@ -5760,6 +6071,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   std_conc_unit:
     name: std_conc_unit
     description: Unit for input quantity of qPCR standard DNA
@@ -5788,6 +6100,7 @@ slots:
         meaning: ng/µL of reaction
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   std_seq:
     name: std_seq
     description: DNA sequences of standard
@@ -5801,6 +6114,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   std_source:
     name: std_source
     description: The source of standard used for standard curves
@@ -5814,6 +6128,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   std_type:
     name: std_type
     description: The type of standard used for standard curves
@@ -5838,6 +6153,7 @@ slots:
         meaning: gDNA
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   sterilise_method:
     name: sterilise_method
     description: the protocols to minimise contaminations in the field and/or laboratory
@@ -5853,6 +6169,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   study_factor:
     name: study_factor
     description: The variable(s) examined in the study, including those of direct
@@ -5867,6 +6184,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   suspend_part_matter:
     name: suspend_part_matter
     description: Concentration of suspended particulate matter. Unit = mg/L
@@ -5885,6 +6203,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000741
+    term_type: unspecified
   targetTaxonomicAssay:
     name: targetTaxonomicAssay
     description: Taxa or species name targeted by the primers, probes, and/or other
@@ -5900,6 +6219,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   targetTaxonomicScope:
     name: targetTaxonomicScope
     description: The taxonomic group(s) targeted in the study. This can differ from
@@ -5917,6 +6237,7 @@ slots:
       - Humboldt extension
     skos:exactMatch:
     - http://rs.tdwg.org/eco/terms/targetTaxonomicScope
+    term_type: unspecified
   target_gene:
     name: target_gene
     description: Targeted gene or locus name for marker gene studies
@@ -5994,6 +6315,7 @@ slots:
         meaning: D-loop
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   target_subfragment:
     name: target_subfragment
     description: Name of subfragment of a gene or locus. Important to e.g. identify
@@ -6011,6 +6333,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000045
+    term_type: unspecified
   targeted_detection_method_additional:
     name: targeted_detection_method_additional
     description: Additional information on Targeted assay detection method, that has
@@ -6024,6 +6347,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   tax_assign_cat:
     name: tax_assign_cat
     description: 'High-level category of taxonomic assignment approach. Examples using
@@ -6051,6 +6375,7 @@ slots:
         meaning: probabilistic
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tax_class_collapse:
     name: tax_class_collapse
     description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest
@@ -6067,6 +6392,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   tax_class_id_cutoff:
     name: tax_class_id_cutoff
     description: Minimum percent identity for taxonomic assignment. Unit = %
@@ -6081,6 +6407,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   tax_class_other:
     name: tax_class_other
     description: Additional information on parameters and cutoffs used for taxonomic
@@ -6099,6 +6426,7 @@ slots:
       - DNA-derived data extension
     skos:exactMatch:
     - https://w3id.org/mixs/0000064
+    term_type: unspecified
   tax_class_query_cutoff:
     name: tax_class_query_cutoff
     description: Minimum percent query coverage for taxonomic assignment. Unit = %
@@ -6113,6 +6441,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   taxonID:
     name: taxonID
     description: An identifier for the assigned taxon (or taxa in the case of multiple
@@ -6133,6 +6462,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/taxonID
+    term_type: unspecified
   taxonID_db:
     name: taxonID_db
     description: The taxonomy database corresponding to taxonID.
@@ -6147,6 +6477,7 @@ slots:
       requirement_level_code: HR
       source:
       - New
+    term_type: unspecified
   taxonRank:
     name: taxonRank
     description: The taxonomic rank of the most specific name in the scientificName
@@ -6180,6 +6511,7 @@ slots:
         meaning: species
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   technical_rep_id:
     name: technical_rep_id
     description: An integer uniquely identifying a specific PCR technical replicate
@@ -6195,6 +6527,7 @@ slots:
       requirement_level_code: M
       source:
       - New
+    term_type: unspecified
   temp:
     name: temp
     description: Temperature of the sample at the time of sampling in degree Celsius
@@ -6213,6 +6546,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000113
+    term_type: unspecified
   thermocycler:
     name: thermocycler
     description: The manufacturer and model of a thermocycler used
@@ -6226,6 +6560,7 @@ slots:
       requirement_level_code: O
       source:
       - MIQE
+    term_type: unspecified
   thresholdQuantificationCycle:
     name: thresholdQuantificationCycle
     description: Threshold for change in fluorescence signal between cycles. No unit.
@@ -6244,6 +6579,7 @@ slots:
       - MIQE
     skos:exactMatch:
     - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+    term_type: unspecified
   tidal_stage:
     name: tidal_stage
     description: Stage of tide
@@ -6262,6 +6598,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000750
+    term_type: unspecified
   tot_carb:
     name: tot_carb
     description: Total carbon content
@@ -6283,6 +6620,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000525
+    term_type: unspecified
   tot_carb_unit:
     name: tot_carb_unit
     description: The unit of tot_carb
@@ -6329,6 +6667,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_depth_water_col:
     name: tot_depth_water_col
     description: Measurement of total depth of water column. For example, if a sea
@@ -6356,6 +6695,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000634
+    term_type: unspecified
   tot_diss_nitro:
     name: tot_diss_nitro
     description: 'Total dissolved nitrogen concentration, reported as nitrogen, measured
@@ -6378,6 +6718,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000744
+    term_type: unspecified
   tot_diss_nitro_unit:
     name: tot_diss_nitro_unit
     description: The unit of tot_diss_nitro
@@ -6424,6 +6765,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_inorg_nitro:
     name: tot_inorg_nitro
     description: Total inorganic nitrogen content
@@ -6445,6 +6787,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000745
+    term_type: unspecified
   tot_inorg_nitro_unit:
     name: tot_inorg_nitro_unit
     description: The unit of tot_inorg_nitro
@@ -6491,6 +6834,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_nitro:
     name: tot_nitro
     description: 'Total nitrogen concentration of water samples, calculated by: total
@@ -6514,6 +6858,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000102
+    term_type: unspecified
   tot_nitro_cont_meth:
     name: tot_nitro_cont_meth
     description: Reference or method used in determining the total nitrogen
@@ -6535,6 +6880,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000338
+    term_type: unspecified
   tot_nitro_content:
     name: tot_nitro_content
     description: Total nitrogen content of the sample
@@ -6556,6 +6902,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000530
+    term_type: unspecified
   tot_nitro_content_unit:
     name: tot_nitro_content_unit
     description: The unit of tot_nitro_content
@@ -6602,6 +6949,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_nitro_unit:
     name: tot_nitro_unit
     description: The unit of tot_nitro
@@ -6648,6 +6996,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_org_c_meth:
     name: tot_org_c_meth
     description: Reference or method used in determining total organic carbon
@@ -6669,6 +7018,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000337
+    term_type: unspecified
   tot_org_carb:
     name: tot_org_carb
     description: Total organic carbon content
@@ -6690,6 +7040,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000533
+    term_type: unspecified
   tot_org_carb_unit:
     name: tot_org_carb_unit
     description: The unit of tot_org_carb
@@ -6736,6 +7087,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   tot_part_carb:
     name: tot_part_carb
     description: Total particulate carbon content
@@ -6757,6 +7109,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000747
+    term_type: unspecified
   tot_part_carb_unit:
     name: tot_part_carb_unit
     description: The unit of tot_part_carb
@@ -6803,6 +7156,7 @@ slots:
         meaning: parts per million
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   trim_method:
     name: trim_method
     description: Method for trimming primer and/or adapter sequences, including version
@@ -6819,6 +7173,7 @@ slots:
       requirement_level_code: R
       source:
       - NOAA
+    term_type: unspecified
   trim_param:
     name: trim_param
     description: Parameters and cutoffs used to trim if not default
@@ -6832,6 +7187,7 @@ slots:
       requirement_level_code: R
       source:
       - New
+    term_type: unspecified
   turbidity:
     name: turbidity
     description: Measure of the amount of cloudiness or haziness in water caused by
@@ -6853,6 +7209,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000191
+    term_type: unspecified
   verbatimCoordinateSystem:
     name: verbatimCoordinateSystem
     description: The coordinate format of the verbatimLatitude and verbatimLongitude
@@ -6880,6 +7237,7 @@ slots:
         meaning: UTM
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   verbatimEventDate:
     name: verbatimEventDate
     description: Sample collection date before formatting
@@ -6897,6 +7255,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimEventDate
+    term_type: unspecified
   verbatimEventTime:
     name: verbatimEventTime
     description: Sample collection time before formatting to ISO 8601, or at the local
@@ -6911,6 +7270,7 @@ slots:
       requirement_level_code: O
       source:
       - New
+    term_type: unspecified
   verbatimIdentification:
     name: verbatimIdentification
     description: A string representing the taxonomic identification as it appeared
@@ -6932,6 +7292,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimIdentification
+    term_type: unspecified
   verbatimLatitude:
     name: verbatimLatitude
     description: The original latitude in any format (i.e. deg/min/sec, UTM) before
@@ -6951,6 +7312,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimLatitude
+    term_type: unspecified
   verbatimLongitude:
     name: verbatimLongitude
     description: The original longitude in any format (i.e. deg/min/sec, UTM) before
@@ -6970,6 +7332,7 @@ slots:
       - DwC
     skos:exactMatch:
     - http://rs.tdwg.org/dwc/terms/verbatimLongitude
+    term_type: unspecified
   verbatimSRS:
     name: verbatimSRS
     description: The ellipsoid, geodetic datum, or spatial reference system (SRS)
@@ -7006,6 +7369,7 @@ slots:
         meaning: JGD2000
       'other:':
         meaning: 'other:'
+    term_type: controlled vocabulary
   water_current:
     name: water_current
     description: Measurement of magnitude and direction of flow within a fluid. Unit
@@ -7026,6 +7390,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000203
+    term_type: unspecified
   wind_direction:
     name: wind_direction
     description: Wind direction (the direction from which a wind originates) at the
@@ -7049,6 +7414,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000757
+    term_type: unspecified
   wind_speed:
     name: wind_speed
     description: Speed of wind measured at the time of sampling. Unit = m/s
@@ -7070,6 +7436,7 @@ slots:
       - MIxS
     skos:exactMatch:
     - https://w3id.org/mixs/0000118
+    term_type: unspecified
 enums: {}
 classes:
   MetadataChecklist:
