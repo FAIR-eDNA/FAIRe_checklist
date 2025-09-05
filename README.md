@@ -13,7 +13,8 @@ _In an effort to be transparent and controlled, we have created a programmatic w
 
 ### Latest Version
 
-**v1.0.3**, released on 2025-07-31
+As described in #16, an issue was found with the excel generation scripts. v.1.02 has been restored as the correct excel files to download. v1.0.3 will be returned when the problem is fixed.
+~~**v1.0.3**, released on 2025-07-31~~
 
 ---
 
