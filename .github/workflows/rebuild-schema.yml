@@ -2,10 +2,10 @@ name: Rebuild Schema
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-  pull_request:
+  #push:
+  #  branches:
+  #    - main
+  #pull_request:
 
 permissions:
   contents: write  # needed for push step on main
