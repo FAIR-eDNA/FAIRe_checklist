@@ -1,0 +1,48 @@
+classes:
+  ProjectMetadata:
+    mixin: true
+    description: Project-level metadata record type
+    slots: []
+    slot_usage: {}
+
+  SampleMetadata:
+    mixin: true
+    description: Sample-level metadata record type
+    slots: []
+    slot_usage: {}
+
+  AmpData:
+    mixin: true
+    description: Amplicon data record type
+    slots: []
+    slot_usage: {}
+
+  ExperimentRun:
+    mixin: true
+    description: Experiment run record type
+    slots: []
+    slot_usage: {}
+
+  StdData:
+    mixin: true
+    description: Standard data record type
+    slots: []
+    slot_usage: {}
+
+  ELowQuantData:
+    mixin: true
+    description: Low quantity/eDNA data record type
+    slots: []
+    slot_usage: {}
+
+  TaxaRaw:
+    mixin: true
+    description: Raw taxonomic assignment record type
+    slots: []
+    slot_usage: {}
+
+  TaxaFinal:
+    mixin: true
+    description: Final taxonomic assignment record type
+    slots: []
+    slot_usage: {}
