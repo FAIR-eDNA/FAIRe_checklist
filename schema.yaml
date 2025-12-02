@@ -63,6 +63,22 @@ slots:
     skos:exactMatch:
     - http://purl.org/dc/terms/accessRights
     term_type: unspecified
+  accessRights_TEST:
+    name: accessRights_TEST
+    description: Information about who can access the resource or an indication of
+      its security status.
+    range: string
+    required: false
+    examples:
+    - value: no rights reserved
+    slot_uri: http://purl.org/dc/terms/accessRights
+    exact_mappings:
+    - http://purl.org/dc/terms/accessRights
+    source: DwC
+    annotations:
+      section: Data management
+      requirement_level: Recommended
+      requirement_level_code: R
   accession_id:
     name: accession_id
     description: Accession ID of the best matching sequence from a reference database
@@ -301,6 +317,33 @@ slots:
       'other:':
         meaning: 'other:'
     term_type: controlled vocabulary
+  assay_type_TEST:
+    name: assay_type_TEST
+    description: The method used in the eDNA study to detect taxon/taxa of interest
+      in environmental sample. A targeted eDNA assay is designed to detect the presence
+      of a specific species or a small subset of taxa (such as a genus or family)
+      using techniques like quantitative PCR (qPCR). This contrasts with a metabarcoding
+      eDNA assay which aims to characterize the composition of broader taxonomic communities,
+      often encompassing multiple phyletic groups, by utilising high-throughput sequencing
+      such as metabarcoding.
+    range: assay_type_enum
+    required: true
+    examples:
+    - value: targeted
+    - value: metabarcoding
+    - value: 'other:'
+    source: New
+    annotations:
+      section: Project
+      requirement_level: Mandatory
+      requirement_level_code: M
+    enum_values:
+      targeted:
+        meaning: targeted
+      metabarcoding:
+        meaning: metabarcoding
+      'other:':
+        meaning: 'other:'
   assay_validation:
     name: assay_validation
     description: How was the assay validated for specificity? e.g., in-silico, in-vitro,
@@ -1467,6 +1510,31 @@ slots:
     skos:exactMatch:
     - https://w3id.org/mixs/0000012
     term_type: fixed format
+  env_broad_scale_TEST:
+    name: env_broad_scale_TEST
+    description: 'Major environmental system your sample came from. The systems identified
+      should have a coarse spatial grain, to provide the general environmental context
+      of where the sampling was done. Select from ENVOâ€™s biome class: http://purl.obolibrary.org/obo/ENVO_00000428.
+      Examples include; estuarine biome [ENVO:01000020], tropical moist broadleaf
+      forest biome [ENVO:01000228].'
+    range: string
+    required: true
+    examples:
+    - value: estuarine biome [ENVO:01000020]
+    slot_uri: https://w3id.org/mixs/0000012
+    exact_mappings:
+    - https://w3id.org/mixs/0000012
+    source: MIxS | DNA-derived data extension
+    structured_pattern:
+      syntax: ^[^\[]+ \[ENVO:[0-9]{8}\]$
+      partial_match: false
+      interpolated: false
+    annotations:
+      section: Sample collection
+      requirement_level: Mandatory
+      requirement_level_condition: Mandatory unless samp_category = negative control,
+        positive control, or PCR standard
+      requirement_level_code: M
   env_local_scale:
     name: env_local_scale
     description: 'The entity or entities which are in your sample or specimen’s local
@@ -2788,6 +2856,22 @@ slots:
     skos:exactMatch:
     - https://w3id.org/nmdc/mod_date
     term_type: fixed format
+  mod_date_TEST:
+    name: mod_date_TEST
+    description: The last date on which the database information was modified, following
+      the ISO 8601 format of yyyy-mm-dd.
+    range: date
+    required: false
+    examples:
+    - value: '2014-09-09'
+    slot_uri: https://w3id.org/nmdc/mod_date
+    exact_mappings:
+    - https://w3id.org/nmdc/mod_date
+    source: NMDC
+    annotations:
+      section: Data management
+      requirement_level: Recommended
+      requirement_level_code: R
   neg_cont_0_1:
     name: neg_cont_0_1
     description: Were negative controls applied during the project? Yes = 1, No =
@@ -2807,6 +2891,21 @@ slots:
     enum_range:
     - value: '1'
     - value: '0'
+  neg_cont_0_1_TEST:
+    name: neg_cont_0_1_TEST
+    description: Were negative controls applied during the project? This field should
+      be answered as a boolean (true or false). For further details, record the types
+      of negative controls under the term neg_cont_type in projectMetadata.
+    range: boolean
+    required: false
+    examples:
+    - value: true
+    - value: false
+    source: New
+    annotations:
+      section: Project
+      requirement_level: Highly recommended
+      requirement_level_code: HR
   neg_cont_type:
     name: neg_cont_type
     description: 'A negative control type used in an investigation. See Table 2 in
@@ -5068,6 +5167,23 @@ slots:
     skos:exactMatch:
     - https://w3id.org/nmdc/project_id
     term_type: unspecified
+  project_id_TEST:
+    name: project_id_TEST
+    description: A brief, concise project identifier with no spaces or special characters,
+      ensuring machine readability. This ID will be used in data file names as 'project_id'.
+    range: string
+    required: true
+    pattern: ^[A-Za-z0-9-]+$
+    examples:
+    - value: noaa-aoml-gomecc4
+    slot_uri: https://w3id.org/nmdc/project_id
+    exact_mappings:
+    - https://w3id.org/nmdc/project_id
+    source: NMDC | NOAA
+    annotations:
+      section: Project
+      requirement_level: Mandatory
+      requirement_level_code: M
   project_name:
     name: project_name
     description: Name of the project within which the sequencing was organized
@@ -5429,6 +5545,24 @@ slots:
     skos:exactMatch:
     - https://w3id.org/mixs/0001107
     term_type: unspecified
+  samp_name_TEST:
+    name: samp_name_TEST
+    description: Sample Name is a name that you choose for the sample. It can have
+      any format, but we suggest that you make it concise, unique and consistent within
+      your lab, and as informative as possible. Every Sample Name from a single Submitter
+      must be unique.
+    range: string
+    required: true
+    examples:
+    - value: S01_1
+    slot_uri: https://w3id.org/mixs/0001107
+    exact_mappings:
+    - https://w3id.org/mixs/0001107
+    source: MIxS | DNA-derived data extension
+    annotations:
+      section: Sample information
+      requirement_level: Mandatory
+      requirement_level_code: M
   samp_size:
     name: samp_size
     description: 'Amount or size of original sample (volume, mass or area) that was
@@ -5710,6 +5844,22 @@ slots:
       - INSDC
       fixed_format: (a list of) samp_name
     term_type: fixed format
+  sample_depth_TEST:
+    name: sample_depth_TEST
+    description: Depth at which the environmental sample was collected, recorded as
+      a numeric value followed by a space and the unit.
+    range: string
+    required: false
+    examples:
+    - value: 15.0 m
+    structured_pattern:
+      syntax: ^[0-9]+(\.[0-9]+)?\s*m$
+      partial_match: false
+      interpolated: false
+    annotations:
+      section: Sample collection
+      requirement_level: Recommended
+      requirement_level_code: R
   sample_derived_from:
     name: sample_derived_from
     description: This term refers to the samp_name of the original (or parent) sample
@@ -5730,6 +5880,24 @@ slots:
       - INSDC
       fixed_format: (a list of) samp_name
     term_type: fixed format
+  sample_derived_from_TEST:
+    name: sample_derived_from_TEST
+    description: This term refers to the samp_name of the original (or parent) sample
+      from which the current sample was derived. For example, if sample "S01" (the
+      parent sample) was collected at a sampling site and later subsampled into three
+      child samples with samp_names "S01_1", "S01_2", "S01_3", then "S01" is the value
+      for sample_derived_from in each of the child samples. This includes the case
+      of PCR technical replicates.
+    range: string
+    multivalued: true
+    required: false
+    examples:
+    - value: S01
+    source: INSDC
+    annotations:
+      section: Sample relations
+      requirement_level: Optional
+      requirement_level_code: O
   scientificName:
     name: scientificName
     description: The full scientific name of the genus and species
@@ -7443,6 +7611,7 @@ classes:
     description: A metadata record based on the FAIRe checklist.
     slots:
     - accessRights
+    - accessRights_TEST
     - accession_id
     - accession_id_ref_db
     - adapter_forward
@@ -7454,6 +7623,7 @@ classes:
     - annealingTemp
     - assay_name
     - assay_type
+    - assay_type_TEST
     - assay_validation
     - associatedSequences
     - associated_resource
@@ -7508,6 +7678,7 @@ classes:
     - efficiency
     - elev
     - env_broad_scale
+    - env_broad_scale_TEST
     - env_local_scale
     - env_medium
     - error_rate_cutoff
@@ -7573,7 +7744,9 @@ classes:
     - min_reads_tool
     - minimumDepthInMeters
     - mod_date
+    - mod_date_TEST
     - neg_cont_0_1
+    - neg_cont_0_1_TEST
     - neg_cont_type
     - nitrate
     - nitrate_unit
@@ -7676,6 +7849,7 @@ classes:
     - probe_seq
     - project_contact
     - project_id
+    - project_id_TEST
     - project_name
     - pump_flow_rate
     - pump_flow_rate_unit
@@ -7693,6 +7867,7 @@ classes:
     - samp_collect_method
     - samp_mat_process
     - samp_name
+    - samp_name_TEST
     - samp_size
     - samp_size_unit
     - samp_store_dur
@@ -7704,7 +7879,9 @@ classes:
     - samp_vol_we_dna_ext_unit
     - samp_weather
     - sample_composed_of
+    - sample_depth_TEST
     - sample_derived_from
+    - sample_derived_from_TEST
     - scientificName
     - scientificNameAuthorship
     - screen_contam_method

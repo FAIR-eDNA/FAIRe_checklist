@@ -90,8 +90,8 @@ header_comment = (
     "# ============================\n\n"
 )
 
-# Write to file
-with open("schema.yaml", "w") as f:
+# Write to file (force UTF-8 so non-ASCII characters don't break on Windows)
+with open("schema.yaml", "w", encoding="utf-8") as f:
     f.write(header_comment)
     yaml.dump(clean_schema, f, sort_keys=False, allow_unicode=True)
 

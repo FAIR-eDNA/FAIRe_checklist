@@ -11,7 +11,7 @@ imports:
   - schema.yaml
 
 classes:
-  ProjectMetadataRow:
+  ProjectMetadata:
     description: One row in the projectMetadata sheet.
     slots:
       - project_id_TEST
@@ -20,7 +20,7 @@ classes:
       - assay_type_TEST
       - accessRights_TEST
 
-  SampleMetadataRow:
+  SampleMetadata:
     description: One row in the sampleMetadata sheet.
     slots:
       - samp_name_TEST
