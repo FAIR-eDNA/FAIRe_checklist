@@ -1,0 +1,42 @@
+subsets:
+  Project:
+    description: Project-level metadata fields
+
+  DataManagement:
+    description: Data management fields
+
+  SampleInformation:
+    description: Sample information fields
+
+  SampleRelationship:
+    description: Sample relationship fields
+
+  SampleCollection:
+    description: Sample collection fields
+
+  SampleStorage:
+    description: Sample storage fields
+
+  SamplePreparation:
+    description: Sample preparation fields
+
+  NucleicAcidExtraction:
+    description: Nucleic acid extraction fields
+
+  Pcr:
+    description: PCR-related fields
+
+  TargetedAssay:
+    description: Targeted assay fields
+
+  LibraryPreparation:
+    description: Library preparation fields
+
+  Bioinformatics:
+    description: Bioinformatics fields
+
+  OtuAsv:
+    description: OTU/ASV related fields
+
+  Environment:
+    description: Environmental context fields
