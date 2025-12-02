@@ -1,20 +1,14 @@
 name: pcr_plate_id
+title: pcr plate id
 description: PCR plate ID. This identifier is particularly crucial when location-specific
   standard curves are employed for targeted assay detections, as it ensures a linkage
   between the standards and the corresponding eDNA samples. If two-step PCR was applied
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_*
   in the library preparation/sequencing section.
+slot_uri: FAIRe:198
 range: string
-annotations:
-  section: PCR
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = targeted
-  example: 20240802_pcr1
-  data_type:
-  - experimentRunMetadata
-  - ampData
-  - stdData
-  requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+required: true
+in_subset:
+- Pcr
+examples:
+- value: 20240802_pcr1

@@ -1,14 +1,10 @@
 name: pcr_rep
+title: pcr rep
 description: The number of PCR technical replicates. For metabarcoding, each replicate
   should employ an identical MID.
+slot_uri: FAIRe:209
 range: string
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: '3'
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+in_subset:
+- Pcr
+examples:
+- value: '3'

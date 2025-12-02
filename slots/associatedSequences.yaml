@@ -1,19 +1,17 @@
 name: associatedSequences
+title: associatedSequences
 description: A list (concatenated and separated) of identifiers (publication, global
   unique identifier, URI) of genetic sequence information associated with the samp_name
+slot_uri: FAIRe:014
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
     | https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/associatedSequences
-term_type: unspecified
+close_mappings:
+- DWC:associatedSequences
+source: DWC:associatedSequences
+comments:
+- 'Modified from source: description'

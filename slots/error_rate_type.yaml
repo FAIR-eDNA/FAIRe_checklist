@@ -1,20 +1,10 @@
 name: error_rate_type
+title: error rate type
 description: The type/unit of error rate for the error rate threshold
+slot_uri: FAIRe:071
 range: error_rate_type_enum
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: Phred score
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  Phred score:
-    meaning: Phred score
-  expected error rate:
-    meaning: expected error rate
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: Phred score

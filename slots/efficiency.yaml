@@ -1,14 +1,13 @@
 name: efficiency
+title: efficiency
 description: qPCR amplification efficiency calculated from slope. Unit = %
+slot_uri: FAIRe:064
 range: float
+in_subset:
+- TargetedAssay
+examples:
+- value: '95.0'
 annotations:
-  section: Targeted assay detection
-  requirement_level: Highly recommended
-  example: '95.0'
-  unit: '%'
-  data_type:
-  - stdData
-  requirement_level_code: HR
-  source:
-  - MIQE
-term_type: unspecified
+  unit:
+    tag: unit
+    value: '%'

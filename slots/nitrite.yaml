@@ -1,21 +1,15 @@
 name: nitrite
+title: nitrite
 description: Concentration of nitrite in the sample
+slot_uri: FAIRe:137
 range: float
-annotations:
-  section: Environment
-  requirement_level: Optional
-  example: '0.5'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - Air
-  - MicrobialMatBiofilm
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000426
-term_type: unspecified
+required: false
+in_subset:
+- Environment
+examples:
+- value: '0.5'
+exact_mappings:
+- MIXS:0000426
+source: MIXS:0000426
+comments:
+- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

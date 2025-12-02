@@ -1,19 +1,16 @@
 name: pcr_primer_reference_reverse
+title: pcr primer reference reverse
 description: Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
   listed in pcr_primer_reverse, list the references respectively, separated by pipe
   ( | ).
+slot_uri: FAIRe:205
 range: string
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  modifications_made:
-  - Forward and reverse separated
-  example: https://doi.org/10.1186/1742-9994-10-34
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - DNA-derived data extension
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+in_subset:
+- Pcr
+examples:
+- value: https://doi.org/10.1186/1742-9994-10-34
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: Forward and reverse separated'

@@ -1,26 +1,24 @@
 name: env_broad_scale
-description: "Major environmental system your sample came from. The systems identified\
-  \ should have a coarse spatial grain, to provide the general environmental context\
-  \ of where the sampling was done. Select from ENVO\u2019s biome class: http://purl.obolibrary.org/obo/ENVO_00000428.\
-  \ Examples include; estuarine biome [ENVO:01000020], tropical moist broadleaf forest\
-  \ biome [ENVO:01000228],"
+title: env broad scale
+description: 'Major environmental system your sample came from. The systems identified
+  should have a coarse spatial grain, to provide the general environmental context
+  of where the sampling was done. Select from ENVO’s biome class: http://purl.obolibrary.org/obo/ENVO_00000428.
+  Examples include; estuarine biome [ENVO:01000020], tropical moist broadleaf forest
+  biome [ENVO:01000228],'
+slot_uri: FAIRe:066
 range: string
+required: true
+in_subset:
+- SampleCollection
+examples:
+- value: estuarine biome [ENVO:01000020]
+close_mappings:
+- MIXS:0000012
+source: MIXS:0000012
+comments:
+- 'Modified from source: description, field_type'
+- 'Informed by: MIxS, DNA-derived data extension'
 annotations:
-  section: Sample collection
-  requirement_level: Mandatory
-  requirement_level_condition: Mandatory unless samp_category = negative control,
-    positive control, or PCR standard
-  modifications_made:
-  - description
-  - field_type
-  example: estuarine biome [ENVO:01000020]
-  data_type:
-  - sampleMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-  - DNA-derived data extension
-  fixed_format: termLabel [termID]
-skos:exactMatch:
-- https://w3id.org/mixs/0000012
-term_type: fixed format
+  fixed_format:
+    tag: fixed_format
+    value: termLabel [termID]

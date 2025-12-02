@@ -1,17 +1,16 @@
 name: filter_surface_area
+title: filter surface area
 description: Surface area of a filter. Unit = mm2
+slot_uri: FAIRe:086
 range: float
+recommended: true
+in_subset:
+- SamplePreparation
+examples:
+- value: '1734.94'
+comments:
+- 'Sample types: Water, Air'
 annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  example: '1734.94'
-  unit: mm2
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  unit:
+    tag: unit
+    value: mm2

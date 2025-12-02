@@ -1,13 +1,10 @@
 name: otu_clust_tool
+title: otu clust tool
 description: Software and the version used for OTU/ASV clustering
+slot_uri: FAIRe:157
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: q2-dada2 2019.1.0
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: q2-dada2 2019.1.0

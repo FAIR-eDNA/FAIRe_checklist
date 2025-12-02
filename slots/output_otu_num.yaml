@@ -1,13 +1,10 @@
 name: output_otu_num
+title: output otu num
 description: Total number of OTUs or ASVs for each sample
+slot_uri: FAIRe:164
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '86'
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '86'

@@ -1,23 +1,20 @@
 name: samp_collect_device
+title: samp collect device
 description: The device used to collect an environmental sample. This term accepts
   terms listed under environmental sampling device (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000968)
   such as syringe [OBI_0000422] and container [OBI_0000967] as well as free-text entry
   (i.e. niskin bottle, push core, spoon, water bottle).
+slot_uri: FAIRe:249
 range: string
-annotations:
-  section: Sample collection
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: push core
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  sample_type_specificity:
-  - ALL
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000002
-term_type: unspecified
+recommended: true
+in_subset:
+- SampleCollection
+examples:
+- value: push core
+close_mappings:
+- MIXS:0000002
+source: MIXS:0000002
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'
+- 'Sample types: ALL'

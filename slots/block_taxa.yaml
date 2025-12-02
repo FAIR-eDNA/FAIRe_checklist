@@ -1,15 +1,12 @@
 name: block_taxa
+title: block taxa
 description: Taxonomic name(s) of the organism(s) targeted by a blocking primer to
   prevent their DNA amplification during PCR, enabling the preferential amplification
   of other taxa.
+slot_uri: FAIRe:026
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: Lutjanus malabaricus
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- Pcr
+examples:
+- value: Lutjanus malabaricus

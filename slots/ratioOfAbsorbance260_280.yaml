@@ -1,18 +1,16 @@
 name: ratioOfAbsorbance260_280
+title: ratioOfAbsorbance260 280
 description: Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
   secondary measure, indicates mainly EDTA, carbohydrates, phenol).
+slot_uri: FAIRe:241
 range: float
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: '2.1'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - DNA-derived data extension
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+required: false
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: '2.1'
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: description'

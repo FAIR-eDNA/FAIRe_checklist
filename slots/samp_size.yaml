@@ -1,24 +1,23 @@
 name: samp_size
+title: samp size
 description: 'Amount or size of original sample (volume, mass or area) that was collected
   from the environment. Specify the unit under the term samp_size_unit. Note: the
   amount or size of (sub)sample processed for DNA extraction should be entered under
   the term samp_vol_we_dna_ext.'
+slot_uri: FAIRe:253
 range: float
+in_subset:
+- SampleCollection
+examples:
+- value: '5.0'
+close_mappings:
+- MIXS:0000001
+source: MIXS:0000001
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'
+- 'Sample types: ALL'
 annotations:
-  section: Sample collection
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: '5.0'
-  unit: Select from sampl_size_unit
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - ALL
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000001
-term_type: unspecified
+  unit:
+    tag: unit
+    value: Select from sampl_size_unit

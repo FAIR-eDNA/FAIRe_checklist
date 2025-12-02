@@ -1,14 +1,11 @@
 name: pcr2_plate_id
+title: pcr2 plate id
 description: (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
   PCR
+slot_uri: FAIRe:180
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: 20240802_pcr1
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: 20240802_pcr1

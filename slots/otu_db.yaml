@@ -1,21 +1,18 @@
 name: otu_db
+title: otu db
 description: List of reference database(s) (i.e. sequences not generated as part of
   the current study) along with version number, that were used to assign taxonomy
   to OTUs or ASVs. If custom database was used, enter 'custom' here, and provide the
   information of the database under the term otu_db_custom
+slot_uri: FAIRe:158
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: NCBI GenBank Release 260.0 | custom
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000087
-term_type: unspecified
+in_subset:
+- Bioinformatics
+examples:
+- value: NCBI GenBank Release 260.0 | custom
+close_mappings:
+- MIXS:0000087
+source: MIXS:0000087
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'

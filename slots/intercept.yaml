@@ -1,13 +1,10 @@
 name: intercept
+title: intercept
 description: Intercept of a qPCR standard curve. This shall be specific to each pcr_plate_id.
+slot_uri: FAIRe:108
 range: float
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: '39.37'
-  data_type:
-  - stdData
-  requirement_level_code: R
-  source:
-  - MIQE
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: '39.37'

@@ -1,17 +1,16 @@
 name: percent_query_cover
+title: percent query cover
 description: The percentage coverage of the query sequence that aligns with a reference
   sequence in a database. If multiple species were assigned to one ASV/OTU, a range
   can be entered separated by  "-" (e.g., 98.7-99.2).  Unit = %
+slot_uri: FAIRe:211
 range: float
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: '100.0'
 annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  example: '100.0'
-  unit: '%'
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: '%'

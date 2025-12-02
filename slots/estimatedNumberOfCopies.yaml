@@ -1,21 +1,17 @@
 name: estimatedNumberOfCopies
+title: estimatedNumberOfCopies
 description: Estimated concentration of target molecules. Describe the approach taken
   to estimate it under the term estaimtedNumberOfCopies_method.
+slot_uri: FAIRe:072
 range: float
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - description
-  example: '35.92426489978709'
-  data_type:
-  - ampData
-  - eLowQuantData
-  requirement_level_code: R
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: '35.92426489978709'
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: description'
+- 'Informed by: DNA-derived data extension, MIQE'

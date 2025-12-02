@@ -1,18 +1,16 @@
 name: recordedBy
+title: recordedBy
 description: A list (concatenated and separated) of names of people responsible for
   the submitted dataset
+slot_uri: FAIRe:242
 range: string
-annotations:
-  section: Project
-  requirement_level: Mandatory
-  modifications_made:
-  - description
-  example: "Jos\xE9 E. Crespo"
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - DwC
-skos:exactMatch:
+required: true
+in_subset:
+- Project
+examples:
+- value: José E. Crespo
+close_mappings:
 - https://dwc.tdwg.org/list/#dwc_recordedBy
-term_type: free text
+source: https://dwc.tdwg.org/list/#dwc_recordedBy
+comments:
+- 'Modified from source: description'

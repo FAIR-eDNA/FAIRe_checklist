@@ -1,14 +1,14 @@
 name: merge_min_overlap
+title: merge min overlap
 description: Minimum overlaps required to merge paired end reads. Unit = base pair
+slot_uri: FAIRe:122
 range: string
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '12'
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '12'
-  unit: base pair
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: base pair

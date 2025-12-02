@@ -1,24 +1,10 @@
 name: std_type
+title: std type
 description: The type of standard used for standard curves
+slot_uri: FAIRe:287
 range: std_type_enum
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: synthetic double-stranded DNA
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  synthetic double-stranded DNA:
-    meaning: synthetic double-stranded DNA
-  plasmid:
-    meaning: plasmid
-  amplicon:
-    meaning: amplicon
-  gDNA:
-    meaning: gDNA
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: synthetic double-stranded DNA

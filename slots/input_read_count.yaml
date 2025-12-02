@@ -1,18 +1,19 @@
 name: input_read_count
+title: input read count
 description: The total number of raw sequence reads for each sample. Unit = reads
+slot_uri: FAIRe:104
 range: string
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '20485'
+close_mappings:
+- NMDC:input_read_count
+source: NMDC:input_read_count
+comments:
+- 'Modified from source: description'
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: '20485'
-  unit: reads
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - NMDC
-skos:exactMatch:
-- https://w3id.org/nmdc/input_read_count
-term_type: unspecified
+  unit:
+    tag: unit
+    value: reads

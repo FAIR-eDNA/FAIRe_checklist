@@ -1,16 +1,13 @@
 name: adapter_reverse
+title: adapter reverse
 description: Reverse sequencing adapter. The sequence should be reported in uppercase
   letters
+slot_uri: FAIRe:005
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  modifications_made:
-  - Forward and reverse separated
-  example: CAAGCAGAAGACGGCATACGAGAT
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: CAAGCAGAAGACGGCATACGAGAT
+comments:
+- 'Modified from source: Forward and reverse separated'

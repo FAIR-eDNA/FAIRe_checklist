@@ -1,22 +1,17 @@
 name: precip_time_prep
+title: precip time prep
 description: Duration of precipitation at the sample preparation step prior to DNA
   extraction, if precipitation was performed. Unit = minute
+slot_uri: FAIRe:223
 range: float
+in_subset:
+- SamplePreparation
+examples:
+- value: '45.0'
+comments:
+- 'Modified from source: field_name, description'
+- 'Sample types: Water, Soil, Sediment'
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_name
-  - description
-  example: '45.0'
-  unit: minute
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  unit:
+    tag: unit
+    value: minute

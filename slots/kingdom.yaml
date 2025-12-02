@@ -1,18 +1,15 @@
 name: kingdom
+title: kingdom
 description: The full scientific name of the kingdom
+slot_uri: FAIRe:109
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: Animalia
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/kingdom
-term_type: unspecified
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: Animalia
+close_mappings:
+- DWC:kingdom
+source: DWC:kingdom
+comments:
+- 'Modified from source: description'

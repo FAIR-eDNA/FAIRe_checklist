@@ -1,46 +1,9 @@
 name: platform
+title: platform
 description: General sequencing platform used.
+slot_uri: FAIRe:216
 range: platform_enum
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Highly recommended
-  example: ILLUMINA
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - INSDC
-enum_values:
-  ILLUMINA:
-    meaning: ILLUMINA
-  BGISEQ:
-    meaning: BGISEQ
-  CAPILLARY:
-    meaning: CAPILLARY
-  DNBSEQ:
-    meaning: DNBSEQ
-  ELEMENT:
-    meaning: ELEMENT
-  GENAPSYS:
-    meaning: GENAPSYS
-  GENEMIND:
-    meaning: GENEMIND
-  HELICOS:
-    meaning: HELICOS
-  ION_TORRENT:
-    meaning: ION_TORRENT
-  LS454:
-    meaning: LS454
-  OXFORD_NANOPORE:
-    meaning: OXFORD_NANOPORE
-  PACBIO_SMRT:
-    meaning: PACBIO_SMRT
-  TAPESTRI:
-    meaning: TAPESTRI
-  VELA_DIAGNOSTICS:
-    meaning: VELA_DIAGNOSTICS
-  ULTIMA:
-    meaning: ULTIMA
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+in_subset:
+- LibraryPreparation
+examples:
+- value: ILLUMINA

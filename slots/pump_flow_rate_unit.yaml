@@ -1,31 +1,12 @@
 name: pump_flow_rate_unit
+title: pump flow rate unit
 description: Unit for pump_flow_rate
+slot_uri: FAIRe:238
 range: pump_flow_rate_unit_enum
-annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: m3/s
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - New
-enum_values:
-  m3/s:
-    meaning: m3/s
-  m3/min:
-    meaning: m3/min
-  m3/h:
-    meaning: m3/h
-  L/s:
-    meaning: L/s
-  L/min:
-    meaning: L/min
-  L/h:
-    meaning: L/h
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: false
+in_subset:
+- SamplePreparation
+examples:
+- value: m3/s
+comments:
+- 'Sample types: Water, Air'

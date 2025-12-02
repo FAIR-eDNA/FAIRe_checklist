@@ -1,22 +1,10 @@
 name: lib_conc_unit
+title: lib conc unit
 description: Unit for lib_conc
+slot_uri: FAIRe:112
 range: lib_conc_unit_enum
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: pM
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  "ng/\xB5L":
-    meaning: "ng/\xB5L"
-  nM:
-    meaning: nM
-  pM:
-    meaning: pM
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: pM

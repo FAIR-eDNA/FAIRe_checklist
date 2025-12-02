@@ -1,18 +1,16 @@
 name: pcr_primer_name_forward
+title: pcr primer name forward
 description: Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
   list the names respectively, separated by pipe ( | ).
+slot_uri: FAIRe:202
 range: string
-annotations:
-  section: PCR
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: mlCOIintF
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DNA-derived data extension
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: mlCOIintF
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: description'

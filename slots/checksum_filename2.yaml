@@ -1,14 +1,11 @@
 name: checksum_filename2
+title: checksum filename2
 description: The checksum of the reverse sequence reads file (filename2), used to
   verify the integrity and identity of the corresponding data file
+slot_uri: FAIRe:029
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: b3ea95ec13dae594bcb292dcf1b1ac7f
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: b3ea95ec13dae594bcb292dcf1b1ac7f

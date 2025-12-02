@@ -1,18 +1,16 @@
 name: pcr_primer_name_reverse
+title: pcr primer name reverse
 description: Name of the pcr_primer_reverse. If multiple primers are listed in pcr_primer_reverse,
   list the names respectively, separated by pipe ( | ).
+slot_uri: FAIRe:203
 range: string
-annotations:
-  section: PCR
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: mlCOIintR
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DNA-derived data extension
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: mlCOIintR
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: description'

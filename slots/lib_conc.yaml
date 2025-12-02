@@ -1,14 +1,11 @@
 name: lib_conc
+title: lib conc
 description: The concentration of the prepared library pool that was loaded onto the
   sequencing platform for a sequencing run.
+slot_uri: FAIRe:110
 range: float
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: '10.0'
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: '10.0'

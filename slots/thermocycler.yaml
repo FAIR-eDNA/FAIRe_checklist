@@ -1,13 +1,10 @@
 name: thermocycler
+title: thermocycler
 description: The manufacturer and model of a thermocycler used
+slot_uri: FAIRe:306
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: Thermo Fisher Scientific, QuantStudio 6
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - MIQE
-term_type: unspecified
+required: false
+in_subset:
+- Pcr
+examples:
+- value: Thermo Fisher Scientific, QuantStudio 6

@@ -1,18 +1,15 @@
 name: phylum
+title: phylum
 description: The full scientific name of the phylum or division
+slot_uri: FAIRe:215
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: Chordata
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/phylum
-term_type: unspecified
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: Chordata
+close_mappings:
+- DWC:phylum
+source: DWC:phylum
+comments:
+- 'Modified from source: description'

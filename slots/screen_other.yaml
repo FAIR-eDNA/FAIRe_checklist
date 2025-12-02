@@ -1,12 +1,8 @@
 name: screen_other
+title: screen other
 description: Description of other screening criteria and approaches
+slot_uri: FAIRe:270
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics

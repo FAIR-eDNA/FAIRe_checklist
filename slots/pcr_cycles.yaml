@@ -1,20 +1,20 @@
 name: pcr_cycles
+title: pcr cycles
 description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
   approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
   section. Unit = cycles
+slot_uri: FAIRe:195
 range: string
+in_subset:
+- Pcr
+examples:
+- value: '40'
+close_mappings:
+- NMDC:pcr_cycles
+source: NMDC:pcr_cycles
+comments:
+- 'Modified from source: description'
 annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: '40'
-  unit: cycles
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - NMDC
-skos:exactMatch:
-- https://w3id.org/nmdc/pcr_cycles
-term_type: unspecified
+  unit:
+    tag: unit
+    value: cycles

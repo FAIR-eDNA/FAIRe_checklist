@@ -1,15 +1,13 @@
 name: samp_store_loc
+title: samp store loc
 description: Location at which sample was stored, usually name of a specific freezer/room
+slot_uri: FAIRe:256
 range: string
-annotations:
-  section: Sample storage
-  requirement_level: Optional
-  example: UWA, IOMRC, Lv4 -80Freezer1
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000755
-term_type: unspecified
+required: false
+in_subset:
+- SampleStorage
+examples:
+- value: UWA, IOMRC, Lv4 -80Freezer1
+exact_mappings:
+- MIXS:0000755
+source: MIXS:0000755

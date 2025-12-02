@@ -1,14 +1,11 @@
 name: verbatimEventTime
+title: verbatimEventTime
 description: Sample collection time before formatting to ISO 8601, or at the local
   time (if eventDate time samp has been converted to UTC time)
+slot_uri: FAIRe:331
 range: string
-annotations:
-  section: Sample collection
-  requirement_level: Optional
-  example: '10:23'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- SampleCollection
+examples:
+- value: '10:23'

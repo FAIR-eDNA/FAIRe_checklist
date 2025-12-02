@@ -1,15 +1,11 @@
 name: screen_geograph_method
+title: screen geograph method
 description: How were species distribution information screened and applied?
+slot_uri: FAIRe:268
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  requirement_level_condition: if screen_geograph_0_1 is 1
-  example: Distribution information was checked using FishBase, and species that did
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: Distribution information was checked using FishBase, and species that did
     not reside in the study area were removed.
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified

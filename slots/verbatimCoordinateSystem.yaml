@@ -1,27 +1,15 @@
 name: verbatimCoordinateSystem
+title: verbatimCoordinateSystem
 description: The coordinate format of the verbatimLatitude and verbatimLongitude
+slot_uri: FAIRe:329
 range: verbatimCoordinateSystem_enum
-annotations:
-  section: Sample collection
-  requirement_level: Optional
-  modifications_made:
-  - description
-  - field_type
-  example: degrees minutes seconds
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
-enum_values:
-  decimal degrees:
-    meaning: decimal degrees
-  degrees minutes seconds:
-    meaning: degrees minutes seconds
-  UTM:
-    meaning: UTM
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: false
+in_subset:
+- SampleCollection
+examples:
+- value: degrees minutes seconds
+close_mappings:
+- DWC:verbatimCoordinateSystem
+source: DWC:verbatimCoordinateSystem
+comments:
+- 'Modified from source: description, field_type'

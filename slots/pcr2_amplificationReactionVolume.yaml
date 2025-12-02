@@ -1,14 +1,14 @@
 name: pcr2_amplificationReactionVolume
-description: "The total PCR reaction volume in the second step PCR. Unit = \xB5L"
+title: pcr2 amplificationReactionVolume
+description: The total PCR reaction volume in the second step PCR. Unit = µL
+slot_uri: FAIRe:171
 range: float
+required: false
+in_subset:
+- LibraryPreparation
+examples:
+- value: '22.0'
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  example: '22.0'
-  unit: "\xB5L"
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µL

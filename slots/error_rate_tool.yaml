@@ -1,13 +1,10 @@
 name: error_rate_tool
+title: error rate tool
 description: Software to remove reads above error rate threshold
+slot_uri: FAIRe:070
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: FASTQC v0.12.1
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: FASTQC v0.12.1

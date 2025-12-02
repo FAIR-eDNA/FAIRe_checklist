@@ -1,15 +1,13 @@
 name: rightsHolder
+title: rightsHolder
 description: A person or organization owning or managing rights over the resource.
+slot_uri: FAIRe:246
 range: string
-annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: The Regents of the University of California
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://purl.org/dc/terms/rightsHolder
-term_type: unspecified
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: The Regents of the University of California
+exact_mappings:
+- DCTERMS:rightsHolder
+source: DCTERMS:rightsHolder

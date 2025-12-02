@@ -1,21 +1,18 @@
 name: sop_bioinformatics
+title: sop bioinformatics
 description: Standard operating procedures, references, link to scripts, that were
   used in quality filtering, assembly and/or annotation of genomes, metagenomes or
   environmental sequences
+slot_uri: FAIRe:280
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  - description
-  example: https://github.com/mahsa-mousavi/eDNAFlow
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000090
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: https://github.com/mahsa-mousavi/eDNAFlow
+close_mappings:
+- MIXS:0000090
+source: MIXS:0000090
+comments:
+- 'Modified from source: field_name, description'
+- 'Informed by: MIxS, DNA-derived data extension'

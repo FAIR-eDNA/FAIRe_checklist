@@ -1,17 +1,15 @@
 name: targetTaxonomicScope
+title: targetTaxonomicScope
 description: The taxonomic group(s) targeted in the study. This can differ from the
   targetTaxonomicAssay. For example, the targetTaxonomicAssay may be Chordata while
   the targetTaxonomicScope is Chondrichthyes (bony fish, sharks and rays).
+slot_uri: FAIRe:292
 range: string
-annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: teleost
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - Humboldt extension
-skos:exactMatch:
-- http://rs.tdwg.org/eco/terms/targetTaxonomicScope
-term_type: unspecified
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: teleost
+exact_mappings:
+- ECO:targetTaxonomicScope
+source: ECO:targetTaxonomicScope

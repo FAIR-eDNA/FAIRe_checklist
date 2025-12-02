@@ -1,13 +1,9 @@
 name: probe_seq
+title: probe seq
 description: If applicable, probe sequence in the 5' to 3' direction
+slot_uri: FAIRe:233
 range: string
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: CTTGTTTGTTTGATCAATTC
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+in_subset:
+- Pcr
+examples:
+- value: CTTGTTTGTTTGATCAATTC

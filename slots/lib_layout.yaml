@@ -1,25 +1,16 @@
 name: lib_layout
+title: lib layout
 description: Specify whether to expect single, paired, or other configuration of reads
+slot_uri: FAIRe:114
 range: lib_layout_enum
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  modifications_made:
-  - field_type
-  example: paired end
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000041
-enum_values:
-  paired end:
-    meaning: paired end
-  single end:
-    meaning: single end
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: paired end
+close_mappings:
+- MIXS:0000041
+source: MIXS:0000041
+comments:
+- 'Modified from source: field_type'
+- 'Informed by: MIxS, DNA-derived data extension'

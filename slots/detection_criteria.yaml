@@ -1,18 +1,13 @@
 name: detection_criteria
+title: detection criteria
 description: Criteria to determine positive detection. For example, a certain number
   of positive amplifications per sample, sanger sequencing of amplicons
+slot_uri: FAIRe:049
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - field_name
-  - description
-  example: The minimum number of PCR replicates of 2 with positive amplification
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+required: true
+in_subset:
+- TargetedAssay
+examples:
+- value: The minimum number of PCR replicates of 2 with positive amplification
+comments:
+- 'Modified from source: field_name, description'

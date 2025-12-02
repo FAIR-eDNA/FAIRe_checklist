@@ -1,15 +1,15 @@
 name: demux_max_mismatch
+title: demux max mismatch
 description: Maximum mismatch allowed at the index bases for demultiplexing. Unit
   = base pair
+slot_uri: FAIRe:046
 range: string
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '0'
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '0'
-  unit: base pair
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: base pair

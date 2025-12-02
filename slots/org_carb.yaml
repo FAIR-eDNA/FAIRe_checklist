@@ -1,21 +1,15 @@
 name: org_carb
+title: org carb
 description: Concentration of organic carbon
+slot_uri: FAIRe:150
 range: float
-annotations:
-  section: Environment
-  requirement_level: Optional
-  example: '1.5'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - Air
-  - MicrobialMatBiofilm
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000508
-term_type: unspecified
+required: false
+in_subset:
+- Environment
+examples:
+- value: '1.5'
+exact_mappings:
+- MIXS:0000508
+source: MIXS:0000508
+comments:
+- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

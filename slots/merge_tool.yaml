@@ -1,13 +1,10 @@
 name: merge_tool
+title: merge tool
 description: Software and the version to merge paired end reads
+slot_uri: FAIRe:123
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: AdapterRemoval 2.3.3
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: AdapterRemoval 2.3.3

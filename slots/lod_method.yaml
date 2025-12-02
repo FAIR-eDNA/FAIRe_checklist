@@ -1,13 +1,10 @@
 name: lod_method
+title: lod method
 description: Method used for determining LOD e.g., DOI of a published procedure
+slot_uri: FAIRe:118
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: 'DOI: 10.1002/edn3.220'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: 'DOI: 10.1002/edn3.220'

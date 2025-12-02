@@ -1,20 +1,10 @@
 name: concentration_unit
+title: concentration unit
 description: The unit of total DNA concentration after extraction
+slot_uri: FAIRe:039
 range: concentration_unit_enum
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  example: "ng/\xB5l"
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  "ng/\xB5l":
-    meaning: "ng/\xB5l"
-  "copies/\xB5l":
-    meaning: "copies/\xB5l"
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: ng/µl

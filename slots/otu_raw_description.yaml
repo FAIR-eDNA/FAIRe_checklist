@@ -1,14 +1,11 @@
 name: otu_raw_description
+title: otu raw description
 description: A description of the data curation and processing steps applied to the
   raw OTU/ASV table
+slot_uri: FAIRe:162
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: OTU clustering with 97% similarity
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: OTU clustering with 97% similarity

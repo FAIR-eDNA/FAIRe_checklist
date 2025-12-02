@@ -1,18 +1,15 @@
 name: tax_class_other
+title: tax class other
 description: Additional information on parameters and cutoffs used for taxonomic assignment,
   that have not been shared in the given record.
+slot_uri: FAIRe:299
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000064
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+close_mappings:
+- MIXS:0000064
+source: MIXS:0000064
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'

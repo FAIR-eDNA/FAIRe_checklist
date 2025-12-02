@@ -1,14 +1,10 @@
 name: r2
+title: r2
 description: R-squared value of a qPCR standard curve. This shall be specific to each
   pcr_plate_id.
+slot_uri: FAIRe:240
 range: float
-annotations:
-  section: Targeted assay detection
-  requirement_level: Highly recommended
-  example: '0.9867'
-  data_type:
-  - stdData
-  requirement_level_code: HR
-  source:
-  - MIQE
-term_type: unspecified
+in_subset:
+- TargetedAssay
+examples:
+- value: '0.9867'

@@ -1,15 +1,14 @@
 name: rfu
+title: rfu
 description: Relative Fluorescence Units (RFU). No unit
+slot_uri: FAIRe:245
 range: float
+required: false
+in_subset:
+- TargetedAssay
+examples:
+- value: '7862.41'
 annotations:
-  section: Targeted assay detection
-  requirement_level: Optional
-  example: '7862.41'
-  unit: No unit
-  data_type:
-  - ampData
-  - stdData
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: No unit

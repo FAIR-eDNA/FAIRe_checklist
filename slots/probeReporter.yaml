@@ -1,19 +1,17 @@
 name: probeReporter
+title: probeReporter
 description: Type of fluorophore (reporter) used. Probe anneals within amplified target
   DNA. Polymerase activity degrades the probe that has annealed to the template, and
   the probe releases the fluorophore from it and breaks the proximity to the quencher,
   thus allowing fluorescence of the fluorophore.
+slot_uri: FAIRe:230
 range: string
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: FAM
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+in_subset:
+- Pcr
+examples:
+- value: FAM
+exact_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Informed by: DNA-derived data extension, MIQE'

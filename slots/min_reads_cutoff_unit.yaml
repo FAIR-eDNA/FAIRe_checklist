@@ -1,20 +1,10 @@
 name: min_reads_cutoff_unit
+title: min reads cutoff unit
 description: The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
+slot_uri: FAIRe:129
 range: min_reads_cutoff_unit_enum
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '%'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  reads:
-    meaning: reads
-  '%':
-    meaning: '%'
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '%'

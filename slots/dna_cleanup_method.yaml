@@ -1,15 +1,11 @@
 name: dna_cleanup_method
+title: dna cleanup method
 description: A description of DNA clean-up method. Provide the name of a commercial
   kit if used.
+slot_uri: FAIRe:061
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  requirement_level_condition: If dna_cleanup_0_1 is 1
-  example: Zymo DNA Clean & Concentrator Kits
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: Zymo DNA Clean & Concentrator Kits

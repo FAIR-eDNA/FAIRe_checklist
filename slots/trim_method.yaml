@@ -1,16 +1,13 @@
 name: trim_method
+title: trim method
 description: Method for trimming primer and/or adapter sequences, including version
   and parameters
+slot_uri: FAIRe:326
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  example: cutadapt v4.9
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - NOAA
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: cutadapt v4.9
+comments:
+- 'Modified from source: field_name'

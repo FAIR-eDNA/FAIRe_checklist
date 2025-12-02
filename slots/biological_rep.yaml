@@ -1,14 +1,11 @@
 name: biological_rep
+title: biological rep
 description: The number of biological replicates collected at each sampling point
   and/or for each experimental treatment in the study.
+slot_uri: FAIRe:022
 range: string
-annotations:
-  section: Sample collection
-  requirement_level: Recommended
-  example: '5'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: integer
+recommended: true
+in_subset:
+- SampleCollection
+examples:
+- value: '5'

@@ -1,14 +1,10 @@
 name: accession_id
+title: accession id
 description: Accession ID of the best matching sequence from a reference database
+slot_uri: FAIRe:003
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  example: MG002616.1
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: MG002616.1

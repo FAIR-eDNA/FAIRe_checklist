@@ -1,14 +1,11 @@
 name: rel_cont_id
+title: rel cont id
 description: (A list of) samp_id of the negative and positive controls related to
   each sample
+slot_uri: FAIRe:244
 range: string
-annotations:
-  section: Sample relations
-  requirement_level: Recommended
-  example: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- SampleRelationship
+examples:
+- value: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1

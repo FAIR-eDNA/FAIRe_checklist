@@ -1,16 +1,12 @@
 name: filter_name
+title: filter name
 description: Commercial names and brand of filter
+slot_uri: FAIRe:084
 range: string
-annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  example: Merck Sterivex
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- SamplePreparation
+examples:
+- value: Merck Sterivex
+comments:
+- 'Sample types: Water, Air'

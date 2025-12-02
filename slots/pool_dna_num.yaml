@@ -1,19 +1,15 @@
 name: pool_dna_num
+title: pool dna num
 description: The number of extracts that were pooled in to one sample before PCR
+slot_uri: FAIRe:217
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  - field_type
-  - field_name
-  example: '2'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000325
-term_type: unspecified
+recommended: true
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: '2'
+close_mappings:
+- MIXS:0000325
+source: MIXS:0000325
+comments:
+- 'Modified from source: description, field_type, field_name'

@@ -1,14 +1,11 @@
 name: checksum_filename
+title: checksum filename
 description: The checksum of the forward sequence reads file (filename), used to verify
   the integrity and identity of the corresponding data file
+slot_uri: FAIRe:028
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: e61e08bfd3ad5eb5d6e7da9e95b5feed
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: e61e08bfd3ad5eb5d6e7da9e95b5feed

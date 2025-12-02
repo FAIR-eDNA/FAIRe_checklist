@@ -1,19 +1,17 @@
 name: materialSampleID
+title: materialSampleID
 description: An identifier for the physical sample (as opposed to the extracted DNA
   sample defined by samp_name). In the absence of a persistent global unique identifier,
   construct one from a combination of identifiers in the record.
+slot_uri: FAIRe:120
 range: string
-annotations:
-  section: Sample relations
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: GOMECC4_27N_Sta1_Deep
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/materialSampleID
-term_type: unspecified
+recommended: true
+in_subset:
+- SampleRelationship
+examples:
+- value: GOMECC4_27N_Sta1_Deep
+close_mappings:
+- DWC:materialSampleID
+source: DWC:materialSampleID
+comments:
+- 'Modified from source: description'

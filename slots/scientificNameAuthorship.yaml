@@ -1,18 +1,15 @@
 name: scientificNameAuthorship
+title: scientificNameAuthorship
 description: The authorship information for the scientificName
+slot_uri: FAIRe:266
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: Bloch, 1790
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
-term_type: unspecified
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: Bloch, 1790
+close_mappings:
+- DWC:scientificNameAuthorship
+source: DWC:scientificNameAuthorship
+comments:
+- 'Modified from source: description'

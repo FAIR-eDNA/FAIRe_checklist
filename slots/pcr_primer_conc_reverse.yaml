@@ -1,18 +1,18 @@
 name: pcr_primer_conc_reverse
-description: "The stock concentration of the reverse PCR primer (pcr_primer_reverse).\
-  \ This refers specifically to the concentration of the primer stock solution, not\
-  \ the final concentration in the PCR reaction. For example, using 1 \xB5L of a 5\
-  \ \xB5M (stock concentration) primer in a 25 \xB5L reaction results in a final concentration\
-  \ of 0.2 \xB5M. Hence the entry for this term would be 5. Unit = \xB5M"
+title: pcr primer conc reverse
+description: The stock concentration of the reverse PCR primer (pcr_primer_reverse).
+  This refers specifically to the concentration of the primer stock solution, not
+  the final concentration in the PCR reaction. For example, using 1 µL of a 5 µM (stock
+  concentration) primer in a 25 µL reaction results in a final concentration of 0.2
+  µM. Hence the entry for this term would be 5. Unit = µM
+slot_uri: FAIRe:200
 range: float
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: '5.0'
 annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: '5.0'
-  unit: "\xB5M"
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIQE
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µM

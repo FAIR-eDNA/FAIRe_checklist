@@ -1,14 +1,11 @@
 name: seq_method_additional
+title: seq method additional
 description: Additional information on library preparation and sequencing method,
   that has not been shared in the given record.
+slot_uri: FAIRe:273
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  example: PhiX was spiked in at 15%
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- LibraryPreparation
+examples:
+- value: PhiX was spiked in at 15%

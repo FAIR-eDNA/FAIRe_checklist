@@ -1,22 +1,17 @@
 name: precip_force_prep
+title: precip force prep
 description: Centrifuge force used in precipitation at the sample preparation step
   prior to DNA extraction, if precipitation was performed. Unit = x g
+slot_uri: FAIRe:221
 range: float
+in_subset:
+- SamplePreparation
+examples:
+- value: '20000.0'
+comments:
+- 'Modified from source: field_name, description'
+- 'Sample types: Water, Soil, Sediment'
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_name
-  - description
-  example: '20000.0'
-  unit: x g
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  unit:
+    tag: unit
+    value: x g

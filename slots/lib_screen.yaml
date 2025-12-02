@@ -1,19 +1,17 @@
 name: lib_screen
+title: lib screen
 description: Specific enrichment or screening methods applied before and/or after
   creating libraries
+slot_uri: FAIRe:115
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Highly recommended
-  example: The library was size selected using a Pippin-Prep (Sage Science, Beverly,
+in_subset:
+- LibraryPreparation
+examples:
+- value: The library was size selected using a Pippin-Prep (Sage Science, Beverly,
     USA), purified using the Qiaquick PCR Purification Kit (Qiagen), quantified using
     a Qubit (Invitrogen) and diluted to 2 nM before loading it onto a MiSeq Flow Cell
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000043
-term_type: unspecified
+exact_mappings:
+- MIXS:0000043
+source: MIXS:0000043
+comments:
+- 'Informed by: MIxS, DNA-derived data extension'

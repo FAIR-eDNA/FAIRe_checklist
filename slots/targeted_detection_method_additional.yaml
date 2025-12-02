@@ -1,13 +1,9 @@
 name: targeted_detection_method_additional
+title: targeted detection method additional
 description: Additional information on Targeted assay detection method, that has not
   been shared in the given record.
+slot_uri: FAIRe:295
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Optional
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- TargetedAssay

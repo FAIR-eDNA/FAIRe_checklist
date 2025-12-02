@@ -1,15 +1,10 @@
 name: screen_contam_method
+title: screen contam method
 description: How were contaminations screened and applied in data curation/analyses/interpretation?
+slot_uri: FAIRe:267
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Highly recommended
-  requirement_level_condition: if screen_contam_0_1 is 1
-  example: Taxa detected in negative controls were checked, and the read counts were
+in_subset:
+- Bioinformatics
+examples:
+- value: Taxa detected in negative controls were checked, and the read counts were
     applied as a cutoff to call presence.
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified

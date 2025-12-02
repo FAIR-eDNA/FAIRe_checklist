@@ -1,15 +1,15 @@
 name: pcr2_dna_vol
-description: "(If bacroding_pcr_appr = \"two-step PCR\") Volume of DNA added in each\
-  \ reaction in the second step PCR. Unit = \xB5L"
+title: pcr2 dna vol
+description: (If bacroding_pcr_appr = "two-step PCR") Volume of DNA added in each
+  reaction in the second step PCR. Unit = µL
+slot_uri: FAIRe:178
 range: float
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: '2.0'
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: '2.0'
-  unit: "\xB5L"
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µL

@@ -1,16 +1,10 @@
 name: inhibition_check_0_1
+title: inhibition check (0/1)
 description: Was the inhibition checked? Yes = 1, No = 0
+slot_uri: FAIRe:103
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: '1'
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: Boolean
-enum_range:
+required: false
+in_subset:
+- Pcr
+examples:
 - value: '1'
-- value: '0'

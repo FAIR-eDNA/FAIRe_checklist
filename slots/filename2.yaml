@@ -1,14 +1,11 @@
 name: filename2
+title: filename2
 description: A raw sequencing data file name of reverse reads if lib_layout = paired
   end
+slot_uri: FAIRe:081
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: S01_R2.fastq
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: S01_R2.fastq

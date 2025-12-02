@@ -1,13 +1,10 @@
 name: std_seq
+title: std seq
 description: DNA sequences of standard
+slot_uri: FAIRe:285
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: GTCTCTCCCTGTATATCGTCATGACATCTTCAGCCTTCCTCACATTAAAAACCAACAACTCTTTAACCATCAATACTCTCGCAACTTCATGAACTAAATCCCGACCCTTGCCGCATTAACCGCTCT
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: GTCTCTCCCTGTATATCGTCATGACATCTTCAGCCTTCCTCACATTAAAAACCAACAACTCTTTAACCATCAATACTCTCGCAACTTCATGAACTAAATCCCGACCCTTGCCGCATTAACCGCTCT

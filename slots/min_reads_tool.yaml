@@ -1,13 +1,10 @@
 name: min_reads_tool
+title: min reads tool
 description: Software and the version to remove reads below minimum read threshold
+slot_uri: FAIRe:130
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: DADA2 1.26
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: DADA2 1.26

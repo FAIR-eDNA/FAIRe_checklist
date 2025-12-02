@@ -1,34 +1,18 @@
 name: probeQuencher
-description: "Type of quencher used. The quencher molecule quenches the fluorescence\
-  \ emitted by the fluorophore when excited by the cycler\u2019s light source As long\
-  \ as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence\
-  \ signals."
+title: probeQuencher
+description: Type of quencher used. The quencher molecule quenches the fluorescence
+  emitted by the fluorophore when excited by the cycler’s light source As long as
+  fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
+  signals.
+slot_uri: FAIRe:229
 range: probeQuencher_enum
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_type
-  example: MGB
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-enum_values:
-  Zero-End Quencher (ZEN):
-    meaning: Zero-End Quencher (ZEN)
-  TAMRA:
-    meaning: TAMRA
-  lowa Black:
-    meaning: lowa Black
-  Minor Groove Binder (MGB):
-    meaning: Minor Groove Binder (MGB)
-  Black Hole Quencher (BHQ):
-    meaning: Black Hole Quencher (BHQ)
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+in_subset:
+- Pcr
+examples:
+- value: MGB
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: field_type'
+- 'Informed by: DNA-derived data extension, MIQE'

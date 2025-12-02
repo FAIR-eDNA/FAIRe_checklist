@@ -1,36 +1,18 @@
 name: samp_store_sol
+title: samp store sol
 description: 'Solution within which the sample was stored. Note: If a sample was processed
   before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
   storage solution before the process here, and the storage solution of the processed
   sample under the term prepped_samp_store_sol.'
+slot_uri: FAIRe:258
 range: samp_store_sol_enum
-annotations:
-  section: Sample storage
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: none
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - ALL
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0001317
-enum_values:
-  ethanol:
-    meaning: ethanol
-  sodium acetate:
-    meaning: sodium acetate
-  longmire:
-    meaning: longmire
-  lysis buffer:
-    meaning: lysis buffer
-  none:
-    meaning: none
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+in_subset:
+- SampleStorage
+examples:
+- value: none
+close_mappings:
+- MIXS:0001317
+source: MIXS:0001317
+comments:
+- 'Modified from source: description, field_type'
+- 'Sample types: ALL'

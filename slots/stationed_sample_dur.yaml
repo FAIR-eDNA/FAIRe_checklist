@@ -1,22 +1,21 @@
 name: stationed_sample_dur
+title: stationed sample dur
 description: Duration of on-site, stationed sampling (i.e., the filter deployment
   period). This term is recommended to be recorded when filters are deployed directly
   in the environment, such as during airborne eDNA sampling or when filters are submerged
   in water for a certain period). The duration should be recorded using ISO 8601 duration
   format (P<date>T<time>). For example, P1Y1M1DT1H1M1.1S represents 1 year, 1 month,
   1 day, 1 hour, 1 minute, 1 second, and 100 milliseconds
+slot_uri: FAIRe:282
 range: string
+recommended: true
+in_subset:
+- SamplePreparation
+examples:
+- value: T1H30M
+comments:
+- 'Sample types: Water, Air'
 annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  example: T1H30M
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - New
-  fixed_format: PnYnMnWnDTnHnMnS
-term_type: fixed format
+  fixed_format:
+    tag: fixed_format
+    value: PnYnMnWnDTnHnMnS

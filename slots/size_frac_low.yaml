@@ -1,23 +1,20 @@
 name: size_frac_low
-description: "Refers to the mesh/pore size used to pre-filter/pre-sort the sample.\
-  \ Materials larger than the size threshold are excluded from the sample. Unit =\
-  \ \xB5m"
+title: size frac low
+description: Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
+  Materials larger than the size threshold are excluded from the sample. Unit = µm
+slot_uri: FAIRe:277
 range: float
+in_subset:
+- SamplePreparation
+examples:
+- value: '20.0'
+close_mappings:
+- MIXS:0000735
+source: MIXS:0000735
+comments:
+- 'Modified from source: field_type'
+- 'Sample types: Water, Air'
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_type
-  example: '20.0'
-  unit: "\xB5m"
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000735
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µm

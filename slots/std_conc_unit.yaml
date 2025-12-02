@@ -1,28 +1,8 @@
 name: std_conc_unit
+title: std conc unit
 description: Unit for input quantity of qPCR standard DNA
+slot_uri: FAIRe:284
 range: std_conc_unit_enum
-annotations:
-  section: Targeted assay detection
-  requirement_level: Mandatory
-  requirement_level_condition: if samp_category = PCR standard
-  data_type:
-  - stdData
-  requirement_level_code: M
-  source:
-  - New
-enum_values:
-  copies/reaction:
-    meaning: copies/reaction
-  "copies/\xB5L of DNA extract":
-    meaning: "copies/\xB5L of DNA extract"
-  "copies/\xB5L of reaction":
-    meaning: "copies/\xB5L of reaction"
-  ng/reaction:
-    meaning: ng/reaction
-  "ng/\xB5L of DNA extract":
-    meaning: "ng/\xB5L of DNA extract"
-  "ng/\xB5L of reaction":
-    meaning: "ng/\xB5L of reaction"
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: true
+in_subset:
+- TargetedAssay

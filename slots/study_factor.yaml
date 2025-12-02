@@ -1,14 +1,11 @@
 name: study_factor
+title: study factor
 description: The variable(s) examined in the study, including those of direct interests
   to address study aims and covariates.
+slot_uri: FAIRe:289
 range: string
-annotations:
-  section: Project
-  requirement_level: Optional
-  example: benthic habitat types | diurnal time series | filter types
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- Project
+examples:
+- value: benthic habitat types | diurnal time series | filter types

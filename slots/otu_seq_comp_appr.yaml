@@ -1,18 +1,15 @@
 name: otu_seq_comp_appr
+title: otu seq comp appr
 description: Alignment tool/software used for taxonomic assignment
+slot_uri: FAIRe:163
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: blastn;2.6.0+
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000086
-term_type: unspecified
+in_subset:
+- Bioinformatics
+examples:
+- value: blastn;2.6.0+
+close_mappings:
+- MIXS:0000086
+source: MIXS:0000086
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'

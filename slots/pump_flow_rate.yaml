@@ -1,16 +1,12 @@
 name: pump_flow_rate
+title: pump flow rate
 description: Pump flow rate of filtration if applicable
+slot_uri: FAIRe:237
 range: float
-annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: '0.2'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- SamplePreparation
+examples:
+- value: '0.2'
+comments:
+- 'Sample types: Water, Air'

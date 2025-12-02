@@ -1,13 +1,9 @@
 name: nucl_acid_ext_method_additional
+title: nucl acid ext method additional
 description: Additional information on nucleic acid extraction method, that has not
   been shared in the given record.
+slot_uri: FAIRe:145
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Optional
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- NucleicAcidExtraction

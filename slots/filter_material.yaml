@@ -1,38 +1,15 @@
 name: filter_material
+title: filter material
 description: Material of filter
+slot_uri: FAIRe:083
 range: filter_material_enum
-annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: cellulose ester
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - NMDC
-skos:exactMatch:
-- https://w3id.org/nmdc/filter_material
-enum_values:
-  cellulose:
-    meaning: cellulose
-  cellulose ester:
-    meaning: cellulose ester
-  glass fiber:
-    meaning: glass fiber
-  thermoplastic membrane:
-    meaning: thermoplastic membrane
-  track etched polycarbonate:
-    meaning: track etched polycarbonate
-  nylon:
-    meaning: nylon
-  polyethersulfone:
-    meaning: polyethersulfone
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+in_subset:
+- SamplePreparation
+examples:
+- value: cellulose ester
+close_mappings:
+- NMDC:filter_material
+source: NMDC:filter_material
+comments:
+- 'Modified from source: description, field_type'
+- 'Sample types: Water, Air'

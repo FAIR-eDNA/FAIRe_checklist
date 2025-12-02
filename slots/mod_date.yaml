@@ -1,22 +1,23 @@
 name: mod_date
+title: mod date
 description: 'The last date on which the database information was modified, following
   the ISO 8601 format of yyyy-mm-dd. In case no exact time or date is available, the
   date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00;
   2008-01-23T19:23:10Z; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601
   compliant.'
+slot_uri: FAIRe:132
 range: string
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: '2014-09-09'
+close_mappings:
+- NMDC:mod_date
+source: NMDC:mod_date
+comments:
+- 'Modified from source: description'
 annotations:
-  section: Data management
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: '2014-09-09'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - NMDC
-  fixed_format: yyyy-mm-dd
-skos:exactMatch:
-- https://w3id.org/nmdc/mod_date
-term_type: fixed format
+  fixed_format:
+    tag: fixed_format
+    value: yyyy-mm-dd

@@ -1,14 +1,14 @@
 name: pcr_primer_vol_reverse
-description: "Volume of pcr_primer_reverse per reaction. Unit = \xB5L"
+title: pcr primer vol reverse
+description: Volume of pcr_primer_reverse per reaction. Unit = µL
+slot_uri: FAIRe:208
 range: float
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: '2.0'
 annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: '2.0'
-  unit: "\xB5L"
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µL

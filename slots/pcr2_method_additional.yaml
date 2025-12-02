@@ -1,17 +1,13 @@
 name: pcr2_method_additional
+title: pcr2 method additional
 description: (If bacroding_pcr_appr = "two-step PCR") Additional information on PCR
   or PCR-free method, that has not been shared in the given record in the second step
   PCR
+slot_uri: FAIRe:179
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  example: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI
-    10.1007/s12686-013-0113-4) was applied to prevent elongation of a closely related
-    species
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- LibraryPreparation
+examples:
+- value: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI 10.1007/s12686-013-0113-4)
+    was applied to prevent elongation of a closely related species

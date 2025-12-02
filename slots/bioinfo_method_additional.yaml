@@ -1,16 +1,13 @@
 name: bioinfo_method_additional
+title: bioinfo method additional
 description: Additional information on bioinformatics, that has not been shared in
   the given record.
+slot_uri: FAIRe:021
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Optional
-  example: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
+required: false
+in_subset:
+- Bioinformatics
+examples:
+- value: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
     was detected in multiple samples. Data was curated using r-package LULU, minimum_mismatch
     cutoff 90%
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified

@@ -1,24 +1,11 @@
 name: estimatedNumberOfCopies_error_type
+title: estimatedNumberOfCopies error type
 description: The specific type of variability measure (e.g., standard error, standard
   deviation) used to describe estimatedNumberOfCopies_error.
+slot_uri: FAIRe:074
 range: estimatedNumberOfCopies_error_type_enum
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: standard error
-  data_type:
-  - ampData
-  - eLowQuantData
-  requirement_level_code: R
-  source:
-  - New
-enum_values:
-  standard error:
-    meaning: standard error
-  standard deviation:
-    meaning: standard deviation
-  95% confidence interval:
-    meaning: 95% confidence interval
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: standard error

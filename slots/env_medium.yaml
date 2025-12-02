@@ -1,4 +1,5 @@
 name: env_medium
+title: env medium
 description: 'Environmental material or materials (pipe separated) immediately surrounded
   your sample prior to sampling. Select from ENVO''s environmental material class
   (entity/ continuant/ independent continuant/ material entity/ environmental material):
@@ -7,23 +8,20 @@ description: 'Environmental material or materials (pipe separated) immediately s
   fresh water [ENVO:00002011], tap water [ENVO:00003096], fecal material [ENVO:00002003],
   digestive tract environment [ENVO:2100002], intestine environment [ENVO:2100002],
   planktonic material [ENVO:01000063]'
+slot_uri: FAIRe:068
 range: string
+required: true
+in_subset:
+- SampleCollection
+examples:
+- value: soil [ENVO:00001998]
+close_mappings:
+- MIXS:0000014
+source: MIXS:0000014
+comments:
+- 'Modified from source: description, field_type'
+- 'Informed by: MIxS, DNA-derived data extension'
 annotations:
-  section: Sample collection
-  requirement_level: Mandatory
-  requirement_level_condition: Mandatory unless samp_category = negative control,
-    positive control, or PCR standard
-  modifications_made:
-  - description
-  - field_type
-  example: soil [ENVO:00001998]
-  data_type:
-  - sampleMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-  - DNA-derived data extension
-  fixed_format: termLabel [termID]
-skos:exactMatch:
-- https://w3id.org/mixs/0000014
-term_type: fixed format
+  fixed_format:
+    tag: fixed_format
+    value: termLabel [termID]

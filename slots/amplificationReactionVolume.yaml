@@ -1,17 +1,19 @@
 name: amplificationReactionVolume
-description: "The total PCR reaction volume. Unit = \xB5L"
+title: amplificationReactionVolume
+description: The total PCR reaction volume. Unit = µL
+slot_uri: FAIRe:009
 range: float
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: '22.0'
+exact_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Informed by: DNA-derived data extension, MIQE'
 annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: '22.0'
-  unit: "\xB5L"
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µL

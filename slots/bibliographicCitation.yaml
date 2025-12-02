@@ -1,15 +1,13 @@
 name: bibliographicCitation
+title: bibliographicCitation
 description: A bibliographic reference for the resource.
+slot_uri: FAIRe:020
 range: string
-annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: 'DOI: 10.1111/mec.15382'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://purl.org/dc/terms/bibliographicCitation
-term_type: unspecified
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: 'DOI: 10.1111/mec.15382'
+exact_mappings:
+- DCTERMS:bibliographicCitation
+source: DCTERMS:bibliographicCitation

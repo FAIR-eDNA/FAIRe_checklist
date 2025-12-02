@@ -1,13 +1,9 @@
 name: probe_ref
+title: probe ref
 description: Reference (i.e. DOI) of the probe_seq
+slot_uri: FAIRe:232
 range: string
-annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: 10.1007/s00227-017-3141-x
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+in_subset:
+- Pcr
+examples:
+- value: 10.1007/s00227-017-3141-x

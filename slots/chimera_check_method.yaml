@@ -1,19 +1,17 @@
 name: chimera_check_method
+title: chimera check method
 description: Description of chimera check approaches (i.e. denovo, reference-based),
   including software and the version used
+slot_uri: FAIRe:031
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: denovo, uchime v4.1
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000052
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: denovo, uchime v4.1
+close_mappings:
+- MIXS:0000052
+source: MIXS:0000052
+comments:
+- 'Modified from source: description'
+- 'Informed by: MIxS, DNA-derived data extension'

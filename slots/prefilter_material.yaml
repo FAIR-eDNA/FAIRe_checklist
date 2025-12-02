@@ -1,16 +1,12 @@
 name: prefilter_material
+title: prefilter material
 description: Material used to pre-filter/pre-sort the sample
+slot_uri: FAIRe:224
 range: string
-annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: nylon
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- SamplePreparation
+examples:
+- value: nylon
+comments:
+- 'Sample types: Water, Air'

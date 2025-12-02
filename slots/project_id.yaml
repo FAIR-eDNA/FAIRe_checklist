@@ -1,17 +1,16 @@
 name: project_id
+title: project id
 description: A brief, concise project identifier with no spaces or special characters,
   ensuring machine readability. This ID will be used in data file names as 'project_id'.
+slot_uri: FAIRe:235
 range: string
-annotations:
-  section: Project
-  requirement_level: Mandatory
-  example: noaa-aoml-gomecc4
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - NMDC
-  - NOAA
-skos:exactMatch:
-- https://w3id.org/nmdc/project_id
-term_type: unspecified
+required: true
+in_subset:
+- Project
+examples:
+- value: noaa-aoml-gomecc4
+exact_mappings:
+- NMDC:project_id
+source: NMDC:project_id
+comments:
+- 'Informed by: NMDC, NOAA'

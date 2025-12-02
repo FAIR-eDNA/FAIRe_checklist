@@ -1,18 +1,15 @@
 name: prep_method_additional
+title: prep method additional
 description: Additional information on sample preparation, storage and preservation
   prior to DNA extraction, that has not been shared in the given record
+slot_uri: FAIRe:225
 range: string
-annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
+required: false
+in_subset:
+- SamplePreparation
+examples:
+- value: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
     precipitation protocols. ATL lysis buffer was used for prepped_samp_store_sol.
     Prepped_samp_store_temp was ambient, average of 22 degree Celsius
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - ALL
-  source:
-  - New
-term_type: unspecified
+comments:
+- 'Sample types: ALL'

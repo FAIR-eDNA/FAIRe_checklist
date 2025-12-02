@@ -1,13 +1,10 @@
 name: lib_conc_meth
+title: lib conc meth
 description: Method to estimate lib_conc
+slot_uri: FAIRe:111
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: Qubit Fluoromete
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- LibraryPreparation
+examples:
+- value: Qubit Fluoromete

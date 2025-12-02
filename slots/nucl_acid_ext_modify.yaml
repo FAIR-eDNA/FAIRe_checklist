@@ -1,18 +1,14 @@
 name: nucl_acid_ext_modify
+title: nucl acid ext modify
 description: Description of modification made from a commercial or established protocol
   (nucl_acid_ext), if made.
+slot_uri: FAIRe:146
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  example: "Sample was lysed in 540 \xB5L of ATL buffer and 60 \xB5L of Proteinase\
-    \ K, and eluted in 100 \xB5L of buffer EB, instead of 180 \xB5L, 20 \xB5L and\
-    \ 200 \xB5L respectively"
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+recommended: true
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and eluted
+    in 100 µL of buffer EB, instead of 180 µL, 20 µL and 200 µL respectively
+comments:
+- 'Modified from source: field_name'

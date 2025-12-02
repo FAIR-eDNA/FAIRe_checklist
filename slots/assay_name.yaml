@@ -1,19 +1,11 @@
 name: assay_name
+title: assay name
 description: A brief, concise identifier for assay with no spaces or special characters,
   ensuring machine readability. This ID will be used in file names as 'assay_name'.
+slot_uri: FAIRe:011
 range: string
-annotations:
-  section: PCR
-  requirement_level: Mandatory
-  example: MiFish (metabarcoding) / eSERU5 (qPCR)
-  data_type:
-  - projectMetadata
-  - sampleMetadata
-  - ampData
-  - experimentRunMetadata
-  - stdData
-  - eLowQuantData
-  requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+required: true
+in_subset:
+- Pcr
+examples:
+- value: MiFish (metabarcoding) / eSERU5 (qPCR)

@@ -1,20 +1,19 @@
 name: size_frac
-description: "Filtering pore size used in sample filtration. Unit = \xB5m"
+title: size frac
+description: Filtering pore size used in sample filtration. Unit = µm
+slot_uri: FAIRe:276
 range: float
+in_subset:
+- SamplePreparation
+examples:
+- value: '0.22'
+exact_mappings:
+- MIXS:0000017
+source: MIXS:0000017
+comments:
+- 'Informed by: MIxS, DNA-derived data extension'
+- 'Sample types: Water, Air'
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  example: '0.22'
-  unit: "\xB5m"
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Air
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000017
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µm

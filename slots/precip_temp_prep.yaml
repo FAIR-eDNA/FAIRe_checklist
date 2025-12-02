@@ -1,22 +1,17 @@
 name: precip_temp_prep
+title: precip temp prep
 description: Temperature used in precipitation at the sample preparation step prior
   to DNA extraction, if precipitation was performed. Unit = degree Celsius
+slot_uri: FAIRe:222
 range: string
+in_subset:
+- SamplePreparation
+examples:
+- value: '10.0'
+comments:
+- 'Modified from source: field_name, description'
+- 'Sample types: Water, Soil, Sediment'
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_name
-  - description
-  example: '10.0'
-  unit: degree Celsius
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  unit:
+    tag: unit
+    value: degree Celsius

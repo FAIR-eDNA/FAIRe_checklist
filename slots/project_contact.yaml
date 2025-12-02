@@ -1,13 +1,10 @@
 name: project_contact
+title: project contact
 description: A contact person and their contact (i.e., email address) for data enquiry
+slot_uri: FAIRe:234
 range: string
-annotations:
-  section: Project
-  requirement_level: Mandatory
-  example: xxxx@yyyy.com
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+required: true
+in_subset:
+- Project
+examples:
+- value: xxxx@yyyy.com

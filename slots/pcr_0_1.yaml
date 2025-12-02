@@ -1,17 +1,11 @@
 name: pcr_0_1
+title: pcr (0/1)
 description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches including
   shotgun metagenomics, Nanopore) = 0
+slot_uri: FAIRe:182
 range: string
-annotations:
-  section: PCR
-  requirement_level: Mandatory
-  example: '1'
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - New
-term_type: Boolean
-enum_range:
+required: true
+in_subset:
+- Pcr
+examples:
 - value: '1'
-- value: '0'

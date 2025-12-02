@@ -1,13 +1,10 @@
 name: date_ext
+title: date ext
 description: Date of nucleic acid extraction, written in ISO 8601 format
+slot_uri: FAIRe:043
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Optional
-  example: 2008-01-23T19:23-06:00
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: fixed format
+required: false
+in_subset:
+- NucleicAcidExtraction
+examples:
+- value: 2008-01-23T19:23-06:00

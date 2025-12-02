@@ -1,13 +1,10 @@
 name: code_repo
+title: code repo
 description: Link to public repository where analysis code is archived
+slot_uri: FAIRe:035
 range: string
-annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: https://github.com/aomlomics/gomecc
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - NOAA
-term_type: unspecified
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: https://github.com/aomlomics/gomecc

@@ -1,19 +1,17 @@
 name: pcr_analysis_software
+title: pcr analysis software
 description: The program used to analyse the PCR runs. If two-step PCR was applied
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_*
   in the library preparation/sequencing section.
+slot_uri: FAIRe:183
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: BIO-RAD QuantaSoft
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - DNA-derived data extension
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+required: false
+in_subset:
+- Pcr
+examples:
+- value: BIO-RAD QuantaSoft
+close_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Modified from source: description'

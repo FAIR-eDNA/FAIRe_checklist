@@ -1,22 +1,18 @@
 name: samp_name
+title: samp name
 description: Sample Name is a name that you choose for the sample. It can have any
   format, but we suggest that you make it concise, unique and consistent within your
   lab, and as informative as possible. Every Sample Name from a single Submitter must
   be unique.
+slot_uri: FAIRe:252
 range: string
-annotations:
-  section: Sample information
-  requirement_level: Mandatory
-  example: S01_1
-  data_type:
-  - sampleMetadata
-  - ampData
-  - stdData
-  - experimentRunMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0001107
-term_type: unspecified
+required: true
+in_subset:
+- SampleInformation
+examples:
+- value: S01_1
+exact_mappings:
+- MIXS:0001107
+source: MIXS:0001107
+comments:
+- 'Informed by: MIxS, DNA-derived data extension'

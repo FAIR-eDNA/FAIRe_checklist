@@ -1,17 +1,14 @@
 name: assay_validation
+title: assay validation
 description: How was the assay validated for specificity? e.g., in-silico, in-vitro,
   in-situ validations, sanger sequencing, repeat analysis with alternate assay, intra/inter
   species tests
+slot_uri: FAIRe:013
 range: string
-annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: The assay was validated through a multi-step process, including in-silico
+recommended: true
+in_subset:
+- Pcr
+examples:
+- value: The assay was validated through a multi-step process, including in-silico
     analysis, in-vitro testing, in-situ trials, and final confirmation with Sanger
     sequencing.
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified

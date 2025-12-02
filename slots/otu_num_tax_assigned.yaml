@@ -1,14 +1,11 @@
 name: otu_num_tax_assigned
+title: otu num tax assigned
 description: Total number of OTUs or ASVs assigned to taxa based on the study-specific
   thresholds for each sample
+slot_uri: FAIRe:161
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '49'
-  data_type:
-  - experimentRunMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '49'

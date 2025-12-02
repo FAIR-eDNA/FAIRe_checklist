@@ -1,16 +1,14 @@
 name: license
+title: license
 description: A legal document giving official permission to do something with the
   resource.
+slot_uri: FAIRe:116
 range: string
-annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: http://creativecommons.org/licenses/by/4.0/legalcode
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: http://creativecommons.org/licenses/by/4.0/legalcode
+exact_mappings:
 - https://dwc.tdwg.org/terms/#dcterms:license
-term_type: unspecified
+source: https://dwc.tdwg.org/terms/#dcterms:license

@@ -1,17 +1,16 @@
 name: percent_match
+title: percent match
 description: The percentage of sequence identity between a query sequence obtained
   from eDNA and a reference sequence in a database. If multiple species were assigned
   to one ASV/OTU, a range can be entered separated by  "-" (e.g., 98.7-99.2).
+slot_uri: FAIRe:210
 range: float
+recommended: true
+in_subset:
+- OtuAsv
+examples:
+- value: '99.8'
 annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  example: '99.8'
-  unit: '%'
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: '%'

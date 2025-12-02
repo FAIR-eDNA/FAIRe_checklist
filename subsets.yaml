@@ -27,10 +27,10 @@ subsets:
     description: PCR-related fields
 
   TargetedAssay:
-    description: Targeted assay fields
+    description: Targeted assay detection fields
 
   LibraryPreparation:
-    description: Library preparation fields
+    description: Library preparation and sequencing fields
 
   Bioinformatics:
     description: Bioinformatics fields

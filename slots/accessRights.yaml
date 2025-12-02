@@ -1,16 +1,14 @@
 name: accessRights
+title: accessRights
 description: Information about who can access the resource or an indication of its
   security status.
+slot_uri: FAIRe:002
 range: string
-annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: not-for-profit use only
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://purl.org/dc/terms/accessRights
-term_type: unspecified
+recommended: true
+in_subset:
+- DataManagement
+examples:
+- value: not-for-profit use only
+exact_mappings:
+- DCTERMS:accessRights
+source: DCTERMS:accessRights

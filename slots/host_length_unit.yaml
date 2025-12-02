@@ -1,25 +1,12 @@
 name: host_length_unit
+title: host length unit
 description: The unit of host_length
+slot_uri: FAIRe:094
 range: host_length_unit_enum
-annotations:
-  section: Environment
-  requirement_level: Optional
-  example: mm
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - HostAssociated
-  - SymbiontAssociated
-  source:
-  - New
-enum_values:
-  mm:
-    meaning: mm
-  cm:
-    meaning: cm
-  m:
-    meaning: m
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: false
+in_subset:
+- Environment
+examples:
+- value: mm
+comments:
+- 'Sample types: HostAssociated, SymbiontAssociated'

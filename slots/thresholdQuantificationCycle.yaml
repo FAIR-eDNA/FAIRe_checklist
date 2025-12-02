@@ -1,18 +1,19 @@
 name: thresholdQuantificationCycle
+title: thresholdQuantificationCycle
 description: Threshold for change in fluorescence signal between cycles. No unit.
+slot_uri: FAIRe:307
 range: float
+required: true
+in_subset:
+- TargetedAssay
+examples:
+- value: '0.3'
+exact_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Informed by: DNA-derived data extension, MIQE'
 annotations:
-  section: Targeted assay detection
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = targeted & amp_vis_method = qPCR
-  example: '0.3'
-  unit: No unit
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+  unit:
+    tag: unit
+    value: No unit

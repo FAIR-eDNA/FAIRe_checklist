@@ -1,14 +1,11 @@
 name: block_ref
+title: block ref
 description: Reference of a blocking primer. Enter "custom" if it was developed during
   the current project
+slot_uri: FAIRe:024
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: https://doi.org/10.1038/s41598-020-60779-9
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- Pcr
+examples:
+- value: https://doi.org/10.1038/s41598-020-60779-9

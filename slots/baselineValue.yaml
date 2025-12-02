@@ -1,19 +1,21 @@
 name: baselineValue
+title: baselineValue
 description: The number of cycles when fluorescence signal from the target amplification
   is below background fluorescence not originated from the real target amplification.
   Unit = cycle
+slot_uri: FAIRe:019
 range: string
+required: false
+in_subset:
+- TargetedAssay
+examples:
+- value: '15'
+exact_mappings:
+- GBIF:dna_derived_data_2022-02-23.xml
+source: GBIF:dna_derived_data_2022-02-23.xml
+comments:
+- 'Informed by: DNA-derived data extension, MIQE'
 annotations:
-  section: Targeted assay detection
-  requirement_level: Optional
-  example: '15'
-  unit: cycle
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+  unit:
+    tag: unit
+    value: cycle

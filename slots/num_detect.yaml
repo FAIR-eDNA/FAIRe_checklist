@@ -1,14 +1,10 @@
 name: num_detect
+title: num detect
 description: 'Number of detection using the eLow Quant approach (described in DOI:
   10.1002/edn3.220)'
+slot_uri: FAIRe:148
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Highly recommended
-  example: '2'
-  data_type:
-  - eLowQuantData
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+in_subset:
+- TargetedAssay
+examples:
+- value: '2'

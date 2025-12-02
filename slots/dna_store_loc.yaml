@@ -1,14 +1,11 @@
 name: dna_store_loc
+title: dna store loc
 description: Location at which extracted DNA was stored, usually name of a specific
   freezer/room
+slot_uri: FAIRe:063
 range: string
-annotations:
-  section: Sample storage
-  requirement_level: Optional
-  example: UWA, IOMRC, Lv4 -80Freezer2
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- SampleStorage
+examples:
+- value: UWA, IOMRC, Lv4 -80Freezer2

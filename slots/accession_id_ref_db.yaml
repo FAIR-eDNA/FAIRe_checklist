@@ -1,19 +1,18 @@
 name: accession_id_ref_db
 title: accession ID reference database
-description: >-
-  Reference database (i.e. sequences not generated as part of the current
+description: Reference database (i.e. sequences not generated as part of the current
   study) of the best matching sequence (accession_id)
-slot_uri: MYPREFIX:0000001
+slot_uri: FAIRe:001
 required: false
 recommended: true
 range: string
 in_subset:
-  - OtuAsv
+- OtuAsv
 examples:
-  - value: NCBI
+- value: NCBI
 source: MIXS:0000087
 close_mappings:
-  - MIXS:0000087
+- MIXS:0000087
 comments:
-  - "Modified from MIxS: field_name, description"
-  - "Also informed by DNA-derived data extension"
+- 'Modified from MIxS: field_name, description'
+- Also informed by DNA-derived data extension

@@ -1,14 +1,14 @@
 name: min_len_cutoff
+title: min len cutoff
 description: Minimum length threshold. Unit = base pair
+slot_uri: FAIRe:126
 range: string
+recommended: true
+in_subset:
+- Bioinformatics
+examples:
+- value: '120'
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '120'
-  unit: base pair
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: base pair

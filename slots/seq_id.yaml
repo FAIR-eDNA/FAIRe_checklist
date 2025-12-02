@@ -1,15 +1,10 @@
 name: seq_id
+title: seq id
 description: Query sequence ID. Must be unique within the dataset
+slot_uri: FAIRe:271
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = metabarcoding
-  example: ASV1
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+required: true
+in_subset:
+- OtuAsv
+examples:
+- value: ASV1

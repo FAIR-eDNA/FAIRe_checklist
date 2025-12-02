@@ -1,13 +1,10 @@
 name: slope
+title: slope
 description: Slope of a qPCR standard curve. This shall be specific to each pcr_plate_id.
+slot_uri: FAIRe:278
 range: float
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: '-3.26'
-  data_type:
-  - stdData
-  requirement_level_code: R
-  source:
-  - MIQE
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: '-3.26'

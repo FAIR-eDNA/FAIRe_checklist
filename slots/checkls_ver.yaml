@@ -1,14 +1,11 @@
 name: checkls_ver
+title: checkls ver
 description: The version number of the FAIR eDNA (FAIRe) metadata checklist used to
   format the data
+slot_uri: FAIRe:027
 range: float
-annotations:
-  section: Data management
-  requirement_level: Mandatory
-  example: '1.2'
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - New
-term_type: numeric
+required: true
+in_subset:
+- DataManagement
+examples:
+- value: '1.2'

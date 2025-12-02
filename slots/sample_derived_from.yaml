@@ -1,18 +1,18 @@
 name: sample_derived_from
+title: sample derived from
 description: This term refers to the samp_name of the original (or parent) sample
   from which the current sample was derived. For example, if sample "S01" (the parent
   sample) was collected at a sampling site and later subsampled into three child samples
   with samp_names "S01_1", "S01_2", "S01_3", then "S01" is the value for sample_derived_from
   in each of the child samples. This includes the case of pcr technical replicates.
+slot_uri: FAIRe:264
 range: string
+required: false
+in_subset:
+- SampleRelationship
+examples:
+- value: S01
 annotations:
-  section: Sample relations
-  requirement_level: Optional
-  example: S01
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - INSDC
-  fixed_format: (a list of) samp_name
-term_type: fixed format
+  fixed_format:
+    tag: fixed_format
+    value: (a list of) samp_name

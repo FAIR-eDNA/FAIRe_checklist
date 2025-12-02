@@ -1,14 +1,9 @@
 name: taxonID_db
+title: taxonID db
 description: The taxonomy database corresponding to taxonID.
+slot_uri: FAIRe:302
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Highly recommended
-  example: NCBI
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+in_subset:
+- OtuAsv
+examples:
+- value: NCBI

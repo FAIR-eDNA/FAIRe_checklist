@@ -1,15 +1,11 @@
 name: technical_rep_id
+title: technical rep id
 description: An integer uniquely identifying a specific PCR technical replicate within
   a sample.
+slot_uri: FAIRe:304
 range: string
-annotations:
-  section: PCR
-  requirement_level: Mandatory
-  example: '1'
-  data_type:
-  - ampData
-  - stdData
-  requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+required: true
+in_subset:
+- Pcr
+examples:
+- value: '1'

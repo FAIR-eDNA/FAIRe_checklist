@@ -1,14 +1,13 @@
 name: pcr_dna_vol
-description: "Volume of DNA added in each PCR reaction. Unit = \xB5L"
+title: pcr dna vol
+description: Volume of DNA added in each PCR reaction. Unit = µL
+slot_uri: FAIRe:196
 range: float
+in_subset:
+- Pcr
+examples:
+- value: '2.0'
 annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: '2.0'
-  unit: "\xB5L"
-  data_type:
-  - projectMetadata
-  requirement_level_code: HR
-  source:
-  - MIQE
-term_type: unspecified
+  unit:
+    tag: unit
+    value: µL

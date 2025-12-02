@@ -1,19 +1,17 @@
 name: verbatimLongitude
+title: verbatimLongitude
 description: The original longitude in any format (i.e. deg/min/sec, UTM) before converting
   to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimSRS should be
   stored as well.
+slot_uri: FAIRe:334
 range: string
-annotations:
-  section: Sample collection
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: 121d 10' 34" W
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimLongitude
-term_type: unspecified
+required: false
+in_subset:
+- SampleCollection
+examples:
+- value: 121d 10' 34" W
+close_mappings:
+- DWC:verbatimLongitude
+source: DWC:verbatimLongitude
+comments:
+- 'Modified from source: description'

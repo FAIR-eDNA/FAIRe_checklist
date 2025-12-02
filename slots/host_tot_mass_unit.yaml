@@ -1,25 +1,12 @@
 name: host_tot_mass_unit
+title: host tot mass unit
 description: The unit of host_tot_mass
+slot_uri: FAIRe:098
 range: host_tot_mass_unit_enum
-annotations:
-  section: Environment
-  requirement_level: Optional
-  example: g
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - HostAssociated
-  - SymbiontAssociated
-  source:
-  - New
-enum_values:
-  mg:
-    meaning: mg
-  g:
-    meaning: g
-  kg:
-    meaning: kg
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: false
+in_subset:
+- Environment
+examples:
+- value: g
+comments:
+- 'Sample types: HostAssociated, SymbiontAssociated'

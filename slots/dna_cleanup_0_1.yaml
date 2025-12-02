@@ -1,16 +1,10 @@
 name: dna_cleanup_0_1
+title: dna cleanup (0/1)
 description: Was the extracted DNA cleaned/purified? Yes = 1, No =0
+slot_uri: FAIRe:060
 range: string
-annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  example: '1'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: Boolean
-enum_range:
+recommended: true
+in_subset:
+- NucleicAcidExtraction
+examples:
 - value: '1'
-- value: '0'

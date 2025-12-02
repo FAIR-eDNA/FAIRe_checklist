@@ -1,46 +1,12 @@
 name: diss_org_nitro_unit
+title: diss org nitro unit
 description: The unit of diss_org_nitro
+slot_uri: FAIRe:057
 range: diss_org_nitro_unit_enum
-annotations:
-  section: Environment
-  requirement_level: Optional
-  example: "\xB5mol/L"
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - Air
-  - MicrobialMatBiofilm
-  source:
-  - New
-enum_values:
-  "\xB5M":
-    meaning: "\xB5M"
-  mol/m3:
-    meaning: mol/m3
-  mmol/m3:
-    meaning: mmol/m3
-  "\xB5mol/m3":
-    meaning: "\xB5mol/m3"
-  mol/L:
-    meaning: mol/L
-  mmol/L:
-    meaning: mmol/L
-  "\xB5mol/L":
-    meaning: "\xB5mol/L"
-  mg/L:
-    meaning: mg/L
-  "\xB5g/L":
-    meaning: "\xB5g/L"
-  "\xB5mol/kg":
-    meaning: "\xB5mol/kg"
-  mmol/kg:
-    meaning: mmol/kg
-  parts per million:
-    meaning: parts per million
-  'other:':
-    meaning: 'other:'
-term_type: controlled vocabulary
+required: false
+in_subset:
+- Environment
+examples:
+- value: µmol/L
+comments:
+- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

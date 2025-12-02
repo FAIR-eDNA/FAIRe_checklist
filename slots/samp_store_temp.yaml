@@ -1,26 +1,24 @@
 name: samp_store_temp
+title: samp store temp
 description: 'Temperature at which the sample was stored. Enter either the fixed term
   "ambient temperature" or a numeric value. Note: If a sample was processed before
   DNA extraction (e.g., filtration, homogenisation, subsampling), enter the storage
   temperature before the process here, and the storage temperature of the processed
   sample (i.e., filter paper) under a term prepped_samp_store_temp. Unit = degree
   Celsius'
+slot_uri: FAIRe:259
 range: string
+in_subset:
+- SampleStorage
+examples:
+- value: '-80.0'
+close_mappings:
+- MIXS:0000110
+source: MIXS:0000110
+comments:
+- 'Modified from source: description, field_type'
+- 'Sample types: ALL'
 annotations:
-  section: Sample storage
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: '-80.0'
-  unit: degree Celsius
-  data_type:
-  - sampleMetadata
-  requirement_level_code: HR
-  sample_type_specificity:
-  - ALL
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000110
-term_type: numeric or controlled vocabulary
+  unit:
+    tag: unit
+    value: degree Celsius

@@ -1,14 +1,11 @@
 name: pcr_assay_lod_techreps
+title: pcr assay lod techreps
 description: 'The number of technical replicates that the LOD is applied to. See DOI:
   10.1002/edn3.220'
+slot_uri: FAIRe:187
 range: string
-annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: '8'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+recommended: true
+in_subset:
+- TargetedAssay
+examples:
+- value: '8'

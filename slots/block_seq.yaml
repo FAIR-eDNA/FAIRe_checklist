@@ -1,13 +1,10 @@
 name: block_seq
+title: block seq
 description: Blocking primer sequence in the 5' to 3' direction
+slot_uri: FAIRe:025
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: AGCTTTAGACACCAAGGCAGACCAT/C3/
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- Pcr
+examples:
+- value: AGCTTTAGACACCAAGGCAGACCAT/C3/

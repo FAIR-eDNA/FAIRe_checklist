@@ -1,14 +1,11 @@
 name: pcr2_analysis_software
+title: pcr2 analysis software
 description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
   the PCR runs  in the second step PCR
+slot_uri: FAIRe:172
 range: string
-annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  example: BIO-RAD QuantaSoft
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+required: false
+in_subset:
+- LibraryPreparation
+examples:
+- value: BIO-RAD QuantaSoft

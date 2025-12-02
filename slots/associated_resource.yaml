@@ -1,19 +1,17 @@
 name: associated_resource
+title: associated resource
 description: A related resource that is referenced, cited, or otherwise associated
   to the sequence. i.e., links to a project website, submitted raw sequence data and
   environmental metadata.
+slot_uri: FAIRe:015
 range: string
-annotations:
-  section: Data management
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: http://www.earthmicrobiome.org/
-  data_type:
-  - projectMetadata
-  requirement_level_code: O
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000091
-term_type: unspecified
+required: false
+in_subset:
+- DataManagement
+examples:
+- value: http://www.earthmicrobiome.org/
+close_mappings:
+- MIXS:0000091
+source: MIXS:0000091
+comments:
+- 'Modified from source: description'

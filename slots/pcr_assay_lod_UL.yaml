@@ -1,14 +1,13 @@
 name: pcr_assay_lod_UL
+title: pcr assay lod UL
 description: 'Upper 95% confidence limit for LOD for a given number of technical replicates.
   See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_lod_unit'
+slot_uri: FAIRe:186
 range: float
+recommended: true
+in_subset:
+- TargetedAssay
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  unit: same as pcr_assay_lod_unit
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  unit:
+    tag: unit
+    value: same as pcr_assay_lod_unit

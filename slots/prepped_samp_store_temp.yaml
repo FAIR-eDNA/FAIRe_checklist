@@ -1,25 +1,22 @@
 name: prepped_samp_store_temp
+title: prepped samp store temp
 description: 'Temperature at which the prepared sample was stored prior to DNA extraction.
   Record either ''ambient'' or a numeric value in degree Celsius. Note: The storage
   temperature of the original environmental sample (e.g., water, soil) should be recorded
   under samp_store_temp, while the current term is for the "processed" sample such
   as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.
   Unit = degree Celsius'
+slot_uri: FAIRe:228
 range: string
+recommended: true
+in_subset:
+- SamplePreparation
+examples:
+- value: ambient temperature
+comments:
+- 'Modified from source: field_name, description, field_type'
+- 'Sample types: ALL'
 annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  - description
-  - field_type
-  example: ambient temperature
-  unit: degree Celsius
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  sample_type_specificity:
-  - ALL
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  unit:
+    tag: unit
+    value: degree Celsius
