@@ -5,17 +5,14 @@ description: Description of life stage of host. Select from UBERON's life cycle 
 slot_uri: FAIRe:095
 range: string
 required: false
+pattern: "^.+ \\[UBERON_\\d{7}\\]$"
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: juvenile stage [UBERON_0034919]
+  - value: juvenile stage [UBERON_0034919]
 close_mappings:
-- MIXS:0000251
+  - MIXS:0000251
 source: MIXS:0000251
 comments:
-- 'Modified from source: description, field_type'
-- 'Sample types: HostAssociated, SymbiontAssociated'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: termLabel [termID]
+  - 'Modified from source: description, field_type'
+  - 'Sample types: HostAssociated, SymbiontAssociated'

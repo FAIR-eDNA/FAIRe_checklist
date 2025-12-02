@@ -6,11 +6,11 @@ slot_uri: FAIRe:242
 range: string
 required: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: José E. Crespo
+  - value: José E. Crespo
 close_mappings:
-- https://dwc.tdwg.org/list/#dwc_recordedBy
+  - https://dwc.tdwg.org/list/#dwc_recordedBy
 source: https://dwc.tdwg.org/list/#dwc_recordedBy
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

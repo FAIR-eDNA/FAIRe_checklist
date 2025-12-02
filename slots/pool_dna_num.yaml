@@ -5,11 +5,11 @@ slot_uri: FAIRe:217
 range: string
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: '2'
+  - value: '2'
 close_mappings:
-- MIXS:0000325
+  - MIXS:0000325
 source: MIXS:0000325
 comments:
-- 'Modified from source: description, field_type, field_name'
+  - 'Modified from source: description, field_type, field_name'

@@ -6,10 +6,10 @@ slot_uri: FAIRe:225
 range: string
 required: false
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
+  - value: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
     precipitation protocols. ATL lysis buffer was used for prepped_samp_store_sol.
     Prepped_samp_store_temp was ambient, average of 22 degree Celsius
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'

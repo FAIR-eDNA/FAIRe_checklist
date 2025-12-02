@@ -6,12 +6,12 @@ slot_uri: FAIRe:124
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: GTGAATAT
+  - value: GTGAATAT
 close_mappings:
-- MIXS:0000047
+  - MIXS:0000047
 source: MIXS:0000047
 comments:
-- 'Modified from source: Forward and reverse separated'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: Forward and reverse separated'
+  - 'Informed by: MIxS, DNA-derived data extension'

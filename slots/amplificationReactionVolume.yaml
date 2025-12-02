@@ -5,14 +5,14 @@ slot_uri: FAIRe:009
 range: float
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '22.0'
+  - value: '22.0'
 exact_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:amplificationReactionVolume
+source: dna_extension:amplificationReactionVolume
 comments:
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Informed by: DNA-derived data extension, MIQE'
 annotations:
   unit:
     tag: unit

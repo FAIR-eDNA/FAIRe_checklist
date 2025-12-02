@@ -4,6 +4,6 @@ description: PCR approach for metabarcoding
 slot_uri: FAIRe:018
 range: barcoding_pcr_appr_enum
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: two-step PCR
+  - value: two-step PCR

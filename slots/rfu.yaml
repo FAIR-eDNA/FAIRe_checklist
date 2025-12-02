@@ -5,9 +5,9 @@ slot_uri: FAIRe:245
 range: float
 required: false
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '7862.41'
+  - value: '7862.41'
 annotations:
   unit:
     tag: unit

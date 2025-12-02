@@ -6,11 +6,11 @@ slot_uri: FAIRe:050
 range: float
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '2059.0'
+  - value: '2059.0'
 exact_mappings:
-- MIXS:0000434
+  - MIXS:0000434
 source: MIXS:0000434
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

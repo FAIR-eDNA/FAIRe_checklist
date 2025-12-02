@@ -6,9 +6,9 @@ slot_uri: FAIRe:002
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: not-for-profit use only
+  - value: not-for-profit use only
 exact_mappings:
-- DCTERMS:accessRights
+  - DCTERMS:accessRights
 source: DCTERMS:accessRights

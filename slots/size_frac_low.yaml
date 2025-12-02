@@ -5,15 +5,15 @@ description: Refers to the mesh/pore size used to pre-filter/pre-sort the sample
 slot_uri: FAIRe:277
 range: float
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '20.0'
+  - value: '20.0'
 close_mappings:
-- MIXS:0000735
+  - MIXS:0000735
 source: MIXS:0000735
 comments:
-- 'Modified from source: field_type'
-- 'Sample types: Water, Air'
+  - 'Modified from source: field_type'
+  - 'Sample types: Water, Air'
 annotations:
   unit:
     tag: unit

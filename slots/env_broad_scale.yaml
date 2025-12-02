@@ -8,17 +8,14 @@ description: 'Major environmental system your sample came from. The systems iden
 slot_uri: FAIRe:066
 range: string
 required: true
+pattern: "^.+ \\[ENVO:\\d{8}\\]$"
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: estuarine biome [ENVO:01000020]
+  - value: estuarine biome [ENVO:01000020]
 close_mappings:
-- MIXS:0000012
+  - MIXS:0000012
 source: MIXS:0000012
 comments:
-- 'Modified from source: description, field_type'
-- 'Informed by: MIxS, DNA-derived data extension'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: termLabel [termID]
+  - 'Modified from source: description, field_type'
+  - 'Informed by: MIxS, DNA-derived data extension'

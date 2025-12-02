@@ -5,11 +5,11 @@ slot_uri: FAIRe:262
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: foggy
+  - value: foggy
 exact_mappings:
-- MIXS:0000827
+  - MIXS:0000827
 source: MIXS:0000827
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'

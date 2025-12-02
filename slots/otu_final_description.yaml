@@ -6,7 +6,7 @@ slot_uri: FAIRe:160
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Removal of ASVs that were assigned to non-targeted species. Removal of control
+  - value: Removal of ASVs that were assigned to non-targeted species. Removal of control
     samples.

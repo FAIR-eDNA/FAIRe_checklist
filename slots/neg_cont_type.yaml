@@ -8,11 +8,11 @@ slot_uri: FAIRe:134
 range: neg_cont_type_enum
 required: true
 in_subset:
-- SampleInformation
+  - SampleInformation
 examples:
-- value: field negative | process negative | extraction negative | PCR negative
+  - value: field negative | process negative | extraction negative | PCR negative
 close_mappings:
-- MIXS:0001321
+  - MIXS:0001321
 source: MIXS:0001321
 comments:
-- 'Modified from source: description, field_type'
+  - 'Modified from source: description, field_type'

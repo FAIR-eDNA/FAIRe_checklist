@@ -10,6 +10,6 @@ slot_uri: FAIRe:012
 range: assay_type_enum
 required: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: targeted
+  - value: targeted

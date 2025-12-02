@@ -5,9 +5,9 @@ slot_uri: FAIRe:208
 range: float
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '2.0'
+  - value: '2.0'
 annotations:
   unit:
     tag: unit

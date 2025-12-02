@@ -5,11 +5,11 @@ slot_uri: FAIRe:149
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Perciformes
+  - value: Perciformes
 close_mappings:
-- DWC:order
-source: DWC:order
+  - dwc:order
+source: dwc:order
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

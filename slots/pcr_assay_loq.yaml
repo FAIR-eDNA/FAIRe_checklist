@@ -7,12 +7,12 @@ slot_uri: FAIRe:189
 range: float
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '184.0'
+  - value: '184.0'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:pcr_assay_loq
+source: dna_extension:pcr_assay_loq
 comments:
-- 'Modified from source: field_name, description'
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Modified from source: field_name, description'
+  - 'Informed by: DNA-derived data extension, MIQE'

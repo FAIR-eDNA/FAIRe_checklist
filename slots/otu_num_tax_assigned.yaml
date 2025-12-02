@@ -6,6 +6,6 @@ slot_uri: FAIRe:161
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: '49'
+  - value: '49'

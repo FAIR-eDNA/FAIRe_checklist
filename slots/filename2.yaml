@@ -6,6 +6,6 @@ slot_uri: FAIRe:081
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: S01_R2.fastq
+  - value: S01_R2.fastq

@@ -5,8 +5,8 @@ slot_uri: FAIRe:084
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: Merck Sterivex
+  - value: Merck Sterivex
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'

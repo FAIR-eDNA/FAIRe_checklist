@@ -5,11 +5,11 @@ slot_uri: FAIRe:037
 range: float
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: '67.5'
+  - value: '67.5'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:concentration
+source: dna_extension:concentration
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

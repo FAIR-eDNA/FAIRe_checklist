@@ -5,12 +5,12 @@ description: Temperature used in precipitation at the sample preparation step pr
 slot_uri: FAIRe:222
 range: string
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '10.0'
+  - value: '10.0'
 comments:
-- 'Modified from source: field_name, description'
-- 'Sample types: Water, Soil, Sediment'
+  - 'Modified from source: field_name, description'
+  - 'Sample types: Water, Soil, Sediment'
 annotations:
   unit:
     tag: unit

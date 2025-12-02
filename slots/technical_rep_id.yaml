@@ -6,6 +6,6 @@ slot_uri: FAIRe:304
 range: string
 required: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '1'
+  - value: '1'

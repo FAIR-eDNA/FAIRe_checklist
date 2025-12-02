@@ -5,6 +5,6 @@ slot_uri: FAIRe:287
 range: std_type_enum
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: synthetic double-stranded DNA
+  - value: synthetic double-stranded DNA

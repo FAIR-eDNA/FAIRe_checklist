@@ -6,6 +6,6 @@ slot_uri: FAIRe:291
 range: string
 required: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: verteberate
+  - value: verteberate

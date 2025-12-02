@@ -4,9 +4,9 @@ description: Volume of DNA added in each PCR reaction. Unit = µL
 slot_uri: FAIRe:196
 range: float
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '2.0'
+  - value: '2.0'
 annotations:
   unit:
     tag: unit

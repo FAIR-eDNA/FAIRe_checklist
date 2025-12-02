@@ -7,15 +7,11 @@ slot_uri: FAIRe:078
 range: string
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: T1H25M
+  - value: T1H25M
 close_mappings:
-- ECO:eventDurationValue
+  - ECO:eventDurationValue
 source: ECO:eventDurationValue
 comments:
-- 'Modified from source: description, field_type'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: PnYnMnWnDTnHnMnS
+  - 'Modified from source: description, field_type'

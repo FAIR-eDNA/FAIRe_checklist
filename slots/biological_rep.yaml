@@ -6,6 +6,6 @@ slot_uri: FAIRe:022
 range: string
 recommended: true
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: '5'
+  - value: '5'

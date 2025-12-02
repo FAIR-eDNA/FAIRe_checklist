@@ -6,14 +6,14 @@ slot_uri: FAIRe:251
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: Water samples were pre-filtered using a sieve (200 micrometers), then filtered
+  - value: Water samples were pre-filtered using a sieve (200 micrometers), then filtered
     using a peristaltic pump (pore size 0.45 micrometers).
 close_mappings:
-- MIXS:0000016
+  - MIXS:0000016
 source: MIXS:0000016
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
-- 'Sample types: ALL'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'
+  - 'Sample types: ALL'

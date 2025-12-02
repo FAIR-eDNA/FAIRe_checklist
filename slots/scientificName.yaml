@@ -4,11 +4,11 @@ description: The full scientific name of the genus and species
 slot_uri: FAIRe:265
 range: string
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Lutjanus erythropterus
+  - value: Lutjanus erythropterus
 close_mappings:
-- DWC:scientificName
-source: DWC:scientificName
+  - dwc:scientificName
+source: dwc:scientificName
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

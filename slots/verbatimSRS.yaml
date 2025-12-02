@@ -6,11 +6,11 @@ slot_uri: FAIRe:335
 range: verbatimSRS_enum
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: NAD84
+  - value: NAD84
 close_mappings:
-- DWC:verbatimSRS
-source: DWC:verbatimSRS
+  - dwc:verbatimSRS
+source: dwc:verbatimSRS
 comments:
-- 'Modified from source: description, field_type'
+  - 'Modified from source: description, field_type'

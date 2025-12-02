@@ -5,6 +5,6 @@ slot_uri: FAIRe:039
 range: concentration_unit_enum
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: ng/µl
+  - value: ng/µl

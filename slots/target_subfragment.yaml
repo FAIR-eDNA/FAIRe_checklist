@@ -6,11 +6,11 @@ slot_uri: FAIRe:294
 range: string
 required: false
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: V6
+  - value: V6
 exact_mappings:
-- MIXS:0000045
+  - MIXS:0000045
 source: MIXS:0000045
 comments:
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Informed by: MIxS, DNA-derived data extension'

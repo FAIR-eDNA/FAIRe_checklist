@@ -5,11 +5,11 @@ slot_uri: FAIRe:330
 range: string
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: 23-January-2008
+  - value: 23-January-2008
 close_mappings:
-- DWC:verbatimEventDate
-source: DWC:verbatimEventDate
+  - dwc:verbatimEventDate
+source: dwc:verbatimEventDate
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

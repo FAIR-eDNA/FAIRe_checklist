@@ -7,14 +7,14 @@ slot_uri: FAIRe:019
 range: string
 required: false
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '15'
+  - value: '15'
 exact_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:baselineValue
+source: dna_extension:baselineValue
 comments:
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Informed by: DNA-derived data extension, MIQE'
 annotations:
   unit:
     tag: unit

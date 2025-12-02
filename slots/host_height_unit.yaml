@@ -5,8 +5,8 @@ slot_uri: FAIRe:092
 range: host_height_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: cm
+  - value: cm
 comments:
-- 'Sample types: HostAssociated, SymbiontAssociated'
+  - 'Sample types: HostAssociated, SymbiontAssociated'

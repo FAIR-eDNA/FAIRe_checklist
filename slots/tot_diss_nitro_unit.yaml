@@ -5,8 +5,8 @@ slot_uri: FAIRe:313
 range: tot_diss_nitro_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: µg/L
+  - value: µg/L
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

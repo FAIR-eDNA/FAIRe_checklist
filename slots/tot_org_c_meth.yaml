@@ -5,11 +5,11 @@ slot_uri: FAIRe:321
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: https://www.epa.gov/sites/default/files/2015-12/documents/9060a.pdf
+  - value: https://www.epa.gov/sites/default/files/2015-12/documents/9060a.pdf
 exact_mappings:
-- MIXS:0000337
+  - MIXS:0000337
 source: MIXS:0000337
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

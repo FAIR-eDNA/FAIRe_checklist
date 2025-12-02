@@ -5,11 +5,11 @@ slot_uri: FAIRe:317
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471142913.fab0102s00
+  - value: https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471142913.fab0102s00
 exact_mappings:
-- MIXS:0000338
+  - MIXS:0000338
 source: MIXS:0000338
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

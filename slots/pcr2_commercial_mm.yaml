@@ -7,6 +7,6 @@ slot_uri: FAIRe:174
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: Luna® Universal qPCR Master Mix, New England Biolabs
+  - value: Luna® Universal qPCR Master Mix, New England Biolabs

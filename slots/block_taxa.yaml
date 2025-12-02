@@ -7,6 +7,6 @@ slot_uri: FAIRe:026
 range: string
 required: false
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: Lutjanus malabaricus
+  - value: Lutjanus malabaricus

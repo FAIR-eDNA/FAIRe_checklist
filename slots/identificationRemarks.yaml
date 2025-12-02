@@ -5,12 +5,12 @@ slot_uri: FAIRe:100
 range: string
 required: false
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Taxonomic assignment was performed at the most precise taxonomic level common
+  - value: Taxonomic assignment was performed at the most precise taxonomic level common
     to the hypothetical taxa.
 close_mappings:
-- DWC:identificationRemarks
-source: DWC:identificationRemarks
+  - dwc:identificationRemarks
+source: dwc:identificationRemarks
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

@@ -6,9 +6,9 @@ slot_uri: FAIRe:275
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: University of Maryland Genomics Resource Center
+  - value: University of Maryland Genomics Resource Center
 exact_mappings:
-- MIXS:0001156
+  - MIXS:0001156
 source: MIXS:0001156

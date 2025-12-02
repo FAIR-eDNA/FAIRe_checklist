@@ -9,8 +9,8 @@ slot_uri: FAIRe:227
 range: prepped_samp_store_sol_enum
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: lysis buffer
+  - value: lysis buffer
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'

@@ -6,12 +6,12 @@ slot_uri: FAIRe:072
 range: float
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '35.92426489978709'
+  - value: '35.92426489978709'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:estimatedNumberOfCopies
+source: dna_extension:estimatedNumberOfCopies
 comments:
-- 'Modified from source: description'
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Modified from source: description'
+  - 'Informed by: DNA-derived data extension, MIQE'

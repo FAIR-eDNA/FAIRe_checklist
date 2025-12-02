@@ -6,6 +6,6 @@ slot_uri: FAIRe:166
 range: string
 required: false
 in_subset:
-- Project
+  - Project
 examples:
-- value: noaa-aoml-gomecc
+  - value: noaa-aoml-gomecc

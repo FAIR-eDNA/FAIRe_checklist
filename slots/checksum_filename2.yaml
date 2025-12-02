@@ -6,6 +6,6 @@ slot_uri: FAIRe:029
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: b3ea95ec13dae594bcb292dcf1b1ac7f
+  - value: b3ea95ec13dae594bcb292dcf1b1ac7f

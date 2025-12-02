@@ -5,9 +5,9 @@ slot_uri: FAIRe:246
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: The Regents of the University of California
+  - value: The Regents of the University of California
 exact_mappings:
-- DCTERMS:rightsHolder
+  - DCTERMS:rightsHolder
 source: DCTERMS:rightsHolder

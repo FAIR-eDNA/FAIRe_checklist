@@ -5,6 +5,6 @@ description: Sequencing instrument (manufacturer and model) used. Where possible
 slot_uri: FAIRe:107
 range: string
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: Illumina HiSeq 1500 [OBI_0003386]
+  - value: Illumina HiSeq 1500 [OBI_0003386]

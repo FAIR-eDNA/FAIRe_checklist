@@ -7,11 +7,11 @@ slot_uri: FAIRe:120
 range: string
 recommended: true
 in_subset:
-- SampleRelationship
+  - SampleRelationship
 examples:
-- value: GOMECC4_27N_Sta1_Deep
+  - value: GOMECC4_27N_Sta1_Deep
 close_mappings:
-- DWC:materialSampleID
-source: DWC:materialSampleID
+  - dwc:materialSampleID
+source: dwc:materialSampleID
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

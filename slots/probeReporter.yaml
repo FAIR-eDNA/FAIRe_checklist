@@ -7,11 +7,11 @@ description: Type of fluorophore (reporter) used. Probe anneals within amplified
 slot_uri: FAIRe:230
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: FAM
+  - value: FAM
 exact_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:probeReporter
+source: dna_extension:probeReporter
 comments:
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Informed by: DNA-derived data extension, MIQE'

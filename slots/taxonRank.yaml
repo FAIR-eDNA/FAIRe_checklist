@@ -4,9 +4,9 @@ description: The taxonomic rank of the most specific name in the scientificName
 slot_uri: FAIRe:303
 range: taxonRank_enum
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: genus
+  - value: genus
 exact_mappings:
-- DWC:taxonRank
-source: DWC:taxonRank
+  - dwc:taxonRank
+source: dwc:taxonRank

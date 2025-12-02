@@ -7,11 +7,11 @@ slot_uri: FAIRe:015
 range: string
 required: false
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: http://www.earthmicrobiome.org/
+  - value: http://www.earthmicrobiome.org/
 close_mappings:
-- MIXS:0000091
+  - MIXS:0000091
 source: MIXS:0000091
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

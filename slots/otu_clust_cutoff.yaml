@@ -6,15 +6,15 @@ slot_uri: FAIRe:156
 range: float
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: '97.0'
+  - value: '97.0'
 close_mappings:
-- MIXS:0000085
+  - MIXS:0000085
 source: MIXS:0000085
 comments:
-- 'Modified from source: field_name, description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: field_name, description'
+  - 'Informed by: MIxS, DNA-derived data extension'
 annotations:
   unit:
     tag: unit

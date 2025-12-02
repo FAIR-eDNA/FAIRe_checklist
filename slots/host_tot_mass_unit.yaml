@@ -5,8 +5,8 @@ slot_uri: FAIRe:098
 range: host_tot_mass_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: g
+  - value: g
 comments:
-- 'Sample types: HostAssociated, SymbiontAssociated'
+  - 'Sample types: HostAssociated, SymbiontAssociated'

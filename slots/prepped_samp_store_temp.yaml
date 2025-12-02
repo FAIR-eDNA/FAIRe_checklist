@@ -10,12 +10,12 @@ slot_uri: FAIRe:228
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: ambient temperature
+  - value: ambient temperature
 comments:
-- 'Modified from source: field_name, description, field_type'
-- 'Sample types: ALL'
+  - 'Modified from source: field_name, description, field_type'
+  - 'Sample types: ALL'
 annotations:
   unit:
     tag: unit

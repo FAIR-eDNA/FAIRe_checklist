@@ -5,6 +5,6 @@ slot_uri: FAIRe:118
 range: string
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: 'DOI: 10.1002/edn3.220'
+  - value: 'DOI: 10.1002/edn3.220'

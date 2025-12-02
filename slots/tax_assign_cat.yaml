@@ -7,6 +7,6 @@ description: 'High-level category of taxonomic assignment approach. Examples usi
 slot_uri: FAIRe:296
 range: tax_assign_cat_enum
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: sequence similarity
+  - value: sequence similarity

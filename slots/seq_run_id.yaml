@@ -7,6 +7,6 @@ slot_uri: FAIRe:274
 range: string
 required: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: run20230922
+  - value: run20230922

@@ -7,6 +7,6 @@ slot_uri: FAIRe:248
 range: samp_category_enum
 required: true
 in_subset:
-- SampleInformation
+  - SampleInformation
 examples:
-- value: sample
+  - value: sample

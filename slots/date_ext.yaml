@@ -5,6 +5,6 @@ slot_uri: FAIRe:043
 range: string
 required: false
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: 2008-01-23T19:23-06:00
+  - value: 2008-01-23T19:23-06:00

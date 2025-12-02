@@ -10,12 +10,8 @@ slot_uri: FAIRe:226
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: P1Y6M
+  - value: P1Y6M
 comments:
-- 'Sample types: ALL'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: PnYnMnWnDTnHnMnS
+  - 'Sample types: ALL'

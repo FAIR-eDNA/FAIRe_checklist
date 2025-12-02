@@ -6,9 +6,9 @@ slot_uri: FAIRe:146
 range: string
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and eluted
+  - value: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and eluted
     in 100 µL of buffer EB, instead of 180 µL, 20 µL and 200 µL respectively
 comments:
-- 'Modified from source: field_name'
+  - 'Modified from source: field_name'

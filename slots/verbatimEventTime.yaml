@@ -6,6 +6,6 @@ slot_uri: FAIRe:331
 range: string
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: '10:23'
+  - value: '10:23'

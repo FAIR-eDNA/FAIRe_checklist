@@ -6,14 +6,14 @@ description: Number of PCR cycles. If two-step PCR was applied for a metabarcodi
 slot_uri: FAIRe:195
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '40'
+  - value: '40'
 close_mappings:
-- NMDC:pcr_cycles
+  - NMDC:pcr_cycles
 source: NMDC:pcr_cycles
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'
 annotations:
   unit:
     tag: unit

@@ -4,7 +4,7 @@ description: How were contaminations screened and applied in data curation/analy
 slot_uri: FAIRe:267
 range: string
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Taxa detected in negative controls were checked, and the read counts were
+  - value: Taxa detected in negative controls were checked, and the read counts were
     applied as a cutoff to call presence.

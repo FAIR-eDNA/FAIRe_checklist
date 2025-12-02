@@ -5,6 +5,6 @@ description: 'Number of detection using the eLow Quant approach (described in DO
 slot_uri: FAIRe:148
 range: string
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '2'
+  - value: '2'

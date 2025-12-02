@@ -6,6 +6,6 @@ slot_uri: FAIRe:011
 range: string
 required: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: MiFish (metabarcoding) / eSERU5 (qPCR)
+  - value: MiFish (metabarcoding) / eSERU5 (qPCR)

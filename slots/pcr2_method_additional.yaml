@@ -7,7 +7,7 @@ slot_uri: FAIRe:179
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI 10.1007/s12686-013-0113-4)
+  - value: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI 10.1007/s12686-013-0113-4)
     was applied to prevent elongation of a closely related species

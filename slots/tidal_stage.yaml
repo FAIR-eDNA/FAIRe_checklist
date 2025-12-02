@@ -5,11 +5,11 @@ slot_uri: FAIRe:308
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: high tide
+  - value: high tide
 exact_mappings:
-- MIXS:0000750
+  - MIXS:0000750
 source: MIXS:0000750
 comments:
-- 'Sample types: Water, Sediment'
+  - 'Sample types: Water, Sediment'

@@ -4,6 +4,6 @@ description: If applicable, probe sequence in the 5' to 3' direction
 slot_uri: FAIRe:233
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: CTTGTTTGTTTGATCAATTC
+  - value: CTTGTTTGTTTGATCAATTC

@@ -5,11 +5,11 @@ slot_uri: FAIRe:281
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: erythropterus
+  - value: erythropterus
 close_mappings:
-- DWC:specificEpithet
-source: DWC:specificEpithet
+  - dwc:specificEpithet
+source: dwc:specificEpithet
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

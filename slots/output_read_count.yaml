@@ -6,14 +6,14 @@ slot_uri: FAIRe:165
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: '16847'
+  - value: '16847'
 close_mappings:
-- NMDC:output_read_count
+  - NMDC:output_read_count
 source: NMDC:output_read_count
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'
 annotations:
   unit:
     tag: unit

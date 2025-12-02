@@ -6,6 +6,6 @@ slot_uri: FAIRe:172
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: BIO-RAD QuantaSoft
+  - value: BIO-RAD QuantaSoft

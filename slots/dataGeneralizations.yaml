@@ -8,12 +8,12 @@ slot_uri: FAIRe:042
 range: string
 required: false
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: Coordinates generalized from original GPS coordinates to the nearest half
+  - value: Coordinates generalized from original GPS coordinates to the nearest half
     degree grid cell.
 close_mappings:
-- DWC:dataGeneralizations
-source: DWC:dataGeneralizations
+  - dwc:dataGeneralizations
+source: dwc:dataGeneralizations
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

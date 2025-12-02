@@ -6,8 +6,8 @@ slot_uri: FAIRe:297
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Taxonomic levels were dropped to the lowest common ancestor (LCA) with the
+  - value: Taxonomic levels were dropped to the lowest common ancestor (LCA) with the
     similarity thresholds of 99%, and also based on % identify thresholds (>98% species,
     95-98% genus, 90-95% family).

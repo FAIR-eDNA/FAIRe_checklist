@@ -6,6 +6,6 @@ slot_uri: FAIRe:289
 range: string
 required: false
 in_subset:
-- Project
+  - Project
 examples:
-- value: benthic habitat types | diurnal time series | filter types
+  - value: benthic habitat types | diurnal time series | filter types

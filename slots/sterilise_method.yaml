@@ -4,8 +4,8 @@ description: the protocols to minimise contaminations in the field and/or labora
 slot_uri: FAIRe:288
 range: string
 in_subset:
-- Project
+  - Project
 examples:
-- value: Sampling bottles were rinsed with 10% bleached and DI water. Single-use syringes
+  - value: Sampling bottles were rinsed with 10% bleached and DI water. Single-use syringes
     and capsule filters were used for filtration. Single-use gloves were used to collect
     and filter each sample.

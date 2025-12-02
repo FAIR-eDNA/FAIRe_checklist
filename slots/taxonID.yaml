@@ -5,11 +5,11 @@ description: An identifier for the assigned taxon (or taxa in the case of multip
 slot_uri: FAIRe:301
 range: string
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: '218797.0'
+  - value: '218797.0'
 close_mappings:
-- DWC:taxonID
-source: DWC:taxonID
+  - dwc:taxonID
+source: dwc:taxonID
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

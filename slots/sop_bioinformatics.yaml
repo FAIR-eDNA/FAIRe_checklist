@@ -7,12 +7,12 @@ slot_uri: FAIRe:280
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: https://github.com/mahsa-mousavi/eDNAFlow
+  - value: https://github.com/mahsa-mousavi/eDNAFlow
 close_mappings:
-- MIXS:0000090
+  - MIXS:0000090
 source: MIXS:0000090
 comments:
-- 'Modified from source: field_name, description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: field_name, description'
+  - 'Informed by: MIxS, DNA-derived data extension'

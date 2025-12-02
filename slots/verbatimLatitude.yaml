@@ -7,11 +7,11 @@ slot_uri: FAIRe:333
 range: string
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: 41 05 54.03S
+  - value: 41 05 54.03S
 close_mappings:
-- DWC:verbatimLatitude
-source: DWC:verbatimLatitude
+  - dwc:verbatimLatitude
+source: dwc:verbatimLatitude
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

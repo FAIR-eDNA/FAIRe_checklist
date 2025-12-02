@@ -5,8 +5,8 @@ slot_uri: FAIRe:323
 range: tot_org_carb_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: other:gram Carbon per kg sample material
+  - value: other:gram Carbon per kg sample material
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

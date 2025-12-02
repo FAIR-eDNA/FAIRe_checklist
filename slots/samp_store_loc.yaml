@@ -5,9 +5,9 @@ slot_uri: FAIRe:256
 range: string
 required: false
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: UWA, IOMRC, Lv4 -80Freezer1
+  - value: UWA, IOMRC, Lv4 -80Freezer1
 exact_mappings:
-- MIXS:0000755
+  - MIXS:0000755
 source: MIXS:0000755

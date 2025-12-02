@@ -8,17 +8,14 @@ description: 'The entity or entities which are in your sample or specimen’s lo
 slot_uri: FAIRe:067
 range: string
 required: true
+pattern: "^.+ \\[ENVO:\\d{8}\\]$"
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: estuarine coastal surface layer [ENVO:01001302]
+  - value: estuarine coastal surface layer [ENVO:01001302]
 close_mappings:
-- MIXS:0000013
+  - MIXS:0000013
 source: MIXS:0000013
 comments:
-- 'Modified from source: description, field_type'
-- 'Informed by: MIxS, DNA-derived data extension'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: termLabel [termID]
+  - 'Modified from source: description, field_type'
+  - 'Informed by: MIxS, DNA-derived data extension'

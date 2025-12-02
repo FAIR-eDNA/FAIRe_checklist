@@ -7,12 +7,12 @@ description: 'Solution within which the sample was stored. Note: If a sample was
 slot_uri: FAIRe:258
 range: samp_store_sol_enum
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: none
+  - value: none
 close_mappings:
-- MIXS:0001317
+  - MIXS:0001317
 source: MIXS:0001317
 comments:
-- 'Modified from source: description, field_type'
-- 'Sample types: ALL'
+  - 'Modified from source: description, field_type'
+  - 'Sample types: ALL'

@@ -6,6 +6,6 @@ slot_uri: FAIRe:027
 range: float
 required: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: '1.2'
+  - value: '1.2'

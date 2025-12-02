@@ -6,13 +6,13 @@ slot_uri: FAIRe:250
 range: string
 recommended: true
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
+  - value: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
 close_mappings:
-- MIXS:0001225
+  - MIXS:0001225
 source: MIXS:0001225
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
-- 'Sample types: ALL'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'
+  - 'Sample types: ALL'

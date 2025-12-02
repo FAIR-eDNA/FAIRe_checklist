@@ -5,6 +5,6 @@ slot_uri: FAIRe:035
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: https://github.com/aomlomics/gomecc
+  - value: https://github.com/aomlomics/gomecc

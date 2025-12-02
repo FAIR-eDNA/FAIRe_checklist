@@ -6,12 +6,12 @@ slot_uri: FAIRe:332
 range: string
 required: false
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae; Lutjanus;
+  - value: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae; Lutjanus;
     Lutjanus_erythropterus
 close_mappings:
-- DWC:verbatimIdentification
-source: DWC:verbatimIdentification
+  - dwc:verbatimIdentification
+source: dwc:verbatimIdentification
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

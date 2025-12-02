@@ -4,6 +4,6 @@ description: Reference (i.e. DOI) of the probe_seq
 slot_uri: FAIRe:232
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: 10.1007/s00227-017-3141-x
+  - value: 10.1007/s00227-017-3141-x

@@ -6,11 +6,11 @@ slot_uri: FAIRe:241
 range: float
 required: false
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: '2.1'
+  - value: '2.1'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:ratioOfAbsorbance260_280
+source: dna_extension:ratioOfAbsorbance260_280
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

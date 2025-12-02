@@ -6,11 +6,11 @@ description: Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers
 slot_uri: FAIRe:204
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: https://doi.org/10.1186/1742-9994-10-34
+  - value: https://doi.org/10.1186/1742-9994-10-34
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:pcr_primer_reference_forward
+source: dna_extension:pcr_primer_reference_forward
 comments:
-- 'Modified from source: Forward and reverse separated'
+  - 'Modified from source: Forward and reverse separated'

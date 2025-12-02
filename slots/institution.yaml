@@ -6,6 +6,6 @@ slot_uri: FAIRe:105
 range: string
 recommended: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: Curtin University
+  - value: Curtin University

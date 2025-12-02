@@ -6,7 +6,7 @@ slot_uri: FAIRe:159
 range: string
 required: false
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Unpublished custom database, containing COI sequences of 209 fish species
+  - value: Unpublished custom database, containing COI sequences of 209 fish species
     collected from Western Australia (study area)

@@ -8,9 +8,9 @@ description: The stock concentration of the probe if applicable. This refers spe
 slot_uri: FAIRe:231
 range: float
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '100.0'
+  - value: '100.0'
 annotations:
   unit:
     tag: unit

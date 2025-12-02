@@ -7,16 +7,16 @@ description: 'Amount or size of original sample (volume, mass or area) that was 
 slot_uri: FAIRe:253
 range: float
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: '5.0'
+  - value: '5.0'
 close_mappings:
-- MIXS:0000001
+  - MIXS:0000001
 source: MIXS:0000001
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
-- 'Sample types: ALL'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'
+  - 'Sample types: ALL'
 annotations:
   unit:
     tag: unit

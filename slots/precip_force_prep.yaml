@@ -5,12 +5,12 @@ description: Centrifuge force used in precipitation at the sample preparation st
 slot_uri: FAIRe:221
 range: float
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '20000.0'
+  - value: '20000.0'
 comments:
-- 'Modified from source: field_name, description'
-- 'Sample types: Water, Soil, Sediment'
+  - 'Modified from source: field_name, description'
+  - 'Sample types: Water, Soil, Sediment'
 annotations:
   unit:
     tag: unit

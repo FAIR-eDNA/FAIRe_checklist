@@ -5,6 +5,6 @@ slot_uri: FAIRe:286
 range: string
 required: false
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: ThermoFisher
+  - value: ThermoFisher

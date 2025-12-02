@@ -4,6 +4,6 @@ description: Unit for samp_vol_we_dna_ext
 slot_uri: FAIRe:261
 range: samp_vol_we_dna_ext_unit_enum
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: mL
+  - value: mL

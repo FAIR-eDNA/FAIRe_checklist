@@ -6,4 +6,4 @@ slot_uri: FAIRe:295
 range: string
 required: false
 in_subset:
-- TargetedAssay
+  - TargetedAssay

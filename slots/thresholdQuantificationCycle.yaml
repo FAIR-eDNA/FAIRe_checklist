@@ -5,14 +5,14 @@ slot_uri: FAIRe:307
 range: float
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '0.3'
+  - value: '0.3'
 exact_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:thresholdQuantificationCycle
+source: dna_extension:thresholdQuantificationCycle
 comments:
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Informed by: DNA-derived data extension, MIQE'
 annotations:
   unit:
     tag: unit

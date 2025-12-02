@@ -5,11 +5,11 @@ slot_uri: FAIRe:038
 range: string
 required: false
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: Qubit 4.0 Fluorometer (Invitrogen)
+  - value: Qubit 4.0 Fluorometer (Invitrogen)
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:concentration_method
+source: dna_extension:concentration_method
 comments:
-- 'Modified from source: field_name, description'
+  - 'Modified from source: field_name, description'

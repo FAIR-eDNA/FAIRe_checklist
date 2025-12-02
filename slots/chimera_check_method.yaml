@@ -6,12 +6,12 @@ slot_uri: FAIRe:031
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: denovo, uchime v4.1
+  - value: denovo, uchime v4.1
 close_mappings:
-- MIXS:0000052
+  - MIXS:0000052
 source: MIXS:0000052
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'

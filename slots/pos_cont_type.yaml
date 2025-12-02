@@ -9,9 +9,9 @@ slot_uri: FAIRe:219
 range: string
 required: true
 in_subset:
-- SampleInformation
+  - SampleInformation
 examples:
-- value: PCR positive of synthetic DNA
+  - value: PCR positive of synthetic DNA
 exact_mappings:
-- MIXS:0001322
+  - MIXS:0001322
 source: MIXS:0001322

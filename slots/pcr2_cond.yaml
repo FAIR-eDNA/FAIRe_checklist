@@ -7,11 +7,6 @@ slot_uri: FAIRe:175
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
-      elongation:degrees_minutes;total cycles
+  - value: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35

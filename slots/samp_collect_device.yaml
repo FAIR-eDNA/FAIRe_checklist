@@ -8,13 +8,13 @@ slot_uri: FAIRe:249
 range: string
 recommended: true
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: push core
+  - value: push core
 close_mappings:
-- MIXS:0000002
+  - MIXS:0000002
 source: MIXS:0000002
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
-- 'Sample types: ALL'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'
+  - 'Sample types: ALL'

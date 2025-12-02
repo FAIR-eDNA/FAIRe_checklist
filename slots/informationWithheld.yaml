@@ -6,9 +6,9 @@ slot_uri: FAIRe:101
 range: string
 required: false
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: location information not given for endangered species
+  - value: location information not given for endangered species
 exact_mappings:
-- DWC:informationWithheld
-source: DWC:informationWithheld
+  - dwc:informationWithheld
+source: dwc:informationWithheld

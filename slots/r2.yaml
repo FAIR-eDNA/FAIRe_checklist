@@ -5,6 +5,6 @@ description: R-squared value of a qPCR standard curve. This shall be specific to
 slot_uri: FAIRe:240
 range: float
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '0.9867'
+  - value: '0.9867'

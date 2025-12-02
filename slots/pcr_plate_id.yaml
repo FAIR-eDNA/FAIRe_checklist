@@ -9,6 +9,6 @@ slot_uri: FAIRe:198
 range: string
 required: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: 20240802_pcr1
+  - value: 20240802_pcr1

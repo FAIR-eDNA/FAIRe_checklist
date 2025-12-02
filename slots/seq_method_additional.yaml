@@ -6,6 +6,6 @@ slot_uri: FAIRe:273
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: PhiX was spiked in at 15%
+  - value: PhiX was spiked in at 15%

@@ -5,6 +5,6 @@ slot_uri: FAIRe:075
 range: estimatedNumberOfCopies_method_enum
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: Ct/Cq with standard curve | Ct/Cq with standard bionomial data
+  - value: Ct/Cq with standard curve | Ct/Cq with standard bionomial data

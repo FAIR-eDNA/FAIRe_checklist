@@ -8,16 +8,13 @@ description: 'The geographical origin of the sample as defined by the country or
 slot_uri: FAIRe:088
 range: string
 required: true
+pattern: "^[^:]+: ?.+$"
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: 'USA: Maryland, Bethesda'
+  - value: 'USA: Maryland, Bethesda'
 close_mappings:
-- MIXS:0000010
+  - MIXS:0000010
 source: MIXS:0000010
 comments:
-- 'Modified from source: description'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: <country or sea names>:<region>,<locality>
+  - 'Modified from source: description'

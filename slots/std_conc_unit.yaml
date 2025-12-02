@@ -5,4 +5,4 @@ slot_uri: FAIRe:284
 range: std_conc_unit_enum
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay

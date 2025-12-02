@@ -4,12 +4,12 @@ description: Alignment tool/software used for taxonomic assignment
 slot_uri: FAIRe:163
 range: string
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: blastn;2.6.0+
+  - value: blastn;2.6.0+
 close_mappings:
-- MIXS:0000086
+  - MIXS:0000086
 source: MIXS:0000086
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'

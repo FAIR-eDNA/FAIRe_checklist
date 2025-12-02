@@ -5,6 +5,6 @@ slot_uri: FAIRe:130
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: DADA2 1.26
+  - value: DADA2 1.26

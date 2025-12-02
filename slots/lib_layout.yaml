@@ -5,12 +5,12 @@ slot_uri: FAIRe:114
 range: lib_layout_enum
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: paired end
+  - value: paired end
 close_mappings:
-- MIXS:0000041
+  - MIXS:0000041
 source: MIXS:0000041
 comments:
-- 'Modified from source: field_type'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: field_type'
+  - 'Informed by: MIxS, DNA-derived data extension'

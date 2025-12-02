@@ -6,7 +6,7 @@ slot_uri: FAIRe:191
 range: float
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 annotations:
   unit:
     tag: unit

@@ -7,15 +7,15 @@ slot_uri: FAIRe:099
 range: float
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '61.0'
+  - value: '61.0'
 close_mappings:
-- MIXS:0000100
+  - MIXS:0000100
 source: MIXS:0000100
 comments:
-- 'Modified from source: description'
-- 'Sample types: Air'
+  - 'Modified from source: description'
+  - 'Sample types: Air'
 annotations:
   unit:
     tag: unit

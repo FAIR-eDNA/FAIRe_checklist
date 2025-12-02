@@ -5,6 +5,6 @@ slot_uri: FAIRe:076
 range: estimatedNumberOfCopies_unit_enum
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: other:copies/mg of sediment sample
+  - value: other:copies/mg of sediment sample

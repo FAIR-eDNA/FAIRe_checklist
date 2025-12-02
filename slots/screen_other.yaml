@@ -5,4 +5,4 @@ slot_uri: FAIRe:270
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics

@@ -1,0 +1,722 @@
+enums:
+  amp_vis_method_enum:
+    description: Permissible values for amp_vis_method
+    permissible_values:
+      qPCR: 
+      dPCR: 
+      gel electrophoresis: 
+      CE-PCR: 
+      LAMP: 
+      "other:": 
+
+  assay_type_enum:
+    description: Permissible values for assay_type
+    permissible_values:
+      targeted: 
+      metabarcoding: 
+      "other:": 
+
+  barcoding_pcr_appr_enum:
+    description: Permissible values for barcoding_pcr_appr
+    permissible_values:
+      one-step PCR: 
+      two-step PCR: 
+      ligation-based: 
+      "other:": 
+
+  checksum_method_enum:
+    description: Permissible values for checksum_method
+    permissible_values:
+      MD5: 
+      SHA-256: 
+      CRC-32: 
+      "other:": 
+
+  concentration_unit_enum:
+    description: Permissible values for concentration_unit
+    permissible_values:
+      ng/µl: 
+      copies/µl: 
+      "other:": 
+
+  diss_inorg_carb_unit_enum:
+    description: Permissible values for diss_inorg_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  diss_inorg_nitro_unit_enum:
+    description: Permissible values for diss_inorg_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  diss_org_carb_unit_enum:
+    description: Permissible values for diss_org_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  diss_org_nitro_unit_enum:
+    description: Permissible values for diss_org_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  diss_oxygen_unit_enum:
+    description: Permissible values for diss_oxygen_unit
+    permissible_values:
+      mg/L: 
+      µg/L: 
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mL/L: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  error_rate_type_enum:
+    description: Permissible values for error_rate_type
+    permissible_values:
+      Phred score: 
+      expected error rate: 
+      "other:": 
+
+  estimatedNumberOfCopies_error_type_enum:
+    description: Permissible values for estimatedNumberOfCopies_error_type
+    permissible_values:
+      standard error: 
+      standard deviation: 
+      95% confidence interval: 
+      "other:": 
+
+  estimatedNumberOfCopies_method_enum:
+    description: Permissible values for estimatedNumberOfCopies_method
+    permissible_values:
+      Ct/Cq with standard curve: 
+      Ct/Cq with standard bionomial data: 
+      direct output from the PCR instrument used: 
+      gel fluorescence intensities: 
+      "other:": 
+
+  estimatedNumberOfCopies_unit_enum:
+    description: Permissible values for estimatedNumberOfCopies_unit
+    permissible_values:
+      copies/reaction: 
+      copies/µL of DNA extract: 
+      copies/µL of reaction: 
+      ng/reaction: 
+      ng/µL of DNA extract: 
+      ng/µL of reaction: 
+      "other:": 
+
+  filter_material_enum:
+    description: Permissible values for filter_material
+    permissible_values:
+      cellulose: 
+      cellulose ester: 
+      glass fiber: 
+      thermoplastic membrane: 
+      track etched polycarbonate: 
+      nylon: 
+      polyethersulfone: 
+      "other:": 
+
+  host_height_unit_enum:
+    description: Permissible values for host_height_unit
+    permissible_values:
+      mm: 
+      cm: 
+      m: 
+      "other:": 
+
+  host_length_unit_enum:
+    description: Permissible values for host_length_unit
+    permissible_values:
+      mm: 
+      cm: 
+      m: 
+      "other:": 
+
+  host_tot_mass_unit_enum:
+    description: Permissible values for host_tot_mass_unit
+    permissible_values:
+      mg: 
+      g: 
+      kg: 
+      "other:": 
+
+  lib_conc_unit_enum:
+    description: Permissible values for lib_conc_unit
+    permissible_values:
+      ng/µL: 
+      nM: 
+      pM: 
+      "other:": 
+
+  lib_layout_enum:
+    description: Permissible values for lib_layout
+    permissible_values:
+      paired end: 
+      single end: 
+      "other:": 
+
+  min_reads_cutoff_unit_enum:
+    description: Permissible values for min_reads_cutoff_unit
+    permissible_values:
+      reads: 
+      "%": 
+      "other:": 
+
+  neg_cont_type_enum:
+    description: Permissible values for neg_cont_type
+    permissible_values:
+      site negative: 
+      field negative: 
+      process negative: 
+      extraction negative: 
+      PCR negative: 
+      "other:": 
+
+  nitrate_unit_enum:
+    description: Permissible values for nitrate_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  nitrite_unit_enum:
+    description: Permissible values for nitrite_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  nitro_unit_enum:
+    description: Permissible values for nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  nucl_acid_ext_lysis_enum:
+    description: Permissible values for nucl_acid_ext_lysis
+    permissible_values:
+      physical: 
+      chemical: 
+      enzymatic: 
+      thermal: 
+      osmotic: 
+      "other:": 
+
+  nucl_acid_ext_sep_enum:
+    description: Permissible values for nucl_acid_ext_sep
+    permissible_values:
+      column-based: 
+      magnetic beads: 
+      centrifugation: 
+      precipitation: 
+      phenol chloroform: 
+      gel electrophoresis: 
+      "other:": 
+
+  org_carb_unit_enum:
+    description: Permissible values for org_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  org_matter_unit_enum:
+    description: Permissible values for org_matter_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  org_nitro_unit_enum:
+    description: Permissible values for org_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  part_org_carb_unit_enum:
+    description: Permissible values for part_org_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  part_org_nitro_unit_enum:
+    description: Permissible values for part_org_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  pcr_assay_lod_unit_enum:
+    description: Permissible values for pcr_assay_lod_unit
+    permissible_values:
+      copies/reaction: 
+      copies/µL: 
+      ng/reaction: 
+      ng/µL: 
+      "other:": 
+
+  pcr_assay_loq_unit_enum:
+    description: Permissible values for pcr_assay_loq_unit
+    permissible_values:
+      copies/reaction: 
+      copies/µL: 
+      ng/reaction: 
+      ng/µL: 
+      "other:": 
+
+  platform_enum:
+    description: Permissible values for platform
+    permissible_values:
+      ILLUMINA: 
+      BGISEQ: 
+      CAPILLARY: 
+      DNBSEQ: 
+      ELEMENT: 
+      GENAPSYS: 
+      GENEMIND: 
+      HELICOS: 
+      ION_TORRENT: 
+      LS454: 
+      OXFORD_NANOPORE: 
+      PACBIO_SMRT: 
+      TAPESTRI: 
+      VELA_DIAGNOSTICS: 
+      ULTIMA: 
+      "other:": 
+
+  precip_chem_prep_enum:
+    description: Permissible values for precip_chem_prep
+    permissible_values:
+      ethanol: 
+      isopropanol: 
+      sodium chloride: 
+      "other:": 
+
+  prepped_samp_store_sol_enum:
+    description: Permissible values for prepped_samp_store_sol
+    permissible_values:
+      ethanol: 
+      sodium acetate: 
+      longmire: 
+      lysis buffer: 
+      none: 
+      "other:": 
+
+  probeQuencher_enum:
+    description: Permissible values for probeQuencher
+    permissible_values:
+      Zero-End Quencher (ZEN): 
+      TAMRA: 
+      lowa Black: 
+      Minor Groove Binder (MGB): 
+      Black Hole Quencher (BHQ): 
+      "other:": 
+
+  pump_flow_rate_unit_enum:
+    description: Permissible values for pump_flow_rate_unit
+    permissible_values:
+      m3/s: 
+      m3/min: 
+      m3/h: 
+      L/s: 
+      L/min: 
+      L/h: 
+      "other:": 
+
+  samp_category_enum:
+    description: Permissible values for samp_category
+    permissible_values:
+      sample: 
+      negative control: 
+      positive control: 
+      PCR standard: 
+      "other:": 
+
+  samp_size_unit_enum:
+    description: Permissible values for samp_size_unit
+    permissible_values:
+      mL: 
+      L: 
+      mg: 
+      g: 
+      kg: 
+      cm2: 
+      m2: 
+      cm3: 
+      m3: 
+      "other:": 
+
+  samp_store_sol_enum:
+    description: Permissible values for samp_store_sol
+    permissible_values:
+      ethanol: 
+      sodium acetate: 
+      longmire: 
+      lysis buffer: 
+      none: 
+      "other:": 
+
+  samp_vol_we_dna_ext_unit_enum:
+    description: Permissible values for samp_vol_we_dna_ext_unit
+    permissible_values:
+      mL: 
+      L: 
+      mg: 
+      g: 
+      kg: 
+      cm2: 
+      m2: 
+      cm3: 
+      m3: 
+      "other:": 
+
+  std_conc_unit_enum:
+    description: Permissible values for std_conc_unit
+    permissible_values:
+      copies/reaction: 
+      copies/µL of DNA extract: 
+      copies/µL of reaction: 
+      ng/reaction: 
+      ng/µL of DNA extract: 
+      ng/µL of reaction: 
+      "other:": 
+
+  std_type_enum:
+    description: Permissible values for std_type
+    permissible_values:
+      synthetic double-stranded DNA: 
+      plasmid: 
+      amplicon: 
+      gDNA: 
+      "other:": 
+
+  target_gene_enum:
+    description: Permissible values for target_gene
+    permissible_values:
+      12S rRNA (SSU mitochondria): 
+      16S rRNA (LSU mitochondria): 
+      16S rRNA (SSU prokaryote): 
+      23S rRNA (LSU prokaryote): 
+      18S rRNA (SSU eukaryote): 
+      28S rRNA (LSU eukaryote): 
+      rbcL: 
+      CytB: 
+      COI: 
+      COII: 
+      COIII: 
+      nifH: 
+      ITS: 
+      ND1: 
+      ND2: 
+      ND3: 
+      ND4: 
+      ND5: 
+      ND6: 
+      amoA: 
+      rpoB: 
+      rpoC1: 
+      rpoC2: 
+      matK: 
+      trnH: 
+      trnL: 
+      psbK: 
+      D-loop: 
+      "other:": 
+
+  tax_assign_cat_enum:
+    description: Permissible values for tax_assign_cat
+    permissible_values:
+      sequence similarity: 
+      sequence composition: 
+      phylogeny: 
+      probabilistic: 
+      "other:": 
+
+  taxonRank_enum:
+    description: Permissible values for taxonRank
+    permissible_values:
+      kingdom: 
+      phylum: 
+      class: 
+      order: 
+      family: 
+      genus: 
+      species: 
+      "other:": 
+
+  tot_carb_unit_enum:
+    description: Permissible values for tot_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_diss_nitro_unit_enum:
+    description: Permissible values for tot_diss_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_inorg_nitro_unit_enum:
+    description: Permissible values for tot_inorg_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_nitro_content_unit_enum:
+    description: Permissible values for tot_nitro_content_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_nitro_unit_enum:
+    description: Permissible values for tot_nitro_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_org_carb_unit_enum:
+    description: Permissible values for tot_org_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  tot_part_carb_unit_enum:
+    description: Permissible values for tot_part_carb_unit
+    permissible_values:
+      µM: 
+      mol/m3: 
+      mmol/m3: 
+      µmol/m3: 
+      mol/L: 
+      mmol/L: 
+      µmol/L: 
+      mg/L: 
+      µg/L: 
+      µmol/kg: 
+      mmol/kg: 
+      parts per million: 
+      "other:": 
+
+  verbatimCoordinateSystem_enum:
+    description: Permissible values for verbatimCoordinateSystem
+    permissible_values:
+      decimal degrees: 
+      degrees minutes seconds: 
+      UTM: 
+      "other:": 
+
+  verbatimSRS_enum:
+    description: Permissible values for verbatimSRS
+    permissible_values:
+      WGS84: 
+      NAD84: 
+      NAD27: 
+      GDA94: 
+      GDA2020: 
+      ETRS89: 
+      JGD2000: 
+      "other:": 

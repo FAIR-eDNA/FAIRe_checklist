@@ -5,8 +5,8 @@ slot_uri: FAIRe:224
 range: string
 required: false
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: nylon
+  - value: nylon
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'

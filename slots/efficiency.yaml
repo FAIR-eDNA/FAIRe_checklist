@@ -4,9 +4,9 @@ description: qPCR amplification efficiency calculated from slope. Unit = %
 slot_uri: FAIRe:064
 range: float
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '95.0'
+  - value: '95.0'
 annotations:
   unit:
     tag: unit

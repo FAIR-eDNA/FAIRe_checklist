@@ -9,15 +9,12 @@ slot_uri: FAIRe:132
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: '2014-09-09'
+  - value: '2014-09-09'
 close_mappings:
-- NMDC:mod_date
+  - NMDC:mod_date
 source: NMDC:mod_date
 comments:
-- 'Modified from source: description'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: yyyy-mm-dd
+  - 'Modified from source: description'
+  - 'There is no bulletproof regex for ISO 8601'

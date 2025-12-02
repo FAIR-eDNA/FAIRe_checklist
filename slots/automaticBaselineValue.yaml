@@ -6,12 +6,12 @@ slot_uri: FAIRe:016
 range: string
 required: false
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '1'
+  - value: '1'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:automaticBaselineValue
+source: dna_extension:automaticBaselineValue
 comments:
-- 'Modified from source: description, field_type'
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Modified from source: description, field_type'
+  - 'Informed by: DNA-derived data extension, MIQE'

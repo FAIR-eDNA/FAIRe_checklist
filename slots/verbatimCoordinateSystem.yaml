@@ -5,11 +5,11 @@ slot_uri: FAIRe:329
 range: verbatimCoordinateSystem_enum
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: degrees minutes seconds
+  - value: degrees minutes seconds
 close_mappings:
-- DWC:verbatimCoordinateSystem
-source: DWC:verbatimCoordinateSystem
+  - dwc:verbatimCoordinateSystem
+source: dwc:verbatimCoordinateSystem
 comments:
-- 'Modified from source: description, field_type'
+  - 'Modified from source: description, field_type'

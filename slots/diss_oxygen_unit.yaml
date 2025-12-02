@@ -5,8 +5,8 @@ slot_uri: FAIRe:059
 range: diss_oxygen_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: mmol/kg
+  - value: mmol/kg
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

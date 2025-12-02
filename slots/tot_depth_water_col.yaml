@@ -8,15 +8,15 @@ slot_uri: FAIRe:311
 range: float
 recommended: true
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '15.0'
+  - value: '15.0'
 close_mappings:
-- MIXS:0000634
+  - MIXS:0000634
 source: MIXS:0000634
 comments:
-- 'Modified from source: description'
-- 'Sample types: Water, Sediment, HostAssociated, MicrobialMatBiofilm, SymbiontAssociated'
+  - 'Modified from source: description'
+  - 'Sample types: Water, Sediment, HostAssociated, MicrobialMatBiofilm, SymbiontAssociated'
 annotations:
   unit:
     tag: unit

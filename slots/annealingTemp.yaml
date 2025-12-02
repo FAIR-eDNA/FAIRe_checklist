@@ -6,14 +6,14 @@ description: The reaction temperature during the annealing phase of PCR. If two-
 slot_uri: FAIRe:010
 range: float
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '60.0'
+  - value: '60.0'
 exact_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:annealingTemp
+source: dna_extension:annealingTemp
 comments:
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Informed by: DNA-derived data extension, MIQE'
 annotations:
   unit:
     tag: unit

@@ -6,12 +6,12 @@ slot_uri: FAIRe:096
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: Lutjanus erythropterus
+  - value: Lutjanus erythropterus
 close_mappings:
-- MIXS:0000248
+  - MIXS:0000248
 source: MIXS:0000248
 comments:
-- 'Modified from source: field_name, description'
-- 'Sample types: HostAssociated, SymbiontAssociated'
+  - 'Modified from source: field_name, description'
+  - 'Sample types: HostAssociated, SymbiontAssociated'

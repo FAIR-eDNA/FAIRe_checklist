@@ -5,11 +5,11 @@ slot_uri: FAIRe:266
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Bloch, 1790
+  - value: Bloch, 1790
 close_mappings:
-- DWC:scientificNameAuthorship
-source: DWC:scientificNameAuthorship
+  - dwc:scientificNameAuthorship
+source: dwc:scientificNameAuthorship
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

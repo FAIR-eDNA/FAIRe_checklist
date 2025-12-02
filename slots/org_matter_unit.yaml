@@ -5,8 +5,8 @@ slot_uri: FAIRe:153
 range: org_matter_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: other:mg/m3
+  - value: other:mg/m3
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

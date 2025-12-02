@@ -4,12 +4,12 @@ description: Material of filter
 slot_uri: FAIRe:083
 range: filter_material_enum
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: cellulose ester
+  - value: cellulose ester
 close_mappings:
-- NMDC:filter_material
+  - NMDC:filter_material
 source: NMDC:filter_material
 comments:
-- 'Modified from source: description, field_type'
-- 'Sample types: Water, Air'
+  - 'Modified from source: description, field_type'
+  - 'Sample types: Water, Air'

@@ -6,11 +6,11 @@ slot_uri: FAIRe:202
 range: string
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: mlCOIintF
+  - value: mlCOIintF
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:pcr_primer_name_forward
+source: dna_extension:pcr_primer_name_forward
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

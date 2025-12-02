@@ -7,11 +7,11 @@ slot_uri: FAIRe:183
 range: string
 required: false
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: BIO-RAD QuantaSoft
+  - value: BIO-RAD QuantaSoft
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:pcr_analysis_software
+source: dna_extension:pcr_analysis_software
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

@@ -8,11 +8,8 @@ description: This term contains a list of samp_name values that represent the or
 slot_uri: FAIRe:263
 range: string
 required: false
+multivalued: true
 in_subset:
-- SampleRelationship
+  - SampleRelationship
 examples:
-- value: S01 | S02
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: (a list of) samp_name
+  - value: S01 | S02

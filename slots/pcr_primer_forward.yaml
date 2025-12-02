@@ -13,11 +13,11 @@ slot_uri: FAIRe:201
 range: string
 required: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: GGWACWGGWTGAACWGTWTAYCCYCC
+  - value: GGWACWGGWTGAACWGTWTAYCCYCC
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:pcr_primer_forward
+source: dna_extension:pcr_primer_forward
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

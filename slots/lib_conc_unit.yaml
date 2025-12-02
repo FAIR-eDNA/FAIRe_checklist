@@ -5,6 +5,6 @@ slot_uri: FAIRe:112
 range: lib_conc_unit_enum
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: pM
+  - value: pM

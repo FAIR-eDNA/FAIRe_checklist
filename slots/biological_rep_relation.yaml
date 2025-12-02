@@ -7,11 +7,8 @@ description: This term lists the samp_name of biological replicates associated w
 slot_uri: FAIRe:023
 range: string
 required: false
+multivalued: true
 in_subset:
-- SampleRelationship
+  - SampleRelationship
 examples:
-- value: S01_1 | S01_2 | S01_3
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: (a list of) samp_name
+  - value: S01_1 | S01_2 | S01_3

@@ -6,12 +6,12 @@ slot_uri: FAIRe:014
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
+  - value: https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
     | https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898
 close_mappings:
-- DWC:associatedSequences
-source: DWC:associatedSequences
+  - dwc:associatedSequences
+source: dwc:associatedSequences
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

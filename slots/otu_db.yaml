@@ -7,12 +7,12 @@ description: List of reference database(s) (i.e. sequences not generated as part
 slot_uri: FAIRe:158
 range: string
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: NCBI GenBank Release 260.0 | custom
+  - value: NCBI GenBank Release 260.0 | custom
 close_mappings:
-- MIXS:0000087
+  - MIXS:0000087
 source: MIXS:0000087
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'

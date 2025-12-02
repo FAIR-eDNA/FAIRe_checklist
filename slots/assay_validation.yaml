@@ -7,8 +7,8 @@ slot_uri: FAIRe:013
 range: string
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: The assay was validated through a multi-step process, including in-silico
+  - value: The assay was validated through a multi-step process, including in-silico
     analysis, in-vitro testing, in-situ trials, and final confirmation with Sanger
     sequencing.

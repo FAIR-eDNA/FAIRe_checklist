@@ -5,9 +5,9 @@ description: Chemicals used in precipitation at the sample preparation step prio
 slot_uri: FAIRe:220
 range: precip_chem_prep_enum
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: ethanol | sodium chloride
+  - value: ethanol | sodium chloride
 comments:
-- 'Modified from source: field_name, description'
-- 'Sample types: Water, Soil, Sediment'
+  - 'Modified from source: field_name, description'
+  - 'Sample types: Water, Soil, Sediment'

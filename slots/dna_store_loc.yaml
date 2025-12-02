@@ -6,6 +6,6 @@ slot_uri: FAIRe:063
 range: string
 required: false
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: UWA, IOMRC, Lv4 -80Freezer2
+  - value: UWA, IOMRC, Lv4 -80Freezer2

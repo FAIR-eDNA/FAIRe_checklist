@@ -4,6 +4,6 @@ description: General sequencing platform used.
 slot_uri: FAIRe:216
 range: platform_enum
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: ILLUMINA
+  - value: ILLUMINA

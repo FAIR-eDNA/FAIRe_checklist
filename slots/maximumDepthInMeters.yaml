@@ -9,15 +9,15 @@ slot_uri: FAIRe:121
 range: float
 recommended: true
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '0.2'
+  - value: '0.2'
 close_mappings:
-- DWC:maximumDepthInMeters
-source: DWC:maximumDepthInMeters
+  - dwc:maximumDepthInMeters
+source: dwc:maximumDepthInMeters
 comments:
-- 'Modified from source: description'
-- 'Sample types: Water, Soil, Sediment, HostAssociated, MicrobialMatBiofilm, SymbiontAssociated'
+  - 'Modified from source: description'
+  - 'Sample types: Water, Soil, Sediment, HostAssociated, MicrobialMatBiofilm, SymbiontAssociated'
 annotations:
   unit:
     tag: unit

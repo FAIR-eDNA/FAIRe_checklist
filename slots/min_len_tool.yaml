@@ -6,6 +6,6 @@ slot_uri: FAIRe:127
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: OBITools3
+  - value: OBITools3

@@ -7,15 +7,15 @@ description: Volume or mass of sample or subsamples that was processed for DNA e
 slot_uri: FAIRe:260
 range: float
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: '1500.0'
+  - value: '1500.0'
 close_mappings:
-- MIXS:0000111
+  - MIXS:0000111
 source: MIXS:0000111
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'
 annotations:
   unit:
     tag: unit

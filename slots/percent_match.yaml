@@ -7,9 +7,9 @@ slot_uri: FAIRe:210
 range: float
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: '99.8'
+  - value: '99.8'
 annotations:
   unit:
     tag: unit

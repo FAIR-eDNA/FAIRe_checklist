@@ -5,14 +5,14 @@ slot_uri: FAIRe:305
 range: float
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '25.0'
+  - value: '25.0'
 exact_mappings:
-- MIXS:0000113
+  - MIXS:0000113
 source: MIXS:0000113
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'
 annotations:
   unit:
     tag: unit

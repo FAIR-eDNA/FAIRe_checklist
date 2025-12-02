@@ -4,12 +4,12 @@ description: Targeted gene or locus name for marker gene studies
 slot_uri: FAIRe:293
 range: target_gene_enum
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: COI
+  - value: COI
 close_mappings:
-- MIXS:0000044
+  - MIXS:0000044
 source: MIXS:0000044
 comments:
-- 'Modified from source: field_type'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: field_type'
+  - 'Informed by: MIxS, DNA-derived data extension'

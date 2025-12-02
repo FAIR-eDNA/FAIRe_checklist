@@ -5,11 +5,11 @@ slot_uri: FAIRe:236
 range: string
 recommended: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: Forest soil metagenome
+  - value: Forest soil metagenome
 exact_mappings:
-- MIXS:0000092
+  - MIXS:0000092
 source: MIXS:0000092
 comments:
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Informed by: MIxS, DNA-derived data extension'

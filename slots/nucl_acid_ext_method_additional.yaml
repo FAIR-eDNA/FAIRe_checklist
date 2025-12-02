@@ -6,4 +6,4 @@ slot_uri: FAIRe:145
 range: string
 required: false
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction

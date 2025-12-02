@@ -7,12 +7,12 @@ slot_uri: FAIRe:279
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: 1.36 kw/m2/day
+  - value: 1.36 kw/m2/day
 close_mappings:
-- MIXS:0000112
+  - MIXS:0000112
 source: MIXS:0000112
 comments:
-- 'Modified from source: description'
-- 'Sample types: Water, Soil, Sediment, Air'
+  - 'Modified from source: description'
+  - 'Sample types: Water, Soil, Sediment, Air'

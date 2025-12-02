@@ -7,6 +7,6 @@ slot_uri: FAIRe:040
 range: float
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: '0.997'
+  - value: '0.997'

@@ -9,15 +9,15 @@ description: 'Temperature at which the sample was stored. Enter either the fixed
 slot_uri: FAIRe:259
 range: string
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: '-80.0'
+  - value: '-80.0'
 close_mappings:
-- MIXS:0000110
+  - MIXS:0000110
 source: MIXS:0000110
 comments:
-- 'Modified from source: description, field_type'
-- 'Sample types: ALL'
+  - 'Modified from source: description, field_type'
+  - 'Sample types: ALL'
 annotations:
   unit:
     tag: unit

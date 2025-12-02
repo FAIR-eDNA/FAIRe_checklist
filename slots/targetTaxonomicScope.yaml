@@ -7,9 +7,9 @@ slot_uri: FAIRe:292
 range: string
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: teleost
+  - value: teleost
 exact_mappings:
-- ECO:targetTaxonomicScope
+  - ECO:targetTaxonomicScope
 source: ECO:targetTaxonomicScope

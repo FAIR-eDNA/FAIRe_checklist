@@ -6,8 +6,8 @@ slot_uri: FAIRe:049
 range: string
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: The minimum number of PCR replicates of 2 with positive amplification
+  - value: The minimum number of PCR replicates of 2 with positive amplification
 comments:
-- 'Modified from source: field_name, description'
+  - 'Modified from source: field_name, description'

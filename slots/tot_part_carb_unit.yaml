@@ -5,8 +5,8 @@ slot_uri: FAIRe:325
 range: tot_part_carb_unit_enum
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: µmol/L
+  - value: µmol/L
 comments:
-- 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'
+  - 'Sample types: Water, Soil, Sediment, Air, MicrobialMatBiofilm'

@@ -11,17 +11,14 @@ description: 'Environmental material or materials (pipe separated) immediately s
 slot_uri: FAIRe:068
 range: string
 required: true
+pattern: "^.+ \\[ENVO:\\d{8}\\]$"
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: soil [ENVO:00001998]
+  - value: soil [ENVO:00001998]
 close_mappings:
-- MIXS:0000014
+  - MIXS:0000014
 source: MIXS:0000014
 comments:
-- 'Modified from source: description, field_type'
-- 'Informed by: MIxS, DNA-derived data extension'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: termLabel [termID]
+  - 'Modified from source: description, field_type'
+  - 'Informed by: MIxS, DNA-derived data extension'

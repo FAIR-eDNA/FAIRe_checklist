@@ -5,11 +5,11 @@ slot_uri: FAIRe:079
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Lutjanidae
+  - value: Lutjanidae
 close_mappings:
-- DWC:family
-source: DWC:family
+  - dwc:family
+source: dwc:family
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

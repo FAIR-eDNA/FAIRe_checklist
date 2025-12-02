@@ -6,8 +6,8 @@ slot_uri: FAIRe:021
 range: string
 required: false
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
+  - value: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
     was detected in multiple samples. Data was curated using r-package LULU, minimum_mismatch
     cutoff 90%

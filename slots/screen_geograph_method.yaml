@@ -5,7 +5,7 @@ slot_uri: FAIRe:268
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Distribution information was checked using FishBase, and species that did
+  - value: Distribution information was checked using FishBase, and species that did
     not reside in the study area were removed.

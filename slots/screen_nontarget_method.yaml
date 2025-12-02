@@ -5,8 +5,8 @@ slot_uri: FAIRe:269
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: Non-targeted species (i.e. domestic animals, humans and non-marine species)
+  - value: Non-targeted species (i.e. domestic animals, humans and non-marine species)
     were removed from the curated OTU table and downstream data analyses. OTUs that
     were assigned to species in WoRMS were kept in the curated OTU table.

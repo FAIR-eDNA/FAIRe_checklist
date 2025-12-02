@@ -8,11 +8,11 @@ slot_uri: FAIRe:252
 range: string
 required: true
 in_subset:
-- SampleInformation
+  - SampleInformation
 examples:
-- value: S01_1
+  - value: S01_1
 exact_mappings:
-- MIXS:0001107
+  - MIXS:0001107
 source: MIXS:0001107
 comments:
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Informed by: MIxS, DNA-derived data extension'

@@ -7,12 +7,12 @@ description: Type of quencher used. The quencher molecule quenches the fluoresce
 slot_uri: FAIRe:229
 range: probeQuencher_enum
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: MGB
+  - value: MGB
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:probeQuencher
+source: dna_extension:probeQuencher
 comments:
-- 'Modified from source: field_type'
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Modified from source: field_type'
+  - 'Informed by: DNA-derived data extension, MIQE'

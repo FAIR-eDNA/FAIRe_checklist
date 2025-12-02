@@ -6,9 +6,9 @@ slot_uri: FAIRe:116
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: http://creativecommons.org/licenses/by/4.0/legalcode
+  - value: http://creativecommons.org/licenses/by/4.0/legalcode
 exact_mappings:
-- https://dwc.tdwg.org/terms/#dcterms:license
+  - https://dwc.tdwg.org/terms/#dcterms:license
 source: https://dwc.tdwg.org/terms/#dcterms:license

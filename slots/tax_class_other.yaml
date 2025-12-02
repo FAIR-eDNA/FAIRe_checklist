@@ -6,10 +6,10 @@ slot_uri: FAIRe:299
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 close_mappings:
-- MIXS:0000064
+  - MIXS:0000064
 source: MIXS:0000064
 comments:
-- 'Modified from source: description'
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Modified from source: description'
+  - 'Informed by: MIxS, DNA-derived data extension'

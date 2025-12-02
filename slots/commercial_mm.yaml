@@ -5,6 +5,6 @@ description: Name, brand, and manufacture of commercial, pre-made master mix (if
 slot_uri: FAIRe:036
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: Luna® Universal qPCR Master Mix, New England Biolabs
+  - value: Luna® Universal qPCR Master Mix, New England Biolabs

@@ -5,11 +5,11 @@ slot_uri: FAIRe:034
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Actinopterygii
+  - value: Actinopterygii
 close_mappings:
-- DWC:class
-source: DWC:class
+  - dwc:class
+source: dwc:class
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

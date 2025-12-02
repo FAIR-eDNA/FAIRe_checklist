@@ -6,12 +6,12 @@ slot_uri: FAIRe:337
 range: string
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: NW
+  - value: NW
 close_mappings:
-- MIXS:0000757
+  - MIXS:0000757
 source: MIXS:0000757
 comments:
-- 'Modified from source: description'
-- 'Sample types: Water, Soil, Sediment, Air'
+  - 'Modified from source: description'
+  - 'Sample types: Water, Soil, Sediment, Air'

@@ -6,6 +6,6 @@ slot_uri: FAIRe:180
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: 20240802_pcr1
+  - value: 20240802_pcr1

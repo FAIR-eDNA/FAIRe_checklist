@@ -5,11 +5,11 @@ slot_uri: FAIRe:086
 range: float
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '1734.94'
+  - value: '1734.94'
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'
 annotations:
   unit:
     tag: unit

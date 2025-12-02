@@ -5,6 +5,6 @@ slot_uri: FAIRe:003
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: MG002616.1
+  - value: MG002616.1

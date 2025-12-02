@@ -5,6 +5,6 @@ slot_uri: FAIRe:188
 range: pcr_assay_lod_unit_enum
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: ng/µL
+  - value: ng/µL

@@ -5,9 +5,9 @@ slot_uri: FAIRe:122
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: '12'
+  - value: '12'
 annotations:
   unit:
     tag: unit

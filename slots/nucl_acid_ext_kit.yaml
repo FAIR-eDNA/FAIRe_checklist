@@ -5,11 +5,11 @@ description: The name of the extraction kit used to recover the nucleic acid fra
 slot_uri: FAIRe:143
 range: string
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: Qiagen PowerSoil Kit
+  - value: Qiagen PowerSoil Kit
 close_mappings:
-- MIXS:0001223
+  - MIXS:0001223
 source: MIXS:0001223
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

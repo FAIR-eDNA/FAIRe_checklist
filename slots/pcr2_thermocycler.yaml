@@ -6,6 +6,6 @@ slot_uri: FAIRe:181
 range: string
 required: false
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: Thermo Fisher Scientific, QuantStudio 6
+  - value: Thermo Fisher Scientific, QuantStudio 6

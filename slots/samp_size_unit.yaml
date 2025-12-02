@@ -4,8 +4,8 @@ description: Unit for samp_size
 slot_uri: FAIRe:254
 range: samp_size_unit_enum
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: L
+  - value: L
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'

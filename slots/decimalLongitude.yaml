@@ -8,11 +8,11 @@ slot_uri: FAIRe:045
 range: float
 required: true
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: '-121.17611'
+  - value: '-121.17611'
 close_mappings:
-- DWC:decimalLongitude
-source: DWC:decimalLongitude
+  - dwc:decimalLongitude
+source: dwc:decimalLongitude
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

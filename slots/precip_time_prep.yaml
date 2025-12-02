@@ -5,12 +5,12 @@ description: Duration of precipitation at the sample preparation step prior to D
 slot_uri: FAIRe:223
 range: float
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '45.0'
+  - value: '45.0'
 comments:
-- 'Modified from source: field_name, description'
-- 'Sample types: Water, Soil, Sediment'
+  - 'Modified from source: field_name, description'
+  - 'Sample types: Water, Soil, Sediment'
 annotations:
   unit:
     tag: unit

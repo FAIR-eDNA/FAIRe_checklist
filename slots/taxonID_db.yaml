@@ -4,6 +4,6 @@ description: The taxonomy database corresponding to taxonID.
 slot_uri: FAIRe:302
 range: string
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: NCBI
+  - value: NCBI

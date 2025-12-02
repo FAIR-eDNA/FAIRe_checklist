@@ -5,11 +5,11 @@ slot_uri: FAIRe:109
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Animalia
+  - value: Animalia
 close_mappings:
-- DWC:kingdom
-source: DWC:kingdom
+  - dwc:kingdom
+source: dwc:kingdom
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

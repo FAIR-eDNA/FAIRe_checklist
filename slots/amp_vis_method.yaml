@@ -7,6 +7,6 @@ slot_uri: FAIRe:007
 range: amp_vis_method_enum
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: qPCR
+  - value: qPCR

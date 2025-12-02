@@ -5,13 +5,13 @@ description: Specific enrichment or screening methods applied before and/or afte
 slot_uri: FAIRe:115
 range: string
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: The library was size selected using a Pippin-Prep (Sage Science, Beverly,
+  - value: The library was size selected using a Pippin-Prep (Sage Science, Beverly,
     USA), purified using the Qiaquick PCR Purification Kit (Qiagen), quantified using
     a Qubit (Invitrogen) and diluted to 2 nM before loading it onto a MiSeq Flow Cell
 exact_mappings:
-- MIXS:0000043
+  - MIXS:0000043
 source: MIXS:0000043
 comments:
-- 'Informed by: MIxS, DNA-derived data extension'
+  - 'Informed by: MIxS, DNA-derived data extension'

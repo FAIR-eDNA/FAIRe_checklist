@@ -9,14 +9,14 @@ slot_uri: FAIRe:006
 range: float
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '100.0'
+  - value: '100.0'
 exact_mappings:
-- MIXS:0000094
+  - MIXS:0000094
 source: MIXS:0000094
 comments:
-- 'Sample types: Air, HostAssociated'
+  - 'Sample types: Air, HostAssociated'
 annotations:
   unit:
     tag: unit

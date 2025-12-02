@@ -9,6 +9,6 @@ slot_uri: FAIRe:048
 range: string
 required: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '1'
+  - value: '1'

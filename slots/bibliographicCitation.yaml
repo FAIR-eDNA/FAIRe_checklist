@@ -5,9 +5,9 @@ slot_uri: FAIRe:020
 range: string
 recommended: true
 in_subset:
-- DataManagement
+  - DataManagement
 examples:
-- value: 'DOI: 10.1111/mec.15382'
+  - value: 'DOI: 10.1111/mec.15382'
 exact_mappings:
-- DCTERMS:bibliographicCitation
+  - DCTERMS:bibliographicCitation
 source: DCTERMS:bibliographicCitation

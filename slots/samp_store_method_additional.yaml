@@ -6,8 +6,8 @@ slot_uri: FAIRe:257
 range: string
 required: false
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: The sample was thawed overnight at room temperature prior to DNA extraction
+  - value: The sample was thawed overnight at room temperature prior to DNA extraction
 comments:
-- 'Sample types: ALL'
+  - 'Sample types: ALL'

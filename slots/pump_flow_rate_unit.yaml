@@ -5,8 +5,8 @@ slot_uri: FAIRe:238
 range: pump_flow_rate_unit_enum
 required: false
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: m3/s
+  - value: m3/s
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'

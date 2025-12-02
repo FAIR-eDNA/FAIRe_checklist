@@ -6,6 +6,6 @@ slot_uri: FAIRe:074
 range: estimatedNumberOfCopies_error_type_enum
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: standard error
+  - value: standard error

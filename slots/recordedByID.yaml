@@ -6,11 +6,11 @@ slot_uri: FAIRe:243
 range: string
 recommended: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: https://orcid.org/0000-0002-1825-0097  |  https://orcid.org/0000-0002-1825-0098
+  - value: https://orcid.org/0000-0002-1825-0097  |  https://orcid.org/0000-0002-1825-0098
 close_mappings:
-- https://dwc.tdwg.org/list/#dwc_recordedByID
+  - https://dwc.tdwg.org/list/#dwc_recordedByID
 source: https://dwc.tdwg.org/list/#dwc_recordedByID
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

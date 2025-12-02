@@ -7,9 +7,9 @@ slot_uri: FAIRe:102
 range: string
 required: false
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: The extracted DNA was tested using a serial dilution approach (undiluted,
+  - value: The extracted DNA was tested using a serial dilution approach (undiluted,
     1:10, 1:100). qPCR was performed on each dilution to evaluate amplification efficiency
     and inhibition. The dillution with optimal performance with reduced inhibition
     was selected for subsequent analysis in the workflow.

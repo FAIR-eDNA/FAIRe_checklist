@@ -9,16 +9,12 @@ description: 'Duration for which the sample was stored prior to DNA extraction, 
 slot_uri: FAIRe:255
 range: string
 in_subset:
-- SampleStorage
+  - SampleStorage
 examples:
-- value: P1Y6M
+  - value: P1Y6M
 close_mappings:
-- MIXS:0000116
+  - MIXS:0000116
 source: MIXS:0000116
 comments:
-- 'Modified from source: description'
-- 'Sample types: ALL'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: PnYnMnWnDTnHnMnS
+  - 'Modified from source: description'
+  - 'Sample types: ALL'

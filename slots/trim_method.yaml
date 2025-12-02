@@ -6,8 +6,8 @@ slot_uri: FAIRe:326
 range: string
 recommended: true
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 examples:
-- value: cutadapt v4.9
+  - value: cutadapt v4.9
 comments:
-- 'Modified from source: field_name'
+  - 'Modified from source: field_name'

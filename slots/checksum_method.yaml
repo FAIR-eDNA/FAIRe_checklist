@@ -7,6 +7,6 @@ slot_uri: FAIRe:030
 range: checksum_method_enum
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: MD5
+  - value: MD5

@@ -7,15 +7,15 @@ description: The length of the amplicon in basepairs EXCLUDING the primers, adap
 slot_uri: FAIRe:008
 range: string
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: '83'
+  - value: '83'
 close_mappings:
-- GBIF:dna_derived_data_2022-02-23.xml
-source: GBIF:dna_derived_data_2022-02-23.xml
+  - dna_extension:ampliconSize
+source: dna_extension:ampliconSize
 comments:
-- 'Modified from source: description'
-- 'Informed by: DNA-derived data extension, MIQE'
+  - 'Modified from source: description'
+  - 'Informed by: DNA-derived data extension, MIQE'
 annotations:
   unit:
     tag: unit

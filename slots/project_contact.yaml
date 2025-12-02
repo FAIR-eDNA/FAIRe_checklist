@@ -5,6 +5,6 @@ slot_uri: FAIRe:234
 range: string
 required: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: xxxx@yyyy.com
+  - value: xxxx@yyyy.com

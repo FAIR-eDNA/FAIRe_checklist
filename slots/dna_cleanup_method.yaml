@@ -6,6 +6,6 @@ slot_uri: FAIRe:061
 range: string
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: Zymo DNA Clean & Concentrator Kits
+  - value: Zymo DNA Clean & Concentrator Kits

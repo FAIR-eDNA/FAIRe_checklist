@@ -5,6 +5,6 @@ slot_uri: FAIRe:060
 range: string
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: '1'
+  - value: '1'

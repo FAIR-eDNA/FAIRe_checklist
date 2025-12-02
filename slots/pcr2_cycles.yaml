@@ -6,9 +6,9 @@ slot_uri: FAIRe:177
 range: string
 recommended: true
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: '40'
+  - value: '40'
 annotations:
   unit:
     tag: unit

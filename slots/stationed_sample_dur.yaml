@@ -10,12 +10,8 @@ slot_uri: FAIRe:282
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: T1H30M
+  - value: T1H30M
 comments:
-- 'Sample types: Water, Air'
-annotations:
-  fixed_format:
-    tag: fixed_format
-    value: PnYnMnWnDTnHnMnS
+  - 'Sample types: Water, Air'

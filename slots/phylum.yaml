@@ -5,11 +5,11 @@ slot_uri: FAIRe:215
 range: string
 recommended: true
 in_subset:
-- OtuAsv
+  - OtuAsv
 examples:
-- value: Chordata
+  - value: Chordata
 close_mappings:
-- DWC:phylum
-source: DWC:phylum
+  - dwc:phylum
+source: dwc:phylum
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

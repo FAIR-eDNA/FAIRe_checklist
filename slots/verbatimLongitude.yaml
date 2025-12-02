@@ -7,11 +7,11 @@ slot_uri: FAIRe:334
 range: string
 required: false
 in_subset:
-- SampleCollection
+  - SampleCollection
 examples:
-- value: 121d 10' 34" W
+  - value: 121d 10' 34" W
 close_mappings:
-- DWC:verbatimLongitude
-source: DWC:verbatimLongitude
+  - dwc:verbatimLongitude
+source: dwc:verbatimLongitude
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

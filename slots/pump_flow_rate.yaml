@@ -5,8 +5,8 @@ slot_uri: FAIRe:237
 range: float
 required: false
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '0.2'
+  - value: '0.2'
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'

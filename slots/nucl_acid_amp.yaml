@@ -6,11 +6,11 @@ slot_uri: FAIRe:141
 range: string
 recommended: true
 in_subset:
-- Pcr
+  - Pcr
 examples:
-- value: https://phylogenomics.me/protocols/16s-pcr-protocol/
+  - value: https://phylogenomics.me/protocols/16s-pcr-protocol/
 close_mappings:
-- MIXS:0000038
+  - MIXS:0000038
 source: MIXS:0000038
 comments:
-- 'Modified from source: description'
+  - 'Modified from source: description'

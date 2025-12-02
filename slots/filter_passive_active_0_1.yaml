@@ -7,8 +7,8 @@ slot_uri: FAIRe:085
 range: string
 recommended: true
 in_subset:
-- SamplePreparation
+  - SamplePreparation
 examples:
-- value: '1'
+  - value: '1'
 comments:
-- 'Sample types: Water, Air'
+  - 'Sample types: Water, Air'

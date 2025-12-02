@@ -5,6 +5,6 @@ slot_uri: FAIRe:278
 range: float
 recommended: true
 in_subset:
-- TargetedAssay
+  - TargetedAssay
 examples:
-- value: '-3.26'
+  - value: '-3.26'

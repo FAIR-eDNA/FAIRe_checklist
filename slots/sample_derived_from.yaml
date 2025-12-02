@@ -9,9 +9,9 @@ slot_uri: FAIRe:264
 range: string
 required: false
 in_subset:
-- SampleRelationship
+  - SampleRelationship
 examples:
-- value: S01
+  - value: S01
 annotations:
   fixed_format:
     tag: fixed_format

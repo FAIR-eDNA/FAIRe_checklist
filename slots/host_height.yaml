@@ -5,11 +5,11 @@ slot_uri: FAIRe:091
 range: float
 required: false
 in_subset:
-- Environment
+  - Environment
 examples:
-- value: '135.0'
+  - value: '135.0'
 exact_mappings:
-- MIXS:0000264
+  - MIXS:0000264
 source: MIXS:0000264
 comments:
-- 'Sample types: HostAssociated, SymbiontAssociated'
+  - 'Sample types: HostAssociated, SymbiontAssociated'

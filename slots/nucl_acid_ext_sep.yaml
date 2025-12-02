@@ -5,6 +5,6 @@ slot_uri: FAIRe:147
 range: nucl_acid_ext_sep_enum
 recommended: true
 in_subset:
-- NucleicAcidExtraction
+  - NucleicAcidExtraction
 examples:
-- value: column-based
+  - value: column-based

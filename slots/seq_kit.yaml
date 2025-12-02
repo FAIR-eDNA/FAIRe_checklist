@@ -4,6 +4,6 @@ description: The name of sequencing kit
 slot_uri: FAIRe:272
 range: string
 in_subset:
-- LibraryPreparation
+  - LibraryPreparation
 examples:
-- value: NextSeq 500/550 v2.5
+  - value: NextSeq 500/550 v2.5

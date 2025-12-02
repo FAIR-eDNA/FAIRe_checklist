@@ -1,0 +1,9 @@
+prefixes:
+  FAIRe: https://fair-edna.org/terms/
+  MIXS: https://w3id.org/mixs/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  dna_extension: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml/
+  DCTERMS: http://purl.org/dc/terms/
+  NMDC: https://w3id.org/nmdc/
+  ECO: http://rs.tdwg.org/eco/terms/
+  linkml: https://w3id.org/linkml/

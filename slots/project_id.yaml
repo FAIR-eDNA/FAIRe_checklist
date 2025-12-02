@@ -6,11 +6,11 @@ slot_uri: FAIRe:235
 range: string
 required: true
 in_subset:
-- Project
+  - Project
 examples:
-- value: noaa-aoml-gomecc4
+  - value: noaa-aoml-gomecc4
 exact_mappings:
-- NMDC:project_id
+  - NMDC:project_id
 source: NMDC:project_id
 comments:
-- 'Informed by: NMDC, NOAA'
+  - 'Informed by: NMDC, NOAA'

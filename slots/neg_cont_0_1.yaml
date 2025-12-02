@@ -6,6 +6,6 @@ description: Were negative controls applied during the project? Yes = 1, No = 0.
 slot_uri: FAIRe:133
 range: string
 in_subset:
-- Project
+  - Project
 examples:
-- value: '1'
+  - value: '1'
