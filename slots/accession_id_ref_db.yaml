@@ -1,21 +1,19 @@
 name: accession_id_ref_db
-description: Reference database (i.e. sequences not generated as part of the current
-  study) of the best matching sequence (accesssion_id)
+title: accession ID reference database
+description: >-
+  Reference database (i.e. sequences not generated as part of the current
+  study) of the best matching sequence (accession_id)
+slot_uri: MYPREFIX:0000001
+required: false
+recommended: true
 range: string
-annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  - description
-  example: NCBI
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000087
-term_type: unspecified
+in_subset:
+  - OtuAsv
+examples:
+  - value: NCBI
+source: MIXS:0000087
+close_mappings:
+  - MIXS:0000087
+comments:
+  - "Modified from MIxS: field_name, description"
+  - "Also informed by DNA-derived data extension"
