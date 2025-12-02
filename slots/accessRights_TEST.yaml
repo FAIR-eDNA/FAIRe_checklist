@@ -1,0 +1,16 @@
+name: accessRights_TEST
+description: Information about who can access the resource or an indication of its security status.
+range: string
+required: false
+examples:
+  - value: no rights reserved
+slot_uri: http://purl.org/dc/terms/accessRights
+exact_mappings:
+  - http://purl.org/dc/terms/accessRights
+source: DwC
+annotations:
+  section: Data management
+  requirement_level: Recommended
+  requirement_level_code: R
+
+

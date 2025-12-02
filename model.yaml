@@ -1,0 +1,31 @@
+id: https://w3id.org/fairie/model
+name: faire_model
+description: Classes for FAIR eDNA checklist sheets, reusing slots from schema.yaml.
+
+# NOTE:
+# - Slots are still defined in individual files under slots/ and merged into schema.yaml.
+# - This file only adds classes (row types) that group those slots per Excel sheet.
+# - For validation, you will typically point tools at this file rather than schema.yaml directly.
+
+imports:
+  - schema.yaml
+
+classes:
+  ProjectMetadataRow:
+    description: One row in the projectMetadata sheet.
+    slots:
+      - project_id_TEST
+      - mod_date_TEST
+      - neg_cont_0_1_TEST
+      - assay_type_TEST
+      - accessRights_TEST
+
+  SampleMetadataRow:
+    description: One row in the sampleMetadata sheet.
+    slots:
+      - samp_name_TEST
+      - sample_derived_from_TEST
+      - env_broad_scale_TEST
+      - sample_depth_TEST
+
+

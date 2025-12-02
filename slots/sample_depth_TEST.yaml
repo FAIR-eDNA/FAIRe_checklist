@@ -1,0 +1,16 @@
+name: sample_depth_TEST
+description: Depth at which the environmental sample was collected, recorded as a numeric value followed by a space and the unit.
+range: string
+required: false
+examples:
+  - value: "15.0 m"
+structured_pattern:
+  syntax: "^[0-9]+(\\.[0-9]+)?\\s*m$"
+  partial_match: false
+  interpolated: false
+annotations:
+  section: Sample collection
+  requirement_level: Recommended
+  requirement_level_code: R
+
+

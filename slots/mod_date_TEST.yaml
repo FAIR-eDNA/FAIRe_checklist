@@ -1,0 +1,16 @@
+name: mod_date_TEST
+description: The last date on which the database information was modified, following the ISO 8601 format of yyyy-mm-dd.
+range: date
+required: false
+examples:
+  - value: "2014-09-09"
+slot_uri: https://w3id.org/nmdc/mod_date
+exact_mappings:
+  - https://w3id.org/nmdc/mod_date
+source: NMDC
+annotations:
+  section: Data management
+  requirement_level: Recommended
+  requirement_level_code: R
+
+

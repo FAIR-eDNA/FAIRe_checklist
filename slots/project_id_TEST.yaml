@@ -1,0 +1,17 @@
+name: project_id_TEST
+description: A brief, concise project identifier with no spaces or special characters, ensuring machine readability. This ID will be used in data file names as 'project_id'.
+range: string
+required: true
+pattern: "^[A-Za-z0-9-]+$"  # letters, digits, hyphen; no spaces
+examples:
+  - value: noaa-aoml-gomecc4
+slot_uri: https://w3id.org/nmdc/project_id
+exact_mappings:
+  - https://w3id.org/nmdc/project_id
+source: NMDC | NOAA
+annotations:
+  section: Project
+  requirement_level: Mandatory
+  requirement_level_code: M
+
+

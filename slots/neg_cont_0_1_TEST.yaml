@@ -1,0 +1,14 @@
+name: neg_cont_0_1_TEST
+description: Were negative controls applied during the project? This field should be answered as a boolean (true or false). For further details, record the types of negative controls under the term neg_cont_type in projectMetadata.
+range: boolean
+required: false
+examples:
+  - value: true
+  - value: false
+source: New
+annotations:
+  section: Project
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+
+
