@@ -1,0 +1,5 @@
+name: is_negative_control
+description: Indicates if the sample is a negative control.
+range: boolean
+recommended: true
+

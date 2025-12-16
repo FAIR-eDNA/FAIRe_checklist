@@ -9,7 +9,7 @@ GLOSSARY_FILENAME = "glossary_annotation.yaml"
 
 # Base schema structure
 schema = OrderedDict({
-    "id": "tbd: a value like https://w3id.org/fairie/schema",
+    "id": "https://w3id.org/fairie/schema",
     "name": "faire_checklist",
     "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
     "version": "1.0.3",
@@ -41,6 +41,57 @@ schema["classes"] = {
     }
 }
 
+
+def normalize_slot_def(slot_def: dict) -> None:
+    """
+    BW: Normalize slot definitions so they conform to LinkML expectations:
+    - Convert skos:exactMatch into slot_uri + exact_mappings
+    - Move term_type into annotations to avoid unknown top-level keys
+    """
+    if not isinstance(slot_def, dict):
+        return
+
+    # Handle skos:exactMatch -> slot_uri + exact_mappings
+    if "skos:exactMatch" in slot_def:
+        raw_matches = slot_def.pop("skos:exactMatch") or []
+
+        # Normalise to a list of strings
+        if not isinstance(raw_matches, list):
+            raw_matches = [raw_matches]
+
+        iris = []
+        for m in raw_matches:
+            # Allow pipe-separated IRIs in a single string
+            parts = str(m).split("|")
+            for p in parts:
+                p = p.strip()
+                if p:
+                    iris.append(p)
+
+        if iris:
+            # If no slot_uri is set, use the first IRI
+            if "slot_uri" not in slot_def:
+                slot_def["slot_uri"] = iris[0]
+
+            existing_exact = slot_def.get("exact_mappings", [])
+            if not isinstance(existing_exact, list):
+                existing_exact = [existing_exact]
+
+            for iri in iris:
+                if iri not in existing_exact:
+                    existing_exact.append(iri)
+
+            slot_def["exact_mappings"] = existing_exact
+
+    # Move term_type into annotations
+    if "term_type" in slot_def:
+        term_type = slot_def.pop("term_type")
+        annotations = slot_def.get("annotations") or {}
+        # Don't overwrite an existing annotation if one is already present
+        annotations.setdefault("term_type", term_type)
+        slot_def["annotations"] = annotations
+
+
 # Process all non-glossary YAML files alphabetically
 slot_files = sorted(
     f for f in os.listdir(SLOTS_DIR)
@@ -52,12 +103,17 @@ for file_name in slot_files:
     with open(slot_path, "r") as f:
         slot_content = yaml.safe_load(f)
 
+        if not slot_content:
+            continue
+
         if "name" in slot_content:
             slot_name = slot_content["name"]
+            normalize_slot_def(slot_content)
             schema["slots"][slot_name] = slot_content
             schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
         else:
             for slot_name, slot_def in slot_content.items():
+                normalize_slot_def(slot_def)
                 schema["slots"][slot_name] = slot_def
                 schema["classes"]["MetadataChecklist"]["slots"].append(slot_name)
 

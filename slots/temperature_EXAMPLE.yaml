@@ -1,0 +1,17 @@
+name: temperature
+description: "The temperature of the sample, with units. (e.g., 25.5 Celsius)"
+range: string # Must be string to accept free-form unit
+required: true
+
+# Use pattern to enforce <Number><Space><String of Unit>
+pattern: '^\s*([+\-]?(\d+(\.\d*)?|\.\d+)([Ee][+\-]?\d+)?)\s+([A-Za-z]+)\s*$'
+
+# NEW: structured_pattern provides semantic meaning to the pattern groups
+structured_pattern:
+  syntax: '^\s*(?P<value>[+\-]?(\d+(\.\d*)?|\.\d+)([Ee][+\-]?\d+)?)\s+(?P<unit>[A-Za-z]+)\s*$'
+  description: "Value is numeric, followed by one or more spaces, followed by a unit string."
+  # This is how you document the structure being enforced.
+
+examples: 
+   - value: 15.5 degC
+   - value: 298.15 Kelvin
