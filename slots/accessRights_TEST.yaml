@@ -7,12 +7,13 @@ examples:
 slot_uri: http://purl.org/dc/terms/accessRights
 exact_mappings:
   - http://purl.org/dc/terms/accessRights
-source: DwC
 annotations:
   section: Data management
   requirement_level: Recommended
   data_type:
     - projectMetadata
   requirement_level_code: R
+  source:
+    - DwC
 
 

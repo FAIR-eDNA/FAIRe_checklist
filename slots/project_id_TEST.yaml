@@ -8,10 +8,11 @@ examples:
 slot_uri: https://w3id.org/nmdc/project_id
 exact_mappings:
   - https://w3id.org/nmdc/project_id
-source: NMDC | NOAA
 annotations:
   section: Project
   requirement_level: Mandatory
+  source:
+    - NMDC | NOAA
   data_type:
     - projectMetadata
   requirement_level_code: M

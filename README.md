@@ -31,6 +31,14 @@ Notes:
 - `model.yaml` imports `schema.yaml` and defines the high-level classes, so it is the recommended entry point for diagrams.
 - Do not redirect the output into `schema.yaml`, as that would overwrite the auto-generated schema.
 
+### Linting the LinkML schema
+
+To run basic structural and style checks on the generated schema, use:
+
+```bash
+linkml-lint schema.yaml
+```
+
 ---
 
 ### Latest Version

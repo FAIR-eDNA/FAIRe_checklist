@@ -6,13 +6,14 @@ examples:
   - value: targeted
   - value: metabarcoding
   - value: "other:"
-source: New
 annotations:
   section: Project
   requirement_level: Mandatory
   data_type:
     - projectMetadata
   requirement_level_code: M
+  source:
+    - New
 enum_values:
   targeted:
     meaning: targeted

@@ -5,10 +5,11 @@ multivalued: true
 required: false
 examples:
   - value: S01
-source: INSDC
 annotations:
   section: Sample relations
   requirement_level: Optional
+  source:
+    - INSDC
   data_type:
     - sampleMetadata
   requirement_level_code: O

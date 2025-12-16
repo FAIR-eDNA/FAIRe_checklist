@@ -5,10 +5,11 @@ required: false
 examples:
   - value: true
   - value: false
-source: New
 annotations:
   section: Project
   requirement_level: Highly recommended
+  source:
+    - New
   data_type:
     - projectMetadata
   requirement_level_code: HR
