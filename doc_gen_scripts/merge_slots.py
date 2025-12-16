@@ -29,7 +29,29 @@ glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
 if os.path.exists(glossary_path):
     with open(glossary_path, "r") as g:
         glossary_block = yaml.safe_load(g)
-        schema["annotations"] = glossary_block.get("annotations", {})
+        annotations = glossary_block.get("annotations", {}) or {}
+
+        # Normalise schema-level glossary annotation into a proper Annotation
+        # object so LinkML tools are happy. The source file currently has:
+        # annotations:
+        #   glossary:
+        #     Checklist: "..."
+        #     (Data) term: "..."
+        # LinkML expects:
+        #   glossary:
+        #     tag: glossary
+        #     value: { Checklist: "...", (Data) term: "..." }
+        if isinstance(annotations, dict) and "glossary" in annotations:
+            gl = annotations["glossary"]
+            if isinstance(gl, dict) and not (
+                isinstance(gl.get("tag"), str) and "value" in gl
+            ):
+                annotations["glossary"] = {
+                    "tag": "glossary",
+                    "value": gl,
+                }
+
+        schema["annotations"] = annotations
 
 # Initialize empty containers
 schema["slots"] = OrderedDict()
@@ -89,6 +111,122 @@ def normalize_slot_def(slot_def: dict) -> None:
         annotations = slot_def.get("annotations") or {}
         # Don't overwrite an existing annotation if one is already present
         annotations.setdefault("term_type", term_type)
+        slot_def["annotations"] = annotations
+
+    # Move top-level source into annotations so LinkML doesn't see it
+    if "source" in slot_def:
+        src = slot_def.pop("source")
+        annotations = slot_def.get("annotations") or {}
+        # Don't overwrite an existing annotation if one is already present
+        annotations.setdefault("source", src)
+        slot_def["annotations"] = annotations
+
+    # Convert inline enum_values on a slot into a top-level EnumDefinition.
+    # Example in slot YAML:
+    #   range: assay_type_enum
+    #   enum_values:
+    #     targeted:
+    #       meaning: targeted
+    #     metabarcoding:
+    #       meaning: metabarcoding
+    # NOTE: LinkML treats `meaning` as a URI/CURIE. In this project we are using
+    # plain-text strings (e.g. "gel electrophoresis"), so we move `meaning`
+    # into `description` instead to avoid validation errors while preserving
+    # the human-readable label.
+    # This becomes:
+    #   enums:
+    #     assay_type_enum:
+    #       permissible_values: { ... }
+    if "enum_values" in slot_def:
+        enum_vals = slot_def.pop("enum_values") or {}
+        if isinstance(enum_vals, dict):
+            enum_name = slot_def.get("range") or f"{slot_def.get('name', 'anonymous')}_enum"
+
+            # Ensure enums container exists
+            if "enums" not in schema or schema["enums"] is None:
+                schema["enums"] = OrderedDict()
+
+            # Clean up enum_values: convert `meaning` (plain text in this
+            # project) into `description` so LinkML doesn't enforce URI/CURIE.
+            cleaned_enum_vals = {}
+            for pv_key, pv_def in enum_vals.items():
+                if isinstance(pv_def, dict) and "meaning" in pv_def:
+                    new_def = dict(pv_def)  # shallow copy
+                    text = new_def.pop("meaning", None)
+                    if text is not None:
+                        new_def.setdefault("description", text)
+                    cleaned_enum_vals[pv_key] = new_def
+                else:
+                    cleaned_enum_vals[pv_key] = pv_def
+
+            existing = schema["enums"].get(enum_name)
+            if existing is None:
+                schema["enums"][enum_name] = {
+                    "name": enum_name,
+                    "permissible_values": cleaned_enum_vals,
+                }
+            else:
+                # Merge/overwrite permissible_values conservatively
+                pv = existing.setdefault("permissible_values", {})
+                for k, v in cleaned_enum_vals.items():
+                    if k not in pv:
+                        pv[k] = v
+
+    # Drop enum_range from merged slots to avoid EnumExpression issues in
+    # linkml_runtime. The authoritative enum_range information remains in the
+    # individual slot YAML files under slots/.
+    if "enum_range" in slot_def:
+        slot_def.pop("enum_range", None)
+
+    # Normalise certain annotation keys into proper LinkML Annotation objects.
+    # LinkML Annotation objects.
+    # Original YAML has, e.g.:
+    # annotations:
+    #   data_type:
+    #   - projectMetadata
+    #   source:
+    #   - DwC
+    #   sample_type_specificity:
+    #   - Air
+    #   - HostAssociated
+    # LinkML expects annotations to be either:
+    #   data_type: some_value
+    # or
+    #   data_type:
+    #     tag: data_type
+    #     value: some_value
+    annotations = slot_def.get("annotations")
+    if isinstance(annotations, dict):
+        # Keys we know are "ours" and may be lists; convert them into
+        # Annotation objects so LinkML tools are happy.
+        candidate_keys = (
+            "data_type",
+            "source",
+            "modifications_made",
+            "sample_type_specificity",
+        )
+
+        for key in candidate_keys:
+            if key not in annotations:
+                continue
+
+            raw_val = annotations[key]
+
+            # If it's already an Annotation-like dict, leave it alone
+            if isinstance(raw_val, dict) and {"tag", "value"} <= set(raw_val.keys()):
+                continue
+
+            # Collapse lists into a comma-separated string to keep things simple
+            if isinstance(raw_val, list):
+                value = ", ".join(str(v) for v in raw_val)
+            else:
+                value = str(raw_val)
+
+            annotations[key] = {
+                "tag": key,
+                "value": value,
+            }
+
         slot_def["annotations"] = annotations
 
 

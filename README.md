@@ -9,6 +9,28 @@ _In an effort to be transparent and controlled, we have created a programmatic w
 - The file `schema.yaml` is regenerated on each commit from the yaml files in `/slots`. 
 - Two `.xlsx` files are generated from `schema.yaml`, beginning with v1.0.3 of the checklist.
 
+### Regenerating `schema.yaml`
+
+If you change any files under `slots/` or update the merge logic, rebuild `schema.yaml` with:
+
+```bash
+python doc_gen_scripts/merge_slots.py
+```
+
+This script also normalizes SKOS mappings (for example, values under `skos:exactMatch`) into standard LinkML keys such as `slot_uri` and `exact_mappings`, so that downstream tools (including diagram generators) do not see unknown top-level keys.
+
+### Generating the Mermaid ERD diagram
+
+With the LinkML CLI installed (`pip install linkml`), you can generate a Mermaid ER diagram from the LinkML model with:
+
+```bash
+gen-erdiagram --format mermaid model.yaml > schema.mermaid
+```
+
+Notes:
+- `model.yaml` imports `schema.yaml` and defines the high-level classes, so it is the recommended entry point for diagrams.
+- Do not redirect the output into `schema.yaml`, as that would overwrite the auto-generated schema.
+
 ---
 
 ### Latest Version

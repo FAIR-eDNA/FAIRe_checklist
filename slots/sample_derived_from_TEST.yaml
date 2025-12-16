@@ -9,6 +9,8 @@ source: INSDC
 annotations:
   section: Sample relations
   requirement_level: Optional
+  data_type:
+    - sampleMetadata
   requirement_level_code: O
 
 

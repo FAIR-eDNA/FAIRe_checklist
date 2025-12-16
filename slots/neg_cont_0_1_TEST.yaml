@@ -9,6 +9,8 @@ source: New
 annotations:
   section: Project
   requirement_level: Highly recommended
+  data_type:
+    - projectMetadata
   requirement_level_code: HR
 
 

@@ -11,6 +11,8 @@ structured_pattern:
 annotations:
   section: Sample collection
   requirement_level: Recommended
+  data_type:
+    - sampleMetadata
   requirement_level_code: R
 
 

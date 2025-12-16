@@ -8,7 +8,7 @@ description: Classes for FAIR eDNA checklist sheets, reusing slots from schema.y
 # - For validation, you will typically point tools at this file rather than schema.yaml directly.
 
 imports:
-  - schema.yaml
+  - schema
 
 classes:
   ProjectMetadata:

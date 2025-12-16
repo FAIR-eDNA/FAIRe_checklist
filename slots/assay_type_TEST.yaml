@@ -10,6 +10,8 @@ source: New
 annotations:
   section: Project
   requirement_level: Mandatory
+  data_type:
+    - projectMetadata
   requirement_level_code: M
 enum_values:
   targeted:

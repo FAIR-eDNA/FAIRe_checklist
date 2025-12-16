@@ -11,6 +11,8 @@ source: MIxS | DNA-derived data extension
 annotations:
   section: Sample information
   requirement_level: Mandatory
+  data_type:
+    - sampleMetadata
   requirement_level_code: M
 
 
