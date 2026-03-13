@@ -5,21 +5,40 @@ description: 'Duration for which the sample was stored prior to DNA extraction, 
   before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
   storage duration before the process here, and the storage duration of the processed
   sample under the term prepped_samp_store_temp.'
+in_subset:
+- Sample storage
+slot_uri: https://w3id.org/mixs/0000116
 range: string
+structured_pattern:
+  syntax: PnYnMnWnDTnHnMnS
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: P1Y6M
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000116
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample storage
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: P1Y6M
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source:
-  - MIxS
-  fixed_format: PnYnMnWnDTnHnMnS
-skos:exactMatch:
-- https://w3id.org/mixs/0000116
-term_type: fixed format
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: fixed format
+# fixed_format: PnYnMnWnDTnHnMnS
+# __LEGACY_LINKML_FIELDS_END__

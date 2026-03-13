@@ -1,18 +1,39 @@
 name: nucl_acid_ext_kit
 description: The name of the extraction kit used to recover the nucleic acid fraction
   of an input material
+in_subset:
+- Nucleic acid extraction
+slot_uri: https://w3id.org/mixs/0001223
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Qiagen PowerSoil Kit
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0001223
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: Qiagen PowerSoil Kit
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0001223
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/mixs/0001223
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

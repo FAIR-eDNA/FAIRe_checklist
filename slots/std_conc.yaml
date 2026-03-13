@@ -1,14 +1,34 @@
 name: std_conc
 description: Input quantity of qPCR standard DNA
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: '2500.0'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Mandatory
-  requirement_level_condition: if samp_category = PCR standard
-  example: '2500.0'
   data_type:
   - stdData
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+  requirement_level_condition: if samp_category = PCR standard
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

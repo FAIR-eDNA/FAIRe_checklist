@@ -1,13 +1,33 @@
 name: thermocycler
 description: The manufacturer and model of a thermocycler used
+in_subset:
+- PCR
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: Thermo Fisher Scientific, QuantStudio 6
+  description: null
+source:
+- MIQE
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Optional
-  example: Thermo Fisher Scientific, QuantStudio 6
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - MIQE
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

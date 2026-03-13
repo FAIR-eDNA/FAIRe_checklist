@@ -1,15 +1,32 @@
 name: error_rate_type
 description: The type/unit of error rate for the error rate threshold
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: error_rate_type_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Phred score
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: Phred score
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
 enum_values:
   Phred score:
     meaning: Phred score
@@ -17,4 +34,3 @@ enum_values:
     meaning: expected error rate
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

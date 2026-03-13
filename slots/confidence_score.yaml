@@ -2,15 +2,35 @@ name: confidence_score
 description: Confidence score for the taxonomic assignment, such as from bootstrapping.
   If multiple species were assigned to one ASV/OTU, a range can be entered separated
   by  "-" (e.g., 0.996-0.998)
+in_subset:
+- OTU/ASV
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '0.997'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  example: '0.997'
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

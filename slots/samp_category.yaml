@@ -2,16 +2,33 @@ name: samp_category
 description: A type/category of a sample. 'Sample" includes biological and technical
   replicates. If negative or positive control was selected, provide further information
   under the terms fill neg_cont_type and pos_cont_type.
+in_subset:
+- Sample information
+slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_category_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: sample
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample information
-  requirement_level: Mandatory
-  example: sample
   data_type:
   - sampleMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
 enum_values:
   sample:
     meaning: sample
@@ -23,4 +40,3 @@ enum_values:
     meaning: PCR standard
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

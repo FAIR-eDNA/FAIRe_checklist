@@ -1,17 +1,38 @@
 name: amplificationReactionVolume
-description: "The total PCR reaction volume. Unit = \xB5L"
+description: The total PCR reaction volume. Unit = µL
+in_subset:
+- PCR
+slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: float
+unit: µL
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '22.0'
+  description: null
+source:
+- DNA-derived data extension
+- MIQE
+mappings:
+  exact_mappings:
+  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Recommended
-  example: '22.0'
-  unit: "\xB5L"
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

@@ -1,18 +1,38 @@
 name: probe_conc
-description: "The stock concentration of the probe if applicable. This refers specifically\
-  \ to the concentration of the probe stock solution, not the final concentration\
-  \ in the PCR reaction. For example, using 1 \xB5L of a 5 \xB5M (stock concentration)\
-  \ probe in a 25 \xB5L reaction results in a final concentration of 0.2 \xB5M. Hence\
-  \ the entry for this term would be 5. Unit = \xB5M"
+description: The stock concentration of the probe if applicable. This refers specifically
+  to the concentration of the probe stock solution, not the final concentration in
+  the PCR reaction. For example, using 1 µL of a 5 µM (stock concentration) probe
+  in a 25 µL reaction results in a final concentration of 0.2 µM. Hence the entry
+  for this term would be 5. Unit = µM
+in_subset:
+- PCR
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+unit: nM
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '100.0'
+  description: null
+source:
+- MIQE
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  example: '100.0'
-  unit: nM
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - MIQE
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

@@ -1,14 +1,34 @@
 name: taxonID_db
 description: The taxonomy database corresponding to taxonID.
+in_subset:
+- OTU/ASV
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: NCBI
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: OTU/ASV
-  requirement_level: Highly recommended
-  example: NCBI
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

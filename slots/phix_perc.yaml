@@ -1,14 +1,34 @@
 name: phix_perc
 description: '% of PhiX added into a library, if applicable. Unit = %'
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+unit: '%'
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '15.0'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: '15.0'
-  unit: '%'
   data_type:
   - experimentRunMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

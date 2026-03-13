@@ -1,18 +1,35 @@
 name: pump_flow_rate_unit
 description: Unit for pump_flow_rate
+in_subset:
+- Sample preparation
+slot_uri: __TODO_ADD_SLOT_URI__
 range: pump_flow_rate_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: m3/s
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: m3/s
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - Water
   - Air
-  source:
-  - New
 enum_values:
   m3/s:
     meaning: m3/s
@@ -28,4 +45,3 @@ enum_values:
     meaning: L/h
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

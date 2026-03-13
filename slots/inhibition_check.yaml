@@ -2,17 +2,37 @@ name: inhibition_check
 description: Description of method applied to detect inhibition and any adjustments
   made to improve PCR performance, such as sample dilution or the use of inhibitor-tolerant
   reagents.
+in_subset:
+- PCR
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-annotations:
-  section: PCR
-  requirement_level: Optional
-  example: The extracted DNA was tested using a serial dilution approach (undiluted,
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: The extracted DNA was tested using a serial dilution approach (undiluted,
     1:10, 1:100). qPCR was performed on each dilution to evaluate amplification efficiency
     and inhibition. The dillution with optimal performance with reduced inhibition
     was selected for subsequent analysis in the workflow.
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

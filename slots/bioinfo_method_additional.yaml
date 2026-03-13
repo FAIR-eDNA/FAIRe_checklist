@@ -1,16 +1,36 @@
 name: bioinfo_method_additional
 description: Additional information on bioinformatics, that has not been shared in
   the given record.
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Optional
-  example: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
     was detected in multiple samples. Data was curated using r-package LULU, minimum_mismatch
     cutoff 90%
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

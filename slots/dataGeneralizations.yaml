@@ -3,19 +3,40 @@ description: Actions taken to make the shared data (i.e. location, date) less sp
   or complete than in its original form. Suggests that alternative data of higher
   quality may be available on request. Note this is not related to genetic generalisation
   within bioinformatic workflows (i.e., OTU clustering).
+in_subset:
+- Data management
+slot_uri: http://rs.tdwg.org/dwc/terms/dataGeneralizations
 range: string
-annotations:
-  section: Data management
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: Coordinates generalized from original GPS coordinates to the nearest half
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: Coordinates generalized from original GPS coordinates to the nearest half
     degree grid cell.
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/dataGeneralizations
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/dataGeneralizations
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/dataGeneralizations
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

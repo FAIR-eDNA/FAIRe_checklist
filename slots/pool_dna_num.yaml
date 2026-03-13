@@ -1,19 +1,38 @@
 name: pool_dna_num
 description: The number of extracts that were pooled in to one sample before PCR
-range: string
+in_subset:
+- Nucleic acid extraction
+slot_uri: https://w3id.org/mixs/0000325
+range: integer
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '2'
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000325
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
+  data_type:
+  - sampleMetadata
   requirement_level: Recommended
+  requirement_level_code: R
   modifications_made:
   - description
   - field_type
   - field_name
-  example: '2'
-  data_type:
-  - sampleMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000325
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: integer
+# __LEGACY_LINKML_FIELDS_END__

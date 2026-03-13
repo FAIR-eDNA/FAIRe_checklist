@@ -1,16 +1,36 @@
 name: tax_class_collapse
 description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
   ancestor
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Taxonomic levels were dropped to the lowest common ancestor (LCA) with the
+    similarity thresholds of 99%, and also based on % identify thresholds (>98% species,
+    95-98% genus, 90-95% family).
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: Taxonomic levels were dropped to the lowest common ancestor (LCA) with
-    the similarity thresholds of 99%, and also based on % identify thresholds (>98%
-    species, 95-98% genus, 90-95% family).
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

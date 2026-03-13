@@ -1,20 +1,36 @@
 name: verbatimCoordinateSystem
 description: The coordinate format of the verbatimLatitude and verbatimLongitude
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 range: verbatimCoordinateSystem_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: degrees minutes seconds
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
+  data_type:
+  - sampleMetadata
   requirement_level: Optional
+  requirement_level_code: O
   modifications_made:
   - description
   - field_type
-  example: degrees minutes seconds
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 enum_values:
   decimal degrees:
     meaning: decimal degrees
@@ -24,4 +40,3 @@ enum_values:
     meaning: UTM
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

@@ -3,19 +3,42 @@ description: List of reference database(s) (i.e. sequences not generated as part
   the current study) along with version number, that were used to assign taxonomy
   to OTUs or ASVs. If custom database was used, enter 'custom' here, and provide the
   information of the database under the term otu_db_custom
+in_subset:
+- Bioinformatics
+slot_uri: https://w3id.org/mixs/0000087
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: NCBI GenBank Release 260.0
+  description: null
+- value: custom
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000087
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: NCBI GenBank Release 260.0 | custom
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000087
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/mixs/0000087
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

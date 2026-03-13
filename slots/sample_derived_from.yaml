@@ -4,15 +4,35 @@ description: This term refers to the samp_name of the original (or parent) sampl
   sample) was collected at a sampling site and later subsampled into three child samples
   with samp_names "S01_1", "S01_2", "S01_3", then "S01" is the value for sample_derived_from
   in each of the child samples. This includes the case of pcr technical replicates.
+in_subset:
+- Sample relations
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: (a list of) samp_name
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: S01
+  description: null
+source:
+- INSDC
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample relations
-  requirement_level: Optional
-  example: S01
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - INSDC
-  fixed_format: (a list of) samp_name
-term_type: fixed format
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: fixed format
+# fixed_format: (a list of) samp_name
+# __LEGACY_LINKML_FIELDS_END__

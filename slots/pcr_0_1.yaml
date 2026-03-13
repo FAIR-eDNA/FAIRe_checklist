@@ -1,17 +1,35 @@
 name: pcr_0_1
 description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches including
   shotgun metagenomics, Nanopore) = 0
-range: string
+in_subset:
+- PCR
+slot_uri: __TODO_ADD_SLOT_URI__
+range: pcr_0_1_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: '1'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Mandatory
-  example: '1'
   data_type:
   - projectMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
-term_type: Boolean
-enum_range:
-- value: '1'
-- value: '0'
+enum_values:
+  '0':
+    meaning: '0'
+  '1':
+    meaning: '1'

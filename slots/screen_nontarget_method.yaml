@@ -1,16 +1,36 @@
 name: screen_nontarget_method
 description: How were non-target species screened and applied?
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  requirement_level_condition: if screen_nontarget_0_1 is 1
-  example: Non-targeted species (i.e. domestic animals, humans and non-marine species)
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Non-targeted species (i.e. domestic animals, humans and non-marine species)
     were removed from the curated OTU table and downstream data analyses. OTUs that
     were assigned to species in WoRMS were kept in the curated OTU table.
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  requirement_level_condition: if screen_nontarget_0_1 is 1
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

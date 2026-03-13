@@ -1,21 +1,42 @@
 name: otu_clust_cutoff
 description: The percentage similarity threshold used for OTU/ASV clustering. For
   ASV clustering, the cutoff is typically 100% similarity. Unit = %
+in_subset:
+- Bioinformatics
+slot_uri: https://w3id.org/mixs/0000085
 range: float
+unit: '%'
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '97.0'
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000085
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
+  data_type:
+  - projectMetadata
   requirement_level: Recommended
+  requirement_level_code: R
   modifications_made:
   - field_name
   - description
-  example: '97.0'
-  unit: '%'
-  data_type:
-  - projectMetadata
-  requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000085
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/mixs/0000085
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

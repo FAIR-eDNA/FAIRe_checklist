@@ -3,20 +3,38 @@ description: Volume or mass of sample or subsamples that was processed for DNA e
   For example, if 1L of water was collected and filtered, and half of the filter paper
   was used for DNA extraction, the entries of samp_size and samp_vol_we_dna_ext should
   be 1L and 500mL respectively. Specify the unit under the term samp_vol_ext_unit.
+in_subset:
+- Nucleic acid extraction
+slot_uri: https://w3id.org/mixs/0000111
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '1500.0'
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000111
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: '1500.0'
-  unit: select from samp_vol_ext_unit
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000111
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

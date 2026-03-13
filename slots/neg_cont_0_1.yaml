@@ -2,17 +2,35 @@ name: neg_cont_0_1
 description: Were negative controls applied during the project? Yes = 1, No = 0. For
   further details, record the types of negative controls under the term neg_cont_type
   in sampleMetadata
-range: string
+in_subset:
+- Project
+slot_uri: __TODO_ADD_SLOT_URI__
+range: neg_cont_0_1_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '1'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Project
-  requirement_level: Highly recommended
-  example: '1'
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - New
-term_type: Boolean
-enum_range:
-- value: '1'
-- value: '0'
+enum_values:
+  '0':
+    meaning: '0'
+  '1':
+    meaning: '1'

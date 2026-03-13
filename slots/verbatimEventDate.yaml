@@ -1,17 +1,36 @@
 name: verbatimEventDate
 description: Sample collection date before formatting
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/dwc/terms/verbatimEventDate
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: 23-January-2008
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/verbatimEventDate
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: 23-January-2008
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimEventDate
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

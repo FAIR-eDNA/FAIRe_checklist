@@ -3,15 +3,37 @@ description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read a
   noise (e.g., (relative) read counts) detected in blanks. Answer either numeric value
   with the unit specified under the terms min_reads_cutoff_unit, "noise detected in
   blanks", or "other: FREE TEXT DESCRIPTION".'
-range: string
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
+range: min_reads_cutoff_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '5.0'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  example: '5.0'
-  unit: select from min_reeds_cutoff_unit
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+enum_values:
+  numeric value:
+    meaning: numeric value
+  noise detected in blanks:
+    meaning: noise detected in blanks
+  'other:':
+    meaning: 'other:'

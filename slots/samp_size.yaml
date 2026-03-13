@@ -3,22 +3,40 @@ description: 'Amount or size of original sample (volume, mass or area) that was 
   from the environment. Specify the unit under the term samp_size_unit. Note: the
   amount or size of (sub)sample processed for DNA extraction should be entered under
   the term samp_vol_we_dna_ext.'
+in_subset:
+- Sample collection
+slot_uri: https://w3id.org/mixs/0000001
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '5.0'
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000001
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: '5.0'
-  unit: Select from sampl_size_unit
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000001
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

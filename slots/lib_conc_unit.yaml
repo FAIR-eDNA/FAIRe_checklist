@@ -1,22 +1,38 @@
 name: lib_conc_unit
 description: Unit for lib_conc
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: lib_conc_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: pM
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: pM
   data_type:
   - experimentRunMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
 enum_values:
-  "ng/\xB5L":
-    meaning: "ng/\xB5L"
+  ng/µL:
+    meaning: ng/µL
   nM:
     meaning: nM
   pM:
     meaning: pM
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

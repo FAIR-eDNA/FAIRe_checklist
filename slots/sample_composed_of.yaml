@@ -4,15 +4,37 @@ description: This term contains a list of samp_name values that represent the or
   "S01" and "S02" were pooled into a single sample "S03" at any stage (e.g., before
   or after DNA extraction), then the value for sample_composed_of in "S03" would be
   "S01 | S02".
+in_subset:
+- Sample relations
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: (a list of) samp_name
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: S01
+  description: null
+- value: S02
+  description: null
+source:
+- INSDC
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample relations
-  requirement_level: Optional
-  example: S01 | S02
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - INSDC
-  fixed_format: (a list of) samp_name
-term_type: fixed format
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: fixed format
+# fixed_format: (a list of) samp_name
+# __LEGACY_LINKML_FIELDS_END__

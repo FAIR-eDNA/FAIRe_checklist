@@ -1,14 +1,34 @@
 name: lib_id
 description: An identifier of a library (an amplicon of a sample with unique MIDs)
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: S01_MiSeq_run20230922
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = metabarcoding
-  example: S01_MiSeq_run20230922
   data_type:
   - experimentRunMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+  requirement_level_condition: If assay_type = metabarcoding
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

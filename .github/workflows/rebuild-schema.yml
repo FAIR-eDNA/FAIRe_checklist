@@ -24,7 +24,13 @@ jobs:
           python-version: '3.x'
 
       - name: Install Python dependencies
-        run: pip install openpyxl pyyaml pandas
+        run: pip install openpyxl pyyaml pandas ruamel.yaml
+
+      - name: Build top-level enums from checklist Excel
+        run: python doc_gen_scripts/build_enums_from_checklist.py
+
+      - name: Build top-level classes from checklist Excel
+        run: python doc_gen_scripts/build_classes_from_checklist.py
 
       - name: Merge slots into schema.yaml
         run: python doc_gen_scripts/merge_slots.py
@@ -40,6 +46,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add schema.yaml *.xlsx
+          git add slots/*.yaml schema.yaml *.xlsx
           git commit -m 'Auto-regenerate documentation' -m 'generate schema.yaml from slots' -m 'generate excel files from schema.yaml' || echo "No changes to commit"
           git push

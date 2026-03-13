@@ -2,15 +2,35 @@ name: estimatedNumberOfCopies_error
 description: The measure of variability (e.g., standard error) associated with the
   estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents
   an average calculated from multiple technical replicates per sample.
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '0.14'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: '0.14'
   data_type:
   - ampData
   - eLowQuantData
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

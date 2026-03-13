@@ -3,16 +3,33 @@ description: 'High-level category of taxonomic assignment approach. Examples usi
   sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH. Examples using sequence composition:
   naive Bayes classifier, CLARK, Kraken. Examples using phylogeny: SEPP, EPA-ng, pplacer.
   Examples using probabilistic: PROTAX, TIPP.'
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: tax_assign_cat_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: sequence similarity
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Highly recommended
-  example: sequence similarity
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - New
 enum_values:
   sequence similarity:
     meaning: sequence similarity
@@ -24,4 +41,3 @@ enum_values:
     meaning: probabilistic
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

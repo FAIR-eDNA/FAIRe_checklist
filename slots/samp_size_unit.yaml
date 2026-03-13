@@ -1,17 +1,34 @@
 name: samp_size_unit
 description: Unit for samp_size
+in_subset:
+- Sample collection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_size_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: L
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Highly recommended
-  example: L
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source:
-  - New
 enum_values:
   mL:
     meaning: mL
@@ -33,4 +50,3 @@ enum_values:
     meaning: m3
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

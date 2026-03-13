@@ -1,23 +1,42 @@
 name: precip_chem_prep
 description: Chemicals used in precipitation at the sample preparation step prior
   to DNA extraction, if precipitation was performed
+in_subset:
+- Sample preparation
+slot_uri: __TODO_ADD_SLOT_URI__
 range: precip_chem_prep_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: ethanol
+  description: null
+- value: sodium chloride
+  description: null
+source:
+- Thalinger et al., 2021
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_name
-  - description
-  example: ethanol | sodium chloride
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - Water
   - Soil
   - Sediment
-  source:
-  - Thalinger et al., 2021
+  modifications_made:
+  - field_name
+  - description
 enum_values:
   ethanol:
     meaning: ethanol
@@ -27,4 +46,3 @@ enum_values:
     meaning: sodium chloride
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

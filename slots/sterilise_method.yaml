@@ -1,15 +1,35 @@
 name: sterilise_method
 description: the protocols to minimise contaminations in the field and/or laboratory
+in_subset:
+- Project
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Sampling bottles were rinsed with 10% bleached and DI water. Single-use syringes
+    and capsule filters were used for filtration. Single-use gloves were used to collect
+    and filter each sample.
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Project
-  requirement_level: Highly recommended
-  example: Sampling bottles were rinsed with 10% bleached and DI water. Single-use
-    syringes and capsule filters were used for filtration. Single-use gloves were
-    used to collect and filter each sample.
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

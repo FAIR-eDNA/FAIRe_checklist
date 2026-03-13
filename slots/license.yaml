@@ -1,16 +1,37 @@
 name: license
 description: A legal document giving official permission to do something with the
   resource.
+in_subset:
+- Data management
+slot_uri: https://dwc.tdwg.org/terms/#dcterms:license
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: http://creativecommons.org/licenses/by/4.0/legalcode
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - https://dwc.tdwg.org/terms/#dcterms:license
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: http://creativecommons.org/licenses/by/4.0/legalcode
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- https://dwc.tdwg.org/terms/#dcterms:license
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://dwc.tdwg.org/terms/#dcterms:license
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

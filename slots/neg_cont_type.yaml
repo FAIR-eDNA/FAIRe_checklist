@@ -3,22 +3,44 @@ description: 'A negative control type used in an investigation. See Table 2 in K
   et al. 2024 (DOI: 10.3897/mbmg.8.128689) for the description of each control type,
   how and why it''s created. For example, process negative is a sample added during
   processing that lacks target DNA, such as blank filter papers.'
+in_subset:
+- Sample information
+slot_uri: https://w3id.org/mixs/0001321
 range: neg_cont_type_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: field negative
+  description: null
+- value: process negative
+  description: null
+- value: extraction negative
+  description: null
+- value: PCR negative
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0001321
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample information
+  data_type:
+  - sampleMetadata
   requirement_level: Mandatory
+  requirement_level_code: M
   requirement_level_condition: If samp_category = negative control
   modifications_made:
   - description
   - field_type
-  example: field negative | process negative | extraction negative | PCR negative
-  data_type:
-  - sampleMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0001321
 enum_values:
   site negative:
     meaning: site negative
@@ -32,4 +54,3 @@ enum_values:
     meaning: PCR negative
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

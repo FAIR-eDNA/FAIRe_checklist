@@ -1,16 +1,36 @@
 name: trim_method
 description: Method for trimming primer and/or adapter sequences, including version
   and parameters
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: cutadapt v4.9
+  description: null
+source:
+- NOAA
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  example: cutadapt v4.9
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - NOAA
-term_type: unspecified
+  modifications_made:
+  - field_name
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

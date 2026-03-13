@@ -3,20 +3,41 @@ description: The length of the amplicon in basepairs EXCLUDING the primers, adap
   and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160). If using
   Excel, format the cell as text to prevent it from being auto-formatted as a date.
   Unit = basepairs
-range: string
+in_subset:
+- PCR
+slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+range: integer
+unit: basepairs
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '83'
+  description: null
+source:
+- DNA-derived data extension
+- MIQE
+mappings:
+  exact_mappings:
+  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  example: '83'
-  unit: basepairs
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

@@ -1,23 +1,41 @@
 name: size_frac_low
-description: "Refers to the mesh/pore size used to pre-filter/pre-sort the sample.\
-  \ Materials larger than the size threshold are excluded from the sample. Unit =\
-  \ \xB5m"
+description: Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
+  Materials larger than the size threshold are excluded from the sample. Unit = µm
+in_subset:
+- Sample preparation
+slot_uri: https://w3id.org/mixs/0000735
 range: float
+unit: µm
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '20.0'
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000735
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_type
-  example: '20.0'
-  unit: "\xB5m"
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - Water
   - Air
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000735
-term_type: unspecified
+  modifications_made:
+  - field_type
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

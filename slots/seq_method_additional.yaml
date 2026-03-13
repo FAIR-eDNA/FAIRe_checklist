@@ -1,14 +1,34 @@
 name: seq_method_additional
 description: Additional information on library preparation and sequencing method,
   that has not been shared in the given record.
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: PhiX was spiked in at 15%
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  example: PhiX was spiked in at 15%
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

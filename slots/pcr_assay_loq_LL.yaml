@@ -1,14 +1,33 @@
 name: pcr_assay_loq_LL
 description: 'Lower 95% confidence limit for LOQ for a given number of technical replicates.
   See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit'
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+unit: same as pcr_assay_loq_unit
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples: []
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  unit: same as pcr_assay_loq_unit
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

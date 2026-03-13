@@ -1,15 +1,34 @@
 name: rightsHolder
 description: A person or organization owning or managing rights over the resource.
+in_subset:
+- Data management
+slot_uri: http://purl.org/dc/terms/rightsHolder
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: The Regents of the University of California
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://purl.org/dc/terms/rightsHolder
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Data management
-  requirement_level: Recommended
-  example: The Regents of the University of California
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://purl.org/dc/terms/rightsHolder
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

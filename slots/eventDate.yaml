@@ -8,20 +8,41 @@ description: 'The date and time of sampling, either as an instance (single point
   Except: 2008-01; 2008 all are ISO8601 compliant. A date and time range can be specified
   using a forward slash (/) to separate the start and end values (e.g., 2008-01-23T19:23-06:00/2008-01-23T19:53-06:00).
   A duration can also be provided using the eventDurationValue term.'
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/dwc/terms/eventDate
 range: string
+structured_pattern:
+  syntax: yyyy-mm-ddThh:mm:ss+-hh:mm
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: 2008-01-23T19:23-06:00
+  description: null
+source:
+- DwC
+- MIxS
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/eventDate
+  - https://w3id.org/mixs/0000011
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Mandatory
-  modifications_made:
-  - description
-  example: 2008-01-23T19:23-06:00
   data_type:
   - sampleMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - DwC
-  - MIxS
-  fixed_format: yyyy-mm-ddThh:mm:ss+-hh:mm
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011
-term_type: fixed format
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011
+# term_type: fixed format
+# __LEGACY_LINKML_FIELDS_END__

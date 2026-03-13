@@ -5,17 +5,37 @@ description: 'Duration for which the prepared sample was stored prior to DNA ext
   duration of the original environmental sample (e.g., water, soil) should be recorded
   under samp_store_dur, while the current term is for the "processed" sample such
   as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.'
+in_subset:
+- Sample preparation
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: PnYnMnWnDTnHnMnS
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: P1Y6M
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  example: P1Y6M
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity:
   - ALL
-  source:
-  - New
-  fixed_format: PnYnMnWnDTnHnMnS
-term_type: fixed format
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: fixed format
+# fixed_format: PnYnMnWnDTnHnMnS
+# __LEGACY_LINKML_FIELDS_END__

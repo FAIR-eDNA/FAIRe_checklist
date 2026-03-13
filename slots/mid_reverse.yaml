@@ -1,16 +1,36 @@
 name: mid_reverse
 description: Reverse multiplex Identifiers (MIDs), that was used to specifically tag
   unique samples in a sequencing run. Sequence should be reported in uppercase letters
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: AACAAGCC
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Optional
-  modifications_made:
-  - Forward and reverse separated
-  example: AACAAGCC
   data_type:
   - experimentRunMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+  modifications_made:
+  - Forward and reverse separated
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

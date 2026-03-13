@@ -1,23 +1,39 @@
 name: filter_material
 description: Material of filter
+in_subset:
+- Sample preparation
+slot_uri: https://w3id.org/nmdc/filter_material
 range: filter_material_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: cellulose ester
+  description: null
+source:
+- NMDC
+mappings:
+  exact_mappings:
+  - https://w3id.org/nmdc/filter_material
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: cellulose ester
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - Water
   - Air
-  source:
-  - NMDC
-skos:exactMatch:
-- https://w3id.org/nmdc/filter_material
+  modifications_made:
+  - description
+  - field_type
 enum_values:
   cellulose:
     meaning: cellulose
@@ -35,4 +51,3 @@ enum_values:
     meaning: polyethersulfone
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

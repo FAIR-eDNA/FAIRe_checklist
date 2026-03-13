@@ -1,14 +1,40 @@
 name: rel_cont_id
 description: (A list of) samp_id of the negative and positive controls related to
   each sample
+in_subset:
+- Sample relations
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: field_blank1
+  description: null
+- value: ext_blank2
+  description: null
+- value: pcr_ntc_plate1
+  description: null
+- value: pcr_posC_plate1
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample relations
-  requirement_level: Recommended
-  example: field_blank1 | ext_blank2 | pcr_ntc_plate1 | pcr_posC_plate1
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

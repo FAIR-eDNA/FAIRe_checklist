@@ -2,16 +2,33 @@ name: checksum_method
 description: The specific algorithm or technique used to compute the checksum (checksum_filename,
   checksum_filename2) for verifying data integrity. Examples include MD5, SHA-256,
   and CRC-32.
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: checksum_method_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: MD5
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: MD5
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
 enum_values:
   MD5:
     meaning: MD5
@@ -21,4 +38,3 @@ enum_values:
     meaning: CRC-32
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

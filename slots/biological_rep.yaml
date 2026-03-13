@@ -1,14 +1,34 @@
 name: biological_rep
 description: The number of biological replicates collected at each sampling point
   and/or for each experimental treatment in the study.
-range: string
+in_subset:
+- Sample collection
+slot_uri: __TODO_ADD_SLOT_URI__
+range: integer
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '5'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Recommended
-  example: '5'
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: integer
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: integer
+# __LEGACY_LINKML_FIELDS_END__

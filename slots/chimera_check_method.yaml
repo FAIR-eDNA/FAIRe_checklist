@@ -1,19 +1,40 @@
 name: chimera_check_method
 description: Description of chimera check approaches (i.e. denovo, reference-based),
   including software and the version used
+in_subset:
+- Bioinformatics
+slot_uri: https://w3id.org/mixs/0000052
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: denovo, uchime v4.1
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000052
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Bioinformatics
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: denovo, uchime v4.1
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000052
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/mixs/0000052
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

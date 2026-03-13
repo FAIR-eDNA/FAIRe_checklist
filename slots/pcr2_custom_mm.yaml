@@ -3,19 +3,39 @@ description: (If bacroding_pcr_appr = "two-step PCR") composition of custom mast
   mix, including the names, volumes and concentrations of additives (i.e., salts,
   buffers, enzyme and other components)  in the second step PCR (if custom master
   mix was used)
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: 'Each PCR reaction comprised: 1 x Taq Gold buffer (Applied Biosystems [ABI],
+    USA), 2 nM MgCl2 (ABI, USA), 0.4 mg/mL BSA (Fisher Biotec, Australia), 0.25 mM
+    dNTPs (Astral Scientific, Australia), 0.4 ?M each of forward and reverse primers
+    (Integrated DNA Technologies, Australia), 0.6 ?L of 1/10,000 SYBR Green dye (Life
+    Technologies, USA), 1 U of Taq polymerase Gold (ABI, USA), 2 ?L of DNA, and made
+    up to 25 ?L with PCR grade water'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Recommended
-  example: "Each PCR reaction comprised: 1 x Taq Gold buffer (Applied Biosystems [ABI],\
-    \ USA), 2 nM MgCl2 (ABI, USA), 0.4 mg/mL BSA (Fisher Biotec, Australia), 0.25\
-    \ mM dNTPs (Astral Scientific, Australia), 0.4 \u03BCM each of forward and reverse\
-    \ primers (Integrated DNA Technologies, Australia), 0.6 \u03BCL of 1/10,000 SYBR\
-    \ Green dye (Life Technologies, USA), 1 U of Taq polymerase Gold (ABI, USA), 2\
-    \ \u03BCL of DNA, and made up to 25 \u03BCL with PCR grade water"
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

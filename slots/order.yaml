@@ -1,18 +1,39 @@
 name: order
 description: The full scientific name of the order
+in_subset:
+- OTU/ASV
+slot_uri: http://rs.tdwg.org/dwc/terms/order
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Perciformes
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/order
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: OTU/ASV
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: Perciformes
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/order
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/order
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

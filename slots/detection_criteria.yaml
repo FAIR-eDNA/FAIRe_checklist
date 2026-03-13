@@ -1,18 +1,38 @@
 name: detection_criteria
 description: Criteria to determine positive detection. For example, a certain number
   of positive amplifications per sample, sanger sequencing of amplicons
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: The minimum number of PCR replicates of 2 with positive amplification
+  description: null
+source:
+- Thalinger et al., 2021
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
+  data_type:
+  - projectMetadata
   requirement_level: Mandatory
+  requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made:
   - field_name
   - description
-  example: The minimum number of PCR replicates of 2 with positive amplification
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

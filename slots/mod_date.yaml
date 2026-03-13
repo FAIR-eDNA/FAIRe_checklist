@@ -4,19 +4,39 @@ description: 'The last date on which the database information was modified, foll
   date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00;
   2008-01-23T19:23:10Z; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601
   compliant.'
+in_subset:
+- Data management
+slot_uri: https://w3id.org/nmdc/mod_date
 range: string
+structured_pattern:
+  syntax: yyyy-mm-dd
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '2014-09-09'
+  description: null
+source:
+- NMDC
+mappings:
+  exact_mappings:
+  - https://w3id.org/nmdc/mod_date
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Data management
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: '2014-09-09'
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - NMDC
-  fixed_format: yyyy-mm-dd
-skos:exactMatch:
-- https://w3id.org/nmdc/mod_date
-term_type: fixed format
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/nmdc/mod_date
+# term_type: fixed format
+# __LEGACY_LINKML_FIELDS_END__

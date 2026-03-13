@@ -29,6 +29,15 @@ else:
 with open("schema.yaml", "r") as f:
     schema = yaml.safe_load(f)
 slots = schema.get("slots", {})
+classes = schema.get("classes", {})
+
+slot_to_classes = {}
+if isinstance(classes, dict):
+    for class_name, class_def in classes.items():
+        if class_name == "MetadataChecklist" or not isinstance(class_def, dict):
+            continue
+        for slot_name in class_def.get("slots", []) or []:
+            slot_to_classes.setdefault(slot_name, []).append(class_name)
 
 # Extract version from schema
 schema_version = schema.get("version", "unknown")
@@ -66,25 +75,59 @@ records = []
 for slot_name, slot in slots.items():
     annotations = slot.get("annotations", {})
     def get_annot(field): return " | ".join(annotations[field]) if isinstance(annotations.get(field), list) else annotations.get(field, "")
+    def get_data_type():
+        from_classes = slot_to_classes.get(slot_name, [])
+        if from_classes:
+            return " | ".join(from_classes)
+        return get_annot("data_type")
+    def get_section():
+        subsets = slot.get("in_subset", [])
+        if isinstance(subsets, list):
+            return " | ".join(subsets)
+        if isinstance(subsets, str):
+            return subsets
+        return get_annot("section")
+    def get_source():
+        src = slot.get("source", "")
+        return " | ".join(src) if isinstance(src, list) else (src or "")
+    def get_examples():
+        ex = slot.get("examples", []) or []
+        if not isinstance(ex, list):
+            return str(ex)
+        vals = []
+        for item in ex:
+            if isinstance(item, dict):
+                v = item.get("value", "")
+                if v:
+                    vals.append(str(v))
+            elif item:
+                vals.append(str(item))
+        return " | ".join(vals)
     enum_values = slot.get("enum_values", {})
     is_enum = isinstance(enum_values, dict) and enum_values
     term_type = "controlled vocabulary" if is_enum else slot.get("range", "")
     enum_opts = " | ".join(enum_values.keys()) if is_enum else ""
+    slot_unit = slot.get("unit", "")
+    fixed_format = (
+        slot.get("structured_pattern", {}).get("syntax", "")
+        if isinstance(slot.get("structured_pattern"), dict)
+        else ""
+    )
     record = {
-        "data_type": get_annot("data_type"),
-        "section": get_annot("section"),
+        "data_type": get_data_type(),
+        "section": get_section(),
         "term_name": slot_name,
         "description": slot.get("description", ""),
         "requirement_level_code": get_annot("requirement_level_code"),
         "requirement_level": get_annot("requirement_level"),
         "requirement_level_condition": get_annot("requirement_level_condition"),
         "term_type": term_type,
-        "unit": get_annot("unit"),
-        "fixed_format": get_annot("fixed_format"),
+        "unit": slot_unit,
+        "fixed_format": fixed_format,
         "controlled_vocabulary_options": enum_opts,
-        "example": get_annot("example"),
+        "example": get_examples(),
         "sample_type_specificity": get_annot("sample_type_specificity"),
-        "source": get_annot("source"),
+        "source": get_source(),
         "URI": slot.get("slot_uri", ""),
         "modifications_made": get_annot("modifications_made"),
     }
@@ -156,4 +199,4 @@ for row_idx, row in enumerate(checklist_df.itertuples(index=False), start=2):
 # === Save final workbook ===
 output_filename = f"FAIRe_checklist_v{schema_version}.xlsx"
 wb.save(output_filename)
-print(f"✅ Excel file written: {output_filename}")
+print(f"Excel file written: {output_filename}")

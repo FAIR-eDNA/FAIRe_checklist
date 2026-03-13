@@ -1,14 +1,33 @@
 name: instrument
 description: Sequencing instrument (manufacturer and model) used. Where possible the
   term should be taken from the OBI list of DNA sequencers (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0002750)
-range: string
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
+range: instrument_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Illumina HiSeq 1500 [OBI_0003386]
+  description: null
+source:
+- INSDC
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Highly recommended
-  example: Illumina HiSeq 1500 [OBI_0003386]
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - INSDC
-term_type: fixed format
+enum_values:
+  INSTRUMENT NAME [OBI_xxxx]:
+    meaning: INSTRUMENT NAME [OBI_xxxx]

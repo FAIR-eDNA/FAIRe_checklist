@@ -3,16 +3,37 @@ description: An identifier for the institution having custody of the object(s) o
   information referred to in the record. This identifier should point to a persistent,
   resolvable identifier, such as a Research Organization Registry (ROR) ID or ISNI
   (International Standard Name Identifier).
+in_subset:
+- Project
+slot_uri: http://rs.tdwg.org/dwc/terms/institutionID
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: https://ror.org/042r9xb17
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/institutionID
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Project
-  requirement_level: Recommended
-  example: https://ror.org/042r9xb17
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/institutionID
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/institutionID
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

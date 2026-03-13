@@ -1,21 +1,37 @@
 name: verbatimSRS
 description: The ellipsoid, geodetic datum, or spatial reference system (SRS) upon
   which coordinates given in verbatimLatitude and verbatimLongitude are based.
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/dwc/terms/verbatimSRS
 range: verbatimSRS_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: NAD84
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/verbatimSRS
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
+  data_type:
+  - sampleMetadata
   requirement_level: Optional
+  requirement_level_code: O
   modifications_made:
   - description
   - field_type
-  example: NAD84
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimSRS
 enum_values:
   WGS84:
     meaning: WGS84
@@ -33,4 +49,3 @@ enum_values:
     meaning: JGD2000
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

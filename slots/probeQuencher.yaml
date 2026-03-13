@@ -1,23 +1,39 @@
 name: probeQuencher
-description: "Type of quencher used. The quencher molecule quenches the fluorescence\
-  \ emitted by the fluorophore when excited by the cycler\u2019s light source As long\
-  \ as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence\
-  \ signals."
+description: Type of quencher used. The quencher molecule quenches the fluorescence
+  emitted by the fluorophore when excited by the cycler?s light source As long as
+  fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
+  signals.
+in_subset:
+- PCR
+slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: probeQuencher_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: MGB
+  description: null
+source:
+- DNA-derived data extension
+- MIQE
+mappings:
+  exact_mappings:
+  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Highly recommended
-  modifications_made:
-  - field_type
-  example: MGB
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  modifications_made:
+  - field_type
 enum_values:
   Zero-End Quencher (ZEN):
     meaning: Zero-End Quencher (ZEN)
@@ -31,4 +47,3 @@ enum_values:
     meaning: Black Hole Quencher (BHQ)
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

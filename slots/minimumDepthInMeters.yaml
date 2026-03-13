@@ -4,16 +4,34 @@ description: The lesser depth of a range of depth (vertical distance below the l
   measured from sediment or soil surface, respectively. If there is only one single
   point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters
   are the same. Unit = meter
+in_subset:
+- Environment
+slot_uri: http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
 range: float
+unit: meter
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '0.2'
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Environment
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: '0.2'
-  unit: meter
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity:
   - Water
@@ -22,8 +40,11 @@ annotations:
   - HostAssociated
   - MicrobialMatBiofilm
   - SymbiontAssociated
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

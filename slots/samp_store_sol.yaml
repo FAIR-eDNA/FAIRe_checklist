@@ -3,23 +3,39 @@ description: 'Solution within which the sample was stored. Note: If a sample was
   before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
   storage solution before the process here, and the storage solution of the processed
   sample under the term prepped_samp_store_sol.'
+in_subset:
+- Sample storage
+slot_uri: https://w3id.org/mixs/0001317
 range: samp_store_sol_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: none
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0001317
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample storage
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: none
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0001317
+  modifications_made:
+  - description
+  - field_type
 enum_values:
   ethanol:
     meaning: ethanol
@@ -33,4 +49,3 @@ enum_values:
     meaning: none
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

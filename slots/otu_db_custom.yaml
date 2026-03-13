@@ -1,15 +1,35 @@
 name: otu_db_custom
 description: Description of custom reference database(s) (i.e. coverage of taxa, region)
   if applied to assign taxonomy to OTUs or ASVs
+in_subset:
+- Bioinformatics
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-annotations:
-  section: Bioinformatics
-  requirement_level: Optional
-  example: Unpublished custom database, containing COI sequences of 209 fish species
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: Unpublished custom database, containing COI sequences of 209 fish species
     collected from Western Australia (study area)
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

@@ -1,18 +1,37 @@
 name: nucl_acid_ext_modify
 description: Description of modification made from a commercial or established protocol
   (nucl_acid_ext), if made.
+in_subset:
+- Nucleic acid extraction
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and eluted
+    in 100 µL of buffer EB, instead of 180 µL, 20 µL and 200 µL respectively
+  description: null
+source:
+- Thalinger et al., 2021
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  modifications_made:
-  - field_name
-  example: "Sample was lysed in 540 \xB5L of ATL buffer and 60 \xB5L of Proteinase\
-    \ K, and eluted in 100 \xB5L of buffer EB, instead of 180 \xB5L, 20 \xB5L and\
-    \ 200 \xB5L respectively"
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - Thalinger et al., 2021
-term_type: unspecified
+  modifications_made:
+  - field_name
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

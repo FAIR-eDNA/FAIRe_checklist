@@ -1,20 +1,39 @@
 name: size_frac
-description: "Filtering pore size used in sample filtration. Unit = \xB5m"
+description: Filtering pore size used in sample filtration. Unit = µm
+in_subset:
+- Sample preparation
+slot_uri: https://w3id.org/mixs/0000017
 range: float
+unit: µm
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '0.22'
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000017
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Highly recommended
-  example: '0.22'
-  unit: "\xB5m"
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - Water
   - Air
-  source:
-  - MIxS
-  - DNA-derived data extension
-skos:exactMatch:
-- https://w3id.org/mixs/0000017
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

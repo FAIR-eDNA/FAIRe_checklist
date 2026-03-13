@@ -3,15 +3,38 @@ description: This term lists the samp_name of biological replicates associated w
   the current sample. For example, if three biological replicates ("S01_1", "S01_2",
   and "S01_3") were collected from the same sampling site, the value for biological_rep_relation
   in each of these replicates would be "S01_1 | S01_2 | S01_3".
+in_subset:
+- Sample relations
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: (a list of) samp_name
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: S01_1
+  description: null
+- value: S01_2
+  description: null
+- value: S01_3
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample relations
-  requirement_level: Optional
-  example: S01_1 | S01_2 | S01_3
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-  fixed_format: (a list of) samp_name
-term_type: fixed format
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: fixed format
+# __LEGACY_LINKML_FIELDS_END__

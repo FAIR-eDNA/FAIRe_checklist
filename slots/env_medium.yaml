@@ -7,23 +7,40 @@ description: 'Environmental material or materials (pipe separated) immediately s
   fresh water [ENVO:00002011], tap water [ENVO:00003096], fecal material [ENVO:00002003],
   digestive tract environment [ENVO:2100002], intestine environment [ENVO:2100002],
   planktonic material [ENVO:01000063]'
-range: string
+in_subset:
+- Sample collection
+slot_uri: https://w3id.org/mixs/0000014
+range: env_medium_enum
+structured_pattern:
+  syntax: termLabel [termID]
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: soil [ENVO:00001998]
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000014
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
+  data_type:
+  - sampleMetadata
   requirement_level: Mandatory
+  requirement_level_code: M
   requirement_level_condition: Mandatory unless samp_category = negative control,
     positive control, or PCR standard
   modifications_made:
   - description
   - field_type
-  example: soil [ENVO:00001998]
-  data_type:
-  - sampleMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-  - DNA-derived data extension
-  fixed_format: termLabel [termID]
-skos:exactMatch:
-- https://w3id.org/mixs/0000014
-term_type: fixed format
+enum_values:
+  http://purl.obolibrary.org/obo/ENVO_00010483:
+    meaning: http://purl.obolibrary.org/obo/ENVO_00010483

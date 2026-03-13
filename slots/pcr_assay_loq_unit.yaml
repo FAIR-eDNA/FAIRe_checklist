@@ -1,25 +1,41 @@
 name: pcr_assay_loq_unit
 description: unit for pcr_assay_loq
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: pcr_assay_loq_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: ng/µL
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Mandatory
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  example: "ng/\xB5L"
   data_type:
   - projectMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
 enum_values:
   copies/reaction:
     meaning: copies/reaction
-  "copies/\xB5L":
-    meaning: "copies/\xB5L"
+  copies/µL:
+    meaning: copies/µL
   ng/reaction:
     meaning: ng/reaction
-  "ng/\xB5L":
-    meaning: "ng/\xB5L"
+  ng/µL:
+    meaning: ng/µL
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

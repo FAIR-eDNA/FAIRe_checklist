@@ -2,18 +2,39 @@ name: baselineValue
 description: The number of cycles when fluorescence signal from the target amplification
   is below background fluorescence not originated from the real target amplification.
   Unit = cycle
-range: string
+in_subset:
+- Targeted assay detection
+slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+range: integer
+unit: cycle
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: '15'
+  description: null
+source:
+- DNA-derived data extension
+- MIQE
+mappings:
+  exact_mappings:
+  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Optional
-  example: '15'
-  unit: cycle
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

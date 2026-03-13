@@ -2,21 +2,40 @@ name: pcr_assay_loq
 description: Assay's limit of quantification (LOQ) (the lowest amount of target taxon
   DNA that can be quantitatively determined with a stated precision under the stated
   experimental conditions).
+in_subset:
+- Targeted assay detection
+slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: '184.0'
+  description: null
+source:
+- DNA-derived data extension
+- MIQE
+mappings:
+  exact_mappings:
+  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
+  data_type:
+  - projectMetadata
   requirement_level: Mandatory
+  requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made:
   - field_name
   - description
-  example: '184.0'
-  data_type:
-  - projectMetadata
-  requirement_level_code: M
-  source:
-  - DNA-derived data extension
-  - MIQE
-skos:exactMatch:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

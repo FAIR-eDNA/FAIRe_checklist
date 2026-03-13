@@ -1,15 +1,35 @@
 name: dna_cleanup_method
 description: A description of DNA clean-up method. Provide the name of a commercial
   kit if used.
+in_subset:
+- Nucleic acid extraction
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Zymo DNA Clean & Concentrator Kits
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  requirement_level_condition: If dna_cleanup_0_1 is 1
-  example: Zymo DNA Clean & Concentrator Kits
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
-term_type: unspecified
+  requirement_level_condition: If dna_cleanup_0_1 is 1
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

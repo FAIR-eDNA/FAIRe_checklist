@@ -1,18 +1,35 @@
 name: host_length_unit
 description: The unit of host_length
+in_subset:
+- Environment
+slot_uri: __TODO_ADD_SLOT_URI__
 range: host_length_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: mm
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Environment
-  requirement_level: Optional
-  example: mm
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - HostAssociated
   - SymbiontAssociated
-  source:
-  - New
 enum_values:
   mm:
     meaning: mm
@@ -22,4 +39,3 @@ enum_values:
     meaning: m
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

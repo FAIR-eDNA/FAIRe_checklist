@@ -4,18 +4,35 @@ description: 'Solution within which the prepared sample was stored prior to DNA 
   should be recorded under samp_store_sol, while the current term is for the "processed"
   sample such as filter paper, homogenised and subsampled sediment, prepared for DNA
   extraction.'
+in_subset:
+- Sample preparation
+slot_uri: __TODO_ADD_SLOT_URI__
 range: prepped_samp_store_sol_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: lysis buffer
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample preparation
-  requirement_level: Recommended
-  example: lysis buffer
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity:
   - ALL
-  source:
-  - New
 enum_values:
   ethanol:
     meaning: ethanol
@@ -29,4 +46,3 @@ enum_values:
     meaning: none
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

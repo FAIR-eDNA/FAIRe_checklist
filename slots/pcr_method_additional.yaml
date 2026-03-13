@@ -3,16 +3,35 @@ description: Additional information on PCR or PCR-free method, that has not been
   in the given record (i.e. multiplexing, hybridisation, CRISPR-Cas). If two-step
   PCR was applied, enter the second PCR protocol under the term pcr2_* in the library
   preparation/sequencing section.
+in_subset:
+- PCR
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI 10.1007/s12686-013-0113-4)
+    was applied to prevent elongation of a closely related species
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Optional
-  example: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI
-    10.1007/s12686-013-0113-4) was applied to prevent elongation of a closely related
-    species
   data_type:
   - projectMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

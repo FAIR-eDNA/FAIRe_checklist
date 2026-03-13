@@ -1,0 +1,1526 @@
+enums:
+  MissingValueEnum:
+    description: A controlled vocabulary for reporting why a value is missing.
+    annotations:
+      source: https://terminology.hl7.org/3.0.0/ValueSet-v3-NullFlavor.html
+    permissible_values:
+      unknown:
+        description: 'TODO: map preferred null-flavor codes.'
+  amp_vis_method_enum:
+    description: Controlled vocabulary for amp_vis_method.
+    permissible_values:
+      CE-PCR:
+        meaning: CE-PCR
+      LAMP:
+        meaning: LAMP
+      dPCR:
+        meaning: dPCR
+      gel electrophoresis:
+        meaning: gel electrophoresis
+      'other:':
+        meaning: 'other:'
+      qPCR:
+        meaning: qPCR
+  assay_type_enum:
+    description: Controlled vocabulary for assay_type.
+    permissible_values:
+      metabarcoding:
+        meaning: metabarcoding
+      'other:':
+        meaning: 'other:'
+      targeted:
+        meaning: targeted
+  automaticBaselineValue_enum:
+    description: Controlled vocabulary for automaticBaselineValue.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  automaticThresholdQuantificationCycle_enum:
+    description: Controlled vocabulary for automaticThresholdQuantificationCycle.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  barcoding_pcr_appr_enum:
+    description: Controlled vocabulary for barcoding_pcr_appr.
+    permissible_values:
+      ligation-based:
+        meaning: ligation-based
+      one-step PCR:
+        meaning: one-step PCR
+      'other:':
+        meaning: 'other:'
+      two-step PCR:
+        meaning: two-step PCR
+  checksum_method_enum:
+    description: Controlled vocabulary for checksum_method.
+    permissible_values:
+      CRC-32:
+        meaning: CRC-32
+      MD5:
+        meaning: MD5
+      SHA-256:
+        meaning: SHA-256
+      'other:':
+        meaning: 'other:'
+  concentration_unit_enum:
+    description: Controlled vocabulary for concentration_unit.
+    permissible_values:
+      copies/µl:
+        meaning: copies/µl
+      copies/Âµl:
+        meaning: copies/Âµl
+      ng/µl:
+        meaning: ng/µl
+      ng/Âµl:
+        meaning: ng/Âµl
+      'other:':
+        meaning: 'other:'
+  detected_notDetected_enum:
+    description: Controlled vocabulary for detected_notDetected.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  diss_inorg_carb_unit_enum:
+    description: Controlled vocabulary for diss_inorg_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  diss_inorg_nitro_unit_enum:
+    description: Controlled vocabulary for diss_inorg_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  diss_org_carb_unit_enum:
+    description: Controlled vocabulary for diss_org_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  diss_org_nitro_unit_enum:
+    description: Controlled vocabulary for diss_org_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  diss_oxygen_unit_enum:
+    description: Controlled vocabulary for diss_oxygen_unit.
+    permissible_values:
+      mL/L:
+        meaning: mL/L
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  dna_cleanup_0_1_enum:
+    description: Controlled vocabulary for dna_cleanup_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  env_broad_scale_enum:
+    description: Controlled vocabulary for env_broad_scale.
+    permissible_values:
+      http://purl.obolibrary.org/obo/ENVO_00000428:
+        meaning: http://purl.obolibrary.org/obo/ENVO_00000428
+  env_local_scale_enum:
+    description: Controlled vocabulary for env_local_scale.
+    permissible_values:
+      http://purl.obolibrary.org/obo/ENVO_01000281:
+        meaning: http://purl.obolibrary.org/obo/ENVO_01000281
+  env_medium_enum:
+    description: Controlled vocabulary for env_medium.
+    permissible_values:
+      http://purl.obolibrary.org/obo/ENVO_00010483:
+        meaning: http://purl.obolibrary.org/obo/ENVO_00010483
+  error_rate_type_enum:
+    description: Controlled vocabulary for error_rate_type.
+    permissible_values:
+      Phred score:
+        meaning: Phred score
+      expected error rate:
+        meaning: expected error rate
+      'other:':
+        meaning: 'other:'
+  estimatedNumberOfCopies_error_type_enum:
+    description: Controlled vocabulary for estimatedNumberOfCopies_error_type.
+    permissible_values:
+      95% confidence interval:
+        meaning: 95% confidence interval
+      'other:':
+        meaning: 'other:'
+      standard deviation:
+        meaning: standard deviation
+      standard error:
+        meaning: standard error
+  estimatedNumberOfCopies_method_enum:
+    description: Controlled vocabulary for estimatedNumberOfCopies_method.
+    permissible_values:
+      Ct/Cq with standard bionomial data:
+        meaning: Ct/Cq with standard bionomial data
+      Ct/Cq with standard curve:
+        meaning: Ct/Cq with standard curve
+      direct output from the PCR instrument used:
+        meaning: direct output from the PCR instrument used
+      gel fluorescence intensities:
+        meaning: gel fluorescence intensities
+      'other:':
+        meaning: 'other:'
+  estimatedNumberOfCopies_unit_enum:
+    description: Controlled vocabulary for estimatedNumberOfCopies_unit.
+    permissible_values:
+      copies/reaction:
+        meaning: copies/reaction
+      copies/µL of DNA extract:
+        meaning: copies/µL of DNA extract
+      copies/µL of reaction:
+        meaning: copies/µL of reaction
+      copies/ÂµL of DNA extract:
+        meaning: copies/ÂµL of DNA extract
+      copies/ÂµL of reaction:
+        meaning: copies/ÂµL of reaction
+      ng/reaction:
+        meaning: ng/reaction
+      ng/µL of DNA extract:
+        meaning: ng/µL of DNA extract
+      ng/µL of reaction:
+        meaning: ng/µL of reaction
+      ng/ÂµL of DNA extract:
+        meaning: ng/ÂµL of DNA extract
+      ng/ÂµL of reaction:
+        meaning: ng/ÂµL of reaction
+      'other:':
+        meaning: 'other:'
+  filter_material_enum:
+    description: Controlled vocabulary for filter_material.
+    permissible_values:
+      cellulose:
+        meaning: cellulose
+      cellulose ester:
+        meaning: cellulose ester
+      glass fiber:
+        meaning: glass fiber
+      nylon:
+        meaning: nylon
+      'other:':
+        meaning: 'other:'
+      polyethersulfone:
+        meaning: polyethersulfone
+      thermoplastic membrane:
+        meaning: thermoplastic membrane
+      track etched polycarbonate:
+        meaning: track etched polycarbonate
+  filter_passive_active_0_1_enum:
+    description: Controlled vocabulary for filter_passive_active_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  habitat_natural_artificial_0_1_enum:
+    description: Controlled vocabulary for habitat_natural_artificial_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  host_height_unit_enum:
+    description: Controlled vocabulary for host_height_unit.
+    permissible_values:
+      cm:
+        meaning: cm
+      m:
+        meaning: m
+      mm:
+        meaning: mm
+      'other:':
+        meaning: 'other:'
+  host_length_unit_enum:
+    description: Controlled vocabulary for host_length_unit.
+    permissible_values:
+      cm:
+        meaning: cm
+      m:
+        meaning: m
+      mm:
+        meaning: mm
+      'other:':
+        meaning: 'other:'
+  host_life_stage_enum:
+    description: Controlled vocabulary for host_life_stage.
+    permissible_values:
+      http://purl.obolibrary.org/obo/UBERON_0000104:
+        meaning: http://purl.obolibrary.org/obo/UBERON_0000104
+  host_tot_mass_unit_enum:
+    description: Controlled vocabulary for host_tot_mass_unit.
+    permissible_values:
+      g:
+        meaning: g
+      kg:
+        meaning: kg
+      mg:
+        meaning: mg
+      'other:':
+        meaning: 'other:'
+  inhibition_check_0_1_enum:
+    description: Controlled vocabulary for inhibition_check_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  instrument_enum:
+    description: Controlled vocabulary for instrument.
+    permissible_values:
+      INSTRUMENT NAME [OBI_xxxx]:
+        meaning: INSTRUMENT NAME [OBI_xxxx]
+  lib_conc_unit_enum:
+    description: Controlled vocabulary for lib_conc_unit.
+    permissible_values:
+      nM:
+        meaning: nM
+      ng/µL:
+        meaning: ng/µL
+      ng/ÂµL:
+        meaning: ng/ÂµL
+      'other:':
+        meaning: 'other:'
+      pM:
+        meaning: pM
+  lib_layout_enum:
+    description: Controlled vocabulary for lib_layout.
+    permissible_values:
+      'other:':
+        meaning: 'other:'
+      paired end:
+        meaning: paired end
+      single end:
+        meaning: single end
+  min_reads_cutoff_enum:
+    description: Controlled vocabulary for min_reads_cutoff.
+    permissible_values:
+      noise detected in blanks:
+        meaning: noise detected in blanks
+      numeric value:
+        meaning: numeric value
+      'other:':
+        meaning: 'other:'
+  min_reads_cutoff_unit_enum:
+    description: Controlled vocabulary for min_reads_cutoff_unit.
+    permissible_values:
+      '%':
+        meaning: '%'
+      'other:':
+        meaning: 'other:'
+      reads:
+        meaning: reads
+  neg_cont_0_1_enum:
+    description: Controlled vocabulary for neg_cont_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  neg_cont_type_enum:
+    description: Controlled vocabulary for neg_cont_type.
+    permissible_values:
+      PCR negative:
+        meaning: PCR negative
+      extraction negative:
+        meaning: extraction negative
+      field negative:
+        meaning: field negative
+      'other:':
+        meaning: 'other:'
+      process negative:
+        meaning: process negative
+      site negative:
+        meaning: site negative
+  nitrate_unit_enum:
+    description: Controlled vocabulary for nitrate_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  nitrite_unit_enum:
+    description: Controlled vocabulary for nitrite_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  nitro_unit_enum:
+    description: Controlled vocabulary for nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  nucl_acid_ext_lysis_enum:
+    description: Controlled vocabulary for nucl_acid_ext_lysis.
+    permissible_values:
+      chemical:
+        meaning: chemical
+      enzymatic:
+        meaning: enzymatic
+      osmotic:
+        meaning: osmotic
+      'other:':
+        meaning: 'other:'
+      physical:
+        meaning: physical
+      thermal:
+        meaning: thermal
+  nucl_acid_ext_sep_enum:
+    description: Controlled vocabulary for nucl_acid_ext_sep.
+    permissible_values:
+      centrifugation:
+        meaning: centrifugation
+      column-based:
+        meaning: column-based
+      gel electrophoresis:
+        meaning: gel electrophoresis
+      magnetic beads:
+        meaning: magnetic beads
+      'other:':
+        meaning: 'other:'
+      phenol chloroform:
+        meaning: phenol chloroform
+      precipitation:
+        meaning: precipitation
+  org_carb_unit_enum:
+    description: Controlled vocabulary for org_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  org_matter_unit_enum:
+    description: Controlled vocabulary for org_matter_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  org_nitro_unit_enum:
+    description: Controlled vocabulary for org_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  part_org_carb_unit_enum:
+    description: Controlled vocabulary for part_org_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  part_org_nitro_unit_enum:
+    description: Controlled vocabulary for part_org_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  pcr_0_1_enum:
+    description: Controlled vocabulary for pcr_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  pcr_assay_lod_unit_enum:
+    description: Controlled vocabulary for pcr_assay_lod_unit.
+    permissible_values:
+      copies/reaction:
+        meaning: copies/reaction
+      copies/µL:
+        meaning: copies/µL
+      copies/ÂµL:
+        meaning: copies/ÂµL
+      ng/reaction:
+        meaning: ng/reaction
+      ng/µL:
+        meaning: ng/µL
+      ng/ÂµL:
+        meaning: ng/ÂµL
+      'other:':
+        meaning: 'other:'
+  pcr_assay_loq_unit_enum:
+    description: Controlled vocabulary for pcr_assay_loq_unit.
+    permissible_values:
+      copies/reaction:
+        meaning: copies/reaction
+      copies/µL:
+        meaning: copies/µL
+      copies/ÂµL:
+        meaning: copies/ÂµL
+      ng/reaction:
+        meaning: ng/reaction
+      ng/µL:
+        meaning: ng/µL
+      ng/ÂµL:
+        meaning: ng/ÂµL
+      'other:':
+        meaning: 'other:'
+  platform_enum:
+    description: Controlled vocabulary for platform.
+    permissible_values:
+      BGISEQ:
+        meaning: BGISEQ
+      CAPILLARY:
+        meaning: CAPILLARY
+      DNBSEQ:
+        meaning: DNBSEQ
+      ELEMENT:
+        meaning: ELEMENT
+      GENAPSYS:
+        meaning: GENAPSYS
+      GENEMIND:
+        meaning: GENEMIND
+      HELICOS:
+        meaning: HELICOS
+      ILLUMINA:
+        meaning: ILLUMINA
+      ION_TORRENT:
+        meaning: ION_TORRENT
+      LS454:
+        meaning: LS454
+      OXFORD_NANOPORE:
+        meaning: OXFORD_NANOPORE
+      PACBIO_SMRT:
+        meaning: PACBIO_SMRT
+      TAPESTRI:
+        meaning: TAPESTRI
+      ULTIMA:
+        meaning: ULTIMA
+      VELA_DIAGNOSTICS:
+        meaning: VELA_DIAGNOSTICS
+      'other:':
+        meaning: 'other:'
+  pos_cont_0_1_enum:
+    description: Controlled vocabulary for pos_cont_0_1.
+    permissible_values:
+      '0':
+        meaning: '0'
+      '1':
+        meaning: '1'
+  precip_chem_prep_enum:
+    description: Controlled vocabulary for precip_chem_prep.
+    permissible_values:
+      ethanol:
+        meaning: ethanol
+      isopropanol:
+        meaning: isopropanol
+      'other:':
+        meaning: 'other:'
+      sodium chloride:
+        meaning: sodium chloride
+  precip_temp_prep_enum:
+    description: Controlled vocabulary for precip_temp_prep.
+    permissible_values:
+      ambient temperature:
+        meaning: ambient temperature
+      numeric value:
+        meaning: numeric value
+      'other:':
+        meaning: 'other:'
+  prepped_samp_store_sol_enum:
+    description: Controlled vocabulary for prepped_samp_store_sol.
+    permissible_values:
+      ethanol:
+        meaning: ethanol
+      longmire:
+        meaning: longmire
+      lysis buffer:
+        meaning: lysis buffer
+      none:
+        meaning: none
+      'other:':
+        meaning: 'other:'
+      sodium acetate:
+        meaning: sodium acetate
+  prepped_samp_store_temp_enum:
+    description: Controlled vocabulary for prepped_samp_store_temp.
+    permissible_values:
+      ambient temperature:
+        meaning: ambient temperature
+      numeric value:
+        meaning: numeric value
+      'other:':
+        meaning: 'other:'
+  probeQuencher_enum:
+    description: Controlled vocabulary for probeQuencher.
+    permissible_values:
+      Black Hole Quencher (BHQ):
+        meaning: Black Hole Quencher (BHQ)
+      Minor Groove Binder (MGB):
+        meaning: Minor Groove Binder (MGB)
+      TAMRA:
+        meaning: TAMRA
+      Zero-End Quencher (ZEN):
+        meaning: Zero-End Quencher (ZEN)
+      lowa Black:
+        meaning: lowa Black
+      'other:':
+        meaning: 'other:'
+  pump_flow_rate_unit_enum:
+    description: Controlled vocabulary for pump_flow_rate_unit.
+    permissible_values:
+      L/h:
+        meaning: L/h
+      L/min:
+        meaning: L/min
+      L/s:
+        meaning: L/s
+      m3/h:
+        meaning: m3/h
+      m3/min:
+        meaning: m3/min
+      m3/s:
+        meaning: m3/s
+      'other:':
+        meaning: 'other:'
+  samp_category_enum:
+    description: Controlled vocabulary for samp_category.
+    permissible_values:
+      PCR standard:
+        meaning: PCR standard
+      negative control:
+        meaning: negative control
+      'other:':
+        meaning: 'other:'
+      positive control:
+        meaning: positive control
+      sample:
+        meaning: sample
+  samp_size_unit_enum:
+    description: Controlled vocabulary for samp_size_unit.
+    permissible_values:
+      L:
+        meaning: L
+      cm2:
+        meaning: cm2
+      cm3:
+        meaning: cm3
+      g:
+        meaning: g
+      kg:
+        meaning: kg
+      m2:
+        meaning: m2
+      m3:
+        meaning: m3
+      mL:
+        meaning: mL
+      mg:
+        meaning: mg
+      'other:':
+        meaning: 'other:'
+  samp_store_sol_enum:
+    description: Controlled vocabulary for samp_store_sol.
+    permissible_values:
+      ethanol:
+        meaning: ethanol
+      longmire:
+        meaning: longmire
+      lysis buffer:
+        meaning: lysis buffer
+      none:
+        meaning: none
+      'other:':
+        meaning: 'other:'
+      sodium acetate:
+        meaning: sodium acetate
+  samp_store_temp_enum:
+    description: Controlled vocabulary for samp_store_temp.
+    permissible_values:
+      ambient temperature:
+        meaning: ambient temperature
+      numeric value:
+        meaning: numeric value
+      'other:':
+        meaning: 'other:'
+  samp_vol_we_dna_ext_unit_enum:
+    description: Controlled vocabulary for samp_vol_we_dna_ext_unit.
+    permissible_values:
+      L:
+        meaning: L
+      cm2:
+        meaning: cm2
+      cm3:
+        meaning: cm3
+      g:
+        meaning: g
+      kg:
+        meaning: kg
+      m2:
+        meaning: m2
+      m3:
+        meaning: m3
+      mL:
+        meaning: mL
+      mg:
+        meaning: mg
+      'other:':
+        meaning: 'other:'
+  std_conc_unit_enum:
+    description: Controlled vocabulary for std_conc_unit.
+    permissible_values:
+      copies/reaction:
+        meaning: copies/reaction
+      copies/µL of DNA extract:
+        meaning: copies/µL of DNA extract
+      copies/µL of reaction:
+        meaning: copies/µL of reaction
+      copies/ÂµL of DNA extract:
+        meaning: copies/ÂµL of DNA extract
+      copies/ÂµL of reaction:
+        meaning: copies/ÂµL of reaction
+      ng/reaction:
+        meaning: ng/reaction
+      ng/µL of DNA extract:
+        meaning: ng/µL of DNA extract
+      ng/µL of reaction:
+        meaning: ng/µL of reaction
+      ng/ÂµL of DNA extract:
+        meaning: ng/ÂµL of DNA extract
+      ng/ÂµL of reaction:
+        meaning: ng/ÂµL of reaction
+      'other:':
+        meaning: 'other:'
+  std_type_enum:
+    description: Controlled vocabulary for std_type.
+    permissible_values:
+      amplicon:
+        meaning: amplicon
+      gDNA:
+        meaning: gDNA
+      'other:':
+        meaning: 'other:'
+      plasmid:
+        meaning: plasmid
+      synthetic double-stranded DNA:
+        meaning: synthetic double-stranded DNA
+  target_gene_enum:
+    description: Controlled vocabulary for target_gene.
+    permissible_values:
+      12S rRNA (SSU mitochondria):
+        meaning: 12S rRNA (SSU mitochondria)
+      16S rRNA (LSU mitochondria):
+        meaning: 16S rRNA (LSU mitochondria)
+      16S rRNA (SSU prokaryote):
+        meaning: 16S rRNA (SSU prokaryote)
+      18S rRNA (SSU eukaryote):
+        meaning: 18S rRNA (SSU eukaryote)
+      23S rRNA (LSU prokaryote):
+        meaning: 23S rRNA (LSU prokaryote)
+      28S rRNA (LSU eukaryote):
+        meaning: 28S rRNA (LSU eukaryote)
+      COI:
+        meaning: COI
+      COII:
+        meaning: COII
+      COIII:
+        meaning: COIII
+      CytB:
+        meaning: CytB
+      D-loop:
+        meaning: D-loop
+      ITS:
+        meaning: ITS
+      ND1:
+        meaning: ND1
+      ND2:
+        meaning: ND2
+      ND3:
+        meaning: ND3
+      ND4:
+        meaning: ND4
+      ND5:
+        meaning: ND5
+      ND6:
+        meaning: ND6
+      amoA:
+        meaning: amoA
+      matK:
+        meaning: matK
+      nifH:
+        meaning: nifH
+      'other:':
+        meaning: 'other:'
+      psbK:
+        meaning: psbK
+      rbcL:
+        meaning: rbcL
+      rpoB:
+        meaning: rpoB
+      rpoC1:
+        meaning: rpoC1
+      rpoC2:
+        meaning: rpoC2
+      trnH:
+        meaning: trnH
+      trnL:
+        meaning: trnL
+  tax_assign_cat_enum:
+    description: Controlled vocabulary for tax_assign_cat.
+    permissible_values:
+      'other:':
+        meaning: 'other:'
+      phylogeny:
+        meaning: phylogeny
+      probabilistic:
+        meaning: probabilistic
+      sequence composition:
+        meaning: sequence composition
+      sequence similarity:
+        meaning: sequence similarity
+  taxonRank_enum:
+    description: Controlled vocabulary for taxonRank.
+    permissible_values:
+      class:
+        meaning: class
+      family:
+        meaning: family
+      genus:
+        meaning: genus
+      kingdom:
+        meaning: kingdom
+      order:
+        meaning: order
+      'other:':
+        meaning: 'other:'
+      phylum:
+        meaning: phylum
+      species:
+        meaning: species
+  tot_carb_unit_enum:
+    description: Controlled vocabulary for tot_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_diss_nitro_unit_enum:
+    description: Controlled vocabulary for tot_diss_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_inorg_nitro_unit_enum:
+    description: Controlled vocabulary for tot_inorg_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_nitro_content_unit_enum:
+    description: Controlled vocabulary for tot_nitro_content_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_nitro_unit_enum:
+    description: Controlled vocabulary for tot_nitro_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_org_carb_unit_enum:
+    description: Controlled vocabulary for tot_org_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  tot_part_carb_unit_enum:
+    description: Controlled vocabulary for tot_part_carb_unit.
+    permissible_values:
+      mg/L:
+        meaning: mg/L
+      mmol/L:
+        meaning: mmol/L
+      mmol/kg:
+        meaning: mmol/kg
+      mmol/m3:
+        meaning: mmol/m3
+      mol/L:
+        meaning: mol/L
+      mol/m3:
+        meaning: mol/m3
+      'other:':
+        meaning: 'other:'
+      parts per million:
+        meaning: parts per million
+      µM:
+        meaning: µM
+      µg/L:
+        meaning: µg/L
+      µmol/L:
+        meaning: µmol/L
+      µmol/kg:
+        meaning: µmol/kg
+      µmol/m3:
+        meaning: µmol/m3
+      ÂµM:
+        meaning: ÂµM
+      Âµg/L:
+        meaning: Âµg/L
+      Âµmol/L:
+        meaning: Âµmol/L
+      Âµmol/kg:
+        meaning: Âµmol/kg
+      Âµmol/m3:
+        meaning: Âµmol/m3
+  verbatimCoordinateSystem_enum:
+    description: Controlled vocabulary for verbatimCoordinateSystem.
+    permissible_values:
+      UTM:
+        meaning: UTM
+      decimal degrees:
+        meaning: decimal degrees
+      degrees minutes seconds:
+        meaning: degrees minutes seconds
+      'other:':
+        meaning: 'other:'
+  verbatimSRS_enum:
+    description: Controlled vocabulary for verbatimSRS.
+    permissible_values:
+      ETRS89:
+        meaning: ETRS89
+      GDA2020:
+        meaning: GDA2020
+      GDA94:
+        meaning: GDA94
+      JGD2000:
+        meaning: JGD2000
+      NAD27:
+        meaning: NAD27
+      NAD84:
+        meaning: NAD84
+      WGS84:
+        meaning: WGS84
+      'other:':
+        meaning: 'other:'

@@ -1,14 +1,34 @@
 name: checkls_ver
 description: The version number of the FAIR eDNA (FAIRe) metadata checklist used to
   format the data
+in_subset:
+- Data management
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: '1.2'
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Data management
-  requirement_level: Mandatory
-  example: '1.2'
   data_type:
   - projectMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
-term_type: numeric
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: numeric
+# __LEGACY_LINKML_FIELDS_END__

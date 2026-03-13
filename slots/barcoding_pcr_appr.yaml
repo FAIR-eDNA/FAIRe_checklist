@@ -1,15 +1,32 @@
 name: barcoding_pcr_appr
 description: PCR approach for metabarcoding
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: barcoding_pcr_appr_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: two-step PCR
+  description: null
+source:
+- MIEM (Klymus et al., 2024)
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Highly recommended
-  example: two-step PCR
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - MIEM (Klymus et al., 2024)
 enum_values:
   one-step PCR:
     meaning: one-step PCR
@@ -19,4 +36,3 @@ enum_values:
     meaning: ligation-based
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

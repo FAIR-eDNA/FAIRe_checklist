@@ -2,18 +2,39 @@ name: materialSampleID
 description: An identifier for the physical sample (as opposed to the extracted DNA
   sample defined by samp_name). In the absence of a persistent global unique identifier,
   construct one from a combination of identifiers in the record.
+in_subset:
+- Sample relations
+slot_uri: http://rs.tdwg.org/dwc/terms/materialSampleID
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: GOMECC4_27N_Sta1_Deep
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/materialSampleID
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample relations
-  requirement_level: Recommended
-  modifications_made:
-  - description
-  example: GOMECC4_27N_Sta1_Deep
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/materialSampleID
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/dwc/terms/materialSampleID
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

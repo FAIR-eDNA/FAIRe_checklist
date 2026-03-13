@@ -5,22 +5,44 @@ description: 'Temperature at which the sample was stored. Enter either the fixed
   temperature before the process here, and the storage temperature of the processed
   sample (i.e., filter paper) under a term prepped_samp_store_temp. Unit = degree
   Celsius'
-range: string
+in_subset:
+- Sample storage
+slot_uri: https://w3id.org/mixs/0000110
+range: samp_store_temp_enum
+unit: degree Celsius
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '-80.0'
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000110
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample storage
-  requirement_level: Highly recommended
-  modifications_made:
-  - description
-  - field_type
-  example: '-80.0'
-  unit: degree Celsius
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity:
   - ALL
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000110
-term_type: numeric or controlled vocabulary
+  modifications_made:
+  - description
+  - field_type
+enum_values:
+  numeric value:
+    meaning: numeric value
+  ambient temperature:
+    meaning: ambient temperature
+  'other:':
+    meaning: 'other:'

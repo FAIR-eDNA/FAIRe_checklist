@@ -2,20 +2,40 @@ name: eventDurationValue
 description: The duration of the sampling event, written in ISO 8601 format (i.e.,
   P1DT3H for 1 day and 3 hours period. P1Y6M for 1 year and 6 months period. T30M/45M
   for some time between 30 and 45 minutes).
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/eco/terms/eventDurationValue
 range: string
+structured_pattern:
+  syntax: PnYnMnWnDTnHnMnS
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: T1H25M
+  description: null
+source:
+- Humboldt extension
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/eco/terms/eventDurationValue
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
+  data_type:
+  - sampleMetadata
   requirement_level: Optional
+  requirement_level_code: O
   modifications_made:
   - description
   - field_type
-  example: T1H25M
-  data_type:
-  - sampleMetadata
-  requirement_level_code: O
-  source:
-  - Humboldt extension
-  fixed_format: PnYnMnWnDTnHnMnS
-skos:exactMatch:
-- http://rs.tdwg.org/eco/terms/eventDurationValue
-term_type: fixed format
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - http://rs.tdwg.org/eco/terms/eventDurationValue
+# term_type: fixed format
+# __LEGACY_LINKML_FIELDS_END__

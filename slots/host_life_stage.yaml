@@ -1,23 +1,40 @@
 name: host_life_stage
 description: Description of life stage of host. Select from UBERON's life cycle class
   (http://purl.obolibrary.org/obo/UBERON_0000104)
-range: string
+in_subset:
+- Environment
+slot_uri: https://w3id.org/mixs/0000251
+range: host_life_stage_enum
+structured_pattern:
+  syntax: termLabel [termID]
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: juvenile stage [UBERON_0034919]
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000251
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Environment
-  requirement_level: Optional
-  modifications_made:
-  - description
-  - field_type
-  example: juvenile stage [UBERON_0034919]
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - HostAssociated
   - SymbiontAssociated
-  source:
-  - MIxS
-  fixed_format: termLabel [termID]
-skos:exactMatch:
-- https://w3id.org/mixs/0000251
-term_type: fixed format
+  modifications_made:
+  - description
+  - field_type
+enum_values:
+  http://purl.obolibrary.org/obo/UBERON_0000104:
+    meaning: http://purl.obolibrary.org/obo/UBERON_0000104

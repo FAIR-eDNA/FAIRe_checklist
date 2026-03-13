@@ -1,15 +1,34 @@
 name: estimatedNumberOfCopies_method
 description: Method to output estimatedNumberOfCopies
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: estimatedNumberOfCopies_method_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: Ct/Cq with standard curve
+  description: null
+- value: Ct/Cq with standard bionomial data
+  description: null
+source:
+- MIQE
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: Ct/Cq with standard curve | Ct/Cq with standard bionomial data
   data_type:
   - ampData
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - MIQE
 enum_values:
   Ct/Cq with standard curve:
     meaning: Ct/Cq with standard curve
@@ -21,4 +40,3 @@ enum_values:
     meaning: gel fluorescence intensities
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

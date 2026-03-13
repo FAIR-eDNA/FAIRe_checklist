@@ -4,21 +4,42 @@ description: Elevation of the sampling site is its height above a fixed referenc
   to points on the earth's surface, while altitude is used for points above the surface,
   such as an aircraft in flight or a spacecraft in orbit. i.e. 0m for seawater sample.
   Unit = meter
+in_subset:
+- Environment
+slot_uri: https://w3id.org/mixs/0000093
 range: float
+unit: meter
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: '100.0'
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000093
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Environment
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: '100.0'
-  unit: meter
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - ALL
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0000093
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# skos:exactMatch:
+# - https://w3id.org/mixs/0000093
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

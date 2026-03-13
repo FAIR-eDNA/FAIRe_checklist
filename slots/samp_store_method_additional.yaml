@@ -1,16 +1,36 @@
 name: samp_store_method_additional
 description: Additional information on sample storage method, that has not been shared
   in the given record.
+in_subset:
+- Sample storage
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: The sample was thawed overnight at room temperature prior to DNA extraction
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample storage
-  requirement_level: Optional
-  example: The sample was thawed overnight at room temperature prior to DNA extraction
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - ALL
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

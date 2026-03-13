@@ -1,15 +1,32 @@
 name: samp_vol_we_dna_ext_unit
 description: Unit for samp_vol_we_dna_ext
+in_subset:
+- Nucleic acid extraction
+slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_vol_we_dna_ext_unit_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: mL
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Highly recommended
-  example: mL
   data_type:
   - sampleMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - New
 enum_values:
   mL:
     meaning: mL
@@ -31,4 +48,3 @@ enum_values:
     meaning: m3
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

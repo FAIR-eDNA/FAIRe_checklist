@@ -1,26 +1,43 @@
 name: env_local_scale
-description: "The entity or entities which are in your sample or specimen\u2019s local\
-  \ vicinity and which you believe have significant causal influences on your sample.\
-  \ Select from ENVO's layer class: http://purl.obolibrary.org/obo/ENVO_01000281.\
-  \ Examples include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface\
-  \ layer [ENVO:01001302], shrub layer [ENVO:01000336]"
-range: string
+description: 'The entity or entities which are in your sample or specimen?s local
+  vicinity and which you believe have significant causal influences on your sample.
+  Select from ENVO''s layer class: http://purl.obolibrary.org/obo/ENVO_01000281. Examples
+  include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface layer [ENVO:01001302],
+  shrub layer [ENVO:01000336]'
+in_subset:
+- Sample collection
+slot_uri: https://w3id.org/mixs/0000013
+range: env_local_scale_enum
+structured_pattern:
+  syntax: termLabel [termID]
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: estuarine coastal surface layer [ENVO:01001302]
+  description: null
+source:
+- MIxS
+- DNA-derived data extension
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0000013
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
+  data_type:
+  - sampleMetadata
   requirement_level: Mandatory
+  requirement_level_code: M
   requirement_level_condition: Mandatory unless samp_category = negative control,
     positive control, or PCR standard
   modifications_made:
   - description
   - field_type
-  example: estuarine coastal surface layer [ENVO:01001302]
-  data_type:
-  - sampleMetadata
-  requirement_level_code: M
-  source:
-  - MIxS
-  - DNA-derived data extension
-  fixed_format: termLabel [termID]
-skos:exactMatch:
-- https://w3id.org/mixs/0000013
-term_type: fixed format
+enum_values:
+  http://purl.obolibrary.org/obo/ENVO_01000281:
+    meaning: http://purl.obolibrary.org/obo/ENVO_01000281

@@ -1,13 +1,33 @@
 name: intercept
 description: Intercept of a qPCR standard curve. This shall be specific to each pcr_plate_id.
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '39.37'
+  description: null
+source:
+- MIQE
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: '39.37'
   data_type:
   - stdData
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - MIQE
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

@@ -4,17 +4,36 @@ description: 'A positive control type used in an investigation. See Table 2 in K
   how and why it''s created. For example, PCR positive is a introduced target material
   to monitor for PCR success, including moch community samples. Provide further details
   (e.g., synthetic DNA) where applicable.'
+in_subset:
+- Sample information
+slot_uri: https://w3id.org/mixs/0001322
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples:
+- value: PCR positive of synthetic DNA
+  description: null
+source:
+- MIxS
+mappings:
+  exact_mappings:
+  - https://w3id.org/mixs/0001322
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample information
-  requirement_level: Mandatory
-  requirement_level_condition: If samp_category = positive control
-  example: PCR positive of synthetic DNA
   data_type:
   - sampleMetadata
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - MIxS
-skos:exactMatch:
-- https://w3id.org/mixs/0001322
-term_type: unspecified
+  requirement_level_condition: If samp_category = positive control
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

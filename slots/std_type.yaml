@@ -1,15 +1,32 @@
 name: std_type
 description: The type of standard used for standard curves
+in_subset:
+- Targeted assay detection
+slot_uri: __TODO_ADD_SLOT_URI__
 range: std_type_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: synthetic double-stranded DNA
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Targeted assay detection
-  requirement_level: Recommended
-  example: synthetic double-stranded DNA
   data_type:
   - projectMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
 enum_values:
   synthetic double-stranded DNA:
     meaning: synthetic double-stranded DNA
@@ -21,4 +38,3 @@ enum_values:
     meaning: gDNA
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

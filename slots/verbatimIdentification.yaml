@@ -1,20 +1,39 @@
 name: verbatimIdentification
 description: A string representing the taxonomic identification as it appeared in
   the original record (i.e. the database used such as NCBI). This could be the identification
+in_subset:
+- OTU/ASV
+slot_uri: http://rs.tdwg.org/dwc/terms/verbatimIdentification
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae; Lutjanus;
+    Lutjanus_erythropterus
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/verbatimIdentification
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: OTU/ASV
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae;
-    Lutjanus; Lutjanus_erythropterus
   data_type:
   - taxaRaw
   - taxaFinal
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimIdentification
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

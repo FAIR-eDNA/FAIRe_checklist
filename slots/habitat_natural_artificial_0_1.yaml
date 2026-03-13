@@ -3,17 +3,35 @@ description: Whether samples were taken from natural (0) or artificial (1) habit
   The examples of artificial habitat include mesocosm tank in lab, enclosure in zoo
   etc., including semi-natural systems. The definition of natural habitat is locations
   uncontrolled by researchers
-range: string
+in_subset:
+- Sample collection
+slot_uri: __TODO_ADD_SLOT_URI__
+range: habitat_natural_artificial_0_1_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: '0'
+  description: null
+source:
+- Thalinger et al., 2021
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Recommended
-  example: '0'
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - Thalinger et al., 2021
-term_type: Boolean
-enum_range:
-- value: '1'
-- value: '0'
+enum_values:
+  '0':
+    meaning: '0'
+  '1':
+    meaning: '1'

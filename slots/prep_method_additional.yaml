@@ -1,18 +1,38 @@
 name: prep_method_additional
 description: Additional information on sample preparation, storage and preservation
   prior to DNA extraction, that has not been shared in the given record
+in_subset:
+- Sample preparation
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-annotations:
-  section: Sample preparation
-  requirement_level: Optional
-  example: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
     precipitation protocols. ATL lysis buffer was used for prepped_samp_store_sol.
     Prepped_samp_store_temp was ambient, average of 22 degree Celsius
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
+annotations:
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity:
   - ALL
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

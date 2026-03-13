@@ -1,15 +1,32 @@
 name: platform
 description: General sequencing platform used.
+in_subset:
+- Library preparation sequencing
+slot_uri: __TODO_ADD_SLOT_URI__
 range: platform_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: ILLUMINA
+  description: null
+source:
+- INSDC
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Library preparation sequencing
-  requirement_level: Highly recommended
-  example: ILLUMINA
   data_type:
   - projectMetadata
+  requirement_level: Highly recommended
   requirement_level_code: HR
-  source:
-  - INSDC
 enum_values:
   ILLUMINA:
     meaning: ILLUMINA
@@ -43,4 +60,3 @@ enum_values:
     meaning: ULTIMA
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

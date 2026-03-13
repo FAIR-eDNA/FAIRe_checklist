@@ -3,16 +3,33 @@ description: The approach used to lyse DNA-containing material. For example, phy
   methods may involve freeze-thaw cycles or the uses of bead mills, homogenizers and
   sonicators. Thermal methods apply high temperatures, often used in combination with
   other methods.
+in_subset:
+- Nucleic acid extraction
+slot_uri: __TODO_ADD_SLOT_URI__
 range: nucl_acid_ext_lysis_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: true
+examples:
+- value: enzymatic
+  description: null
+source:
+- New
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Nucleic acid extraction
-  requirement_level: Recommended
-  example: enzymatic
   data_type:
   - sampleMetadata
+  requirement_level: Recommended
   requirement_level_code: R
-  source:
-  - New
 enum_values:
   physical:
     meaning: physical
@@ -26,4 +43,3 @@ enum_values:
     meaning: osmotic
   'other:':
     meaning: 'other:'
-term_type: controlled vocabulary

@@ -2,18 +2,37 @@ name: verbatimLatitude
 description: The original latitude in any format (i.e. deg/min/sec, UTM) before converting
   to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimSRS should be
   stored as well.
+in_subset:
+- Sample collection
+slot_uri: http://rs.tdwg.org/dwc/terms/verbatimLatitude
 range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples:
+- value: 41 05 54.03S
+  description: null
+source:
+- DwC
+mappings:
+  exact_mappings:
+  - http://rs.tdwg.org/dwc/terms/verbatimLatitude
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: Sample collection
-  requirement_level: Optional
-  modifications_made:
-  - description
-  example: 41 05 54.03S
   data_type:
   - sampleMetadata
+  requirement_level: Optional
   requirement_level_code: O
-  source:
-  - DwC
-skos:exactMatch:
-- http://rs.tdwg.org/dwc/terms/verbatimLatitude
-term_type: unspecified
+  modifications_made:
+  - description
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old model fields visible during migration.
+# term_type: free text
+# __LEGACY_LINKML_FIELDS_END__

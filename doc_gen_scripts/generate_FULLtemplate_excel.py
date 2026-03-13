@@ -13,6 +13,25 @@ with open("schema.yaml", "r") as f:
     schema = yaml.safe_load(f)
 
 slots = schema.get("slots", {})
+classes = schema.get("classes", {})
+
+slot_to_classes = defaultdict(list)
+if isinstance(classes, dict):
+    for class_name, class_def in classes.items():
+        if not isinstance(class_def, dict):
+            continue
+        for slot_name in class_def.get("slots", []) or []:
+            slot_to_classes[slot_name].append(class_name)
+
+
+def slot_sections(slot):
+    subsets = slot.get("in_subset", [])
+    if isinstance(subsets, list):
+        return [s for s in subsets if s]
+    if isinstance(subsets, str) and subsets.strip():
+        return [subsets.strip()]
+    legacy = slot.get("annotations", {}).get("section", "")
+    return [legacy] if legacy else []
 
 # Extract version from schema
 schema_version = schema.get("version", "unknown")
@@ -59,22 +78,28 @@ for col in range(1, 5):
     ws_proj.cell(row=1, column=col).font = bold_font
 
 for slot_name, slot in slots.items():
-    annotations = slot.get("annotations", {})
-    data_types = annotations.get("data_type", [])
-    if isinstance(data_types, str):
-        data_types = [dt.strip() for dt in data_types.split(",")]
-    if "projectMetadata" not in data_types:
+    slot_classes = [c for c in slot_to_classes.get(slot_name, []) if c != "MetadataChecklist"]
+    if "projectMetadata" not in slot_classes:
         continue
+    annotations = slot.get("annotations", {})
     req = annotations.get("requirement_level_code", "")
-    section = annotations.get("section", "")
+    section = " | ".join(slot_sections(slot))
     ws_proj.append([req, section, slot_name, ""])
     row = ws_proj.max_row
     if req in level_colors:
         ws_proj.cell(row=row, column=1).fill = make_fill(level_colors[req])
     ws_proj.cell(row=row, column=3).font = bold_font
+    def first_example_value(s):
+        ex = s.get("examples", []) or []
+        if isinstance(ex, list) and ex:
+            item = ex[0]
+            if isinstance(item, dict):
+                return item.get("value", "")
+            return str(item)
+        return ""
     comment_text = "\n".join(filter(None, [
         slot.get("description", ""),
-        f"Example: {slot.get('example', '')}" if slot.get("example") else "",
+        f"Example: {first_example_value(slot)}" if first_example_value(slot) else "",
         f"Requirement: {req}" if req else "",
         f"Field type: {slot.get('range')}" if slot.get("range") else ""
     ]))
@@ -94,13 +119,13 @@ targeted_prefix = {
 
 # Other data_type tabs
 data_type_slots = defaultdict(list)
-for slot_name, slot in slots.items():
-    annotations = slot.get("annotations", {})
-    data_types = annotations.get("data_type", [])
-    if isinstance(data_types, str):
-        data_types = [dt.strip() for dt in data_types.split(",")]
-    for dt in data_types:
-        data_type_slots[dt].append((slot_name, slot))
+for class_name, class_def in classes.items():
+    if class_name == "MetadataChecklist" or not isinstance(class_def, dict):
+        continue
+    for slot_name in class_def.get("slots", []) or []:
+        slot = slots.get(slot_name)
+        if slot is not None:
+            data_type_slots[class_name].append((slot_name, slot))
 
 for dt, slot_list in sorted(data_type_slots.items()):
     if dt == "projectMetadata":
@@ -120,9 +145,9 @@ for dt, slot_list in sorted(data_type_slots.items()):
 
     ws = wb.create_sheet(title=dt)
     ws.append(["# requirement_level_code"] + [slot.get("annotations", {}).get("requirement_level_code", "") for _, slot in sorted_slot_list])
-    ws.append(["# section"] + [slot.get("annotations", {}).get("section", "") for _, slot in sorted_slot_list])
+    ws.append(["# section"] + [" | ".join(slot_sections(slot)) for _, slot in sorted_slot_list])
     ws.append([prefix] + [name for name, _ in sorted_slot_list])
-    for col, (slot_name, slot) in enumerate(slot_list, start=1):
+    for col, (slot_name, slot) in enumerate(sorted_slot_list, start=1):
         col_letter = get_column_letter(col + 1)  # shift by 1 due to prefix column
         level = slot.get("annotations", {}).get("requirement_level_code", "")
         if level in level_colors:
@@ -131,7 +156,7 @@ for dt, slot_list in sorted(data_type_slots.items()):
         ws[f"{col_letter}3"].font = bold_font
         comment_text = "\n".join(filter(None, [
             slot.get("description", ""),
-            f"Example: {slot.get('example', '')}" if slot.get("example") else "",
+            f"Example: {first_example_value(slot)}" if first_example_value(slot) else "",
             f"Requirement: {level}" if level else ""
         ]))
         if comment_text:
@@ -142,18 +167,20 @@ dropdown_rows = []
 max_options = 0
 
 for slot_name, slot in slots.items():
-    term_type = slot.get("term_type", "")
-    if term_type not in ["Boolean", "controlled vocabulary"]:
-        continue
     enum_values = slot.get("enum_values", {})
+    is_cv = isinstance(enum_values, dict) and bool(enum_values)
+    is_boolean = slot.get("range") == "boolean"
+    if not is_cv and not is_boolean:
+        continue
     if isinstance(enum_values, dict):
         options = list(enum_values.keys())
     elif isinstance(enum_values, list):
         options = [str(v) for v in enum_values]
-    elif term_type == "Boolean":
+    elif is_boolean:
         options = ["true", "false"]
     else:
         options = []
+    term_type = "controlled vocabulary" if is_cv else "Boolean"
     max_options = max(max_options, len(options))
     row = [slot_name, term_type, len(options), "|".join(options)] + options
     dropdown_rows.append(row)
