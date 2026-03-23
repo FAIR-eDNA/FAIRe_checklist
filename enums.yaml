@@ -71,12 +71,8 @@ enums:
     permissible_values:
       copies/µl:
         meaning: copies/µl
-      copies/Âµl:
-        meaning: copies/Âµl
       ng/µl:
         meaning: ng/µl
-      ng/Âµl:
-        meaning: ng/Âµl
       'other:':
         meaning: 'other:'
   detected_notDetected_enum:
@@ -115,16 +111,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   diss_inorg_nitro_unit_enum:
     description: Controlled vocabulary for diss_inorg_nitro_unit.
     permissible_values:
@@ -154,16 +140,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   diss_org_carb_unit_enum:
     description: Controlled vocabulary for diss_org_carb_unit.
     permissible_values:
@@ -193,16 +169,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   diss_org_nitro_unit_enum:
     description: Controlled vocabulary for diss_org_nitro_unit.
     permissible_values:
@@ -232,16 +198,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   diss_oxygen_unit_enum:
     description: Controlled vocabulary for diss_oxygen_unit.
     permissible_values:
@@ -271,14 +227,6 @@ enums:
         meaning: µmol/L
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/m3:
-        meaning: Âµmol/m3
   dna_cleanup_0_1_enum:
     description: Controlled vocabulary for dna_cleanup_0_1.
     permissible_values:
@@ -343,20 +291,12 @@ enums:
         meaning: copies/µL of DNA extract
       copies/µL of reaction:
         meaning: copies/µL of reaction
-      copies/ÂµL of DNA extract:
-        meaning: copies/ÂµL of DNA extract
-      copies/ÂµL of reaction:
-        meaning: copies/ÂµL of reaction
       ng/reaction:
         meaning: ng/reaction
       ng/µL of DNA extract:
         meaning: ng/µL of DNA extract
       ng/µL of reaction:
         meaning: ng/µL of reaction
-      ng/ÂµL of DNA extract:
-        meaning: ng/ÂµL of DNA extract
-      ng/ÂµL of reaction:
-        meaning: ng/ÂµL of reaction
       'other:':
         meaning: 'other:'
   filter_material_enum:
@@ -449,8 +389,6 @@ enums:
         meaning: nM
       ng/µL:
         meaning: ng/µL
-      ng/ÂµL:
-        meaning: ng/ÂµL
       'other:':
         meaning: 'other:'
       pM:
@@ -533,16 +471,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   nitrite_unit_enum:
     description: Controlled vocabulary for nitrite_unit.
     permissible_values:
@@ -572,16 +500,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   nitro_unit_enum:
     description: Controlled vocabulary for nitro_unit.
     permissible_values:
@@ -611,16 +529,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   nucl_acid_ext_lysis_enum:
     description: Controlled vocabulary for nucl_acid_ext_lysis.
     permissible_values:
@@ -682,16 +590,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   org_matter_unit_enum:
     description: Controlled vocabulary for org_matter_unit.
     permissible_values:
@@ -721,16 +619,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   org_nitro_unit_enum:
     description: Controlled vocabulary for org_nitro_unit.
     permissible_values:
@@ -760,16 +648,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   part_org_carb_unit_enum:
     description: Controlled vocabulary for part_org_carb_unit.
     permissible_values:
@@ -799,16 +677,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   part_org_nitro_unit_enum:
     description: Controlled vocabulary for part_org_nitro_unit.
     permissible_values:
@@ -838,16 +706,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   pcr_0_1_enum:
     description: Controlled vocabulary for pcr_0_1.
     permissible_values:
@@ -862,14 +720,10 @@ enums:
         meaning: copies/reaction
       copies/µL:
         meaning: copies/µL
-      copies/ÂµL:
-        meaning: copies/ÂµL
       ng/reaction:
         meaning: ng/reaction
       ng/µL:
         meaning: ng/µL
-      ng/ÂµL:
-        meaning: ng/ÂµL
       'other:':
         meaning: 'other:'
   pcr_assay_loq_unit_enum:
@@ -879,14 +733,10 @@ enums:
         meaning: copies/reaction
       copies/µL:
         meaning: copies/µL
-      copies/ÂµL:
-        meaning: copies/ÂµL
       ng/reaction:
         meaning: ng/reaction
       ng/µL:
         meaning: ng/µL
-      ng/ÂµL:
-        meaning: ng/ÂµL
       'other:':
         meaning: 'other:'
   platform_enum:
@@ -1099,20 +949,12 @@ enums:
         meaning: copies/µL of DNA extract
       copies/µL of reaction:
         meaning: copies/µL of reaction
-      copies/ÂµL of DNA extract:
-        meaning: copies/ÂµL of DNA extract
-      copies/ÂµL of reaction:
-        meaning: copies/ÂµL of reaction
       ng/reaction:
         meaning: ng/reaction
       ng/µL of DNA extract:
         meaning: ng/µL of DNA extract
       ng/µL of reaction:
         meaning: ng/µL of reaction
-      ng/ÂµL of DNA extract:
-        meaning: ng/ÂµL of DNA extract
-      ng/ÂµL of reaction:
-        meaning: ng/ÂµL of reaction
       'other:':
         meaning: 'other:'
   std_type_enum:
@@ -1250,16 +1092,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_diss_nitro_unit_enum:
     description: Controlled vocabulary for tot_diss_nitro_unit.
     permissible_values:
@@ -1289,16 +1121,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_inorg_nitro_unit_enum:
     description: Controlled vocabulary for tot_inorg_nitro_unit.
     permissible_values:
@@ -1328,16 +1150,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_nitro_content_unit_enum:
     description: Controlled vocabulary for tot_nitro_content_unit.
     permissible_values:
@@ -1367,16 +1179,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_nitro_unit_enum:
     description: Controlled vocabulary for tot_nitro_unit.
     permissible_values:
@@ -1406,16 +1208,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_org_carb_unit_enum:
     description: Controlled vocabulary for tot_org_carb_unit.
     permissible_values:
@@ -1445,16 +1237,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   tot_part_carb_unit_enum:
     description: Controlled vocabulary for tot_part_carb_unit.
     permissible_values:
@@ -1484,16 +1266,6 @@ enums:
         meaning: µmol/kg
       µmol/m3:
         meaning: µmol/m3
-      ÂµM:
-        meaning: ÂµM
-      Âµg/L:
-        meaning: Âµg/L
-      Âµmol/L:
-        meaning: Âµmol/L
-      Âµmol/kg:
-        meaning: Âµmol/kg
-      Âµmol/m3:
-        meaning: Âµmol/m3
   verbatimCoordinateSystem_enum:
     description: Controlled vocabulary for verbatimCoordinateSystem.
     permissible_values:
