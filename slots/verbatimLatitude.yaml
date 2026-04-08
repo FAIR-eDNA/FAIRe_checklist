@@ -3,7 +3,7 @@ description: The original latitude in any format (i.e. deg/min/sec, UTM) before 
   to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimSRS should be
   stored as well.
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimLatitude
 range: string
 structured_pattern:

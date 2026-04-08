@@ -3,7 +3,7 @@ description: A related resource that is referenced, cited, or otherwise associat
   to the sequence. i.e., links to a project website, submitted raw sequence data and
   environmental metadata.
 in_subset:
-- Data management
+  - Data management
 slot_uri: https://w3id.org/mixs/0000091
 range: string
 structured_pattern:

@@ -28,11 +28,11 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  ng/µL:
-    meaning: ng/µL
   nM:
     meaning: nM
-  pM:
-    meaning: pM
+  ng/µL:
+    meaning: ng/µL
   'other:':
     meaning: 'other:'
+  pM:
+    meaning: pM

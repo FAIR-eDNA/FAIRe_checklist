@@ -4,7 +4,7 @@ description: (If bacroding_pcr_appr = "two-step PCR") composition of custom mast
   buffers, enzyme and other components)  in the second step PCR (if custom master
   mix was used)
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

@@ -1,7 +1,6 @@
 name: samp_store_sol
-description: 'Solution within which the sample was stored. Note: If a sample was processed
-  before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
-  storage solution before the process here, and the storage solution of the processed
+description: 'Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
+  homogenisation, subsampling), enter the storage solution before the process here, and the storage solution of the processed
   sample under the term prepped_samp_store_sol.'
 in_subset:
 - Sample storage
@@ -39,8 +38,6 @@ annotations:
 enum_values:
   ethanol:
     meaning: ethanol
-  sodium acetate:
-    meaning: sodium acetate
   longmire:
     meaning: longmire
   lysis buffer:
@@ -49,3 +46,5 @@ enum_values:
     meaning: none
   'other:':
     meaning: 'other:'
+  sodium acetate:
+    meaning: sodium acetate

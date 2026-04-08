@@ -5,11 +5,11 @@ description: This term refers to the samp_name of the original (or parent) sampl
   with samp_names "S01_1", "S01_2", "S01_3", then "S01" is the value for sample_derived_from
   in each of the child samples. This includes the case of pcr technical replicates.
 in_subset:
-- Sample relations
+  - Sample relations
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
-  syntax: (a list of) samp_name
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

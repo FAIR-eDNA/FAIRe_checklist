@@ -2,7 +2,7 @@ name: trim_method
 description: Method for trimming primer and/or adapter sequences, including version
   and parameters
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

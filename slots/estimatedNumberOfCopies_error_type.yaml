@@ -1,6 +1,5 @@
 name: estimatedNumberOfCopies_error_type
-description: The specific type of variability measure (e.g., standard error, standard
-  deviation) used to describe estimatedNumberOfCopies_error.
+description: The specific type of variability measure (e.g., standard error, standard deviation) used to describe estimatedNumberOfCopies_error.
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -30,11 +29,11 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  standard error:
-    meaning: standard error
-  standard deviation:
-    meaning: standard deviation
   95% confidence interval:
     meaning: 95% confidence interval
   'other:':
     meaning: 'other:'
+  standard deviation:
+    meaning: standard deviation
+  standard error:
+    meaning: standard error

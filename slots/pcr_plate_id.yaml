@@ -5,7 +5,7 @@ description: PCR plate ID. This identifier is particularly crucial when location
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_*
   in the library preparation/sequencing section.
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

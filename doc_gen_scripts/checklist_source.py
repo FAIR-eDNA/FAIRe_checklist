@@ -1,8 +1,43 @@
 import os
 from pathlib import Path
 
+import pandas as pd
 
 LATEST_CHECKLIST_DIR = "latest_checklist"
+
+
+def load_checklist_rows_from_xlsx(path, sheet_name="checklist"):
+    """
+    Read the checklist sheet as a list of row dicts (column header -> value).
+
+    Uses pandas instead of openpyxl read_only mode: some workbooks only expose a
+    single column per row under read_only (merged/sparse XML), which breaks enums/classes.
+    """
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Checklist Excel file not found: {path}")
+
+    try:
+        df = pd.read_excel(path, sheet_name=sheet_name, header=0, engine="openpyxl")
+    except ValueError as exc:
+        if "Worksheet named" in str(exc):
+            raise ValueError(f"Sheet '{sheet_name}' not found in {path}") from exc
+        raise
+
+    records = []
+    for _, row in df.iterrows():
+        rec = {}
+        for col in df.columns:
+            key = str(col).strip() if col is not None else ""
+            if not key:
+                continue
+            val = row[col]
+            if pd.isna(val):
+                val = None
+            elif isinstance(val, str):
+                val = val.strip()
+            rec[key] = val
+        records.append(rec)
+    return records
 
 
 def resolve_single_checklist_file(required_suffix=".xlsx"):

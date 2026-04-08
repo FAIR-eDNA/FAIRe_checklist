@@ -3,7 +3,7 @@ description: Standard operating procedures, references, link to scripts, that we
   used in quality filtering, assembly and/or annotation of genomes, metagenomes or
   environmental sequences
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: https://w3id.org/mixs/0000090
 range: string
 structured_pattern:

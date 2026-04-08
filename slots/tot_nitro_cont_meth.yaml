@@ -1,7 +1,7 @@
 name: tot_nitro_cont_meth
 description: Reference or method used in determining the total nitrogen
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000338
 range: string
 structured_pattern:

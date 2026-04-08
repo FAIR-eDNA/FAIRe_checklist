@@ -2,7 +2,7 @@ name: recordedBy
 description: A list (concatenated and separated) of names of people responsible for
   the submitted dataset
 in_subset:
-- Project
+  - Project
 slot_uri: https://dwc.tdwg.org/list/#dwc_recordedBy
 range: string
 structured_pattern:

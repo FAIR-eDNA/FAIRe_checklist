@@ -2,7 +2,7 @@ name: wind_direction
 description: Wind direction (the direction from which a wind originates) at the time
   of sampling
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000757
 range: string
 structured_pattern:

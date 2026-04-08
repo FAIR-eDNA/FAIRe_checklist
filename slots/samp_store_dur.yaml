@@ -6,11 +6,11 @@ description: 'Duration for which the sample was stored prior to DNA extraction, 
   storage duration before the process here, and the storage duration of the processed
   sample under the term prepped_samp_store_temp.'
 in_subset:
-- Sample storage
+  - Sample storage
 slot_uri: https://w3id.org/mixs/0000116
 range: string
 structured_pattern:
-  syntax: PnYnMnWnDTnHnMnS
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

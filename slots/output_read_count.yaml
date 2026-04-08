@@ -2,9 +2,9 @@ name: output_read_count
 description: The number of filtered sequence reads for each sample, that made it through
   bioinformatic filtering and used for final/subsequent analyses. Unit = reads
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: https://w3id.org/nmdc/output_read_count
-range: integer
+range: string
 unit: reads
 structured_pattern:
   syntax: null

@@ -1,9 +1,9 @@
 name: error_rate_cutoff
 description: error rate threshold
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

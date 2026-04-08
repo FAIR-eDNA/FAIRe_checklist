@@ -30,19 +30,19 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 enum_values:
-  kingdom:
-    meaning: kingdom
-  phylum:
-    meaning: phylum
   class:
     meaning: class
-  order:
-    meaning: order
   family:
     meaning: family
   genus:
     meaning: genus
-  species:
-    meaning: species
+  kingdom:
+    meaning: kingdom
+  order:
+    meaning: order
   'other:':
     meaning: 'other:'
+  phylum:
+    meaning: phylum
+  species:
+    meaning: species

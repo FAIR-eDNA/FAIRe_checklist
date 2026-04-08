@@ -2,7 +2,7 @@ name: verbatimEventTime
 description: Sample collection time before formatting to ISO 8601, or at the local
   time (if eventDate time samp has been converted to UTC time)
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

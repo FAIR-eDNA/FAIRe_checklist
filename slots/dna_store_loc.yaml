@@ -2,7 +2,7 @@ name: dna_store_loc
 description: Location at which extracted DNA was stored, usually name of a specific
   freezer/room
 in_subset:
-- Sample storage
+  - Sample storage
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

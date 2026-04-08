@@ -2,7 +2,7 @@ name: filename2
 description: A raw sequencing data file name of reverse reads if lib_layout = paired
   end
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

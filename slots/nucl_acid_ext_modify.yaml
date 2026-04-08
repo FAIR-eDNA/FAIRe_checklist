@@ -2,7 +2,7 @@ name: nucl_acid_ext_modify
 description: Description of modification made from a commercial or established protocol
   (nucl_acid_ext), if made.
 in_subset:
-- Nucleic acid extraction
+  - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

@@ -1,7 +1,7 @@
 name: error_rate_tool
 description: Software to remove reads above error rate threshold
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

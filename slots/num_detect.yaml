@@ -2,9 +2,9 @@ name: num_detect
 description: 'Number of detection using the eLow Quant approach (described in DOI:
   10.1002/edn3.220)'
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
-range: integer
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

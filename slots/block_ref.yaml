@@ -2,7 +2,7 @@ name: block_ref
 description: Reference of a blocking primer. Enter "custom" if it was developed during
   the current project
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

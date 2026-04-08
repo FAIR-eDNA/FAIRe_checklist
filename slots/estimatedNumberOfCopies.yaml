@@ -2,9 +2,9 @@ name: estimatedNumberOfCopies
 description: Estimated concentration of target molecules. Describe the approach taken
   to estimate it under the term estaimtedNumberOfCopies_method.
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

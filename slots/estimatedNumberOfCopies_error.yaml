@@ -3,9 +3,9 @@ description: The measure of variability (e.g., standard error) associated with t
   estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents
   an average calculated from multiple technical replicates per sample.
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

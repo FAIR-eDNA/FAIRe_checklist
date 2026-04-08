@@ -1,15 +1,13 @@
 name: env_local_scale
-description: 'The entity or entities which are in your sample or specimen?s local
-  vicinity and which you believe have significant causal influences on your sample.
-  Select from ENVO''s layer class: http://purl.obolibrary.org/obo/ENVO_01000281. Examples
-  include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface layer [ENVO:01001302],
-  shrub layer [ENVO:01000336]'
+description: 'The entity or entities which are in your sample or specimen?s local vicinity and which you believe have significant
+  causal influences on your sample. Select from ENVO''s layer class: http://purl.obolibrary.org/obo/ENVO_01000281. Examples
+  include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface layer [ENVO:01001302], shrub layer [ENVO:01000336]'
 in_subset:
 - Sample collection
 slot_uri: https://w3id.org/mixs/0000013
 range: env_local_scale_enum
 structured_pattern:
-  syntax: termLabel [termID]
+  syntax: null
   interpolated: null
   partial_match: null
 required: true
@@ -33,8 +31,7 @@ annotations:
   - sampleMetadata
   requirement_level: Mandatory
   requirement_level_code: M
-  requirement_level_condition: Mandatory unless samp_category = negative control,
-    positive control, or PCR standard
+  requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made:
   - description
   - field_type

@@ -2,7 +2,7 @@ name: commercial_mm
 description: Name, brand, and manufacture of commercial, pre-made master mix (if commercial
   master mix was used)
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

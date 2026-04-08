@@ -3,7 +3,7 @@ description: A brief, concise identifier for sequencing run with no spaces or sp
   characters, ensuring machine readability. This ID will be used in file names as
   'seq_run_id'.
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

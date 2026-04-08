@@ -2,7 +2,7 @@ name: license
 description: A legal document giving official permission to do something with the
   resource.
 in_subset:
-- Data management
+  - Data management
 slot_uri: https://dwc.tdwg.org/terms/#dcterms:license
 range: string
 structured_pattern:

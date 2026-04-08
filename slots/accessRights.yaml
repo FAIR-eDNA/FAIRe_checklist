@@ -2,7 +2,7 @@ name: accessRights
 description: Information about who can access the resource or an indication of its
   security status.
 in_subset:
-- Data management
+  - Data management
 slot_uri: http://purl.org/dc/terms/accessRights
 range: string
 structured_pattern:

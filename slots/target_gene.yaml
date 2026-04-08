@@ -38,24 +38,22 @@ enum_values:
     meaning: 16S rRNA (LSU mitochondria)
   16S rRNA (SSU prokaryote):
     meaning: 16S rRNA (SSU prokaryote)
-  23S rRNA (LSU prokaryote):
-    meaning: 23S rRNA (LSU prokaryote)
   18S rRNA (SSU eukaryote):
     meaning: 18S rRNA (SSU eukaryote)
+  23S rRNA (LSU prokaryote):
+    meaning: 23S rRNA (LSU prokaryote)
   28S rRNA (LSU eukaryote):
     meaning: 28S rRNA (LSU eukaryote)
-  rbcL:
-    meaning: rbcL
-  CytB:
-    meaning: CytB
   COI:
     meaning: COI
   COII:
     meaning: COII
   COIII:
     meaning: COIII
-  nifH:
-    meaning: nifH
+  CytB:
+    meaning: CytB
+  D-loop:
+    meaning: D-loop
   ITS:
     meaning: ITS
   ND1:
@@ -72,21 +70,23 @@ enum_values:
     meaning: ND6
   amoA:
     meaning: amoA
+  matK:
+    meaning: matK
+  nifH:
+    meaning: nifH
+  'other:':
+    meaning: 'other:'
+  psbK:
+    meaning: psbK
+  rbcL:
+    meaning: rbcL
   rpoB:
     meaning: rpoB
   rpoC1:
     meaning: rpoC1
   rpoC2:
     meaning: rpoC2
-  matK:
-    meaning: matK
   trnH:
     meaning: trnH
   trnL:
     meaning: trnL
-  psbK:
-    meaning: psbK
-  D-loop:
-    meaning: D-loop
-  'other:':
-    meaning: 'other:'

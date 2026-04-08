@@ -5,9 +5,9 @@ description: Heights of objects such as airplanes, space shuttles, rockets, atmo
   the altitude measurement is the vertical distance between the earth's surface above
   sea level and the sampled position in the air. Unit = meter
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000094
-range: float
+range: string
 unit: meter
 structured_pattern:
   syntax: null

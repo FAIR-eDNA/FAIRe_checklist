@@ -2,9 +2,9 @@ name: biological_rep
 description: The number of biological replicates collected at each sampling point
   and/or for each experimental treatment in the study.
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: __TODO_ADD_SLOT_URI__
-range: integer
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

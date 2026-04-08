@@ -2,7 +2,7 @@ name: seq_method_additional
 description: Additional information on library preparation and sequencing method,
   that has not been shared in the given record.
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

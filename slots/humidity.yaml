@@ -3,9 +3,9 @@ description: Amount of water vapour in the air, at the time of sampling relative
   the maximum amount of water vapor the air can hold at a given temperature and pressure.
   Also known as relative humidity. Unit = %
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000100
-range: float
+range: string
 unit: '%'
 structured_pattern:
   syntax: null

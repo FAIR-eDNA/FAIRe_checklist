@@ -31,11 +31,11 @@ annotations:
   - HostAssociated
   - SymbiontAssociated
 enum_values:
-  mg:
-    meaning: mg
   g:
     meaning: g
   kg:
     meaning: kg
+  mg:
+    meaning: mg
   'other:':
     meaning: 'other:'

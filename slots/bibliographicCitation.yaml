@@ -1,7 +1,7 @@
 name: bibliographicCitation
 description: A bibliographic reference for the resource.
 in_subset:
-- Data management
+  - Data management
 slot_uri: http://purl.org/dc/terms/bibliographicCitation
 range: string
 structured_pattern:

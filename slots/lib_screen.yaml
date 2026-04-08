@@ -2,7 +2,7 @@ name: lib_screen
 description: Specific enrichment or screening methods applied before and/or after
   creating libraries
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: https://w3id.org/mixs/0000043
 range: string
 structured_pattern:

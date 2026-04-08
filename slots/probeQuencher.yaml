@@ -1,7 +1,6 @@
 name: probeQuencher
-description: Type of quencher used. The quencher molecule quenches the fluorescence
-  emitted by the fluorophore when excited by the cycler?s light source As long as
-  fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
+description: Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited
+  by the cycler?s light source As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
   signals.
 in_subset:
 - PCR
@@ -35,15 +34,15 @@ annotations:
   modifications_made:
   - field_type
 enum_values:
-  Zero-End Quencher (ZEN):
-    meaning: Zero-End Quencher (ZEN)
-  TAMRA:
-    meaning: TAMRA
-  lowa Black:
-    meaning: lowa Black
-  Minor Groove Binder (MGB):
-    meaning: Minor Groove Binder (MGB)
   Black Hole Quencher (BHQ):
     meaning: Black Hole Quencher (BHQ)
+  Minor Groove Binder (MGB):
+    meaning: Minor Groove Binder (MGB)
+  TAMRA:
+    meaning: TAMRA
+  Zero-End Quencher (ZEN):
+    meaning: Zero-End Quencher (ZEN)
+  lowa Black:
+    meaning: lowa Black
   'other:':
     meaning: 'other:'

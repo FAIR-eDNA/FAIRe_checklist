@@ -2,9 +2,9 @@ name: demux_max_mismatch
 description: Maximum mismatch allowed at the index bases for demultiplexing. Unit
   = base pair
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
-range: integer
+range: string
 unit: base pair
 structured_pattern:
   syntax: null

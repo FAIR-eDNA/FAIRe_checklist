@@ -3,9 +3,9 @@ description: The number of cycles when fluorescence signal from the target ampli
   is below background fluorescence not originated from the real target amplification.
   Unit = cycle
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: integer
+range: string
 unit: cycle
 structured_pattern:
   syntax: null

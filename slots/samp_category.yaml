@@ -1,7 +1,6 @@
 name: samp_category
-description: A type/category of a sample. 'Sample" includes biological and technical
-  replicates. If negative or positive control was selected, provide further information
-  under the terms fill neg_cont_type and pos_cont_type.
+description: A type/category of a sample. 'Sample" includes biological and technical replicates. If negative or positive control
+  was selected, provide further information under the terms fill neg_cont_type and pos_cont_type.
 in_subset:
 - Sample information
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -30,13 +29,13 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
 enum_values:
-  sample:
-    meaning: sample
-  negative control:
-    meaning: negative control
-  positive control:
-    meaning: positive control
   PCR standard:
     meaning: PCR standard
+  negative control:
+    meaning: negative control
   'other:':
     meaning: 'other:'
+  positive control:
+    meaning: positive control
+  sample:
+    meaning: sample

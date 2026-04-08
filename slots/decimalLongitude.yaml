@@ -4,9 +4,9 @@ description: The geographic longitude in decimal degrees using WGS84 datum. Posi
   values lie between -180 and 180, inclusive. The desired minimum number of decimal
   places is the hundred-thousandth (0.00001) to achieve meter scale resolution.
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/decimalLongitude
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

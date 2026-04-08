@@ -1,9 +1,9 @@
 name: efficiency
 description: qPCR amplification efficiency calculated from slope. Unit = %
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: '%'
 structured_pattern:
   syntax: null

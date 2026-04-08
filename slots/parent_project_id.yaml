@@ -2,7 +2,7 @@ name: parent_project_id
 description: An identifier or name of the overarching (parent) project that encompasses
   and organizes multiple related sub-projects, each identified by a unique project_id
 in_subset:
-- Project
+  - Project
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

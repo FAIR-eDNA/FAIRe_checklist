@@ -4,7 +4,7 @@ description: An identifier for the institution having custody of the object(s) o
   resolvable identifier, such as a Research Organization Registry (ROR) ID or ISNI
   (International Standard Name Identifier).
 in_subset:
-- Project
+  - Project
 slot_uri: http://rs.tdwg.org/dwc/terms/institutionID
 range: string
 structured_pattern:

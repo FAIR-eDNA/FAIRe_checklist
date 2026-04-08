@@ -1,9 +1,9 @@
 name: input_read_count
 description: The total number of raw sequence reads for each sample. Unit = reads
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: https://w3id.org/nmdc/input_read_count
-range: integer
+range: string
 unit: reads
 structured_pattern:
   syntax: null

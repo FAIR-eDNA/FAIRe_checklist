@@ -1,9 +1,9 @@
 name: host_tot_mass
 description: Total mass of the host at collection, the unit depends on host.
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000263
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

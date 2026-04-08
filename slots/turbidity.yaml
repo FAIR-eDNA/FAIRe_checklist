@@ -2,9 +2,9 @@ name: turbidity
 description: Measure of the amount of cloudiness or haziness in water caused by individual
   particles. Unit = nephelometric turbidity unit (ntu)
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000191
-range: float
+range: string
 unit: nephelometric turbidity unit (ntu)
 structured_pattern:
   syntax: null

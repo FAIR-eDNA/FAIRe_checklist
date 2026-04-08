@@ -2,9 +2,9 @@ name: pcr_rep
 description: The number of PCR technical replicates. For metabarcoding, each replicate
   should employ an identical MID.
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: integer
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

@@ -1,9 +1,9 @@
 name: amplificationReactionVolume
 description: The total PCR reaction volume. Unit = µL
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 unit: µL
 structured_pattern:
   syntax: null

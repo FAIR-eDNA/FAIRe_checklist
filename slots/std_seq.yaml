@@ -1,7 +1,7 @@
 name: std_seq
 description: DNA sequences of standard
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

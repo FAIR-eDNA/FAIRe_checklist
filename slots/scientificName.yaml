@@ -1,7 +1,7 @@
 name: scientificName
 description: The full scientific name of the genus and species
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/scientificName
 range: string
 structured_pattern:

@@ -4,7 +4,7 @@ description: Type of fluorophore (reporter) used. Probe anneals within amplified
   the probe releases the fluorophore from it and breaks the proximity to the quencher,
   thus allowing fluorescence of the fluorophore.
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
 structured_pattern:

@@ -2,9 +2,9 @@ name: checkls_ver
 description: The version number of the FAIR eDNA (FAIRe) metadata checklist used to
   format the data
 in_subset:
-- Data management
+  - Data management
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

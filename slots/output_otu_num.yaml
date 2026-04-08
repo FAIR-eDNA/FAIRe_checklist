@@ -1,9 +1,9 @@
 name: output_otu_num
 description: Total number of OTUs or ASVs for each sample
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
-range: integer
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

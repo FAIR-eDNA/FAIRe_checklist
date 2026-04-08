@@ -2,9 +2,9 @@ name: ph
 description: Ph measurement of the sample, or liquid portion of sample, or aqueous
   phase of the fluid. Unit = no unit
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0001001
-range: float
+range: string
 unit: no unit
 structured_pattern:
   syntax: null

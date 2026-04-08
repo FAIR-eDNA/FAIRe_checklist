@@ -1,9 +1,9 @@
 name: nitro
 description: Concentration of nitrogen (total)
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000504
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

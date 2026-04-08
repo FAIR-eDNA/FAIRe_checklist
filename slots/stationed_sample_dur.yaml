@@ -6,11 +6,11 @@ description: Duration of on-site, stationed sampling (i.e., the filter deploymen
   format (P<date>T<time>). For example, P1Y1M1DT1H1M1.1S represents 1 year, 1 month,
   1 day, 1 hour, 1 minute, 1 second, and 100 milliseconds
 in_subset:
-- Sample preparation
+  - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
-  syntax: PnYnMnWnDTnHnMnS
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

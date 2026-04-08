@@ -1,9 +1,9 @@
 name: org_carb
 description: Concentration of organic carbon
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000508
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

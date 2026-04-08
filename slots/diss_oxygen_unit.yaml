@@ -34,29 +34,29 @@ annotations:
   - Air
   - MicrobialMatBiofilm
 enum_values:
-  mg/L:
-    meaning: mg/L
-  µg/L:
-    meaning: µg/L
-  µM:
-    meaning: µM
-  mol/m3:
-    meaning: mol/m3
-  mmol/m3:
-    meaning: mmol/m3
-  µmol/m3:
-    meaning: µmol/m3
-  mol/L:
-    meaning: mol/L
-  mmol/L:
-    meaning: mmol/L
-  µmol/L:
-    meaning: µmol/L
   mL/L:
     meaning: mL/L
+  mg/L:
+    meaning: mg/L
+  mmol/L:
+    meaning: mmol/L
   mmol/kg:
     meaning: mmol/kg
-  parts per million:
-    meaning: parts per million
+  mmol/m3:
+    meaning: mmol/m3
+  mol/L:
+    meaning: mol/L
+  mol/m3:
+    meaning: mol/m3
   'other:':
     meaning: 'other:'
+  parts per million:
+    meaning: parts per million
+  µM:
+    meaning: µM
+  µg/L:
+    meaning: µg/L
+  µmol/L:
+    meaning: µmol/L
+  µmol/m3:
+    meaning: µmol/m3

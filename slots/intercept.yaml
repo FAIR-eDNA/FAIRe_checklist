@@ -1,9 +1,9 @@
 name: intercept
 description: Intercept of a qPCR standard curve. This shall be specific to each pcr_plate_id.
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

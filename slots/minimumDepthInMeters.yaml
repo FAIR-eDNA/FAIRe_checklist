@@ -5,9 +5,9 @@ description: The lesser depth of a range of depth (vertical distance below the l
   point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters
   are the same. Unit = meter
 in_subset:
-- Environment
+  - Environment
 slot_uri: http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
-range: float
+range: string
 unit: meter
 structured_pattern:
   syntax: null

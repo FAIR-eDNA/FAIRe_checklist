@@ -1,7 +1,7 @@
 name: project_contact
 description: A contact person and their contact (i.e., email address) for data enquiry
 in_subset:
-- Project
+  - Project
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

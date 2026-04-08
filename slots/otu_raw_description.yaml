@@ -2,7 +2,7 @@ name: otu_raw_description
 description: A description of the data curation and processing steps applied to the
   raw OTU/ASV table
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

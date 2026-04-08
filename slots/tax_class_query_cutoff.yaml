@@ -1,9 +1,9 @@
 name: tax_class_query_cutoff
 description: Minimum percent query coverage for taxonomic assignment. Unit = %
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: '%'
 structured_pattern:
   syntax: null

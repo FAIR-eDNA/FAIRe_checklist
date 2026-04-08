@@ -1,10 +1,9 @@
 name: assay_type
-description: The method used in the eDNA study to detect taxon/taxa of interest in
-  environmental sample. A targeted eDNA assay is designed to detect the presence of
-  a specific species or a small subset of taxa (such as a genus or family) using techniques
-  like quantitative PCR (qPCR). This contrasts with a metabarcoding eDNA assay which
-  aims to characterize the composition of broader taxonomic communities, often encompassing
-  multiple phyletic groups, by utilising high-throughput sequencing such as metabarcoding
+description: The method used in the eDNA study to detect taxon/taxa of interest in environmental sample. A targeted eDNA assay
+  is designed to detect the presence of a specific species or a small subset of taxa (such as a genus or family) using techniques
+  like quantitative PCR (qPCR). This contrasts with a metabarcoding eDNA assay which aims to characterize the composition
+  of broader taxonomic communities, often encompassing multiple phyletic groups, by utilising high-throughput sequencing such
+  as metabarcoding
 in_subset:
 - Project
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -33,9 +32,9 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
 enum_values:
-  targeted:
-    meaning: targeted
   metabarcoding:
     meaning: metabarcoding
   'other:':
     meaning: 'other:'
+  targeted:
+    meaning: targeted

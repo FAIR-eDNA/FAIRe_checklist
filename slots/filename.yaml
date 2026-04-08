@@ -2,7 +2,7 @@ name: filename
 description: A file name of raw sequencing data. If paired end, fill filename2 for
   the reverse read
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

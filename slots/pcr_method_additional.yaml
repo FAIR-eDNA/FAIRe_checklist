@@ -4,7 +4,7 @@ description: Additional information on PCR or PCR-free method, that has not been
   PCR was applied, enter the second PCR protocol under the term pcr2_* in the library
   preparation/sequencing section.
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

@@ -1,7 +1,7 @@
 name: specificEpithet
 description: The name of the first or species epithet of the scientificName.
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/specificEpithet
 range: string
 structured_pattern:

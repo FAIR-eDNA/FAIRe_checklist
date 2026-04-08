@@ -22,14 +22,7 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 enum_values:
-  ILLUMINA:
-    meaning: ILLUMINA
   BGISEQ:
     meaning: BGISEQ
   CAPILLARY:
@@ -44,6 +37,8 @@ enum_values:
     meaning: GENEMIND
   HELICOS:
     meaning: HELICOS
+  ILLUMINA:
+    meaning: ILLUMINA
   ION_TORRENT:
     meaning: ION_TORRENT
   LS454:
@@ -54,9 +49,14 @@ enum_values:
     meaning: PACBIO_SMRT
   TAPESTRI:
     meaning: TAPESTRI
-  VELA_DIAGNOSTICS:
-    meaning: VELA_DIAGNOSTICS
   ULTIMA:
     meaning: ULTIMA
+  VELA_DIAGNOSTICS:
+    meaning: VELA_DIAGNOSTICS
   'other:':
     meaning: 'other:'
+annotations:
+  data_type:
+  - projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR

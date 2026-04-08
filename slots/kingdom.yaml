@@ -1,7 +1,7 @@
 name: kingdom
 description: The full scientific name of the kingdom
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/kingdom
 range: string
 structured_pattern:

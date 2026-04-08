@@ -1,6 +1,6 @@
 name: precip_chem_prep
-description: Chemicals used in precipitation at the sample preparation step prior
-  to DNA extraction, if precipitation was performed
+description: Chemicals used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
+  performed
 in_subset:
 - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -42,7 +42,7 @@ enum_values:
     meaning: ethanol
   isopropanol:
     meaning: isopropanol
-  sodium chloride:
-    meaning: sodium chloride
   'other:':
     meaning: 'other:'
+  sodium chloride:
+    meaning: sodium chloride

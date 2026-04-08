@@ -2,7 +2,7 @@ name: study_factor
 description: The variable(s) examined in the study, including those of direct interests
   to address study aims and covariates.
 in_subset:
-- Project
+  - Project
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

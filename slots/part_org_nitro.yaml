@@ -1,9 +1,9 @@
 name: part_org_nitro
 description: Concentration of particulate organic nitrogen
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000719
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

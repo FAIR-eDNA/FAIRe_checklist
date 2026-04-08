@@ -1,7 +1,6 @@
 name: checksum_method
-description: The specific algorithm or technique used to compute the checksum (checksum_filename,
-  checksum_filename2) for verifying data integrity. Examples include MD5, SHA-256,
-  and CRC-32.
+description: The specific algorithm or technique used to compute the checksum (checksum_filename, checksum_filename2) for
+  verifying data integrity. Examples include MD5, SHA-256, and CRC-32.
 in_subset:
 - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -30,11 +29,11 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
+  CRC-32:
+    meaning: CRC-32
   MD5:
     meaning: MD5
   SHA-256:
     meaning: SHA-256
-  CRC-32:
-    meaning: CRC-32
   'other:':
     meaning: 'other:'

@@ -1,9 +1,9 @@
 name: temp
 description: Temperature of the sample at the time of sampling in degree Celsius
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000113
-range: float
+range: string
 unit: degree Celsius
 structured_pattern:
   syntax: null

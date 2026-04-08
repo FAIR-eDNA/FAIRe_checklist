@@ -4,9 +4,9 @@ description: Volume or mass of sample or subsamples that was processed for DNA e
   was used for DNA extraction, the entries of samp_size and samp_vol_we_dna_ext should
   be 1L and 500mL respectively. Specify the unit under the term samp_vol_ext_unit.
 in_subset:
-- Nucleic acid extraction
+  - Nucleic acid extraction
 slot_uri: https://w3id.org/mixs/0000111
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

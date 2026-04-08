@@ -2,9 +2,9 @@ name: lib_conc
 description: The concentration of the prepared library pool that was loaded onto the
   sequencing platform for a sequencing run.
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

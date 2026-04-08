@@ -32,11 +32,11 @@ annotations:
   - description
   - field_type
 enum_values:
+  UTM:
+    meaning: UTM
   decimal degrees:
     meaning: decimal degrees
   degrees minutes seconds:
     meaning: degrees minutes seconds
-  UTM:
-    meaning: UTM
   'other:':
     meaning: 'other:'

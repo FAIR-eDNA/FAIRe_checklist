@@ -5,9 +5,9 @@ description: Elevation of the sampling site is its height above a fixed referenc
   such as an aircraft in flight or a spacecraft in orbit. i.e. 0m for seawater sample.
   Unit = meter
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000093
-range: float
+range: string
 unit: meter
 structured_pattern:
   syntax: null

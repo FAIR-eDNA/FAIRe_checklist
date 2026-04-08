@@ -1,7 +1,7 @@
 name: genus
 description: The full scientific name of the genus
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/genus
 range: string
 structured_pattern:

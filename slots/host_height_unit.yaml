@@ -31,11 +31,11 @@ annotations:
   - HostAssociated
   - SymbiontAssociated
 enum_values:
-  mm:
-    meaning: mm
   cm:
     meaning: cm
   m:
     meaning: m
+  mm:
+    meaning: mm
   'other:':
     meaning: 'other:'

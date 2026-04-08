@@ -1,7 +1,7 @@
 name: screen_other
 description: Description of other screening criteria and approaches
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

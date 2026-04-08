@@ -3,7 +3,7 @@ description: composition of custom master mix, including the names, volumes and 
   of additives (i.e., salts, buffers, enzyme and other components) (if custom master
   mix was used)
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

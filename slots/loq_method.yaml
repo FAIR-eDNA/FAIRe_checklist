@@ -1,7 +1,7 @@
 name: loq_method
 description: Method used for determining LOQ e.g., DOI of a published procedure
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

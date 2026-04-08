@@ -2,7 +2,7 @@ name: detection_criteria
 description: Criteria to determine positive detection. For example, a certain number
   of positive amplifications per sample, sanger sequencing of amplicons
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

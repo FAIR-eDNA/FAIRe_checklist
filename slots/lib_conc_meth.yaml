@@ -1,7 +1,7 @@
 name: lib_conc_meth
 description: Method to estimate lib_conc
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

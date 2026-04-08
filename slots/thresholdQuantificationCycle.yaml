@@ -1,9 +1,9 @@
 name: thresholdQuantificationCycle
 description: Threshold for change in fluorescence signal between cycles. No unit.
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 unit: No unit
 structured_pattern:
   syntax: null

@@ -3,7 +3,7 @@ description: Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers
   listed in pcr_primer_forward, list the references respectively, separated by pipe
   ( | ).
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
 structured_pattern:

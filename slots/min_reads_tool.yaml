@@ -1,7 +1,7 @@
 name: min_reads_tool
 description: Software and the version to remove reads below minimum read threshold
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

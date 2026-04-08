@@ -2,7 +2,7 @@ name: min_len_tool
 description: Software and the version to remove reads shorter than minimum length
   threshold
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

@@ -41,13 +41,13 @@ enum_values:
     meaning: cellulose ester
   glass fiber:
     meaning: glass fiber
+  nylon:
+    meaning: nylon
+  'other:':
+    meaning: 'other:'
+  polyethersulfone:
+    meaning: polyethersulfone
   thermoplastic membrane:
     meaning: thermoplastic membrane
   track etched polycarbonate:
     meaning: track etched polycarbonate
-  nylon:
-    meaning: nylon
-  polyethersulfone:
-    meaning: polyethersulfone
-  'other:':
-    meaning: 'other:'

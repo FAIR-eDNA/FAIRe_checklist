@@ -4,9 +4,9 @@ description: The length of the amplicon in basepairs EXCLUDING the primers, adap
   Excel, format the cell as text to prevent it from being auto-formatted as a date.
   Unit = basepairs
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: integer
+range: string
 unit: basepairs
 structured_pattern:
   syntax: null

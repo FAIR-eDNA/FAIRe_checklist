@@ -1,8 +1,7 @@
 name: min_reads_cutoff
-description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read abundance,
-  noise (e.g., (relative) read counts) detected in blanks. Answer either numeric value
-  with the unit specified under the terms min_reads_cutoff_unit, "noise detected in
-  blanks", or "other: FREE TEXT DESCRIPTION".'
+description: 'minimum read counts thresholds. e.g., 10 reads, 5% relative read abundance, noise (e.g., (relative) read counts)
+  detected in blanks. Answer either numeric value with the unit specified under the terms min_reads_cutoff_unit, "noise detected
+  in blanks", or "other: FREE TEXT DESCRIPTION".'
 in_subset:
 - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -31,9 +30,9 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  numeric value:
-    meaning: numeric value
   noise detected in blanks:
     meaning: noise detected in blanks
+  numeric value:
+    meaning: numeric value
   'other:':
     meaning: 'other:'

@@ -2,9 +2,9 @@ name: pcr2_annealingTemp
 description: (If bacroding_pcr_appr = "two-step PCR") The reaction temperature during
   the annealing phase of the second step PCR. Unit = degree Celsius
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: degree Celsius
 structured_pattern:
   syntax: null

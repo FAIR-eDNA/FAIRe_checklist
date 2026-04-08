@@ -1,9 +1,9 @@
 name: wind_speed
 description: Speed of wind measured at the time of sampling. Unit = m/s
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000118
-range: float
+range: string
 unit: m/s
 structured_pattern:
   syntax: null

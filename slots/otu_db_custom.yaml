@@ -2,7 +2,7 @@ name: otu_db_custom
 description: Description of custom reference database(s) (i.e. coverage of taxa, region)
   if applied to assign taxonomy to OTUs or ASVs
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

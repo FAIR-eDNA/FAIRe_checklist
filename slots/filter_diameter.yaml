@@ -1,9 +1,9 @@
 name: filter_diameter
 description: Diameter of a filter if circular. Unit = mm
 in_subset:
-- Sample preparation
+  - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: mm
 structured_pattern:
   syntax: null

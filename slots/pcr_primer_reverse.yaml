@@ -9,7 +9,7 @@ description: Reverse PCR primer (5' - 3') that were used to amplify the sequence
   and thus a single OTU table was generated from the multiplexed PCR. This term is
   required except for PCR free methods.
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
 structured_pattern:

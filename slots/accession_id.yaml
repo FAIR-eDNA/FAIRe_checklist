@@ -1,7 +1,7 @@
 name: accession_id
 description: Accession ID of the best matching sequence from a reference database
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

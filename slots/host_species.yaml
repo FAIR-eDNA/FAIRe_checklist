@@ -2,7 +2,7 @@ name: host_species
 description: The scientific name of host species. i.e. predator species where a gut
   content sample was dissected from.
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000248
 range: string
 structured_pattern:

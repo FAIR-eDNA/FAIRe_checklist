@@ -1,7 +1,7 @@
 name: lib_id
 description: An identifier of a library (an amplicon of a sample with unique MIDs)
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

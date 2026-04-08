@@ -2,9 +2,9 @@ name: diss_org_nitro
 description: Dissolved organic nitrogen concentration measured as; total dissolved
   nitrogen - NH4 - NO3 - NO2
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000162
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

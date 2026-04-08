@@ -1,7 +1,7 @@
 name: class
 description: The full scientific name of the class
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/class
 range: string
 structured_pattern:

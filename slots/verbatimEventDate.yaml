@@ -1,7 +1,7 @@
 name: verbatimEventDate
 description: Sample collection date before formatting
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimEventDate
 range: string
 structured_pattern:

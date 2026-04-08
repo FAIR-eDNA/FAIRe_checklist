@@ -4,7 +4,7 @@ description: The device used to collect an environmental sample. This term accep
   such as syringe [OBI_0000422] and container [OBI_0000967] as well as free-text entry
   (i.e. niskin bottle, push core, spoon, water bottle).
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: https://w3id.org/mixs/0000002
 range: string
 structured_pattern:

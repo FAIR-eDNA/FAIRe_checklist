@@ -1,9 +1,9 @@
 name: nitrite
 description: Concentration of nitrite in the sample
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000426
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

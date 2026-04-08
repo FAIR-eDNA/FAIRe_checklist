@@ -1,9 +1,9 @@
 name: org_matter
 description: Concentration of organic matter
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000204
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

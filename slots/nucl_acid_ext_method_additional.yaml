@@ -2,7 +2,7 @@ name: nucl_acid_ext_method_additional
 description: Additional information on nucleic acid extraction method, that has not
   been shared in the given record.
 in_subset:
-- Nucleic acid extraction
+  - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

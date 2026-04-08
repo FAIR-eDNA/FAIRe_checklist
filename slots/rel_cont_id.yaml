@@ -2,7 +2,7 @@ name: rel_cont_id
 description: (A list of) samp_id of the negative and positive controls related to
   each sample
 in_subset:
-- Sample relations
+  - Sample relations
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

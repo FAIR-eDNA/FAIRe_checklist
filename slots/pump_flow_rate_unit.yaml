@@ -31,17 +31,17 @@ annotations:
   - Water
   - Air
 enum_values:
-  m3/s:
-    meaning: m3/s
-  m3/min:
-    meaning: m3/min
-  m3/h:
-    meaning: m3/h
-  L/s:
-    meaning: L/s
-  L/min:
-    meaning: L/min
   L/h:
     meaning: L/h
+  L/min:
+    meaning: L/min
+  L/s:
+    meaning: L/s
+  m3/h:
+    meaning: m3/h
+  m3/min:
+    meaning: m3/min
+  m3/s:
+    meaning: m3/s
   'other:':
     meaning: 'other:'

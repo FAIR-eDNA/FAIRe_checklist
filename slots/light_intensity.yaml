@@ -1,9 +1,9 @@
 name: light_intensity
 description: Measurement of light intensity. Unit = lux
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000706
-range: float
+range: string
 unit: lux
 structured_pattern:
   syntax: null

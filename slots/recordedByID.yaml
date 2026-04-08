@@ -2,7 +2,7 @@ name: recordedByID
 description: A list (concatenated and separated) of the globally unique identifier
   for the people responsible for the submitted dataset
 in_subset:
-- Project
+  - Project
 slot_uri: https://dwc.tdwg.org/list/#dwc_recordedByID
 range: string
 structured_pattern:

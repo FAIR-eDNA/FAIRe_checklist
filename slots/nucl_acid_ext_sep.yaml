@@ -28,17 +28,17 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  column-based:
-    meaning: column-based
-  magnetic beads:
-    meaning: magnetic beads
   centrifugation:
     meaning: centrifugation
-  precipitation:
-    meaning: precipitation
-  phenol chloroform:
-    meaning: phenol chloroform
+  column-based:
+    meaning: column-based
   gel electrophoresis:
     meaning: gel electrophoresis
+  magnetic beads:
+    meaning: magnetic beads
   'other:':
     meaning: 'other:'
+  phenol chloroform:
+    meaning: phenol chloroform
+  precipitation:
+    meaning: precipitation

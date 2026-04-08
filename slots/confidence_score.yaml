@@ -3,9 +3,9 @@ description: Confidence score for the taxonomic assignment, such as from bootstr
   If multiple species were assigned to one ASV/OTU, a range can be entered separated
   by  "-" (e.g., 0.996-0.998)
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

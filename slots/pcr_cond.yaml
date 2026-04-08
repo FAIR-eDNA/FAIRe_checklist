@@ -5,12 +5,11 @@ description: Description of reaction conditions and components of PCR. The recom
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_cond
   in the library preparation/sequencing section.
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://w3id.org/mixs/0000049
 range: string
 structured_pattern:
-  syntax: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
-    elongation:degrees_minutes;total cycles
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

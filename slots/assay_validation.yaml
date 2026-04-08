@@ -3,7 +3,7 @@ description: How was the assay validated for specificity? e.g., in-silico, in-vi
   in-situ validations, sanger sequencing, repeat analysis with alternate assay, intra/inter
   species tests
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

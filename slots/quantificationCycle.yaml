@@ -7,9 +7,9 @@ description: The number of cycles required for the fluorescent signal to cross a
   standard (http://www.rdml.org). Use "NA" (not zero) to indicate no amplification
   occurred. Unit = Cycle
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 unit: cycle
 structured_pattern:
   syntax: null

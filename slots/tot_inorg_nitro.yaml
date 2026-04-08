@@ -1,9 +1,9 @@
 name: tot_inorg_nitro
 description: Total inorganic nitrogen content
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000745
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

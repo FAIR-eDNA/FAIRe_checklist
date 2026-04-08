@@ -3,11 +3,11 @@ description: The duration of the sampling event, written in ISO 8601 format (i.e
   P1DT3H for 1 day and 3 hours period. P1Y6M for 1 year and 6 months period. T30M/45M
   for some time between 30 and 45 minutes).
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: http://rs.tdwg.org/eco/terms/eventDurationValue
 range: string
 structured_pattern:
-  syntax: PnYnMnWnDTnHnMnS
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

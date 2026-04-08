@@ -4,9 +4,9 @@ description: The geographic latitude in decimal degrees using WGS84 datum. Posit
   between -90 and 90, inclusive. The desired minimum number of decimal places is the
   hundred-thousandth (0.00001) to achieve meter scale resolution.
 in_subset:
-- Sample collection
+  - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/decimalLatitude
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

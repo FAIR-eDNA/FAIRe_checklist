@@ -1,9 +1,8 @@
 name: detected_notDetected
-description: Detection of the targeted taxon for each biological replicate, based
-  on the specified detection criteria (detailed under the term 'detection_criteria').
-  Detected = 1, Not detected = 0. For projects employing multiple assays, this term
-  should be specified separately for each assay. The term name should include the
-  assay identifier in the format detected_notDetected_<assay_name> (e.g., detected_notDetected_eSERU5).
+description: Detection of the targeted taxon for each biological replicate, based on the specified detection criteria (detailed
+  under the term 'detection_criteria'). Detected = 1, Not detected = 0. For projects employing multiple assays, this term
+  should be specified separately for each assay. The term name should include the assay identifier in the format detected_notDetected_<assay_name>
+  (e.g., detected_notDetected_eSERU5).
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

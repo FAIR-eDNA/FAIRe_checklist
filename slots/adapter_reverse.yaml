@@ -2,7 +2,7 @@ name: adapter_reverse
 description: Reverse sequencing adapter. The sequence should be reported in uppercase
   letters
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

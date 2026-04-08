@@ -2,9 +2,9 @@ name: precip_force_prep
 description: Centrifuge force used in precipitation at the sample preparation step
   prior to DNA extraction, if precipitation was performed. Unit = x g
 in_subset:
-- Sample preparation
+  - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: x g
 structured_pattern:
   syntax: null

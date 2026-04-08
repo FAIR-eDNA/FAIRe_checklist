@@ -4,7 +4,7 @@ description: Actions taken to make the shared data (i.e. location, date) less sp
   quality may be available on request. Note this is not related to genetic generalisation
   within bioinformatic workflows (i.e., OTU clustering).
 in_subset:
-- Data management
+  - Data management
 slot_uri: http://rs.tdwg.org/dwc/terms/dataGeneralizations
 range: string
 structured_pattern:

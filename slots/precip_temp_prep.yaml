@@ -1,6 +1,6 @@
 name: precip_temp_prep
-description: Temperature used in precipitation at the sample preparation step prior
-  to DNA extraction, if precipitation was performed. Unit = degree Celsius
+description: Temperature used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
+  performed. Unit = degree Celsius
 in_subset:
 - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -37,9 +37,9 @@ annotations:
   - field_name
   - description
 enum_values:
-  numeric value:
-    meaning: numeric value
   ambient temperature:
     meaning: ambient temperature
+  numeric value:
+    meaning: numeric value
   'other:':
     meaning: 'other:'

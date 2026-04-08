@@ -28,13 +28,13 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  synthetic double-stranded DNA:
-    meaning: synthetic double-stranded DNA
-  plasmid:
-    meaning: plasmid
   amplicon:
     meaning: amplicon
   gDNA:
     meaning: gDNA
   'other:':
     meaning: 'other:'
+  plasmid:
+    meaning: plasmid
+  synthetic double-stranded DNA:
+    meaning: synthetic double-stranded DNA

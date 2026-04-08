@@ -6,9 +6,9 @@ description: The total concentration of all dissolved salts in a liquid or solid
   of the sample to a salinity standard such as seawater. Unit = practical salinity
   unit (psu)
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000183
-range: float
+range: string
 unit: practical salinity unit (psu)
 structured_pattern:
   syntax: null

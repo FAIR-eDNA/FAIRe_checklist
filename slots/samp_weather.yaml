@@ -1,7 +1,7 @@
 name: samp_weather
 description: The weather on the sampling day
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000827
 range: string
 structured_pattern:

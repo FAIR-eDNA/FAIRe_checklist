@@ -5,7 +5,7 @@ description: 'A positive control type used in an investigation. See Table 2 in K
   to monitor for PCR success, including moch community samples. Provide further details
   (e.g., synthetic DNA) where applicable.'
 in_subset:
-- Sample information
+  - Sample information
 slot_uri: https://w3id.org/mixs/0001322
 range: string
 structured_pattern:

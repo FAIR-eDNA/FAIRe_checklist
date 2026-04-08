@@ -1,9 +1,9 @@
 name: tot_nitro_content
 description: Total nitrogen content of the sample
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000530
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

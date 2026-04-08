@@ -1,7 +1,7 @@
 name: screen_contam_method
 description: How were contaminations screened and applied in data curation/analyses/interpretation?
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

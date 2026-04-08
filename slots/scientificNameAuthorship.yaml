@@ -1,7 +1,7 @@
 name: scientificNameAuthorship
 description: The authorship information for the scientificName
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
 range: string
 structured_pattern:

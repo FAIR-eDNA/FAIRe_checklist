@@ -28,9 +28,9 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  ng/µl:
-    meaning: ng/µl
   copies/µl:
     meaning: copies/µl
+  ng/µl:
+    meaning: ng/µl
   'other:':
     meaning: 'other:'

@@ -2,7 +2,7 @@ name: bioinfo_method_additional
 description: Additional information on bioinformatics, that has not been shared in
   the given record.
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

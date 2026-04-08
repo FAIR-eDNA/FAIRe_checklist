@@ -1,7 +1,6 @@
 name: amp_vis_method
-description: Amplicon visualisation method (i.e., qPCR, dPCR, gel electrophoresis,
-  PCR capillary electrophoresis (PCR-CE), Loop-mediated isothermal amplification (LAMP))
-  to determine the detection of a targeted taxon
+description: Amplicon visualisation method (i.e., qPCR, dPCR, gel electrophoresis, PCR capillary electrophoresis (PCR-CE),
+  Loop-mediated isothermal amplification (LAMP)) to determine the detection of a targeted taxon
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__
@@ -31,15 +30,15 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
 enum_values:
-  qPCR:
-    meaning: qPCR
-  dPCR:
-    meaning: dPCR
-  gel electrophoresis:
-    meaning: gel electrophoresis
   CE-PCR:
     meaning: CE-PCR
   LAMP:
     meaning: LAMP
+  dPCR:
+    meaning: dPCR
+  gel electrophoresis:
+    meaning: gel electrophoresis
   'other:':
     meaning: 'other:'
+  qPCR:
+    meaning: qPCR

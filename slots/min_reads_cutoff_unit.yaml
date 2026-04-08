@@ -28,9 +28,9 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  reads:
-    meaning: reads
   '%':
     meaning: '%'
   'other:':
     meaning: 'other:'
+  reads:
+    meaning: reads

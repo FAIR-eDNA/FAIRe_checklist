@@ -1,8 +1,7 @@
 import os
 
 import yaml
-from openpyxl import load_workbook
-from checklist_source import resolve_single_checklist_file
+from checklist_source import load_checklist_rows_from_xlsx, resolve_single_checklist_file
 
 # Builds enums from the FAIRe checklist
 SLOTS_DIR = "slots"
@@ -13,30 +12,6 @@ def split_pipe(raw):
     if not raw:
         return []
     return [x.strip() for x in str(raw).split("|") if x.strip()]
-
-
-def load_checklist_rows_from_xlsx(path, sheet_name="checklist"):
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Checklist Excel file not found: {path}")
-
-    wb = load_workbook(path, read_only=True, data_only=True)
-    if sheet_name not in wb.sheetnames:
-        raise ValueError(f"Sheet '{sheet_name}' not found in {path}")
-
-    ws = wb[sheet_name]
-    rows = ws.iter_rows(min_row=1, values_only=True)
-    headers = next(rows, None)
-    if not headers:
-        return []
-
-    header_names = [str(h).strip() if h is not None else "" for h in headers]
-    out = []
-    for row in rows:
-        rec = {}
-        for idx, key in enumerate(header_names):
-            rec[key] = row[idx] if idx < len(row) else None
-        out.append(rec)
-    return out
 
 
 def slot_files():

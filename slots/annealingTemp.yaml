@@ -3,9 +3,9 @@ description: The reaction temperature during the annealing phase of PCR. If two-
   PCR was applied for a metabarcoding approach, enter the second PCR protocol under
   the term pcr2_* in the library preparation/sequencing section. Unit = degree Celsius
 in_subset:
-- PCR
+  - PCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 unit: degree Celsius
 structured_pattern:
   syntax: null

@@ -1,7 +1,7 @@
 name: identificationRemarks
 description: Comments or notes about the taxonomic assignment.
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/identificationRemarks
 range: string
 structured_pattern:

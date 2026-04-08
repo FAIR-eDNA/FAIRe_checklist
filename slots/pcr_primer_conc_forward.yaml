@@ -5,9 +5,9 @@ description: The stock concentration of the forward PCR primer (pcr_primer_forwa
   concentration) primer in a 25 µL reaction results in a final concentration of 0.2
   µM. Hence the entry for this term would be 5. Unit = µM
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 unit: µM
 structured_pattern:
   syntax: null

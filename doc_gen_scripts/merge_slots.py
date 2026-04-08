@@ -91,7 +91,7 @@ schema = OrderedDict(
         "id": "tbd: a value like https://w3id.org/fairie/schema",
         "name": "faire_checklist",
         "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
-        "version": "1.0.3",
+        "version": "1.0.2",
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "https://schema.org/",

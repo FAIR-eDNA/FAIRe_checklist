@@ -1,7 +1,7 @@
 name: chimera_check_param
 description: Parameters used to filter chimera sequences if note default
 in_subset:
-- Bioinformatics
+  - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

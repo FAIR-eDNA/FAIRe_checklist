@@ -3,7 +3,7 @@ description: (If bacroding_pcr_appr = "two-step PCR") Additional information on 
   or PCR-free method, that has not been shared in the given record in the second step
   PCR
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

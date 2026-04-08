@@ -2,7 +2,7 @@ name: checksum_filename2
 description: The checksum of the reverse sequence reads file (filename2), used to
   verify the integrity and identity of the corresponding data file
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

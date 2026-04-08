@@ -1,7 +1,7 @@
 name: tidal_stage
 description: Stage of tide
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000750
 range: string
 structured_pattern:

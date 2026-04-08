@@ -2,7 +2,7 @@ name: project_id
 description: A brief, concise project identifier with no spaces or special characters,
   ensuring machine readability. This ID will be used in data file names as 'project_id'.
 in_subset:
-- Project
+  - Project
 slot_uri: https://w3id.org/nmdc/project_id
 range: string
 structured_pattern:

@@ -2,7 +2,7 @@ name: targetTaxonomicAssay
 description: Taxa or species name targeted by the primers, probes, and/or other approaches
   applied in the PCR.
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

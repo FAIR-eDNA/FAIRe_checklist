@@ -1,6 +1,6 @@
 name: verbatimSRS
-description: The ellipsoid, geodetic datum, or spatial reference system (SRS) upon
-  which coordinates given in verbatimLatitude and verbatimLongitude are based.
+description: The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude
+  and verbatimLongitude are based.
 in_subset:
 - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimSRS
@@ -33,19 +33,19 @@ annotations:
   - description
   - field_type
 enum_values:
-  WGS84:
-    meaning: WGS84
-  NAD84:
-    meaning: NAD84
-  NAD27:
-    meaning: NAD27
-  GDA94:
-    meaning: GDA94
-  GDA2020:
-    meaning: GDA2020
   ETRS89:
     meaning: ETRS89
+  GDA2020:
+    meaning: GDA2020
+  GDA94:
+    meaning: GDA94
   JGD2000:
     meaning: JGD2000
+  NAD27:
+    meaning: NAD27
+  NAD84:
+    meaning: NAD84
+  WGS84:
+    meaning: WGS84
   'other:':
     meaning: 'other:'

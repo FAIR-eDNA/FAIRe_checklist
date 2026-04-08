@@ -32,9 +32,9 @@ annotations:
   modifications_made:
   - field_type
 enum_values:
+  'other:':
+    meaning: 'other:'
   paired end:
     meaning: paired end
   single end:
     meaning: single end
-  'other:':
-    meaning: 'other:'

@@ -3,7 +3,7 @@ description: Taxonomic name(s) of the organism(s) targeted by a blocking primer 
   prevent their DNA amplification during PCR, enabling the preferential amplification
   of other taxa.
 in_subset:
-- PCR
+  - PCR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:

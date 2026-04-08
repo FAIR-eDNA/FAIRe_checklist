@@ -30,10 +30,10 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:
-  Ct/Cq with standard curve:
-    meaning: Ct/Cq with standard curve
   Ct/Cq with standard bionomial data:
     meaning: Ct/Cq with standard bionomial data
+  Ct/Cq with standard curve:
+    meaning: Ct/Cq with standard curve
   direct output from the PCR instrument used:
     meaning: direct output from the PCR instrument used
   gel fluorescence intensities:

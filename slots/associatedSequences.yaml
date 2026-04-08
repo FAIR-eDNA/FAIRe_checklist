@@ -2,7 +2,7 @@ name: associatedSequences
 description: A list (concatenated and separated) of identifiers (publication, global
   unique identifier, URI) of genetic sequence information associated with the samp_name
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: http://rs.tdwg.org/dwc/terms/associatedSequences
 range: string
 structured_pattern:

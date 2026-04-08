@@ -1,6 +1,6 @@
 name: pcr_0_1
-description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches including
-  shotgun metagenomics, Nanopore) = 0
+description: Was PCR performed in the study? Yes = 1, No (pcr-free approaches including shotgun metagenomics, Nanopore) =
+  0
 in_subset:
 - PCR
 slot_uri: __TODO_ADD_SLOT_URI__

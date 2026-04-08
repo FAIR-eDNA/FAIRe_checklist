@@ -2,7 +2,7 @@ name: informationWithheld
 description: Additional information that exists, but that has not been shared in the
   given record.
 in_subset:
-- Data management
+  - Data management
 slot_uri: http://rs.tdwg.org/dwc/terms/informationWithheld
 range: string
 structured_pattern:

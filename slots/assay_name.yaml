@@ -1,13 +1,26 @@
 name: assay_name
 description: A brief, concise identifier for assay with no spaces or special characters,
   ensuring machine readability. This ID will be used in file names as 'assay_name'.
-range: string
 in_subset:
-- PCR
+  - PCR
+slot_uri: __TODO_ADD_SLOT_URI__
+range: string
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: true
+recommended: false
+examples: []
+source: []
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []
 annotations:
-  section: PCR
-  requirement_level: Mandatory
-  example: MiFish (metabarcoding) / eSERU5 (qPCR)
   data_type:
   - projectMetadata
   - sampleMetadata
@@ -15,7 +28,9 @@ annotations:
   - experimentRunMetadata
   - stdData
   - eLowQuantData
+  requirement_level: Mandatory
   requirement_level_code: M
-  source:
-  - New
-term_type: unspecified
+# __LEGACY_LINKML_FIELDS_START__
+# Keeping old fields here during migration so nothing is lost.
+# term_type: unspecified
+# __LEGACY_LINKML_FIELDS_END__

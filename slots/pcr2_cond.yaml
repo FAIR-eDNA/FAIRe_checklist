@@ -3,12 +3,11 @@ description: (If bacroding_pcr_appr = "two-step PCR") Description of reaction co
   and components of in the second PCR. The recommended format is ?initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
   elongation:degrees_minutes;total cycles?, where possible.
 in_subset:
-- Library preparation sequencing
+  - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
-  syntax: initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final
-    elongation:degrees_minutes;total cycles
+  syntax: null
   interpolated: null
   partial_match: null
 required: false

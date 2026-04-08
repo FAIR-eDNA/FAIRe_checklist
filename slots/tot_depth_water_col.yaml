@@ -4,9 +4,9 @@ description: Measurement of total depth of water column. For example, if a sea s
   15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters. Unit
   = meter
 in_subset:
-- Environment
+  - Environment
 slot_uri: https://w3id.org/mixs/0000634
-range: float
+range: string
 unit: meter
 structured_pattern:
   syntax: null

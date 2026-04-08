@@ -1,9 +1,9 @@
 name: pump_flow_rate
 description: Pump flow rate of filtration if applicable
 in_subset:
-- Sample preparation
+  - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

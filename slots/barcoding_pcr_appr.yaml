@@ -28,11 +28,11 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 enum_values:
-  one-step PCR:
-    meaning: one-step PCR
-  two-step PCR:
-    meaning: two-step PCR
   ligation-based:
     meaning: ligation-based
+  one-step PCR:
+    meaning: one-step PCR
   'other:':
     meaning: 'other:'
+  two-step PCR:
+    meaning: two-step PCR

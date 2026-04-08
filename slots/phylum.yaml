@@ -1,7 +1,7 @@
 name: phylum
 description: The full scientific name of the phylum or division
 in_subset:
-- OTU/ASV
+  - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/phylum
 range: string
 structured_pattern:

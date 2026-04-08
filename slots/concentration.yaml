@@ -1,9 +1,9 @@
 name: concentration
 description: Concentration of total DNA after extraction
 in_subset:
-- Nucleic acid extraction
+  - Nucleic acid extraction
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null

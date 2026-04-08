@@ -3,9 +3,9 @@ description: Assay's limit of quantification (LOQ) (the lowest amount of target 
   DNA that can be quantitatively determined with a stated precision under the stated
   experimental conditions).
 in_subset:
-- Targeted assay detection
+  - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: float
+range: string
 structured_pattern:
   syntax: null
   interpolated: null
