@@ -35,11 +35,11 @@ jobs:
       - name: Merge slots into schema.yaml
         run: python doc_gen_scripts/merge_slots.py
 
-      - name: Create Excel version of checklist
-        run: python doc_gen_scripts/generate_checklist_excel.py
+     # - name: Create Excel version of checklist
+     #   run: python doc_gen_scripts/generate_checklist_excel.py
 
-      - name: Create Excel Templates from checklist
-        run: python doc_gen_scripts/generate_FULLtemplate_excel.py
+     # - name: Create Excel Templates from checklist
+     #   run: python doc_gen_scripts/generate_FULLtemplate_excel.py
 
       - name: Commit and push updated schema (only on main)
         if: github.ref == 'refs/heads/main'
