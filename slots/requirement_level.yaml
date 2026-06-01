@@ -1,0 +1,21 @@
+name: requirement_level
+description: FAIRe checklist requirement category for a metadata field (mandatory, highly recommended,
+  recommended, or optional). Distinct from per-term annotations on each slot; this slot carries the
+  controlled vocabulary for validation.
+slot_uri: faire:requirement_level
+range: requirement_level_enum
+structured_pattern:
+  syntax: null
+  interpolated: null
+  partial_match: null
+required: false
+recommended: false
+examples: []
+source: []
+mappings:
+  exact_mappings: []
+  close_mappings: []
+  related_mappings: []
+  narrow_mappings: []
+  broad_mappings: []
+domain_of: []

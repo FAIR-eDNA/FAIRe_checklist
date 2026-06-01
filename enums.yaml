@@ -857,6 +857,28 @@ enums:
         meaning: m3/s
       'other:':
         meaning: 'other:'
+  requirement_level_code_enum:
+    description: Controlled vocabulary for requirement_level_code.
+    permissible_values:
+      HR:
+        meaning: HR
+      M:
+        meaning: M
+      O:
+        meaning: O
+      R:
+        meaning: R
+  requirement_level_enum:
+    description: Controlled vocabulary for requirement_level.
+    permissible_values:
+      Highly recommended:
+        meaning: Highly recommended
+      Mandatory:
+        meaning: Mandatory
+      Optional:
+        meaning: Optional
+      Recommended:
+        meaning: Recommended
   samp_category_enum:
     description: Controlled vocabulary for samp_category.
     permissible_values:

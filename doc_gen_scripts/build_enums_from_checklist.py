@@ -58,8 +58,17 @@ def main():
         "permissible_values": {"unknown": {"description": "TODO: map preferred null-flavor codes."}},
     }
 
-    # Primary source: checklist Excel controlled vocabulary options.
+    # Primary source: checklist Excel (requirement columns + per-term controlled vocabulary).
+    req_level_values = set()
+    req_code_values = set()
     for row in load_checklist_rows_from_xlsx(checklist_xlsx):
+        rl = row.get("requirement_level")
+        if rl is not None and str(rl).strip():
+            req_level_values.add(str(rl).strip())
+        rc = row.get("requirement_level_code")
+        if rc is not None and str(rc).strip():
+            req_code_values.add(str(rc).strip())
+
         slot_name = (row.get("term_name") or "").strip()
         if not slot_name:
             continue
@@ -69,6 +78,15 @@ def main():
         enum_name = f"{slot_name}_enum"
         pv = ensure_enum(enums, enum_name, slot_name)
         for v in cv:
+            add_pv(pv, v)
+
+    if req_level_values:
+        pv = ensure_enum(enums, "requirement_level_enum", "requirement_level")
+        for v in sorted(req_level_values):
+            add_pv(pv, v)
+    if req_code_values:
+        pv = ensure_enum(enums, "requirement_level_code_enum", "requirement_level_code")
+        for v in sorted(req_code_values):
             add_pv(pv, v)
 
     # Merge in any extra existing values from slot-local enum_values so we don't drop old content.

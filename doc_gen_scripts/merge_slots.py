@@ -65,6 +65,51 @@ def normalize_slots_list(raw_slots):
     return []
 
 
+def uri_to_curie(uri, prefixes):
+    """
+    Replace a full URI with a CURIE when it matches a prefix expansion (longest match wins).
+    Leaves non-http(s) strings and already-compact values unchanged.
+    """
+    if not isinstance(uri, str) or not uri:
+        return uri
+    if uri.startswith("linkml:") or uri.startswith("faire:"):
+        return uri
+    if not (uri.startswith("http://") or uri.startswith("https://")):
+        return uri
+    best_name = None
+    best_len = 0
+    for pname, pexp in prefixes.items():
+        if not pexp or not isinstance(pexp, str):
+            continue
+        if uri.startswith(pexp) and len(pexp) > best_len:
+            best_name = pname
+            best_len = len(pexp)
+    if not best_name:
+        return uri
+    local = uri[best_len:]
+    if not local:
+        return uri
+    return f"{best_name}:{local}"
+
+
+def compact_uris_in_slot(slot_def, prefixes):
+    """Rewrite slot_uri and mapping lists to use schema prefix CURIEs where possible."""
+    if not isinstance(slot_def, dict):
+        return
+    su = slot_def.get("slot_uri")
+    if isinstance(su, str):
+        slot_def["slot_uri"] = uri_to_curie(su, prefixes)
+    mappings = slot_def.get("mappings")
+    if not isinstance(mappings, dict):
+        return
+    for _key, mlist in mappings.items():
+        if not isinstance(mlist, list):
+            continue
+        slot_def["mappings"][_key] = [
+            uri_to_curie(x, prefixes) if isinstance(x, str) else x for x in mlist
+        ]
+
+
 def to_permissible_values(enum_values):
     """
     Normalize slot-local enum_values into LinkML permissible_values format.
@@ -85,20 +130,25 @@ def to_permissible_values(enum_values):
     return permissible
 
 
-# Base schema structure
+# Base schema structure — prefix expansions must stay in sync with compact_uris_in_slot().
+SCHEMA_PREFIXES = {
+    "linkml": "https://w3id.org/linkml/",
+    "schema": "https://schema.org/",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "mixs": "https://w3id.org/mixs/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "gbif": "https://rs.gbif.org/extension/gbif/1.0/",
+    "faire": "https://w3id.org/fairie/",
+}
+
 schema = OrderedDict(
     {
-        "id": "tbd: a value like https://w3id.org/fairie/schema",
+        "id": "faire:schema",
         "name": "faire_checklist",
         "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
         "version": "1.0.2",
-        "prefixes": {
-            "linkml": "https://w3id.org/linkml/",
-            "schema": "https://schema.org/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "mixs": "https://w3id.org/mixs/",
-            "skos": "http://www.w3.org/2004/02/skos/core#",
-        },
+        "prefixes": SCHEMA_PREFIXES,
         "default_prefix": "faire",
         "imports": ["linkml:types"],
     }
@@ -157,12 +207,14 @@ for file_name in slot_files:
     if "name" in slot_content:
         slot_name = slot_content["name"]
         slot_def = slot_content
+        compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
         schema["slots"][slot_name] = slot_def
         slot_context[slot_name] = get_slot_context(slot_def)
         loaded_slot_names.append(slot_name)
     else:
         # Legacy format fallback: {slot_name: slot_def}
         for slot_name, slot_def in slot_content.items():
+            compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
             schema["slots"][slot_name] = slot_def
             slot_context[slot_name] = get_slot_context(slot_def)
             loaded_slot_names.append(slot_name)
