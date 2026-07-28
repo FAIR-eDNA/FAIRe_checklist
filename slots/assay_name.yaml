@@ -12,7 +12,8 @@ structured_pattern:
 required: true
 recommended: false
 examples: []
-source: []
+source:
+- New
 mappings:
   exact_mappings: []
   close_mappings: []

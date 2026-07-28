@@ -10,7 +10,7 @@ description: 'The date and time of sampling, either as an instance (single point
   A duration can also be provided using the eventDurationValue term.'
 in_subset:
   - Sample collection
-slot_uri: http://rs.tdwg.org/dwc/terms/eventDate
+slot_uri: "http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011"
 range: string
 structured_pattern:
   syntax: null
