@@ -13,7 +13,7 @@ structured_pattern:
 required: true
 recommended: false
 examples:
-- value: Jos‚ E. Crespo
+- value: José E. Crespo
   description: null
 source:
 - DwC

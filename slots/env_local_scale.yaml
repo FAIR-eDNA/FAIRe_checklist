@@ -1,6 +1,6 @@
 name: env_local_scale
 description: >-
-  The entity or entities which are in your sample or specimen?s local vicinity and which you believe have significant
+  The entity or entities which are in your sample or specimen's local vicinity and which you believe have significant
   causal influences on your sample. Select from ENVO's layer class: http://purl.obolibrary.org/obo/ENVO_01000281. Examples
   include;  marine pelagic zone [ENVO:00000208], estuarine coastal surface layer [ENVO:01001302], shrub layer [ENVO:01000336]
 in_subset:

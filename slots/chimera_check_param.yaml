@@ -12,7 +12,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '? parameter >=1'
+- value: 'β parameter >=1'
   description: null
 source:
 - New
