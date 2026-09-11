@@ -1,5 +1,6 @@
 name: adapter_forward
-description: Forward sequencing adapter. The sequence should be reported in uppercase
+description: >-
+  Forward sequencing adapter. The sequence should be reported in uppercase
   letters
 in_subset:
   - Library preparation sequencing

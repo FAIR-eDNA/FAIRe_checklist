@@ -1,5 +1,6 @@
 name: samp_collect_device
-description: The device used to collect an environmental sample. This term accepts
+description: >-
+  The device used to collect an environmental sample. This term accepts
   terms listed under environmental sampling device (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000968)
   such as syringe [OBI_0000422] and container [OBI_0000967] as well as free-text entry
   (i.e. niskin bottle, push core, spoon, water bottle).

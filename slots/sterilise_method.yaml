@@ -1,5 +1,6 @@
 name: sterilise_method
-description: the protocols to minimise contaminations in the field and/or laboratory
+description: >-
+  the protocols to minimise contaminations in the field and/or laboratory
 in_subset:
   - Project
 slot_uri: __TODO_ADD_SLOT_URI__

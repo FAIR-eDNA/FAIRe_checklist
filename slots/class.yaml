@@ -1,5 +1,6 @@
 name: class
-description: The full scientific name of the class
+description: >-
+  The full scientific name of the class
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/class

@@ -1,5 +1,6 @@
 name: kingdom
-description: The full scientific name of the kingdom
+description: >-
+  The full scientific name of the kingdom
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/kingdom

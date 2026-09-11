@@ -1,5 +1,6 @@
 name: otu_clust_cutoff
-description: The percentage similarity threshold used for OTU/ASV clustering. For
+description: >-
+  The percentage similarity threshold used for OTU/ASV clustering. For
   ASV clustering, the cutoff is typically 100% similarity. Unit = %
 in_subset:
   - Bioinformatics

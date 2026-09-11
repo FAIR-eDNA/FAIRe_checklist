@@ -1,7 +1,8 @@
 name: prepped_samp_store_sol
-description: 'Solution within which the prepared sample was stored prior to DNA extraction. Note: The storage solution of
+description: >-
+  Solution within which the prepared sample was stored prior to DNA extraction. Note: The storage solution of
   the original environmental sample (e.g., water, soil) should be recorded under samp_store_sol, while the current term is
-  for the "processed" sample such as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.'
+  for the "processed" sample such as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.
 in_subset:
 - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

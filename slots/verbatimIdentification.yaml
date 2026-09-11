@@ -1,5 +1,6 @@
 name: verbatimIdentification
-description: A string representing the taxonomic identification as it appeared in
+description: >-
+  A string representing the taxonomic identification as it appeared in
   the original record (i.e. the database used such as NCBI). This could be the identification
 in_subset:
   - OTU/ASV

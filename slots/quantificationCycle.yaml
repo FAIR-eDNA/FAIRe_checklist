@@ -1,5 +1,6 @@
 name: quantificationCycle
-description: The number of cycles required for the fluorescent signal to cross a given
+description: >-
+  The number of cycles required for the fluorescent signal to cross a given
   value threshold above the baseline for each technical replicate. Quantification
   cycle (Cq), threshold cycle (Ct), crossing point (Cp), and take-off point (TOP)
   refer to the same value from the real-time instrument. Use of quantification cycle

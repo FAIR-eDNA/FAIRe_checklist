@@ -1,5 +1,6 @@
 name: accessRights
-description: Information about who can access the resource or an indication of its
+description: >-
+  Information about who can access the resource or an indication of its
   security status.
 in_subset:
   - Data management

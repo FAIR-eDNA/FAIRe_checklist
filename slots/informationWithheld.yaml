@@ -1,5 +1,6 @@
 name: informationWithheld
-description: Additional information that exists, but that has not been shared in the
+description: >-
+  Additional information that exists, but that has not been shared in the
   given record.
 in_subset:
   - Data management

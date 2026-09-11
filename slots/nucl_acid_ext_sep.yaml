@@ -1,5 +1,6 @@
 name: nucl_acid_ext_sep
-description: The approach used to separate DNA from a mixture.
+description: >-
+  The approach used to separate DNA from a mixture.
 in_subset:
 - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__

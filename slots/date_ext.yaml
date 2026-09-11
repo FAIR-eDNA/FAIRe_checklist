@@ -1,5 +1,6 @@
 name: date_ext
-description: Date of nucleic acid extraction, written in ISO 8601 format
+description: >-
+  Date of nucleic acid extraction, written in ISO 8601 format
 in_subset:
   - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__

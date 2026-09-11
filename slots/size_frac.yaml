@@ -1,5 +1,6 @@
 name: size_frac
-description: Filtering pore size used in sample filtration. Unit = µm
+description: >-
+  Filtering pore size used in sample filtration. Unit = µm
 in_subset:
   - Sample preparation
 slot_uri: https://w3id.org/mixs/0000017

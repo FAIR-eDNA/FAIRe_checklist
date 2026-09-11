@@ -1,5 +1,6 @@
 name: code_repo
-description: Link to public repository where analysis code is archived
+description: >-
+  Link to public repository where analysis code is archived
 in_subset:
   - Data management
 slot_uri: __TODO_ADD_SLOT_URI__

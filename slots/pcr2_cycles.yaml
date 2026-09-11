@@ -1,5 +1,6 @@
 name: pcr2_cycles
-description: (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in the
+description: >-
+  (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in the
   second step PCR. Unit = cycles
 in_subset:
   - Library preparation sequencing

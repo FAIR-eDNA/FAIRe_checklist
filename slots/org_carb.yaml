@@ -1,5 +1,6 @@
 name: org_carb
-description: Concentration of organic carbon
+description: >-
+  Concentration of organic carbon
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000508

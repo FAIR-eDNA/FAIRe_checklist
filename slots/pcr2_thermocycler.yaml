@@ -1,5 +1,6 @@
 name: pcr2_thermocycler
-description: (If bacroding_pcr_appr = "two-step PCR") The manufacturer and model of
+description: >-
+  (If bacroding_pcr_appr = "two-step PCR") The manufacturer and model of
   a thermocycler used in the second step PCR
 in_subset:
   - Library preparation sequencing

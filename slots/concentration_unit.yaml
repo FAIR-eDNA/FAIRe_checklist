@@ -1,5 +1,6 @@
 name: concentration_unit
-description: The unit of total DNA concentration after extraction
+description: >-
+  The unit of total DNA concentration after extraction
 in_subset:
 - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__

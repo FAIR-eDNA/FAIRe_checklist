@@ -1,5 +1,6 @@
 name: host_length_unit
-description: The unit of host_length
+description: >-
+  The unit of host_length
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: target_subfragment
-description: Name of subfragment of a gene or locus. Important to e.g. identify special
+description: >-
+  Name of subfragment of a gene or locus. Important to e.g. identify special
   regions on marker genes like V6 on 16S rRNA.
 in_subset:
   - PCR

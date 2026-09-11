@@ -1,5 +1,6 @@
 name: ph_meth
-description: Reference or method used in determining pH
+description: >-
+  Reference or method used in determining pH
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0001106

@@ -1,8 +1,9 @@
 name: samp_size
-description: 'Amount or size of original sample (volume, mass or area) that was collected
+description: >-
+  Amount or size of original sample (volume, mass or area) that was collected
   from the environment. Specify the unit under the term samp_size_unit. Note: the
   amount or size of (sub)sample processed for DNA extraction should be entered under
-  the term samp_vol_we_dna_ext.'
+  the term samp_vol_we_dna_ext.
 in_subset:
   - Sample collection
 slot_uri: https://w3id.org/mixs/0000001

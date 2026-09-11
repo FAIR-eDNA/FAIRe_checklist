@@ -1,5 +1,6 @@
 name: maximumDepthInMeters
-description: The greater depth of a range of depth (vertical distance below the local
+description: >-
+  The greater depth of a range of depth (vertical distance below the local
   surface) at which a sample was collected. For sediment or soil samples depth is
   measured from sediment or soil surface, respectively. If there is only one single
   point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters

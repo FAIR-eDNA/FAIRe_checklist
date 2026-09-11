@@ -1,5 +1,6 @@
 name: org_matter_unit
-description: The unit of org_matter
+description: >-
+  The unit of org_matter
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

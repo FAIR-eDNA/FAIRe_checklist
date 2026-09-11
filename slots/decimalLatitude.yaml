@@ -1,5 +1,6 @@
 name: decimalLatitude
-description: The geographic latitude in decimal degrees using WGS84 datum. Positive
+description: >-
+  The geographic latitude in decimal degrees using WGS84 datum. Positive
   values are north of the Equator, negative values are south of it. Legal values lie
   between -90 and 90, inclusive. The desired minimum number of decimal places is the
   hundred-thousandth (0.00001) to achieve meter scale resolution.

@@ -1,5 +1,6 @@
 name: estimatedNumberOfCopies_method
-description: Method to output estimatedNumberOfCopies
+description: >-
+  Method to output estimatedNumberOfCopies
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

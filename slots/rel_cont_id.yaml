@@ -1,5 +1,6 @@
 name: rel_cont_id
-description: (A list of) samp_id of the negative and positive controls related to
+description: >-
+  (A list of) samp_id of the negative and positive controls related to
   each sample
 in_subset:
   - Sample relations

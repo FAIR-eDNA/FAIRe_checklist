@@ -1,5 +1,6 @@
 name: diss_org_nitro
-description: Dissolved organic nitrogen concentration measured as; total dissolved
+description: >-
+  Dissolved organic nitrogen concentration measured as; total dissolved
   nitrogen - NH4 - NO3 - NO2
 in_subset:
   - Environment

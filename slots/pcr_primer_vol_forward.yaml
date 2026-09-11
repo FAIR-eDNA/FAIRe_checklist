@@ -1,5 +1,6 @@
 name: pcr_primer_vol_forward
-description: Volume of pcr_primer_forward per reaction. Unit = µL
+description: >-
+  Volume of pcr_primer_forward per reaction. Unit = µL
 in_subset:
   - PCR
 slot_uri: __TODO_ADD_SLOT_URI__

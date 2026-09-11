@@ -1,5 +1,6 @@
 name: seq_kit
-description: The name of sequencing kit
+description: >-
+  The name of sequencing kit
 in_subset:
   - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__

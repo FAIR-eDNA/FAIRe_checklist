@@ -1,5 +1,6 @@
 name: pcr_method_additional
-description: Additional information on PCR or PCR-free method, that has not been shared
+description: >-
+  Additional information on PCR or PCR-free method, that has not been shared
   in the given record (i.e. multiplexing, hybridisation, CRISPR-Cas). If two-step
   PCR was applied, enter the second PCR protocol under the term pcr2_* in the library
   preparation/sequencing section.

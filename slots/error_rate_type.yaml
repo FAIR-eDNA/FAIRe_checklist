@@ -1,5 +1,6 @@
 name: error_rate_type
-description: The type/unit of error rate for the error rate threshold
+description: >-
+  The type/unit of error rate for the error rate threshold
 in_subset:
 - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

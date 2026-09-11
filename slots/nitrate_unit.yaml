@@ -1,5 +1,6 @@
 name: nitrate_unit
-description: The unit of nitrate
+description: >-
+  The unit of nitrate
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

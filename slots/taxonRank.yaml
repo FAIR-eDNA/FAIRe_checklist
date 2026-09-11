@@ -1,5 +1,6 @@
 name: taxonRank
-description: The taxonomic rank of the most specific name in the scientificName
+description: >-
+  The taxonomic rank of the most specific name in the scientificName
 in_subset:
 - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/taxonRank

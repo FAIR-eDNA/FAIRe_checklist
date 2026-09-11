@@ -1,5 +1,6 @@
 name: tax_class_other
-description: Additional information on parameters and cutoffs used for taxonomic assignment,
+description: >-
+  Additional information on parameters and cutoffs used for taxonomic assignment,
   that have not been shared in the given record.
 in_subset:
   - Bioinformatics

@@ -1,5 +1,6 @@
 name: probe_ref
-description: Reference (i.e. DOI) of the probe_seq
+description: >-
+  Reference (i.e. DOI) of the probe_seq
 in_subset:
   - PCR
 slot_uri: __TODO_ADD_SLOT_URI__

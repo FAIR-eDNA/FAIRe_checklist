@@ -1,5 +1,6 @@
 name: recordedBy
-description: A list (concatenated and separated) of names of people responsible for
+description: >-
+  A list (concatenated and separated) of names of people responsible for
   the submitted dataset
 in_subset:
   - Project

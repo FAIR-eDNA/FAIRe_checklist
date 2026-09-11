@@ -1,5 +1,6 @@
 name: estimatedNumberOfCopies_error
-description: The measure of variability (e.g., standard error) associated with the
+description: >-
+  The measure of variability (e.g., standard error) associated with the
   estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents
   an average calculated from multiple technical replicates per sample.
 in_subset:

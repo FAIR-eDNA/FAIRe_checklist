@@ -1,5 +1,6 @@
 name: std_source
-description: The source of standard used for standard curves
+description: >-
+  The source of standard used for standard curves
 in_subset:
   - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

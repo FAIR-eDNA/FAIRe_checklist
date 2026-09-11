@@ -1,8 +1,9 @@
 name: prepped_samp_store_temp
-description: 'Temperature at which the prepared sample was stored prior to DNA extraction. Record either ''ambient'' or a
+description: >-
+  Temperature at which the prepared sample was stored prior to DNA extraction. Record either 'ambient' or a
   numeric value in degree Celsius. Note: The storage temperature of the original environmental sample (e.g., water, soil)
   should be recorded under samp_store_temp, while the current term is for the "processed" sample such as filter paper, homogenised
-  and subsampled sediment, prepared for DNA extraction. Unit = degree Celsius'
+  and subsampled sediment, prepared for DNA extraction. Unit = degree Celsius
 in_subset:
 - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

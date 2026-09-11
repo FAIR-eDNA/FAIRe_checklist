@@ -1,5 +1,6 @@
 name: nitro_unit
-description: The unit of nitro
+description: >-
+  The unit of nitro
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

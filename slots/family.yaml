@@ -1,5 +1,6 @@
 name: family
-description: The full scientific name of the family
+description: >-
+  The full scientific name of the family
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/family

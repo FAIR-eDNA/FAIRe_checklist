@@ -1,5 +1,6 @@
 name: stationed_sample_dur
-description: Duration of on-site, stationed sampling (i.e., the filter deployment
+description: >-
+  Duration of on-site, stationed sampling (i.e., the filter deployment
   period). This term is recommended to be recorded when filters are deployed directly
   in the environment, such as during airborne eDNA sampling or when filters are submerged
   in water for a certain period). The duration should be recorded using ISO 8601 duration

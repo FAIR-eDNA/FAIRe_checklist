@@ -1,5 +1,6 @@
 name: pcr2_analysis_software
-description: (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
+description: >-
+  (If bacroding_pcr_appr = "two-step PCR") The program used to analyse
   the PCR runs  in the second step PCR
 in_subset:
   - Library preparation sequencing

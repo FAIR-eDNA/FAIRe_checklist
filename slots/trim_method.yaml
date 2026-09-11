@@ -1,5 +1,6 @@
 name: trim_method
-description: Method for trimming primer and/or adapter sequences, including version
+description: >-
+  Method for trimming primer and/or adapter sequences, including version
   and parameters
 in_subset:
   - Bioinformatics

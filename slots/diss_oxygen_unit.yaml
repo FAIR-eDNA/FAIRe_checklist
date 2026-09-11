@@ -1,5 +1,6 @@
 name: diss_oxygen_unit
-description: The unit of diss_oxygen
+description: >-
+  The unit of diss_oxygen
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: min_reads_cutoff_unit
-description: The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
+description: >-
+  The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
 in_subset:
 - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

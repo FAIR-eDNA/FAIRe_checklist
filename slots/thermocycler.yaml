@@ -1,5 +1,6 @@
 name: thermocycler
-description: The manufacturer and model of a thermocycler used
+description: >-
+  The manufacturer and model of a thermocycler used
 in_subset:
   - PCR
 slot_uri: __TODO_ADD_SLOT_URI__

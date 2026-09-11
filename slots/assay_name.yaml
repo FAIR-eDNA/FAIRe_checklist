@@ -1,5 +1,6 @@
 name: assay_name
-description: A brief, concise identifier for assay with no spaces or special characters,
+description: >-
+  A brief, concise identifier for assay with no spaces or special characters,
   ensuring machine readability. This ID will be used in file names as 'assay_name'.
 in_subset:
   - PCR

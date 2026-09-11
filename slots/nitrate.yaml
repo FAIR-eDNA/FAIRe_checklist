@@ -1,5 +1,6 @@
 name: nitrate
-description: Concentration of nitrate in the sample
+description: >-
+  Concentration of nitrate in the sample
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000425

@@ -1,5 +1,6 @@
 name: lib_layout
-description: Specify whether to expect single, paired, or other configuration of reads
+description: >-
+  Specify whether to expect single, paired, or other configuration of reads
 in_subset:
 - Library preparation sequencing
 slot_uri: https://w3id.org/mixs/0000041

@@ -1,5 +1,6 @@
 name: block_taxa
-description: Taxonomic name(s) of the organism(s) targeted by a blocking primer to
+description: >-
+  Taxonomic name(s) of the organism(s) targeted by a blocking primer to
   prevent their DNA amplification during PCR, enabling the preferential amplification
   of other taxa.
 in_subset:

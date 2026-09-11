@@ -1,5 +1,6 @@
 name: rightsHolder
-description: A person or organization owning or managing rights over the resource.
+description: >-
+  A person or organization owning or managing rights over the resource.
 in_subset:
   - Data management
 slot_uri: http://purl.org/dc/terms/rightsHolder

@@ -1,9 +1,10 @@
 name: mod_date
-description: 'The last date on which the database information was modified, following
+description: >-
+  The last date on which the database information was modified, following
   the ISO 8601 format of yyyy-mm-dd. In case no exact time or date is available, the
   date/time can be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00;
   2008-01-23T19:23:10Z; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601
-  compliant.'
+  compliant.
 in_subset:
   - Data management
 slot_uri: https://w3id.org/nmdc/mod_date

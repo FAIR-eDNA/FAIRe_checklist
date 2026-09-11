@@ -1,5 +1,6 @@
 name: concentration_method
-description: Description of method/instrument used for concentration measurement
+description: >-
+  Description of method/instrument used for concentration measurement
 in_subset:
   - Nucleic acid extraction
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

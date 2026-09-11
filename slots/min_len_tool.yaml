@@ -1,5 +1,6 @@
 name: min_len_tool
-description: Software and the version to remove reads shorter than minimum length
+description: >-
+  Software and the version to remove reads shorter than minimum length
   threshold
 in_subset:
   - Bioinformatics

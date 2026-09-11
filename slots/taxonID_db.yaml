@@ -1,5 +1,6 @@
 name: taxonID_db
-description: The taxonomy database corresponding to taxonID.
+description: >-
+  The taxonomy database corresponding to taxonID.
 in_subset:
   - OTU/ASV
 slot_uri: __TODO_ADD_SLOT_URI__

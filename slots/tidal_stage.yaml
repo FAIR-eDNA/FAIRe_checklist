@@ -1,5 +1,6 @@
 name: tidal_stage
-description: Stage of tide
+description: >-
+  Stage of tide
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000750

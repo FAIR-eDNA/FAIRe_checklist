@@ -1,5 +1,6 @@
 name: parent_project_id
-description: An identifier or name of the overarching (parent) project that encompasses
+description: >-
+  An identifier or name of the overarching (parent) project that encompasses
   and organizes multiple related sub-projects, each identified by a unique project_id
 in_subset:
   - Project

@@ -1,5 +1,6 @@
 name: part_org_carb
-description: Concentration of particulate organic carbon
+description: >-
+  Concentration of particulate organic carbon
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000515

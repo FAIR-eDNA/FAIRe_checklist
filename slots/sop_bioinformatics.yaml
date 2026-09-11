@@ -1,5 +1,6 @@
 name: sop_bioinformatics
-description: Standard operating procedures, references, link to scripts, that were
+description: >-
+  Standard operating procedures, references, link to scripts, that were
   used in quality filtering, assembly and/or annotation of genomes, metagenomes or
   environmental sequences
 in_subset:

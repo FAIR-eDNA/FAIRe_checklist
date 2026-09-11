@@ -1,5 +1,6 @@
 name: samp_collect_method
-description: The method employed for collecting the sample. Provide a link to a paper/
+description: >-
+  The method employed for collecting the sample. Provide a link to a paper/
   handbook/ standard operation protocol if any.
 in_subset:
   - Sample collection

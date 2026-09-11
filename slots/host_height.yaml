@@ -1,5 +1,6 @@
 name: host_height
-description: The height of subject
+description: >-
+  The height of subject
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000264

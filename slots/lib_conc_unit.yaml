@@ -1,5 +1,6 @@
 name: lib_conc_unit
-description: Unit for lib_conc
+description: >-
+  Unit for lib_conc
 in_subset:
 - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__

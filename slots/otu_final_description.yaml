@@ -1,5 +1,6 @@
 name: otu_final_description
-description: A description of the data curation and processing steps applied to the
+description: >-
+  A description of the data curation and processing steps applied to the
   final OTU/ASV table
 in_subset:
   - Bioinformatics

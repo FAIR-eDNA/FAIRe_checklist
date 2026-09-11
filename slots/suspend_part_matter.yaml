@@ -1,5 +1,6 @@
 name: suspend_part_matter
-description: Concentration of suspended particulate matter. Unit = mg/L
+description: >-
+  Concentration of suspended particulate matter. Unit = mg/L
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000741

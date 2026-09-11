@@ -1,5 +1,6 @@
 name: host_life_stage
-description: Description of life stage of host. Select from UBERON's life cycle class (http://purl.obolibrary.org/obo/UBERON_0000104)
+description: >-
+  Description of life stage of host. Select from UBERON's life cycle class (http://purl.obolibrary.org/obo/UBERON_0000104)
 in_subset:
 - Environment
 slot_uri: https://w3id.org/mixs/0000251

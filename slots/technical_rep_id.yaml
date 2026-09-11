@@ -1,5 +1,6 @@
 name: technical_rep_id
-description: An integer uniquely identifying a specific PCR technical replicate within
+description: >-
+  An integer uniquely identifying a specific PCR technical replicate within
   a sample.
 in_subset:
   - PCR

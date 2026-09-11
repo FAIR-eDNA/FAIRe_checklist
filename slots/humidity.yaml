@@ -1,5 +1,6 @@
 name: humidity
-description: Amount of water vapour in the air, at the time of sampling relative to
+description: >-
+  Amount of water vapour in the air, at the time of sampling relative to
   the maximum amount of water vapor the air can hold at a given temperature and pressure.
   Also known as relative humidity. Unit = %
 in_subset:

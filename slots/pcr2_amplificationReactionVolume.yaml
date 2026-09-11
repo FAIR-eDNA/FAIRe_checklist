@@ -1,5 +1,6 @@
 name: pcr2_amplificationReactionVolume
-description: The total PCR reaction volume in the second step PCR. Unit = µL
+description: >-
+  The total PCR reaction volume in the second step PCR. Unit = µL
 in_subset:
   - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__

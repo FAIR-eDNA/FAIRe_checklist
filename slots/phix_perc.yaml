@@ -1,5 +1,6 @@
 name: phix_perc
-description: '% of PhiX added into a library, if applicable. Unit = %'
+description: >-
+  % of PhiX added into a library, if applicable. Unit = %
 in_subset:
   - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__

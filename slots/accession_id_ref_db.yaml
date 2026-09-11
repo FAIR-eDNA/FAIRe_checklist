@@ -1,5 +1,6 @@
 name: accession_id_ref_db
-description: Reference database (i.e. sequences not generated as part of the current
+description: >-
+  Reference database (i.e. sequences not generated as part of the current
   study) of the best matching sequence (accesssion_id)
 in_subset:
   - OTU/ASV

@@ -1,5 +1,6 @@
 name: tot_nitro_content_unit
-description: The unit of tot_nitro_content
+description: >-
+  The unit of tot_nitro_content
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

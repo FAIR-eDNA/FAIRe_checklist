@@ -1,5 +1,6 @@
 name: lib_screen
-description: Specific enrichment or screening methods applied before and/or after
+description: >-
+  Specific enrichment or screening methods applied before and/or after
   creating libraries
 in_subset:
   - Library preparation sequencing

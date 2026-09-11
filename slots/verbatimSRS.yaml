@@ -1,5 +1,6 @@
 name: verbatimSRS
-description: The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude
+description: >-
+  The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude
   and verbatimLongitude are based.
 in_subset:
 - Sample collection

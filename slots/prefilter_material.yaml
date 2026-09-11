@@ -1,5 +1,6 @@
 name: prefilter_material
-description: Material used to pre-filter/pre-sort the sample
+description: >-
+  Material used to pre-filter/pre-sort the sample
 in_subset:
   - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: wind_speed
-description: Speed of wind measured at the time of sampling. Unit = m/s
+description: >-
+  Speed of wind measured at the time of sampling. Unit = m/s
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000118

@@ -1,5 +1,6 @@
 name: verbatimCoordinateSystem
-description: The coordinate format of the verbatimLatitude and verbatimLongitude
+description: >-
+  The coordinate format of the verbatimLatitude and verbatimLongitude
 in_subset:
 - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem

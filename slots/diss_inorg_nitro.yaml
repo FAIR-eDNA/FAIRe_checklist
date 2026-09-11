@@ -1,5 +1,6 @@
 name: diss_inorg_nitro
-description: Concentration of dissolved inorganic nitrogen
+description: >-
+  Concentration of dissolved inorganic nitrogen
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000698

@@ -1,5 +1,6 @@
 name: pcr_primer_reverse
-description: Reverse PCR primer (5' - 3') that were used to amplify the sequence of
+description: >-
+  Reverse PCR primer (5' - 3') that were used to amplify the sequence of
   the targeted gene. The primer sequence should NOT contain MIDs and adapter sequences,
   and should be reported in uppercase letters. If multiple reverse primers are present
   in a single PCR reaction, either report them separately in separate submissions

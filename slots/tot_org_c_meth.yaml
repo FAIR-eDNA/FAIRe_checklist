@@ -1,5 +1,6 @@
 name: tot_org_c_meth
-description: Reference or method used in determining total organic carbon
+description: >-
+  Reference or method used in determining total organic carbon
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000337

@@ -1,5 +1,6 @@
 name: tot_carb_unit
-description: The unit of tot_carb
+description: >-
+  The unit of tot_carb
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

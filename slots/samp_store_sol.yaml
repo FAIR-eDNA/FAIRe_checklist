@@ -1,7 +1,8 @@
 name: samp_store_sol
-description: 'Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
+description: >-
+  Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
   homogenisation, subsampling), enter the storage solution before the process here, and the storage solution of the processed
-  sample under the term prepped_samp_store_sol.'
+  sample under the term prepped_samp_store_sol.
 in_subset:
 - Sample storage
 slot_uri: https://w3id.org/mixs/0001317

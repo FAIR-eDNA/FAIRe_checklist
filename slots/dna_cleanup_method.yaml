@@ -1,5 +1,6 @@
 name: dna_cleanup_method
-description: A description of DNA clean-up method. Provide the name of a commercial
+description: >-
+  A description of DNA clean-up method. Provide the name of a commercial
   kit if used.
 in_subset:
   - Nucleic acid extraction

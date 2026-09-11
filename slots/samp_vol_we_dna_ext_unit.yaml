@@ -1,5 +1,6 @@
 name: samp_vol_we_dna_ext_unit
-description: Unit for samp_vol_we_dna_ext
+description: >-
+  Unit for samp_vol_we_dna_ext
 in_subset:
 - Nucleic acid extraction
 slot_uri: __TODO_ADD_SLOT_URI__

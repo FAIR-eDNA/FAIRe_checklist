@@ -1,5 +1,6 @@
 name: dataGeneralizations
-description: Actions taken to make the shared data (i.e. location, date) less specific
+description: >-
+  Actions taken to make the shared data (i.e. location, date) less specific
   or complete than in its original form. Suggests that alternative data of higher
   quality may be available on request. Note this is not related to genetic generalisation
   within bioinformatic workflows (i.e., OTU clustering).

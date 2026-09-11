@@ -1,5 +1,6 @@
 name: probe_seq
-description: If applicable, probe sequence in the 5' to 3' direction
+description: >-
+  If applicable, probe sequence in the 5' to 3' direction
 in_subset:
   - PCR
 slot_uri: __TODO_ADD_SLOT_URI__

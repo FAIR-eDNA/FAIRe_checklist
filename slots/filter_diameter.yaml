@@ -1,5 +1,6 @@
 name: filter_diameter
-description: Diameter of a filter if circular. Unit = mm
+description: >-
+  Diameter of a filter if circular. Unit = mm
 in_subset:
   - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: license
-description: A legal document giving official permission to do something with the
+description: >-
+  A legal document giving official permission to do something with the
   resource.
 in_subset:
   - Data management

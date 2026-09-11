@@ -1,5 +1,6 @@
 name: recordedByID
-description: A list (concatenated and separated) of the globally unique identifier
+description: >-
+  A list (concatenated and separated) of the globally unique identifier
   for the people responsible for the submitted dataset
 in_subset:
   - Project

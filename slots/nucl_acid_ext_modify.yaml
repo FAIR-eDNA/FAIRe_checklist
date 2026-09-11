@@ -1,5 +1,6 @@
 name: nucl_acid_ext_modify
-description: Description of modification made from a commercial or established protocol
+description: >-
+  Description of modification made from a commercial or established protocol
   (nucl_acid_ext), if made.
 in_subset:
   - Nucleic acid extraction

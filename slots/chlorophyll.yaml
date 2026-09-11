@@ -1,5 +1,6 @@
 name: chlorophyll
-description: Concentration of chlorophyll. Unit = mg/m3
+description: >-
+  Concentration of chlorophyll. Unit = mg/m3
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000177

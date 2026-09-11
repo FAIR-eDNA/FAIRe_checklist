@@ -1,5 +1,6 @@
 name: nitro
-description: Concentration of nitrogen (total)
+description: >-
+  Concentration of nitrogen (total)
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000504

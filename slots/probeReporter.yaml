@@ -1,5 +1,6 @@
 name: probeReporter
-description: Type of fluorophore (reporter) used. Probe anneals within amplified target
+description: >-
+  Type of fluorophore (reporter) used. Probe anneals within amplified target
   DNA. Polymerase activity degrades the probe that has annealed to the template, and
   the probe releases the fluorophore from it and breaks the proximity to the quencher,
   thus allowing fluorescence of the fluorophore.

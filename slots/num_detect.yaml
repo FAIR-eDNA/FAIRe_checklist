@@ -1,6 +1,7 @@
 name: num_detect
-description: 'Number of detection using the eLow Quant approach (described in DOI:
-  10.1002/edn3.220)'
+description: >-
+  Number of detection using the eLow Quant approach (described in DOI:
+  10.1002/edn3.220)
 in_subset:
   - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

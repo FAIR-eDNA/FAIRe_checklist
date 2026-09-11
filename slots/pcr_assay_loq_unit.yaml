@@ -1,5 +1,6 @@
 name: pcr_assay_loq_unit
-description: unit for pcr_assay_loq
+description: >-
+  unit for pcr_assay_loq
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

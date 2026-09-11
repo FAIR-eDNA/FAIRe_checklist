@@ -1,5 +1,6 @@
 name: pcr_primer_name_forward
-description: Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
+description: >-
+  Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
   list the names respectively, separated by pipe ( | ).
 in_subset:
   - PCR

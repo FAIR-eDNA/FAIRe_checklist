@@ -1,5 +1,6 @@
 name: tot_nitro_content
-description: Total nitrogen content of the sample
+description: >-
+  Total nitrogen content of the sample
 in_subset:
   - Environment
 slot_uri: https://w3id.org/mixs/0000530

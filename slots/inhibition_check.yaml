@@ -1,5 +1,6 @@
 name: inhibition_check
-description: Description of method applied to detect inhibition and any adjustments
+description: >-
+  Description of method applied to detect inhibition and any adjustments
   made to improve PCR performance, such as sample dilution or the use of inhibitor-tolerant
   reagents.
 in_subset:

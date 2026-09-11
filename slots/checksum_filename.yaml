@@ -1,5 +1,6 @@
 name: checksum_filename
-description: The checksum of the forward sequence reads file (filename), used to verify
+description: >-
+  The checksum of the forward sequence reads file (filename), used to verify
   the integrity and identity of the corresponding data file
 in_subset:
   - Library preparation sequencing

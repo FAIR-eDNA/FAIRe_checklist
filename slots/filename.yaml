@@ -1,5 +1,6 @@
 name: filename
-description: A file name of raw sequencing data. If paired end, fill filename2 for
+description: >-
+  A file name of raw sequencing data. If paired end, fill filename2 for
   the reverse read
 in_subset:
   - Library preparation sequencing

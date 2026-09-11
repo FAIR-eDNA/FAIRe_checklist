@@ -1,5 +1,6 @@
 name: pcr_plate_id
-description: PCR plate ID. This identifier is particularly crucial when location-specific
+description: >-
+  PCR plate ID. This identifier is particularly crucial when location-specific
   standard curves are employed for targeted assay detections, as it ensures a linkage
   between the standards and the corresponding eDNA samples. If two-step PCR was applied
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_*

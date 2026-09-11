@@ -1,5 +1,6 @@
 name: filter_surface_area
-description: Surface area of a filter. Unit = mm2
+description: >-
+  Surface area of a filter. Unit = mm2
 in_subset:
   - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

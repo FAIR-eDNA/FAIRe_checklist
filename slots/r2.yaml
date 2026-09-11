@@ -1,5 +1,6 @@
 name: r2
-description: R-squared value of a qPCR standard curve. This shall be specific to each
+description: >-
+  R-squared value of a qPCR standard curve. This shall be specific to each
   pcr_plate_id.
 in_subset:
   - Targeted assay detection

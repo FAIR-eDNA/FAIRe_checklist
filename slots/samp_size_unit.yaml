@@ -1,5 +1,6 @@
 name: samp_size_unit
-description: Unit for samp_size
+description: >-
+  Unit for samp_size
 in_subset:
 - Sample collection
 slot_uri: __TODO_ADD_SLOT_URI__

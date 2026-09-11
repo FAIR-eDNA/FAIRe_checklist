@@ -1,5 +1,6 @@
 name: order
-description: The full scientific name of the order
+description: >-
+  The full scientific name of the order
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/order

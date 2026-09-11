@@ -1,5 +1,6 @@
 name: min_len_cutoff
-description: Minimum length threshold. Unit = base pair
+description: >-
+  Minimum length threshold. Unit = base pair
 in_subset:
   - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

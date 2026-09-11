@@ -1,5 +1,6 @@
 name: screen_contam_method
-description: How were contaminations screened and applied in data curation/analyses/interpretation?
+description: >-
+  How were contaminations screened and applied in data curation/analyses/interpretation?
 in_subset:
   - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

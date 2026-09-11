@@ -1,5 +1,6 @@
 name: otu_raw_description
-description: A description of the data curation and processing steps applied to the
+description: >-
+  A description of the data curation and processing steps applied to the
   raw OTU/ASV table
 in_subset:
   - Bioinformatics

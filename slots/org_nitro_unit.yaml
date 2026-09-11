@@ -1,5 +1,6 @@
 name: org_nitro_unit
-description: The unit of org_nitro
+description: >-
+  The unit of org_nitro
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: associated_resource
-description: A related resource that is referenced, cited, or otherwise associated
+description: >-
+  A related resource that is referenced, cited, or otherwise associated
   to the sequence. i.e., links to a project website, submitted raw sequence data and
   environmental metadata.
 in_subset:

@@ -1,5 +1,6 @@
 name: verbatimEventDate
-description: Sample collection date before formatting
+description: >-
+  Sample collection date before formatting
 in_subset:
   - Sample collection
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimEventDate

@@ -1,5 +1,6 @@
 name: samp_name
-description: Sample Name is a name that you choose for the sample. It can have any
+description: >-
+  Sample Name is a name that you choose for the sample. It can have any
   format, but we suggest that you make it concise, unique and consistent within your
   lab, and as informative as possible. Every Sample Name from a single Submitter must
   be unique.

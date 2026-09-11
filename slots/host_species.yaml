@@ -1,5 +1,6 @@
 name: host_species
-description: The scientific name of host species. i.e. predator species where a gut
+description: >-
+  The scientific name of host species. i.e. predator species where a gut
   content sample was dissected from.
 in_subset:
   - Environment

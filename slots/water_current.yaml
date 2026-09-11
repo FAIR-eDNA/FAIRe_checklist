@@ -1,5 +1,6 @@
 name: water_current
-description: Measurement of magnitude and direction of flow within a fluid. Unit =
+description: >-
+  Measurement of magnitude and direction of flow within a fluid. Unit =
   m/s
 in_subset:
   - Environment

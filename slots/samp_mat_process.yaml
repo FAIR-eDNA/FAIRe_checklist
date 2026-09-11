@@ -1,5 +1,6 @@
 name: samp_mat_process
-description: Any processing applied to the sample during or after retrieving the sample
+description: >-
+  Any processing applied to the sample during or after retrieving the sample
   from environment (i.e. sieving, filtration, precipitation, homogenising, subsampling).
 in_subset:
   - Sample preparation

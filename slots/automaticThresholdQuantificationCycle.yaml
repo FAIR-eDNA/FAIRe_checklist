@@ -1,5 +1,6 @@
 name: automaticThresholdQuantificationCycle
-description: Whether the threshold was set by the instrument (1) or manually (0).
+description: >-
+  Whether the threshold was set by the instrument (1) or manually (0).
 in_subset:
 - Targeted assay detection
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

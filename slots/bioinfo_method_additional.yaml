@@ -1,5 +1,6 @@
 name: bioinfo_method_additional
-description: Additional information on bioinformatics, that has not been shared in
+description: >-
+  Additional information on bioinformatics, that has not been shared in
   the given record.
 in_subset:
   - Bioinformatics

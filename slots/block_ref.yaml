@@ -1,5 +1,6 @@
 name: block_ref
-description: Reference of a blocking primer. Enter "custom" if it was developed during
+description: >-
+  Reference of a blocking primer. Enter "custom" if it was developed during
   the current project
 in_subset:
   - PCR

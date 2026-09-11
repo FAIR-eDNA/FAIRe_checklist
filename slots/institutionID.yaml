@@ -1,5 +1,6 @@
 name: institutionID
-description: An identifier for the institution having custody of the object(s) or
+description: >-
+  An identifier for the institution having custody of the object(s) or
   information referred to in the record. This identifier should point to a persistent,
   resolvable identifier, such as a Research Organization Registry (ROR) ID or ISNI
   (International Standard Name Identifier).

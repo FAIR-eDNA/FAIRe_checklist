@@ -1,5 +1,6 @@
 name: trim_param
-description: Parameters and cutoffs used to trim if not default
+description: >-
+  Parameters and cutoffs used to trim if not default
 in_subset:
   - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

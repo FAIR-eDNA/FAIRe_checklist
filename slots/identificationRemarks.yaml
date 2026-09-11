@@ -1,5 +1,6 @@
 name: identificationRemarks
-description: Comments or notes about the taxonomic assignment.
+description: >-
+  Comments or notes about the taxonomic assignment.
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/identificationRemarks

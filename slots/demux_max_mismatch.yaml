@@ -1,5 +1,6 @@
 name: demux_max_mismatch
-description: Maximum mismatch allowed at the index bases for demultiplexing. Unit
+description: >-
+  Maximum mismatch allowed at the index bases for demultiplexing. Unit
   = base pair
 in_subset:
   - Bioinformatics

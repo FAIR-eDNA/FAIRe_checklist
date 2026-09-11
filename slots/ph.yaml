@@ -1,5 +1,6 @@
 name: ph
-description: Ph measurement of the sample, or liquid portion of sample, or aqueous
+description: >-
+  Ph measurement of the sample, or liquid portion of sample, or aqueous
   phase of the fluid. Unit = no unit
 in_subset:
   - Environment

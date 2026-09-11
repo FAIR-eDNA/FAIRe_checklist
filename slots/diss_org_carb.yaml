@@ -1,5 +1,6 @@
 name: diss_org_carb
-description: Concentration of dissolved organic carbon in the sample, liquid portion
+description: >-
+  Concentration of dissolved organic carbon in the sample, liquid portion
   of the sample, or aqueous phase of the fluid
 in_subset:
   - Environment

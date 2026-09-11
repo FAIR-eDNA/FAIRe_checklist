@@ -1,5 +1,6 @@
 name: otu_clust_tool
-description: Software and the version used for OTU/ASV clustering
+description: >-
+  Software and the version used for OTU/ASV clustering
 in_subset:
   - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

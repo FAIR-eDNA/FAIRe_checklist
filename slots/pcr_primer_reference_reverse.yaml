@@ -1,5 +1,6 @@
 name: pcr_primer_reference_reverse
-description: Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
+description: >-
+  Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
   listed in pcr_primer_reverse, list the references respectively, separated by pipe
   ( | ).
 in_subset:

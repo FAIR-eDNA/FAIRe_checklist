@@ -1,5 +1,6 @@
 name: platform
-description: General sequencing platform used.
+description: >-
+  General sequencing platform used.
 in_subset:
 - Library preparation sequencing
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: diss_inorg_carb
-description: Dissolved inorganic carbon concentration in the sample, typically measured
+description: >-
+  Dissolved inorganic carbon concentration in the sample, typically measured
   after filtering the sample using a 0.45 micrometre filter
 in_subset:
   - Environment

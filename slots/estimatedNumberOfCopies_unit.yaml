@@ -1,5 +1,6 @@
 name: estimatedNumberOfCopies_unit
-description: Unit for estimatedNumberOfCopies
+description: >-
+  Unit for estimatedNumberOfCopies
 in_subset:
 - Targeted assay detection
 slot_uri: __TODO_ADD_SLOT_URI__

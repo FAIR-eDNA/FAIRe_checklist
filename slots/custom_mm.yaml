@@ -1,5 +1,6 @@
 name: custom_mm
-description: composition of custom master mix, including the names, volumes and concentrations
+description: >-
+  composition of custom master mix, including the names, volumes and concentrations
   of additives (i.e., salts, buffers, enzyme and other components) (if custom master
   mix was used)
 in_subset:

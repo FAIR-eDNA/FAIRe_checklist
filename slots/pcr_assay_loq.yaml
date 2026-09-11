@@ -1,5 +1,6 @@
 name: pcr_assay_loq
-description: Assay's limit of quantification (LOQ) (the lowest amount of target taxon
+description: >-
+  Assay's limit of quantification (LOQ) (the lowest amount of target taxon
   DNA that can be quantitatively determined with a stated precision under the stated
   experimental conditions).
 in_subset:

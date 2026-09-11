@@ -1,5 +1,6 @@
 name: host_height_unit
-description: The unit of host_height
+description: >-
+  The unit of host_height
 in_subset:
 - Environment
 slot_uri: __TODO_ADD_SLOT_URI__

@@ -1,5 +1,6 @@
 name: phylum
-description: The full scientific name of the phylum or division
+description: >-
+  The full scientific name of the phylum or division
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/phylum

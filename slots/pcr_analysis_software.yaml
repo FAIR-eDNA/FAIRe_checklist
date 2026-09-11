@@ -1,5 +1,6 @@
 name: pcr_analysis_software
-description: The program used to analyse the PCR runs. If two-step PCR was applied
+description: >-
+  The program used to analyse the PCR runs. If two-step PCR was applied
   for a metabarcoding approach, enter the second PCR protocol under the term pcr2_*
   in the library preparation/sequencing section.
 in_subset:

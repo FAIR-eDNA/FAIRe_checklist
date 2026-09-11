@@ -1,5 +1,6 @@
 name: dna_sequence
-description: The DNA sequence
+description: >-
+  The DNA sequence
 in_subset:
   - OTU/ASV
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml

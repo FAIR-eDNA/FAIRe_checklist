@@ -1,5 +1,6 @@
 name: pcr_cycles
-description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
+description: >-
+  Number of PCR cycles. If two-step PCR was applied for a metabarcoding
   approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
   section. Unit = cycles
 in_subset:

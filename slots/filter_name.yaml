@@ -1,5 +1,6 @@
 name: filter_name
-description: Commercial names and brand of filter
+description: >-
+  Commercial names and brand of filter
 in_subset:
   - Sample preparation
 slot_uri: __TODO_ADD_SLOT_URI__

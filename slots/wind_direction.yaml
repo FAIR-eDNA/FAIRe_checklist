@@ -1,5 +1,6 @@
 name: wind_direction
-description: Wind direction (the direction from which a wind originates) at the time
+description: >-
+  Wind direction (the direction from which a wind originates) at the time
   of sampling
 in_subset:
   - Environment

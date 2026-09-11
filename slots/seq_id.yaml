@@ -1,5 +1,6 @@
 name: seq_id
-description: Query sequence ID. Must be unique within the dataset
+description: >-
+  Query sequence ID. Must be unique within the dataset
 in_subset:
   - OTU/ASV
 slot_uri: __TODO_ADD_SLOT_URI__

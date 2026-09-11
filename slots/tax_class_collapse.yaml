@@ -1,5 +1,6 @@
 name: tax_class_collapse
-description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
+description: >-
+  How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
   ancestor
 in_subset:
   - Bioinformatics

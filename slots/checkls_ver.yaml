@@ -1,5 +1,6 @@
 name: checkls_ver
-description: The version number of the FAIR eDNA (FAIRe) metadata checklist used to
+description: >-
+  The version number of the FAIR eDNA (FAIRe) metadata checklist used to
   format the data
 in_subset:
   - Data management

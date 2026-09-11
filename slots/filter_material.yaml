@@ -1,5 +1,6 @@
 name: filter_material
-description: Material of filter
+description: >-
+  Material of filter
 in_subset:
 - Sample preparation
 slot_uri: https://w3id.org/nmdc/filter_material

@@ -1,5 +1,6 @@
 name: screen_nontarget_method
-description: How were non-target species screened and applied?
+description: >-
+  How were non-target species screened and applied?
 in_subset:
   - Bioinformatics
 slot_uri: __TODO_ADD_SLOT_URI__

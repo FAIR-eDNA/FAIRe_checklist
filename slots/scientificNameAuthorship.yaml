@@ -1,5 +1,6 @@
 name: scientificNameAuthorship
-description: The authorship information for the scientificName
+description: >-
+  The authorship information for the scientificName
 in_subset:
   - OTU/ASV
 slot_uri: http://rs.tdwg.org/dwc/terms/scientificNameAuthorship
