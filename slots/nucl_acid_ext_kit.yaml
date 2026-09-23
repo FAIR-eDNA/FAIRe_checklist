@@ -20,8 +20,7 @@ recommended: true
 examples:
 - value: Qiagen PowerSoil Kit
   description: null
-source:
-- MIxS
+source: mixs:0001223
 exact_mappings:
 - https://w3id.org/mixs/0001223
 close_mappings: []

@@ -13,7 +13,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
-slot_uri: https://w3id.org/mixs/0000183
+slot_uri: mixs:0000183
 range: string
 unit: practical salinity unit (psu)
 structured_pattern:
@@ -25,10 +25,9 @@ recommended: false
 examples:
 - value: '25.0'
   description: null
-source:
-- MIxS
+source: mixs:0000183
 exact_mappings:
-- https://w3id.org/mixs/0000183
+- mixs:0000183
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

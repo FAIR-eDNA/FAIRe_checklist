@@ -19,8 +19,7 @@ recommended: false
 examples:
 - value: 23-January-2008
   description: null
-source:
-- DwC
+source: dwc:verbatimEventDate
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimEventDate
 close_mappings: []

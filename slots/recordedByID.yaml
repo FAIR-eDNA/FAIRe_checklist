@@ -22,8 +22,7 @@ examples:
   description: null
 - value: https://orcid.org/0000-0002-1825-0098
   description: null
-source:
-- DwC
+source: dwc:recordedByID
 exact_mappings:
 - https://dwc.tdwg.org/list/#dwc_recordedByID
 close_mappings: []

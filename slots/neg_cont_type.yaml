@@ -28,8 +28,7 @@ examples:
   description: null
 - value: PCR negative
   description: null
-source:
-- MIxS
+source: mixs:0001321
 exact_mappings:
 - https://w3id.org/mixs/0001321
 close_mappings: []

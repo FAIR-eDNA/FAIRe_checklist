@@ -24,8 +24,7 @@ recommended: false
 examples:
 - value: '-121.17611'
   description: null
-source:
-- DwC
+source: dwc:decimalLongitude
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/decimalLongitude
 close_mappings: []

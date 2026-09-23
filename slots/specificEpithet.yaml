@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: erythropterus
   description: null
-source:
-- DwC
+source: dwc:specificEpithet
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/specificEpithet
 close_mappings: []

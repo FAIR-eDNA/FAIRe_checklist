@@ -7,7 +7,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: http://purl.org/dc/terms/rightsHolder
+slot_uri: dcterms:rightsHolder
 range: string
 structured_pattern:
   syntax: null
@@ -18,10 +18,9 @@ recommended: true
 examples:
 - value: The Regents of the University of California
   description: null
-source:
-- DwC
+source: dcterms:rightsHolder
 exact_mappings:
-- http://purl.org/dc/terms/rightsHolder
+- dcterms:rightsHolder
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

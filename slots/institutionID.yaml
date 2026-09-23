@@ -10,7 +10,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: http://rs.tdwg.org/dwc/terms/institutionID
+slot_uri: dwc:institutionID
 range: string
 structured_pattern:
   syntax: null
@@ -21,10 +21,9 @@ recommended: true
 examples:
 - value: https://ror.org/042r9xb17
   description: null
-source:
-- DwC
+source: dwc:institutionID
 exact_mappings:
-- http://rs.tdwg.org/dwc/terms/institutionID
+- dwc:institutionID
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

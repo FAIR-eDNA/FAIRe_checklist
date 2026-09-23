@@ -7,7 +7,7 @@ annotations:
   data_type: taxaRaw | taxaFinal
   requirement_level: Highly recommended
   requirement_level_code: HR
-slot_uri: http://rs.tdwg.org/dwc/terms/taxonRank
+slot_uri: dwc:taxonRank
 range: taxonRank_enum
 structured_pattern:
   syntax: null
@@ -18,10 +18,9 @@ recommended: true
 examples:
 - value: genus
   description: null
-source:
-- DwC
+source: dwc:taxonRank
 exact_mappings:
-- http://rs.tdwg.org/dwc/terms/taxonRank
+- dwc:taxonRank
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

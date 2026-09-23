@@ -20,8 +20,7 @@ recommended: true
 examples:
 - value: https://phylogenomics.me/protocols/16s-pcr-protocol/
   description: null
-source:
-- MIxS
+source: mixs:0000038
 exact_mappings:
 - https://w3id.org/mixs/0000038
 close_mappings: []

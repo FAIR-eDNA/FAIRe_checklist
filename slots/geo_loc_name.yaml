@@ -23,8 +23,7 @@ recommended: false
 examples:
 - value: 'USA: Maryland, Bethesda'
   description: null
-source:
-- MIxS
+source: mixs:0000010
 exact_mappings:
 - https://w3id.org/mixs/0000010
 close_mappings: []

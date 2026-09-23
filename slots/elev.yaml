@@ -25,8 +25,7 @@ recommended: false
 examples:
 - value: '100.0'
   description: null
-source:
-- MIxS
+source: mixs:0000093
 exact_mappings:
 - https://w3id.org/mixs/0000093
 close_mappings: []

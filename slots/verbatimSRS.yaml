@@ -20,8 +20,7 @@ recommended: false
 examples:
 - value: NAD84
   description: null
-source:
-- DwC
+source: dwc:verbatimSRS
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimSRS
 close_mappings: []

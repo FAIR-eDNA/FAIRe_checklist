@@ -9,7 +9,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
-slot_uri: https://w3id.org/mixs/0001001
+slot_uri: mixs:0001001
 range: string
 unit: no unit
 structured_pattern:
@@ -21,10 +21,9 @@ recommended: false
 examples:
 - value: '7.2'
   description: null
-source:
-- MIxS
+source: mixs:0001001
 exact_mappings:
-- https://w3id.org/mixs/0001001
+- mixs:0001001
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

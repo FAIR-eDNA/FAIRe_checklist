@@ -21,8 +21,7 @@ recommended: false
 examples:
 - value: 121d 10' 34" W
   description: null
-source:
-- DwC
+source: dwc:verbatimLongitude
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimLongitude
 close_mappings: []

@@ -24,8 +24,7 @@ recommended: false
 examples:
 - value: '-41.09834'
   description: null
-source:
-- DwC
+source: dwc:decimalLatitude
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/decimalLatitude
 close_mappings: []

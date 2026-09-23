@@ -21,8 +21,7 @@ examples:
 - value: Eukaryota; Metazoa; Chordata; Actinopterygii; Perciformes; Lutjanidae; Lutjanus;
     Lutjanus_erythropterus
   description: null
-source:
-- DwC
+source: dwc:verbatimIdentification
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimIdentification
 close_mappings: []

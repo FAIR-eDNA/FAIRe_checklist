@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Chordata
   description: null
-source:
-- DwC
+source: dwc:phylum
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/phylum
 close_mappings: []

@@ -19,8 +19,7 @@ recommended: false
 examples:
 - value: degrees minutes seconds
   description: null
-source:
-- DwC
+source: dwc:verbatimCoordinateSystem
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 close_mappings: []

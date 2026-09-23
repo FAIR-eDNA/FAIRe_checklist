@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Lutjanidae
   description: null
-source:
-- DwC
+source: dwc:family
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/family
 close_mappings: []

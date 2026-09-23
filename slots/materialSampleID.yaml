@@ -21,8 +21,7 @@ recommended: true
 examples:
 - value: GOMECC4_27N_Sta1_Deep
   description: null
-source:
-- DwC
+source: dwc:materialSampleID
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/materialSampleID
 close_mappings: []

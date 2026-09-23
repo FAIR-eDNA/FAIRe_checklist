@@ -21,8 +21,7 @@ recommended: false
 examples:
 - value: 41 05 54.03S
   description: null
-source:
-- DwC
+source: dwc:verbatimLatitude
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/verbatimLatitude
 close_mappings: []

@@ -23,8 +23,7 @@ examples:
 - value: Coordinates generalized from original GPS coordinates to the nearest half
     degree grid cell.
   description: null
-source:
-- DwC
+source: dwc:dataGeneralizations
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/dataGeneralizations
 close_mappings: []

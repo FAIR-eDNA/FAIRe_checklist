@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Animalia
   description: null
-source:
-- DwC
+source: dwc:kingdom
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/kingdom
 close_mappings: []

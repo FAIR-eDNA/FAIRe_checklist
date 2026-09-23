@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Actinopterygii
   description: null
-source:
-- DwC
+source: dwc:class
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/class
 close_mappings: []

@@ -24,8 +24,7 @@ examples:
   description: null
 - value: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898
   description: null
-source:
-- DwC
+source: dwc:associatedSequences
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/associatedSequences
 close_mappings: []

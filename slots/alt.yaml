@@ -12,7 +12,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Air | HostAssociated
-slot_uri: https://w3id.org/mixs/0000094
+slot_uri: mixs:0000094
 range: string
 unit: meter
 structured_pattern:
@@ -24,10 +24,9 @@ recommended: false
 examples:
 - value: '100.0'
   description: null
-source:
-- MIxS
+source: mixs:0000094
 exact_mappings:
-- https://w3id.org/mixs/0000094
+- mixs:0000094
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

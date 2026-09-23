@@ -22,8 +22,7 @@ recommended: true
 examples:
 - value: '20.0'
   description: null
-source:
-- MIxS
+source: mixs:0000735
 exact_mappings:
 - https://w3id.org/mixs/0000735
 close_mappings: []

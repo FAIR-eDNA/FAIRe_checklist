@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Lutjanus
   description: null
-source:
-- DwC
+source: dwc:genus
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/genus
 close_mappings: []

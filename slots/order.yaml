@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Perciformes
   description: null
-source:
-- DwC
+source: dwc:order
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/order
 close_mappings: []

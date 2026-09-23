@@ -19,8 +19,7 @@ recommended: true
 examples:
 - value: Lutjanus erythropterus
   description: null
-source:
-- DwC
+source: dwc:scientificName
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/scientificName
 close_mappings: []

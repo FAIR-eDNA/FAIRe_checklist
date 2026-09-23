@@ -20,8 +20,7 @@ examples:
 - value: Taxonomic assignment was performed at the most precise taxonomic level common
     to the hypothetical taxa.
   description: null
-source:
-- DwC
+source: dwc:identificationRemarks
 exact_mappings:
 - http://rs.tdwg.org/dwc/terms/identificationRemarks
 close_mappings: []

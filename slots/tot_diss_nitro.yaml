@@ -9,7 +9,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
-slot_uri: https://w3id.org/mixs/0000744
+slot_uri: mixs:0000744
 range: string
 structured_pattern:
   syntax: null
@@ -20,10 +20,9 @@ recommended: false
 examples:
 - value: '40.0'
   description: null
-source:
-- MIxS
+source: mixs:0000744
 exact_mappings:
-- https://w3id.org/mixs/0000744
+- mixs:0000744
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
