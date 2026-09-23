@@ -25,8 +25,7 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
   requirement_level_condition: if screen_contam_0_1 is 1

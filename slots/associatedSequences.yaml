@@ -30,12 +30,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - experimentRunMetadata
+  data_type: experimentRunMetadata
   requirement_level: Recommended
   requirement_level_code: R
-  modifications_made:
-  - description
+  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

@@ -29,14 +29,11 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - sampleMetadata
+  data_type: sampleMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
-  sample_type_specificity:
-  - ALL
-  modifications_made:
-  - description
+  sample_type_specificity: ALL
+  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

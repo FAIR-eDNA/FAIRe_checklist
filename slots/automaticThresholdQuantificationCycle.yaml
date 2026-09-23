@@ -26,13 +26,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Optional
   requirement_level_code: O
-  modifications_made:
-  - description
-  - field_type
+  modifications_made: description | field_type
 enum_values:
   '0':
     meaning: '0'

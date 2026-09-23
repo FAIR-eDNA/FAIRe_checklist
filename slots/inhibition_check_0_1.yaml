@@ -24,8 +24,7 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Optional
   requirement_level_code: O
 enum_values:

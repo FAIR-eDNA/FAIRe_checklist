@@ -27,14 +27,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
+  data_type: taxaRaw | taxaFinal
   requirement_level: Recommended
   requirement_level_code: R
-  modifications_made:
-  - field_name
-  - description
+  modifications_made: field_name | description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

@@ -25,8 +25,7 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - sampleMetadata
+  data_type: sampleMetadata
   requirement_level: Mandatory
   requirement_level_code: M
 enum_values:

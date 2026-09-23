@@ -27,14 +27,11 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - ampData
-  - eLowQuantData
+  data_type: ampData | eLowQuantData
   requirement_level: Recommended
   requirement_level_code: R
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - description
+  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

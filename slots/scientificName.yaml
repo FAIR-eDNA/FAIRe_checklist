@@ -25,13 +25,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
+  data_type: taxaRaw | taxaFinal
   requirement_level: Highly recommended
   requirement_level_code: HR
-  modifications_made:
-  - description
+  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

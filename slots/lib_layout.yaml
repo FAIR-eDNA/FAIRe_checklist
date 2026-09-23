@@ -26,12 +26,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-  modifications_made:
-  - field_type
+  modifications_made: field_type
 enum_values:
   'other:':
     meaning: 'other:'

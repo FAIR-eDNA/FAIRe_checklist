@@ -26,8 +26,7 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - ampData
+  data_type: ampData
   requirement_level: Recommended
   requirement_level_code: R
 enum_values:

@@ -27,15 +27,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - sampleMetadata
+  data_type: sampleMetadata
   requirement_level: Optional
   requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - MicrobialMatBiofilm
+  sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

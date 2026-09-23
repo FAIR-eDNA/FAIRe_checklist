@@ -28,12 +28,10 @@ mappings:
   broad_mappings: []
 domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
-  modifications_made:
-  - field_type
+  modifications_made: field_type
 enum_values:
   Black Hole Quencher (BHQ):
     meaning: Black Hole Quencher (BHQ)
