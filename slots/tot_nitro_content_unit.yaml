@@ -20,7 +20,6 @@ examples:
 - value: other:mg N/kg of soil
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

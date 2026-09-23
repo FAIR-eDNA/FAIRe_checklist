@@ -19,7 +19,6 @@ examples:
 - value: NextSeq 500/550 v2.5
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

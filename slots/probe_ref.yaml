@@ -19,7 +19,6 @@ examples:
 - value: 10.1007/s00227-017-3141-x
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

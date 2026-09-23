@@ -20,7 +20,6 @@ examples:
 - value: e61e08bfd3ad5eb5d6e7da9e95b5feed
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

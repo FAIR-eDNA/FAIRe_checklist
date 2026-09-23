@@ -19,7 +19,6 @@ examples:
 - value: 'DOI: 10.1002/edn3.220'
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

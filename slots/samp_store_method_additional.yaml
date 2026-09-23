@@ -21,7 +21,6 @@ examples:
 - value: The sample was thawed overnight at room temperature prior to DNA extraction
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

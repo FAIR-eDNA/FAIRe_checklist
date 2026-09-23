@@ -20,7 +20,6 @@ examples:
 - value: UWA, IOMRC, Lv4 -80Freezer2
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

@@ -21,7 +21,6 @@ examples:
 - value: Zymo DNA Clean & Concentrator Kits
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

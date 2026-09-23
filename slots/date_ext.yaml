@@ -19,7 +19,6 @@ examples:
 - value: 2008-01-23T19:23-06:00
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

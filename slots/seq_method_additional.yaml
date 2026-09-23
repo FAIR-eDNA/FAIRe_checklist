@@ -20,7 +20,6 @@ examples:
 - value: PhiX was spiked in at 15%
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

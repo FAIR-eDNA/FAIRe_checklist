@@ -25,7 +25,6 @@ examples:
 - value: T1H30M
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

@@ -19,7 +19,6 @@ examples:
 - value: '25.0'
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

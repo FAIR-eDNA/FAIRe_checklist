@@ -17,7 +17,6 @@ required: false
 recommended: true
 examples: []
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

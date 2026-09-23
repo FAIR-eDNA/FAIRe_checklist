@@ -20,7 +20,6 @@ examples:
 - value: '2'
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

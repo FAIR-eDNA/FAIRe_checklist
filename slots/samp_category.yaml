@@ -20,7 +20,6 @@ examples:
 - value: sample
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

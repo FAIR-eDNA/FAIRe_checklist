@@ -19,7 +19,6 @@ examples:
 - value: q2-dada2 2019.1.0
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

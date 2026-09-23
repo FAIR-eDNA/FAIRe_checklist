@@ -21,7 +21,6 @@ examples:
 - value: initial denaturation:94_3;annealing:50_1;elongation:72_1.5;final elongation:72_10;35
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

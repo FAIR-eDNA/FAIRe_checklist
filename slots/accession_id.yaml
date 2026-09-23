@@ -19,7 +19,6 @@ examples:
 - value: MG002616.1
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []

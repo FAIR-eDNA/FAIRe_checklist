@@ -20,7 +20,6 @@ examples:
 - value: other:gram Carbon per kg sample material
   description: null
 source:
-- New
 exact_mappings: []
 close_mappings: []
 related_mappings: []
