@@ -25,7 +25,7 @@ mappings:
 domain_of: []
 annotations:
   data_type:
-  - projectMetadata
+  - experimentRunMetadata
   requirement_level: Recommended
   requirement_level_code: R
 # __LEGACY_LINKML_FIELDS_START__
