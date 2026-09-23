@@ -13,7 +13,7 @@ annotations:
   requirement_level_code: R
   sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
   modifications_made: description
-slot_uri: http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit: meter
 structured_pattern:
@@ -26,8 +26,7 @@ examples:
 - value: '0.2'
   description: null
 source: dwc:minimumDepthInMeters
-exact_mappings:
-- http://rs.tdwg.org/dwc/terms/minimumDepthInMeters
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

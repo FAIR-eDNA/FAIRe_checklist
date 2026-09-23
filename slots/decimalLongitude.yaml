@@ -13,7 +13,7 @@ annotations:
   requirement_level_condition: Mandatory unless specified under the term informationWithheld,
     or samp_category = negative control, positive control, or PCR standard
   modifications_made: description
-slot_uri: http://rs.tdwg.org/dwc/terms/decimalLongitude
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -25,8 +25,7 @@ examples:
 - value: '-121.17611'
   description: null
 source: dwc:decimalLongitude
-exact_mappings:
-- http://rs.tdwg.org/dwc/terms/decimalLongitude
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

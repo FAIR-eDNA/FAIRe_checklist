@@ -9,7 +9,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   modifications_made: description
-slot_uri: http://rs.tdwg.org/dwc/terms/taxonID
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -21,8 +21,7 @@ examples:
 - value: '218797.0'
   description: null
 source: dwc:taxonID
-exact_mappings:
-- http://rs.tdwg.org/dwc/terms/taxonID
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

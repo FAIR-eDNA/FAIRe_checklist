@@ -12,7 +12,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: ALL
   modifications_made: description | field_type
-slot_uri: https://w3id.org/mixs/0000110
+slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_store_temp_enum
 unit: degree Celsius
 structured_pattern:
@@ -25,8 +25,7 @@ examples:
 - value: '-80.0'
   description: null
 source: mixs:0000110
-exact_mappings:
-- https://w3id.org/mixs/0000110
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

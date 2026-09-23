@@ -8,7 +8,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   modifications_made: description | field_type
-slot_uri: http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
+slot_uri: __TODO_ADD_SLOT_URI__
 range: verbatimCoordinateSystem_enum
 structured_pattern:
   syntax: null
@@ -20,8 +20,7 @@ examples:
 - value: degrees minutes seconds
   description: null
 source: dwc:verbatimCoordinateSystem
-exact_mappings:
-- http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
