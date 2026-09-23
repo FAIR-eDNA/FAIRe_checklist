@@ -3,6 +3,10 @@ description: >-
   A person or organization owning or managing rights over the resource.
 in_subset:
   - Data management
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: http://purl.org/dc/terms/rightsHolder
 range: string
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

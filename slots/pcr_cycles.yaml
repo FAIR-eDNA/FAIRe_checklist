@@ -5,6 +5,11 @@ description: >-
   section. Unit = cycles
 in_subset:
   - PCR
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
 slot_uri: https://w3id.org/nmdc/pcr_cycles
 range: string
 unit: cycles
@@ -27,11 +32,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: integer

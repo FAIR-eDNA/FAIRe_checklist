@@ -7,6 +7,12 @@ description: >-
   are the same. Unit = meter
 in_subset:
   - Environment
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
+  modifications_made: description
 slot_uri: http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
 range: string
 unit: meter
@@ -29,12 +35,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

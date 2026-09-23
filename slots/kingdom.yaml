@@ -3,6 +3,11 @@ description: >-
   The full scientific name of the kingdom
 in_subset:
   - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
 slot_uri: http://rs.tdwg.org/dwc/terms/kingdom
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

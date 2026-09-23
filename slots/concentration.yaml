@@ -3,6 +3,11 @@ description: >-
   Concentration of total DNA after extraction
 in_subset:
   - Nucleic acid extraction
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

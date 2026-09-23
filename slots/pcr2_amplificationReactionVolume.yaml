@@ -3,6 +3,10 @@ description: >-
   The total PCR reaction volume in the second step PCR. Unit = µL
 in_subset:
   - Library preparation sequencing
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit: µL
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

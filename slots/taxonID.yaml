@@ -4,6 +4,11 @@ description: >-
   hits). May be a global unique identifier or an identifier specific to the data set.
 in_subset:
   - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
 slot_uri: http://rs.tdwg.org/dwc/terms/taxonID
 range: string
 structured_pattern:
@@ -25,11 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

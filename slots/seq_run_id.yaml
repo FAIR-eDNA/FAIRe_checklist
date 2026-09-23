@@ -5,6 +5,11 @@ description: >-
   'seq_run_id'.
 in_subset:
   - Library preparation sequencing
+annotations:
+  data_type: experimentRunMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: If assay_type = metabarcoding
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -25,11 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: experimentRunMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: If assay_type = metabarcoding
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

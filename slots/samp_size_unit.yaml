@@ -3,6 +3,11 @@ description: >-
   Unit for samp_size
 in_subset:
 - Sample collection
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: ALL
 slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_size_unit_enum
 structured_pattern:
@@ -23,11 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: ALL
 enum_values:
   L:
     meaning: L

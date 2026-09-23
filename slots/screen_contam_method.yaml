@@ -3,6 +3,11 @@ description: >-
   How were contaminations screened and applied in data curation/analyses/interpretation?
 in_subset:
   - Bioinformatics
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  requirement_level_condition: if screen_contam_0_1 is 1
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  requirement_level_condition: if screen_contam_0_1 is 1
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

@@ -3,6 +3,10 @@ description: >-
   Accession ID of the best matching sequence from a reference database
 in_subset:
   - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -23,10 +27,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # term_type: unspecified

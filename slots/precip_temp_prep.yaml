@@ -4,6 +4,12 @@ description: >-
   performed. Unit = degree Celsius
 in_subset:
 - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: Water | Soil | Sediment
+  modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: precip_temp_prep_enum
 unit: degree Celsius
@@ -25,12 +31,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: Water | Soil | Sediment
-  modifications_made: field_name | description
 enum_values:
   ambient temperature:
     meaning: ambient temperature

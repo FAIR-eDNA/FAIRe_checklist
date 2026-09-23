@@ -5,6 +5,10 @@ description: >-
   the term pcr2_* in the library preparation/sequencing section. Unit = degree Celsius
 in_subset:
   - PCR
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
 unit: degree Celsius
@@ -28,10 +32,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

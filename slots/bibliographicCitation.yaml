@@ -3,6 +3,10 @@ description: >-
   A bibliographic reference for the resource.
 in_subset:
   - Data management
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: http://purl.org/dc/terms/bibliographicCitation
 range: string
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

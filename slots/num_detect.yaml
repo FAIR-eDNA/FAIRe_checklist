@@ -4,6 +4,10 @@ description: >-
   10.1002/edn3.220)
 in_subset:
   - Targeted assay detection
+annotations:
+  data_type: eLowQuantData
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: eLowQuantData
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # term_type: unspecified

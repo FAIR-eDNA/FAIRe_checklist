@@ -5,6 +5,10 @@ description: >-
   with other methods.
 in_subset:
 - Nucleic acid extraction
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: nucl_acid_ext_lysis_enum
 structured_pattern:
@@ -25,10 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
 enum_values:
   chemical:
     meaning: chemical

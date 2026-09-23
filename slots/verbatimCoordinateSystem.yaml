@@ -3,6 +3,11 @@ description: >-
   The coordinate format of the verbatimLatitude and verbatimLongitude
 in_subset:
 - Sample collection
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  modifications_made: description | field_type
 slot_uri: http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem
 range: verbatimCoordinateSystem_enum
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  modifications_made: description | field_type
 enum_values:
   UTM:
     meaning: UTM

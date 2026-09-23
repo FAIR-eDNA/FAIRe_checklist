@@ -3,6 +3,10 @@ description: >-
   The taxonomy database corresponding to taxonID.
 in_subset:
   - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -23,10 +27,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

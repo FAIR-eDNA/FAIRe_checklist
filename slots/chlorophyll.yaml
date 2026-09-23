@@ -3,6 +3,11 @@ description: >-
   Concentration of chlorophyll. Unit = mg/m3
 in_subset:
   - Environment
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 slot_uri: https://w3id.org/mixs/0000177
 range: string
 unit: mg/m3
@@ -25,11 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

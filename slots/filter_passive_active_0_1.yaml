@@ -4,6 +4,11 @@ description: >-
   in water/air) filtration approach. Active = 1, Passive = 0
 in_subset:
 - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Air
 slot_uri: __TODO_ADD_SLOT_URI__
 range: filter_passive_active_0_1_enum
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity: Water | Air
 enum_values:
   '0':
     meaning: '0'

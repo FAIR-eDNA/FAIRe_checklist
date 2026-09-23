@@ -4,6 +4,11 @@ description: >-
   prior to DNA extraction, that has not been shared in the given record
 in_subset:
   - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: ALL
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -26,11 +31,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: ALL
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

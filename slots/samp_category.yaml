@@ -4,6 +4,10 @@ description: >-
   was selected, provide further information under the terms fill neg_cont_type and pos_cont_type.
 in_subset:
 - Sample information
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
 slot_uri: __TODO_ADD_SLOT_URI__
 range: samp_category_enum
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
 enum_values:
   PCR standard:
     meaning: PCR standard

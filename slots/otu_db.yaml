@@ -6,6 +6,11 @@ description: >-
   information of the database under the term otu_db_custom
 in_subset:
   - Bioinformatics
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
 slot_uri: https://w3id.org/mixs/0000087
 range: string
 structured_pattern:
@@ -30,11 +35,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

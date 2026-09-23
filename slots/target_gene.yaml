@@ -3,6 +3,11 @@ description: >-
   Targeted gene or locus name for marker gene studies
 in_subset:
 - PCR
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: field_type
 slot_uri: https://w3id.org/mixs/0000044
 range: target_gene_enum
 structured_pattern:
@@ -25,11 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made: field_type
 enum_values:
   12S rRNA (SSU mitochondria):
     meaning: 12S rRNA (SSU mitochondria)

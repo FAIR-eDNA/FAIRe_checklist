@@ -4,6 +4,12 @@ description: >-
   extraction, if precipitation was performed. Unit = minute
 in_subset:
   - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: Water | Soil | Sediment
+  modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit: minute
@@ -25,12 +31,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: Water | Soil | Sediment
-  modifications_made: field_name | description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

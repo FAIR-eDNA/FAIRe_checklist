@@ -6,6 +6,13 @@ description: >-
   hundred-thousandth (0.00001) to achieve meter scale resolution.
 in_subset:
   - Sample collection
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: Mandatory unless specified under the term informationWithheld,
+    or samp_category = negative control, positive control, or PCR standard
+  modifications_made: description
 slot_uri: http://rs.tdwg.org/dwc/terms/decimalLatitude
 range: string
 structured_pattern:
@@ -27,13 +34,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: Mandatory unless specified under the term informationWithheld,
-    or samp_category = negative control, positive control, or PCR standard
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

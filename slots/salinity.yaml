@@ -8,6 +8,11 @@ description: >-
   unit (psu)
 in_subset:
   - Environment
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
 slot_uri: https://w3id.org/mixs/0000183
 range: string
 unit: practical salinity unit (psu)
@@ -30,11 +35,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

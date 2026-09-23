@@ -5,6 +5,11 @@ description: >-
   signals.
 in_subset:
 - PCR
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: field_type
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: probeQuencher_enum
 structured_pattern:
@@ -27,11 +32,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made: field_type
 enum_values:
   Black Hole Quencher (BHQ):
     meaning: Black Hole Quencher (BHQ)

@@ -4,6 +4,10 @@ description: >-
   of DNA sequencers (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0002750)
 in_subset:
 - Library preparation sequencing
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: instrument_enum
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 enum_values:
   INSTRUMENT NAME [OBI_xxxx]:
     meaning: INSTRUMENT NAME [OBI_xxxx]

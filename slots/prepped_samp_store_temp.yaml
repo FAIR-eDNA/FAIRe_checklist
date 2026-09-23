@@ -6,6 +6,12 @@ description: >-
   and subsampled sediment, prepared for DNA extraction. Unit = degree Celsius
 in_subset:
 - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: ALL
+  modifications_made: field_name | description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
 range: prepped_samp_store_temp_enum
 unit: degree Celsius
@@ -27,12 +33,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity: ALL
-  modifications_made: field_name | description | field_type
 enum_values:
   ambient temperature:
     meaning: ambient temperature

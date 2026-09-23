@@ -8,6 +8,12 @@ description: >-
   sample under the term prepped_samp_store_temp.
 in_subset:
   - Sample storage
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: ALL
+  modifications_made: description
 slot_uri: https://w3id.org/mixs/0000116
 range: string
 structured_pattern:
@@ -29,12 +35,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: ALL
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: fixed format

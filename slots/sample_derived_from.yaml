@@ -7,6 +7,10 @@ description: >-
   in each of the child samples. This includes the case of pcr technical replicates.
 in_subset:
   - Sample relations
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -27,10 +31,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: fixed format

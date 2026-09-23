@@ -3,6 +3,10 @@ description: >-
   PCR approach for metabarcoding
 in_subset:
 - Library preparation sequencing
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: barcoding_pcr_appr_enum
 structured_pattern:
@@ -23,10 +27,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 enum_values:
   ligation-based:
     meaning: ligation-based

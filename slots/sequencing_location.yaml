@@ -4,6 +4,10 @@ description: >-
   lab or core facility where samples were sequenced
 in_subset:
   - Library preparation sequencing
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
 slot_uri: https://w3id.org/mixs/0001156
 range: string
 structured_pattern:
@@ -25,10 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

@@ -5,6 +5,12 @@ description: >-
   Also known as relative humidity. Unit = %
 in_subset:
   - Environment
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Air
+  modifications_made: description
 slot_uri: https://w3id.org/mixs/0000100
 range: string
 unit: '%'
@@ -27,12 +33,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: Air
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

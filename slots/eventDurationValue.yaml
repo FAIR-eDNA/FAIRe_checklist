@@ -5,6 +5,11 @@ description: >-
   for some time between 30 and 45 minutes).
 in_subset:
   - Sample collection
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  modifications_made: description | field_type
 slot_uri: http://rs.tdwg.org/eco/terms/eventDurationValue
 range: string
 structured_pattern:
@@ -26,11 +31,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  modifications_made: description | field_type
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:

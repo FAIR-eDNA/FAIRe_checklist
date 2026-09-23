@@ -3,6 +3,10 @@ description: >-
   General sequencing platform used.
 in_subset:
 - Library preparation sequencing
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: platform_enum
 structured_pattern:
@@ -56,7 +60,3 @@ enum_values:
     meaning: VELA_DIAGNOSTICS
   'other:':
     meaning: 'other:'
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR

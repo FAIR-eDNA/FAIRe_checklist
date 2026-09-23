@@ -5,6 +5,10 @@ description: >-
   Examples using probabilistic: PROTAX, TIPP.
 in_subset:
 - Bioinformatics
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: tax_assign_cat_enum
 structured_pattern:
@@ -25,10 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 enum_values:
   'other:':
     meaning: 'other:'

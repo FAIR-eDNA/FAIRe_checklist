@@ -3,6 +3,12 @@ description: >-
   Material of filter
 in_subset:
 - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: Water | Air
+  modifications_made: description | field_type
 slot_uri: https://w3id.org/nmdc/filter_material
 range: filter_material_enum
 structured_pattern:
@@ -24,12 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: Water | Air
-  modifications_made: description | field_type
 enum_values:
   cellulose:
     meaning: cellulose

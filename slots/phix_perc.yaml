@@ -3,6 +3,10 @@ description: >-
   % of PhiX added into a library, if applicable. Unit = %
 in_subset:
   - Library preparation sequencing
+annotations:
+  data_type: experimentRunMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit: '%'
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: experimentRunMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

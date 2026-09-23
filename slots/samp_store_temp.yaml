@@ -6,6 +6,12 @@ description: >-
   prepped_samp_store_temp. Unit = degree Celsius
 in_subset:
 - Sample storage
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: ALL
+  modifications_made: description | field_type
 slot_uri: https://w3id.org/mixs/0000110
 range: samp_store_temp_enum
 unit: degree Celsius
@@ -28,12 +34,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity: ALL
-  modifications_made: description | field_type
 enum_values:
   ambient temperature:
     meaning: ambient temperature

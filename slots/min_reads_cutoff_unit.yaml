@@ -3,6 +3,10 @@ description: >-
   The unit of the min_reads_cutoff. i.e. reads, % relative read abundance
 in_subset:
 - Bioinformatics
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: min_reads_cutoff_unit_enum
 structured_pattern:
@@ -23,10 +27,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
 enum_values:
   '%':
     meaning: '%'

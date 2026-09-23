@@ -3,6 +3,11 @@ description: >-
   Speed of wind measured at the time of sampling. Unit = m/s
 in_subset:
   - Environment
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Soil | Sediment | Air
 slot_uri: https://w3id.org/mixs/0000118
 range: string
 unit: m/s
@@ -25,11 +30,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: Water | Soil | Sediment | Air
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

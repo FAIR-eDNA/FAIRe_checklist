@@ -4,6 +4,11 @@ description: >-
   kit if used.
 in_subset:
   - Nucleic acid extraction
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  requirement_level_condition: If dna_cleanup_0_1 is 1
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  requirement_level_condition: If dna_cleanup_0_1 is 1
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # term_type: unspecified

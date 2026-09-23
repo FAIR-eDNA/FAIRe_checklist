@@ -3,6 +3,11 @@ description: >-
   How were species distribution information screened and applied?
 in_subset:
   - Bioinformatics
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  requirement_level_condition: if screen_geograph_0_1 is 1
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  requirement_level_condition: if screen_geograph_0_1 is 1
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

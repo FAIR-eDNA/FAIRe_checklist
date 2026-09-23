@@ -3,6 +3,11 @@ description: >-
   The name of the first or species epithet of the scientificName.
 in_subset:
   - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
 slot_uri: http://rs.tdwg.org/dwc/terms/specificEpithet
 range: string
 structured_pattern:
@@ -24,11 +29,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made: description
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: free text

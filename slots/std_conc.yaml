@@ -3,6 +3,11 @@ description: >-
   Input quantity of qPCR standard DNA
 in_subset:
   - Targeted assay detection
+annotations:
+  data_type: stdData
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: if samp_category = PCR standard
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -23,11 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: stdData
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: if samp_category = PCR standard
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
 # term_type: numeric

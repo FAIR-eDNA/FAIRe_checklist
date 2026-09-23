@@ -3,6 +3,10 @@ description: >-
   The taxonomic rank of the most specific name in the scientificName
 in_subset:
 - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Highly recommended
+  requirement_level_code: HR
 slot_uri: http://rs.tdwg.org/dwc/terms/taxonRank
 range: taxonRank_enum
 structured_pattern:
@@ -24,10 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: taxaRaw | taxaFinal
-  requirement_level: Highly recommended
-  requirement_level_code: HR
 enum_values:
   class:
     meaning: class

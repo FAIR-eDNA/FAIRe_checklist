@@ -3,6 +3,11 @@ description: >-
   Unit for pump_flow_rate
 in_subset:
 - Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Air
 slot_uri: __TODO_ADD_SLOT_URI__
 range: pump_flow_rate_unit_enum
 structured_pattern:
@@ -23,11 +28,6 @@ mappings:
   narrow_mappings: []
   broad_mappings: []
 domain_of: []
-annotations:
-  data_type: sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity: Water | Air
 enum_values:
   L/h:
     meaning: L/h
