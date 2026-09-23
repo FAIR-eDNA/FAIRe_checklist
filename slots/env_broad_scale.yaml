@@ -11,7 +11,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
-slot_uri: https://w3id.org/mixs/0000012
+slot_uri: __TODO_ADD_SLOT_URI__
 range: env_broad_scale_enum
 structured_pattern:
   syntax: null
@@ -22,11 +22,8 @@ recommended: false
 examples:
 - value: estuarine biome [ENVO:01000020]
   description: null
-source:
-- MIxS
-- DNA-derived data extension
-exact_mappings:
-- https://w3id.org/mixs/0000012
+source: mixs:0000012
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

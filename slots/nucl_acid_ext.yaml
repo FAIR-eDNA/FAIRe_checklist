@@ -12,7 +12,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   modifications_made: description
-slot_uri: https://w3id.org/mixs/0000037
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -23,11 +23,8 @@ recommended: true
 examples:
 - value: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
   description: null
-source:
-- MIxS
-- DNA-derived data extension
-exact_mappings:
-- https://w3id.org/mixs/0000037
+source: mixs:0000037
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

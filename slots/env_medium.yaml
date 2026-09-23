@@ -13,7 +13,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
-slot_uri: https://w3id.org/mixs/0000014
+slot_uri: __TODO_ADD_SLOT_URI__
 range: env_medium_enum
 structured_pattern:
   syntax: null
@@ -24,11 +24,8 @@ recommended: false
 examples:
 - value: soil [ENVO:00001998]
   description: null
-source:
-- MIxS
-- DNA-derived data extension
-exact_mappings:
-- https://w3id.org/mixs/0000014
+source: mixs:0000014
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
