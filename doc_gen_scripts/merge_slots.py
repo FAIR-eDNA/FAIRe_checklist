@@ -148,6 +148,7 @@ SCHEMA_PREFIXES = {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
     "gbif": "https://rs.gbif.org/extension/gbif/1.0/",
+    "ggbn": "http://data.ggbn.org/schemas/ggbn/terms/",
     "faire": "https://w3id.org/fairie/",
 }
 
