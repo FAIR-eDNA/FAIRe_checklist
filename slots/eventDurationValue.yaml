@@ -23,13 +23,12 @@ examples:
   description: null
 source:
 - Humboldt extension
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/eco/terms/eventDurationValue
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- http://rs.tdwg.org/eco/terms/eventDurationValue
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.

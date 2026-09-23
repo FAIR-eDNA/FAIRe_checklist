@@ -26,13 +26,12 @@ examples:
   description: null
 source:
 - DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/decimalLongitude
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- http://rs.tdwg.org/dwc/terms/decimalLongitude
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.

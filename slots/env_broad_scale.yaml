@@ -25,13 +25,12 @@ examples:
 source:
 - MIxS
 - DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000012
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- https://w3id.org/mixs/0000012
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 enum_values:
   http://purl.obolibrary.org/obo/ENVO_00000428:

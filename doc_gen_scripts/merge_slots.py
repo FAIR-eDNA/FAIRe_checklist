@@ -92,6 +92,17 @@ def uri_to_curie(uri, prefixes):
     return f"{best_name}:{local}"
 
 
+# LinkML mapping metaslots; each is a list of URIs directly on the slot.
+MAPPING_KEYS = (
+    "mappings",
+    "exact_mappings",
+    "close_mappings",
+    "related_mappings",
+    "narrow_mappings",
+    "broad_mappings",
+)
+
+
 def compact_uris_in_slot(slot_def, prefixes):
     """Rewrite slot_uri and mapping lists to use schema prefix CURIEs where possible."""
     if not isinstance(slot_def, dict):
@@ -99,13 +110,11 @@ def compact_uris_in_slot(slot_def, prefixes):
     su = slot_def.get("slot_uri")
     if isinstance(su, str):
         slot_def["slot_uri"] = uri_to_curie(su, prefixes)
-    mappings = slot_def.get("mappings")
-    if not isinstance(mappings, dict):
-        return
-    for _key, mlist in mappings.items():
+    for key in MAPPING_KEYS:
+        mlist = slot_def.get(key)
         if not isinstance(mlist, list):
             continue
-        slot_def["mappings"][_key] = [
+        slot_def[key] = [
             uri_to_curie(x, prefixes) if isinstance(x, str) else x for x in mlist
         ]
 

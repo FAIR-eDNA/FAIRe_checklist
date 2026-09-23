@@ -24,13 +24,12 @@ examples:
 source:
 - MIxS
 - DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000043
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- https://w3id.org/mixs/0000043
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.

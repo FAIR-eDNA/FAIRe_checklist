@@ -22,12 +22,11 @@ examples:
   description: null
 source:
 - MIQE
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 enum_values:
   Ct/Cq with standard bionomial data:

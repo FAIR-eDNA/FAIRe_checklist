@@ -20,12 +20,11 @@ examples:
   description: null
 source:
 - INSDC
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 enum_values:
   BGISEQ:

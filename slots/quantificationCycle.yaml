@@ -30,13 +30,12 @@ examples:
 source:
 - DNA-derived data extension
 - MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.

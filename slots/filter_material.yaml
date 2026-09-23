@@ -22,13 +22,12 @@ examples:
   description: null
 source:
 - NMDC
-mappings:
-  exact_mappings:
-  - https://w3id.org/nmdc/filter_material
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings:
+- https://w3id.org/nmdc/filter_material
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 enum_values:
   cellulose:

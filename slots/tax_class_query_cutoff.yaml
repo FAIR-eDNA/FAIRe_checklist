@@ -21,12 +21,11 @@ examples:
   description: null
 source:
 - New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old model fields visible during migration.
