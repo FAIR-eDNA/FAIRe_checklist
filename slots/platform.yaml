@@ -26,36 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  BGISEQ:
-    meaning: BGISEQ
-  CAPILLARY:
-    meaning: CAPILLARY
-  DNBSEQ:
-    meaning: DNBSEQ
-  ELEMENT:
-    meaning: ELEMENT
-  GENAPSYS:
-    meaning: GENAPSYS
-  GENEMIND:
-    meaning: GENEMIND
-  HELICOS:
-    meaning: HELICOS
-  ILLUMINA:
-    meaning: ILLUMINA
-  ION_TORRENT:
-    meaning: ION_TORRENT
-  LS454:
-    meaning: LS454
-  OXFORD_NANOPORE:
-    meaning: OXFORD_NANOPORE
-  PACBIO_SMRT:
-    meaning: PACBIO_SMRT
-  TAPESTRI:
-    meaning: TAPESTRI
-  ULTIMA:
-    meaning: ULTIMA
-  VELA_DIAGNOSTICS:
-    meaning: VELA_DIAGNOSTICS
-  'other:':
-    meaning: 'other:'

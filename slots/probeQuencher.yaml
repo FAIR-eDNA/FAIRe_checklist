@@ -31,16 +31,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  Black Hole Quencher (BHQ):
-    meaning: Black Hole Quencher (BHQ)
-  Minor Groove Binder (MGB):
-    meaning: Minor Groove Binder (MGB)
-  TAMRA:
-    meaning: TAMRA
-  Zero-End Quencher (ZEN):
-    meaning: Zero-End Quencher (ZEN)
-  lowa Black:
-    meaning: lowa Black
-  'other:':
-    meaning: 'other:'

@@ -26,14 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  PCR standard:
-    meaning: PCR standard
-  negative control:
-    meaning: negative control
-  'other:':
-    meaning: 'other:'
-  positive control:
-    meaning: positive control
-  sample:
-    meaning: sample

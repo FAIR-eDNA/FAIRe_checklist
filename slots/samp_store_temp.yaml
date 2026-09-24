@@ -31,10 +31,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  ambient temperature:
-    meaning: ambient temperature
-  numeric value:
-    meaning: numeric value
-  'other:':
-    meaning: 'other:'

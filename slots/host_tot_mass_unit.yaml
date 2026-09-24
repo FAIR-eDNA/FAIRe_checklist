@@ -26,12 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  g:
-    meaning: g
-  kg:
-    meaning: kg
-  mg:
-    meaning: mg
-  'other:':
-    meaning: 'other:'

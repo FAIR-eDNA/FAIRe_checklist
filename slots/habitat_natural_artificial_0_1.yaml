@@ -28,8 +28,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  '0':
-    meaning: '0'
-  '1':
-    meaning: '1'

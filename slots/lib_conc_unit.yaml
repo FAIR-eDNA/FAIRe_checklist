@@ -25,12 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  nM:
-    meaning: nM
-  ng/µL:
-    meaning: ng/µL
-  'other:':
-    meaning: 'other:'
-  pM:
-    meaning: pM

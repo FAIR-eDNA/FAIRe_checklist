@@ -26,12 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  cm:
-    meaning: cm
-  m:
-    meaning: m
-  mm:
-    meaning: mm
-  'other:':
-    meaning: 'other:'

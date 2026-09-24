@@ -26,20 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  class:
-    meaning: class
-  family:
-    meaning: family
-  genus:
-    meaning: genus
-  kingdom:
-    meaning: kingdom
-  order:
-    meaning: order
-  'other:':
-    meaning: 'other:'
-  phylum:
-    meaning: phylum
-  species:
-    meaning: species

@@ -27,14 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  'other:':
-    meaning: 'other:'
-  phylogeny:
-    meaning: phylogeny
-  probabilistic:
-    meaning: probabilistic
-  sequence composition:
-    meaning: sequence composition
-  sequence similarity:
-    meaning: sequence similarity

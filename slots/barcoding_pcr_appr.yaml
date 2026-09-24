@@ -26,12 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  ligation-based:
-    meaning: ligation-based
-  one-step PCR:
-    meaning: one-step PCR
-  'other:':
-    meaning: 'other:'
-  two-step PCR:
-    meaning: two-step PCR

@@ -27,6 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  INSTRUMENT NAME [OBI_xxxx]:
-    meaning: INSTRUMENT NAME [OBI_xxxx]

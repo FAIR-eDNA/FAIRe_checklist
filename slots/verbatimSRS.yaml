@@ -27,20 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  ETRS89:
-    meaning: ETRS89
-  GDA2020:
-    meaning: GDA2020
-  GDA94:
-    meaning: GDA94
-  JGD2000:
-    meaning: JGD2000
-  NAD27:
-    meaning: NAD27
-  NAD84:
-    meaning: NAD84
-  WGS84:
-    meaning: WGS84
-  'other:':
-    meaning: 'other:'

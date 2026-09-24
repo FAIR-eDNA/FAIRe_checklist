@@ -25,12 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  95% confidence interval:
-    meaning: 95% confidence interval
-  'other:':
-    meaning: 'other:'
-  standard deviation:
-    meaning: standard deviation
-  standard error:
-    meaning: standard error

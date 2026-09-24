@@ -25,10 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  Phred score:
-    meaning: Phred score
-  expected error rate:
-    meaning: expected error rate
-  'other:':
-    meaning: 'other:'

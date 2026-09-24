@@ -25,14 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  amplicon:
-    meaning: amplicon
-  gDNA:
-    meaning: gDNA
-  'other:':
-    meaning: 'other:'
-  plasmid:
-    meaning: plasmid
-  synthetic double-stranded DNA:
-    meaning: synthetic double-stranded DNA

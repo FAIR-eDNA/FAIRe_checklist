@@ -31,12 +31,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  ethanol:
-    meaning: ethanol
-  isopropanol:
-    meaning: isopropanol
-  'other:':
-    meaning: 'other:'
-  sodium chloride:
-    meaning: sodium chloride

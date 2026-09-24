@@ -25,18 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  centrifugation:
-    meaning: centrifugation
-  column-based:
-    meaning: column-based
-  gel electrophoresis:
-    meaning: gel electrophoresis
-  magnetic beads:
-    meaning: magnetic beads
-  'other:':
-    meaning: 'other:'
-  phenol chloroform:
-    meaning: phenol chloroform
-  precipitation:
-    meaning: precipitation

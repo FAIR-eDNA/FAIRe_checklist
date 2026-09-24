@@ -26,14 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  copies/reaction:
-    meaning: copies/reaction
-  copies/µL:
-    meaning: copies/µL
-  ng/reaction:
-    meaning: ng/reaction
-  ng/µL:
-    meaning: ng/µL
-  'other:':
-    meaning: 'other:'

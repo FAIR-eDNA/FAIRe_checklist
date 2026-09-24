@@ -26,12 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  CRC-32:
-    meaning: CRC-32
-  MD5:
-    meaning: MD5
-  SHA-256:
-    meaning: SHA-256
-  'other:':
-    meaning: 'other:'

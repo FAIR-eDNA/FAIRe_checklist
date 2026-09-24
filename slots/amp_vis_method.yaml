@@ -27,16 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  CE-PCR:
-    meaning: CE-PCR
-  LAMP:
-    meaning: LAMP
-  dPCR:
-    meaning: dPCR
-  gel electrophoresis:
-    meaning: gel electrophoresis
-  'other:':
-    meaning: 'other:'
-  qPCR:
-    meaning: qPCR

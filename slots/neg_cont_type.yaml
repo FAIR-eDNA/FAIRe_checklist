@@ -35,16 +35,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  PCR negative:
-    meaning: PCR negative
-  extraction negative:
-    meaning: extraction negative
-  field negative:
-    meaning: field negative
-  'other:':
-    meaning: 'other:'
-  process negative:
-    meaning: process negative
-  site negative:
-    meaning: site negative

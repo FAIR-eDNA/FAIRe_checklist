@@ -26,12 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  UTM:
-    meaning: UTM
-  decimal degrees:
-    meaning: decimal degrees
-  degrees minutes seconds:
-    meaning: degrees minutes seconds
-  'other:':
-    meaning: 'other:'

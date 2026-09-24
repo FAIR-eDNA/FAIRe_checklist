@@ -25,10 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  '%':
-    meaning: '%'
-  'other:':
-    meaning: 'other:'
-  reads:
-    meaning: reads

@@ -31,6 +31,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  http://purl.obolibrary.org/obo/ENVO_00010483:
-    meaning: http://purl.obolibrary.org/obo/ENVO_00010483

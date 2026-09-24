@@ -26,10 +26,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  'other:':
-    meaning: 'other:'
-  paired end:
-    meaning: paired end
-  single end:
-    meaning: single end

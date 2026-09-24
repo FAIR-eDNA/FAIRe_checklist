@@ -25,24 +25,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  L:
-    meaning: L
-  cm2:
-    meaning: cm2
-  cm3:
-    meaning: cm3
-  g:
-    meaning: g
-  kg:
-    meaning: kg
-  m2:
-    meaning: m2
-  m3:
-    meaning: m3
-  mL:
-    meaning: mL
-  mg:
-    meaning: mg
-  'other:':
-    meaning: 'other:'

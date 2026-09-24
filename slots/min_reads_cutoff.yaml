@@ -27,10 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  noise detected in blanks:
-    meaning: noise detected in blanks
-  numeric value:
-    meaning: numeric value
-  'other:':
-    meaning: 'other:'

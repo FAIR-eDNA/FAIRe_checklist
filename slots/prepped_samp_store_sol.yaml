@@ -28,16 +28,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  ethanol:
-    meaning: ethanol
-  longmire:
-    meaning: longmire
-  lysis buffer:
-    meaning: lysis buffer
-  none:
-    meaning: none
-  'other:':
-    meaning: 'other:'
-  sodium acetate:
-    meaning: sodium acetate

@@ -27,6 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  http://purl.obolibrary.org/obo/UBERON_0000104:
-    meaning: http://purl.obolibrary.org/obo/UBERON_0000104

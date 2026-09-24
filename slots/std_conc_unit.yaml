@@ -24,18 +24,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  copies/reaction:
-    meaning: copies/reaction
-  copies/µL of DNA extract:
-    meaning: copies/µL of DNA extract
-  copies/µL of reaction:
-    meaning: copies/µL of reaction
-  ng/reaction:
-    meaning: ng/reaction
-  ng/µL of DNA extract:
-    meaning: ng/µL of DNA extract
-  ng/µL of reaction:
-    meaning: ng/µL of reaction
-  'other:':
-    meaning: 'other:'

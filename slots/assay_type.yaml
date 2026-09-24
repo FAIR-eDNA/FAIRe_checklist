@@ -29,10 +29,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  metabarcoding:
-    meaning: metabarcoding
-  'other:':
-    meaning: 'other:'
-  targeted:
-    meaning: targeted

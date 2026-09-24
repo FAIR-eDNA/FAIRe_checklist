@@ -27,16 +27,3 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings: []
 domain_of: []
-enum_values:
-  chemical:
-    meaning: chemical
-  enzymatic:
-    meaning: enzymatic
-  osmotic:
-    meaning: osmotic
-  'other:':
-    meaning: 'other:'
-  physical:
-    meaning: physical
-  thermal:
-    meaning: thermal
