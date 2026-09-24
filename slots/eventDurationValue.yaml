@@ -10,7 +10,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   modifications_made: description | field_type
-slot_uri: http://rs.tdwg.org/eco/terms/eventDurationValue
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -21,10 +21,8 @@ recommended: false
 examples:
 - value: T1H25M
   description: null
-source:
-- Humboldt extension
-exact_mappings:
-- http://rs.tdwg.org/eco/terms/eventDurationValue
+source: eco:eventDurationValue
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

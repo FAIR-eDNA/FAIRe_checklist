@@ -12,7 +12,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   modifications_made: description
-slot_uri: https://w3id.org/nmdc/mod_date
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -23,10 +23,8 @@ recommended: true
 examples:
 - value: '2014-09-09'
   description: null
-source:
-- NMDC
-exact_mappings:
-- https://w3id.org/nmdc/mod_date
+source: nmdc:mod_date
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

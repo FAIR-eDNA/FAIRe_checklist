@@ -9,7 +9,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: http://rs.tdwg.org/eco/terms/targetTaxonomicScope
+slot_uri: eco:targetTaxonomicScope
 range: string
 structured_pattern:
   syntax: null
@@ -20,10 +20,9 @@ recommended: true
 examples:
 - value: teleost
   description: null
-source:
-- Humboldt extension
+source: eco:targetTaxonomicScope
 exact_mappings:
-- http://rs.tdwg.org/eco/terms/targetTaxonomicScope
+- eco:targetTaxonomicScope
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

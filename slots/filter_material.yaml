@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: Water | Air
   modifications_made: description | field_type
-slot_uri: https://w3id.org/nmdc/filter_material
+slot_uri: __TODO_ADD_SLOT_URI__
 range: filter_material_enum
 structured_pattern:
   syntax: null
@@ -20,10 +20,8 @@ recommended: true
 examples:
 - value: cellulose ester
   description: null
-source:
-- NMDC
-exact_mappings:
-- https://w3id.org/nmdc/filter_material
+source: nmdc:filter_material
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
