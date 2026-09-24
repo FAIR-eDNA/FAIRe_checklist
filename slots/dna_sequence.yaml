@@ -8,7 +8,7 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
   requirement_level_condition: If assay_type = metabarcoding
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+slot_uri: gbif:dna_sequence
 range: string
 structured_pattern:
   syntax: null
@@ -19,10 +19,9 @@ recommended: false
 examples:
 - value: GGTGTTTAAATTTCGGTCTGTAAGAAGTATTGTAATCCCAGCCGCTAGGACTGGAAGGGAAAGAAGGAGAAGGACAGCTGTAATTAGCACGGCTCAGACAAACAAGGGTGTCTGGTATTGGGAAATAGCTGGGGGTTTCATGTTAATAATTGTGGTAATAAAATTGATAGCACCAAGGATTGAAGAGACCCCGGCTAGGTGGAGAGAA
   description: null
-source:
-- DNA-derived data extension
+source: gbif:dna_sequence
 exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+- gbif:dna_sequence
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

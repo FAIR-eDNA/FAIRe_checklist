@@ -8,7 +8,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   modifications_made: description
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -19,10 +19,8 @@ recommended: true
 examples:
 - value: '67.5'
   description: null
-source:
-- DNA-derived data extension
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: ggbn:concentration
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

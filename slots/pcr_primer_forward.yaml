@@ -17,7 +17,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If pcr_0_1 is 1
   modifications_made: description
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -28,10 +28,8 @@ recommended: false
 examples:
 - value: GGWACWGGWTGAACWGTWTAYCCYCC
   description: null
-source:
-- DNA-derived data extension
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: gbif:pcr_primer_forward
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

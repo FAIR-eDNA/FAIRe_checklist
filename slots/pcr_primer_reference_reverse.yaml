@@ -10,7 +10,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   modifications_made: Forward and reverse separated
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -21,10 +21,8 @@ recommended: true
 examples:
 - value: https://doi.org/10.1186/1742-9994-10-34
   description: null
-source:
-- DNA-derived data extension
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: gbif:pcr_primer_reference
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
