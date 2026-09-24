@@ -11,7 +11,9 @@ annotations:
   sample_type_specificity: Water | Sediment
 slot_uri: mixs:0000203
 range: string
-unit: m/s
+unit:
+  ucum_code: m/s
+  descriptive_name: meter per second
 structured_pattern:
   syntax: null
   interpolated: null

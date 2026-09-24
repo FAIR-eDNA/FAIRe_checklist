@@ -11,7 +11,9 @@ annotations:
   modifications_made: field_name | description
 slot_uri: https://w3id.org/mixs/0000085
 range: string
-unit: '%'
+unit:
+  ucum_code: '%'
+  descriptive_name: percent
 structured_pattern:
   syntax: null
   interpolated: null

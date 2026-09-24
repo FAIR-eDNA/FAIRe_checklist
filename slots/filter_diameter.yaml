@@ -10,7 +10,9 @@ annotations:
   sample_type_specificity: Water | Air
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: mm
+unit:
+  ucum_code: mm
+  descriptive_name: millimeter
 structured_pattern:
   syntax: null
   interpolated: null

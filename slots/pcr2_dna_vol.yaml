@@ -10,7 +10,9 @@ annotations:
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: µL
+unit:
+  ucum_code: uL
+  descriptive_name: microliter
 structured_pattern:
   syntax: null
   interpolated: null

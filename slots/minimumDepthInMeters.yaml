@@ -15,7 +15,9 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: meter
+unit:
+  ucum_code: m
+  descriptive_name: meter
 structured_pattern:
   syntax: null
   interpolated: null

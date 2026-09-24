@@ -13,7 +13,9 @@ annotations:
   requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: nM
+unit:
+  ucum_code: nmol/L
+  descriptive_name: nanomole per liter
 structured_pattern:
   syntax: null
   interpolated: null

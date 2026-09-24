@@ -12,7 +12,9 @@ annotations:
   modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: minute
+unit:
+  ucum_code: min
+  descriptive_name: minute
 structured_pattern:
   syntax: null
   interpolated: null

@@ -10,7 +10,9 @@ annotations:
   sample_type_specificity: ALL
 slot_uri: mixs:0000113
 range: string
-unit: degree Celsius
+unit:
+  ucum_code: Cel
+  descriptive_name: degree Celsius
 structured_pattern:
   syntax: null
   interpolated: null

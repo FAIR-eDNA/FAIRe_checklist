@@ -14,7 +14,9 @@ annotations:
   sample_type_specificity: Air | HostAssociated
 slot_uri: mixs:0000094
 range: string
-unit: meter
+unit:
+  ucum_code: m
+  descriptive_name: meter
 structured_pattern:
   syntax: null
   interpolated: null

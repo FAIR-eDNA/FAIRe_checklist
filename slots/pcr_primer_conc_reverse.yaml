@@ -13,7 +13,9 @@ annotations:
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: µM
+unit:
+  ucum_code: umol/L
+  descriptive_name: micromole per liter
 structured_pattern:
   syntax: null
   interpolated: null

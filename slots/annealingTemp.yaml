@@ -11,7 +11,9 @@ annotations:
   requirement_level_code: HR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
-unit: degree Celsius
+unit:
+  ucum_code: Cel
+  descriptive_name: degree Celsius
 structured_pattern:
   syntax: null
   interpolated: null

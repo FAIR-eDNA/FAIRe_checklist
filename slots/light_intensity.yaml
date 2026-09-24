@@ -10,7 +10,9 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm | SymbiontAssociated
 slot_uri: mixs:0000706
 range: string
-unit: lux
+unit:
+  ucum_code: lx
+  descriptive_name: lux
 structured_pattern:
   syntax: null
   interpolated: null

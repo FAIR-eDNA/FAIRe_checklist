@@ -10,7 +10,9 @@ annotations:
   sample_type_specificity: Water | Air
 slot_uri: mixs:0000017
 range: string
-unit: µm
+unit:
+  ucum_code: um
+  descriptive_name: micrometer
 structured_pattern:
   syntax: null
   interpolated: null

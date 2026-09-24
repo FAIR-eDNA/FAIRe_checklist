@@ -10,7 +10,9 @@ annotations:
   sample_type_specificity: Water
 slot_uri: mixs:0000741
 range: string
-unit: mg/L
+unit:
+  ucum_code: mg/L
+  descriptive_name: milligram per liter
 structured_pattern:
   syntax: null
   interpolated: null

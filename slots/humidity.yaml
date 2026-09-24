@@ -13,7 +13,9 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: '%'
+unit:
+  ucum_code: '%'
+  descriptive_name: percent
 structured_pattern:
   syntax: null
   interpolated: null
