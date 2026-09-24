@@ -147,7 +147,7 @@ SCHEMA_PREFIXES = {
     "mixs": "https://w3id.org/mixs/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
-    "gbif": "https://rs.gbif.org/extension/gbif/1.0/",
+    "gbif": "http://rs.gbif.org/terms/",
     "ggbn": "http://data.ggbn.org/schemas/ggbn/terms/",
     # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
     "eco": "http://rs.tdwg.org/eco/terms/",
