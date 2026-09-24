@@ -149,6 +149,9 @@ SCHEMA_PREFIXES = {
     "dcterms": "http://purl.org/dc/terms/",
     "gbif": "https://rs.gbif.org/extension/gbif/1.0/",
     "ggbn": "http://data.ggbn.org/schemas/ggbn/terms/",
+    # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
+    "eco": "http://rs.tdwg.org/eco/terms/",
+    "nmdc": "https://w3id.org/nmdc/",
     "faire": "https://w3id.org/fairie/",
 }
 
