@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: R
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
 slot_uri: __TODO_ADD_SLOT_URI__
-range: estimatedNumberOfCopies_unit_enum
+range: AssayQuantityUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null

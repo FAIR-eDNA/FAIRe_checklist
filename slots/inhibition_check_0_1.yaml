@@ -8,7 +8,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
 slot_uri: __TODO_ADD_SLOT_URI__
-range: inhibition_check_0_1_enum
+range: BinaryEnum
 structured_pattern:
   syntax: null
   interpolated: null

@@ -13,7 +13,7 @@ annotations:
   sample_type_specificity: ALL
   modifications_made: field_name | description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: prepped_samp_store_temp_enum
+range: StorageTemperatureEnum
 unit: degree Celsius
 structured_pattern:
   syntax: null

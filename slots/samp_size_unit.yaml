@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: ALL
 slot_uri: __TODO_ADD_SLOT_URI__
-range: samp_size_unit_enum
+range: SampleSizeUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null

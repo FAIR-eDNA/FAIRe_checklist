@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: if samp_category = PCR standard
 slot_uri: __TODO_ADD_SLOT_URI__
-range: std_conc_unit_enum
+range: AssayQuantityUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null

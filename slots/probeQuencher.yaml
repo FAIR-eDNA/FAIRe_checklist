@@ -11,7 +11,7 @@ annotations:
   requirement_level_code: HR
   modifications_made: field_type
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: probeQuencher_enum
+range: ProbeQuencherEnum
 structured_pattern:
   syntax: null
   interpolated: null

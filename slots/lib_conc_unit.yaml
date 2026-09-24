@@ -8,7 +8,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
-range: lib_conc_unit_enum
+range: LibConcUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null

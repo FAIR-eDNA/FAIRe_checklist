@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: R
   modifications_made: field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: lib_layout_enum
+range: LibLayoutEnum
 structured_pattern:
   syntax: null
   interpolated: null

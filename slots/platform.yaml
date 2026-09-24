@@ -8,7 +8,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: platform_enum
+range: PlatformEnum
 structured_pattern:
   syntax: null
   interpolated: null

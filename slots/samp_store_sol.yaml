@@ -12,7 +12,7 @@ annotations:
   sample_type_specificity: ALL
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: samp_store_sol_enum
+range: StorageSolutionEnum
 structured_pattern:
   syntax: null
   interpolated: null

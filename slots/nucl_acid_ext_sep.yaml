@@ -8,7 +8,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
-range: nucl_acid_ext_sep_enum
+range: NuclAcidExtSepEnum
 structured_pattern:
   syntax: null
   interpolated: null

@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   modifications_made: description | field_type
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: automaticBaselineValue_enum
+range: BinaryEnum
 structured_pattern:
   syntax: null
   interpolated: null

@@ -12,7 +12,7 @@ annotations:
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: env_broad_scale_enum
+range: EnvBroadScaleEnum
 structured_pattern:
   syntax: null
   interpolated: null

@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: R
   sample_type_specificity: Water | Air
 slot_uri: __TODO_ADD_SLOT_URI__
-range: filter_passive_active_0_1_enum
+range: BinaryEnum
 structured_pattern:
   syntax: null
   interpolated: null

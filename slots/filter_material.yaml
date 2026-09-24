@@ -10,7 +10,7 @@ annotations:
   sample_type_specificity: Water | Air
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: filter_material_enum
+range: FilterMaterialEnum
 structured_pattern:
   syntax: null
   interpolated: null

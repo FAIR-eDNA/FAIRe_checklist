@@ -11,7 +11,7 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment
   modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
-range: precip_temp_prep_enum
+range: StorageTemperatureEnum
 unit: degree Celsius
 structured_pattern:
   syntax: null

@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: HostAssociated | SymbiontAssociated
 slot_uri: __TODO_ADD_SLOT_URI__
-range: host_length_unit_enum
+range: LengthUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null

@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: verbatimCoordinateSystem_enum
+range: VerbatimCoordinateSystemEnum
 structured_pattern:
   syntax: null
   interpolated: null

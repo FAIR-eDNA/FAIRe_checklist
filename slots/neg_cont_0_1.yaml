@@ -9,7 +9,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: neg_cont_0_1_enum
+range: BinaryEnum
 structured_pattern:
   syntax: null
   interpolated: null

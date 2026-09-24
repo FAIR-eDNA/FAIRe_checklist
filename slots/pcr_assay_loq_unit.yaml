@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
 slot_uri: __TODO_ADD_SLOT_URI__
-range: pcr_assay_loq_unit_enum
+range: AssayLimitUnitEnum
 structured_pattern:
   syntax: null
   interpolated: null
