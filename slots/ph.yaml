@@ -11,7 +11,9 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 slot_uri: mixs:0001001
 range: string
-unit: no unit
+unit:
+  ucum_code: '[pH]'
+  descriptive_name: pH
 structured_pattern:
   syntax: null
   interpolated: null

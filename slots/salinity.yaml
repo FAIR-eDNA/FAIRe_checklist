@@ -15,7 +15,10 @@ annotations:
   sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
 slot_uri: mixs:0000183
 range: string
-unit: practical salinity unit (psu)
+unit:
+  descriptive_name: practical salinity unit
+  exact_mappings:
+  - unit:PSU
 structured_pattern:
   syntax: null
   interpolated: null

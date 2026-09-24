@@ -12,7 +12,10 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: cycles
+unit:
+  descriptive_name: cycle
+  exact_mappings:
+  - unit:CYC
 structured_pattern:
   syntax: null
   interpolated: null

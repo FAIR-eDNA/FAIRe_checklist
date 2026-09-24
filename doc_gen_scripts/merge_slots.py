@@ -132,6 +132,9 @@ SCHEMA_PREFIXES = {
     # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
     "eco": "http://rs.tdwg.org/eco/terms/",
     "nmdc": "https://w3id.org/nmdc/",
+    # QUDT unit vocabulary (QUDT's own prefix); qudt: is QUDT's schema namespace
+    "unit": "http://qudt.org/vocab/unit/",
+    "UO": "http://purl.obolibrary.org/obo/UO_",
     "faire": "https://w3id.org/fairie/",
 }
 

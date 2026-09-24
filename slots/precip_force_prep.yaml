@@ -12,7 +12,9 @@ annotations:
   modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: x g
+unit:
+  ucum_code: '[g]'
+  descriptive_name: standard gravity (x g)
 structured_pattern:
   syntax: null
   interpolated: null

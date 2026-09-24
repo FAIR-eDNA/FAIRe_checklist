@@ -11,7 +11,10 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: reads
+unit:
+  descriptive_name: read
+  exact_mappings:
+  - unit:COUNT
 structured_pattern:
   syntax: null
   interpolated: null

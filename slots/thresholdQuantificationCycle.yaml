@@ -10,7 +10,6 @@ annotations:
   requirement_level_condition: If assay_type = targeted & amp_vis_method = qPCR
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
-unit: No unit
 structured_pattern:
   syntax: null
   interpolated: null

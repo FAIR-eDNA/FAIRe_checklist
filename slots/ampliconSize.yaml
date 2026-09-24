@@ -13,7 +13,10 @@ annotations:
   modifications_made: description
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
-unit: basepairs
+unit:
+  descriptive_name: base pair
+  exact_mappings:
+  - unit:BasePair
 structured_pattern:
   syntax: null
   interpolated: null

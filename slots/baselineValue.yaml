@@ -11,7 +11,10 @@ annotations:
   requirement_level_code: O
 slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
 range: string
-unit: cycle
+unit:
+  descriptive_name: cycle
+  exact_mappings:
+  - unit:CYC
 structured_pattern:
   syntax: null
   interpolated: null

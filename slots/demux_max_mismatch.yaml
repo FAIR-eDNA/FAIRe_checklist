@@ -10,7 +10,10 @@ annotations:
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-unit: base pair
+unit:
+  descriptive_name: base pair
+  exact_mappings:
+  - unit:BasePair
 structured_pattern:
   syntax: null
   interpolated: null

@@ -11,7 +11,11 @@ annotations:
   sample_type_specificity: Water | Sediment | MicrobialMatBiofilm
 slot_uri: mixs:0000191
 range: string
-unit: nephelometric turbidity unit (ntu)
+unit:
+  ucum_code: '[NTU]'
+  descriptive_name: nephelometric turbidity unit
+  exact_mappings:
+  - unit:NTU
 structured_pattern:
   syntax: null
   interpolated: null
