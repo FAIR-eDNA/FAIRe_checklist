@@ -8,6 +8,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Optional
   requirement_level_code: O
+  modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
