@@ -16,7 +16,7 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
   modifications_made: description
-slot_uri: "http://rs.tdwg.org/dwc/terms/eventDate | https://w3id.org/mixs/0000011"
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -27,16 +27,14 @@ recommended: false
 examples:
 - value: 2008-01-23T19:23-06:00
   description: null
-source:
-- DwC
-- MIxS
-exact_mappings:
-- http://rs.tdwg.org/dwc/terms/eventDate
-- https://w3id.org/mixs/0000011
-close_mappings: []
+source: dwc:eventDate
+exact_mappings: []
+close_mappings:
+- mixs:0000011
 related_mappings: []
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- dwc:eventDate
 domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
