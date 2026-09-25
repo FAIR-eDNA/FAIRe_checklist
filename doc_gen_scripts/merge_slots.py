@@ -151,11 +151,8 @@ schema = OrderedDict(
     }
 )
 
-# Load glossary (if exists) and insert first
-glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
-if os.path.exists(glossary_path):
-    glossary_block = load_yaml(glossary_path)
-    schema["annotations"] = glossary_block.get("annotations", {})
+# The glossary (GLOSSARY_FILENAME) is not copied into the schema: LinkML tools
+# can't load it as an annotation (#68).
 
 # Initialize containers
 schema["slots"] = OrderedDict()
