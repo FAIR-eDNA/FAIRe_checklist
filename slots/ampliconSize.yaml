@@ -35,7 +35,6 @@ close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
-domain_of: []
 # __LEGACY_LINKML_FIELDS_START__
 # Keeping old fields here during migration so nothing is lost.
 # skos:exactMatch:
