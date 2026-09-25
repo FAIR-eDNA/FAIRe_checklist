@@ -1,4 +1,5 @@
 import os
+import re
 from collections import OrderedDict
 
 import yaml
@@ -120,6 +121,35 @@ def compact_uris_in_slot(slot_def, prefixes):
         ]
 
 
+# Named pieces for structured_pattern syntax, e.g. {termLabel}; written to the
+# schema's settings and expanded into each slot's pattern (#66, #70).
+SCHEMA_SETTINGS = {
+    # An ontology term label: no brackets or pipes, no leading/trailing space.
+    # Stricter than MIxS's termLabel, so "|"-separated lists can't hide bad values.
+    "termLabel": r"[^\s\[\]|]([^\[\]|]*[^\s\[\]|])?",
+    "envoID": r"ENVO:\d{7,8}",
+}
+
+
+def materialize_pattern(slot_def, settings):
+    """Fill pattern from an interpolated structured_pattern.
+
+    linkml-validate checks pattern only, not structured_pattern (#66).
+    """
+    sp = slot_def.get("structured_pattern") if isinstance(slot_def, dict) else None
+    if not isinstance(sp, dict) or not sp.get("syntax") or not sp.get("interpolated"):
+        return
+
+    def expand(match):
+        name = match.group(1)
+        if name not in settings:
+            raise KeyError(f"structured_pattern uses unknown setting {{{name}}}")
+        return settings[name]
+
+    # Names start with a letter, so regex counts like {7,8} are left alone.
+    slot_def["pattern"] = re.sub(r"\{([A-Za-z_]\w*)\}", expand, sp["syntax"])
+
+
 # Base schema structure — prefix expansions must stay in sync with compact_uris_in_slot().
 SCHEMA_PREFIXES = {
     "linkml": "https://w3id.org/linkml/",
@@ -148,6 +178,7 @@ schema = OrderedDict(
         "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
         "version": "1.0.2",
         "prefixes": SCHEMA_PREFIXES,
+        "settings": SCHEMA_SETTINGS,
         "default_prefix": "faire",
         "imports": ["linkml:types"],
     }
@@ -213,12 +244,14 @@ for file_name in slot_files:
         slot_name = slot_content["name"]
         slot_def = slot_content
         compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
+        materialize_pattern(slot_def, SCHEMA_SETTINGS)
         schema["slots"][slot_name] = slot_def
         slot_context[slot_name] = get_slot_context(slot_def)
     else:
         # Legacy format fallback: {slot_name: slot_def}
         for slot_name, slot_def in slot_content.items():
             compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
+            materialize_pattern(slot_def, SCHEMA_SETTINGS)
             schema["slots"][slot_name] = slot_def
             slot_context[slot_name] = get_slot_context(slot_def)
 
