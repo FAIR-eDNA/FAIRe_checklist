@@ -85,11 +85,6 @@ enums:
     permissible_values:
       http://purl.obolibrary.org/obo/ENVO_01000281:
         meaning: http://purl.obolibrary.org/obo/ENVO_01000281
-  EnvMediumEnum:
-    description: Controlled vocabulary for env_medium.
-    permissible_values:
-      http://purl.obolibrary.org/obo/ENVO_00010483:
-        meaning: http://purl.obolibrary.org/obo/ENVO_00010483
   ErrorRateTypeEnum:
     description: Controlled vocabulary for error_rate_type.
     permissible_values:
