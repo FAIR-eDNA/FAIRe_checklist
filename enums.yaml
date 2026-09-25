@@ -80,11 +80,6 @@ enums:
     permissible_values:
       copies/µl:
       ng/µl:
-  EnvLocalScaleEnum:
-    description: Controlled vocabulary for env_local_scale.
-    permissible_values:
-      http://purl.obolibrary.org/obo/ENVO_01000281:
-        meaning: http://purl.obolibrary.org/obo/ENVO_01000281
   ErrorRateTypeEnum:
     description: Controlled vocabulary for error_rate_type.
     permissible_values:

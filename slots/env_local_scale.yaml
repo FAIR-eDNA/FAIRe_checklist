@@ -12,11 +12,11 @@ annotations:
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: EnvLocalScaleEnum
+range: string
 structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+  syntax: ^{termLabel} \[{envoID}\](\|{termLabel} \[{envoID}\])*$
+  interpolated: true
+  partial_match: false
 required: true
 recommended: false
 examples:
