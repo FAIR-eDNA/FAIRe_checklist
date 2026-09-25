@@ -3,134 +3,83 @@ enums:
     description: Controlled vocabulary for amp_vis_method.
     permissible_values:
       CE-PCR:
-        meaning: CE-PCR
       LAMP:
-        meaning: LAMP
       dPCR:
-        meaning: dPCR
       gel electrophoresis:
-        meaning: gel electrophoresis
       qPCR:
-        meaning: qPCR
   AssayLimitUnitEnum:
     description: "Units for a PCR assay's limit of detection or quantification."
     permissible_values:
       copies/reaction:
-        meaning: copies/reaction
       copies/µL:
-        meaning: copies/µL
       ng/reaction:
-        meaning: ng/reaction
       ng/µL:
-        meaning: ng/µL
   AssayQuantityUnitEnum:
     description: Units for a DNA quantity per reaction, or per volume of DNA extract or reaction.
     permissible_values:
       copies/reaction:
-        meaning: copies/reaction
       copies/µL of DNA extract:
-        meaning: copies/µL of DNA extract
       copies/µL of reaction:
-        meaning: copies/µL of reaction
       ng/reaction:
-        meaning: ng/reaction
       ng/µL of DNA extract:
-        meaning: ng/µL of DNA extract
       ng/µL of reaction:
-        meaning: ng/µL of reaction
   AssayTypeEnum:
     description: Controlled vocabulary for assay_type.
     permissible_values:
       metabarcoding:
-        meaning: metabarcoding
       targeted:
-        meaning: targeted
   BarcodingPcrApprEnum:
     description: Controlled vocabulary for barcoding_pcr_appr.
     permissible_values:
       ligation-based:
-        meaning: ligation-based
       one-step PCR:
-        meaning: one-step PCR
       two-step PCR:
-        meaning: two-step PCR
   BinaryEnum:
     description: A yes/no answer coded as 0 or 1. The slot says what 0 and 1 mean.
     permissible_values:
       '0':
-        meaning: '0'
       '1':
-        meaning: '1'
   ChecksumMethodEnum:
     description: Controlled vocabulary for checksum_method.
     permissible_values:
       CRC-32:
-        meaning: CRC-32
       MD5:
-        meaning: MD5
       SHA-256:
-        meaning: SHA-256
   ChemicalConcentrationUnitEnum:
     description: Units for the concentration of a chemical substance, such as carbon, nitrogen or organic matter.
     permissible_values:
       mg/L:
-        meaning: mg/L
       mmol/L:
-        meaning: mmol/L
       mmol/kg:
-        meaning: mmol/kg
       mmol/m3:
-        meaning: mmol/m3
       mol/L:
-        meaning: mol/L
       mol/m3:
-        meaning: mol/m3
       parts per million:
-        meaning: parts per million
       µM:
-        meaning: µM
       µg/L:
-        meaning: µg/L
       µmol/L:
-        meaning: µmol/L
       µmol/kg:
-        meaning: µmol/kg
       µmol/m3:
-        meaning: µmol/m3
   DissOxygenUnitEnum:
     description: Controlled vocabulary for diss_oxygen_unit.
     permissible_values:
       mL/L:
-        meaning: mL/L
       mg/L:
-        meaning: mg/L
       mmol/L:
-        meaning: mmol/L
       mmol/kg:
-        meaning: mmol/kg
       mmol/m3:
-        meaning: mmol/m3
       mol/L:
-        meaning: mol/L
       mol/m3:
-        meaning: mol/m3
       parts per million:
-        meaning: parts per million
       µM:
-        meaning: µM
       µg/L:
-        meaning: µg/L
       µmol/L:
-        meaning: µmol/L
       µmol/m3:
-        meaning: µmol/m3
   DnaConcentrationUnitEnum:
     description: Controlled vocabulary for concentration_unit.
     permissible_values:
       copies/µl:
-        meaning: copies/µl
       ng/µl:
-        meaning: ng/µl
   EnvBroadScaleEnum:
     description: Controlled vocabulary for env_broad_scale.
     permissible_values:
@@ -150,46 +99,30 @@ enums:
     description: Controlled vocabulary for error_rate_type.
     permissible_values:
       Phred score:
-        meaning: Phred score
       expected error rate:
-        meaning: expected error rate
   EstimatedNumberOfCopiesErrorTypeEnum:
     description: Controlled vocabulary for estimatedNumberOfCopies_error_type.
     permissible_values:
       95% confidence interval:
-        meaning: 95% confidence interval
       standard deviation:
-        meaning: standard deviation
       standard error:
-        meaning: standard error
   EstimatedNumberOfCopiesMethodEnum:
     description: Controlled vocabulary for estimatedNumberOfCopies_method.
     permissible_values:
       Ct/Cq with standard bionomial data:
-        meaning: Ct/Cq with standard bionomial data
       Ct/Cq with standard curve:
-        meaning: Ct/Cq with standard curve
       direct output from the PCR instrument used:
-        meaning: direct output from the PCR instrument used
       gel fluorescence intensities:
-        meaning: gel fluorescence intensities
   FilterMaterialEnum:
     description: Controlled vocabulary for filter_material.
     permissible_values:
       cellulose:
-        meaning: cellulose
       cellulose ester:
-        meaning: cellulose ester
       glass fiber:
-        meaning: glass fiber
       nylon:
-        meaning: nylon
       polyethersulfone:
-        meaning: polyethersulfone
       thermoplastic membrane:
-        meaning: thermoplastic membrane
       track etched polycarbonate:
-        meaning: track etched polycarbonate
   HostLifeStageEnum:
     description: Controlled vocabulary for host_life_stage.
     permissible_values:
@@ -199,53 +132,38 @@ enums:
     description: Controlled vocabulary for host_tot_mass_unit.
     permissible_values:
       g:
-        meaning: g
       kg:
-        meaning: kg
       mg:
-        meaning: mg
   InstrumentEnum:
     description: Controlled vocabulary for instrument.
     permissible_values:
       INSTRUMENT NAME [OBI_xxxx]:
-        meaning: INSTRUMENT NAME [OBI_xxxx]
   LengthUnitEnum:
     description: Units of length.
     permissible_values:
       cm:
-        meaning: cm
       m:
-        meaning: m
       mm:
-        meaning: mm
   LibConcUnitEnum:
     description: Controlled vocabulary for lib_conc_unit.
     permissible_values:
       nM:
-        meaning: nM
       ng/µL:
-        meaning: ng/µL
       pM:
-        meaning: pM
   LibLayoutEnum:
     description: Controlled vocabulary for lib_layout.
     permissible_values:
       paired end:
-        meaning: paired end
       single end:
-        meaning: single end
   MinReadsCutoffEnum:
     description: Controlled vocabulary for min_reads_cutoff.
     permissible_values:
       noise detected in blanks:
-        meaning: noise detected in blanks
   MinReadsCutoffUnitEnum:
     description: Controlled vocabulary for min_reads_cutoff_unit.
     permissible_values:
       '%':
-        meaning: '%'
       reads:
-        meaning: reads
   MissingValueEnum:
     description: A controlled vocabulary for reporting why a value is missing.
     annotations:
@@ -257,306 +175,181 @@ enums:
     description: Controlled vocabulary for neg_cont_type.
     permissible_values:
       PCR negative:
-        meaning: PCR negative
       extraction negative:
-        meaning: extraction negative
       field negative:
-        meaning: field negative
       process negative:
-        meaning: process negative
       site negative:
-        meaning: site negative
   NuclAcidExtLysisEnum:
     description: Controlled vocabulary for nucl_acid_ext_lysis.
     permissible_values:
       chemical:
-        meaning: chemical
       enzymatic:
-        meaning: enzymatic
       osmotic:
-        meaning: osmotic
       physical:
-        meaning: physical
       thermal:
-        meaning: thermal
   NuclAcidExtSepEnum:
     description: Controlled vocabulary for nucl_acid_ext_sep.
     permissible_values:
       centrifugation:
-        meaning: centrifugation
       column-based:
-        meaning: column-based
       gel electrophoresis:
-        meaning: gel electrophoresis
       magnetic beads:
-        meaning: magnetic beads
       phenol chloroform:
-        meaning: phenol chloroform
       precipitation:
-        meaning: precipitation
   PlatformEnum:
     description: Controlled vocabulary for platform.
     permissible_values:
       BGISEQ:
-        meaning: BGISEQ
       CAPILLARY:
-        meaning: CAPILLARY
       DNBSEQ:
-        meaning: DNBSEQ
       ELEMENT:
-        meaning: ELEMENT
       GENAPSYS:
-        meaning: GENAPSYS
       GENEMIND:
-        meaning: GENEMIND
       HELICOS:
-        meaning: HELICOS
       ILLUMINA:
-        meaning: ILLUMINA
       ION_TORRENT:
-        meaning: ION_TORRENT
       LS454:
-        meaning: LS454
       OXFORD_NANOPORE:
-        meaning: OXFORD_NANOPORE
       PACBIO_SMRT:
-        meaning: PACBIO_SMRT
       TAPESTRI:
-        meaning: TAPESTRI
       ULTIMA:
-        meaning: ULTIMA
       VELA_DIAGNOSTICS:
-        meaning: VELA_DIAGNOSTICS
   PrecipChemPrepEnum:
     description: Controlled vocabulary for precip_chem_prep.
     permissible_values:
       ethanol:
-        meaning: ethanol
       isopropanol:
-        meaning: isopropanol
       sodium chloride:
-        meaning: sodium chloride
   ProbeQuencherEnum:
     description: Controlled vocabulary for probeQuencher.
     permissible_values:
       Black Hole Quencher (BHQ):
-        meaning: Black Hole Quencher (BHQ)
       Minor Groove Binder (MGB):
-        meaning: Minor Groove Binder (MGB)
       TAMRA:
-        meaning: TAMRA
       Zero-End Quencher (ZEN):
-        meaning: Zero-End Quencher (ZEN)
       lowa Black:
-        meaning: lowa Black
   PumpFlowRateUnitEnum:
     description: Controlled vocabulary for pump_flow_rate_unit.
     permissible_values:
       L/h:
-        meaning: L/h
       L/min:
-        meaning: L/min
       L/s:
-        meaning: L/s
       m3/h:
-        meaning: m3/h
       m3/min:
-        meaning: m3/min
       m3/s:
-        meaning: m3/s
   SampCategoryEnum:
     description: Controlled vocabulary for samp_category.
     permissible_values:
       PCR standard:
-        meaning: PCR standard
       negative control:
-        meaning: negative control
       positive control:
-        meaning: positive control
       sample:
-        meaning: sample
   SampleSizeUnitEnum:
     description: Units for the amount of sample, as volume, mass or area.
     permissible_values:
       L:
-        meaning: L
       cm2:
-        meaning: cm2
       cm3:
-        meaning: cm3
       g:
-        meaning: g
       kg:
-        meaning: kg
       m2:
-        meaning: m2
       m3:
-        meaning: m3
       mL:
-        meaning: mL
       mg:
-        meaning: mg
   StdTypeEnum:
     description: Controlled vocabulary for std_type.
     permissible_values:
       amplicon:
-        meaning: amplicon
       gDNA:
-        meaning: gDNA
       plasmid:
-        meaning: plasmid
       synthetic double-stranded DNA:
-        meaning: synthetic double-stranded DNA
   StorageSolutionEnum:
     description: Solution in which a sample is stored.
     permissible_values:
       ethanol:
-        meaning: ethanol
       longmire:
-        meaning: longmire
       lysis buffer:
-        meaning: lysis buffer
       none:
-        meaning: none
       sodium acetate:
-        meaning: sodium acetate
   StorageTemperatureEnum:
     description: Temperature at which a sample or extract is kept or processed.
     permissible_values:
       ambient temperature:
-        meaning: ambient temperature
   TargetGeneEnum:
     description: Controlled vocabulary for target_gene.
     permissible_values:
       12S rRNA (SSU mitochondria):
-        meaning: 12S rRNA (SSU mitochondria)
       16S rRNA (LSU mitochondria):
-        meaning: 16S rRNA (LSU mitochondria)
       16S rRNA (SSU prokaryote):
-        meaning: 16S rRNA (SSU prokaryote)
       18S rRNA (SSU eukaryote):
-        meaning: 18S rRNA (SSU eukaryote)
       23S rRNA (LSU prokaryote):
-        meaning: 23S rRNA (LSU prokaryote)
       28S rRNA (LSU eukaryote):
-        meaning: 28S rRNA (LSU eukaryote)
       COI:
-        meaning: COI
       COII:
-        meaning: COII
       COIII:
-        meaning: COIII
       CytB:
-        meaning: CytB
       D-loop:
-        meaning: D-loop
       ITS:
-        meaning: ITS
       ND1:
-        meaning: ND1
       ND2:
-        meaning: ND2
       ND3:
-        meaning: ND3
       ND4:
-        meaning: ND4
       ND5:
-        meaning: ND5
       ND6:
-        meaning: ND6
       amoA:
-        meaning: amoA
       matK:
-        meaning: matK
       nifH:
-        meaning: nifH
       psbK:
-        meaning: psbK
       rbcL:
-        meaning: rbcL
       rpoB:
-        meaning: rpoB
       rpoC1:
-        meaning: rpoC1
       rpoC2:
-        meaning: rpoC2
       trnH:
-        meaning: trnH
       trnL:
-        meaning: trnL
   TaxAssignCatEnum:
     description: Controlled vocabulary for tax_assign_cat.
     permissible_values:
       phylogeny:
-        meaning: phylogeny
       probabilistic:
-        meaning: probabilistic
       sequence composition:
-        meaning: sequence composition
       sequence similarity:
-        meaning: sequence similarity
   TaxonRankEnum:
     description: Controlled vocabulary for taxonRank.
     permissible_values:
       class:
-        meaning: class
       family:
-        meaning: family
       genus:
-        meaning: genus
       kingdom:
-        meaning: kingdom
       order:
-        meaning: order
       phylum:
-        meaning: phylum
       species:
-        meaning: species
   VerbatimCoordinateSystemEnum:
     description: Controlled vocabulary for verbatimCoordinateSystem.
     permissible_values:
       UTM:
-        meaning: UTM
       decimal degrees:
-        meaning: decimal degrees
       degrees minutes seconds:
-        meaning: degrees minutes seconds
   VerbatimSRSEnum:
     description: Controlled vocabulary for verbatimSRS.
     permissible_values:
       ETRS89:
-        meaning: ETRS89
       GDA2020:
-        meaning: GDA2020
       GDA94:
-        meaning: GDA94
       JGD2000:
-        meaning: JGD2000
       NAD27:
-        meaning: NAD27
       NAD84:
-        meaning: NAD84
       WGS84:
-        meaning: WGS84
   requirement_level_code_enum:
     description: Controlled vocabulary for requirement_level_code.
     permissible_values:
       HR:
-        meaning: HR
       M:
-        meaning: M
       O:
-        meaning: O
       R:
-        meaning: R
   requirement_level_enum:
     description: Controlled vocabulary for requirement_level.
     permissible_values:
       Highly recommended:
-        meaning: Highly recommended
       Mandatory:
-        meaning: Mandatory
       Optional:
-        meaning: Optional
       Recommended:
-        meaning: Recommended
