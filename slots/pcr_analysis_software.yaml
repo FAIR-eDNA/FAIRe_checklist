@@ -10,7 +10,9 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   modifications_made: description
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+keywords:
+  - MIQE
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -21,10 +23,10 @@ recommended: false
 examples:
 - value: BIO-RAD QuantaSoft
   description: null
-source:
-- DNA-derived data extension
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

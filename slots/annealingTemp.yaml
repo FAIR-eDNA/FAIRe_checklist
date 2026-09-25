@@ -9,7 +9,9 @@ annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+keywords:
+  - MIQE
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit:
   ucum_code: Cel
@@ -23,11 +25,10 @@ recommended: true
 examples:
 - value: '60.0'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

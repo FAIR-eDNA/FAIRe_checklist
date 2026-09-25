@@ -10,7 +10,9 @@ annotations:
   requirement_level_code: R
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made: description
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+keywords:
+  - MIQE
+slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
   syntax: null
@@ -21,11 +23,8 @@ recommended: true
 examples:
 - value: '35.92426489978709'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-exact_mappings:
-- https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+source: doi:10.1093/clinchem/hvaf043
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
