@@ -12,7 +12,10 @@ annotations:
   requirement_level_condition: If samp_category = negative control
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: NegContTypeEnum
+range: string
+any_of:
+- range: NegContTypeEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

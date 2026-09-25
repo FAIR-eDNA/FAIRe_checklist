@@ -9,7 +9,10 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
 slot_uri: __TODO_ADD_SLOT_URI__
-range: ChemicalConcentrationUnitEnum
+range: string
+any_of:
+- range: ChemicalConcentrationUnitEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

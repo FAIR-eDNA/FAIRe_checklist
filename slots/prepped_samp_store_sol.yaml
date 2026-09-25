@@ -11,7 +11,10 @@ annotations:
   requirement_level_code: R
   sample_type_specificity: ALL
 slot_uri: __TODO_ADD_SLOT_URI__
-range: StorageSolutionEnum
+range: string
+any_of:
+- range: StorageSolutionEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

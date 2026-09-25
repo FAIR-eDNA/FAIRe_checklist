@@ -9,7 +9,10 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
 slot_uri: __TODO_ADD_SLOT_URI__
-range: SampCategoryEnum
+range: string
+any_of:
+- range: SampCategoryEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

@@ -11,7 +11,10 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment
   modifications_made: field_name | description
 slot_uri: __TODO_ADD_SLOT_URI__
-range: PrecipChemPrepEnum
+range: string
+any_of:
+- range: PrecipChemPrepEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

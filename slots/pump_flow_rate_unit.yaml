@@ -9,7 +9,10 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Air
 slot_uri: __TODO_ADD_SLOT_URI__
-range: PumpFlowRateUnitEnum
+range: string
+any_of:
+- range: PumpFlowRateUnitEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

@@ -10,8 +10,6 @@ enums:
         meaning: dPCR
       gel electrophoresis:
         meaning: gel electrophoresis
-      'other:':
-        meaning: 'other:'
       qPCR:
         meaning: qPCR
   AssayLimitUnitEnum:
@@ -25,8 +23,6 @@ enums:
         meaning: ng/reaction
       ng/µL:
         meaning: ng/µL
-      'other:':
-        meaning: 'other:'
   AssayQuantityUnitEnum:
     description: Units for a DNA quantity per reaction, or per volume of DNA extract or reaction.
     permissible_values:
@@ -42,15 +38,11 @@ enums:
         meaning: ng/µL of DNA extract
       ng/µL of reaction:
         meaning: ng/µL of reaction
-      'other:':
-        meaning: 'other:'
   AssayTypeEnum:
     description: Controlled vocabulary for assay_type.
     permissible_values:
       metabarcoding:
         meaning: metabarcoding
-      'other:':
-        meaning: 'other:'
       targeted:
         meaning: targeted
   BarcodingPcrApprEnum:
@@ -60,8 +52,6 @@ enums:
         meaning: ligation-based
       one-step PCR:
         meaning: one-step PCR
-      'other:':
-        meaning: 'other:'
       two-step PCR:
         meaning: two-step PCR
   BinaryEnum:
@@ -80,8 +70,6 @@ enums:
         meaning: MD5
       SHA-256:
         meaning: SHA-256
-      'other:':
-        meaning: 'other:'
   ChemicalConcentrationUnitEnum:
     description: Units for the concentration of a chemical substance, such as carbon, nitrogen or organic matter.
     permissible_values:
@@ -97,8 +85,6 @@ enums:
         meaning: mol/L
       mol/m3:
         meaning: mol/m3
-      'other:':
-        meaning: 'other:'
       parts per million:
         meaning: parts per million
       µM:
@@ -128,8 +114,6 @@ enums:
         meaning: mol/L
       mol/m3:
         meaning: mol/m3
-      'other:':
-        meaning: 'other:'
       parts per million:
         meaning: parts per million
       µM:
@@ -147,8 +131,6 @@ enums:
         meaning: copies/µl
       ng/µl:
         meaning: ng/µl
-      'other:':
-        meaning: 'other:'
   EnvBroadScaleEnum:
     description: Controlled vocabulary for env_broad_scale.
     permissible_values:
@@ -171,15 +153,11 @@ enums:
         meaning: Phred score
       expected error rate:
         meaning: expected error rate
-      'other:':
-        meaning: 'other:'
   EstimatedNumberOfCopiesErrorTypeEnum:
     description: Controlled vocabulary for estimatedNumberOfCopies_error_type.
     permissible_values:
       95% confidence interval:
         meaning: 95% confidence interval
-      'other:':
-        meaning: 'other:'
       standard deviation:
         meaning: standard deviation
       standard error:
@@ -195,8 +173,6 @@ enums:
         meaning: direct output from the PCR instrument used
       gel fluorescence intensities:
         meaning: gel fluorescence intensities
-      'other:':
-        meaning: 'other:'
   FilterMaterialEnum:
     description: Controlled vocabulary for filter_material.
     permissible_values:
@@ -208,8 +184,6 @@ enums:
         meaning: glass fiber
       nylon:
         meaning: nylon
-      'other:':
-        meaning: 'other:'
       polyethersulfone:
         meaning: polyethersulfone
       thermoplastic membrane:
@@ -230,8 +204,6 @@ enums:
         meaning: kg
       mg:
         meaning: mg
-      'other:':
-        meaning: 'other:'
   InstrumentEnum:
     description: Controlled vocabulary for instrument.
     permissible_values:
@@ -246,8 +218,6 @@ enums:
         meaning: m
       mm:
         meaning: mm
-      'other:':
-        meaning: 'other:'
   LibConcUnitEnum:
     description: Controlled vocabulary for lib_conc_unit.
     permissible_values:
@@ -255,15 +225,11 @@ enums:
         meaning: nM
       ng/µL:
         meaning: ng/µL
-      'other:':
-        meaning: 'other:'
       pM:
         meaning: pM
   LibLayoutEnum:
     description: Controlled vocabulary for lib_layout.
     permissible_values:
-      'other:':
-        meaning: 'other:'
       paired end:
         meaning: paired end
       single end:
@@ -273,15 +239,11 @@ enums:
     permissible_values:
       noise detected in blanks:
         meaning: noise detected in blanks
-      'other:':
-        meaning: 'other:'
   MinReadsCutoffUnitEnum:
     description: Controlled vocabulary for min_reads_cutoff_unit.
     permissible_values:
       '%':
         meaning: '%'
-      'other:':
-        meaning: 'other:'
       reads:
         meaning: reads
   MissingValueEnum:
@@ -300,8 +262,6 @@ enums:
         meaning: extraction negative
       field negative:
         meaning: field negative
-      'other:':
-        meaning: 'other:'
       process negative:
         meaning: process negative
       site negative:
@@ -315,8 +275,6 @@ enums:
         meaning: enzymatic
       osmotic:
         meaning: osmotic
-      'other:':
-        meaning: 'other:'
       physical:
         meaning: physical
       thermal:
@@ -332,8 +290,6 @@ enums:
         meaning: gel electrophoresis
       magnetic beads:
         meaning: magnetic beads
-      'other:':
-        meaning: 'other:'
       phenol chloroform:
         meaning: phenol chloroform
       precipitation:
@@ -371,8 +327,6 @@ enums:
         meaning: ULTIMA
       VELA_DIAGNOSTICS:
         meaning: VELA_DIAGNOSTICS
-      'other:':
-        meaning: 'other:'
   PrecipChemPrepEnum:
     description: Controlled vocabulary for precip_chem_prep.
     permissible_values:
@@ -380,8 +334,6 @@ enums:
         meaning: ethanol
       isopropanol:
         meaning: isopropanol
-      'other:':
-        meaning: 'other:'
       sodium chloride:
         meaning: sodium chloride
   ProbeQuencherEnum:
@@ -397,8 +349,6 @@ enums:
         meaning: Zero-End Quencher (ZEN)
       lowa Black:
         meaning: lowa Black
-      'other:':
-        meaning: 'other:'
   PumpFlowRateUnitEnum:
     description: Controlled vocabulary for pump_flow_rate_unit.
     permissible_values:
@@ -414,8 +364,6 @@ enums:
         meaning: m3/min
       m3/s:
         meaning: m3/s
-      'other:':
-        meaning: 'other:'
   SampCategoryEnum:
     description: Controlled vocabulary for samp_category.
     permissible_values:
@@ -423,8 +371,6 @@ enums:
         meaning: PCR standard
       negative control:
         meaning: negative control
-      'other:':
-        meaning: 'other:'
       positive control:
         meaning: positive control
       sample:
@@ -450,8 +396,6 @@ enums:
         meaning: mL
       mg:
         meaning: mg
-      'other:':
-        meaning: 'other:'
   StdTypeEnum:
     description: Controlled vocabulary for std_type.
     permissible_values:
@@ -459,8 +403,6 @@ enums:
         meaning: amplicon
       gDNA:
         meaning: gDNA
-      'other:':
-        meaning: 'other:'
       plasmid:
         meaning: plasmid
       synthetic double-stranded DNA:
@@ -476,8 +418,6 @@ enums:
         meaning: lysis buffer
       none:
         meaning: none
-      'other:':
-        meaning: 'other:'
       sodium acetate:
         meaning: sodium acetate
   StorageTemperatureEnum:
@@ -485,8 +425,6 @@ enums:
     permissible_values:
       ambient temperature:
         meaning: ambient temperature
-      'other:':
-        meaning: 'other:'
   TargetGeneEnum:
     description: Controlled vocabulary for target_gene.
     permissible_values:
@@ -532,8 +470,6 @@ enums:
         meaning: matK
       nifH:
         meaning: nifH
-      'other:':
-        meaning: 'other:'
       psbK:
         meaning: psbK
       rbcL:
@@ -551,8 +487,6 @@ enums:
   TaxAssignCatEnum:
     description: Controlled vocabulary for tax_assign_cat.
     permissible_values:
-      'other:':
-        meaning: 'other:'
       phylogeny:
         meaning: phylogeny
       probabilistic:
@@ -574,8 +508,6 @@ enums:
         meaning: kingdom
       order:
         meaning: order
-      'other:':
-        meaning: 'other:'
       phylum:
         meaning: phylum
       species:
@@ -589,8 +521,6 @@ enums:
         meaning: decimal degrees
       degrees minutes seconds:
         meaning: degrees minutes seconds
-      'other:':
-        meaning: 'other:'
   VerbatimSRSEnum:
     description: Controlled vocabulary for verbatimSRS.
     permissible_values:
@@ -608,8 +538,6 @@ enums:
         meaning: NAD84
       WGS84:
         meaning: WGS84
-      'other:':
-        meaning: 'other:'
   requirement_level_code_enum:
     description: Controlled vocabulary for requirement_level_code.
     permissible_values:

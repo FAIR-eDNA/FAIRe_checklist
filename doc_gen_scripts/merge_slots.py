@@ -9,6 +9,7 @@ OUTPUT_SCHEMA = "schema.yaml"
 GLOSSARY_FILENAME = "glossary_annotation.yaml"
 ENUMS_FILENAME = "enums.yaml"
 CLASSES_FILENAME = "classes.yaml"
+TYPES_FILENAME = "types.yaml"
 
 
 def load_yaml(path):
@@ -158,6 +159,7 @@ if os.path.exists(glossary_path):
 
 # Initialize containers
 schema["slots"] = OrderedDict()
+schema["types"] = OrderedDict()
 schema["enums"] = OrderedDict()
 schema["classes"] = OrderedDict()
 schema["subsets"] = OrderedDict()
@@ -171,6 +173,13 @@ if os.path.exists(enums_path):
     if isinstance(central_enums, dict):
         for enum_name, enum_def in central_enums.items():
             schema["enums"][enum_name] = enum_def
+
+# 1a) Load central types source (e.g. OtherText).
+if os.path.exists(TYPES_FILENAME):
+    central_types = load_yaml(TYPES_FILENAME).get("types", {})
+    if isinstance(central_types, dict):
+        for type_name, type_def in central_types.items():
+            schema["types"][type_name] = type_def
 
 # 1b) Load central classes source.
 classes_path = CLASSES_FILENAME

@@ -10,7 +10,10 @@ annotations:
   sample_type_specificity: Water | Air
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: FilterMaterialEnum
+range: string
+any_of:
+- range: FilterMaterialEnum
+- range: OtherText
 structured_pattern:
   syntax: null
   interpolated: null

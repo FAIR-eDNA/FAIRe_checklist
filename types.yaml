@@ -1,0 +1,7 @@
+types:
+  OtherText:
+    typeof: string
+    description: >-
+      "other:" followed by a free-text description, for a value that is not in the slot's
+      controlled vocabulary, e.g. "other:copies/mg of sediment sample".
+    pattern: '^other: *\S.*$'
