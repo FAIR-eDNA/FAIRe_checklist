@@ -10,6 +10,8 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
   modifications_made: field_name | description
+keywords:
+  - Thalinger
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -21,8 +23,7 @@ recommended: false
 examples:
 - value: The minimum number of PCR replicates of 2 with positive amplification
   description: null
-source:
-- Thalinger et al., 2021
+source: doi:10.1002/edn3.189
 exact_mappings: []
 close_mappings: []
 related_mappings: []

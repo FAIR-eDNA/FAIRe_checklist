@@ -7,6 +7,8 @@ annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
+keywords:
+  - MIEM
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 any_of:
@@ -21,8 +23,7 @@ recommended: true
 examples:
 - value: two-step PCR
   description: null
-source:
-- MIEM (Klymus et al., 2024)
+source: doi:10.3897/mbmg.8.128689
 exact_mappings: []
 close_mappings: []
 related_mappings: []

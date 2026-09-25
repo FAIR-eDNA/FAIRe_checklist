@@ -8,6 +8,8 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity: Water | Air
+keywords:
+  - Thalinger
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 unit:
@@ -22,8 +24,7 @@ recommended: true
 examples:
 - value: '1734.94'
   description: null
-source:
-- Thalinger et al., 2021
+source: doi:10.1002/edn3.189
 exact_mappings: []
 close_mappings: []
 related_mappings: []

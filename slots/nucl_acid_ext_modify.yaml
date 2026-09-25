@@ -9,6 +9,8 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   modifications_made: field_name
+keywords:
+  - Thalinger
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
 structured_pattern:
@@ -21,8 +23,7 @@ examples:
 - value: Sample was lysed in 540 µL of ATL buffer and 60 µL of Proteinase K, and eluted
     in 100 µL of buffer EB, instead of 180 µL, 20 µL and 200 µL respectively
   description: null
-source:
-- Thalinger et al., 2021
+source: doi:10.1002/edn3.189
 exact_mappings: []
 close_mappings: []
 related_mappings: []
