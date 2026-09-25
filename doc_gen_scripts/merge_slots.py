@@ -138,7 +138,7 @@ SCHEMA_PREFIXES = {
     "UO": "http://purl.obolibrary.org/obo/UO_",
     # Publications a slot was derived from, e.g. the MIQE papers (#55)
     "doi": "https://doi.org/",
-    "faire": "https://w3id.org/fairie/",
+    "faire": "https://w3id.org/faire/",
 }
 
 schema = OrderedDict(
