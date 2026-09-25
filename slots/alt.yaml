@@ -13,7 +13,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Air | HostAssociated
 slot_uri: mixs:0000094
-range: string
+range: float
 unit:
   ucum_code: m
   descriptive_name: meter

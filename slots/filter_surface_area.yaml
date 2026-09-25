@@ -11,7 +11,7 @@ annotations:
 keywords:
   - Thalinger
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 unit:
   ucum_code: mm2
   descriptive_name: square millimeter

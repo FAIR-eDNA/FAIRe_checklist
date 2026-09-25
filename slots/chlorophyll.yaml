@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 slot_uri: mixs:0000177
-range: string
+range: float
 unit:
   ucum_code: mg/m3
   descriptive_name: milligram per cubic meter

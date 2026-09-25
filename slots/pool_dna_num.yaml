@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: R
   modifications_made: description | field_type | field_name
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: integer
 structured_pattern:
   syntax: null
   interpolated: null

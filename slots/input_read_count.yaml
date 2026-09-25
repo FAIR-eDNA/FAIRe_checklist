@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: R
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: integer
 unit:
   descriptive_name: read
   exact_mappings:

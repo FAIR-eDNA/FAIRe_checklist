@@ -12,7 +12,7 @@ annotations:
 keywords:
   - MIQE
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius

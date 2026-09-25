@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air
 slot_uri: mixs:0000118
-range: string
+range: float
 unit:
   ucum_code: m/s
   descriptive_name: meter per second

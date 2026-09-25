@@ -12,7 +12,7 @@ annotations:
   sample_type_specificity: Air
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 unit:
   ucum_code: '%'
   descriptive_name: percent

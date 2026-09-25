@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water
 slot_uri: mixs:0000741
-range: string
+range: float
 unit:
   ucum_code: mg/L
   descriptive_name: milligram per liter

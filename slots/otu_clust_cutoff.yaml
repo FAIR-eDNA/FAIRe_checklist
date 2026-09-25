@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: R
   modifications_made: field_name | description
 slot_uri: https://w3id.org/mixs/0000085
-range: string
+range: float
 unit:
   ucum_code: '%'
   descriptive_name: percent

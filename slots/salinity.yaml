@@ -14,7 +14,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
 slot_uri: mixs:0000183
-range: string
+range: float
 unit:
   descriptive_name: practical salinity unit
   exact_mappings:

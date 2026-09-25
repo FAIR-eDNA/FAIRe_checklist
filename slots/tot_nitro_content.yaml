@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
 slot_uri: mixs:0000530
-range: string
+range: float
 structured_pattern:
   syntax: null
   interpolated: null

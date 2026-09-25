@@ -8,7 +8,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 unit:
   descriptive_name: relative fluorescence unit
   exact_mappings:

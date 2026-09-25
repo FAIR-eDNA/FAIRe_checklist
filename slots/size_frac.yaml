@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: Water | Air
 slot_uri: mixs:0000017
-range: string
+range: float
 unit:
   ucum_code: um
   descriptive_name: micrometer

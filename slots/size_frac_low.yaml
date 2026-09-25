@@ -11,7 +11,7 @@ annotations:
   sample_type_specificity: Water | Air
   modifications_made: field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 unit:
   ucum_code: um
   descriptive_name: micrometer

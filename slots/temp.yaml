@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: ALL
 slot_uri: mixs:0000113
-range: string
+range: float
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius

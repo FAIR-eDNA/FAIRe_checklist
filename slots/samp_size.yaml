@@ -13,7 +13,7 @@ annotations:
   sample_type_specificity: ALL
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: float
 structured_pattern:
   syntax: null
   interpolated: null

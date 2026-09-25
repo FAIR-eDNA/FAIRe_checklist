@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
 slot_uri: mixs:0001001
-range: string
+range: float
 unit:
   ucum_code: '[pH]'
   descriptive_name: pH

@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm | SymbiontAssociated
 slot_uri: mixs:0000706
-range: string
+range: float
 unit:
   ucum_code: lx
   descriptive_name: lux

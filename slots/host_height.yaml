@@ -9,7 +9,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: HostAssociated | SymbiontAssociated
 slot_uri: mixs:0000264
-range: string
+range: float
 structured_pattern:
   syntax: null
   interpolated: null
