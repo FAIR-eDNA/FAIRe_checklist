@@ -136,6 +136,8 @@ SCHEMA_PREFIXES = {
     # QUDT unit vocabulary (QUDT's own prefix); qudt: is QUDT's schema namespace
     "unit": "http://qudt.org/vocab/unit/",
     "UO": "http://purl.obolibrary.org/obo/UO_",
+    # Publications a slot was derived from, e.g. the MIQE papers (#55)
+    "doi": "https://doi.org/",
     "faire": "https://w3id.org/fairie/",
 }
 
