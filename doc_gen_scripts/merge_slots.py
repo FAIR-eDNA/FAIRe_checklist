@@ -128,6 +128,10 @@ SCHEMA_SETTINGS = {
     # Stricter than MIxS's termLabel, so "|"-separated lists can't hide bad values.
     "termLabel": r"[^\s\[\]|]([^\[\]|]*[^\s\[\]|])?",
     "envoID": r"ENVO:\d{7,8}",
+    # Free text for values not yet in an ontology: no brackets, no leading/trailing space.
+    "plainText": r"[^\s\[\]]([^\[\]]*[^\s\[\]])?",
+    # Sequencing instrument models are in OBI and GenEpiO (moving to OBI) (#74).
+    "instrumentID": r"(OBI|GENEPIO):\d{7}",
 }
 
 
@@ -168,6 +172,8 @@ SCHEMA_PREFIXES = {
     "UO": "http://purl.obolibrary.org/obo/UO_",
     # Publications a slot was derived from, e.g. the MIQE papers (#55)
     "doi": "https://doi.org/",
+    # Genomic Epidemiology Ontology (instrument, #74)
+    "GENEPIO": "http://purl.obolibrary.org/obo/GENEPIO_",
     "faire": "https://w3id.org/faire/",
 }
 
