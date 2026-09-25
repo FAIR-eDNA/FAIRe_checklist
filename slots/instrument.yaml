@@ -8,6 +8,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
+  modifications_made: field_name | description
 keywords:
   - INSDC
 slot_uri: __TODO_ADD_SLOT_URI__
