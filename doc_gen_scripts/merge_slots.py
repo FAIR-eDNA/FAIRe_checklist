@@ -181,7 +181,9 @@ if os.path.exists(classes_path):
         for class_name, class_def in central_classes.items():
             if not isinstance(class_def, dict):
                 class_def = {}
+            # Keep every key (e.g. class_uri); only fill in description and tidy slots.
             schema["classes"][class_name] = {
+                **class_def,
                 "description": class_def.get(
                     "description", f"Checklist class: {class_name}."
                 ),

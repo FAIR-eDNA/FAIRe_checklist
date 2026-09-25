@@ -13,7 +13,10 @@ annotations:
   sample_type_specificity: ALL
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: StorageTemperatureEnum
+range: Any
+any_of:
+- range: float
+- range: StorageTemperatureEnum
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius

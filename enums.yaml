@@ -273,8 +273,6 @@ enums:
     permissible_values:
       noise detected in blanks:
         meaning: noise detected in blanks
-      numeric value:
-        meaning: numeric value
       'other:':
         meaning: 'other:'
   MinReadsCutoffUnitEnum:
@@ -487,8 +485,6 @@ enums:
     permissible_values:
       ambient temperature:
         meaning: ambient temperature
-      numeric value:
-        meaning: numeric value
       'other:':
         meaning: 'other:'
   TargetGeneEnum:
