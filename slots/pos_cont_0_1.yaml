@@ -9,7 +9,13 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: BinaryEnum
+range: Any
+any_of:
+- range: boolean
+- range: BooleanEnum
+- range: integer
+  minimum_value: 0
+  maximum_value: 1
 structured_pattern:
   syntax: null
   interpolated: null

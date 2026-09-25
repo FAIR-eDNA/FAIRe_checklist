@@ -34,11 +34,32 @@ enums:
       ligation-based:
       one-step PCR:
       two-step PCR:
-  BinaryEnum:
-    description: A yes/no answer coded as 0 or 1. The slot says what 0 and 1 mean.
+  BooleanEnum:
+    description: >-
+      A true/false answer. true, TRUE, 1, yes and YES all mean true; false, FALSE, 0,
+      no and NO all mean false (shared meaning). The slot says what true means. Used
+      with the boolean and integer 0-1 alternatives in the slot's any_of (#11).
     permissible_values:
-      '0':
+      'true':
+        meaning: schema:True
+      'TRUE':
+        meaning: schema:True
       '1':
+        meaning: schema:True
+      'yes':
+        meaning: schema:True
+      'YES':
+        meaning: schema:True
+      'false':
+        meaning: schema:False
+      'FALSE':
+        meaning: schema:False
+      '0':
+        meaning: schema:False
+      'no':
+        meaning: schema:False
+      'NO':
+        meaning: schema:False
   ChecksumMethodEnum:
     description: Controlled vocabulary for checksum_method.
     permissible_values:
