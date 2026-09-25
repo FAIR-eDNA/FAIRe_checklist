@@ -208,7 +208,7 @@ enums:
       Minor Groove Binder (MGB):
       TAMRA:
       Zero-End Quencher (ZEN):
-      lowa Black:
+      Iowa Black:
   PumpFlowRateUnitEnum:
     description: Controlled vocabulary for pump_flow_rate_unit.
     permissible_values:
