@@ -8,19 +8,20 @@ annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
+keywords:
+  - INSDC
 slot_uri: __TODO_ADD_SLOT_URI__
-range: InstrumentEnum
+range: string
 structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+  syntax: ^({plainText}|{termLabel} \[{instrumentID}\])$
+  interpolated: true
+  partial_match: false
 required: false
 recommended: true
 examples:
-- value: Illumina HiSeq 1500 [OBI_0003386]
+- value: Illumina HiSeq 1500 [OBI:0003386]
   description: null
-source:
-- INSDC
+source: GENEPIO:0001452
 exact_mappings: []
 close_mappings: []
 related_mappings: []

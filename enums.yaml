@@ -119,10 +119,6 @@ enums:
       g:
       kg:
       mg:
-  InstrumentEnum:
-    description: Controlled vocabulary for instrument.
-    permissible_values:
-      INSTRUMENT NAME [OBI_xxxx]:
   LengthUnitEnum:
     description: Units of length.
     permissible_values:
