@@ -20,7 +20,7 @@ examples:
 - value: Unpublished custom database, containing COI sequences of 209 fish species
     collected from Western Australia (study area)
   description: null
-source:
+source: mixs:0000087
 exact_mappings: []
 close_mappings: []
 related_mappings: []
