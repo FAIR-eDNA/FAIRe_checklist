@@ -16,7 +16,11 @@ structured_pattern:
   partial_match: null
 required: true
 recommended: false
-examples: []
+examples:
+- value: MiFish
+  description: metabarcoding
+- value: eSERU5
+  description: qPCR
 source:
 exact_mappings: []
 close_mappings: []
