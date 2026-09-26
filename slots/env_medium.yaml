@@ -14,12 +14,8 @@ annotations:
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: EnvoTerm
 multivalued: true
-structured_pattern:
-  syntax: ^{termLabel} \[{envoID}\]$
-  interpolated: true
-  partial_match: false
 required: true
 recommended: false
 examples:

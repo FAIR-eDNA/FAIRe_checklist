@@ -13,10 +13,7 @@ keywords:
   - INSDC
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-structured_pattern:
-  syntax: ^({plainText}|{termLabel} \[{instrumentID}\])$
-  interpolated: true
-  partial_match: false
+pattern: '^([^\s\[\]]([^\[\]]*[^\s\[\]])?|[^\s\[\]|]([^\[\]|]*[^\s\[\]|])? \[(OBI|GENEPIO):\d{7}\])$'
 required: false
 recommended: true
 examples:
