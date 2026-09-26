@@ -19,6 +19,7 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+multivalued: true
 structured_pattern:
   syntax: null
   interpolated: null

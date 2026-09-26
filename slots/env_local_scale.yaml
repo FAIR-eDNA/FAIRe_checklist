@@ -13,8 +13,9 @@ annotations:
   modifications_made: description | field_type
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+multivalued: true
 structured_pattern:
-  syntax: ^{termLabel} \[{envoID}\](\|{termLabel} \[{envoID}\])*$
+  syntax: ^{termLabel} \[{envoID}\]$
   interpolated: true
   partial_match: false
 required: true

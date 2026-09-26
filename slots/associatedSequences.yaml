@@ -11,6 +11,7 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+multivalued: true
 structured_pattern:
   syntax: null
   interpolated: null
@@ -18,11 +19,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: https://www.ncbi.nlm.nih.gov/sra/SRR26148187
-  description: null
-- value: https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094
-  description: null
-- value: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898
+- value: 'https://www.ncbi.nlm.nih.gov/sra/SRR26148187 | https://www.ncbi.nlm.nih.gov/biosample/SAMN37516094 | https://www.ncbi.nlm.nih.gov/bioproject/PRJNA887898'
   description: null
 source: dwc:associatedSequences
 exact_mappings: []

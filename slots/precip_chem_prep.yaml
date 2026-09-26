@@ -17,6 +17,7 @@ range: string
 any_of:
 - range: PrecipChemPrepEnum
 - range: OtherText
+multivalued: true
 structured_pattern:
   syntax: null
   interpolated: null
@@ -24,9 +25,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: ethanol
-  description: null
-- value: sodium chloride
+- value: 'ethanol | sodium chloride'
   description: null
 source: doi:10.1002/edn3.189
 exact_mappings: []

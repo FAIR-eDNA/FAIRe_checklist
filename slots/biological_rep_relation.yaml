@@ -12,6 +12,7 @@ annotations:
   requirement_level_code: O
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
+multivalued: true
 structured_pattern:
   syntax: null
   interpolated: null
@@ -19,11 +20,7 @@ structured_pattern:
 required: false
 recommended: false
 examples:
-- value: S01_1
-  description: null
-- value: S01_2
-  description: null
-- value: S01_3
+- value: 'S01_1 | S01_2 | S01_3'
   description: null
 source:
 exact_mappings: []
