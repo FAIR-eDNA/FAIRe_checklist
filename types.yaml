@@ -5,3 +5,11 @@ types:
       "other:" followed by a free-text description, for a value that is not in the slot's
       controlled vocabulary, e.g. "other:copies/mg of sediment sample".
     pattern: '^other: *\S.*$'
+  Timestamp:
+    typeof: string
+    description: >-
+      An ISO 8601 date or date and time, which may be truncated from the right
+      (2008-01-23T19:23:10Z, 2008-01-23T19:23-06:00, 2008-01-23, 2008-01, 2008). Seconds,
+      fractions of a second and the time zone are optional. Same as MIxS's timestamp
+      setting.
+    pattern: '^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d))?)?)?)?$'
