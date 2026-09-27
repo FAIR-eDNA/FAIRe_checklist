@@ -28,7 +28,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '-80.0'
+- value: '-80'
   description: null
 source: mixs:0000110
 exact_mappings: []

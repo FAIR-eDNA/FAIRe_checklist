@@ -19,7 +19,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '90.0'
+- value: '90'
   description: null
 source:
 exact_mappings: []

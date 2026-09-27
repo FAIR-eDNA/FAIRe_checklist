@@ -21,7 +21,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '97.0'
+- value: '97'
   description: null
 source:
 - MIxS

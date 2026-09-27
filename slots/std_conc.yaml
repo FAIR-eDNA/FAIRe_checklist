@@ -17,7 +17,7 @@ structured_pattern:
 required: true
 recommended: false
 examples:
-- value: '2500.0'
+- value: '2500'
   description: null
 source:
 exact_mappings: []

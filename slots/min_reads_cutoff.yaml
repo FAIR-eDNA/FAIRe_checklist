@@ -22,7 +22,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '5.0'
+- value: '5'
   description: null
 source:
 exact_mappings: []

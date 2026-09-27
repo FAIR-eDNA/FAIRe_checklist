@@ -21,7 +21,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '22.0'
+- value: '22'
   description: null
 source: doi:10.1093/clinchem/hvaf043
 see_also:

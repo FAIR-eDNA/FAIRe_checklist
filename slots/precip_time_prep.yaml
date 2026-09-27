@@ -24,7 +24,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '45.0'
+- value: '45'
   description: null
 source: doi:10.1002/edn3.189
 exact_mappings: []

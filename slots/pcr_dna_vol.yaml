@@ -21,7 +21,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: '2.0'
+- value: '2'
   description: null
 source: doi:10.1373/clinchem.2008.112797
 exact_mappings: []
