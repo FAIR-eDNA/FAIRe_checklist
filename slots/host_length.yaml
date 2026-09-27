@@ -26,9 +26,3 @@ close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/mixs/0000256
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__

@@ -27,9 +27,3 @@ close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - http://rs.tdwg.org/eco/terms/eventDurationValue
-# term_type: fixed format
-# __LEGACY_LINKML_FIELDS_END__

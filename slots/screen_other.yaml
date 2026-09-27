@@ -22,7 +22,3 @@ close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
