@@ -2,7 +2,7 @@ name: ph
 title: pH
 description: >-
   Ph measurement of the sample, or liquid portion of sample, or aqueous
-  phase of the fluid. Unit = no unit
+  phase of the fluid.
 in_subset:
   - Environment
 annotations:

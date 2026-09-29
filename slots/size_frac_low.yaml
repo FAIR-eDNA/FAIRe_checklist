@@ -2,7 +2,7 @@ name: size_frac_low
 title: size-fraction lower threshold
 description: >-
   Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
-  Materials larger than the size threshold are excluded from the sample. Unit = µm
+  Materials larger than the size threshold are excluded from the sample.
 in_subset:
   - Sample preparation
 annotations:

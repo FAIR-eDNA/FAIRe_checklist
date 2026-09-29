@@ -1,7 +1,7 @@
 name: pcr_primer_vol_forward
 title: forward PCR primer volume
 description: >-
-  Volume of pcr_primer_forward per reaction. Unit = µL
+  Volume of pcr_primer_forward per reaction.
 in_subset:
   - PCR
 annotations:

@@ -1,7 +1,7 @@
 name: light_intensity
 title: light intensity
 description: >-
-  Measurement of light intensity. Unit = lux
+  Measurement of light intensity.
 in_subset:
   - Environment
 annotations:

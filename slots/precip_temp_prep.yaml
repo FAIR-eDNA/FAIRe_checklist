@@ -2,7 +2,7 @@ name: precip_temp_prep
 title: precipitation temperature
 description: >-
   Temperature used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
-  performed. Unit = degree Celsius
+  performed.
 in_subset:
 - Sample preparation
 annotations:

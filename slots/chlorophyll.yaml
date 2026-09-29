@@ -1,7 +1,7 @@
 name: chlorophyll
 title: chlorophyll
 description: >-
-  Concentration of chlorophyll. Unit = mg/m3
+  Concentration of chlorophyll.
 in_subset:
   - Environment
 annotations:

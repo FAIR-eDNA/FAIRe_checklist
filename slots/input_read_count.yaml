@@ -1,7 +1,7 @@
 name: input_read_count
 title: input read count
 description: >-
-  The total number of raw sequence reads for each sample. Unit = reads
+  The total number of raw sequence reads for each sample.
 in_subset:
   - Bioinformatics
 annotations:

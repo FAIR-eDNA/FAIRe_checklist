@@ -7,7 +7,7 @@ description: >-
   refer to the same value from the real-time instrument. Use of quantification cycle
   (Cq), is preferable according to the RDML (Real-Time PCR Data Markup Language) data
   standard (http://www.rdml.org). Use "NA" (not zero) to indicate no amplification
-  occurred. Unit = Cycle
+  occurred.
 in_subset:
   - Targeted assay detection
 annotations:

@@ -1,7 +1,7 @@
 name: size_frac
 title: size fraction selected
 description: >-
-  Filtering pore size used in sample filtration. Unit = µm
+  Filtering pore size used in sample filtration.
 in_subset:
   - Sample preparation
 annotations:

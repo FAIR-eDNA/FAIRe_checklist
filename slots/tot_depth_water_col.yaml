@@ -3,8 +3,7 @@ title: total depth of water column
 description: >-
   Measurement of total depth of water column. For example, if a sea surface
   water sample was collected at a sampling site where the water depth was 15m, enter
-  15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters. Unit
-  = meter
+  15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters.
 in_subset:
   - Environment
 annotations:

@@ -5,8 +5,7 @@ description: >-
   While salinity can be measured by a complete chemical analysis, this method is difficult
   and time consuming. More often, it is instead derived from the conductivity measurement.
   This is known as practical salinity. These derivations compare the specific conductance
-  of the sample to a salinity standard such as seawater. Unit = practical salinity
-  unit (psu)
+  of the sample to a salinity standard such as seawater.
 in_subset:
   - Environment
 annotations:

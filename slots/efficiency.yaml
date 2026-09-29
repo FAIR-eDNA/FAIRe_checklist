@@ -1,7 +1,7 @@
 name: efficiency
 title: qPCR amplification efficiency
 description: >-
-  qPCR amplification efficiency calculated from slope. Unit = %
+  qPCR amplification efficiency calculated from slope.
 in_subset:
   - Targeted assay detection
 annotations:

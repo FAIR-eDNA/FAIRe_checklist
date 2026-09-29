@@ -5,7 +5,7 @@ description: >-
   surface) at which a sample was collected. For sediment or soil samples depth is
   measured from sediment or soil surface, respectively. If there is only one single
   point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters
-  are the same. Unit = meter
+  are the same.
 in_subset:
   - Environment
 annotations:

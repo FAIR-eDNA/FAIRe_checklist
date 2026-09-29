@@ -2,7 +2,7 @@ name: precip_time_prep
 title: precipitation duration
 description: >-
   Duration of precipitation at the sample preparation step prior to DNA
-  extraction, if precipitation was performed. Unit = minute
+  extraction, if precipitation was performed.
 in_subset:
   - Sample preparation
 annotations:

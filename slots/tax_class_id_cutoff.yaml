@@ -1,7 +1,7 @@
 name: tax_class_id_cutoff
 title: taxonomic assignment identity threshold
 description: >-
-  Minimum percent identity for taxonomic assignment. Unit = %
+  Minimum percent identity for taxonomic assignment.
 in_subset:
   - Bioinformatics
 annotations:

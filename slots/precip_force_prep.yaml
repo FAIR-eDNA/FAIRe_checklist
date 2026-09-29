@@ -2,7 +2,7 @@ name: precip_force_prep
 title: precipitation centrifugal force
 description: >-
   Centrifuge force used in precipitation at the sample preparation step
-  prior to DNA extraction, if precipitation was performed. Unit = x g
+  prior to DNA extraction, if precipitation was performed.
 in_subset:
   - Sample preparation
 annotations:

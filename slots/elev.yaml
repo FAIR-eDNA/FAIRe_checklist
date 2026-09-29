@@ -5,7 +5,6 @@ description: >-
   point, most commonly the mean sea level. Elevation is mainly used when referring
   to points on the earth's surface, while altitude is used for points above the surface,
   such as an aircraft in flight or a spacecraft in orbit. i.e. 0m for seawater sample.
-  Unit = meter
 in_subset:
   - Environment
 annotations:

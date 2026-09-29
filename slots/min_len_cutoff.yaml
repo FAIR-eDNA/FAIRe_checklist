@@ -1,7 +1,7 @@
 name: min_len_cutoff
 title: minimum read length threshold
 description: >-
-  Minimum length threshold. Unit = base pair
+  Minimum length threshold.
 in_subset:
   - Bioinformatics
 annotations:

@@ -1,7 +1,7 @@
 name: filter_surface_area
 title: filter surface area
 description: >-
-  Surface area of a filter. Unit = mm2
+  Surface area of a filter.
 in_subset:
   - Sample preparation
 annotations:

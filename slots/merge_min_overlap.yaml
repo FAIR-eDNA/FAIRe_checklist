@@ -1,7 +1,7 @@
 name: merge_min_overlap
 title: minimum overlap for merging reads
 description: >-
-  Minimum overlaps required to merge paired end reads. Unit = base pair
+  Minimum overlaps required to merge paired end reads.
 in_subset:
   - Bioinformatics
 annotations:
