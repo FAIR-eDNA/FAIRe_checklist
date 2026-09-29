@@ -1,9 +1,8 @@
 name: annealingTemp
 title: PCR annealing temperature
 description: >-
-  The reaction temperature during the annealing phase of PCR. If two-step
-  PCR was applied for a metabarcoding approach, enter the second PCR protocol under
-  the term pcr2_* in the library preparation/sequencing section.
+  The reaction temperature during the annealing phase of PCR. If two-step PCR was
+  applied, report the second PCR under the corresponding pcr2_* term.
 in_subset:
   - PCR
 annotations:

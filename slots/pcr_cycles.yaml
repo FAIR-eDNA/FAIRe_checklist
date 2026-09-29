@@ -1,9 +1,8 @@
 name: pcr_cycles
 title: number of PCR cycles
 description: >-
-  Number of PCR cycles. If two-step PCR was applied for a metabarcoding
-  approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
-  section.
+  Number of PCR cycles. If two-step PCR was applied, report the second PCR under the
+  corresponding pcr2_* term.
 in_subset:
   - PCR
 annotations:
