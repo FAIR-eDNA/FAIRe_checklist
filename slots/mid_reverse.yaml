@@ -1,4 +1,5 @@
 name: mid_reverse
+title: reverse multiplex identifier
 description: >-
   Reverse multiplex Identifiers (MIDs), that was used to specifically tag
   unique samples in a sequencing run. Sequence should be reported in uppercase letters

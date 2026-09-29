@@ -1,4 +1,5 @@
 name: checksum_method
+title: checksum method
 description: >-
   The specific algorithm or technique used to compute the checksum (checksum_filename, checksum_filename2) for
   verifying data integrity. Examples include MD5, SHA-256, and CRC-32.

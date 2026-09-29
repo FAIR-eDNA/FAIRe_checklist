@@ -1,4 +1,5 @@
 name: pcr_method_additional
+title: additional PCR method information
 description: >-
   Additional information on PCR or PCR-free method, that has not been shared
   in the given record (i.e. multiplexing, hybridisation, CRISPR-Cas). If two-step

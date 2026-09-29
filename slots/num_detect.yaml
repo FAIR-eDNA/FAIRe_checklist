@@ -1,4 +1,5 @@
 name: num_detect
+title: number of detections
 description: >-
   Number of detection using the eLow Quant approach (described in DOI:
   10.1002/edn3.220)

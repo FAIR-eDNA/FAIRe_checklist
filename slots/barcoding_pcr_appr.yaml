@@ -1,4 +1,5 @@
 name: barcoding_pcr_appr
+title: metabarcoding PCR approach
 description: >-
   PCR approach for metabarcoding
 in_subset:

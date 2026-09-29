@@ -1,4 +1,5 @@
 name: filename
+title: sequence reads file name
 description: >-
   A file name of raw sequencing data. If paired end, fill filename2 for
   the reverse read

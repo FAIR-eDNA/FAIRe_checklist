@@ -1,4 +1,5 @@
 name: targetTaxonomicScope
+title: target taxonomic scope
 description: >-
   The taxonomic group(s) targeted in the study. This can differ from the
   targetTaxonomicAssay. For example, the targetTaxonomicAssay may be Chordata while

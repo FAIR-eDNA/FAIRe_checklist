@@ -1,4 +1,5 @@
 name: wind_speed
+title: wind speed
 description: >-
   Speed of wind measured at the time of sampling. Unit = m/s
 in_subset:

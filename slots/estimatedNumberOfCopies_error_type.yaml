@@ -1,4 +1,5 @@
 name: estimatedNumberOfCopies_error_type
+title: estimated number of copies error type
 description: >-
   The specific type of variability measure (e.g., standard error, standard deviation) used to describe estimatedNumberOfCopies_error.
 in_subset:

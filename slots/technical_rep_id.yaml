@@ -1,4 +1,5 @@
 name: technical_rep_id
+title: technical replicate ID
 description: >-
   An integer uniquely identifying a specific PCR technical replicate within
   a sample.

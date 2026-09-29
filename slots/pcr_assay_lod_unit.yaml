@@ -1,4 +1,5 @@
 name: pcr_assay_lod_unit
+title: assay limit of detection unit
 description: >-
   Unit for pcr_assay_lod
 in_subset:

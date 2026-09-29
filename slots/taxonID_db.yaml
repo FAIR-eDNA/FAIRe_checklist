@@ -1,4 +1,5 @@
 name: taxonID_db
+title: taxonomy database for taxon ID
 description: >-
   The taxonomy database corresponding to taxonID.
 in_subset:

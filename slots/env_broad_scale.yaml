@@ -1,4 +1,5 @@
 name: env_broad_scale
+title: broad-scale environmental context
 description: >-
   Major environmental system your sample came from. The systems identified should have a coarse spatial grain,
   to provide the general environmental context of where the sampling was done. Select from ENVO's biome class: http://purl.obolibrary.org/obo/ENVO_00000428.

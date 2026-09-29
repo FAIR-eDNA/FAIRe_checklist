@@ -1,4 +1,5 @@
 name: samp_mat_process
+title: sample material processing
 description: >-
   Any processing applied to the sample during or after retrieving the sample
   from environment (i.e. sieving, filtration, precipitation, homogenising, subsampling).

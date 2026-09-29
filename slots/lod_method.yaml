@@ -1,4 +1,5 @@
 name: lod_method
+title: limit of detection determination method
 description: >-
   Method used for determining LOD e.g., DOI of a published procedure
 in_subset:

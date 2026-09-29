@@ -1,4 +1,5 @@
 name: trim_param
+title: trimming parameters
 description: >-
   Parameters and cutoffs used to trim if not default
 in_subset:

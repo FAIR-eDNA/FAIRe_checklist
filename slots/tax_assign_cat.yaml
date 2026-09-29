@@ -1,4 +1,5 @@
 name: tax_assign_cat
+title: taxonomic assignment approach
 description: >-
   High-level category of taxonomic assignment approach. Examples using sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH.
   Examples using sequence composition: naive Bayes classifier, CLARK, Kraken. Examples using phylogeny: SEPP, EPA-ng, pplacer.

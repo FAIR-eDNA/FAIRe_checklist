@@ -1,4 +1,5 @@
 name: tax_class_other
+title: other taxonomic assignment parameters
 description: >-
   Additional information on parameters and cutoffs used for taxonomic assignment,
   that have not been shared in the given record.

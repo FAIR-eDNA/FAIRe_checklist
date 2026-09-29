@@ -1,4 +1,5 @@
 name: temp
+title: temperature
 description: >-
   Temperature of the sample at the time of sampling in degree Celsius
 in_subset:

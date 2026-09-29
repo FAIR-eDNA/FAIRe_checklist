@@ -1,4 +1,5 @@
 name: automaticBaselineValue
+title: automatic baseline value
 description: >-
   Whether the baseline value was set by the instrument (1) or manually (0).
 in_subset:

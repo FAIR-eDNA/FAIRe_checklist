@@ -1,4 +1,5 @@
 name: filter_diameter
+title: filter diameter
 description: >-
   Diameter of a filter if circular. Unit = mm
 in_subset:

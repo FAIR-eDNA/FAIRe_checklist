@@ -1,4 +1,5 @@
 name: samp_vol_we_dna_ext
+title: sample volume or weight for DNA extraction
 description: >-
   Volume or mass of sample or subsamples that was processed for DNA extraction.
   For example, if 1L of water was collected and filtered, and half of the filter paper

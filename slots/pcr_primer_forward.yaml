@@ -1,4 +1,5 @@
 name: pcr_primer_forward
+title: forward PCR primer
 description: >-
   Forward PCR primer (5' - 3') that were used to amplify the sequence of
   the targeted gene. The primer sequence should NOT contain MIDs and adapter sequences,

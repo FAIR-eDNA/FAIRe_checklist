@@ -1,4 +1,5 @@
 name: pcr_primer_conc_forward
+title: forward PCR primer stock concentration
 description: >-
   The stock concentration of the forward PCR primer (pcr_primer_forward).
   This refers specifically to the concentration of the primer stock solution, not

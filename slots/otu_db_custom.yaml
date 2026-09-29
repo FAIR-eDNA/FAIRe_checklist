@@ -1,4 +1,5 @@
 name: otu_db_custom
+title: custom reference database description
 description: >-
   Description of custom reference database(s) (i.e. coverage of taxa, region)
   if applied to assign taxonomy to OTUs or ASVs

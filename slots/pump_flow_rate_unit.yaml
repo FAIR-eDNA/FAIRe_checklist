@@ -1,4 +1,5 @@
 name: pump_flow_rate_unit
+title: pump flow rate unit
 description: >-
   Unit for pump_flow_rate
 in_subset:

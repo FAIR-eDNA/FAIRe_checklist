@@ -1,4 +1,5 @@
 name: ratioOfAbsorbance260_280
+title: ratio of absorbance 260/280
 description: >-
   Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
   secondary measure, indicates mainly EDTA, carbohydrates, phenol).

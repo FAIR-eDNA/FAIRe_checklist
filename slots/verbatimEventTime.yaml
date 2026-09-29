@@ -1,4 +1,5 @@
 name: verbatimEventTime
+title: verbatim event time
 description: >-
   Sample collection time before formatting to ISO 8601, or at the local
   time (if eventDate time samp has been converted to UTC time)

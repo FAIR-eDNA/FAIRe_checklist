@@ -1,4 +1,5 @@
 name: adapter_reverse
+title: reverse sequencing adapter
 description: >-
   Reverse sequencing adapter. The sequence should be reported in uppercase
   letters

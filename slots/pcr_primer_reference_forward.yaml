@@ -1,4 +1,5 @@
 name: pcr_primer_reference_forward
+title: forward PCR primer reference
 description: >-
   Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers are
   listed in pcr_primer_forward, list the references respectively, separated by pipe

@@ -1,4 +1,5 @@
 name: samp_size
+title: amount or size of sample collected
 description: >-
   Amount or size of original sample (volume, mass or area) that was collected
   from the environment. Specify the unit under the term samp_size_unit. Note: the

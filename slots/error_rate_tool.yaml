@@ -1,4 +1,5 @@
 name: error_rate_tool
+title: error rate filtering tool
 description: >-
   Software to remove reads above error rate threshold
 in_subset:

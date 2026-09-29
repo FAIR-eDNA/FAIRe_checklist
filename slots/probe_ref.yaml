@@ -1,4 +1,5 @@
 name: probe_ref
+title: probe reference
 description: >-
   Reference (i.e. DOI) of the probe_seq
 in_subset:

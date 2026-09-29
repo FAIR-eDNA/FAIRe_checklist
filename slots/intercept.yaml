@@ -1,4 +1,5 @@
 name: intercept
+title: qPCR standard curve intercept
 description: >-
   Intercept of a qPCR standard curve. This shall be specific to each pcr_plate_id.
 in_subset:

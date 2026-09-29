@@ -1,4 +1,5 @@
 name: pcr_rep
+title: number of PCR replicates
 description: >-
   The number of PCR technical replicates. For metabarcoding, each replicate
   should employ an identical MID.

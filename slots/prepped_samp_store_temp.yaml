@@ -1,4 +1,5 @@
 name: prepped_samp_store_temp
+title: prepared sample storage temperature
 description: >-
   Temperature at which the prepared sample was stored prior to DNA extraction. Record either 'ambient' or a
   numeric value in degree Celsius. Note: The storage temperature of the original environmental sample (e.g., water, soil)

@@ -1,4 +1,5 @@
 name: light_intensity
+title: light intensity
 description: >-
   Measurement of light intensity. Unit = lux
 in_subset:

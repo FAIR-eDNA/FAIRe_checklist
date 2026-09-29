@@ -1,4 +1,5 @@
 name: pcr_primer_vol_reverse
+title: reverse PCR primer volume
 description: >-
   Volume of pcr_primer_reverse per reaction. Unit = µL
 in_subset:

@@ -1,4 +1,5 @@
 name: probe_seq
+title: probe sequence
 description: >-
   If applicable, probe sequence in the 5' to 3' direction
 in_subset:

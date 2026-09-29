@@ -1,4 +1,5 @@
 name: lib_conc
+title: library concentration
 description: >-
   The concentration of the prepared library pool that was loaded onto the
   sequencing platform for a sequencing run.

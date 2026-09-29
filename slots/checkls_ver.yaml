@@ -1,4 +1,5 @@
 name: checkls_ver
+title: FAIRe checklist version
 description: >-
   The version number of the FAIR eDNA (FAIRe) metadata checklist used to
   format the data

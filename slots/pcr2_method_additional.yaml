@@ -1,4 +1,5 @@
 name: pcr2_method_additional
+title: additional second PCR method information
 description: >-
   (If bacroding_pcr_appr = "two-step PCR") Additional information on PCR
   or PCR-free method, that has not been shared in the given record in the second step

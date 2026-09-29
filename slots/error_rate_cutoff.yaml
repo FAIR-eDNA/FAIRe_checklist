@@ -1,4 +1,5 @@
 name: error_rate_cutoff
+title: error rate threshold
 description: >-
   error rate threshold
 in_subset:

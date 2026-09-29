@@ -1,4 +1,5 @@
 name: taxonID
+title: taxon ID
 description: >-
   An identifier for the assigned taxon (or taxa in the case of multiple
   hits). May be a global unique identifier or an identifier specific to the data set.

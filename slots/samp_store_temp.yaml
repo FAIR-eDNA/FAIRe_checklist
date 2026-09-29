@@ -1,4 +1,5 @@
 name: samp_store_temp
+title: sample storage temperature
 description: >-
   Temperature at which the sample was stored. Enter either the fixed term "ambient temperature" or a numeric value.
   Note: If a sample was processed before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the storage

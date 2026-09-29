@@ -1,4 +1,5 @@
 name: efficiency
+title: qPCR amplification efficiency
 description: >-
   qPCR amplification efficiency calculated from slope. Unit = %
 in_subset:

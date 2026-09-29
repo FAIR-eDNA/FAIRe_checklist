@@ -1,4 +1,5 @@
 name: accession_id_ref_db
+title: reference database of best matching sequence
 description: >-
   Reference database (i.e. sequences not generated as part of the current
   study) of the best matching sequence (accesssion_id)

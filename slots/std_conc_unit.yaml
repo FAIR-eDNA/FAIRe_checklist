@@ -1,4 +1,5 @@
 name: std_conc_unit
+title: qPCR standard input quantity unit
 description: >-
   Unit for input quantity of qPCR standard DNA
 in_subset:

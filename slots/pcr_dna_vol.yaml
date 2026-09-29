@@ -1,4 +1,5 @@
 name: pcr_dna_vol
+title: PCR DNA volume
 description: >-
   Volume of DNA added in each PCR reaction. Unit = µL
 in_subset:

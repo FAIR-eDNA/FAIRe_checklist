@@ -1,4 +1,5 @@
 name: targetTaxonomicAssay
+title: assay target taxa
 description: >-
   Taxa or species name targeted by the primers, probes, and/or other approaches
   applied in the PCR.

@@ -1,4 +1,5 @@
 name: project_name
+title: project name
 description: >-
   Name of the project within which the sequencing was organized
 in_subset:

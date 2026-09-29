@@ -1,4 +1,5 @@
 name: demux_max_mismatch
+title: demultiplexing maximum index mismatch
 description: >-
   Maximum mismatch allowed at the index bases for demultiplexing. Unit
   = base pair

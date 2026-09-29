@@ -1,4 +1,5 @@
 name: target_subfragment
+title: target subfragment
 description: >-
   Name of subfragment of a gene or locus. Important to e.g. identify special
   regions on marker genes like V6 on 16S rRNA.

@@ -1,4 +1,5 @@
 name: maximumDepthInMeters
+title: maximum depth in meters
 description: >-
   The greater depth of a range of depth (vertical distance below the local
   surface) at which a sample was collected. For sediment or soil samples depth is

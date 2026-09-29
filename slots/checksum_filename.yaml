@@ -1,4 +1,5 @@
 name: checksum_filename
+title: checksum of forward reads file
 description: >-
   The checksum of the forward sequence reads file (filename), used to verify
   the integrity and identity of the corresponding data file

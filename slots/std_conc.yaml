@@ -1,4 +1,5 @@
 name: std_conc
+title: qPCR standard input quantity
 description: >-
   Input quantity of qPCR standard DNA
 in_subset:

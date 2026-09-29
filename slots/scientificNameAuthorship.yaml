@@ -1,4 +1,5 @@
 name: scientificNameAuthorship
+title: scientific name authorship
 description: >-
   The authorship information for the scientificName
 in_subset:

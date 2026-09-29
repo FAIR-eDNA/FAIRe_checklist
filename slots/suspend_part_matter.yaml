@@ -1,4 +1,5 @@
 name: suspend_part_matter
+title: suspended particulate matter
 description: >-
   Concentration of suspended particulate matter. Unit = mg/L
 in_subset:

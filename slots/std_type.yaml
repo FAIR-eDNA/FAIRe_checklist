@@ -1,4 +1,5 @@
 name: std_type
+title: qPCR standard type
 description: >-
   The type of standard used for standard curves
 in_subset:

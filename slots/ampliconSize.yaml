@@ -1,4 +1,5 @@
 name: ampliconSize
+title: amplicon size
 description: >-
   The length of the amplicon in basepairs EXCLUDING the primers, adapters
   and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160). If using

@@ -1,4 +1,5 @@
 name: prepped_samp_store_dur
+title: prepared sample storage duration
 description: >-
   Duration for which the prepared sample was stored prior to DNA extraction,
   written in ISO 8601 format (i.e., P14D for 14 days period. P1Y6M for 1 year and

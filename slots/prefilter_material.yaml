@@ -1,4 +1,5 @@
 name: prefilter_material
+title: pre-filter material
 description: >-
   Material used to pre-filter/pre-sort the sample
 in_subset:

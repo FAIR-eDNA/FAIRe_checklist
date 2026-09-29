@@ -1,4 +1,5 @@
 name: water_current
+title: water current
 description: >-
   Measurement of magnitude and direction of flow within a fluid. Unit =
   m/s

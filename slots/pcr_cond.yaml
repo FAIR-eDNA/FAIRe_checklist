@@ -1,4 +1,5 @@
 name: pcr_cond
+title: pcr conditions
 description: >-
   Description of reaction conditions and components of PCR. The recommended
   format is 'initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final

@@ -1,4 +1,5 @@
 name: neg_cont_type
+title: negative control type
 description: >-
   A negative control type used in an investigation. See Table 2 in Klymus et al. 2024 (DOI: 10.3897/mbmg.8.128689)
   for the description of each control type, how and why it's created. For example, process negative is a sample added during

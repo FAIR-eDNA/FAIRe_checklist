@@ -1,4 +1,5 @@
 name: wind_direction
+title: wind direction
 description: >-
   Wind direction (the direction from which a wind originates) at the time
   of sampling

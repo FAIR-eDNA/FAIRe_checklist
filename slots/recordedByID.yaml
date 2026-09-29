@@ -1,4 +1,5 @@
 name: recordedByID
+title: recorded by ID
 description: >-
   A list (concatenated and separated) of the globally unique identifier
   for the people responsible for the submitted dataset

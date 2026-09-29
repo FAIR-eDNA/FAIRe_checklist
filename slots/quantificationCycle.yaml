@@ -1,4 +1,5 @@
 name: quantificationCycle
+title: quantification cycle
 description: >-
   The number of cycles required for the fluorescent signal to cross a given
   value threshold above the baseline for each technical replicate. Quantification

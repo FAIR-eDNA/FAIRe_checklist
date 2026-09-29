@@ -1,4 +1,5 @@
 name: otu_db
+title: OTU database
 description: >-
   List of reference database(s) (i.e. sequences not generated as part of
   the current study) along with version number, that were used to assign taxonomy

@@ -1,4 +1,5 @@
 name: lib_id
+title: library ID
 description: >-
   An identifier of a library (an amplicon of a sample with unique MIDs)
 in_subset:

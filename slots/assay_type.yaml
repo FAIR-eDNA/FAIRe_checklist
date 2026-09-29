@@ -1,4 +1,5 @@
 name: assay_type
+title: assay type
 description: >-
   The method used in the eDNA study to detect taxon/taxa of interest in environmental sample. A targeted eDNA assay
   is designed to detect the presence of a specific species or a small subset of taxa (such as a genus or family) using techniques

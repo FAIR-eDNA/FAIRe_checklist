@@ -1,4 +1,5 @@
 name: samp_collect_device
+title: sample collection device
 description: >-
   The device used to collect an environmental sample. This term accepts
   terms listed under environmental sampling device (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000968)

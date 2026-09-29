@@ -1,4 +1,5 @@
 name: detected_notDetected
+title: target detected or not detected
 description: >-
   Detection of the targeted taxon for each biological replicate, based on the specified detection criteria (detailed
   under the term 'detection_criteria'). Detected = 1, Not detected = 0. For projects employing multiple assays, this term

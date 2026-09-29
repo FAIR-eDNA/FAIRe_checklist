@@ -1,4 +1,5 @@
 name: std_source
+title: qPCR standard source
 description: >-
   The source of standard used for standard curves
 in_subset:

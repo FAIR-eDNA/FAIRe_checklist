@@ -1,4 +1,5 @@
 name: accessRights
+title: access rights
 description: >-
   Information about who can access the resource or an indication of its
   security status.

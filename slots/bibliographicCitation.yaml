@@ -1,4 +1,5 @@
 name: bibliographicCitation
+title: bibliographic citation
 description: >-
   A bibliographic reference for the resource.
 in_subset:

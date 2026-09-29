@@ -1,4 +1,5 @@
 name: otu_clust_cutoff
+title: OTU/ASV clustering similarity threshold
 description: >-
   The percentage similarity threshold used for OTU/ASV clustering. For
   ASV clustering, the cutoff is typically 100% similarity. Unit = %

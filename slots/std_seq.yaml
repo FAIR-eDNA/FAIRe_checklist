@@ -1,4 +1,5 @@
 name: std_seq
+title: qPCR standard sequence
 description: >-
   DNA sequences of standard
 in_subset:

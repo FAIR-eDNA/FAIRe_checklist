@@ -1,4 +1,5 @@
 name: decimalLatitude
+title: decimal latitude
 description: >-
   The geographic latitude in decimal degrees using WGS84 datum. Positive
   values are north of the Equator, negative values are south of it. Legal values lie

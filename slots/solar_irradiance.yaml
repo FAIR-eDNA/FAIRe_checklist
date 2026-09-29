@@ -1,4 +1,5 @@
 name: solar_irradiance
+title: solar irradiance
 description: >-
   Description and/or the amount of solar energy that arrives at a specific
   area of a surface at the time of sampling. i.e. fully exposed, partially shaded,

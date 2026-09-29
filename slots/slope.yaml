@@ -1,4 +1,5 @@
 name: slope
+title: qPCR standard curve slope
 description: >-
   Slope of a qPCR standard curve. This shall be specific to each pcr_plate_id.
 in_subset:

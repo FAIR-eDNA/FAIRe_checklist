@@ -1,4 +1,5 @@
 name: screen_contam_method
+title: contamination screening method
 description: >-
   How were contaminations screened and applied in data curation/analyses/interpretation?
 in_subset:

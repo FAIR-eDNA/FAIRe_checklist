@@ -1,4 +1,5 @@
 name: recordedBy
+title: recorded by
 description: >-
   A list (concatenated and separated) of names of people responsible for
   the submitted dataset

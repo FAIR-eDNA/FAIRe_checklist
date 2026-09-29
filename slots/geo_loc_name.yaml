@@ -1,4 +1,5 @@
 name: geo_loc_name
+title: geographic location (country and/or sea,region)
 description: >-
   The geographical origin of the sample as defined by the country or sea
   name followed by regions and localities. Country or sea names should be chosen from

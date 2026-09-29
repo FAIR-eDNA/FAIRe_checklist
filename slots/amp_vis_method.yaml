@@ -1,4 +1,5 @@
 name: amp_vis_method
+title: amplicon visualisation method
 description: >-
   Amplicon visualisation method (i.e., qPCR, dPCR, gel electrophoresis, PCR capillary electrophoresis (PCR-CE),
   Loop-mediated isothermal amplification (LAMP)) to determine the detection of a targeted taxon

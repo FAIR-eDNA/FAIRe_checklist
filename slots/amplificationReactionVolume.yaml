@@ -1,4 +1,5 @@
 name: amplificationReactionVolume
+title: PCR reaction volume
 description: >-
   The total PCR reaction volume. Unit = µL
 in_subset:

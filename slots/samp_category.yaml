@@ -1,4 +1,5 @@
 name: samp_category
+title: sample category
 description: >-
   A type/category of a sample. 'Sample" includes biological and technical replicates. If negative or positive control
   was selected, provide further information under the terms fill neg_cont_type and pos_cont_type.

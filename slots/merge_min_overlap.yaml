@@ -1,4 +1,5 @@
 name: merge_min_overlap
+title: minimum overlap for merging reads
 description: >-
   Minimum overlaps required to merge paired end reads. Unit = base pair
 in_subset:

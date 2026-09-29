@@ -1,4 +1,5 @@
 name: estimatedNumberOfCopies_error
+title: estimated number of copies error
 description: >-
   The measure of variability (e.g., standard error) associated with the
   estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents

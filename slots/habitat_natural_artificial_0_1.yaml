@@ -1,4 +1,5 @@
 name: habitat_natural_artificial_0_1
+title: natural or artificial habitat
 description: >-
   Whether samples were taken from natural (0) or artificial (1) habitat. The examples of artificial habitat include
   mesocosm tank in lab, enclosure in zoo etc., including semi-natural systems. The definition of natural habitat is locations

@@ -1,4 +1,5 @@
 name: specificEpithet
+title: specific epithet
 description: >-
   The name of the first or species epithet of the scientificName.
 in_subset:

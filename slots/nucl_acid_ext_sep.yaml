@@ -1,4 +1,5 @@
 name: nucl_acid_ext_sep
+title: nucleic acid extraction separation method
 description: >-
   The approach used to separate DNA from a mixture.
 in_subset:

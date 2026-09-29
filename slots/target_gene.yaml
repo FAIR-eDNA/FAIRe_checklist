@@ -1,4 +1,5 @@
 name: target_gene
+title: target gene
 description: >-
   Targeted gene or locus name for marker gene studies
 in_subset:

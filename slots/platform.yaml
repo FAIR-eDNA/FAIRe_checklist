@@ -1,4 +1,5 @@
 name: platform
+title: sequencing platform
 description: >-
   General sequencing platform used.
 in_subset:

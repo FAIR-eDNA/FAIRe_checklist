@@ -1,4 +1,5 @@
 name: chimera_check_param
+title: chimera check parameters
 description: >-
   Parameters used to filter chimera sequences if note default
 in_subset:

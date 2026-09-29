@@ -1,4 +1,5 @@
 name: biological_rep
+title: number of biological replicates
 description: >-
   The number of biological replicates collected at each sampling point
   and/or for each experimental treatment in the study.

@@ -1,4 +1,5 @@
 name: pcr_0_1
+title: PCR performed
 description: >-
   Was PCR performed in the study? Yes = 1, No (pcr-free approaches including shotgun metagenomics, Nanopore) =
   0

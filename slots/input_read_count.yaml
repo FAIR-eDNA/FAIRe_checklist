@@ -1,4 +1,5 @@
 name: input_read_count
+title: input read count
 description: >-
   The total number of raw sequence reads for each sample. Unit = reads
 in_subset:

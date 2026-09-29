@@ -1,4 +1,5 @@
 name: humidity
+title: humidity
 description: >-
   Amount of water vapour in the air, at the time of sampling relative to
   the maximum amount of water vapor the air can hold at a given temperature and pressure.

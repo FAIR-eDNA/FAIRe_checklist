@@ -1,4 +1,5 @@
 name: probe_conc
+title: probe stock concentration
 description: >-
   The stock concentration of the probe if applicable. This refers specifically
   to the concentration of the probe stock solution, not the final concentration in

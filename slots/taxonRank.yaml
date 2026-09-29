@@ -1,4 +1,5 @@
 name: taxonRank
+title: taxon rank
 description: >-
   The taxonomic rank of the most specific name in the scientificName
 in_subset:

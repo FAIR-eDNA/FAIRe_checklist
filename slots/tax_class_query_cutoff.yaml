@@ -1,4 +1,5 @@
 name: tax_class_query_cutoff
+title: taxonomic assignment query coverage threshold
 description: >-
   Minimum percent query coverage for taxonomic assignment. Unit = %
 in_subset:

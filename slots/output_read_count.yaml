@@ -1,4 +1,5 @@
 name: output_read_count
+title: output read count
 description: >-
   The number of filtered sequence reads for each sample, that made it through
   bioinformatic filtering and used for final/subsequent analyses. Unit = reads

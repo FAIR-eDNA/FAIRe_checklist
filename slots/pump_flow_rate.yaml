@@ -1,4 +1,5 @@
 name: pump_flow_rate
+title: pump flow rate
 description: >-
   Pump flow rate of filtration if applicable
 in_subset:

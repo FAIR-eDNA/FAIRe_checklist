@@ -1,4 +1,5 @@
 name: env_medium
+title: environmental medium
 description: >-
   Environmental material or materials (pipe separated) immediately surrounded your sample prior to sampling. Select
   from ENVO's environmental material class (entity/ continuant/ independent continuant/ material entity/ environmental material):

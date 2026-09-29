@@ -1,4 +1,5 @@
 name: tax_class_id_cutoff
+title: taxonomic assignment identity threshold
 description: >-
   Minimum percent identity for taxonomic assignment. Unit = %
 in_subset:

@@ -1,4 +1,5 @@
 name: phix_perc
+title: PhiX percentage
 description: >-
   % of PhiX added into a library, if applicable. Unit = %
 in_subset:

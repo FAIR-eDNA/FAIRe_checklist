@@ -1,4 +1,5 @@
 name: estimatedNumberOfCopies
+title: estimated number of copies
 description: >-
   Estimated concentration of target molecules. Describe the approach taken
   to estimate it under the term estaimtedNumberOfCopies_method.

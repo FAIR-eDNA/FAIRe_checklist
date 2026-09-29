@@ -1,4 +1,5 @@
 name: samp_weather
+title: sampling day weather
 description: >-
   The weather on the sampling day
 in_subset:

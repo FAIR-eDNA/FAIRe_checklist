@@ -1,4 +1,5 @@
 name: baselineValue
+title: baseline value
 description: >-
   The number of cycles when fluorescence signal from the target amplification
   is below background fluorescence not originated from the real target amplification.

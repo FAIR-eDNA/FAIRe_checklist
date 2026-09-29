@@ -1,4 +1,5 @@
 name: pcr_assay_lod
+title: assay limit of detection
 description: >-
   Assay's limit of detection (LOD) (the lowest amount of target taxon DNA
   that can be detected with a defined level of confidence).

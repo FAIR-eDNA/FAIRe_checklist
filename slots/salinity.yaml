@@ -1,4 +1,5 @@
 name: salinity
+title: salinity
 description: >-
   The total concentration of all dissolved salts in a liquid or solid sample.
   While salinity can be measured by a complete chemical analysis, this method is difficult

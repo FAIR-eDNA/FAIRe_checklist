@@ -1,4 +1,5 @@
 name: inhibition_check
+title: PCR inhibition check method
 description: >-
   Description of method applied to detect inhibition and any adjustments
   made to improve PCR performance, such as sample dilution or the use of inhibitor-tolerant

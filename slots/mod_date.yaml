@@ -1,4 +1,5 @@
 name: mod_date
+title: date modified
 description: >-
   The last date on which the database information was modified, following
   the ISO 8601 format of yyyy-mm-dd. In case no exact time or date is available, the

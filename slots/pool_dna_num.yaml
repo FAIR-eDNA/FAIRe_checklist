@@ -1,4 +1,5 @@
 name: pool_dna_num
+title: number of pooled DNA extracts
 description: >-
   The number of extracts that were pooled in to one sample before PCR
 in_subset:
