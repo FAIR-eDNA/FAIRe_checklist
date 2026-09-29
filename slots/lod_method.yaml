@@ -17,7 +17,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: 'DOI: 10.1002/edn3.220'
+- value: doi:10.1002/edn3.220
   description: null
 source:
 exact_mappings: []
