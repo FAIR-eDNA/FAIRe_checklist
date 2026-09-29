@@ -1,0 +1,294 @@
+"""Fill the GSC "MIxS New Term Request Template" from FAIRe slots (#93).
+
+The slots to include are the files in gsc_submission/terms/. Each file holds the
+answers the template asks for that are not part of the slot (existing-term check,
+related MIxS terms, justification, ...). Everything else comes from slots/ and
+enums.yaml.
+
+Usage (from the repo root):
+    python doc_gen_scripts/generate_mixs_term_request.py \
+        --template MIxS_New_Term_Template.xlsx --out FAIRe_MIxS_term_request.xlsx
+"""
+
+import argparse
+import os
+import re
+import sys
+
+import openpyxl
+import yaml
+
+SLOTS_DIR = "slots"
+ENUMS_FILENAME = "enums.yaml"
+TERMS_DIR = os.path.join("gsc_submission", "terms")
+
+SHEET = "Terms"
+MIXS_TERMS_SHEET = "Existing MIxS Terms"
+FIRST_ROW = 4  # rows 1-3 are the template's group, column and hint rows
+
+# Template columns, by the header in row 2 (without the trailing " *").
+COLUMNS = {
+    "Slot name": "A",
+    "Title": "B",
+    "Description": "C",
+    "Value type": "D",
+    "Expected value": "E",
+    "Preferred unit(s)": "F",
+    "Permissible values": "G",
+    "Permissible value definitions / IDs": "H",
+    "Ontology / vocabulary source": "I",
+    "Value syntax (optional)": "J",
+    "Example value(s)": "K",
+    "Multivalued?": "L",
+    "Minimum value": "M",
+    "Maximum value": "N",
+    "Requirement level": "O",
+    "Existing MIxS term check": "P",
+    "Related MIxS term(s)": "Q",
+    "Justification / proposed changes": "R",
+    "External term mapping(s)": "S",
+    "Mapping type": "T",
+    "Comments / usage notes": "U",
+    "References": "V",
+    "Submitter questions": "W",
+}
+
+# Value type (template dropdown) -> Expected value text, as in the template's examples.
+EXPECTED_VALUE = {
+    "Measurement (number + unit)": "measurement value",
+    "Number, no unit": "number",
+    "Free text": "free text",
+    "Controlled vocabulary (pick from list)": "enumeration",
+    "Ontology term": "ontology term label and ID",
+    "Date / time": "date and time",
+    "Yes / No": "yes or no",
+    "Reference (PMID, DOI or URL)": "PMID, DOI or URL",
+}
+
+# FAIRe types (types.yaml) that map to a template value type.
+TYPE_VALUE_TYPE = {
+    "Timestamp": "Date / time",
+    "EnvoTerm": "Ontology term",
+    "Reference": "Reference (PMID, DOI or URL)",
+}
+
+MAPPING_TYPES = {
+    "exact_mappings": "exact",
+    "close_mappings": "close",
+    "broad_mappings": "broad",
+    "narrow_mappings": "narrow",
+    "related_mappings": "related",
+}
+
+EXISTING_TERM_CHECKS = {
+    "New term – no similar MIxS term found",
+    "New term – similar MIxS term exists (explain why it doesn't fit)",
+    "Reuse existing MIxS term as-is",
+    "Reuse existing MIxS term with changes (describe changes)",
+}
+
+
+def load_yaml(path):
+    with open(path, "r", encoding="utf-8") as handle:
+        return yaml.safe_load(handle) or {}
+
+
+def slot_ranges(slot):
+    """The slot's range plus any ranges under any_of."""
+    ranges = [slot.get("range")]
+    ranges += [option.get("range") for option in slot.get("any_of") or []]
+    return [r for r in ranges if r and r != "Any"]
+
+
+def value_type(slot, enums):
+    ranges = slot_ranges(slot)
+    if "boolean" in ranges:
+        return "Yes / No"
+    if any(r in enums for r in ranges):
+        return "Controlled vocabulary (pick from list)"
+    for r in ranges:
+        if r in TYPE_VALUE_TYPE:
+            return TYPE_VALUE_TYPE[r]
+    if "integer" in ranges:
+        return "Number, no unit"  # counts; MIxS models them as integers without a unit
+    if "float" in ranges:
+        return "Measurement (number + unit)" if slot.get("unit") else "Number, no unit"
+    return "Free text"
+
+
+def unit_name(slot):
+    return (slot.get("unit") or {}).get("descriptive_name") or ""
+
+
+def clean_description(text):
+    """One line, without FAIRe's trailing "Unit = ..." (the unit has its own column)."""
+    text = " ".join(str(text or "").split())
+    text = re.sub(r"\s*Unit\s*=\s*[^.]*\.?$", "", text).strip()
+    if text and not text.endswith("."):
+        text += "."
+    return text
+
+
+def permissible_values(slot, enums):
+    values, definitions = [], []
+    for r in slot_ranges(slot):
+        for value, spec in (enums.get(r, {}).get("permissible_values") or {}).items():
+            values.append(str(value))
+            spec = spec or {}
+            parts = [spec.get("description") or "", f"[{spec['meaning']}]" if spec.get("meaning") else ""]
+            detail = " ".join(p for p in parts if p)
+            if detail:
+                definitions.append(f"{value}: {detail}")
+    if values and "OtherText" in slot_ranges(slot):
+        values.append("other")  # FAIRe allows "other: <text>"
+    return "; ".join(values), "; ".join(definitions)
+
+
+def examples(slot, vtype):
+    unit = unit_name(slot) if vtype.startswith("Measurement") else ""
+    values = []
+    for example in slot.get("examples") or []:
+        value = str(example.get("value", "")).strip()
+        if value:
+            values.append(f"{value} {unit}" if unit else value)
+    return " || ".join(values)
+
+
+def requirement_level(slot):
+    if slot.get("required"):
+        return "Required"
+    if slot.get("recommended"):
+        return "Recommended"
+    return "Optional"
+
+
+def doi_url(ref):
+    ref = str(ref)
+    return "https://doi.org/" + ref[len("doi:"):] if ref.startswith("doi:") else ref
+
+
+def references(slot):
+    refs = []
+    source = slot.get("source")
+    if source and str(source).startswith("doi:"):
+        refs.append(doi_url(source))
+    refs += [doi_url(s) for s in slot.get("see_also") or []]
+    return "; ".join(refs)
+
+
+def is_mixs(curie):
+    curie = str(curie).lower()
+    return curie.startswith("mixs:") or curie.startswith("https://w3id.org/mixs/")
+
+
+def external_mappings(slot):
+    """Non-MIxS mapping CURIEs and their type. A non-DOI source with no mapping is listed
+    without a type. MIxS terms are left out: they go in the Related MIxS term(s) column."""
+    curies, types = [], set()
+    for key, label in MAPPING_TYPES.items():
+        for curie in slot.get(key) or []:
+            if not is_mixs(curie):
+                curies.append(str(curie))
+                types.add(label)
+    source = slot.get("source")
+    # A list is an unresolved source (names like "NOAA", #52), not a CURIE.
+    if (not curies and isinstance(source, str) and source
+            and not source.startswith("doi:") and not is_mixs(source)):
+        curies.append(str(source))
+    mapping_type = types.pop() if len(types) == 1 else ""
+    return "; ".join(curies), mapping_type
+
+
+def build_row(name, slot, answers, enums, mixs_titles):
+    vtype = value_type(slot, enums)
+    values, value_definitions = permissible_values(slot, enums)
+    if vtype == "Yes / No":
+        # BooleanEnum's spellings (true, TRUE, 1, yes, ...) are how FAIRe accepts yes/no;
+        # the template's Yes / No value type already says that.
+        values, value_definitions = "", ""
+    mappings, mapping_type = external_mappings(slot)
+    # Only the answers file's comments: a slot's own comments are notes for FAIRe users.
+    comments = " ".join(str(answers.get("comments") or "").split())
+    # A "reuse with changes" row is named after the MIxS term it changes (as in the
+    # template's filter_type example); its title comes from the template's MIxS list.
+    title = slot.get("title") or ""
+    if answers.get("mixs_term"):
+        name = answers["mixs_term"]
+        title = mixs_titles[name]
+    return {
+        "Slot name": name,
+        "Title": title,
+        "Description": clean_description(slot.get("description")),
+        "Value type": vtype,
+        "Expected value": EXPECTED_VALUE.get(vtype, ""),
+        "Preferred unit(s)": unit_name(slot) if vtype.startswith("Measurement") else "",
+        "Permissible values": values,
+        "Permissible value definitions / IDs": value_definitions,
+        "Example value(s)": examples(slot, vtype),
+        "Multivalued?": "Yes" if slot.get("multivalued") else "No",
+        "Minimum value": slot.get("minimum_value", ""),
+        "Maximum value": slot.get("maximum_value", ""),
+        "Requirement level": requirement_level(slot),
+        "Existing MIxS term check": answers["existing_term_check"],
+        "Related MIxS term(s)": answers.get("related_mixs_terms") or "",
+        "Justification / proposed changes": " ".join(str(answers.get("justification") or "").split()),
+        "External term mapping(s)": mappings,
+        "Mapping type": mapping_type,
+        "Comments / usage notes": comments,
+        "References": references(slot),
+        "Submitter questions": " ".join(str(answers.get("submitter_questions") or "").split()),
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--template", required=True, help="the GSC template (.xlsx)")
+    parser.add_argument("--out", required=True, help="the filled workbook to write")
+    args = parser.parse_args()
+
+    enums = load_yaml(ENUMS_FILENAME).get("enums", {})
+    workbook = openpyxl.load_workbook(args.template)
+    mixs_titles = {
+        row[0]: row[1] or ""
+        for row in workbook[MIXS_TERMS_SHEET].iter_rows(min_row=2, values_only=True)
+        if row[0]
+    }
+    rows, problems, blocked = [], [], []
+    for filename in sorted(os.listdir(TERMS_DIR)):
+        if not filename.endswith(".yaml"):
+            continue
+        name = filename[: -len(".yaml")]
+        answers = load_yaml(os.path.join(TERMS_DIR, filename))
+        if answers.get("blocked"):
+            blocked.append(f"{name}: {' '.join(str(answers['blocked']).split())}")
+            continue
+        slot_path = os.path.join(SLOTS_DIR, filename)
+        if not os.path.exists(slot_path):
+            problems.append(f"{name}: no slot file {slot_path}")
+            continue
+        if answers.get("existing_term_check") not in EXISTING_TERM_CHECKS:
+            problems.append(f"{name}: existing_term_check must be one of the template's dropdown values")
+            continue
+        if answers.get("mixs_term") and answers["mixs_term"] not in mixs_titles:
+            problems.append(f"{name}: mixs_term {answers['mixs_term']} is not in the template's MIxS term list")
+            continue
+        rows.append(build_row(name, load_yaml(slot_path), answers, enums, mixs_titles))
+    if problems:
+        sys.exit("\n".join(problems))
+
+    sheet = workbook[SHEET]
+    headers = {str(c.value).rstrip(" *"): c.column_letter for c in sheet[2] if c.value}
+    for header, column in COLUMNS.items():
+        if headers.get(header) != column:
+            sys.exit(f"Template column {column} is not '{header}'; the template has changed")
+    for offset, row in enumerate(rows):
+        for header, value in row.items():
+            sheet[f"{COLUMNS[header]}{FIRST_ROW + offset}"] = value if value != "" else None
+    workbook.save(args.out)
+    print(f"Wrote {len(rows)} terms to {args.out}")
+    if blocked:
+        print(f"Left out {len(blocked)} blocked terms:\n  " + "\n  ".join(blocked))
+
+
+if __name__ == "__main__":
+    main()

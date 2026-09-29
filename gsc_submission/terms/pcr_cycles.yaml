@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#198
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: pcr_cond (MIXS:0000049); reamp_pcr_cyc_tot (MIXS:0001394); capt_pcr_cyc_tot (MIXS:0001395)
+justification: >-
+  pcr_cond can hold the number of cycles, but its format is hard for data providers
+  to fill in, so it is prone to errors and hard to reuse. Data re-users look for the
+  number of PCR cycles, so a separate term makes it easier to find and compare.
+  reamp_pcr_cyc_tot and capt_pcr_cyc_tot count cycles after library indexing or
+  capture, not the cycles of the amplification PCR.

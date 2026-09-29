@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#15
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The kind of assay (metabarcoding, or a targeted assay such as qPCR or dPCR) decides
+  which other terms apply to a record and how its results are read. MIxS has no term
+  for it. DwC-DP and GA4GH have already adopted FAIRe's assay_type.
+comments: >-
+  The values have no ontology terms yet. The TDWG/GSC eDNA working group agreed
+  (2025-11-25) to propose them to OBI as subclasses of OBI:0002692.

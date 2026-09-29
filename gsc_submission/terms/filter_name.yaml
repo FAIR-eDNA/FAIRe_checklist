@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#87
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: filter_type (MIXS:0000765)
+justification: >-
+  filter_type records the kind of air-filter device. In eDNA studies, the commercial
+  filter product (e.g. an enclosed Sterivex cartridge versus an open membrane) affects
+  DNA capture and contamination risk, so the product name is needed to compare and
+  repeat sampling.

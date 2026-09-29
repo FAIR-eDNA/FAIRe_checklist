@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#25
+mixs_term: samp_rep_biol
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: samp_rep_biol (MIXS:0001226)
+justification: >-
+  Replace the description with "The number of biological replicates collected at each
+  sampling point and/or for each experimental treatment in the study." The current
+  description does not say what value to report. Make the value a whole number (e.g.
+  5) instead of text with a unit (6 replicates).

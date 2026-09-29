@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#21
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: lib_gener_technique (MIXS:0001392); lib_mid_desc (MIXS:0001388)
+justification: >-
+  lib_gener_technique records that a library is amplicon-based, and lib_mid_desc
+  describes the index setup as free text, but neither records how indexes and adapters
+  were added in metabarcoding. The approach decides which PCR terms apply (e.g. the
+  second-PCR terms for two-step PCR) and affects index misassignment and amplification
+  bias. The term follows MIEM (Klymus et al. 2024).
+comments: >-
+  one-step PCR: indexes and adapters are added in the amplification PCR (tagged
+  primers). two-step PCR: a second PCR adds indexes and adapters to the first-PCR
+  amplicons. ligation-based: indexes and adapters are ligated to the amplicons.

@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#23
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: prev_pubs (MIXS:0001370); associated_resource (MIXS:0000091)
+justification: >-
+  prev_pubs covers earlier publications reporting non-nucleic-acid data from the same
+  sample, and associated_resource covers resources linked to a sequence; both are at
+  sample level. bibliographicCitation gives the citation for the dataset or project as
+  a whole, like other project-level MIxS terms (e.g. project_name).
+submitter_questions: >-
+  This is the Dublin Core term (dcterms:bibliographicCitation), unchanged. Could MIxS
+  reuse it directly instead of minting a new term?

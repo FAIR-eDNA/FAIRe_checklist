@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#5
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: otu_db (MIXS:0000087)
+justification: >-
+  otu_db names the reference database used for taxonomic assignment, but not which
+  record in it was the best match. Reporting the accession of the best-matching
+  sequence lets others check an assignment and repeat it when the database changes.

@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#105
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Environmental samples often contain PCR inhibitors, which cause false negatives or
+  underestimated quantities. How inhibition was checked and handled is needed to
+  interpret non-detections and qPCR results. MIQE also asks for evidence that
+  inhibition was tested. MIxS has no term for it.

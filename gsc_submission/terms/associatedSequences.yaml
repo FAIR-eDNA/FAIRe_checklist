@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#17
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Links a sample to its sequence records (e.g. SRA run, BioSample, BioProject) so that
+  its metadata and sequences can be found together, including when the data are also
+  published outside INSDC (e.g. GBIF, OBIS). MIxS has no term for this. Accession IDs
+  come from submission, but a BioProject accession exists before BioSample and SRA
+  records are created, so it can be reported with the sample. Darwin Core's
+  associatedSequences is widely used for this.
+submitter_questions: >-
+  Would the GSC prefer separate terms for INSDC accessions (BioProject, BioSample, SRA
+  run) instead of, or as well as, one list?

@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#145
+mixs_term: nucl_acid_ext
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: nucl_acid_ext (MIXS:0000037)
+justification: >-
+  Add a sentence to the description: "If a custom extraction method has been developed
+  and applied to the samples within this dataset, it is Highly recommended to make the
+  SOP available and provide the link here." Many eDNA studies use modified or custom
+  extraction protocols, and without a published SOP they cannot be repeated.

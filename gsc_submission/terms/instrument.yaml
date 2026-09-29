@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#110
+blocked: >-
+  Waits on FAIRe_checklist #105 (new term, or changes to MIxS seq_meth, which records
+  the same thing) and #74 (the description links a single instrument instead of the
+  DNA sequencer class).

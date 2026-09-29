@@ -1,0 +1,7 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#11
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Amplicon length is a MIQE checklist item and is needed to interpret qPCR results
+  and to set length filters in metabarcoding. MIxS has no term for it. It is already
+  in the GBIF DNA-derived data extension (ampliconSize).

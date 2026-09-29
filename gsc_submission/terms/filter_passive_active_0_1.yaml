@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#88
+blocked: >-
+  Waits on FAIRe_checklist #31: change "water/ air samples" to "environmental samples"
+  in the description (sediment can also be collected passively or actively), as
+  suggested on the review issue (2026-04-30).

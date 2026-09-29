@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#29
+blocked: >-
+  Waits on FAIRe_checklist #102: the working group (2026-06-29) decided to add
+  block_taxonID and block_taxonID_db and to propose all block_* terms to the GSC
+  together.

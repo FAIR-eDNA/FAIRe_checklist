@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#65
+blocked: >-
+  Waits on FAIRe_checklist #103: the description ("The DNA sequence.") only repeats the
+  title; the FAIRe group to decide on lukenoaa's wording ("DNA sequence of
+  representative sequence") or another.

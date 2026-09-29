@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#128
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: mid (MIXS:0000047)
+justification: >-
+  mid holds one MID per sample, but dual-indexed libraries use a forward and a reverse
+  MID. Separate forward and reverse terms, as for primers and adapters, let both be
+  reported unambiguously. The DwC-DP terms are based on MIxS, so the split terms are
+  also proposed to TDWG.

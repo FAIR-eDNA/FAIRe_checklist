@@ -1,0 +1,5 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#86
+blocked: >-
+  Waits on FAIRe_checklist #104: propose filter_material as a new term, or as changes
+  to MIxS filter_type (MIXS:0000765), as in the template's own example?

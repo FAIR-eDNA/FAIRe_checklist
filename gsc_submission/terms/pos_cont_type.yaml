@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#222
+blocked: >-
+  Waits on FAIRe_checklist #108: MIxS's term of the same name records the control
+  material, FAIRe's the purpose; the group to settle the shape of the row (e.g. new
+  term neg_cont_purpose/pos_cont_purpose, or changes to the MIxS term).

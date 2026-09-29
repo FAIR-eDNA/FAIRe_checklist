@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#147
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: nucl_acid_ext (MIXS:0000037); sc_lysis_method (MIXS:0000054)
+justification: >-
+  nucl_acid_ext links to the whole extraction protocol, and sc_lysis_method names the
+  kit or protocol used for lysis; neither gives the lysis approach (chemical,
+  enzymatic, physical, ...) as a controlled value. The approach affects which
+  organisms' DNA is recovered (e.g. tough-walled cells need physical lysis), so a
+  controlled term lets datasets be compared directly.
+comments: >-
+  The values have no ontology terms yet.

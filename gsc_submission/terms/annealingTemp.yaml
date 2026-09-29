@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#13
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: pcr_cond (MIXS:0000049)
+justification: >-
+  pcr_cond can hold the annealing temperature, but its format is hard for data
+  providers to fill in, so it is prone to errors and hard to reuse. Data re-users look
+  for the annealing temperature, so a separate term makes it easier to find and
+  compare. It is a MIQE checklist item and already in the GBIF DNA-derived data
+  extension (annealingTemp).
+submitter_questions: >-
+  The name could start with pcr_ (e.g. pcr_annealing_temp) to match other MIxS pcr_*
+  terms; we are happy to follow the GSC's naming.

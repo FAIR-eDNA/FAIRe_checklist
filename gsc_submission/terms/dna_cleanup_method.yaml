@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#64
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  eDNA extracts are often cleaned after extraction to remove PCR inhibitors, and the
+  clean-up method affects DNA yield and detection. MIxS has no term for it.

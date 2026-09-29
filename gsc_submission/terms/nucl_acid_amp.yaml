@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#144
+mixs_term: nucl_acid_amp
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: nucl_acid_amp (MIXS:0000038)
+justification: >-
+  Broaden the end of the description from "the enzymatic amplification (PCR, TMA,
+  NASBA) of specific nucleic acids" to "the nucleic acid amplification", so the term
+  also covers amplification approaches not named in the list.

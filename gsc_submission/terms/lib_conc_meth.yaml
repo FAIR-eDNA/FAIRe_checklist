@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#114
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The concentration of the library pool loaded for sequencing affects cluster density
+  and read yield. Fluorometric, qPCR-based and electrophoretic methods give different
+  values for the same library, so the method is needed to interpret lib_conc. MIxS
+  has no library concentration terms.

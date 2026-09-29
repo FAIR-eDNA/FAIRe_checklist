@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#93
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Detections from artificial systems such as mesocosms, aquaria or zoo enclosures
+  should not be read as occurrences in the wild. This term lets users tell them apart.
+  MIxS's environment terms (env_broad_scale, env_local_scale, env_medium) describe the
+  kind of environment, not whether it was controlled by researchers.
+comments: >-
+  Yes (1) = artificial habitat; no (0) = natural habitat.

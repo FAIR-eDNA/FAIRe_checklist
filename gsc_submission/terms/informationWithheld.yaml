@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#104
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  INSDC's missing-value vocabulary says, field by field, that a value is missing and
+  why. informationWithheld describes what additional information exists but is not
+  shared, e.g. exact locations of an endangered species, so users know it may be
+  available on request.
+submitter_questions: >-
+  This is Darwin Core's informationWithheld, unchanged. Could MIxS reuse it directly?
+  Our working group noted that INSDC's missing-value vocabulary may make it
+  unnecessary; we leave that to the GSC.

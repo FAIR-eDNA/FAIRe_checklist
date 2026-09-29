@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#38
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: sop (MIXS:0000090); associated_resource (MIXS:0000091)
+justification: >-
+  sop and associated_resource can hold a link, but neither says that it points to the
+  code used for the analysis. A dedicated term lets users find and rerun the analysis
+  code, e.g. a GitHub repository or its Zenodo archive.

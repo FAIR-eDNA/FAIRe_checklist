@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#89
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The filter area determines how much material a filter can hold before clogging and
+  how much DNA it captures, so it is needed to compare eDNA yields between studies. It
+  is one of the variables Thalinger et al. (2021) list for eDNA sampling. MIxS has no
+  term for it.

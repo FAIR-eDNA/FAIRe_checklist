@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#149
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: nucl_acid_ext (MIXS:0000037)
+justification: >-
+  eDNA studies often follow a commercial kit or published protocol with changes, e.g.
+  larger lysis volumes for filters. nucl_acid_ext links to the protocol; this term
+  records how it was changed, which would otherwise need a separate SOP. It is one of
+  the variables Thalinger et al. (2021) list for eDNA studies.

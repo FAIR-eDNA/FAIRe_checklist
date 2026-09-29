@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#28
+blocked: >-
+  Waits on FAIRe_checklist #101: the working group (2026-06-29) wants the description
+  to say bases are IUPAC nucleotide codes, except modified bases such as C3, before
+  it is proposed.

@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#90
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  eDNA results report the taxon assigned to each sequence (OTU/ASV). MIxS has no terms
+  for taxonomic identification, so FAIRe uses the Darwin Core terms, which GBIF and
+  OBIS also use.
+submitter_questions: >-
+  This is a Darwin Core term (dwc:genus). Could MIxS reuse it directly instead of
+  minting a new term?

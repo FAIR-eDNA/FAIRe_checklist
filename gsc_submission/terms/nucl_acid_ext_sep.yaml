@@ -1,0 +1,11 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#150
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: nucl_acid_ext (MIXS:0000037)
+justification: >-
+  nucl_acid_ext links to the whole extraction protocol, which users must read to find
+  how DNA was separated. The separation approach (e.g. column-based, magnetic beads,
+  phenol-chloroform) affects DNA yield and inhibitor carry-over, so a controlled term
+  lets datasets be compared directly.
+comments: >-
+  The values have no ontology terms yet.

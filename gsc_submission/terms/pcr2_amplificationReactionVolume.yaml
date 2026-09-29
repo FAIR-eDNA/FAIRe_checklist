@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#174
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  In two-step metabarcoding PCR (barcoding_pcr_appr), a second PCR adds indexes and
+  adapters. Its conditions differ from the first PCR and also affect amplification bias
+  and index misassignment. This term records the second PCR's reaction volume, alongside
+  the first-PCR term amplificationReactionVolume.

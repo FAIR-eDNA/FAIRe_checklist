@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#118
+mixs_term: lib_screen
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: lib_screen (MIXS:0000043)
+justification: >-
+  Add or replace the example with a full description, as in the example value of
+  this row. The current example (enriched, screened, normalized) gives only keywords;
+  a worked example shows new users the level of detail expected.

@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#45
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Records how shared data (e.g. location or date) were made less precise, for example
+  to protect a sensitive species, so users know how precise the data are and that
+  more precise data may be available on request. MIxS has no term for this.
+comments: >-
+  FAIRe's definition adds one sentence to Darwin Core's dwc:dataGeneralizations: that
+  the term is not about genetic generalisation in bioinformatics (e.g. OTU
+  clustering), to avoid confusion with molecular data.
+submitter_questions: >-
+  Should MIxS reuse dwc:dataGeneralizations with the Darwin Core definition, or adopt
+  FAIRe's definition with the added sentence?

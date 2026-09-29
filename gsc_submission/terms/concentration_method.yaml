@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#41
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: samp_dna_conc (MIXS:0001352)
+justification: >-
+  samp_dna_conc records the DNA concentration but not how it was measured.
+  Fluorometric and spectrophotometric methods give different values for the same
+  extract, so the method is needed to compare concentrations.
+submitter_questions: >-
+  We propose that MIxS adopt the GGBN term methodDeterminationConcentrationAndRatios,
+  which the GBIF DNA-derived data extension and DwC-DP already use, so the three
+  standards stay aligned. FAIRe's name and definition are offered as a clearer label
+  for it.

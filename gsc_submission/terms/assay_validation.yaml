@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#16
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  A targeted assay that also detects non-target species gives false positives, so how
+  an assay's specificity was tested shows how far its detections can be trusted. This
+  is a core part of eDNA assay validation (e.g. the validation scale of Thalinger et
+  al. 2021). MIxS has no term for it.

@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#27
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Blocking primers suppress the amplification of an abundant non-target group (e.g.
+  host DNA in a diet study), which changes which taxa can be detected. MIxS has no
+  terms for blocking primers. This term identifies the published blocking primer used,
+  or records that it was custom-made.

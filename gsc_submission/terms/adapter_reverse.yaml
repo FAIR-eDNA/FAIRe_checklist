@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#8
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: adapters (MIXS:0000048)
+justification: >-
+  adapters holds both sequences in one value (forward;reverse), which data providers
+  must format correctly and users must split. Separate forward and reverse terms are
+  easier to fill in and to reuse. The DwC-DP adapter terms are based on MIxS, so the
+  split terms are also proposed to TDWG.

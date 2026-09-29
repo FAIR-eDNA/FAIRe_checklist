@@ -1,0 +1,7 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#14
+blocked: >-
+  Needs discussion. sformel (2026-05-13) found the definition too vague; the
+  2026-07-21 meeting explained the term (an assay identifier unique within a project,
+  linking assay records across FAIRe tables) but the description was not updated, and
+  it still says the ID is used in FAIRe file names. Decide the definition to submit.

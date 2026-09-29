@@ -1,0 +1,5 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#135
+blocked: >-
+  Waits on FAIRe_checklist #107: rename mod_date to modified (dcterms:modified), as
+  decided; the GSC gets Dublin Core's modified, not mod_date.

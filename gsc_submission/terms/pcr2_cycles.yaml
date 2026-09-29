@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#180
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: reamp_pcr_cyc_tot (MIXS:0001394)
+justification: >-
+  In two-step metabarcoding PCR (barcoding_pcr_appr), a second PCR adds indexes and
+  adapters. Its conditions differ from the first PCR and also affect amplification bias
+  and index misassignment. This term records the second PCR's number of cycles,
+  alongside the first-PCR term pcr_cycles. reamp_pcr_cyc_tot counts cycles after the
+  indexing PCR; in two-step PCR the second PCR is the indexing PCR.

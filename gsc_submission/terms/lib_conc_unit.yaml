@@ -1,0 +1,5 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#115
+blocked: >-
+  Waits on FAIRe_checklist #106: propose lib_conc as one measurement with preferred
+  units (MIxS style), or lib_conc and lib_conc_unit as two fields?
