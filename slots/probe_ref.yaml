@@ -9,7 +9,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: __TODO_ADD_SLOT_URI__
-range: string
+range: Reference
 structured_pattern:
   syntax: null
   interpolated: null
@@ -17,7 +17,7 @@ structured_pattern:
 required: false
 recommended: true
 examples:
-- value: 10.1007/s00227-017-3141-x
+- value: doi:10.1007/s00227-017-3141-x
   description: null
 source:
 exact_mappings: []
