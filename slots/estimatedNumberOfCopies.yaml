@@ -2,7 +2,7 @@ name: estimatedNumberOfCopies
 title: estimated number of copies
 description: >-
   Estimated concentration of target molecules. Describe the approach taken
-  to estimate it under the term estaimtedNumberOfCopies_method.
+  to estimate it under the term estimatedNumberOfCopies_method.
 in_subset:
   - Targeted assay detection
 annotations:
