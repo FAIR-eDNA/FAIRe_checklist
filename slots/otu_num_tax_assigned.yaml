@@ -11,6 +11,7 @@ annotations:
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: integer
+minimum_value: 0
 structured_pattern:
   syntax: null
   interpolated: null

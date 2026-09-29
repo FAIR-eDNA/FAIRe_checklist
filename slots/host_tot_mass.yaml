@@ -11,6 +11,7 @@ annotations:
   sample_type_specificity: HostAssociated | SymbiontAssociated
 slot_uri: mixs:0000263
 range: float
+minimum_value: 0
 structured_pattern:
   syntax: null
   interpolated: null

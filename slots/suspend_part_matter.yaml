@@ -11,6 +11,7 @@ annotations:
   sample_type_specificity: Water
 slot_uri: mixs:0000741
 range: float
+minimum_value: 0
 unit:
   ucum_code: mg/L
   descriptive_name: milligram per liter

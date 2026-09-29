@@ -13,6 +13,7 @@ annotations:
   modifications_made: field_type
 slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+minimum_value: 0
 unit:
   ucum_code: um
   descriptive_name: micrometer

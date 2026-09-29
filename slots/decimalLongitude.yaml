@@ -16,6 +16,8 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+minimum_value: -180
+maximum_value: 180
 structured_pattern:
   syntax: null
   interpolated: null

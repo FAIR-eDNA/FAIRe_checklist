@@ -12,6 +12,7 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+minimum_value: 0
 structured_pattern:
   syntax: null
   interpolated: null

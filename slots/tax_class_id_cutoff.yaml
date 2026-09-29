@@ -10,6 +10,8 @@ annotations:
   requirement_level_code: R
 slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+minimum_value: 0
+maximum_value: 100
 unit:
   ucum_code: '%'
   descriptive_name: percent

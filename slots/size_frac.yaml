@@ -11,6 +11,7 @@ annotations:
   sample_type_specificity: Water | Air
 slot_uri: mixs:0000017
 range: float
+minimum_value: 0
 unit:
   ucum_code: um
   descriptive_name: micrometer

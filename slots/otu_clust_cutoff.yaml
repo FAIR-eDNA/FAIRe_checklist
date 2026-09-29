@@ -12,6 +12,8 @@ annotations:
   modifications_made: field_name | description
 slot_uri: https://w3id.org/mixs/0000085
 range: float
+minimum_value: 0
+maximum_value: 100
 unit:
   ucum_code: '%'
   descriptive_name: percent

@@ -20,6 +20,7 @@ keywords:
   - MIQE
 slot_uri: __TODO_ADD_SLOT_URI__
 range: float
+minimum_value: 0
 unit:
   descriptive_name: PCR quantification cycle
   exact_mappings:

@@ -13,6 +13,7 @@ annotations:
   modifications_made: description
 slot_uri: __TODO_ADD_SLOT_URI__
 range: integer
+minimum_value: 1
 unit:
   descriptive_name: cycle
   exact_mappings:
