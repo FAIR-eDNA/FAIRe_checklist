@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: ALL
 slot_uri: mixs:0000827
-range: string
+range: SampWeatherEnum
 structured_pattern:
   syntax: null
   interpolated: null

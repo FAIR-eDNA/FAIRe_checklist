@@ -246,6 +246,19 @@ enums:
       negative control:
       positive control:
       sample:
+  SampWeatherEnum:
+    description: >-
+      Controlled vocabulary for samp_weather. Same values as MIxS SampWeatherEnum (#36).
+    permissible_values:
+      clear sky:
+      cloudy:
+      foggy:
+      hail:
+      rain:
+      sleet:
+      snow:
+      sunny:
+      windy:
   SampleSizeUnitEnum:
     description: Units for the amount of sample, as volume, mass or area.
     permissible_values:
@@ -325,6 +338,14 @@ enums:
       order:
       phylum:
       species:
+  TidalStageEnum:
+    description: >-
+      Controlled vocabulary for tidal_stage. Same values as MIxS TidalStageEnum (#37).
+    permissible_values:
+      ebb tide:
+      flood tide:
+      high tide:
+      low tide:
   VerbatimCoordinateSystemEnum:
     description: Controlled vocabulary for verbatimCoordinateSystem.
     permissible_values:

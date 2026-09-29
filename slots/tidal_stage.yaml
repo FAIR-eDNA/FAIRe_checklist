@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Sediment
 slot_uri: mixs:0000750
-range: string
+range: TidalStageEnum
 structured_pattern:
   syntax: null
   interpolated: null
