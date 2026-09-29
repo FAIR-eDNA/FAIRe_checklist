@@ -17,10 +17,6 @@ unit:
   descriptive_name: read
   exact_mappings:
   - unit:COUNT
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

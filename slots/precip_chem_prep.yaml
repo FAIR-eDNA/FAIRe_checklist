@@ -19,10 +19,6 @@ any_of:
 - range: PrecipChemPrepEnum
 - range: OtherText
 multivalued: true
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

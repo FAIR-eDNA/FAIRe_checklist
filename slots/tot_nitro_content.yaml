@@ -12,10 +12,6 @@ annotations:
 slot_uri: mixs:0000530
 range: float
 minimum_value: 0
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

@@ -18,10 +18,6 @@ unit:
   descriptive_name: nephelometric turbidity unit
   exact_mappings:
   - unit:NTU
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

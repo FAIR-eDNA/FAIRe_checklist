@@ -19,10 +19,6 @@ maximum_value: 100
 unit:
   ucum_code: '%'
   descriptive_name: percent
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

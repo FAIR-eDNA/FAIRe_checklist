@@ -14,10 +14,6 @@ range: float
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

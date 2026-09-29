@@ -20,10 +20,6 @@ unit:
   descriptive_name: practical salinity unit
   exact_mappings:
   - unit:PSU
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

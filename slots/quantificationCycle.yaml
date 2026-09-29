@@ -25,10 +25,6 @@ unit:
   descriptive_name: PCR quantification cycle
   exact_mappings:
   - UO:0010077
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

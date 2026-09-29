@@ -15,10 +15,6 @@ minimum_value: 0
 unit:
   ucum_code: mg/L
   descriptive_name: milligram per liter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

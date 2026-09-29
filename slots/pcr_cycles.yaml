@@ -18,10 +18,6 @@ unit:
   descriptive_name: cycle
   exact_mappings:
   - unit:CYC
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

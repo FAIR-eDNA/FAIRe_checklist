@@ -11,10 +11,6 @@ annotations:
   requirement_level_code: M
 slot_uri: https://w3id.org/nmdc/project_id
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

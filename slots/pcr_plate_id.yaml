@@ -15,10 +15,6 @@ annotations:
   requirement_level_condition: If assay_type = targeted
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

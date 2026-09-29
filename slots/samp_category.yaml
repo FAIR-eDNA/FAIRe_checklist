@@ -14,10 +14,6 @@ range: string
 any_of:
 - range: SampCategoryEnum
 - range: OtherText
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

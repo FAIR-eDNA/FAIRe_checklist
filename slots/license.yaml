@@ -11,10 +11,6 @@ annotations:
   requirement_level_code: R
 slot_uri: dcterms:license
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

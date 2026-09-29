@@ -12,10 +12,6 @@ annotations:
   modifications_made: description
 slot_uri: https://w3id.org/mixs/0000064
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples: []

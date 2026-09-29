@@ -11,10 +11,6 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
 slot_uri: mixs:0000337
 range: Reference
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

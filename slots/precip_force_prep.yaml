@@ -19,10 +19,6 @@ minimum_value: 0
 unit:
   ucum_code: '[g]'
   descriptive_name: standard gravity (x g)
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

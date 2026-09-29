@@ -14,10 +14,6 @@ minimum_value: 0
 unit:
   ucum_code: uL
   descriptive_name: microliter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

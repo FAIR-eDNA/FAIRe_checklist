@@ -15,10 +15,6 @@ range: string
 any_of:
 - range: FilterMaterialEnum
 - range: OtherText
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

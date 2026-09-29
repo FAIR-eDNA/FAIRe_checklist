@@ -14,10 +14,6 @@ range: string
 any_of:
 - range: HostTotMassUnitEnum
 - range: OtherText
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

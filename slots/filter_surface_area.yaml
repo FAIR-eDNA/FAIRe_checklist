@@ -17,10 +17,6 @@ minimum_value: 0
 unit:
   ucum_code: mm2
   descriptive_name: square millimeter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

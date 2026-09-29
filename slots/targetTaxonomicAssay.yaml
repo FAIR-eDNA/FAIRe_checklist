@@ -12,10 +12,6 @@ annotations:
   requirement_level_condition: If pcr_0_1 is 1. Else, recommended
 slot_uri: __TODO_ADD_SLOT_URI__
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

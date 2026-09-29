@@ -15,10 +15,6 @@ minimum_value: 0
 unit:
   ucum_code: um
   descriptive_name: micrometer
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

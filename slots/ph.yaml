@@ -15,10 +15,6 @@ range: float
 unit:
   ucum_code: '[pH]'
   descriptive_name: pH
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

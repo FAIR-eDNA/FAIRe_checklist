@@ -14,10 +14,6 @@ unit:
   descriptive_name: relative fluorescence unit
   exact_mappings:
   - UO:0000314
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:

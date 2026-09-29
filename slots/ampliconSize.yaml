@@ -19,10 +19,6 @@ unit:
   descriptive_name: base pair
   exact_mappings:
   - unit:BasePair
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

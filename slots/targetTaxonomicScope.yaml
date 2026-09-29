@@ -12,10 +12,6 @@ annotations:
   requirement_level_code: R
 slot_uri: eco:targetTaxonomicScope
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

@@ -18,10 +18,6 @@ slot_uri: __TODO_ADD_SLOT_URI__
 range: float
 minimum_value: -90
 maximum_value: 90
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

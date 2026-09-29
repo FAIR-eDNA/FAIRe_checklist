@@ -20,10 +20,6 @@ minimum_value: 0
 unit:
   ucum_code: nmol/L
   descriptive_name: nanomole per liter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:

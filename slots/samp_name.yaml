@@ -13,10 +13,6 @@ annotations:
   requirement_level_code: M
 slot_uri: mixs:0001107
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:

@@ -18,10 +18,6 @@ any_of:
 - range: integer
   minimum_value: 0
   maximum_value: 1
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
