@@ -17,7 +17,7 @@ recommended: false
 examples:
 - value: The extracted DNA was tested using a serial dilution approach (undiluted,
     1:10, 1:100). qPCR was performed on each dilution to evaluate amplification efficiency
-    and inhibition. The dillution with optimal performance with reduced inhibition
+    and inhibition. The dilution with optimal performance with reduced inhibition
     was selected for subsequent analysis in the workflow.
   description: null
 source:
