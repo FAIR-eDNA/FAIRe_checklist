@@ -1,7 +1,7 @@
 name: pcr2_dna_vol
 title: second PCR DNA volume
 description: >-
-  (If bacroding_pcr_appr = "two-step PCR") Volume of DNA added in each
+  (If barcoding_pcr_appr = "two-step PCR") Volume of DNA added in each
   reaction in the second step PCR.
 in_subset:
   - Library preparation sequencing

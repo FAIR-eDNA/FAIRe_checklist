@@ -1,7 +1,7 @@
 name: pcr2_cycles
 title: number of second PCR cycles
 description: >-
-  (If bacroding_pcr_appr = "two-step PCR") Number of PCR cycles in the
+  (If barcoding_pcr_appr = "two-step PCR") Number of PCR cycles in the
   second step PCR.
 in_subset:
   - Library preparation sequencing

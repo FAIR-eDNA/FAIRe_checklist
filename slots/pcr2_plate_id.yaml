@@ -1,7 +1,7 @@
 name: pcr2_plate_id
 title: second PCR plate ID
 description: >-
-  (If bacroding_pcr_appr = "two-step PCR") Plate ID in the second step
+  (If barcoding_pcr_appr = "two-step PCR") Plate ID in the second step
   PCR.
 in_subset:
   - Library preparation sequencing

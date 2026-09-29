@@ -1,7 +1,7 @@
 name: pcr2_custom_mm
 title: second PCR custom master mix
 description: >-
-  (If bacroding_pcr_appr = "two-step PCR") composition of custom master
+  (If barcoding_pcr_appr = "two-step PCR") composition of custom master
   mix, including the names, volumes and concentrations of additives (i.e., salts,
   buffers, enzyme and other components) in the second step PCR (if custom master
   mix was used).
