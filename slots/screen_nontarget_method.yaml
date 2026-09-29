@@ -1,7 +1,7 @@
 name: screen_nontarget_method
 title: non-target species screening method
 description: >-
-  How were non-target species screened and applied?
+  Description of how non-target species were screened for, and how the results were applied.
 in_subset:
   - Bioinformatics
 annotations:

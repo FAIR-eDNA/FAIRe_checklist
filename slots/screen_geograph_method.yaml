@@ -1,7 +1,8 @@
 name: screen_geograph_method
 title: geographic distribution screening method
 description: >-
-  How were species distribution information screened and applied?
+  Description of how species distribution information was used to screen detections, and how the results
+  were applied.
 in_subset:
   - Bioinformatics
 annotations:

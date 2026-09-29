@@ -1,7 +1,8 @@
 name: screen_contam_method
 title: contamination screening method
 description: >-
-  How were contaminations screened and applied in data curation/analyses/interpretation?
+  Description of how contamination was screened for, and how the results were applied in data curation,
+  analyses or interpretation.
 in_subset:
   - Bioinformatics
 annotations:
