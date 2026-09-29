@@ -1,7 +1,7 @@
 name: output_otu_num
 title: number of OTUs/ASVs
 description: >-
-  Total number of OTUs or ASVs for each sample
+  Total number of OTUs or ASVs for each sample.
 in_subset:
   - Bioinformatics
 annotations:

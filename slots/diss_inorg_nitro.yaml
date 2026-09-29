@@ -1,7 +1,7 @@
 name: diss_inorg_nitro
 title: dissolved inorganic nitrogen
 description: >-
-  Concentration of dissolved inorganic nitrogen
+  Concentration of dissolved inorganic nitrogen.
 in_subset:
   - Environment
 annotations:

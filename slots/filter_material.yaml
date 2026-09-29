@@ -1,7 +1,7 @@
 name: filter_material
 title: filter material
 description: >-
-  Material of filter
+  Material of filter.
 in_subset:
 - Sample preparation
 annotations:

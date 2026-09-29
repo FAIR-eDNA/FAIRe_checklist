@@ -2,7 +2,7 @@ name: detection_criteria
 title: detection criteria
 description: >-
   Criteria to determine positive detection. For example, a certain number
-  of positive amplifications per sample, sanger sequencing of amplicons
+  of positive amplifications per sample, sanger sequencing of amplicons.
 in_subset:
   - Targeted assay detection
 annotations:

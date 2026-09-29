@@ -1,7 +1,7 @@
 name: part_org_nitro
 title: particulate organic nitrogen
 description: >-
-  Concentration of particulate organic nitrogen
+  Concentration of particulate organic nitrogen.
 in_subset:
   - Environment
 annotations:

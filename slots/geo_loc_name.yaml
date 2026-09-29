@@ -5,7 +5,7 @@ description: >-
   name followed by regions and localities. Country or sea names should be chosen from
   the INSDC Geographic Location Name List INSDC country list (http://insdc.org/country.html).
   Fixed format following <country or sea names>:<region>,<locality>. E.g., "USA: Maryland,
-  Bethesda" , "Atlantic Ocean:Charlie Gibbs Fracture Zone"
+  Bethesda" , "Atlantic Ocean:Charlie Gibbs Fracture Zone".
 in_subset:
   - Sample collection
 annotations:

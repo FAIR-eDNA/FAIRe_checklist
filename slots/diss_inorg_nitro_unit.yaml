@@ -1,7 +1,7 @@
 name: diss_inorg_nitro_unit
 title: dissolved inorganic nitrogen unit
 description: >-
-  The unit of diss_inorg_nitro
+  The unit of diss_inorg_nitro.
 in_subset:
 - Environment
 annotations:

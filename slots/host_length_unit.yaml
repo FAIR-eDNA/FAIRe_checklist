@@ -1,7 +1,7 @@
 name: host_length_unit
 title: host length unit
 description: >-
-  The unit of host_length
+  The unit of host_length.
 in_subset:
 - Environment
 annotations:

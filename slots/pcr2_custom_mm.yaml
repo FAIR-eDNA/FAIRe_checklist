@@ -4,7 +4,7 @@ description: >-
   (If bacroding_pcr_appr = "two-step PCR") composition of custom master
   mix, including the names, volumes and concentrations of additives (i.e., salts,
   buffers, enzyme and other components) in the second step PCR (if custom master
-  mix was used)
+  mix was used).
 in_subset:
   - Library preparation sequencing
 annotations:

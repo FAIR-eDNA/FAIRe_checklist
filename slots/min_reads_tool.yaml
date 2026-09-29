@@ -1,7 +1,7 @@
 name: min_reads_tool
 title: minimum read count filtering tool
 description: >-
-  Software and the version to remove reads below minimum read threshold
+  Software and the version to remove reads below minimum read threshold.
 in_subset:
   - Bioinformatics
 annotations:

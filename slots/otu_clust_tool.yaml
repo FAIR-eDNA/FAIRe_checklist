@@ -1,7 +1,7 @@
 name: otu_clust_tool
 title: OTU/ASV clustering tool
 description: >-
-  Software and the version used for OTU/ASV clustering
+  Software and the version used for OTU/ASV clustering.
 in_subset:
   - Bioinformatics
 annotations:

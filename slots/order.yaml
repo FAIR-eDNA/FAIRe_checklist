@@ -1,7 +1,7 @@
 name: order
 title: order
 description: >-
-  The full scientific name of the order
+  The full scientific name of the order.
 in_subset:
   - OTU/ASV
 annotations:

@@ -2,7 +2,7 @@ name: tax_class_collapse
 title: taxonomic collapse method
 description: >-
   How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
-  ancestor
+  ancestor.
 in_subset:
   - Bioinformatics
 annotations:

@@ -2,7 +2,7 @@ name: adapter_forward
 title: forward sequencing adapter
 description: >-
   Forward sequencing adapter. The sequence should be reported in uppercase
-  letters
+  letters.
 in_subset:
   - Library preparation sequencing
 annotations:

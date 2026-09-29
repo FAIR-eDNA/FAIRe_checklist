@@ -2,7 +2,7 @@ name: nucl_acid_ext_kit
 title: nucleic acid extraction kit
 description: >-
   The name of the extraction kit used to recover the nucleic acid fraction
-  of an input material
+  of an input material.
 in_subset:
   - Nucleic acid extraction
 annotations:

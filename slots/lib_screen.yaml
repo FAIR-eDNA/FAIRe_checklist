@@ -2,7 +2,7 @@ name: lib_screen
 title: library screening strategy
 description: >-
   Specific enrichment or screening methods applied before and/or after
-  creating libraries
+  creating libraries.
 in_subset:
   - Library preparation sequencing
 annotations:

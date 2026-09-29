@@ -1,7 +1,7 @@
 name: otu_seq_comp_appr
 title: OTU sequence comparison approach
 description: >-
-  Alignment tool/software used for taxonomic assignment
+  Alignment tool/software used for taxonomic assignment.
 in_subset:
   - Bioinformatics
 annotations:

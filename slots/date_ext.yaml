@@ -1,7 +1,7 @@
 name: date_ext
 title: nucleic acid extraction date
 description: >-
-  Date of nucleic acid extraction, written in ISO 8601 format
+  Date of nucleic acid extraction, written in ISO 8601 format.
 in_subset:
   - Nucleic acid extraction
 annotations:

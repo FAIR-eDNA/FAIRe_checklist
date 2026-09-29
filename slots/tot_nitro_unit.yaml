@@ -1,7 +1,7 @@
 name: tot_nitro_unit
 title: total nitrogen concentration unit
 description: >-
-  The unit of tot_nitro
+  The unit of tot_nitro.
 in_subset:
 - Environment
 annotations:

@@ -1,7 +1,7 @@
 name: tot_org_carb_unit
 title: total organic carbon unit
 description: >-
-  The unit of tot_org_carb
+  The unit of tot_org_carb.
 in_subset:
 - Environment
 annotations:

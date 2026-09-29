@@ -1,7 +1,7 @@
 name: diss_org_nitro_unit
 title: dissolved organic nitrogen unit
 description: >-
-  The unit of diss_org_nitro
+  The unit of diss_org_nitro.
 in_subset:
 - Environment
 annotations:

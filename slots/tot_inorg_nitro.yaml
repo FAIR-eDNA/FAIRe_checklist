@@ -1,7 +1,7 @@
 name: tot_inorg_nitro
 title: total inorganic nitrogen
 description: >-
-  Total inorganic nitrogen content
+  Total inorganic nitrogen content.
 in_subset:
   - Environment
 annotations:

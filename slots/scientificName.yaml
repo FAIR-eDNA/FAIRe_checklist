@@ -1,7 +1,7 @@
 name: scientificName
 title: scientific name
 description: >-
-  The full scientific name of the genus and species
+  The full scientific name of the genus and species.
 in_subset:
   - OTU/ASV
 annotations:

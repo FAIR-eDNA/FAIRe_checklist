@@ -1,7 +1,7 @@
 name: samp_store_loc
 title: sample storage location
 description: >-
-  Location at which sample was stored, usually name of a specific freezer/room
+  Location at which sample was stored, usually name of a specific freezer/room.
 in_subset:
   - Sample storage
 annotations:

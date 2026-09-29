@@ -1,7 +1,7 @@
 name: lib_conc_unit
 title: library concentration unit
 description: >-
-  Unit for lib_conc
+  Unit for lib_conc.
 in_subset:
 - Library preparation sequencing
 annotations:

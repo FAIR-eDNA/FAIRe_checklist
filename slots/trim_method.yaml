@@ -2,7 +2,7 @@ name: trim_method
 title: primer and adapter trimming method
 description: >-
   Method for trimming primer and/or adapter sequences, including version
-  and parameters
+  and parameters.
 in_subset:
   - Bioinformatics
 annotations:

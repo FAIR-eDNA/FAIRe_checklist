@@ -1,7 +1,7 @@
 name: inhibition_check_0_1
 title: PCR inhibition checked
 description: >-
-  Was the inhibition checked? Yes = 1, No = 0
+  Was the inhibition checked? Yes = 1, No = 0.
 in_subset:
 - PCR
 annotations:

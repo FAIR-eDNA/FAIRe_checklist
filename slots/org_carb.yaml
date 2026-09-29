@@ -1,7 +1,7 @@
 name: org_carb
 title: organic carbon
 description: >-
-  Concentration of organic carbon
+  Concentration of organic carbon.
 in_subset:
   - Environment
 annotations:

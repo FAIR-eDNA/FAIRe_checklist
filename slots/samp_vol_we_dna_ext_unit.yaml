@@ -1,7 +1,7 @@
 name: samp_vol_we_dna_ext_unit
 title: sample volume or weight for DNA extraction unit
 description: >-
-  Unit for samp_vol_we_dna_ext
+  Unit for samp_vol_we_dna_ext.
 in_subset:
 - Nucleic acid extraction
 annotations:

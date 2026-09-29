@@ -1,7 +1,7 @@
 name: tidal_stage
 title: tidal stage
 description: >-
-  Stage of tide
+  Stage of tide.
 in_subset:
   - Environment
 annotations:

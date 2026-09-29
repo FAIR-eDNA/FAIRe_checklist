@@ -1,7 +1,7 @@
 name: host_height
 title: host height
 description: >-
-  The height of subject
+  The height of subject.
 in_subset:
   - Environment
 annotations:

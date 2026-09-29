@@ -1,7 +1,7 @@
 name: tot_org_c_meth
 title: total organic carbon method
 description: >-
-  Reference or method used in determining total organic carbon
+  Reference or method used in determining total organic carbon.
 in_subset:
   - Environment
 annotations:

@@ -1,7 +1,7 @@
 name: tot_diss_nitro_unit
 title: total dissolved nitrogen unit
 description: >-
-  The unit of tot_diss_nitro
+  The unit of tot_diss_nitro.
 in_subset:
 - Environment
 annotations:

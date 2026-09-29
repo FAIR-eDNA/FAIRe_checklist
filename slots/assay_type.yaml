@@ -5,7 +5,7 @@ description: >-
   is designed to detect the presence of a specific species or a small subset of taxa (such as a genus or family) using techniques
   like quantitative PCR (qPCR). This contrasts with a metabarcoding eDNA assay which aims to characterize the composition
   of broader taxonomic communities, often encompassing multiple phyletic groups, by utilising high-throughput sequencing such
-  as metabarcoding
+  as metabarcoding.
 in_subset:
 - Project
 annotations:

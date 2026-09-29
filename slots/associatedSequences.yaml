@@ -2,7 +2,7 @@ name: associatedSequences
 title: associated sequences
 description: >-
   A list (concatenated and separated) of identifiers (publication, global
-  unique identifier, URI) of genetic sequence information associated with the samp_name
+  unique identifier, URI) of genetic sequence information associated with the samp_name.
 in_subset:
   - Library preparation sequencing
 annotations:

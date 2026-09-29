@@ -1,7 +1,7 @@
 name: samp_size_unit
 title: sample size unit
 description: >-
-  Unit for samp_size
+  Unit for samp_size.
 in_subset:
 - Sample collection
 annotations:

@@ -1,7 +1,7 @@
 name: diss_oxygen
 title: dissolved oxygen
 description: >-
-  Concentration of dissolved oxygen
+  Concentration of dissolved oxygen.
 in_subset:
   - Environment
 annotations:

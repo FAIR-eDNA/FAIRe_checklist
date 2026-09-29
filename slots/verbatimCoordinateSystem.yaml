@@ -1,7 +1,7 @@
 name: verbatimCoordinateSystem
 title: verbatim coordinate system
 description: >-
-  The coordinate format of the verbatimLatitude and verbatimLongitude
+  The coordinate format of the verbatimLatitude and verbatimLongitude.
 in_subset:
 - Sample collection
 annotations:

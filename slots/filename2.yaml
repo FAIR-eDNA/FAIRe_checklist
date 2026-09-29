@@ -2,7 +2,7 @@ name: filename2
 title: reverse sequence reads file name
 description: >-
   A raw sequencing data file name of reverse reads if lib_layout = paired
-  end
+  end.
 in_subset:
   - Library preparation sequencing
 annotations:

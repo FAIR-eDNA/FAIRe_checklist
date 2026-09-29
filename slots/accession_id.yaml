@@ -1,7 +1,7 @@
 name: accession_id
 title: accession ID of best matching sequence
 description: >-
-  Accession ID of the best matching sequence from a reference database
+  Accession ID of the best matching sequence from a reference database.
 in_subset:
   - OTU/ASV
 annotations:

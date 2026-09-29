@@ -2,7 +2,7 @@ name: tot_diss_nitro
 title: total dissolved nitrogen
 description: >-
   Total dissolved nitrogen concentration, reported as nitrogen, measured
-  by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen
+  by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen.
 in_subset:
   - Environment
 annotations:

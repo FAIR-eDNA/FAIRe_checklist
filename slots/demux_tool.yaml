@@ -1,7 +1,7 @@
 name: demux_tool
 title: demultiplexing tool
 description: >-
-  Software and the version used to demultiplex sequence reads
+  Software and the version used to demultiplex sequence reads.
 in_subset:
   - Bioinformatics
 annotations:

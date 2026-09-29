@@ -1,7 +1,7 @@
 name: concentration_unit
 title: DNA concentration unit
 description: >-
-  The unit of total DNA concentration after extraction
+  The unit of total DNA concentration after extraction.
 in_subset:
 - Nucleic acid extraction
 annotations:

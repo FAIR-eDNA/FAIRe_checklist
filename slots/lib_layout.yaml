@@ -1,7 +1,7 @@
 name: lib_layout
 title: library layout
 description: >-
-  Specify whether to expect single, paired, or other configuration of reads
+  Specify whether to expect single, paired, or other configuration of reads.
 in_subset:
 - Library preparation sequencing
 annotations:

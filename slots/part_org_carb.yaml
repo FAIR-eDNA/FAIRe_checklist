@@ -1,7 +1,7 @@
 name: part_org_carb
 title: particulate organic carbon
 description: >-
-  Concentration of particulate organic carbon
+  Concentration of particulate organic carbon.
 in_subset:
   - Environment
 annotations:

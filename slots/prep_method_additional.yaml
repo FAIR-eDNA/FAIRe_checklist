@@ -2,7 +2,7 @@ name: prep_method_additional
 title: additional sample preparation method information
 description: >-
   Additional information on sample preparation, storage and preservation
-  prior to DNA extraction, that has not been shared in the given record
+  prior to DNA extraction, that has not been shared in the given record.
 in_subset:
   - Sample preparation
 annotations:

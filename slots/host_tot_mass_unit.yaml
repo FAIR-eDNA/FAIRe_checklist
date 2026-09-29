@@ -1,7 +1,7 @@
 name: host_tot_mass_unit
 title: host total mass unit
 description: >-
-  The unit of host_tot_mass
+  The unit of host_tot_mass.
 in_subset:
 - Environment
 annotations:

@@ -1,7 +1,7 @@
 name: error_rate_cutoff
 title: error rate threshold
 description: >-
-  error rate threshold
+  error rate threshold.
 in_subset:
   - Bioinformatics
 annotations:

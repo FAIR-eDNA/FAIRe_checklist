@@ -1,7 +1,7 @@
 name: part_org_nitro_unit
 title: particulate organic nitrogen unit
 description: >-
-  The unit of part_org_nitro
+  The unit of part_org_nitro.
 in_subset:
 - Environment
 annotations:

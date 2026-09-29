@@ -1,7 +1,7 @@
 name: error_rate_type
 title: error rate type
 description: >-
-  The type/unit of error rate for the error rate threshold
+  The type/unit of error rate for the error rate threshold.
 in_subset:
 - Bioinformatics
 annotations:

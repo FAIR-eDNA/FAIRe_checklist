@@ -1,7 +1,7 @@
 name: host_length
 title: host length
 description: >-
-  The length of subject
+  The length of subject.
 in_subset:
   - Environment
 annotations:

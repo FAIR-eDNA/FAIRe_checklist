@@ -1,7 +1,7 @@
 name: verbatimEventDate
 title: verbatim event date
 description: >-
-  Sample collection date before formatting
+  Sample collection date before formatting.
 in_subset:
   - Sample collection
 annotations:

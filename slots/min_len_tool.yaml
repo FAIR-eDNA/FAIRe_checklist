@@ -2,7 +2,7 @@ name: min_len_tool
 title: minimum read length filtering tool
 description: >-
   Software and the version to remove reads shorter than minimum length
-  threshold
+  threshold.
 in_subset:
   - Bioinformatics
 annotations:

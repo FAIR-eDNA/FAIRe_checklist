@@ -4,7 +4,7 @@ description: >-
   List of reference database(s) (i.e. sequences not generated as part of
   the current study) along with version number, that were used to assign taxonomy
   to OTUs or ASVs. If custom database was used, enter 'custom' here, and provide the
-  information of the database under the term otu_db_custom
+  information of the database under the term otu_db_custom.
 in_subset:
   - Bioinformatics
 annotations:

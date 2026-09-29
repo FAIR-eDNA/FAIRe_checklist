@@ -2,7 +2,7 @@ name: rel_cont_id
 title: related control sample IDs
 description: >-
   (A list of) samp_id of the negative and positive controls related to
-  each sample
+  each sample.
 in_subset:
   - Sample relations
 annotations:

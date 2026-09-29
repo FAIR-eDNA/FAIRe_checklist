@@ -1,7 +1,7 @@
 name: dna_sequence
 title: DNA sequence
 description: >-
-  The DNA sequence
+  The DNA sequence.
 in_subset:
   - OTU/ASV
 annotations:

@@ -1,7 +1,7 @@
 name: diss_inorg_carb_unit
 title: dissolved inorganic carbon unit
 description: >-
-  The unit of diss_inorg_carb
+  The unit of diss_inorg_carb.
 in_subset:
 - Environment
 annotations:

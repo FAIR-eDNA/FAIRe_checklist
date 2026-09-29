@@ -2,7 +2,7 @@ name: block_ref
 title: blocking primer reference
 description: >-
   Reference of a blocking primer. Enter "custom" if it was developed during
-  the current project
+  the current project.
 in_subset:
   - PCR
 annotations:

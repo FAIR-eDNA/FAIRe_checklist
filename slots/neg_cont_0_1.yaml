@@ -2,7 +2,7 @@ name: neg_cont_0_1
 title: negative controls used
 description: >-
   Were negative controls applied during the project? Yes = 1, No = 0. For further details, record the types of
-  negative controls under the term neg_cont_type in sampleMetadata
+  negative controls under the term neg_cont_type in sampleMetadata.
 in_subset:
 - Project
 annotations:

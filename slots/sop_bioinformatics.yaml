@@ -3,7 +3,7 @@ title: bioinformatics standard operating procedure
 description: >-
   Standard operating procedures, references, link to scripts, that were
   used in quality filtering, assembly and/or annotation of genomes, metagenomes or
-  environmental sequences
+  environmental sequences.
 in_subset:
   - Bioinformatics
 annotations:

@@ -1,7 +1,7 @@
 name: org_matter
 title: organic matter
 description: >-
-  Concentration of organic matter
+  Concentration of organic matter.
 in_subset:
   - Environment
 annotations:

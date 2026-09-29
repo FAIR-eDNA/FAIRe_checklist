@@ -2,7 +2,7 @@ name: pcr_assay_lod_techreps
 title: assay limit of detection technical replicates
 description: >-
   The number of technical replicates that the LOD is applied to. See DOI:
-  10.1002/edn3.220
+  10.1002/edn3.220.
 in_subset:
   - Targeted assay detection
 annotations:

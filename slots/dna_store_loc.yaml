@@ -2,7 +2,7 @@ name: dna_store_loc
 title: DNA extract storage location
 description: >-
   Location at which extracted DNA was stored, usually name of a specific
-  freezer/room
+  freezer/room.
 in_subset:
   - Sample storage
 annotations:

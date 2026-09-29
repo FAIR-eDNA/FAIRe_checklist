@@ -2,7 +2,7 @@ name: chimera_check_method
 title: chimera check method
 description: >-
   Description of chimera check approaches (i.e. denovo, reference-based),
-  including software and the version used
+  including software and the version used.
 in_subset:
   - Bioinformatics
 annotations:

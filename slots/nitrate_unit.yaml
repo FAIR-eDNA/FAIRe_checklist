@@ -1,7 +1,7 @@
 name: nitrate_unit
 title: nitrate unit
 description: >-
-  The unit of nitrate
+  The unit of nitrate.
 in_subset:
 - Environment
 annotations:

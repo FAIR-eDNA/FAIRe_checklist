@@ -1,7 +1,7 @@
 name: loq_method
 title: limit of quantification determination method
 description: >-
-  Method used for determining LOQ e.g., DOI of a published procedure
+  Method used for determining LOQ e.g., DOI of a published procedure.
 in_subset:
   - Targeted assay detection
 annotations:

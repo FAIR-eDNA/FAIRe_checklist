@@ -2,7 +2,7 @@ name: otu_num_tax_assigned
 title: number of OTUs/ASVs assigned to taxa
 description: >-
   Total number of OTUs or ASVs assigned to taxa based on the study-specific
-  thresholds for each sample
+  thresholds for each sample.
 in_subset:
   - Bioinformatics
 annotations:

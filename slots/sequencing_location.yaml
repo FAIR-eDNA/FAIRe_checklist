@@ -2,7 +2,7 @@ name: sequencing_location
 title: sequencing location
 description: >-
   The location the sequencing run was performed. Indicate the name of the
-  lab or core facility where samples were sequenced
+  lab or core facility where samples were sequenced.
 in_subset:
   - Library preparation sequencing
 annotations:

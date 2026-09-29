@@ -1,7 +1,7 @@
 name: concentration
 title: DNA concentration after extraction
 description: >-
-  Concentration of total DNA after extraction
+  Concentration of total DNA after extraction.
 in_subset:
   - Nucleic acid extraction
 annotations:

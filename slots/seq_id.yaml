@@ -1,7 +1,7 @@
 name: seq_id
 title: sequence ID
 description: >-
-  Query sequence ID. Must be unique within the dataset
+  Query sequence ID. Must be unique within the dataset.
 in_subset:
   - OTU/ASV
 annotations:

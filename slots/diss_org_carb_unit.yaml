@@ -1,7 +1,7 @@
 name: diss_org_carb_unit
 title: dissolved organic carbon unit
 description: >-
-  The unit of diss_org_carb
+  The unit of diss_org_carb.
 in_subset:
 - Environment
 annotations:

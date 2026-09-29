@@ -1,7 +1,7 @@
 name: tot_inorg_nitro_unit
 title: total inorganic nitrogen unit
 description: >-
-  The unit of tot_inorg_nitro
+  The unit of tot_inorg_nitro.
 in_subset:
 - Environment
 annotations:
