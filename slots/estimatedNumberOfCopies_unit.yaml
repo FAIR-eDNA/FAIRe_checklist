@@ -22,6 +22,7 @@ examples:
 source:
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:organismQuantityType
 narrow_mappings: []
 broad_mappings: []
