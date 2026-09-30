@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#203
+blocked: >-
+  Waits on FAIRe_checklist #109: stock or reaction concentration? FAIRe asks for the
+  primer stock concentration; MIQE, the term's source, asks for the concentration in
+  the reaction.
