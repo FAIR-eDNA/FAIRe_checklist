@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#231
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: samp_store_temp (MIXS:0000110)
+justification: >-
+  eDNA samples are usually stored twice: the environmental sample (e.g. water) before
+  it is processed, and the processed sample (e.g. a filter) before DNA extraction.
+  Both storage steps affect DNA degradation, but samp_store_temp can hold only one.
+  This term records the processed sample's storage temperature; samp_store_temp keeps
+  the environmental sample's.
