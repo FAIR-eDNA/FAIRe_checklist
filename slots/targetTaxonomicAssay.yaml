@@ -15,7 +15,7 @@ range: string
 required: true
 recommended: false
 examples:
-- value: verteberate
+- value: vertebrate
   description: null
 source:
 exact_mappings: []
