@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#254
+mixs_term: samp_mat_process
+existing_term_check: Reuse existing MIxS term as-is
+related_mixs_terms: samp_mat_process (MIXS:0000016)
+justification: >-
+  Include the existing MIxS term, unchanged, in the eDNA checklist: eDNA samples are
+  usually processed (e.g. sieved, filtered, precipitated, homogenised, subsampled)
+  before DNA extraction, and how they are processed affects what DNA is recovered.
