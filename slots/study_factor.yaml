@@ -18,7 +18,8 @@ examples:
 - value: 'benthic habitat types | diurnal time series | filter types'
   description: null
 source:
-exact_mappings: []
+exact_mappings:
+- eco:surveyTargetType
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
