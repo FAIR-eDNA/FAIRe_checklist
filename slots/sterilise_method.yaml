@@ -1,7 +1,7 @@
 name: sterilise_method
 title: sterilization method
 description: >-
-  the protocols to minimise contaminations in the field and/or laboratory.
+  The protocols to minimise contamination in the field and/or laboratory.
 in_subset:
   - Project
 annotations:
@@ -13,7 +13,7 @@ range: string
 required: false
 recommended: true
 examples:
-- value: Sampling bottles were rinsed with 10% bleached and DI water. Single-use syringes
+- value: Sampling bottles were rinsed with 10% bleach and DI water. Single-use syringes
     and capsule filters were used for filtration. Single-use gloves were used to collect
     and filter each sample.
   description: null
