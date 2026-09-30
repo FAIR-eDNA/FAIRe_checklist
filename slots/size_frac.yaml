@@ -1,7 +1,7 @@
 name: size_frac
 title: size fraction selected
 description: >-
-  Filtering pore size used in sample filtration.
+  Filtering pore size used in sample preparation.
 in_subset:
   - Sample preparation
 annotations:
@@ -9,7 +9,8 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity: Water | Air
-slot_uri: mixs:0000017
+  modifications_made: field_type
+slot_uri: faire:0000284
 range: float
 minimum_value: 0
 unit:
@@ -21,9 +22,9 @@ examples:
 - value: '0.22'
   description: null
 source: mixs:0000017
-exact_mappings:
-- mixs:0000017
+exact_mappings: []
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- mixs:0000017
