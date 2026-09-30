@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#220
+mixs_term: pool_dna_extracts
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: pool_dna_extracts (MIXS:0000325)
+justification: >-
+  Record only the number of DNA extracts pooled into one sample, as a whole number
+  (e.g. 2), instead of the pooling status and number in one value (yes, 5); a value
+  of 1 means the extracts were not pooled. A single number is easier to fill in,
+  validate and compare. Replace the description with the one in this row plus "A
+  value of 1 indicates no pooling.", and remove the preferred units (gram,
+  milliliter, microliter), which do not apply to a count.
