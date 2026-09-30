@@ -9,7 +9,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: HostAssociated | SymbiontAssociated
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000084
 range: string
 any_of:
 - range: HostTotMassUnitEnum

@@ -8,7 +8,7 @@ annotations:
   data_type: sampleMetadata
   requirement_level: Optional
   requirement_level_code: O
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000039
 range: Timestamp
 required: false
 recommended: false

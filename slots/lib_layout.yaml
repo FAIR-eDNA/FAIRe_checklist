@@ -9,7 +9,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   modifications_made: field_type
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000098
 range: string
 any_of:
 - range: LibLayoutEnum

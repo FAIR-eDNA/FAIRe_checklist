@@ -12,7 +12,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000241
 range: string
 required: false
 recommended: false

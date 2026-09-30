@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: R
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000092
 range: float
 required: false
 recommended: true

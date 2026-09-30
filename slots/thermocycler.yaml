@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: O
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000263
 range: string
 required: false
 recommended: false

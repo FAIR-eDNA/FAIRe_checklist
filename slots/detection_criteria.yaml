@@ -13,7 +13,7 @@ annotations:
   modifications_made: field_name | description
 keywords:
   - Thalinger
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000045
 range: string
 required: true
 recommended: false

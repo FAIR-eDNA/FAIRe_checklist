@@ -12,7 +12,7 @@ annotations:
   modifications_made: description
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000156
 range: string
 required: false
 recommended: false

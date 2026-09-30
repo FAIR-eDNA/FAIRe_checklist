@@ -9,7 +9,7 @@ annotations:
   data_type: experimentRunMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000071
 range: string
 required: false
 recommended: true

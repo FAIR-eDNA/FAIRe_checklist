@@ -18,7 +18,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If pcr_0_1 is 1
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000179
 range: string
 multivalued: true
 required: true

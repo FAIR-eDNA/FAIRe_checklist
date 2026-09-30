@@ -15,7 +15,7 @@ annotations:
   modifications_made: description
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000006
 range: string
 unit:
   descriptive_name: base pair

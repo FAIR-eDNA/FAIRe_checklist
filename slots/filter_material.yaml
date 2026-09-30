@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: Water | Air
   modifications_made: description | field_type
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000073
 range: string
 any_of:
 - range: FilterMaterialEnum

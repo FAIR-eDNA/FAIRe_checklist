@@ -14,7 +14,7 @@ annotations:
   requirement_level_code: R
   sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000102
 range: float
 minimum_value: 0
 unit:

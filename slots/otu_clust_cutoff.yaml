@@ -10,7 +10,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   modifications_made: field_name | description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000131
 range: float
 minimum_value: 0
 maximum_value: 100
