@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#291
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: ster_meth_samp_room (MIXS:0001259); samp_decont_pretreat (MIXS:0001384)
+justification: >-
+  eDNA is present at very low concentrations, so contamination during sampling and
+  lab work can cause false detections. Users need to know what was done to prevent
+  it (e.g. bleaching equipment, single-use gear). ster_meth_samp_room covers only
+  sterilising a sampling room, and samp_decont_pretreat only treating a sample's
+  surface before extraction.
