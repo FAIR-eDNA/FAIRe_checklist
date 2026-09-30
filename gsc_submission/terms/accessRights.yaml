@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#342 (duplicate: #4)
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  States who can access the data and under what conditions (e.g. restricted to
+  project members, not-for-profit use only). Together with a licence, which says
+  what users may do with the data, it allows access and reuse to be described per
+  record, e.g. when sub-projects of one dataset differ, and helps data to be reused
+  respectfully after aggregation (e.g. in OBIS or GBIF). MIxS has no term for it.
+submitter_questions: >-
+  This is the Dublin Core term (dcterms:accessRights) with one word added to the
+  definition ("who can access"; Dublin Core reads "who access"). Could MIxS reuse
+  the Dublin Core term directly instead of minting a new term?
