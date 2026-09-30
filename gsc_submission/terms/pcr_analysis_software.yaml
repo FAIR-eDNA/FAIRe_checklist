@@ -1,0 +1,11 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#186
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  qPCR and dPCR results (Cq values, copy numbers, detection calls) depend on the
+  analysis software and its settings, such as threshold and baseline. Recording the
+  software lets re-users judge and reproduce the results. It is a MIQE checklist item
+  and already in the GBIF DNA-derived data extension (pcr_analysis_software).
+comments: >-
+  The second sentence of the definition (pcr2_* terms) applies only if the pcr2_*
+  terms are also adopted; otherwise it can be dropped.

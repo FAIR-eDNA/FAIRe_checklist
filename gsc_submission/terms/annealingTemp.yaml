@@ -8,6 +8,9 @@ justification: >-
   for the annealing temperature, so a separate term makes it easier to find and
   compare. It is a MIQE checklist item and already in the GBIF DNA-derived data
   extension (annealingTemp).
+comments: >-
+  The second sentence of the definition (pcr2_* terms) applies only if the pcr2_*
+  terms are also adopted; otherwise it can be dropped.
 submitter_questions: >-
   The name could start with pcr_ (e.g. pcr_annealing_temp) to match other MIxS pcr_*
   terms; we are happy to follow the GSC's naming.

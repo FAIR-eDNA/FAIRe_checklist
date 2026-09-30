@@ -8,3 +8,6 @@ justification: >-
   number of PCR cycles, so a separate term makes it easier to find and compare.
   reamp_pcr_cyc_tot and capt_pcr_cyc_tot count cycles after library indexing or
   capture, not the cycles of the amplification PCR.
+comments: >-
+  The second sentence of the definition (pcr2_* terms) applies only if the pcr2_*
+  terms are also adopted; otherwise it can be dropped.
