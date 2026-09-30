@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#339
+blocked: >-
+  Waits on FAIRe_checklist #45: the term review decided to replace FAIRe's list of
+  ranks with the TAXRANK ontology and to propose dwc:taxonRank to the GSC; the row
+  can't be built from the current list.
