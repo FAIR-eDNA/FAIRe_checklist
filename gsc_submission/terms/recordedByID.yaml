@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#246
+blocked: >-
+  Waits on FAIRe_checklist #111: FAIRe describes the people responsible for the
+  dataset, Darwin Core the people who recorded the Occurrence; the group to decide
+  which role FAIRe means before proposing the term.
