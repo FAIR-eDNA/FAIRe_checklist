@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#207
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The publication that describes a primer gives its target, specificity and tested
+  taxa, which users need to judge and compare detections. Forward and reverse primers
+  often come from different publications, so each has its own term, like the other
+  paired primer terms. It is based on the GBIF DNA-derived data extension's
+  pcr_primer_reference (split into forward and reverse); GGBN has equivalents
+  (ggbn:primerReferenceCitationForward, ggbn:primerReferenceLinkForward).
+comments: >-
+  FAIRe, MIxS (pcr_primers) and the GBIF DNA-derived data extension record several
+  primers used in one PCR (multiplex PCR) in different ways; FAIRe would like to align
+  this across the standards.
