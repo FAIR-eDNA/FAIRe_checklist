@@ -1,0 +1,7 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#233
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The quencher and reporter dyes define a hydrolysis probe and affect its signal and
+  background, so they are needed to repeat or compare a qPCR/dPCR assay. They are
+  MIQE checklist items. MIxS has no terms for qPCR probes.
