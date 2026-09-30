@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#213
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  eDNA taxa are usually assigned by matching ASV/OTU sequences to a reference
+  database. The percent identity of the match shows how reliable each assignment
+  is, and lets users apply their own thresholds when reusing the data.
+comments: >-
+  A range (e.g. 98.7-99.2) is allowed when several species are assigned to one
+  ASV/OTU, so the value is text rather than a number. Percent identity and query
+  coverage are outputs of the bioinformatics pipeline; FAIRe would welcome a wider
+  discussion of how MIxS records per-sequence bioinformatics results.
