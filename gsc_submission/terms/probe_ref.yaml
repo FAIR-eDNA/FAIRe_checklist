@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#235
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The publication that describes a probe gives its target and tested specificity,
+  which users need to judge a qPCR/dPCR detection. It pairs with the probe sequence
+  (probe_seq) and follows the primer reference terms (pcr_primer_reference_forward,
+  pcr_primer_reference_reverse) proposed in this request.
