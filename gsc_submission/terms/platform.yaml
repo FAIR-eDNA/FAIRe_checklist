@@ -1,0 +1,16 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#219
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: seq_meth (MIXS:0000050)
+justification: >-
+  seq_meth records the sequencing instrument model. platform records the sequencing
+  technology (e.g. ILLUMINA, OXFORD_NANOPORE), which users filter and compare by
+  without having to parse instrument names. The values are the INSDC platform list,
+  which sequence archive submissions already use.
+comments: >-
+  The values follow the INSDC (ENA/SRA) platform list, which has no ontology terms.
+  Platforms and instruments are being added to GenEpiO, to be moved to OBI; FAIRe
+  will use those terms once they are available.
+submitter_questions: >-
+  seq_meth is titled "sequencing method" but records the sequencing machine. Could
+  the GSC review its name and description?
