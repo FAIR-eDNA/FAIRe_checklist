@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#261
+mixs_term: samp_store_sol
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: samp_store_sol (MIXS:0001317)
+justification: >-
+  Add a note that the storage solution of a processed sample (e.g. a filter) goes
+  under prepped_samp_store_sol, proposed in this request; eDNA studies often store
+  the sample and the processed sample differently. Make the value a controlled list
+  (ethanol, longmire, lysis buffer, none, sodium acetate, or other) so values can be
+  compared between studies.
+comments: >-
+  More storage solutions (e.g. RNAlater, DNA/RNA Shield) may be added to FAIRe's list
+  (FAIRe_checklist #30).

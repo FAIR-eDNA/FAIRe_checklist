@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#262
+blocked: >-
+  Waits on FAIRe_checklist #106: FAIRe records the temperature as a number with the
+  unit fixed (degree Celsius), MIxS as value + unit; a row built from FAIRe's slot
+  would propose that change, which the decision tree marks not applicable. The
+  decided description change below is kept for then.
+mixs_term: samp_store_temp
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: samp_store_temp (MIXS:0000110)
+justification: >-
+  Add a note that the storage temperature of a processed sample (e.g. a filter) goes
+  under prepped_samp_store_temp, proposed in this request; eDNA studies often store
+  the sample and the processed sample differently.
