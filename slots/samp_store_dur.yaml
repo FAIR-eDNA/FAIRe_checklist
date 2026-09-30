@@ -6,7 +6,7 @@ description: >-
   period. P1W/4W for some time between 1 and 4 weeks). Note: If a sample was processed
   before DNA extraction (e.g., filtration, homogenisation, subsampling), enter the
   storage duration before the process here, and the storage duration of the processed
-  sample under the term prepped_samp_store_temp.
+  sample under the term prepped_samp_store_dur.
 in_subset:
   - Sample storage
 annotations:
