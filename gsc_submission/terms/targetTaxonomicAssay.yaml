@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#294
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Primers and probes are designed for a taxonomic group (e.g. vertebrates or fish),
+  which limits which taxa a study can detect. Users need it to interpret
+  non-detections and compare assays. MIxS records the target gene (target_gene) but
+  not the taxa the assay targets.
