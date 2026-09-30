@@ -2,7 +2,7 @@ name: probeQuencher
 title: probe quencher
 description: >-
   Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited
-  by the cycler's light source As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
+  by the cycler's light source. As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
   signals.
 in_subset:
 - PCR
@@ -21,7 +21,7 @@ any_of:
 required: false
 recommended: true
 examples:
-- value: MGB
+- value: Minor Groove Binder (MGB)
   description: null
 source: doi:10.1093/clinchem/hvaf043
 see_also:
