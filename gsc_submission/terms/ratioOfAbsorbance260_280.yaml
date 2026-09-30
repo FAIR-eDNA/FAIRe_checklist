@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#244
+blocked: >-
+  Waits on FAIRe_checklist #27: the definition gives the wrong wavelengths (260/230),
+  and the proposed fix keeps a parenthetical that describes the 260/230 ratio; the
+  corrected definition needs a citable reference first.
