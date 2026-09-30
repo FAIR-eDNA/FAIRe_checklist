@@ -1,42 +1,29 @@
 name: tax_assign_cat
-description: 'High-level category of taxonomic assignment approach. Examples using sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH.
+title: taxonomic assignment approach
+description: >-
+  High-level category of taxonomic assignment approach. Examples using sequence similarity: BLAST/MegaBLAST, USEARCH/VSEARCH.
   Examples using sequence composition: naive Bayes classifier, CLARK, Kraken. Examples using phylogeny: SEPP, EPA-ng, pplacer.
-  Examples using probabilistic: PROTAX, TIPP.'
+  Examples using probabilistic: PROTAX, TIPP.
 in_subset:
 - Bioinformatics
-slot_uri: __TODO_ADD_SLOT_URI__
-range: tax_assign_cat_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+slot_uri: faire:0000255
+range: string
+any_of:
+- range: TaxAssignCatEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: sequence similarity
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-enum_values:
-  'other:':
-    meaning: 'other:'
-  phylogeny:
-    meaning: phylogeny
-  probabilistic:
-    meaning: probabilistic
-  sequence composition:
-    meaning: sequence composition
-  sequence similarity:
-    meaning: sequence similarity
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000064

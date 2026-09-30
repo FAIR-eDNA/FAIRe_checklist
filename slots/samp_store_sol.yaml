@@ -1,50 +1,31 @@
 name: samp_store_sol
-description: 'Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
+title: sample storage solution
+description: >-
+  Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
   homogenisation, subsampling), enter the storage solution before the process here, and the storage solution of the processed
-  sample under the term prepped_samp_store_sol.'
+  sample under the term prepped_samp_store_sol.
 in_subset:
 - Sample storage
-slot_uri: https://w3id.org/mixs/0001317
-range: samp_store_sol_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: ALL
+  modifications_made: description | field_type
+slot_uri: faire:0000223
+range: string
+any_of:
+- range: StorageSolutionEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: none
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0001317
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity:
-  - ALL
-  modifications_made:
-  - description
-  - field_type
-enum_values:
-  ethanol:
-    meaning: ethanol
-  longmire:
-    meaning: longmire
-  lysis buffer:
-    meaning: lysis buffer
-  none:
-    meaning: none
-  'other:':
-    meaning: 'other:'
-  sodium acetate:
-    meaning: sodium acetate
+source: mixs:0001317
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0001317

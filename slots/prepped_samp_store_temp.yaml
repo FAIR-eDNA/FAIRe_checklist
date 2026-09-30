@@ -1,46 +1,38 @@
 name: prepped_samp_store_temp
-description: 'Temperature at which the prepared sample was stored prior to DNA extraction. Record either ''ambient'' or a
+title: prepared sample storage temperature
+description: >-
+  Temperature at which the prepared sample was stored prior to DNA extraction. Record either 'ambient' or a
   numeric value in degree Celsius. Note: The storage temperature of the original environmental sample (e.g., water, soil)
   should be recorded under samp_store_temp, while the current term is for the "processed" sample such as filter paper, homogenised
-  and subsampled sediment, prepared for DNA extraction. Unit = degree Celsius'
+  and subsampled sediment, prepared for DNA extraction.
 in_subset:
 - Sample preparation
-slot_uri: __TODO_ADD_SLOT_URI__
-range: prepped_samp_store_temp_enum
-unit: degree Celsius
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: ALL
+  modifications_made: field_name | description | field_type
+keywords:
+  - Thalinger
+slot_uri: faire:0000198
+range: Any
+any_of:
+- range: float
+- range: StorageTemperatureEnum
+- range: OtherText
+unit:
+  ucum_code: Cel
+  descriptive_name: degree Celsius
 required: false
 recommended: true
 examples:
 - value: ambient temperature
   description: null
-source:
-- Thalinger et al., 2021
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity:
-  - ALL
-  modifications_made:
-  - field_name
-  - description
-  - field_type
-enum_values:
-  ambient temperature:
-    meaning: ambient temperature
-  numeric value:
-    meaning: numeric value
-  'other:':
-    meaning: 'other:'
+source: doi:10.1002/edn3.189
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000110

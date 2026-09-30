@@ -1,39 +1,25 @@
 name: concentration_method
-description: Description of method/instrument used for concentration measurement
+title: DNA concentration measurement method
+description: >-
+  Description of method/instrument used for concentration measurement.
 in_subset:
   - Nucleic acid extraction
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  modifications_made: field_name | description
+slot_uri: faire:0000034
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:
 - value: Qubit 4.0 Fluorometer (Invitrogen)
   description: null
-source:
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  modifications_made:
-  - field_name
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: ggbn:methodDeterminationConcentrationAndRatios
+exact_mappings: []
+close_mappings:
+- ggbn:methodDeterminationConcentrationAndRatios
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

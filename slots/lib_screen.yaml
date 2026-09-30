@@ -1,14 +1,16 @@
 name: lib_screen
-description: Specific enrichment or screening methods applied before and/or after
-  creating libraries
+title: library screening strategy
+description: >-
+  Specific enrichment or screening methods applied before and/or after
+  creating libraries.
 in_subset:
   - Library preparation sequencing
-slot_uri: https://w3id.org/mixs/0000043
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+slot_uri: mixs:0000043
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
@@ -16,25 +18,10 @@ examples:
     USA), purified using the Qiaquick PCR Purification Kit (Qiagen), quantified using
     a Qubit (Invitrogen) and diluted to 2 nM before loading it onto a MiSeq Flow Cell
   description: null
-source:
-- MIxS
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000043
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/mixs/0000043
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000043
+exact_mappings:
+- mixs:0000043
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

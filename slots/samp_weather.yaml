@@ -1,36 +1,25 @@
 name: samp_weather
-description: The weather on the sampling day
+title: sampling day weather
+description: >-
+  The weather on the sampling day.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000827
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: ALL
+slot_uri: mixs:0000827
+range: SampWeatherEnum
 required: false
 recommended: false
 examples:
 - value: foggy
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000827
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - ALL
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000827
+exact_mappings:
+- mixs:0000827
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

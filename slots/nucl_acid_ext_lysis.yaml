@@ -1,44 +1,29 @@
 name: nucl_acid_ext_lysis
-description: The approach used to lyse DNA-containing material. For example, physical methods may involve freeze-thaw cycles
+title: nucleic acid extraction lysis method
+description: >-
+  The approach used to lyse DNA-containing material. For example, physical methods may involve freeze-thaw cycles
   or the uses of bead mills, homogenizers and sonicators. Thermal methods apply high temperatures, often used in combination
   with other methods.
 in_subset:
 - Nucleic acid extraction
-slot_uri: __TODO_ADD_SLOT_URI__
-range: nucl_acid_ext_lysis_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000122
+range: string
+any_of:
+- range: NuclAcidExtLysisEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: enzymatic
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-enum_values:
-  chemical:
-    meaning: chemical
-  enzymatic:
-    meaning: enzymatic
-  osmotic:
-    meaning: osmotic
-  'other:':
-    meaning: 'other:'
-  physical:
-    meaning: physical
-  thermal:
-    meaning: thermal
+exact_mappings: []
+close_mappings:
+- mixs:0000076
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

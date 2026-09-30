@@ -1,33 +1,23 @@
 name: lod_method
-description: Method used for determining LOD e.g., DOI of a published procedure
+title: limit of detection determination method
+description: >-
+  Method used for determining LOD e.g., DOI of a published procedure.
 in_subset:
   - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000099
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
-- value: 'DOI: 10.1002/edn3.220'
+- value: doi:10.1002/edn3.220
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

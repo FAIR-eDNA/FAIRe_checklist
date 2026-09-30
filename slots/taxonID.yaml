@@ -1,38 +1,26 @@
 name: taxonID
-description: An identifier for the assigned taxon (or taxa in the case of multiple
+title: taxon ID
+description: >-
+  An identifier for the assigned taxon (or taxa in the case of multiple
   hits). May be a global unique identifier or an identifier specific to the data set.
 in_subset:
   - OTU/ASV
-slot_uri: http://rs.tdwg.org/dwc/terms/taxonID
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
+slot_uri: faire:0000260
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
-- value: '218797.0'
+- value: '218797'
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/taxonID
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:taxonID
+exact_mappings: []
+close_mappings:
+- dwc:taxonID
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,39 +1,26 @@
 name: estimatedNumberOfCopies_error_type
-description: The specific type of variability measure (e.g., standard error, standard deviation) used to describe estimatedNumberOfCopies_error.
+title: estimated number of copies error type
+description: >-
+  The specific type of variability measure (e.g., standard error, standard deviation) used to describe estimatedNumberOfCopies_error.
 in_subset:
 - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
-range: estimatedNumberOfCopies_error_type_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: ampData | eLowQuantData
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000064
+range: string
+any_of:
+- range: EstimatedNumberOfCopiesErrorTypeEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: standard error
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - ampData
-  - eLowQuantData
-  requirement_level: Recommended
-  requirement_level_code: R
-enum_values:
-  95% confidence interval:
-    meaning: 95% confidence interval
-  'other:':
-    meaning: 'other:'
-  standard deviation:
-    meaning: standard deviation
-  standard error:
-    meaning: standard error
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

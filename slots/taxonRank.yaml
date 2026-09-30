@@ -1,48 +1,28 @@
 name: taxonRank
-description: The taxonomic rank of the most specific name in the scientificName
+title: taxon rank
+description: >-
+  The taxonomic rank of the most specific name in the scientificName.
 in_subset:
 - OTU/ASV
-slot_uri: http://rs.tdwg.org/dwc/terms/taxonRank
-range: taxonRank_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: field_type
+slot_uri: faire:0000286
+range: string
+any_of:
+- range: TaxonRankEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: genus
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/taxonRank
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-enum_values:
-  class:
-    meaning: class
-  family:
-    meaning: family
-  genus:
-    meaning: genus
-  kingdom:
-    meaning: kingdom
-  order:
-    meaning: order
-  'other:':
-    meaning: 'other:'
-  phylum:
-    meaning: phylum
-  species:
-    meaning: species
+source: dwc:taxonRank
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- dwc:taxonRank

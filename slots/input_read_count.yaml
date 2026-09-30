@@ -1,39 +1,30 @@
 name: input_read_count
-description: The total number of raw sequence reads for each sample. Unit = reads
+title: input read count
+description: >-
+  The total number of raw sequence reads for each sample.
 in_subset:
   - Bioinformatics
-slot_uri: https://w3id.org/nmdc/input_read_count
-range: string
-unit: reads
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: experimentRunMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000089
+range: integer
+minimum_value: 0
+unit:
+  descriptive_name: read
+  exact_mappings:
+  - unit:COUNT
 required: false
 recommended: true
 examples:
 - value: '20485'
   description: null
-source:
-- NMDC
-mappings:
-  exact_mappings:
-  - https://w3id.org/nmdc/input_read_count
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - experimentRunMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/nmdc/input_read_count
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: nmdc:input_read_count
+exact_mappings: []
+close_mappings:
+- nmdc:input_read_count
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

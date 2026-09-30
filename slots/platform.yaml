@@ -1,13 +1,18 @@
 name: platform
-description: General sequencing platform used.
+title: sequencing platform
+description: >-
+  General sequencing platform used.
 in_subset:
 - Library preparation sequencing
-slot_uri: __TODO_ADD_SLOT_URI__
-range: platform_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+slot_uri: faire:0000187
+range: string
+any_of:
+- range: PlatformEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
@@ -15,48 +20,10 @@ examples:
   description: null
 source:
 - INSDC
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-enum_values:
-  BGISEQ:
-    meaning: BGISEQ
-  CAPILLARY:
-    meaning: CAPILLARY
-  DNBSEQ:
-    meaning: DNBSEQ
-  ELEMENT:
-    meaning: ELEMENT
-  GENAPSYS:
-    meaning: GENAPSYS
-  GENEMIND:
-    meaning: GENEMIND
-  HELICOS:
-    meaning: HELICOS
-  ILLUMINA:
-    meaning: ILLUMINA
-  ION_TORRENT:
-    meaning: ION_TORRENT
-  LS454:
-    meaning: LS454
-  OXFORD_NANOPORE:
-    meaning: OXFORD_NANOPORE
-  PACBIO_SMRT:
-    meaning: PACBIO_SMRT
-  TAPESTRI:
-    meaning: TAPESTRI
-  ULTIMA:
-    meaning: ULTIMA
-  VELA_DIAGNOSTICS:
-    meaning: VELA_DIAGNOSTICS
-  'other:':
-    meaning: 'other:'
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
+exact_mappings: []
+close_mappings:
+- GENEPIO:0100473
+related_mappings:
+- mixs:0000050
+narrow_mappings: []
+broad_mappings: []

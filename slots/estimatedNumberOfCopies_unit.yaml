@@ -1,46 +1,28 @@
 name: estimatedNumberOfCopies_unit
-description: Unit for estimatedNumberOfCopies
+title: estimated number of copies unit
+description: >-
+  Unit for estimatedNumberOfCopies.
 in_subset:
 - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
-range: estimatedNumberOfCopies_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: ampData | eLowQuantData
+  requirement_level: Recommended
+  requirement_level_code: R
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+slot_uri: faire:0000066
+range: string
+any_of:
+- range: AssayQuantityUnitEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: other:copies/mg of sediment sample
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - ampData
-  - eLowQuantData
-  requirement_level: Recommended
-  requirement_level_code: R
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-enum_values:
-  copies/reaction:
-    meaning: copies/reaction
-  copies/µL of DNA extract:
-    meaning: copies/µL of DNA extract
-  copies/µL of reaction:
-    meaning: copies/µL of reaction
-  ng/reaction:
-    meaning: ng/reaction
-  ng/µL of DNA extract:
-    meaning: ng/µL of DNA extract
-  ng/µL of reaction:
-    meaning: ng/µL of reaction
-  'other:':
-    meaning: 'other:'
+exact_mappings: []
+close_mappings: []
+related_mappings:
+- dwc:organismQuantityType
+narrow_mappings: []
+broad_mappings: []

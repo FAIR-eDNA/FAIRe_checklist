@@ -1,34 +1,24 @@
 name: samp_store_loc
-description: Location at which sample was stored, usually name of a specific freezer/room
+title: sample storage location
+description: >-
+  Location at which sample was stored, usually name of a specific freezer/room.
 in_subset:
   - Sample storage
-slot_uri: https://w3id.org/mixs/0000755
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+slot_uri: mixs:0000755
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:
 - value: UWA, IOMRC, Lv4 -80Freezer1
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000755
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000755
+exact_mappings:
+- mixs:0000755
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

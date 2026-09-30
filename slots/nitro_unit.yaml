@@ -1,62 +1,29 @@
 name: nitro_unit
-description: The unit of nitro
+title: nitrogen unit
+description: >-
+  The unit of nitro.
 in_subset:
 - Environment
-slot_uri: __TODO_ADD_SLOT_URI__
-range: nitro_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
+  modifications_made: field_name | description | field_type
+slot_uri: faire:0000118
+range: string
+any_of:
+- range: ChemicalConcentrationUnitEnum
+- range: OtherText
 required: false
 recommended: false
 examples:
 - value: µmol/L
   description: null
-source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - Air
-  - MicrobialMatBiofilm
-enum_values:
-  mg/L:
-    meaning: mg/L
-  mmol/L:
-    meaning: mmol/L
-  mmol/kg:
-    meaning: mmol/kg
-  mmol/m3:
-    meaning: mmol/m3
-  mol/L:
-    meaning: mol/L
-  mol/m3:
-    meaning: mol/m3
-  'other:':
-    meaning: 'other:'
-  parts per million:
-    meaning: parts per million
-  µM:
-    meaning: µM
-  µg/L:
-    meaning: µg/L
-  µmol/L:
-    meaning: µmol/L
-  µmol/kg:
-    meaning: µmol/kg
-  µmol/m3:
-    meaning: µmol/m3
+source: mixs:0000504
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000504

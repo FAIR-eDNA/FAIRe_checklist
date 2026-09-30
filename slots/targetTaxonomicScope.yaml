@@ -1,36 +1,27 @@
 name: targetTaxonomicScope
-description: The taxonomic group(s) targeted in the study. This can differ from the
+title: target taxonomic scope
+description: >-
+  The taxonomic group(s) targeted in the study. This can differ from the
   targetTaxonomicAssay. For example, the targetTaxonomicAssay may be Chordata while
-  the targetTaxonomicScope is Chondrichthyes (bony fish, sharks and rays).
+  the targetTaxonomicScope is Chondrichthyes (sharks, rays and chimaeras).
 in_subset:
   - PCR
-slot_uri: http://rs.tdwg.org/eco/terms/targetTaxonomicScope
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000285
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
 - value: teleost
   description: null
-source:
-- Humboldt extension
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/eco/terms/targetTaxonomicScope
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: eco:targetTaxonomicScope
+exact_mappings: []
+close_mappings:
+- eco:targetTaxonomicScope
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

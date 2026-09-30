@@ -1,37 +1,30 @@
 name: suspend_part_matter
-description: Concentration of suspended particulate matter. Unit = mg/L
+title: suspended particulate matter
+description: >-
+  Concentration of suspended particulate matter.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000741
-range: string
-unit: mg/L
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water
+  modifications_made: field_type
+slot_uri: faire:0000315
+range: float
+minimum_value: 0
+unit:
+  ucum_code: mg/L
+  descriptive_name: milligram per liter
 required: false
 recommended: false
 examples:
 - value: '0.5'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000741
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000741
+exact_mappings: []
+close_mappings:
+- mixs:0000741
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

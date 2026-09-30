@@ -1,42 +1,30 @@
 name: chlorophyll
-description: Concentration of chlorophyll. Unit = mg/m3
+title: chlorophyll
+description: >-
+  Concentration of chlorophyll.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000177
-range: string
-unit: mg/m3
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
+  modifications_made: field_type
+slot_uri: faire:0000312
+range: float
+minimum_value: 0
+unit:
+  ucum_code: mg/m3
+  descriptive_name: milligram per cubic meter
 required: false
 recommended: false
 examples:
-- value: '5.0'
+- value: '5'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000177
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - MicrobialMatBiofilm
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/mixs/0000177
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000177
+exact_mappings: []
+close_mappings:
+- mixs:0000177
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

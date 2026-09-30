@@ -1,34 +1,30 @@
 name: r2
-description: R-squared value of a qPCR standard curve. This shall be specific to each
+title: qPCR standard curve R-squared
+description: >-
+  R-squared value of a qPCR standard curve. This shall be specific to each
   pcr_plate_id.
 in_subset:
   - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: stdData
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+keywords:
+  - MIQE
+slot_uri: faire:0000209
+range: float
+minimum_value: 0
+maximum_value: 1
 required: false
 recommended: true
 examples:
 - value: '0.9867'
   description: null
-source:
-- MIQE
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - stdData
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1373/clinchem.2008.112797
+see_also:
+  - doi:10.1093/clinchem/hvaf043
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

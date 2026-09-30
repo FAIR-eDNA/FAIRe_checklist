@@ -1,50 +1,27 @@
 name: samp_vol_we_dna_ext_unit
-description: Unit for samp_vol_we_dna_ext
+title: sample volume or weight for DNA extraction unit
+description: >-
+  Unit for samp_vol_we_dna_ext.
 in_subset:
 - Nucleic acid extraction
-slot_uri: __TODO_ADD_SLOT_URI__
-range: samp_vol_we_dna_ext_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+slot_uri: faire:0000226
+range: string
+any_of:
+- range: SampleSizeUnitEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: mL
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-enum_values:
-  L:
-    meaning: L
-  cm2:
-    meaning: cm2
-  cm3:
-    meaning: cm3
-  g:
-    meaning: g
-  kg:
-    meaning: kg
-  m2:
-    meaning: m2
-  m3:
-    meaning: m3
-  mL:
-    meaning: mL
-  mg:
-    meaning: mg
-  'other:':
-    meaning: 'other:'
+exact_mappings: []
+close_mappings: []
+related_mappings:
+- dwc:sampleSizeUnit
+narrow_mappings: []
+broad_mappings: []

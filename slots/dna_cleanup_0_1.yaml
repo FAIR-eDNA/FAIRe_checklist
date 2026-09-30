@@ -1,34 +1,29 @@
 name: dna_cleanup_0_1
-description: Was the extracted DNA cleaned/purified? Yes = 1, No =0
+title: DNA clean-up performed
+description: >-
+  Was the extracted DNA cleaned/purified? Yes = 1, No =0.
 in_subset:
 - Nucleic acid extraction
-slot_uri: __TODO_ADD_SLOT_URI__
-range: dna_cleanup_0_1_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000051
+range: Any
+any_of:
+- range: boolean
+- range: BooleanEnum
+- range: integer
+  minimum_value: 0
+  maximum_value: 1
 required: false
 recommended: true
 examples:
 - value: '1'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-enum_values:
-  '0':
-    meaning: '0'
-  '1':
-    meaning: '1'
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,43 +1,36 @@
 name: ampliconSize
-description: The length of the amplicon in basepairs EXCLUDING the primers, adapters
-  and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160). If using
-  Excel, format the cell as text to prevent it from being auto-formatted as a date.
-  Unit = basepairs
+title: amplicon size
+description: >-
+  The length of the amplicon in basepairs EXCLUDING the primers, adapters
+  and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160).
+comments:
+  - If using Excel, format the cell as text to prevent a range from being auto-formatted
+    as a date.
 in_subset:
   - PCR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
+keywords:
+  - MIQE
+slot_uri: faire:0000006
 range: string
-unit: basepairs
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+unit:
+  descriptive_name: base pair
+  exact_mappings:
+  - unit:BasePair
 required: false
 recommended: true
 examples:
 - value: '83'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

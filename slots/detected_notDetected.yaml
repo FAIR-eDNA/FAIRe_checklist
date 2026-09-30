@@ -1,38 +1,34 @@
 name: detected_notDetected
-description: Detection of the targeted taxon for each biological replicate, based on the specified detection criteria (detailed
+title: target detected or not detected
+description: >-
+  Detection of the targeted taxon for each biological replicate, based on the specified detection criteria (detailed
   under the term 'detection_criteria'). Detected = 1, Not detected = 0. For projects employing multiple assays, this term
   should be specified separately for each assay. The term name should include the assay identifier in the format detected_notDetected_<assay_name>
   (e.g., detected_notDetected_eSERU5).
 in_subset:
 - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
-range: detected_notDetected_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: If assay_type = targeted
+slot_uri: faire:0000044
+range: Any
+any_of:
+- range: boolean
+- range: BooleanEnum
+- range: integer
+  minimum_value: 0
+  maximum_value: 1
 required: true
 recommended: false
 examples:
 - value: '1'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: If assay_type = targeted
-enum_values:
-  '0':
-    meaning: '0'
-  '1':
-    meaning: '1'
+exact_mappings: []
+close_mappings:
+- dwc:occurrenceStatus
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

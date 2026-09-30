@@ -1,4 +1,7 @@
 classes:
+  Any:
+    description: Any value. Used as the range of slots whose allowed values are given by any_of.
+    class_uri: linkml:Any
   MetadataChecklist:
     description: All FAIRe metadata fields.
     slots:

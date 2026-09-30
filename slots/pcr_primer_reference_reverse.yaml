@@ -1,38 +1,28 @@
 name: pcr_primer_reference_reverse
-description: Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
+title: reverse PCR primer reference
+description: >-
+  Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
   listed in pcr_primer_reverse, list the references respectively, separated by pipe
   ( | ).
 in_subset:
   - PCR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: Forward and reverse separated
+slot_uri: faire:0000178
+range: Reference
+multivalued: true
 required: false
 recommended: true
 examples:
 - value: https://doi.org/10.1186/1742-9994-10-34
   description: null
-source:
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made:
-  - Forward and reverse separated
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: gbif:pcr_primer_reference
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- gbif:pcr_primer_reference

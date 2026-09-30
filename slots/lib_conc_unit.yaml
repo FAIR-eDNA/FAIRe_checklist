@@ -1,38 +1,26 @@
 name: lib_conc_unit
-description: Unit for lib_conc
+title: library concentration unit
+description: >-
+  Unit for lib_conc.
 in_subset:
 - Library preparation sequencing
-slot_uri: __TODO_ADD_SLOT_URI__
-range: lib_conc_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: experimentRunMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000096
+range: string
+any_of:
+- range: LibConcUnitEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: pM
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - experimentRunMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-enum_values:
-  nM:
-    meaning: nM
-  ng/µL:
-    meaning: ng/µL
-  'other:':
-    meaning: 'other:'
-  pM:
-    meaning: pM
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

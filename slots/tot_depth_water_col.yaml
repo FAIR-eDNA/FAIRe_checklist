@@ -1,46 +1,32 @@
 name: tot_depth_water_col
-description: Measurement of total depth of water column. For example, if a sea surface
+title: total depth of water column
+description: >-
+  Measurement of total depth of water column. For example, if a sea surface
   water sample was collected at a sampling site where the water depth was 15m, enter
-  15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters. Unit
-  = meter
+  15 here and 0 under the terms minimumDepthInMeters and maximumDepthInMeters.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000634
-range: string
-unit: meter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
+  modifications_made: description
+slot_uri: faire:0000266
+range: float
+minimum_value: 0
+unit:
+  ucum_code: m
+  descriptive_name: meter
 required: false
 recommended: true
 examples:
-- value: '15.0'
+- value: '15'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000634
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Sediment
-  - HostAssociated
-  - MicrobialMatBiofilm
-  - SymbiontAssociated
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000634
+exact_mappings:
+- mixs:0000634
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,37 +1,25 @@
 name: phylum
-description: The full scientific name of the phylum or division
+title: phylum
+description: >-
+  The full scientific name of the phylum or division.
 in_subset:
   - OTU/ASV
-slot_uri: http://rs.tdwg.org/dwc/terms/phylum
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000186
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
 - value: Chordata
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/phylum
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:phylum
+exact_mappings:
+- dwc:phylum
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,34 +1,25 @@
 name: otu_num_tax_assigned
-description: Total number of OTUs or ASVs assigned to taxa based on the study-specific
-  thresholds for each sample
+title: number of OTUs/ASVs assigned to taxa
+description: >-
+  Total number of OTUs or ASVs assigned to taxa based on the study-specific
+  thresholds for each sample.
 in_subset:
   - Bioinformatics
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: experimentRunMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000136
+range: integer
+minimum_value: 0
 required: false
 recommended: true
 examples:
 - value: '49'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - experimentRunMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,39 +1,25 @@
 name: kingdom
-description: The full scientific name of the kingdom
+title: kingdom
+description: >-
+  The full scientific name of the kingdom.
 in_subset:
   - OTU/ASV
-slot_uri: http://rs.tdwg.org/dwc/terms/kingdom
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000093
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
 - value: Animalia
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/kingdom
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - http://rs.tdwg.org/dwc/terms/kingdom
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:kingdom
+exact_mappings:
+- dwc:kingdom
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
