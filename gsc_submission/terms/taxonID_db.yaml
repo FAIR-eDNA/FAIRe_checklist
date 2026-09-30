@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#340
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  A taxon ID (e.g. 9606) only has meaning with the taxonomy it comes from (e.g. NCBI
+  Taxonomy, GBIF Backbone, WoRMS), and eDNA reference databases use different
+  taxonomies. This term names that taxonomy database so users can resolve the IDs.
+  otu_db names the reference sequence database, not the taxonomy.
