@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#234
+blocked: >-
+  Waits on FAIRe_checklist #109: stock or reaction concentration? The description asks
+  for the probe stock concentration (µM), but the unit (nM) and example (100) fit the
+  concentration in the reaction, which is what MIQE asks for.
