@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#238
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: project_name (MIXS:0000092)
+justification: >-
+  project_name is a human-readable name. project_id is a short machine-readable
+  identifier with no spaces or special characters, used to link the samples, assays
+  and data files of one project and in repository URLs (e.g. noaa-aoml-gomecc4).
+comments: >-
+  The last sentence of the definition (data file names) describes FAIRe's templates
+  and can be dropped. Darwin Core has dwc:projectID, a list of project identifiers
+  (globally unique where possible); project_id is a single short identifier.
