@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#266
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: samp_pooling (MIXS:0001153); pool_dna_extracts (MIXS:0000325)
+justification: >-
+  When samples are pooled (before or after DNA extraction), this term lists the
+  samp_name of each sample in the pool, so the pooled sample can be linked to them.
+  samp_pooling describes the pooling as free text and pool_dna_extracts gives only
+  the number of extracts. It is the counterpart of sample_derived_from.

@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#267
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: source_mat_id (MIXS:0000026)
+justification: >-
+  eDNA samples are often split into subsamples or replicates (including PCR technical
+  replicates), each with its own samp_name. This term links each subsample to its
+  parent sample, so users can group replicates. source_mat_id identifies a material
+  sample but does not say which sample it came from.
+comments: >-
+  NCBI BioSample has a similar attribute, derived_from, which takes BioSample
+  accessions; this term takes samp_name values from the same dataset.
