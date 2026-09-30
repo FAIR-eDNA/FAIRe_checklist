@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#299
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: tax_class (MIXS:0000064)
+justification: >-
+  tax_class describes the classification method, database, rank and thresholds as
+  free text. tax_assign_cat records only the kind of approach (sequence similarity,
+  sequence composition, phylogeny or probabilistic) from a fixed list, so datasets
+  can be compared by approach. Together with percent_match and query coverage it
+  helps users judge how reliable taxonomic assignments are.
+comments: >-
+  The values have no ontology terms yet.
