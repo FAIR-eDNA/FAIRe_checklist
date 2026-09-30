@@ -1,5 +1,9 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#254
+blocked: >-
+  Waits on FAIRe_checklist #113: the row reuses the MIxS term as-is, but FAIRe's
+  example differs from MIxS's; the group to decide the example (and so whether the
+  slot is the MIxS term). The answers below are approved and kept for then.
 mixs_term: samp_mat_process
 existing_term_check: Reuse existing MIxS term as-is
 related_mixs_terms: samp_mat_process (MIXS:0000016)
