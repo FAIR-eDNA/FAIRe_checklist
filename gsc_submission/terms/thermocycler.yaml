@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#336
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The thermocycler affects PCR performance (e.g. temperature accuracy and ramp
+  rates), and for qPCR/dPCR it also records how results were read, so it is needed to
+  compare or repeat an assay. It is a MIQE checklist item. MIxS records the
+  sequencing instrument (seq_meth) but not the PCR instrument.
