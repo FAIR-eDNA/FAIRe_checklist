@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#292
+blocked: >-
+  Waits on FAIRe_checklist #116: the review decided to propose eco:surveyTargetType
+  instead of study_factor, but MIxS already has experimental_factor (MIXS:0000008);
+  the group to decide which to propose.
