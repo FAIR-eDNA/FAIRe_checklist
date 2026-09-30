@@ -19,7 +19,8 @@ examples:
     Lutjanus_erythropterus
   description: null
 source: dwc:verbatimIdentification
-exact_mappings: []
+exact_mappings:
+- dwc:verbatimIdentification
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

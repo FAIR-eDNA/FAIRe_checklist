@@ -21,7 +21,8 @@ examples:
     degree grid cell.
   description: null
 source: dwc:dataGeneralizations
-exact_mappings: []
+exact_mappings:
+- dwc:dataGeneralizations
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

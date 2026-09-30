@@ -27,9 +27,9 @@ examples:
   description: null
 source: dwc:eventDate
 exact_mappings: []
-close_mappings:
-- mixs:0000011
+close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings:
 - dwc:eventDate
+- mixs:0000011

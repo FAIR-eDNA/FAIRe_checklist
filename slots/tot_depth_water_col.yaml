@@ -24,7 +24,8 @@ examples:
 - value: '15'
   description: null
 source: mixs:0000634
-exact_mappings: []
+exact_mappings:
+- mixs:0000634
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

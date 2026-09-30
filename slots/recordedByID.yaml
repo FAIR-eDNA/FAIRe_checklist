@@ -21,6 +21,7 @@ examples:
 source: dwc:recordedByID
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:recordedByID
 narrow_mappings: []
 broad_mappings: []

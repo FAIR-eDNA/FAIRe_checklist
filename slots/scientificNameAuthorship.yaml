@@ -17,7 +17,8 @@ examples:
 - value: Bloch, 1790
   description: null
 source: dwc:scientificNameAuthorship
-exact_mappings: []
+exact_mappings:
+- dwc:scientificNameAuthorship
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

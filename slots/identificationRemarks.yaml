@@ -18,7 +18,8 @@ examples:
     to the hypothetical taxa.
   description: null
 source: dwc:identificationRemarks
-exact_mappings: []
+exact_mappings:
+- dwc:identificationRemarks
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

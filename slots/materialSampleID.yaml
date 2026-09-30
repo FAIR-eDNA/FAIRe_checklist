@@ -20,7 +20,9 @@ examples:
   description: null
 source: dwc:materialSampleID
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:materialSampleID
+- mixs:0000026
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

@@ -19,8 +19,10 @@ examples:
 - value: 121d 10' 34" W
   description: null
 source: dwc:verbatimLongitude
-exact_mappings: []
+exact_mappings:
+- dwc:verbatimLongitude
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0000009
 narrow_mappings: []
 broad_mappings: []

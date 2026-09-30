@@ -20,7 +20,8 @@ examples:
     using a peristaltic pump (pore size 0.45 micrometers).
   description: null
 source: mixs:0000016
-exact_mappings: []
+exact_mappings:
+- mixs:0000016
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

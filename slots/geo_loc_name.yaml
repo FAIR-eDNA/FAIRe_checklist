@@ -22,7 +22,9 @@ examples:
   description: null
 source: mixs:0000010
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:higherGeography
 related_mappings: []
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- mixs:0000010

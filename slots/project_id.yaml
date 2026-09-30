@@ -20,7 +20,9 @@ source:
 - NMDC
 - NOAA
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- nmdc:project_id
+- dwc:projectID
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

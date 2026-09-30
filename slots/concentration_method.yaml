@@ -18,7 +18,8 @@ examples:
   description: null
 source: ggbn:methodDeterminationConcentrationAndRatios
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:methodDeterminationConcentrationAndRatios
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
