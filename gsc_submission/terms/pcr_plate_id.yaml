@@ -1,0 +1,11 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#201
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  The plate ID links each sample's PCR to the positive and negative (no-template)
+  controls and standards run on the same plate, so contamination and detections can
+  be checked per plate. For targeted assays (qPCR/dPCR) it also links samples to the
+  plate's standard curve.
+comments: >-
+  The last sentence of the definition (pcr2_* terms) applies only if the pcr2_* terms
+  are also adopted; otherwise it can be dropped.

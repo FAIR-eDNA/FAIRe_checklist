@@ -24,3 +24,10 @@ Every other column is built from the slot in `slots/` and `enums.yaml` by
 python doc_gen_scripts/generate_mixs_term_request.py \
   --template path/to/MIxS_New_Term_Template.xlsx --out FAIRe_MIxS_term_request.xlsx
 ```
+
+A slot with a `requirement_level_condition` (e.g. "If assay_type = targeted") gets the
+level that applies when the condition is not met as its Requirement level (Optional,
+or the level after "Else,"), and a sentence giving FAIRe's rule at the start of its
+comments ("In FAIRe this term is mandatory if assay_type = targeted; otherwise
+optional."). The slots set such terms `required`/`recommended` outright (#86), which
+would make them so for every MIxS sample.

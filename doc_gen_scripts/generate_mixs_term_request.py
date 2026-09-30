@@ -162,6 +162,28 @@ def requirement_level(slot):
     return "Optional"
 
 
+# requirement_level_condition: "If <condition>", optionally followed by ". Else, <level>".
+CONDITION = re.compile(r"^if (?P<condition>.+?)(?:\. else, (?P<otherwise>\w+))?\.?$", re.IGNORECASE)
+
+
+def conditional_requirement(slot):
+    """For a slot with a requirement_level_condition, the row's Requirement level (the
+    level when the condition is not met) and a sentence for the comments giving FAIRe's
+    rule. The slots mark such terms required or recommended outright (#86), which would
+    wrongly make them so for every MIxS sample. Returns None for a slot with no condition."""
+    annotations = slot.get("annotations") or {}
+    text = annotations.get("requirement_level_condition")
+    if not text:
+        return None
+    match = CONDITION.match(" ".join(str(text).split()))
+    if not match:
+        raise ValueError(f"requirement_level_condition not understood: {text!r}")
+    level = str(annotations["requirement_level"]).lower()
+    otherwise = (match["otherwise"] or "optional").lower()
+    sentence = f"In FAIRe this term is {level} if {match['condition']}; otherwise {otherwise}."
+    return otherwise.capitalize(), sentence
+
+
 def doi_url(ref):
     ref = str(ref)
     return "https://doi.org/" + ref[len("doi:"):] if ref.startswith("doi:") else ref
@@ -209,6 +231,11 @@ def build_row(name, slot, answers, enums, mixs_titles):
     mappings, mapping_type = external_mappings(slot)
     # Only the answers file's comments: a slot's own comments are notes for FAIRe users.
     comments = " ".join(str(answers.get("comments") or "").split())
+    requirement = requirement_level(slot)
+    conditional = conditional_requirement(slot)
+    if conditional:
+        requirement, sentence = conditional
+        comments = f"{sentence} {comments}".strip()
     # A "reuse with changes" row is named after the MIxS term it changes (as in the
     # template's filter_type example); its title comes from the template's MIxS list.
     title = slot.get("title") or ""
@@ -228,7 +255,7 @@ def build_row(name, slot, answers, enums, mixs_titles):
         "Multivalued?": "Yes" if slot.get("multivalued") else "No",
         "Minimum value": slot.get("minimum_value", ""),
         "Maximum value": slot.get("maximum_value", ""),
-        "Requirement level": requirement_level(slot),
+        "Requirement level": requirement,
         "Existing MIxS term check": answers["existing_term_check"],
         "Related MIxS term(s)": answers.get("related_mixs_terms") or "",
         "Justification / proposed changes": " ".join(str(answers.get("justification") or "").split()),
