@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#274
+blocked: >-
+  Waits on FAIRe_checklist #114: the term review decided to propose DwC-DP
+  nucleotideSequenceID instead, which is DwC-DP's name for dcterms:identifier (no DwC
+  term URI); the group to decide the row's name and definition.
