@@ -19,7 +19,8 @@ examples:
   description: null
 source:
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- mixs:0001226
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

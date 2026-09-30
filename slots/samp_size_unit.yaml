@@ -21,7 +21,8 @@ examples:
   description: null
 source:
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:sampleSizeUnit
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
