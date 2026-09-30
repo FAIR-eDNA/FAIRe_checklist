@@ -1,0 +1,7 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#251
+blocked: >-
+  Waits on FAIRe_checklist #112: MIxS already has samp_category (MIXS:0001383), from
+  FAIRe's proposal; FAIRe's version also accepts other values and points to
+  neg_cont_type/pos_cont_type. The group to decide whether to adopt the MIxS term or
+  propose the differences.
