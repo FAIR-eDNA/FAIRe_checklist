@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#280
+blocked: >-
+  Waits on FAIRe_checklist #26: FAIRe says materials larger than the threshold are
+  excluded, MIxS says smaller; the MIxS wording is itself under review
+  (GenomicsStandardsConsortium/mixs#1414).
