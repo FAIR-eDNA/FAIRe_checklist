@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#240
+blocked: >-
+  Waits on FAIRe_checklist #106: FAIRe records the value and its unit in two fields
+  (pump_flow_rate, pump_flow_rate_unit); the group to decide how value + unit pairs go
+  to the GSC.
