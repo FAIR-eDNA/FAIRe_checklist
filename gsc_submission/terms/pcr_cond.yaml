@@ -1,0 +1,20 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#197
+mixs_term: pcr_cond
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: pcr_cond (MIXS:0000049)
+justification: >-
+  Replace "polymerase chain reaction performed during library preparation" with
+  "PCR", so the term also covers amplification PCR and qPCR, not only
+  library-preparation PCR. Add "where possible" to the recommended format, since many
+  protocols (e.g. touchdown PCR, combined annealing/extension) do not fit its fixed
+  steps.
+comments: >-
+  The last sentence of the definition (pcr2_cond) applies only if the pcr2_* terms
+  are also adopted; otherwise it can be dropped.
+submitter_questions: >-
+  The recommended format is hard for data providers to fill in and is often filled in
+  wrongly (MIxS's own second example does not follow it), so the values are hard to
+  reuse. The main values also have their own terms in this request (annealingTemp,
+  pcr_cycles). Should MIxS keep this format, make it stricter, or point users to
+  separate terms?

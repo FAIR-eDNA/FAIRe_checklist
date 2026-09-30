@@ -1,0 +1,12 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#178
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: pcr_cond (MIXS:0000049)
+justification: >-
+  In two-step metabarcoding PCR (barcoding_pcr_appr), a second PCR adds indexes and
+  adapters. Its conditions differ from the first PCR and also affect amplification bias
+  and index misassignment. This term records the second PCR's conditions, alongside
+  pcr_cond, which then holds the first PCR's.
+comments: >-
+  Uses the same recommended format as pcr_cond; the format question raised for
+  pcr_cond applies here too.
