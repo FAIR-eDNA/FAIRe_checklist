@@ -9,7 +9,8 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: ALL
-slot_uri: mixs:0000113
+  modifications_made: description | field_type
+slot_uri: faire:0000316
 range: float
 unit:
   ucum_code: Cel
@@ -20,9 +21,9 @@ examples:
 - value: '25'
   description: null
 source: mixs:0000113
-exact_mappings:
+exact_mappings: []
+close_mappings:
 - mixs:0000113
-close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

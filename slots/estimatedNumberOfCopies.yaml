@@ -24,6 +24,7 @@ examples:
 source: doi:10.1093/clinchem/hvaf043
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:organismQuantity
 narrow_mappings: []
 broad_mappings: []

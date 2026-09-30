@@ -24,6 +24,8 @@ examples:
 source:
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0001394
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- mixs:0000049

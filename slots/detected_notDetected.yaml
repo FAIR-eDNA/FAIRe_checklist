@@ -27,7 +27,8 @@ examples:
   description: null
 source:
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:occurrenceStatus
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

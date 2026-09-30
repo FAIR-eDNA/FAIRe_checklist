@@ -19,6 +19,7 @@ examples:
 source:
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0000755
 narrow_mappings: []
 broad_mappings: []

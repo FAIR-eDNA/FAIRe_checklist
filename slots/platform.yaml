@@ -21,7 +21,9 @@ examples:
 source:
 - INSDC
 exact_mappings: []
-close_mappings: []
-related_mappings: []
+close_mappings:
+- GENEPIO:0100473
+related_mappings:
+- mixs:0000050
 narrow_mappings: []
 broad_mappings: []

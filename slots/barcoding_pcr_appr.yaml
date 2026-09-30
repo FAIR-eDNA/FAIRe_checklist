@@ -23,6 +23,7 @@ examples:
 source: doi:10.3897/mbmg.8.128689
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0001388
 narrow_mappings: []
 broad_mappings: []

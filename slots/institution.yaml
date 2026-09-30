@@ -18,7 +18,10 @@ examples:
   description: null
 source:
 exact_mappings: []
-close_mappings: []
-related_mappings: []
-narrow_mappings: []
+close_mappings:
+- dwc:institutionCode
+related_mappings:
+- dwc:institutionID
+narrow_mappings:
+- mixs:0001152
 broad_mappings: []
