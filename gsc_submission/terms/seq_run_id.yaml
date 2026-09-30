@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#277
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: batch_ids (MIXS:0001382)
+justification: >-
+  The sequencing run is the main source of batch effects and cross-contamination in
+  metabarcoding (e.g. index hopping between samples on one run), so users need to
+  know which samples were sequenced together. batch_ids can include the run, but
+  mixed with other batch types in one value; seq_run_id records only the run, in a
+  machine-readable form.
+comments: >-
+  The last sentence of the definition (file names) describes FAIRe's templates and
+  can be dropped.
