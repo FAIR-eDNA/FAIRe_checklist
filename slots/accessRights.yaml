@@ -9,7 +9,8 @@ annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: dcterms:accessRights
+  modifications_made: description
+slot_uri: faire:0000287
 range: string
 required: false
 recommended: true
@@ -17,9 +18,9 @@ examples:
 - value: not-for-profit use only
   description: null
 source: dcterms:accessRights
-exact_mappings:
+exact_mappings: []
+close_mappings:
 - dcterms:accessRights
-close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
