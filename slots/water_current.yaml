@@ -9,7 +9,8 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Water | Sediment
-slot_uri: mixs:0000203
+  modifications_made: field_type
+slot_uri: faire:0000318
 range: float
 unit:
   ucum_code: m/s
@@ -20,9 +21,9 @@ examples:
 - value: '10'
   description: null
 source: mixs:0000203
-exact_mappings:
-- mixs:0000203
+exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0000203
 narrow_mappings: []
 broad_mappings: []

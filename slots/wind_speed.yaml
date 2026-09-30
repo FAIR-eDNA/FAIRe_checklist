@@ -9,7 +9,8 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: Water | Soil | Sediment | Air
-slot_uri: mixs:0000118
+  modifications_made: field_type
+slot_uri: faire:0000319
 range: float
 minimum_value: 0
 unit:
@@ -21,9 +22,9 @@ examples:
 - value: '5.14'
   description: null
 source: mixs:0000118
-exact_mappings:
+exact_mappings: []
+close_mappings:
 - mixs:0000118
-close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
