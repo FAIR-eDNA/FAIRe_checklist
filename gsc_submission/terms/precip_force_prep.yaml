@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#224
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: samp_mat_process (MIXS:0000016)
+justification: >-
+  Precipitation is a common alternative to filtration for concentrating eDNA from
+  water, soil or sediment, and its centrifuge force affects how much DNA is recovered.
+  samp_mat_process can only describe the step as free text; a separate term makes the
+  value comparable between studies. It is one of the variables Thalinger et al. (2021)
+  list for eDNA studies.
