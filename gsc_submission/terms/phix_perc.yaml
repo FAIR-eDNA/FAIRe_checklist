@@ -1,0 +1,8 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#217
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  PhiX is added to Illumina runs to add base diversity for low-diversity amplicon
+  libraries and as a sequencing control. The percentage added affects how many reads
+  are left for the samples and how to interpret read counts, and is needed to repeat
+  the run. MIxS has no term for it.
