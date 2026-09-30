@@ -16,7 +16,7 @@ any_of:
 required: false
 recommended: true
 examples:
-- value: ng/µL
+- value: ng/µl
   description: null
 source:
 exact_mappings: []
