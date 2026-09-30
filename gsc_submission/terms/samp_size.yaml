@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#256
+blocked: >-
+  Waits on FAIRe_checklist #106: FAIRe records the value and unit in two fields
+  (samp_size, samp_size_unit), MIxS samp_size in one; a row built from FAIRe's slot
+  would also propose that split. The description change below is already decided.
+mixs_term: samp_size
+existing_term_check: Reuse existing MIxS term with changes (describe changes)
+related_mixs_terms: samp_size (MIXS:0000001)
+justification: >-
+  Add a sentence to the description: the amount or size of the (sub)sample processed
+  for DNA extraction should be entered under samp_vol_we_dna_ext. Users often confuse
+  the amount collected with the amount extracted.
