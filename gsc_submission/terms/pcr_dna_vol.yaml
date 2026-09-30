@@ -1,0 +1,9 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#199
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: nucleic_acid_elution_vol (MIXS:0001353)
+justification: >-
+  The amount of template DNA in a PCR affects detection sensitivity and inhibition,
+  so it is needed to compare and repeat eDNA assays. nucleic_acid_elution_vol is the
+  volume the extract is eluted in, not the volume added to each PCR. It is a MIQE
+  checklist item (reaction volume and amount of cDNA/DNA).
