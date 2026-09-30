@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#283
+blocked: >-
+  Waits on FAIRe_checklist #115: the decision tree says propose MIxS sop unchanged,
+  the review comment says modify it to be about bioinformatics; values (PMID, DOI or
+  URL, #97) and multivalued also differ.
