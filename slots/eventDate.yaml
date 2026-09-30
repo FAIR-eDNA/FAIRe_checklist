@@ -17,7 +17,7 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000067
 range: string
 pattern: '^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?(/(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?)?$'
 required: true

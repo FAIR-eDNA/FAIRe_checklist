@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: HostAssociated | SymbiontAssociated
   modifications_made: description | field_type
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000082
 range: HostLifeStageEnum
 required: false
 recommended: false

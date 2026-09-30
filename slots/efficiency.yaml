@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: HR
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000054
 range: float
 minimum_value: 0
 unit:

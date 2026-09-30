@@ -10,7 +10,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   sample_type_specificity: ALL
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000195
 range: string
 required: false
 recommended: false

@@ -14,7 +14,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity: Water | Air
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000244
 range: string
 required: false
 recommended: true

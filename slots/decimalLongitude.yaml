@@ -14,7 +14,7 @@ annotations:
   requirement_level_condition: Mandatory unless specified under the term informationWithheld,
     or samp_category = negative control, positive control, or PCR standard
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000041
 range: float
 minimum_value: -180
 maximum_value: 180

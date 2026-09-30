@@ -14,7 +14,7 @@ annotations:
   modifications_made: field_name | description
 keywords:
   - MIQE
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000162
 range: float
 minimum_value: 0
 required: true

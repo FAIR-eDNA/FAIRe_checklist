@@ -12,7 +12,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000225
 range: float
 minimum_value: 0
 required: false

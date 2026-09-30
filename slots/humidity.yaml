@@ -12,7 +12,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: Air
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000085
 range: float
 minimum_value: 0
 maximum_value: 100

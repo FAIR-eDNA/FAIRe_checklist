@@ -12,7 +12,7 @@ annotations:
   modifications_made: field_name | description
 keywords:
   - INSDC
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000091
 range: string
 pattern: '^([^\s\[\]]([^\[\]]*[^\s\[\]])?|[^\s\[\]|]([^\[\]|]*[^\s\[\]|])? \[(OBI|GENEPIO):\d{7}\])$'
 required: false

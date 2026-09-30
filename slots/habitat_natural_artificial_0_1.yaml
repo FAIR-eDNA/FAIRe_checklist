@@ -12,7 +12,7 @@ annotations:
   requirement_level_code: R
 keywords:
   - Thalinger
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000079
 range: Any
 any_of:
 - range: boolean

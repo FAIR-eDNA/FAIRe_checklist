@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: HR
 keywords:
   - MIEM
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000016
 range: string
 any_of:
 - range: BarcodingPcrApprEnum

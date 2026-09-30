@@ -11,7 +11,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: Water | Air
   modifications_made: field_type
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000239
 range: float
 minimum_value: 0
 unit:

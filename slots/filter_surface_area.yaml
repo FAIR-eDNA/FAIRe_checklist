@@ -11,7 +11,7 @@ annotations:
   sample_type_specificity: Water | Air
 keywords:
   - Thalinger
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000076
 range: float
 minimum_value: 0
 unit:

@@ -15,7 +15,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: ALL
   modifications_made: description
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000221
 range: string
 required: false
 recommended: true

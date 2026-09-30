@@ -14,7 +14,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: Mandatory unless samp_category = negative control, positive control, or PCR standard
   modifications_made: description | field_type
-slot_uri: __TODO_ADD_SLOT_URI__
+slot_uri: faire:0000058
 range: EnvoTerm
 multivalued: true
 required: true
