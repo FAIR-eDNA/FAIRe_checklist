@@ -13,7 +13,8 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
   requirement_level_condition: If samp_category = positive control
-slot_uri: mixs:0001322
+  modifications_made: description
+slot_uri: faire:0000283
 range: string
 required: true
 recommended: false
@@ -21,9 +22,9 @@ examples:
 - value: PCR positive of synthetic DNA
   description: null
 source: mixs:0001322
-exact_mappings:
-- mixs:0001322
+exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0001322
 narrow_mappings: []
 broad_mappings: []
