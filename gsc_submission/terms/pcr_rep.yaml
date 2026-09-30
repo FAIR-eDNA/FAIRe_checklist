@@ -1,0 +1,13 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#212
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: samp_rep_tech (MIXS:0001227)
+justification: >-
+  PCR replicates are central to eDNA detection: a taxon found in only some replicates
+  is weaker evidence, so the number of replicates is needed to interpret detections.
+  samp_rep_tech is recorded per sample and does not say which step was replicated;
+  pcr_rep records the number of PCR replicates for the whole assay (experiment level).
+submitter_questions: >-
+  We asked in GenomicsStandardsConsortium/mixs#1319 whether samp_rep_tech covers only
+  PCR replicates or also other technical replicates (e.g. extraction). If it covers
+  only PCR replicates, pcr_rep could instead be a change to samp_rep_tech.
