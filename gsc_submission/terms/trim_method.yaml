@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#316
+blocked: >-
+  Waits on FAIRe_checklist #117 (trim_method and trim_param both claim the trimming
+  parameters) and #43 (whether to propose the bioinformatics terms); review still
+  help wanted.
