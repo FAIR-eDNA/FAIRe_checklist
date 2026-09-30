@@ -24,5 +24,4 @@ related_mappings: []
 narrow_mappings:
 - mixs:0001259
 - mixs:0001384
-broad_mappings:
-- dwc:protocolDescription
+broad_mappings: []
