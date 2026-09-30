@@ -1,0 +1,6 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#258
+blocked: >-
+  Waits on FAIRe_checklist #83: the description gives P1W/4W as an ISO 8601 range
+  ("between 1 and 4 weeks"), which is not valid ISO 8601; the group to settle the
+  duration format first.
