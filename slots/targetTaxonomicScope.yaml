@@ -3,14 +3,15 @@ title: target taxonomic scope
 description: >-
   The taxonomic group(s) targeted in the study. This can differ from the
   targetTaxonomicAssay. For example, the targetTaxonomicAssay may be Chordata while
-  the targetTaxonomicScope is Chondrichthyes (bony fish, sharks and rays).
+  the targetTaxonomicScope is Chondrichthyes (sharks, rays and chimaeras).
 in_subset:
   - PCR
 annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
-slot_uri: eco:targetTaxonomicScope
+  modifications_made: description
+slot_uri: faire:0000285
 range: string
 required: false
 recommended: true
@@ -18,9 +19,9 @@ examples:
 - value: teleost
   description: null
 source: eco:targetTaxonomicScope
-exact_mappings:
+exact_mappings: []
+close_mappings:
 - eco:targetTaxonomicScope
-close_mappings: []
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
