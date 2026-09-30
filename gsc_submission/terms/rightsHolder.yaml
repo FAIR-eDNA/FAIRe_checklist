@@ -1,0 +1,10 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#249
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Data reusers need to know who holds the rights to a dataset, e.g. to ask
+  permission or give credit. MIxS has no term for rights or ownership.
+submitter_questions: >-
+  This is the Dublin Core term (dcterms:rightsHolder), unchanged. Could MIxS reuse it
+  directly instead of minting a new term? Our working group noted MIxS/INSDC may not
+  need it; we leave that to the GSC.
