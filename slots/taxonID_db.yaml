@@ -18,6 +18,7 @@ examples:
 source:
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:nameAccordingTo
 narrow_mappings: []
 broad_mappings: []
