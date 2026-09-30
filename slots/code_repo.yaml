@@ -19,6 +19,7 @@ source:
 - NOAA
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0000340
 narrow_mappings: []
 broad_mappings: []
