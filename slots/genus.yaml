@@ -17,7 +17,8 @@ examples:
 - value: Lutjanus
   description: null
 source: dwc:genus
-exact_mappings: []
+exact_mappings:
+- dwc:genus
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

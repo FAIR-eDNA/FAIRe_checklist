@@ -24,7 +24,8 @@ examples:
   description: null
 source: nmdc:pcr_cycles
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- nmdc:pcr_cycles
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

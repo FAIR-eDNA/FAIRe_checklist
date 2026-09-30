@@ -20,7 +20,8 @@ examples:
   description: null
 source: dwc:associatedSequences
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:associatedSequences
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

@@ -19,7 +19,9 @@ examples:
   description: null
 source: ggbn:concentration
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:concentration
+- mixs:0001352
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

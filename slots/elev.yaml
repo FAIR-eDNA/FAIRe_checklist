@@ -24,8 +24,10 @@ examples:
 - value: '100'
   description: null
 source: mixs:0000093
-exact_mappings: []
+exact_mappings:
+- mixs:0000093
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:verbatimElevation
 narrow_mappings: []
 broad_mappings: []

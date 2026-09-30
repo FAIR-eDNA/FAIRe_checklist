@@ -19,7 +19,8 @@ examples:
 - value: http://www.earthmicrobiome.org/
   description: null
 source: mixs:0000091
-exact_mappings: []
+exact_mappings:
+- mixs:0000091
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

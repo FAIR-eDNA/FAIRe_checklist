@@ -17,7 +17,8 @@ examples:
 - value: erythropterus
   description: null
 source: dwc:specificEpithet
-exact_mappings: []
+exact_mappings:
+- dwc:specificEpithet
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

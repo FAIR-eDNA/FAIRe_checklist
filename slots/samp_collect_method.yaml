@@ -19,7 +19,8 @@ examples:
 - value: https://research.csiro.au/ambsm/1-sample-collection-procedures/meth_1-2-soil-sampling-for-utas-urban-soil-and-aerial-microbiome-study/
   description: null
 source: mixs:0001225
-exact_mappings: []
+exact_mappings:
+- mixs:0001225
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

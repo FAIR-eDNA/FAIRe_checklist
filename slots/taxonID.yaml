@@ -19,7 +19,8 @@ examples:
   description: null
 source: dwc:taxonID
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- dwc:taxonID
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

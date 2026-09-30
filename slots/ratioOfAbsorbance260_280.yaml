@@ -20,7 +20,8 @@ examples:
   description: null
 source: ggbn:ratioOfAbsorbance260_280
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:ratioOfAbsorbance260_280
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

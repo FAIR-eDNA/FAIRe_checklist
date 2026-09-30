@@ -19,8 +19,10 @@ examples:
 - value: 41 05 54.03S
   description: null
 source: dwc:verbatimLatitude
-exact_mappings: []
+exact_mappings:
+- dwc:verbatimLatitude
 close_mappings: []
-related_mappings: []
+related_mappings:
+- mixs:0000009
 narrow_mappings: []
 broad_mappings: []

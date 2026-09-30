@@ -18,7 +18,8 @@ examples:
 - value: Qiagen PowerSoil Kit
   description: null
 source: mixs:0001223
-exact_mappings: []
+exact_mappings:
+- mixs:0001223
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

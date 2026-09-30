@@ -24,7 +24,8 @@ examples:
   description: null
 source: nmdc:output_read_count
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- nmdc:output_read_count
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

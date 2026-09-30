@@ -28,7 +28,9 @@ examples:
   description: null
 source: gbif:pcr_primer_reverse
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- gbif:pcr_primer_reverse
 related_mappings: []
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- mixs:0000046

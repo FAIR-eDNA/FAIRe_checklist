@@ -21,7 +21,8 @@ examples:
 - value: https://www.qiagen.com/us/resources/resourcedetail?id=5a0517a7-711d-4085-8a28-2bb25fab828a&lang=en
   description: null
 source: mixs:0000037
-exact_mappings: []
+exact_mappings:
+- mixs:0000037
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

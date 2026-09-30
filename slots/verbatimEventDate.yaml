@@ -17,7 +17,8 @@ examples:
 - value: 23-January-2008
   description: null
 source: dwc:verbatimEventDate
-exact_mappings: []
+exact_mappings:
+- dwc:verbatimEventDate
 close_mappings: []
 related_mappings: []
 narrow_mappings: []

@@ -19,7 +19,8 @@ examples:
 - value: NW
   description: null
 source: mixs:0000757
-exact_mappings: []
+exact_mappings:
+- mixs:0000757
 close_mappings: []
 related_mappings: []
 narrow_mappings: []
