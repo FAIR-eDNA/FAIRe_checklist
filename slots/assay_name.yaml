@@ -21,6 +21,7 @@ examples:
 source:
 exact_mappings: []
 close_mappings: []
-related_mappings: []
+related_mappings:
+- dwc:assayType
 narrow_mappings: []
 broad_mappings: []
