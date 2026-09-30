@@ -8,9 +8,10 @@ justification: >-
   without having to parse instrument names. The values are the INSDC platform list,
   which sequence archive submissions already use.
 comments: >-
-  The values follow the INSDC (ENA/SRA) platform list, which has no ontology terms.
-  Platforms and instruments are being added to GenEpiO, to be moved to OBI; FAIRe
-  will use those terms once they are available.
+  The values follow the INSDC (ENA/SRA) platform list. GenEpiO has an equivalent data
+  field, sequencing platform (GENEPIO:0100473), and platform terms for some of the
+  values (e.g. Illumina platform, GENEPIO:0001923), but not yet all (e.g. none for
+  Oxford Nanopore or Element). FAIRe will use ontology terms once they cover the list.
 submitter_questions: >-
   seq_meth is titled "sequencing method" but records the sequencing machine. Could
   the GSC review its name and description?
