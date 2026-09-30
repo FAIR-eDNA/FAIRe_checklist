@@ -1,0 +1,14 @@
+# Answers for the GSC "MIxS New Term Request Template" (#93).
+# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#206
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: pcr_primers (MIXS:0000046)
+justification: >-
+  pcr_primers holds the primer sequences, not their names. Papers and reference
+  databases usually identify primers by name (e.g. mlCOIintR), so the name lets users
+  find and compare datasets by primer set without matching sequences. The term is in
+  the GBIF DNA-derived data extension (pcr_primer_name_reverse) and GGBN has an
+  equivalent (ggbn:primerNameReverse).
+comments: >-
+  FAIRe, MIxS (pcr_primers) and the GBIF DNA-derived data extension record several
+  primers used in one PCR (multiplex PCR) in different ways; FAIRe would like to align
+  this across the standards.
