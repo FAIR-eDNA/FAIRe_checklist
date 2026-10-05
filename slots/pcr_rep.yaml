@@ -6,7 +6,7 @@ description: >-
 in_subset:
   - PCR
 annotations:
-  data_type: projectMetadata
+  data_type: sampleMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: faire:0000182
