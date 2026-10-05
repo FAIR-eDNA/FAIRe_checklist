@@ -281,7 +281,11 @@ enums:
   StorageSolutionEnum:
     description: Solution in which a sample is stored.
     permissible_values:
+      ammonium sulfate:
+        description: Ammonium sulfate-based preservation solution, e.g. RNAlater.
       ethanol:
+      guanidinium thiocyanate:
+        description: Guanidinium thiocyanate-based preservation solution, e.g. DNA/RNA Shield.
       longmire:
       lysis buffer:
       none:
