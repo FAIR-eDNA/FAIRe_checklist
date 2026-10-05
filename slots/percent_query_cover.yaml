@@ -1,37 +1,28 @@
 name: percent_query_cover
-description: The percentage coverage of the query sequence that aligns with a reference
+title: percent query coverage
+description: >-
+  The percentage coverage of the query sequence that aligns with a reference
   sequence in a database. If multiple species were assigned to one ASV/OTU, a range
-  can be entered separated by  "-" (e.g., 98.7-99.2).  Unit = %
+  can be entered separated by "-" (e.g., 98.7-99.2).
 in_subset:
   - OTU/ASV
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000184
 range: string
-unit: '%'
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+unit:
+  ucum_code: '%'
+  descriptive_name: percent
 required: false
 recommended: true
 examples:
-- value: '100.0'
+- value: '100'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

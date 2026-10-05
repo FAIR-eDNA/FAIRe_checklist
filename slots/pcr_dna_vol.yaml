@@ -1,34 +1,30 @@
 name: pcr_dna_vol
-description: Volume of DNA added in each PCR reaction. Unit = µL
+title: PCR DNA volume
+description: >-
+  Volume of DNA added in each PCR reaction.
 in_subset:
   - PCR
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-unit: µL
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+keywords:
+  - MIQE
+slot_uri: faire:0000169
+range: float
+minimum_value: 0
+unit:
+  ucum_code: uL
+  descriptive_name: microliter
 required: false
 recommended: true
 examples:
-- value: '2.0'
+- value: '2'
   description: null
-source:
-- MIQE
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000049

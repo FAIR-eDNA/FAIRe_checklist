@@ -1,37 +1,28 @@
 name: percent_match
-description: The percentage of sequence identity between a query sequence obtained
+title: percent identity to reference sequence
+description: >-
+  The percentage of sequence identity between a query sequence obtained
   from eDNA and a reference sequence in a database. If multiple species were assigned
-  to one ASV/OTU, a range can be entered separated by  "-" (e.g., 98.7-99.2).
+  to one ASV/OTU, a range can be entered separated by "-" (e.g., 98.7-99.2).
 in_subset:
   - OTU/ASV
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000183
 range: string
-unit: '%'
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+unit:
+  ucum_code: '%'
+  descriptive_name: percent
 required: false
 recommended: true
 examples:
 - value: '99.8'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - taxaRaw
-  - taxaFinal
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

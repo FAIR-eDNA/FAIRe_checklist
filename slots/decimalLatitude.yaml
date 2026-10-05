@@ -1,43 +1,33 @@
 name: decimalLatitude
-description: The geographic latitude in decimal degrees using WGS84 datum. Positive
+title: decimal latitude
+description: >-
+  The geographic latitude in decimal degrees using WGS84 datum. Positive
   values are north of the Equator, negative values are south of it. Legal values lie
   between -90 and 90, inclusive. The desired minimum number of decimal places is the
   hundred-thousandth (0.00001) to achieve meter scale resolution.
 in_subset:
   - Sample collection
-slot_uri: http://rs.tdwg.org/dwc/terms/decimalLatitude
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: Mandatory unless specified under the term informationWithheld,
+    or samp_category = negative control, positive control, or PCR standard
+  modifications_made: description
+slot_uri: faire:0000040
+range: float
+minimum_value: -90
+maximum_value: 90
 required: true
 recommended: false
 examples:
 - value: '-41.09834'
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/decimalLatitude
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: Mandatory unless specified under the term informationWithheld,
-    or samp_category = negative control, positive control, or PCR standard
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - http://rs.tdwg.org/dwc/terms/decimalLatitude
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:decimalLatitude
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- dwc:decimalLatitude
+- mixs:0000009

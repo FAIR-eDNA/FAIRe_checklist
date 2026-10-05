@@ -1,37 +1,27 @@
 name: ratioOfAbsorbance260_280
-description: Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
+title: ratio of absorbance 260/280
+description: >-
+  Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly
   secondary measure, indicates mainly EDTA, carbohydrates, phenol).
 in_subset:
   - Nucleic acid extraction
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  modifications_made: description
+slot_uri: faire:0000210
+range: float
+minimum_value: 0
 required: false
 recommended: false
 examples:
 - value: '2.1'
   description: null
-source:
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: ggbn:ratioOfAbsorbance260_280
+exact_mappings: []
+close_mappings:
+- ggbn:ratioOfAbsorbance260_280
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

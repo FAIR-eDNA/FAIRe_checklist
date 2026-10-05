@@ -1,36 +1,24 @@
 name: tax_class_other
-description: Additional information on parameters and cutoffs used for taxonomic assignment,
+title: other taxonomic assignment parameters
+description: >-
+  Additional information on parameters and cutoffs used for taxonomic assignment,
   that have not been shared in the given record.
 in_subset:
   - Bioinformatics
-slot_uri: https://w3id.org/mixs/0000064
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000258
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples: []
-source:
-- MIxS
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000064
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000064
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000064

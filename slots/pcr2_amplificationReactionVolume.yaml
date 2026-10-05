@@ -1,34 +1,28 @@
 name: pcr2_amplificationReactionVolume
-description: The total PCR reaction volume in the second step PCR. Unit = µL
+title: second PCR reaction volume
+description: >-
+  The total PCR reaction volume in the second step PCR.
 in_subset:
   - Library preparation sequencing
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-unit: µL
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+slot_uri: faire:0000144
+range: float
+minimum_value: 0
+unit:
+  ucum_code: uL
+  descriptive_name: microliter
 required: false
 recommended: false
 examples:
-- value: '22.0'
+- value: '22'
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000049

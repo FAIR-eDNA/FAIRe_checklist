@@ -1,38 +1,28 @@
 name: detection_criteria
-description: Criteria to determine positive detection. For example, a certain number
-  of positive amplifications per sample, sanger sequencing of amplicons
+title: detection criteria
+description: >-
+  Criteria to determine positive detection. For example, a certain number
+  of positive amplifications per sample, sanger sequencing of amplicons.
 in_subset:
   - Targeted assay detection
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: projectMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  modifications_made: field_name | description
+keywords:
+  - Thalinger
+slot_uri: faire:0000045
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: true
 recommended: false
 examples:
 - value: The minimum number of PCR replicates of 2 with positive amplification
   description: null
-source:
-- Thalinger et al., 2021
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - field_name
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1002/edn3.189
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

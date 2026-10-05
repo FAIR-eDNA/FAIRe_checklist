@@ -1,37 +1,25 @@
 name: informationWithheld
-description: Additional information that exists, but that has not been shared in the
+title: information withheld
+description: >-
+  Additional information that exists, but that has not been shared in the
   given record.
 in_subset:
   - Data management
-slot_uri: http://rs.tdwg.org/dwc/terms/informationWithheld
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+slot_uri: dwc:informationWithheld
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:
 - value: location information not given for endangered species
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/informationWithheld
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - http://rs.tdwg.org/dwc/terms/informationWithheld
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:informationWithheld
+exact_mappings:
+- dwc:informationWithheld
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

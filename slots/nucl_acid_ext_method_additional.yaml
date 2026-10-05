@@ -1,32 +1,23 @@
 name: nucl_acid_ext_method_additional
-description: Additional information on nucleic acid extraction method, that has not
+title: additional nucleic acid extraction method information
+description: >-
+  Additional information on nucleic acid extraction method, that has not
   been shared in the given record.
 in_subset:
   - Nucleic acid extraction
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+slot_uri: faire:0000123
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples: []
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings:
+- mixs:0000037
+narrow_mappings: []
+broad_mappings: []

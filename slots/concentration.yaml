@@ -1,38 +1,27 @@
 name: concentration
-description: Concentration of total DNA after extraction
+title: DNA concentration after extraction
+description: >-
+  Concentration of total DNA after extraction.
 in_subset:
   - Nucleic acid extraction
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: description
+slot_uri: faire:0000033
+range: float
+minimum_value: 0
 required: false
 recommended: true
 examples:
 - value: '67.5'
   description: null
-source:
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: ggbn:concentration
+exact_mappings: []
+close_mappings:
+- ggbn:concentration
+- mixs:0001352
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

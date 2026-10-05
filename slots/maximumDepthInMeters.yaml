@@ -1,50 +1,35 @@
 name: maximumDepthInMeters
-description: The greater depth of a range of depth (vertical distance below the local
+title: maximum depth in meters
+description: >-
+  The greater depth of a range of depth (vertical distance below the local
   surface) at which a sample was collected. For sediment or soil samples depth is
   measured from sediment or soil surface, respectively. If there is only one single
   point of depth (no range), the values in minimumDepthInMeters and maximumDepthInMeters
-  are the same. Unit = meter
+  are the same.
 in_subset:
   - Environment
-slot_uri: http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
-range: string
-unit: meter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm | SymbiontAssociated
+  modifications_made: description
+slot_uri: faire:0000102
+range: float
+minimum_value: 0
+unit:
+  ucum_code: m
+  descriptive_name: meter
 required: false
 recommended: true
 examples:
 - value: '0.2'
   description: null
-source:
-- DwC
-mappings:
-  exact_mappings:
-  - http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  - HostAssociated
-  - MicrobialMatBiofilm
-  - SymbiontAssociated
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: dwc:maximumDepthInMeters
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- dwc:maximumDepthInMeters
+- mixs:0000018

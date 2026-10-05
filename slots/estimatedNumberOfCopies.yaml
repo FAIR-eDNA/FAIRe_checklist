@@ -1,42 +1,30 @@
 name: estimatedNumberOfCopies
-description: Estimated concentration of target molecules. Describe the approach taken
-  to estimate it under the term estaimtedNumberOfCopies_method.
+title: estimated number of copies
+description: >-
+  Estimated concentration of target molecules. Describe the approach taken
+  to estimate it under the term estimatedNumberOfCopies_method.
 in_subset:
   - Targeted assay detection
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: ampData | eLowQuantData
+  requirement_level: Recommended
+  requirement_level_code: R
+  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  modifications_made: description
+keywords:
+  - MIQE
+slot_uri: faire:0000062
+range: float
+minimum_value: 0
 required: false
 recommended: true
 examples:
 - value: '35.92426489978709'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - ampData
-  - eLowQuantData
-  requirement_level: Recommended
-  requirement_level_code: R
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1093/clinchem/hvaf043
+exact_mappings: []
+close_mappings: []
+related_mappings:
+- dwc:organismQuantity
+narrow_mappings: []
+broad_mappings: []

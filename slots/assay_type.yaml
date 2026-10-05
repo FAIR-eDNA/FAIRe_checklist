@@ -1,40 +1,31 @@
 name: assay_type
-description: The method used in the eDNA study to detect taxon/taxa of interest in environmental sample. A targeted eDNA assay
+title: assay type
+description: >-
+  The method used in the eDNA study to detect taxon/taxa of interest in environmental sample. A targeted eDNA assay
   is designed to detect the presence of a specific species or a small subset of taxa (such as a genus or family) using techniques
   like quantitative PCR (qPCR). This contrasts with a metabarcoding eDNA assay which aims to characterize the composition
   of broader taxonomic communities, often encompassing multiple phyletic groups, by utilising high-throughput sequencing such
-  as metabarcoding
+  as metabarcoding.
 in_subset:
 - Project
-slot_uri: __TODO_ADD_SLOT_URI__
-range: assay_type_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Mandatory
+  requirement_level_code: M
+slot_uri: faire:0000010
+range: string
+any_of:
+- range: AssayTypeEnum
+- range: OtherText
 required: true
 recommended: false
 examples:
 - value: targeted
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Mandatory
-  requirement_level_code: M
-enum_values:
-  metabarcoding:
-    meaning: metabarcoding
-  'other:':
-    meaning: 'other:'
-  targeted:
-    meaning: targeted
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- dwc:assayType

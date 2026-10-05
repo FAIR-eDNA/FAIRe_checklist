@@ -1,46 +1,30 @@
 name: prepped_samp_store_sol
-description: 'Solution within which the prepared sample was stored prior to DNA extraction. Note: The storage solution of
+title: prepared sample storage solution
+description: >-
+  Solution within which the prepared sample was stored prior to DNA extraction. Note: The storage solution of
   the original environmental sample (e.g., water, soil) should be recorded under samp_store_sol, while the current term is
-  for the "processed" sample such as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.'
+  for the "processed" sample such as filter paper, homogenised and subsampled sediment, prepared for DNA extraction.
 in_subset:
 - Sample preparation
-slot_uri: __TODO_ADD_SLOT_URI__
-range: prepped_samp_store_sol_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: ALL
+slot_uri: faire:0000197
+range: string
+any_of:
+- range: StorageSolutionEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: lysis buffer
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity:
-  - ALL
-enum_values:
-  ethanol:
-    meaning: ethanol
-  longmire:
-    meaning: longmire
-  lysis buffer:
-    meaning: lysis buffer
-  none:
-    meaning: none
-  'other:':
-    meaning: 'other:'
-  sodium acetate:
-    meaning: sodium acetate
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0001317

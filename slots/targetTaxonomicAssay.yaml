@@ -1,35 +1,26 @@
 name: targetTaxonomicAssay
-description: Taxa or species name targeted by the primers, probes, and/or other approaches
+title: assay target taxa
+description: >-
+  Taxa or species name targeted by the primers, probes, and/or other approaches
   applied in the PCR.
 in_subset:
   - PCR
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
-required: true
-recommended: false
-examples:
-- value: verteberate
-  description: null
-source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Mandatory
   requirement_level_code: M
   requirement_level_condition: If pcr_0_1 is 1. Else, recommended
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+slot_uri: faire:0000254
+range: string
+required: true
+recommended: false
+examples:
+- value: vertebrate
+  description: null
+source:
+exact_mappings: []
+close_mappings: []
+related_mappings:
+- mixs:0001396
+narrow_mappings: []
+broad_mappings: []

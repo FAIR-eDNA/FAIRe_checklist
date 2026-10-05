@@ -1,45 +1,33 @@
 name: elev
-description: Elevation of the sampling site is its height above a fixed reference
+title: elevation
+description: >-
+  Elevation of the sampling site is its height above a fixed reference
   point, most commonly the mean sea level. Elevation is mainly used when referring
   to points on the earth's surface, while altitude is used for points above the surface,
   such as an aircraft in flight or a spacecraft in orbit. i.e. 0m for seawater sample.
-  Unit = meter
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000093
-range: string
-unit: meter
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: ALL
+  modifications_made: description
+slot_uri: faire:0000055
+range: float
+unit:
+  ucum_code: m
+  descriptive_name: meter
 required: false
 recommended: false
 examples:
-- value: '100.0'
+- value: '100'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000093
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - ALL
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/mixs/0000093
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000093
+exact_mappings:
+- mixs:0000093
+close_mappings: []
+related_mappings:
+- dwc:verbatimElevation
+narrow_mappings: []
+broad_mappings: []

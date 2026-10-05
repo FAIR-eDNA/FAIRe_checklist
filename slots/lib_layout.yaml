@@ -1,40 +1,28 @@
 name: lib_layout
-description: Specify whether to expect single, paired, or other configuration of reads
+title: library layout
+description: >-
+  Specify whether to expect single, paired, or other configuration of reads.
 in_subset:
 - Library preparation sequencing
-slot_uri: https://w3id.org/mixs/0000041
-range: lib_layout_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  modifications_made: field_type
+slot_uri: faire:0000098
+range: string
+any_of:
+- range: LibLayoutEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: paired end
   description: null
-source:
-- MIxS
-- DNA-derived data extension
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000041
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  modifications_made:
-  - field_type
-enum_values:
-  'other:':
-    meaning: 'other:'
-  paired end:
-    meaning: paired end
-  single end:
-    meaning: single end
+source: mixs:0000041
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000041

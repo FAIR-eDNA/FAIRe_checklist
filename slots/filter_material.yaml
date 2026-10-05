@@ -1,53 +1,29 @@
 name: filter_material
-description: Material of filter
+title: filter material
+description: >-
+  Material of filter.
 in_subset:
 - Sample preparation
-slot_uri: https://w3id.org/nmdc/filter_material
-range: filter_material_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: Water | Air
+  modifications_made: description | field_type
+slot_uri: faire:0000073
+range: string
+any_of:
+- range: FilterMaterialEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
 - value: cellulose ester
   description: null
-source:
-- NMDC
-mappings:
-  exact_mappings:
-  - https://w3id.org/nmdc/filter_material
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Air
-  modifications_made:
-  - description
-  - field_type
-enum_values:
-  cellulose:
-    meaning: cellulose
-  cellulose ester:
-    meaning: cellulose ester
-  glass fiber:
-    meaning: glass fiber
-  nylon:
-    meaning: nylon
-  'other:':
-    meaning: 'other:'
-  polyethersulfone:
-    meaning: polyethersulfone
-  thermoplastic membrane:
-    meaning: thermoplastic membrane
-  track etched polycarbonate:
-    meaning: track etched polycarbonate
+source: nmdc:filter_material
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- nmdc:filter_material

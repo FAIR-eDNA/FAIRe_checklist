@@ -1,36 +1,27 @@
 name: concentration_unit
-description: The unit of total DNA concentration after extraction
+title: DNA concentration unit
+description: >-
+  The unit of total DNA concentration after extraction.
 in_subset:
 - Nucleic acid extraction
-slot_uri: __TODO_ADD_SLOT_URI__
-range: concentration_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000035
+range: string
+any_of:
+- range: DnaConcentrationUnitEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
-- value: ng/µL
+- value: ng/µl
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-enum_values:
-  copies/µl:
-    meaning: copies/µl
-  ng/µl:
-    meaning: ng/µl
-  'other:':
-    meaning: 'other:'
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- ggbn:concentrationUnit

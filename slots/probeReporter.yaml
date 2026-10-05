@@ -1,38 +1,30 @@
 name: probeReporter
-description: Type of fluorophore (reporter) used. Probe anneals within amplified target
+title: probe reporter
+description: >-
+  Type of fluorophore (reporter) used. Probe anneals within amplified target
   DNA. Polymerase activity degrades the probe that has annealed to the template, and
   the probe releases the fluorophore from it and breaks the proximity to the quencher,
   thus allowing fluorescence of the fluorophore.
 in_subset:
   - PCR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+keywords:
+  - MIQE
+slot_uri: faire:0000203
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
 - value: FAM
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,39 +1,34 @@
 name: automaticThresholdQuantificationCycle
-description: Whether the threshold was set by the instrument (1) or manually (0).
+title: automatic quantification cycle threshold
+description: >-
+  Whether the threshold was set by the instrument (1) or manually (0).
 in_subset:
 - Targeted assay detection
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: automaticThresholdQuantificationCycle_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  modifications_made: description | field_type
+keywords:
+  - MIQE
+slot_uri: faire:0000015
+range: Any
+any_of:
+- range: boolean
+- range: BooleanEnum
+- range: integer
+  minimum_value: 0
+  maximum_value: 1
 required: false
 recommended: false
 examples:
 - value: '1'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  modifications_made:
-  - description
-  - field_type
-enum_values:
-  '0':
-    meaning: '0'
-  '1':
-    meaning: '1'
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

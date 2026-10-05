@@ -1,39 +1,27 @@
 name: host_length
-description: The length of subject
+title: host length
+description: >-
+  The length of subject.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000256
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: HostAssociated | SymbiontAssociated
+  modifications_made: field_type
+slot_uri: faire:0000294
+range: float
+minimum_value: 0
 required: false
 recommended: false
 examples:
-- value: '54.0'
+- value: '54'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000256
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - HostAssociated
-  - SymbiontAssociated
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://w3id.org/mixs/0000256
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000256
+exact_mappings: []
+close_mappings:
+- mixs:0000256
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

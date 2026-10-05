@@ -1,48 +1,32 @@
 name: precip_chem_prep
-description: Chemicals used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
-  performed
+title: precipitation chemicals
+description: >-
+  Chemicals used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
+  performed.
 in_subset:
 - Sample preparation
-slot_uri: __TODO_ADD_SLOT_URI__
-range: precip_chem_prep_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  sample_type_specificity: Water | Soil | Sediment
+  modifications_made: field_name | description
+keywords:
+  - Thalinger
+slot_uri: faire:0000190
+range: string
+any_of:
+- range: PrecipChemPrepEnum
+- range: OtherText
+multivalued: true
 required: false
 recommended: true
 examples:
-- value: ethanol
+- value: 'ethanol | sodium chloride'
   description: null
-- value: sodium chloride
-  description: null
-source:
-- Thalinger et al., 2021
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  sample_type_specificity:
-  - Water
-  - Soil
-  - Sediment
-  modifications_made:
-  - field_name
-  - description
-enum_values:
-  ethanol:
-    meaning: ethanol
-  isopropanol:
-    meaning: isopropanol
-  'other:':
-    meaning: 'other:'
-  sodium chloride:
-    meaning: sodium chloride
+source: doi:10.1002/edn3.189
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

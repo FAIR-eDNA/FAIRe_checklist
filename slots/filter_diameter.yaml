@@ -1,37 +1,30 @@
 name: filter_diameter
-description: Diameter of a filter if circular. Unit = mm
+title: filter diameter
+description: >-
+  Diameter of a filter if circular.
 in_subset:
   - Sample preparation
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-unit: mm
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Air
+keywords:
+  - Thalinger
+slot_uri: faire:0000072
+range: float
+minimum_value: 0
+unit:
+  ucum_code: mm
+  descriptive_name: millimeter
 required: false
 recommended: true
 examples:
-- value: '47.0'
+- value: '47'
   description: null
-source:
-- Thalinger et al., 2021
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-  sample_type_specificity:
-  - Water
-  - Air
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1002/edn3.189
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

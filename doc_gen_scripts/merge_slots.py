@@ -9,6 +9,7 @@ OUTPUT_SCHEMA = "schema.yaml"
 GLOSSARY_FILENAME = "glossary_annotation.yaml"
 ENUMS_FILENAME = "enums.yaml"
 CLASSES_FILENAME = "classes.yaml"
+TYPES_FILENAME = "types.yaml"
 
 
 def load_yaml(path):
@@ -92,6 +93,17 @@ def uri_to_curie(uri, prefixes):
     return f"{best_name}:{local}"
 
 
+# LinkML mapping metaslots; each is a list of URIs directly on the slot.
+MAPPING_KEYS = (
+    "mappings",
+    "exact_mappings",
+    "close_mappings",
+    "related_mappings",
+    "narrow_mappings",
+    "broad_mappings",
+)
+
+
 def compact_uris_in_slot(slot_def, prefixes):
     """Rewrite slot_uri and mapping lists to use schema prefix CURIEs where possible."""
     if not isinstance(slot_def, dict):
@@ -99,35 +111,13 @@ def compact_uris_in_slot(slot_def, prefixes):
     su = slot_def.get("slot_uri")
     if isinstance(su, str):
         slot_def["slot_uri"] = uri_to_curie(su, prefixes)
-    mappings = slot_def.get("mappings")
-    if not isinstance(mappings, dict):
-        return
-    for _key, mlist in mappings.items():
+    for key in MAPPING_KEYS:
+        mlist = slot_def.get(key)
         if not isinstance(mlist, list):
             continue
-        slot_def["mappings"][_key] = [
+        slot_def[key] = [
             uri_to_curie(x, prefixes) if isinstance(x, str) else x for x in mlist
         ]
-
-
-def to_permissible_values(enum_values):
-    """
-    Normalize slot-local enum_values into LinkML permissible_values format.
-    """
-    permissible = OrderedDict()
-    if not isinstance(enum_values, dict):
-        return permissible
-
-    for key, val in enum_values.items():
-        if isinstance(val, dict):
-            # Keep existing meaning/description if present.
-            permissible[key] = {
-                "meaning": val.get("meaning", key),
-                **({"description": val["description"]} if "description" in val else {}),
-            }
-        else:
-            permissible[key] = {"meaning": key}
-    return permissible
 
 
 # Base schema structure — prefix expansions must stay in sync with compact_uris_in_slot().
@@ -138,8 +128,19 @@ SCHEMA_PREFIXES = {
     "mixs": "https://w3id.org/mixs/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
-    "gbif": "https://rs.gbif.org/extension/gbif/1.0/",
-    "faire": "https://w3id.org/fairie/",
+    "gbif": "http://rs.gbif.org/terms/",
+    "ggbn": "http://data.ggbn.org/schemas/ggbn/terms/",
+    # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
+    "eco": "http://rs.tdwg.org/eco/terms/",
+    "nmdc": "https://w3id.org/nmdc/",
+    # QUDT unit vocabulary (QUDT's own prefix); qudt: is QUDT's schema namespace
+    "unit": "http://qudt.org/vocab/unit/",
+    "UO": "http://purl.obolibrary.org/obo/UO_",
+    # Publications a slot was derived from, e.g. the MIQE papers (#55)
+    "doi": "https://doi.org/",
+    # Genomic Epidemiology Ontology (instrument, #74)
+    "GENEPIO": "http://purl.obolibrary.org/obo/GENEPIO_",
+    "faire": "https://w3id.org/faire/",
 }
 
 schema = OrderedDict(
@@ -154,14 +155,12 @@ schema = OrderedDict(
     }
 )
 
-# Load glossary (if exists) and insert first
-glossary_path = os.path.join(SLOTS_DIR, GLOSSARY_FILENAME)
-if os.path.exists(glossary_path):
-    glossary_block = load_yaml(glossary_path)
-    schema["annotations"] = glossary_block.get("annotations", {})
+# The glossary (GLOSSARY_FILENAME) is not copied into the schema: LinkML tools
+# can't load it as an annotation (#68).
 
 # Initialize containers
 schema["slots"] = OrderedDict()
+schema["types"] = OrderedDict()
 schema["enums"] = OrderedDict()
 schema["classes"] = OrderedDict()
 schema["subsets"] = OrderedDict()
@@ -176,6 +175,13 @@ if os.path.exists(enums_path):
         for enum_name, enum_def in central_enums.items():
             schema["enums"][enum_name] = enum_def
 
+# 1a) Load central types source (e.g. OtherText).
+if os.path.exists(TYPES_FILENAME):
+    central_types = load_yaml(TYPES_FILENAME).get("types", {})
+    if isinstance(central_types, dict):
+        for type_name, type_def in central_types.items():
+            schema["types"][type_name] = type_def
+
 # 1b) Load central classes source.
 classes_path = CLASSES_FILENAME
 if os.path.exists(classes_path):
@@ -185,7 +191,9 @@ if os.path.exists(classes_path):
         for class_name, class_def in central_classes.items():
             if not isinstance(class_def, dict):
                 class_def = {}
+            # Keep every key (e.g. class_uri); only fill in description and tidy slots.
             schema["classes"][class_name] = {
+                **class_def,
                 "description": class_def.get(
                     "description", f"Checklist class: {class_name}."
                 ),
@@ -202,7 +210,6 @@ slot_files = sorted(
 for file_name in slot_files:
     slot_path = os.path.join(SLOTS_DIR, file_name)
     slot_content = load_yaml(slot_path)
-    loaded_slot_names = []
 
     if "name" in slot_content:
         slot_name = slot_content["name"]
@@ -210,36 +217,12 @@ for file_name in slot_files:
         compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
         schema["slots"][slot_name] = slot_def
         slot_context[slot_name] = get_slot_context(slot_def)
-        loaded_slot_names.append(slot_name)
     else:
         # Legacy format fallback: {slot_name: slot_def}
         for slot_name, slot_def in slot_content.items():
             compact_uris_in_slot(slot_def, SCHEMA_PREFIXES)
             schema["slots"][slot_name] = slot_def
             slot_context[slot_name] = get_slot_context(slot_def)
-            loaded_slot_names.append(slot_name)
-
-    # If slot still contains local enum_values, keep backward compatibility:
-    # - lift into top-level enums
-    # - keep rendered enum_values in slot output
-    for slot_name in loaded_slot_names:
-        current_slot = schema["slots"][slot_name]
-        local_enum_values = current_slot.get("enum_values")
-        if isinstance(local_enum_values, dict) and local_enum_values:
-            enum_name = current_slot.get("range")
-            if (
-                not enum_name
-                or not isinstance(enum_name, str)
-                or not enum_name.endswith("_enum")
-            ):
-                enum_name = f"{slot_name}_enum"
-                current_slot["range"] = enum_name
-
-            if enum_name not in schema["enums"]:
-                schema["enums"][enum_name] = {
-                    "description": f"Controlled vocabulary for {slot_name}.",
-                    "permissible_values": to_permissible_values(local_enum_values),
-                }
 
 # Build LinkML subsets and slot membership from slot-level in_subset.
 for slot_name, slot_def in schema["slots"].items():
@@ -269,25 +252,6 @@ if "MetadataChecklist" not in schema["classes"]:
         "description": "A metadata record based on the FAIRe checklist.",
         "slots": sorted(known_slots),
     }
-
-# 3) Render central enum definitions back into each slot for downstream tools
-# that currently expect enum_values next to the slot.
-for slot_name, slot_def in schema["slots"].items():
-    slot_range = slot_def.get("range")
-    if not isinstance(slot_range, str):
-        continue
-    enum_def = schema["enums"].get(slot_range)
-    if not isinstance(enum_def, dict):
-        continue
-    permissible = enum_def.get("permissible_values", {})
-    if isinstance(permissible, dict):
-        rendered = OrderedDict()
-        for value_key, value_def in permissible.items():
-            if isinstance(value_def, dict):
-                rendered[value_key] = {"meaning": value_def.get("meaning", value_key)}
-            else:
-                rendered[value_key] = {"meaning": value_key}
-        slot_def["enum_values"] = rendered
 
 if not schema["subsets"]:
     del schema["subsets"]

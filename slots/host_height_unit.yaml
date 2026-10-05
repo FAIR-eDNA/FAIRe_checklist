@@ -1,41 +1,29 @@
 name: host_height_unit
-description: The unit of host_height
+title: host height unit
+description: >-
+  The unit of host_height.
 in_subset:
 - Environment
-slot_uri: __TODO_ADD_SLOT_URI__
-range: host_height_unit_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: HostAssociated | SymbiontAssociated
+  modifications_made: field_name | description | field_type
+slot_uri: faire:0000080
+range: string
+any_of:
+- range: LengthUnitEnum
+- range: OtherText
 required: false
 recommended: false
 examples:
 - value: cm
   description: null
-source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - HostAssociated
-  - SymbiontAssociated
-enum_values:
-  cm:
-    meaning: cm
-  m:
-    meaning: m
-  mm:
-    meaning: mm
-  'other:':
-    meaning: 'other:'
+source: mixs:0000264
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000264

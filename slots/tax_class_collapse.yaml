@@ -1,14 +1,16 @@
 name: tax_class_collapse
-description: How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
-  ancestor
+title: taxonomic collapse method
+description: >-
+  How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
+  ancestor.
 in_subset:
   - Bioinformatics
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000256
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: true
 examples:
@@ -17,20 +19,9 @@ examples:
     95-98% genus, 90-95% family).
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Recommended
-  requirement_level_code: R
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: free text
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000064

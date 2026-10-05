@@ -1,40 +1,32 @@
 name: annealingTemp
-description: The reaction temperature during the annealing phase of PCR. If two-step
-  PCR was applied for a metabarcoding approach, enter the second PCR protocol under
-  the term pcr2_* in the library preparation/sequencing section. Unit = degree Celsius
+title: PCR annealing temperature
+description: >-
+  The reaction temperature during the annealing phase of PCR. If two-step PCR was
+  applied, report the second PCR under the corresponding pcr2_* term.
 in_subset:
   - PCR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-unit: degree Celsius
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+keywords:
+  - MIQE
+slot_uri: faire:0000008
+range: float
+unit:
+  ucum_code: Cel
+  descriptive_name: degree Celsius
 required: false
 recommended: true
 examples:
-- value: '60.0'
+- value: '60'
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# skos:exactMatch:
-# - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000049

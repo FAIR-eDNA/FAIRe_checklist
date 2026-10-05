@@ -1,38 +1,36 @@
 name: probe_conc
-description: The stock concentration of the probe if applicable. This refers specifically
+title: probe stock concentration
+description: >-
+  The stock concentration of the probe if applicable. This refers specifically
   to the concentration of the probe stock solution, not the final concentration in
   the PCR reaction. For example, using 1 µL of a 5 µM (stock concentration) probe
   in a 25 µL reaction results in a final concentration of 0.2 µM. Hence the entry
   for this term would be 5. Unit = µM
 in_subset:
   - PCR
-slot_uri: __TODO_ADD_SLOT_URI__
-range: string
-unit: nM
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+keywords:
+  - MIQE
+slot_uri: faire:0000199
+range: float
+minimum_value: 0
+unit:
+  ucum_code: nmol/L
+  descriptive_name: nanomole per liter
 required: false
 recommended: true
 examples:
-- value: '100.0'
+- value: '100'
   description: null
-source:
-- MIQE
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- mixs:0000049

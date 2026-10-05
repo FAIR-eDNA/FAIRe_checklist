@@ -1,40 +1,31 @@
 name: pcr_assay_lod
-description: Assay's limit of detection (LOD) (the lowest amount of target taxon DNA
+title: assay limit of detection
+description: >-
+  Assay's limit of detection (LOD) (the lowest amount of target taxon DNA
   that can be detected with a defined level of confidence).
 in_subset:
   - Targeted assay detection
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
-required: true
-recommended: false
-examples:
-- value: '51.0'
-  description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
 annotations:
-  data_type:
-  - projectMetadata
+  data_type: projectMetadata
   requirement_level: Mandatory
   requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
-  modifications_made:
-  - field_name
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+  modifications_made: field_name | description
+keywords:
+  - MIQE
+slot_uri: faire:0000157
+range: float
+minimum_value: 0
+required: true
+recommended: false
+examples:
+- value: '51'
+  description: null
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

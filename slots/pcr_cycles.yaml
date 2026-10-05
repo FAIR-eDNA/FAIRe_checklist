@@ -1,39 +1,31 @@
 name: pcr_cycles
-description: Number of PCR cycles. If two-step PCR was applied for a metabarcoding
-  approach, enter the second PCR protocol under the term pcr2_* in the library preparation/sequencing
-  section. Unit = cycles
+title: number of PCR cycles
+description: >-
+  Number of PCR cycles. If two-step PCR was applied, report the second PCR under the
+  corresponding pcr2_* term.
 in_subset:
   - PCR
-slot_uri: https://w3id.org/nmdc/pcr_cycles
-range: string
-unit: cycles
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: description
+slot_uri: faire:0000168
+range: integer
+minimum_value: 1
+unit:
+  descriptive_name: cycle
+  exact_mappings:
+  - unit:CYC
 required: false
 recommended: true
 examples:
 - value: '40'
   description: null
-source:
-- NMDC
-mappings:
-  exact_mappings:
-  - https://w3id.org/nmdc/pcr_cycles
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made:
-  - description
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: integer
-# __LEGACY_LINKML_FIELDS_END__
+source: nmdc:pcr_cycles
+exact_mappings: []
+close_mappings:
+- nmdc:pcr_cycles
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

@@ -1,37 +1,29 @@
 name: temp
-description: Temperature of the sample at the time of sampling in degree Celsius
+title: temperature
+description: >-
+  Temperature of the sample at the time of sampling in degree Celsius.
 in_subset:
   - Environment
-slot_uri: https://w3id.org/mixs/0000113
-range: string
-unit: degree Celsius
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+  sample_type_specificity: ALL
+  modifications_made: description | field_type
+slot_uri: faire:0000316
+range: float
+unit:
+  ucum_code: Cel
+  descriptive_name: degree Celsius
 required: false
 recommended: false
 examples:
-- value: '25.0'
+- value: '25'
   description: null
-source:
-- MIxS
-mappings:
-  exact_mappings:
-  - https://w3id.org/mixs/0000113
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - sampleMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-  sample_type_specificity:
-  - ALL
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old model fields visible during migration.
-# term_type: numeric
-# __LEGACY_LINKML_FIELDS_END__
+source: mixs:0000113
+exact_mappings: []
+close_mappings:
+- mixs:0000113
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

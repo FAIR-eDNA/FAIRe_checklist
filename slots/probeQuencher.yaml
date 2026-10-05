@@ -1,48 +1,33 @@
 name: probeQuencher
-description: Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited
-  by the cycler?s light source As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
+title: probe quencher
+description: >-
+  Type of quencher used. The quencher molecule quenches the fluorescence emitted by the fluorophore when excited
+  by the cycler's light source. As long as fluorophore and the quencher are in proximity, quenching inhibits any fluorescence
   signals.
 in_subset:
 - PCR
-slot_uri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-range: probeQuencher_enum
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
+annotations:
+  data_type: projectMetadata
+  requirement_level: Highly recommended
+  requirement_level_code: HR
+  modifications_made: field_type
+keywords:
+  - MIQE
+slot_uri: faire:0000202
+range: string
+any_of:
+- range: ProbeQuencherEnum
+- range: OtherText
 required: false
 recommended: true
 examples:
-- value: MGB
+- value: Minor Groove Binder (MGB)
   description: null
-source:
-- DNA-derived data extension
-- MIQE
-mappings:
-  exact_mappings:
-  - https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2022-02-23.xml
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Highly recommended
-  requirement_level_code: HR
-  modifications_made:
-  - field_type
-enum_values:
-  Black Hole Quencher (BHQ):
-    meaning: Black Hole Quencher (BHQ)
-  Minor Groove Binder (MGB):
-    meaning: Minor Groove Binder (MGB)
-  TAMRA:
-    meaning: TAMRA
-  Zero-End Quencher (ZEN):
-    meaning: Zero-End Quencher (ZEN)
-  lowa Black:
-    meaning: lowa Black
-  'other:':
-    meaning: 'other:'
+source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - doi:10.1373/clinchem.2008.112797
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

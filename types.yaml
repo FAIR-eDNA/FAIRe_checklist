@@ -1,0 +1,29 @@
+types:
+  OtherText:
+    typeof: string
+    description: >-
+      "other:" followed by a free-text description, for a value that is not in the slot's
+      controlled vocabulary, e.g. "other:copies/mg of sediment sample".
+    pattern: '^other: *\S.*$'
+  Timestamp:
+    typeof: string
+    description: >-
+      An ISO 8601 date or date and time, which may be truncated from the right
+      (2008-01-23T19:23:10Z, 2008-01-23T19:23-06:00, 2008-01-23, 2008-01, 2008). Seconds,
+      fractions of a second and the time zone are optional. Same as MIxS's timestamp
+      setting.
+    pattern: '^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d))?)?)?)?$'
+  EnvoTerm:
+    typeof: string
+    description: >-
+      An ENVO term written as its label followed by its CURIE in square brackets, e.g.
+      "marine biome [ENVO:00000447]" (#70). The label has no brackets or pipes and no
+      leading or trailing space.
+    pattern: '^[^\s\[\]|]([^\[\]|]*[^\s\[\]|])? \[ENVO:\d{7,8}\]$'
+  Reference:
+    typeof: string
+    description: >-
+      A reference to a publication or online resource: a PubMed ID (PMID:12345678), a DOI
+      (doi:10.1002/edn3.220) or a URL (https://...). Same as MIxS's {PMID}|{DOI}|{URL}
+      pattern (#97).
+    pattern: '^(PMID:\d+|doi:10.\d{2,9}/.*|https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*))$'

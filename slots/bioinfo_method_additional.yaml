@@ -1,14 +1,16 @@
 name: bioinfo_method_additional
-description: Additional information on bioinformatics, that has not been shared in
+title: additional bioinformatics method information
+description: >-
+  Additional information on bioinformatics, that has not been shared in
   the given record.
 in_subset:
   - Bioinformatics
-slot_uri: __TODO_ADD_SLOT_URI__
+annotations:
+  data_type: projectMetadata
+  requirement_level: Optional
+  requirement_level_code: O
+slot_uri: faire:0000018
 range: string
-structured_pattern:
-  syntax: null
-  interpolated: null
-  partial_match: null
 required: false
 recommended: false
 examples:
@@ -17,20 +19,8 @@ examples:
     cutoff 90%
   description: null
 source:
-- New
-mappings:
-  exact_mappings: []
-  close_mappings: []
-  related_mappings: []
-  narrow_mappings: []
-  broad_mappings: []
-domain_of: []
-annotations:
-  data_type:
-  - projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-# __LEGACY_LINKML_FIELDS_START__
-# Keeping old fields here during migration so nothing is lost.
-# term_type: unspecified
-# __LEGACY_LINKML_FIELDS_END__
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []
