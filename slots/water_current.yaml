@@ -12,6 +12,7 @@ annotations:
   modifications_made: field_type
 slot_uri: faire:0000318
 range: float
+minimum_value: 0
 unit:
   ucum_code: m/s
   descriptive_name: meter per second

@@ -8,6 +8,8 @@ annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
+keywords:
+  - INSDC
 slot_uri: faire:0000187
 range: string
 any_of:
@@ -19,7 +21,6 @@ examples:
 - value: ILLUMINA
   description: null
 source:
-- INSDC
 exact_mappings: []
 close_mappings:
 - GENEPIO:0100473

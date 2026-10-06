@@ -12,6 +12,8 @@ annotations:
   data_type: sampleMetadata
   requirement_level: Optional
   requirement_level_code: O
+keywords:
+  - INSDC
 slot_uri: faire:0000227
 range: string
 multivalued: true
@@ -21,7 +23,6 @@ examples:
 - value: 'S01 | S02'
   description: null
 source:
-- INSDC
 exact_mappings: []
 close_mappings: []
 related_mappings:

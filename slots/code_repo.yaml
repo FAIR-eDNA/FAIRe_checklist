@@ -8,6 +8,8 @@ annotations:
   data_type: projectMetadata
   requirement_level: Recommended
   requirement_level_code: R
+keywords:
+  - NOAA
 slot_uri: faire:0000031
 range: Reference
 required: false
@@ -16,7 +18,6 @@ examples:
 - value: https://github.com/aomlomics/gomecc
   description: null
 source:
-- NOAA
 exact_mappings: []
 close_mappings: []
 related_mappings:

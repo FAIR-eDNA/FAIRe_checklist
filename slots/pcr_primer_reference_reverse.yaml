@@ -4,13 +4,16 @@ description: >-
   Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
   listed in pcr_primer_reverse, list the references respectively, separated by pipe
   ( | ).
+comments:
+  - 'Forward and reverse separated: GBIF pcr_primer_reference is one term; FAIRe has pcr_primer_reference_forward and
+    pcr_primer_reference_reverse.'
 in_subset:
   - PCR
 annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
-  modifications_made: Forward and reverse separated
+  modifications_made: field_name | description
 slot_uri: faire:0000178
 range: Reference
 multivalued: true

@@ -15,7 +15,7 @@ range: HostLifeStageEnum
 required: false
 recommended: false
 examples:
-- value: juvenile stage [UBERON_0034919]
+- value: juvenile stage [UBERON:0034919]
   description: null
 source: mixs:0000251
 exact_mappings: []

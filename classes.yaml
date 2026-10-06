@@ -446,7 +446,6 @@ classes:
     - pcr_primer_reverse
     - pcr_primer_vol_forward
     - pcr_primer_vol_reverse
-    - pcr_rep
     - platform
     - pos_cont_0_1
     - probeQuencher
@@ -492,7 +491,6 @@ classes:
       context.
     slots:
     - alt
-    - assay_name
     - biological_rep_relation
     - chlorophyll
     - concentration
@@ -564,6 +562,7 @@ classes:
     - part_org_carb_unit
     - part_org_nitro
     - part_org_nitro_unit
+    - pcr_rep
     - ph
     - ph_meth
     - pool_dna_num

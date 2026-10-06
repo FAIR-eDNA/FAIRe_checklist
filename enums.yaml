@@ -281,7 +281,11 @@ enums:
   StorageSolutionEnum:
     description: Solution in which a sample is stored.
     permissible_values:
+      ammonium sulfate:
+        description: Ammonium sulfate-based preservation solution, e.g. RNAlater.
       ethanol:
+      guanidinium thiocyanate:
+        description: Guanidinium thiocyanate-based preservation solution, e.g. DNA/RNA Shield.
       longmire:
       lysis buffer:
       none:
@@ -329,15 +333,156 @@ enums:
       sequence composition:
       sequence similarity:
   TaxonRankEnum:
-    description: Controlled vocabulary for taxonRank.
+    description: >-
+      Taxonomic ranks from the Taxonomic Rank Vocabulary (TAXRANK), release 2025-09-24:
+      all 73 ranks under taxonomic rank (TAXRANK:0000000) (#45).
     permissible_values:
+      bio-variety:
+        meaning: TAXRANK:0000032
+      biotype:
+        meaning: TAXRANK:0001008
+      candidate:
+        meaning: TAXRANK:0000033
+      clade:
+        meaning: TAXRANK:0001004
       class:
+        meaning: TAXRANK:0000002
+      cohort:
+        meaning: TAXRANK:0001010
+      cultivar:
+        meaning: TAXRANK:0000034
+      cultivar-group:
+        meaning: TAXRANK:0000035
+      denominationclass:
+        meaning: TAXRANK:0000036
+      domain:
+        meaning: TAXRANK:0000037
       family:
+        meaning: TAXRANK:0000004
+      forma:
+        meaning: TAXRANK:0000026
+      forma specialis:
+        meaning: TAXRANK:0001005
+      genotype:
+        meaning: TAXRANK:0001007
       genus:
+        meaning: TAXRANK:0000005
+      graft-chimaera:
+        meaning: TAXRANK:0000038
+      grex:
+        meaning: TAXRANK:0000039
+      infraclass:
+        meaning: TAXRANK:0000019
+      infrafamily:
+        meaning: TAXRANK:0000041
+      infragenerictaxon:
+        meaning: TAXRANK:0000042
+      infragenus:
+        meaning: TAXRANK:0000043
+      infrakingdom:
+        meaning: TAXRANK:0000044
+      infraorder:
+        meaning: TAXRANK:0000013
+      infraphylum:
+        meaning: TAXRANK:0000040
+      infraspecies:
+        meaning: TAXRANK:0000045
+      infraspecificTaxon:
+        meaning: TAXRANK:0000046
+      infratribe:
+        meaning: TAXRANK:0000047
+      isolate:
+        meaning: TAXRANK:0001002
       kingdom:
+        meaning: TAXRANK:0000017
+      morph:
+        meaning: TAXRANK:0001009
+      no_rank:
+        meaning: TAXRANK:0000060
       order:
+        meaning: TAXRANK:0000003
+      parvorder:
+        meaning: TAXRANK:0000021
+      patho-variety:
+        meaning: TAXRANK:0000048
+      pathogroup:
+        meaning: TAXRANK:0001011
       phylum:
+        meaning: TAXRANK:0000001
+      realm:
+        meaning: TAXRANK:0001013
+      section:
+        meaning: TAXRANK:0000030
+      series:
+        meaning: TAXRANK:0000031
+      serogroup:
+        meaning: TAXRANK:0001006
+      serotype:
+        meaning: TAXRANK:0001003
+      specialform:
+        meaning: TAXRANK:0000049
       species:
+        meaning: TAXRANK:0000006
+      species_complex:
+        meaning: TAXRANK:0000012
+      species_group:
+        meaning: TAXRANK:0000010
+      species_subgroup:
+        meaning: TAXRANK:0000011
+      speciesaggregate:
+        meaning: TAXRANK:0000050
+      strain:
+        meaning: TAXRANK:0001001
+      subclass:
+        meaning: TAXRANK:0000007
+      subcohort:
+        meaning: TAXRANK:0001012
+      subfamily:
+        meaning: TAXRANK:0000024
+      subform:
+        meaning: TAXRANK:0000059
+      subgenus:
+        meaning: TAXRANK:0000009
+      subkingdom:
+        meaning: TAXRANK:0000029
+      suborder:
+        meaning: TAXRANK:0000014
+      subphylum:
+        meaning: TAXRANK:0000008
+      subsection:
+        meaning: TAXRANK:0000053
+      subseries:
+        meaning: TAXRANK:0000054
+      subspecies:
+        meaning: TAXRANK:0000023
+      subspecificaggregate:
+        meaning: TAXRANK:0000055
+      subsubform:
+        meaning: TAXRANK:0000056
+      subsubvariety:
+        meaning: TAXRANK:0000052
+      subtribe:
+        meaning: TAXRANK:0000028
+      subvariety:
+        meaning: TAXRANK:0000051
+      superclass:
+        meaning: TAXRANK:0000015
+      superfamily:
+        meaning: TAXRANK:0000018
+      superkingdom:
+        meaning: TAXRANK:0000022
+      superorder:
+        meaning: TAXRANK:0000020
+      superphylum:
+        meaning: TAXRANK:0000027
+      supertribe:
+        meaning: TAXRANK:0000057
+      supragenerictaxon:
+        meaning: TAXRANK:0000058
+      tribe:
+        meaning: TAXRANK:0000025
+      varietas:
+        meaning: TAXRANK:0000016
   TidalStageEnum:
     description: >-
       Controlled vocabulary for tidal_stage. Same values as MIxS TidalStageEnum (#37).
