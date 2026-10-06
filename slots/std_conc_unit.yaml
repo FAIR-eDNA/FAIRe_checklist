@@ -16,7 +16,9 @@ any_of:
 - range: OtherText
 required: true
 recommended: false
-examples: []
+examples:
+- value: copies/reaction
+  description: null
 source:
 exact_mappings: []
 close_mappings: []

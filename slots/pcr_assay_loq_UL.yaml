@@ -14,7 +14,9 @@ range: float
 minimum_value: 0
 required: false
 recommended: true
-examples: []
+examples:
+- value: '6.4'
+  description: null
 source:
 exact_mappings: []
 close_mappings: []
