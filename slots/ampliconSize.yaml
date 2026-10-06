@@ -30,7 +30,8 @@ source: doi:10.1093/clinchem/hvaf043
 see_also:
   - doi:10.1373/clinchem.2008.112797
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- GENEPIO:0001449
 related_mappings:
 - ggbn:fragmentLength
 narrow_mappings: []

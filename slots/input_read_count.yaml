@@ -25,6 +25,7 @@ source: nmdc:input_read_count
 exact_mappings: []
 close_mappings:
 - nmdc:input_read_count
+- GENEPIO:0100827
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

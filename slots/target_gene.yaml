@@ -23,6 +23,7 @@ source: mixs:0000044
 exact_mappings: []
 close_mappings:
 - ggbn:marker
+- GENEPIO:0101116
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

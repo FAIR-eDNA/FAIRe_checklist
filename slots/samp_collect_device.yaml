@@ -22,7 +22,8 @@ examples:
   description: null
 source: mixs:0000002
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- GENEPIO:0001234
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

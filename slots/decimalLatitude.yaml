@@ -25,7 +25,8 @@ examples:
   description: null
 source: dwc:decimalLatitude
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- GENEPIO:0100309
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

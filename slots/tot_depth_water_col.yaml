@@ -27,6 +27,7 @@ source: mixs:0000634
 exact_mappings:
 - mixs:0000634
 close_mappings: []
-related_mappings: []
+related_mappings:
+- GENEPIO:0100440
 narrow_mappings: []
 broad_mappings: []

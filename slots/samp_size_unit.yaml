@@ -24,5 +24,6 @@ exact_mappings: []
 close_mappings:
 - dwc:sampleSizeUnit
 related_mappings: []
-narrow_mappings: []
+narrow_mappings:
+- GENEPIO:0100769
 broad_mappings: []
