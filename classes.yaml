@@ -279,8 +279,8 @@ classes:
     - seq_method_additional
     - seq_run_id
     - sequencing_location
-    - size_frac
     - size_frac_low
+    - size_frac_up
     - slope
     - solar_irradiance
     - sop_bioinformatics
@@ -597,8 +597,8 @@ classes:
     - samp_weather
     - sample_composed_of
     - sample_derived_from
-    - size_frac
     - size_frac_low
+    - size_frac_up
     - solar_irradiance
     - stationed_sample_dur
     - suspend_part_matter

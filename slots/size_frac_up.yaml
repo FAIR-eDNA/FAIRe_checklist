@@ -1,11 +1,16 @@
-name: size_frac_low
-title: size-fraction lower threshold
+name: size_frac_up
+title: size-fraction upper threshold
 local_names:
-  tdwg-naming-conventions: sizeFractionLow
-  gsc-naming-conventions: size_frac_low
+  tdwg-naming-conventions: sizeFractionUp
+  gsc-naming-conventions: size_frac_up
 description: >-
   Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
   Materials larger than the size threshold are excluded from the sample.
+comments:
+  - Named size_frac_low in FAIRe v1.0, which copied MIxS's swapped definitions; the slot
+    and its values (the pre-filter size) are unchanged, only the name is corrected (#26).
+  - Follows the corrected definitions proposed in GenomicsStandardsConsortium/mixs#566
+    and #1414; MIxS's current definitions of size_frac_low and size_frac_up are swapped.
 in_subset:
   - Sample preparation
 annotations:
@@ -13,7 +18,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   sample_type_specificity: Water | Air
-  modifications_made: field_type
+  modifications_made: description | field_type
 slot_uri: faire:0000239
 range: float
 minimum_value: 0
@@ -25,10 +30,10 @@ recommended: true
 examples:
 - value: '20'
   description: null
-source: mixs:0000735
+source: mixs:0000736
 exact_mappings: []
 close_mappings:
-- mixs:0000735
+- mixs:0000736
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
