@@ -23,5 +23,7 @@ exact_mappings: []
 close_mappings:
 - dwc:associatedSequences
 related_mappings: []
-narrow_mappings: []
+narrow_mappings:
+- ggbn:geneticAccessionNumber
+- ggbn:geneticAccessionURI
 broad_mappings: []

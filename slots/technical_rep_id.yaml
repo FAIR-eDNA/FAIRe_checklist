@@ -11,6 +11,7 @@ annotations:
   requirement_level_code: M
 slot_uri: faire:0000262
 range: integer
+minimum_value: 1
 required: true
 recommended: false
 examples:

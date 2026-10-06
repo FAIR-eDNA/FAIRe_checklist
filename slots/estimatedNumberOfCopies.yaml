@@ -22,6 +22,8 @@ examples:
 - value: '35.92426489978709'
   description: null
 source: doi:10.1093/clinchem/hvaf043
+see_also:
+  - gbif:miqe/estimatedNumberOfCopies
 exact_mappings: []
 close_mappings: []
 related_mappings:

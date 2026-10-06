@@ -3,6 +3,7 @@ title: additional library preparation and sequencing method information
 description: >-
   Additional information on library preparation and sequencing method,
   that has not been shared in the given record.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - Library preparation sequencing
 annotations:
@@ -13,9 +14,7 @@ slot_uri: faire:0000237
 range: string
 required: false
 recommended: false
-examples:
-- value: PhiX was spiked in at 15%
-  description: null
+examples: []
 source:
 exact_mappings: []
 close_mappings: []

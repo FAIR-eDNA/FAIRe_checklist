@@ -24,6 +24,7 @@ source: mixs:0000016
 exact_mappings:
 - mixs:0000016
 close_mappings: []
-related_mappings: []
+related_mappings:
+- ggbn:preparationProcess
 narrow_mappings: []
 broad_mappings: []

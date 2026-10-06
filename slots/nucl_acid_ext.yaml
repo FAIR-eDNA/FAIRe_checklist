@@ -23,7 +23,8 @@ examples:
 source: mixs:0000037
 exact_mappings:
 - mixs:0000037
-close_mappings: []
+close_mappings:
+- GENEPIO:0100939
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []

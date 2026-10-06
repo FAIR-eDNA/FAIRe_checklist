@@ -12,7 +12,11 @@ slot_uri: faire:0000234
 range: string
 required: false
 recommended: true
-examples: []
+examples:
+- value: 'Data were checked for errors: 10% of MOTUs were randomly selected and checked
+    by two people: taxonomic assignment was repeated and the number of reads per
+    sample was confirmed. No errors were detected.'
+  description: null
 source:
 exact_mappings: []
 close_mappings: []

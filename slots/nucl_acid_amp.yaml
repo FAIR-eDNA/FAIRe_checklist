@@ -19,7 +19,8 @@ examples:
   description: null
 source: mixs:0000038
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:amplificationMethod
 related_mappings: []
 narrow_mappings:
 - mixs:0000038

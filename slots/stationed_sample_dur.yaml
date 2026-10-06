@@ -23,7 +23,8 @@ examples:
   description: null
 source:
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- GENEPIO:0100766
 related_mappings:
 - eco:eventDurationValue
 narrow_mappings: []

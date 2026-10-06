@@ -24,8 +24,10 @@ examples:
   description: null
 source: mixs:0001317
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- GENEPIO:0100449
 related_mappings: []
 narrow_mappings: []
 broad_mappings:
 - mixs:0001317
+- ggbn:preservationType

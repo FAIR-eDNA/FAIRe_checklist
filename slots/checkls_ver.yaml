@@ -1,8 +1,8 @@
 name: checkls_ver
 title: FAIRe checklist version
 description: >-
-  The version number of the FAIR eDNA (FAIRe) metadata checklist used to
-  format the data.
+  The DOI of the FAIR eDNA (FAIRe) metadata checklist version used to
+  format the data, as minted by Zenodo for each checklist release.
 in_subset:
   - Data management
 annotations:
@@ -11,11 +11,12 @@ annotations:
   requirement_level_code: M
 slot_uri: faire:0000024
 range: string
+pattern: '^doi:10\.5281/zenodo\.\d+$'
 required: true
 recommended: false
 examples:
-- value: '1.2'
-  description: null
+- value: doi:10.5281/zenodo.1234567
+  description: Example of the syntax only; not a real DOI.
 source:
 exact_mappings: []
 close_mappings: []

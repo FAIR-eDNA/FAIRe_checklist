@@ -140,6 +140,8 @@ SCHEMA_PREFIXES = {
     "doi": "https://doi.org/",
     # Genomic Epidemiology Ontology (instrument, #74)
     "GENEPIO": "http://purl.obolibrary.org/obo/GENEPIO_",
+    # Taxonomic Rank Vocabulary (taxonRank values, #45)
+    "TAXRANK": "http://purl.obolibrary.org/obo/TAXRANK_",
     "faire": "https://w3id.org/faire/",
 }
 
