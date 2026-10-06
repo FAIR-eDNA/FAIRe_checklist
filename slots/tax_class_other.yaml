@@ -14,7 +14,10 @@ slot_uri: faire:0000258
 range: string
 required: false
 recommended: true
-examples: []
+examples:
+- value: The taxonomic assignment of each MOTU was meticulously checked by hand,
+    taking into account molecular, taxonomic and ecological characteristics.
+  description: null
 source: mixs:0000064
 exact_mappings: []
 close_mappings: []

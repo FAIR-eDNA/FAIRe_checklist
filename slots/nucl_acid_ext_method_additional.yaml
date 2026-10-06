@@ -3,6 +3,7 @@ title: additional nucleic acid extraction method information
 description: >-
   Additional information on nucleic acid extraction method, that has not
   been shared in the given record.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - Nucleic acid extraction
 annotations:
@@ -13,7 +14,10 @@ slot_uri: faire:0000123
 range: string
 required: false
 recommended: false
-examples: []
+examples:
+- value: DNA extraction and amplification were performed by a dedicated DNA laboratory
+    by SPYGEN (www.spygen.com).
+  description: null
 source:
 exact_mappings: []
 close_mappings: []

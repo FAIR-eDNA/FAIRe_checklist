@@ -3,6 +3,7 @@ title: additional targeted assay detection method information
 description: >-
   Additional information on Targeted assay detection method, that has not
   been shared in the given record.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - Targeted assay detection
 annotations:

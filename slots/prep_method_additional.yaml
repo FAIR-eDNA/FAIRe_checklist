@@ -3,6 +3,7 @@ title: additional sample preparation method information
 description: >-
   Additional information on sample preparation, storage and preservation
   prior to DNA extraction, that has not been shared in the given record.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - Sample preparation
 annotations:
@@ -16,8 +17,7 @@ required: false
 recommended: false
 examples:
 - value: See Villacorta-Rath et al. (2020) (doi.org/10.1002/edn3.114) for the detailed
-    precipitation protocols. ATL lysis buffer was used for prepped_samp_store_sol.
-    Prepped_samp_store_temp was ambient, average of 22 degree Celsius
+    precipitation protocols.
   description: null
 source:
 exact_mappings: []
