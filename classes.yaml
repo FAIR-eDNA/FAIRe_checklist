@@ -135,7 +135,7 @@ classes:
     - min_reads_cutoff_unit
     - min_reads_tool
     - minimumDepthInMeters
-    - mod_date
+    - modified
     - neg_cont_boolean
     - neg_cont_type
     - nitrate
@@ -398,7 +398,7 @@ classes:
     - min_reads_cutoff
     - min_reads_cutoff_unit
     - min_reads_tool
-    - mod_date
+    - modified
     - neg_cont_boolean
     - nucl_acid_amp
     - otu_clust_cutoff
