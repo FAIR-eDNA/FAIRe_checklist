@@ -6,8 +6,8 @@ local_names:
   tdwg-naming-conventions: pcrBoolean
   gsc-naming-conventions: pcr_boolean
 description: >-
-  Was PCR performed in the study? Yes = 1, No (pcr-free approaches including shotgun metagenomics, Nanopore) =
-  0.
+  Whether PCR was performed in the study: yes = true (1), no = false (0), e.g. PCR-free approaches
+  including shotgun metagenomics and Nanopore.
 in_subset:
 - PCR
 annotations:
