@@ -1,5 +1,8 @@
 name: order
 title: order
+local_names:
+  tdwg-naming-conventions: order
+  gsc-naming-conventions: order
 description: >-
   The full scientific name of the order.
 in_subset:

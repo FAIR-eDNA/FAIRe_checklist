@@ -1,5 +1,8 @@
 name: nucl_acid_ext_kit
 title: nucleic acid extraction kit
+local_names:
+  tdwg-naming-conventions: nucleicAcidExtractionKit
+  gsc-naming-conventions: nucl_acid_ext_kit
 description: >-
   The name of the extraction kit used to recover the nucleic acid fraction
   of an input material.

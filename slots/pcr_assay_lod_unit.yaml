@@ -1,5 +1,8 @@
 name: pcr_assay_lod_unit
 title: assay limit of detection unit
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfDetectionUnit
+  gsc-naming-conventions: pcr_assay_lod_unit
 description: >-
   Unit for pcr_assay_lod.
 in_subset:

@@ -1,5 +1,8 @@
 name: tot_nitro
 title: total nitrogen concentration
+local_names:
+  tdwg-naming-conventions: totalNitrogen
+  gsc-naming-conventions: tot_nitro
 description: >-
   Total nitrogen concentration of water samples, calculated by: total
   nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured

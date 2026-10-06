@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies_method
 title: estimated number of copies method
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopiesMethod
+  gsc-naming-conventions: est_copies_method
 description: >-
   Method to output estimatedNumberOfCopies.
 in_subset:

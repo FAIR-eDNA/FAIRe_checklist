@@ -1,5 +1,8 @@
 name: error_rate_cutoff
 title: error rate threshold
+local_names:
+  tdwg-naming-conventions: errorRateCutoff
+  gsc-naming-conventions: error_rate_cutoff
 description: >-
   error rate threshold.
 in_subset:

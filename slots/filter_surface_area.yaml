@@ -1,5 +1,8 @@
 name: filter_surface_area
 title: filter surface area
+local_names:
+  tdwg-naming-conventions: filterSurfaceArea
+  gsc-naming-conventions: filter_surface_area
 description: >-
   Surface area of a filter.
 in_subset:

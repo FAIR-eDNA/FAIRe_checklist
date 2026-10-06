@@ -1,5 +1,8 @@
 name: baselineValue
 title: baseline value
+local_names:
+  tdwg-naming-conventions: baselineValue
+  gsc-naming-conventions: baseline_value
 description: >-
   The number of cycles when fluorescence signal from the target amplification
   is below background fluorescence not originated from the real target amplification.

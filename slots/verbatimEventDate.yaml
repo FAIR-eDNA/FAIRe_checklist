@@ -1,5 +1,8 @@
 name: verbatimEventDate
 title: verbatim event date
+local_names:
+  tdwg-naming-conventions: verbatimEventDate
+  gsc-naming-conventions: verbatim_event_date
 description: >-
   Sample collection date before formatting.
 in_subset:

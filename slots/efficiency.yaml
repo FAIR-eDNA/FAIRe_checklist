@@ -1,5 +1,8 @@
 name: efficiency
 title: qPCR amplification efficiency
+local_names:
+  tdwg-naming-conventions: efficiency
+  gsc-naming-conventions: efficiency
 description: >-
   qPCR amplification efficiency calculated from slope.
 in_subset:

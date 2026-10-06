@@ -1,5 +1,8 @@
 name: wind_direction
 title: wind direction
+local_names:
+  tdwg-naming-conventions: windDirection
+  gsc-naming-conventions: wind_direction
 description: >-
   Wind direction (the direction from which a wind originates) at the time
   of sampling.

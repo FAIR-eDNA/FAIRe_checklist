@@ -1,5 +1,8 @@
 name: pcr_primer_reverse
 title: reverse PCR primer
+local_names:
+  tdwg-naming-conventions: pcrPrimerReverse
+  gsc-naming-conventions: pcr_primer_reverse
 description: >-
   Reverse PCR primer (5' - 3') that were used to amplify the sequence of
   the targeted gene. The primer sequence should NOT contain MIDs and adapter sequences,

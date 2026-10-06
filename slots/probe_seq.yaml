@@ -1,5 +1,8 @@
 name: probe_seq
 title: probe sequence
+local_names:
+  tdwg-naming-conventions: probeSequence
+  gsc-naming-conventions: probe_seq
 description: >-
   If applicable, probe sequence in the 5' to 3' direction.
 in_subset:

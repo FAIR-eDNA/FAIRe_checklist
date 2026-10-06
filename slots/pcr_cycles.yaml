@@ -1,5 +1,8 @@
 name: pcr_cycles
 title: number of PCR cycles
+local_names:
+  tdwg-naming-conventions: pcrCycleCount
+  gsc-naming-conventions: pcr_cycles
 description: >-
   Number of PCR cycles. If two-step PCR was applied, report the second PCR under the
   corresponding pcr2_* term.

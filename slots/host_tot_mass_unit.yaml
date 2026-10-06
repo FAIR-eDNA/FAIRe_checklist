@@ -1,5 +1,8 @@
 name: host_tot_mass_unit
 title: host total mass unit
+local_names:
+  tdwg-naming-conventions: hostTotalMassUnit
+  gsc-naming-conventions: host_tot_mass_unit
 description: >-
   The unit of host_tot_mass.
 in_subset:

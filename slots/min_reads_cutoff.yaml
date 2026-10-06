@@ -1,5 +1,8 @@
 name: min_reads_cutoff
 title: minimum read count threshold
+local_names:
+  tdwg-naming-conventions: minimumReadCountCutoff
+  gsc-naming-conventions: min_reads_cutoff
 description: >-
   minimum read counts thresholds. e.g., 10 reads, 5% relative read abundance, noise (e.g., (relative) read counts)
   detected in blanks. Answer either numeric value with the unit specified under the terms min_reads_cutoff_unit, "noise detected

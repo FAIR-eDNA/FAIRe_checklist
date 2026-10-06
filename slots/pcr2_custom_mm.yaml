@@ -1,5 +1,8 @@
 name: pcr2_custom_mm
 title: second PCR custom master mix
+local_names:
+  tdwg-naming-conventions: secondPCRCustomMasterMix
+  gsc-naming-conventions: pcr2_custom_mm
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") composition of custom master
   mix, including the names, volumes and concentrations of additives (i.e., salts,

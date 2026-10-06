@@ -1,5 +1,8 @@
 name: humidity
 title: humidity
+local_names:
+  tdwg-naming-conventions: humidity
+  gsc-naming-conventions: humidity
 description: >-
   Amount of water vapour in the air, at the time of sampling relative to
   the maximum amount of water vapor the air can hold at a given temperature and pressure.

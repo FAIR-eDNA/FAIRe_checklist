@@ -1,5 +1,8 @@
 name: samp_store_method_additional
 title: additional sample storage method information
+local_names:
+  tdwg-naming-conventions: sampleStorageMethodAdditional
+  gsc-naming-conventions: samp_store_meth_add
 description: >-
   Additional information on sample storage method, that has not been shared
   in the given record.

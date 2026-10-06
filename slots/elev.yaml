@@ -1,5 +1,8 @@
 name: elev
 title: elevation
+local_names:
+  tdwg-naming-conventions: elevation
+  gsc-naming-conventions: elev
 description: >-
   Elevation of the sampling site is its height above a fixed reference
   point, most commonly the mean sea level. Elevation is mainly used when referring

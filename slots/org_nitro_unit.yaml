@@ -1,5 +1,8 @@
 name: org_nitro_unit
 title: organic nitrogen unit
+local_names:
+  tdwg-naming-conventions: organicNitrogenUnit
+  gsc-naming-conventions: org_nitro_unit
 description: >-
   The unit of org_nitro.
 in_subset:

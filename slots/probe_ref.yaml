@@ -1,5 +1,8 @@
 name: probe_ref
 title: probe reference
+local_names:
+  tdwg-naming-conventions: probeReference
+  gsc-naming-conventions: probe_ref
 description: >-
   Reference (i.e. DOI) of the probe_seq.
 in_subset:

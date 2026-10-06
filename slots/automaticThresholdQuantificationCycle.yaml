@@ -1,5 +1,8 @@
 name: automaticThresholdQuantificationCycle
 title: automatic quantification cycle threshold
+local_names:
+  tdwg-naming-conventions: automaticThresholdQuantificationCycle
+  gsc-naming-conventions: cq_threshold_auto
 description: >-
   Whether the threshold was set by the instrument (1) or manually (0).
 in_subset:

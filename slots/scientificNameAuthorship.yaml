@@ -1,5 +1,8 @@
 name: scientificNameAuthorship
 title: scientific name authorship
+local_names:
+  tdwg-naming-conventions: scientificNameAuthorship
+  gsc-naming-conventions: sci_name_authorship
 description: >-
   The authorship information for the scientificName.
 in_subset:

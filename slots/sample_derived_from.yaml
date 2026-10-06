@@ -1,5 +1,8 @@
 name: sample_derived_from
 title: sample derived from
+local_names:
+  tdwg-naming-conventions: sampleDerivedFrom
+  gsc-naming-conventions: sample_derived_from
 description: >-
   This term refers to the samp_name of the original (or parent) sample
   from which the current sample was derived. For example, if sample "S01" (the parent

@@ -1,5 +1,8 @@
 name: pcr2_commercial_mm
 title: second PCR commercial master mix
+local_names:
+  tdwg-naming-conventions: secondPCRCommercialMasterMix
+  gsc-naming-conventions: pcr2_commercial_mm
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") Name, brand, and manufacture
   of commercial, pre-made master mix in the second step PCR (if commercial master

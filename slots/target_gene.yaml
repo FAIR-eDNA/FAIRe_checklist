@@ -1,5 +1,8 @@
 name: target_gene
 title: target gene
+local_names:
+  tdwg-naming-conventions: targetGene
+  gsc-naming-conventions: target_gene
 description: >-
   Targeted gene or locus name for marker gene studies.
 in_subset:

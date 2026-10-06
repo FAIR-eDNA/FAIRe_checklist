@@ -1,5 +1,8 @@
 name: pcr2_cond
 title: second PCR conditions
+local_names:
+  tdwg-naming-conventions: secondPCRConditions
+  gsc-naming-conventions: pcr2_cond
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") Description of reaction conditions
   and components of the second PCR. The recommended format is 'initial denaturation:degrees_minutes;annealing:degrees_minutes;elongation:degrees_minutes;final

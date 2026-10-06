@@ -1,5 +1,8 @@
 name: pcr_assay_loq_unit
 title: assay limit of quantification unit
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfQuantificationUnit
+  gsc-naming-conventions: pcr_assay_loq_unit
 description: >-
   unit for pcr_assay_loq.
 in_subset:

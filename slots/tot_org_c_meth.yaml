@@ -1,5 +1,8 @@
 name: tot_org_c_meth
 title: total organic carbon method
+local_names:
+  tdwg-naming-conventions: totalOrganicCarbonMethod
+  gsc-naming-conventions: tot_org_c_meth
 description: >-
   Reference or method used in determining total organic carbon.
 in_subset:

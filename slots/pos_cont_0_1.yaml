@@ -1,5 +1,8 @@
 name: pos_cont_0_1
 title: positive controls used
+local_names:
+  tdwg-naming-conventions: positiveControlsUsed
+  gsc-naming-conventions: pos_cont_0_1
 description: >-
   Were positive controls applied during the project? Yes = 1, No = 0. For further details, record the types of
   positive controls under the term pos_cont_type in sampleMetadata.

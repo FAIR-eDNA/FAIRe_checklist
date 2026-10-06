@@ -1,5 +1,8 @@
 name: otu_num_tax_assigned
 title: number of OTUs/ASVs assigned to taxa
+local_names:
+  tdwg-naming-conventions: taxonomicallyAssignedOTUCount
+  gsc-naming-conventions: otu_num_tax_assigned
 description: >-
   Total number of OTUs or ASVs assigned to taxa based on the study-specific
   thresholds for each sample.

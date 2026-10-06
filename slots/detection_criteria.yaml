@@ -1,5 +1,8 @@
 name: detection_criteria
 title: detection criteria
+local_names:
+  tdwg-naming-conventions: detectionCriteria
+  gsc-naming-conventions: detection_criteria
 description: >-
   Criteria to determine positive detection. For example, a certain number
   of positive amplifications per sample, sanger sequencing of amplicons.

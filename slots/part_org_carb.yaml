@@ -1,5 +1,8 @@
 name: part_org_carb
 title: particulate organic carbon
+local_names:
+  tdwg-naming-conventions: particulateOrganicCarbon
+  gsc-naming-conventions: part_org_carb
 description: >-
   Concentration of particulate organic carbon.
 in_subset:

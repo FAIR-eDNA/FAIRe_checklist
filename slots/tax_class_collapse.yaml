@@ -1,5 +1,8 @@
 name: tax_class_collapse
 title: taxonomic collapse method
+local_names:
+  tdwg-naming-conventions: taxonomicCollapseMethod
+  gsc-naming-conventions: tax_class_collapse
 description: >-
   How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
   ancestor.

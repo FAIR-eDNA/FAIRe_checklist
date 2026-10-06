@@ -1,5 +1,8 @@
 name: checkls_ver
 title: FAIRe checklist version
+local_names:
+  tdwg-naming-conventions: checklistVersion
+  gsc-naming-conventions: checkls_ver
 description: >-
   The DOI of the FAIR eDNA (FAIRe) metadata checklist version used to
   format the data, as minted by Zenodo for each checklist release.

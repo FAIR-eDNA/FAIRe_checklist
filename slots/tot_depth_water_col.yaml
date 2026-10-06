@@ -1,5 +1,8 @@
 name: tot_depth_water_col
 title: total depth of water column
+local_names:
+  tdwg-naming-conventions: totalWaterColumnDepth
+  gsc-naming-conventions: tot_depth_water_col
 description: >-
   Measurement of total depth of water column. For example, if a sea surface
   water sample was collected at a sampling site where the water depth was 15m, enter

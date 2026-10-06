@@ -1,5 +1,8 @@
 name: eventDate
 title: event date
+local_names:
+  tdwg-naming-conventions: eventDate
+  gsc-naming-conventions: event_date
 description: >-
   The date and time of sampling, either as an instance (single point in
   time) or interval. Must follow ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time zone

@@ -1,5 +1,8 @@
 name: samp_store_loc
 title: sample storage location
+local_names:
+  tdwg-naming-conventions: sampleStorageLocation
+  gsc-naming-conventions: samp_store_loc
 description: >-
   Location at which sample was stored, usually name of a specific freezer/room.
 in_subset:

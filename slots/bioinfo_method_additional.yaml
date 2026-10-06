@@ -1,5 +1,8 @@
 name: bioinfo_method_additional
 title: additional bioinformatics method information
+local_names:
+  tdwg-naming-conventions: bioinformaticsMethodAdditional
+  gsc-naming-conventions: bioinfo_meth_add
 description: >-
   Additional information on bioinformatics, that has not been shared in
   the given record.

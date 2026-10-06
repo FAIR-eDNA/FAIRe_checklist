@@ -1,5 +1,8 @@
 name: tax_class_id_cutoff
 title: taxonomic assignment identity threshold
+local_names:
+  tdwg-naming-conventions: taxonomicAssignmentIdentityCutoff
+  gsc-naming-conventions: tax_class_id_cutoff
 description: >-
   Minimum percent identity for taxonomic assignment.
 in_subset:

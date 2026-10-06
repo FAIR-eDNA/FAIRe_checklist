@@ -1,5 +1,8 @@
 name: probe_conc
 title: probe stock concentration
+local_names:
+  tdwg-naming-conventions: probeConcentration
+  gsc-naming-conventions: probe_conc
 description: >-
   The stock concentration of the probe if applicable. This refers specifically
   to the concentration of the probe stock solution, not the final concentration in

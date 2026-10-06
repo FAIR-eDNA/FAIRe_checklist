@@ -1,5 +1,8 @@
 name: verbatimSRS
 title: verbatim SRS
+local_names:
+  tdwg-naming-conventions: verbatimSRS
+  gsc-naming-conventions: verbatim_srs
 description: >-
   The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude
   and verbatimLongitude are based.

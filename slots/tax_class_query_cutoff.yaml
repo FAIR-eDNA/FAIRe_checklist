@@ -1,5 +1,8 @@
 name: tax_class_query_cutoff
 title: taxonomic assignment query coverage threshold
+local_names:
+  tdwg-naming-conventions: taxonomicAssignmentQueryCoverageCutoff
+  gsc-naming-conventions: tax_class_qry_cutoff
 description: >-
   Minimum percent query coverage for taxonomic assignment.
 in_subset:

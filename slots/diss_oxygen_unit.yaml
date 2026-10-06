@@ -1,5 +1,8 @@
 name: diss_oxygen_unit
 title: dissolved oxygen unit
+local_names:
+  tdwg-naming-conventions: dissolvedOxygenUnit
+  gsc-naming-conventions: diss_oxygen_unit
 description: >-
   The unit of diss_oxygen.
 in_subset:

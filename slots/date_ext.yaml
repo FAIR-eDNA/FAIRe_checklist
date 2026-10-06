@@ -1,5 +1,8 @@
 name: date_ext
 title: nucleic acid extraction date
+local_names:
+  tdwg-naming-conventions: nucleicAcidExtractionDate
+  gsc-naming-conventions: date_ext
 description: >-
   Date of nucleic acid extraction, written in ISO 8601 format.
 in_subset:
