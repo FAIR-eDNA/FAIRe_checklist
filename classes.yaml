@@ -418,7 +418,6 @@ classes:
     - pcr2_cycles
     - pcr2_dna_vol
     - pcr2_method_additional
-    - pcr2_plate_id
     - pcr2_thermocycler
     - pcr_0_1
     - pcr_analysis_software
@@ -681,6 +680,7 @@ classes:
     - otu_num_tax_assigned
     - output_otu_num
     - output_read_count
+    - pcr2_plate_id
     - pcr_plate_id
     - phix_perc
     - samp_name
