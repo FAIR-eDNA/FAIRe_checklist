@@ -24,6 +24,7 @@ examples:
 source: doi:10.1093/clinchem/hvaf043
 see_also:
   - doi:10.1373/clinchem.2008.112797
+  - gbif:miqe/pcr_primer_lod
 exact_mappings: []
 close_mappings: []
 related_mappings: []
