@@ -4,6 +4,7 @@ description: >-
   Additional information on PCR or PCR-free method, that has not been shared in the
   given record (i.e. multiplexing, hybridisation, CRISPR-Cas). If two-step PCR was
   applied, report the second PCR under the corresponding pcr2_* term.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - PCR
 annotations:
@@ -14,10 +15,7 @@ slot_uri: faire:0000170
 range: string
 required: false
 recommended: false
-examples:
-- value: Blocking primer (TAGTATAGCTACGAAGCCGAGGAGG-c3) (Wilcox et al. 2014, DOI 10.1007/s12686-013-0113-4)
-    was applied to prevent elongation of a closely related species
-  description: null
+examples: []
 source:
 exact_mappings: []
 close_mappings: []

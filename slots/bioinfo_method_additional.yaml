@@ -3,6 +3,7 @@ title: additional bioinformatics method information
 description: >-
   Additional information on bioinformatics, that has not been shared in
   the given record.
+  Use only for information that no other FAIRe term covers.
 in_subset:
   - Bioinformatics
 annotations:
@@ -14,9 +15,8 @@ range: string
 required: false
 recommended: false
 examples:
-- value: The min_reads_cutoff was 1 read, but singletons were kept if the same sequence
-    was detected in multiple samples. Data was curated using r-package LULU, minimum_mismatch
-    cutoff 90%
+- value: After bioinformatics processing by Obitools, the grouping of sequences into
+    MOTUs was checked by hand to limit any residual sequencing errors.
   description: null
 source:
 exact_mappings: []
