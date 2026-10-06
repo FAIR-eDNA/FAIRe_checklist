@@ -25,6 +25,7 @@ source: mixs:0001107
 exact_mappings:
 - mixs:0001107
 close_mappings: []
-related_mappings: []
+related_mappings:
+- ggbn:sampleDesignation
 narrow_mappings: []
 broad_mappings: []

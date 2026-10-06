@@ -21,7 +21,9 @@ examples:
   description: null
 source: gbif:pcr_primer_reference
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:primerReferenceLinkReverse
+- ggbn:primerReferenceCitationReverse
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

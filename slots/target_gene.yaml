@@ -21,7 +21,8 @@ examples:
   description: null
 source: mixs:0000044
 exact_mappings: []
-close_mappings: []
+close_mappings:
+- ggbn:marker
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

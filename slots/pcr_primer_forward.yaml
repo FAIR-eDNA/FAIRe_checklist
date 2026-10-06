@@ -30,6 +30,7 @@ source: gbif:pcr_primer_forward
 exact_mappings: []
 close_mappings:
 - gbif:pcr_primer_forward
+- ggbn:primerSequenceForward
 related_mappings: []
 narrow_mappings: []
 broad_mappings:

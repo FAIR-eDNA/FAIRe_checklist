@@ -24,4 +24,5 @@ close_mappings:
 - gbif:pcr_primer_name_forward
 related_mappings: []
 narrow_mappings: []
-broad_mappings: []
+broad_mappings:
+- ggbn:primerNameForward
