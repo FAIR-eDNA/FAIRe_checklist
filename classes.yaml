@@ -40,12 +40,11 @@ classes:
     - chlorophyll
     - class
     - code_repo
-    - commercial_mm
+    - master_mix
     - concentration
     - concentration_method
     - concentration_unit
     - confidence_score
-    - custom_mm
     - dataGeneralizations
     - date_ext
     - decimalLatitude
@@ -177,9 +176,8 @@ classes:
     - pcr2_amplificationReactionVolume
     - pcr2_analysis_software
     - pcr2_annealingTemp
-    - pcr2_commercial_mm
+    - pcr2_master_mix
     - pcr2_cond
-    - pcr2_custom_mm
     - pcr2_cycles
     - pcr2_dna_vol
     - pcr2_method_additional
@@ -371,8 +369,7 @@ classes:
     - chimera_check_method
     - chimera_check_param
     - code_repo
-    - commercial_mm
-    - custom_mm
+    - master_mix
     - dataGeneralizations
     - demux_max_mismatch
     - demux_tool
@@ -412,9 +409,8 @@ classes:
     - pcr2_amplificationReactionVolume
     - pcr2_analysis_software
     - pcr2_annealingTemp
-    - pcr2_commercial_mm
+    - pcr2_master_mix
     - pcr2_cond
-    - pcr2_custom_mm
     - pcr2_cycles
     - pcr2_dna_vol
     - pcr2_method_additional
