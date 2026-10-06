@@ -2,7 +2,7 @@ name: pcr_assay_loq_UL
 title: assay limit of quantification upper confidence limit
 description: >-
   Upper 95% confidence limit for LOQ for a given number of technical replicates.
-  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit
+  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit.
 in_subset:
   - Targeted assay detection
 annotations:
