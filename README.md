@@ -14,7 +14,7 @@ From repo root. Dependencies: `pip install openpyxl pyyaml pandas ruamel.yaml`
 |-------------|--------------|
 | `doc_gen_scripts/build_enums_from_checklist.py` | Reads `latest_checklist/*.xlsx` + slots → writes `enums.yaml` |
 | `doc_gen_scripts/build_classes_from_checklist.py` | Reads checklist Excel + slots → writes `classes.yaml` |
-| `doc_gen_scripts/merge_slots.py` | Merges slots + enums + classes → `schema.yaml` |
+| `doc_gen_scripts/build_schema.py` | Builds `schema.yaml` from `schema_header.yaml`, slots, types, enums and classes (was `merge_slots.py`) |
 | `doc_gen_scripts/generate_checklist_excel.py` | Reads `schema.yaml` → Excel checklist (for download) |
 | `doc_gen_scripts/generate_FULLtemplate_excel.py` | Reads `schema.yaml` → FULL Excel template (for researchers) |
 

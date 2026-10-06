@@ -1,0 +1,34 @@
+# Top of schema.yaml: everything that isn't a slot, enum, class or type.
+# doc_gen_scripts/build_schema.py copies this in first, then adds slots/, types.yaml,
+# enums.yaml and classes.yaml.
+# `version` changes only in the release pull request (dev -> main), see #21.
+id: https://w3id.org/faire/schema
+name: faire_checklist
+description: A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.
+version: 1.0.2
+# Prefixes are declared here once and used as CURIEs throughout (#23); add new ones here.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: https://schema.org/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  mixs: https://w3id.org/mixs/
+  skos: http://www.w3.org/2004/02/skos/core#
+  dcterms: http://purl.org/dc/terms/
+  gbif: http://rs.gbif.org/terms/
+  ggbn: http://data.ggbn.org/schemas/ggbn/terms/
+  # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
+  eco: http://rs.tdwg.org/eco/terms/
+  nmdc: https://w3id.org/nmdc/
+  # QUDT unit vocabulary (QUDT's own prefix); qudt: is QUDT's schema namespace
+  unit: http://qudt.org/vocab/unit/
+  UO: http://purl.obolibrary.org/obo/UO_
+  # Publications a slot was derived from, e.g. the MIQE papers (#55)
+  doi: https://doi.org/
+  # Genomic Epidemiology Ontology (instrument, #74)
+  GENEPIO: http://purl.obolibrary.org/obo/GENEPIO_
+  # Taxonomic Rank Vocabulary (taxonRank values, #45)
+  TAXRANK: http://purl.obolibrary.org/obo/TAXRANK_
+  faire: https://w3id.org/faire/
+default_prefix: faire
+imports:
+  - linkml:types

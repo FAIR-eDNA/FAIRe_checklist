@@ -1,3 +1,8 @@
+"""Build schema.yaml from schema_header.yaml, slots/, types.yaml, enums.yaml and classes.yaml.
+
+Run from the repository root: python doc_gen_scripts/build_schema.py
+(Was merge_slots.py until #21.)
+"""
 import os
 from collections import OrderedDict
 
@@ -10,6 +15,7 @@ GLOSSARY_FILENAME = "glossary_annotation.yaml"
 ENUMS_FILENAME = "enums.yaml"
 CLASSES_FILENAME = "classes.yaml"
 TYPES_FILENAME = "types.yaml"
+HEADER_FILENAME = "schema_header.yaml"
 
 
 def load_yaml(path):
@@ -120,42 +126,11 @@ def compact_uris_in_slot(slot_def, prefixes):
         ]
 
 
-# Base schema structure — prefix expansions must stay in sync with compact_uris_in_slot().
-SCHEMA_PREFIXES = {
-    "linkml": "https://w3id.org/linkml/",
-    "schema": "https://schema.org/",
-    "dwc": "http://rs.tdwg.org/dwc/terms/",
-    "mixs": "https://w3id.org/mixs/",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dcterms": "http://purl.org/dc/terms/",
-    "gbif": "http://rs.gbif.org/terms/",
-    "ggbn": "http://data.ggbn.org/schemas/ggbn/terms/",
-    # Humboldt extension (TDWG), not the Evidence and Conclusion Ontology
-    "eco": "http://rs.tdwg.org/eco/terms/",
-    "nmdc": "https://w3id.org/nmdc/",
-    # QUDT unit vocabulary (QUDT's own prefix); qudt: is QUDT's schema namespace
-    "unit": "http://qudt.org/vocab/unit/",
-    "UO": "http://purl.obolibrary.org/obo/UO_",
-    # Publications a slot was derived from, e.g. the MIQE papers (#55)
-    "doi": "https://doi.org/",
-    # Genomic Epidemiology Ontology (instrument, #74)
-    "GENEPIO": "http://purl.obolibrary.org/obo/GENEPIO_",
-    # Taxonomic Rank Vocabulary (taxonRank values, #45)
-    "TAXRANK": "http://purl.obolibrary.org/obo/TAXRANK_",
-    "faire": "https://w3id.org/faire/",
-}
-
-schema = OrderedDict(
-    {
-        "id": "faire:schema",
-        "name": "faire_checklist",
-        "description": "A LinkML schema representing the FAIRe checklist, rebuilt from individual slots.",
-        "version": "1.0.2",
-        "prefixes": SCHEMA_PREFIXES,
-        "default_prefix": "faire",
-        "imports": ["linkml:types"],
-    }
-)
+# The schema header (id, name, description, version, prefixes, default_prefix, imports)
+# is content, so it lives in a LinkML file, not here (#21). Prefixes are declared there
+# once and also used to compact URIs to CURIEs in the slots (#23).
+schema = OrderedDict(load_yaml(HEADER_FILENAME))
+SCHEMA_PREFIXES = schema["prefixes"]
 
 # The glossary (GLOSSARY_FILENAME) is not copied into the schema: LinkML tools
 # can't load it as an annotation (#68).
@@ -283,4 +258,4 @@ with open(OUTPUT_SCHEMA, "w", encoding="utf-8") as handle:
     handle.write(header_comment)
     yaml.dump(clean_schema, handle, sort_keys=False, allow_unicode=True)
 
-print(f"Merged schema written to {OUTPUT_SCHEMA}")
+print(f"Schema written to {OUTPUT_SCHEMA}")
