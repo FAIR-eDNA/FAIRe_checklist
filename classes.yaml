@@ -491,7 +491,6 @@ classes:
       context.
     slots:
     - alt
-    - assay_name
     - biological_rep_relation
     - chlorophyll
     - concentration
