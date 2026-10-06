@@ -25,5 +25,6 @@ exact_mappings: []
 close_mappings: []
 related_mappings:
 - mixs:0000087
-narrow_mappings: []
+narrow_mappings:
+- GENEPIO:0100834
 broad_mappings: []

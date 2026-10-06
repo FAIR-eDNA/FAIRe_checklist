@@ -36,3 +36,4 @@ related_mappings: []
 narrow_mappings: []
 broad_mappings:
 - mixs:0000110
+- ggbn:preservationTemperature

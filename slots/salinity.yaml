@@ -30,6 +30,7 @@ source: mixs:0000183
 exact_mappings: []
 close_mappings:
 - mixs:0000183
+- GENEPIO:0100805
 related_mappings: []
 narrow_mappings: []
 broad_mappings: []
