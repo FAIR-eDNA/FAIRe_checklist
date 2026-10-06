@@ -11,6 +11,7 @@ Usage (from the repo root):
 """
 
 import argparse
+import ast
 import os
 import re
 import sys
@@ -184,17 +185,33 @@ def conditional_requirement(slot):
     return otherwise.capitalize(), sentence
 
 
-def doi_url(ref):
+def schema_prefixes():
+    """SCHEMA_PREFIXES from merge_slots.py, where the prefixes are declared once (#23)."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "merge_slots.py")
+    for node in ast.parse(open(path, encoding="utf-8").read()).body:
+        if isinstance(node, ast.Assign) and any(getattr(t, "id", None) == "SCHEMA_PREFIXES" for t in node.targets):
+            return ast.literal_eval(node.value)
+    raise ValueError("SCHEMA_PREFIXES not found in merge_slots.py")
+
+
+PREFIXES = schema_prefixes()
+
+
+def curie_url(ref):
+    """Expand a CURIE (doi:..., gbif:miqe/...) to a link; leave anything else as it is."""
     ref = str(ref)
-    return "https://doi.org/" + ref[len("doi:"):] if ref.startswith("doi:") else ref
+    prefix, sep, local = ref.partition(":")
+    if sep and prefix in PREFIXES and not local.startswith("//"):
+        return PREFIXES[prefix] + local
+    return ref
 
 
 def references(slot):
     refs = []
     source = slot.get("source")
     if source and str(source).startswith("doi:"):
-        refs.append(doi_url(source))
-    refs += [doi_url(s) for s in slot.get("see_also") or []]
+        refs.append(curie_url(source))
+    refs += [curie_url(s) for s in slot.get("see_also") or []]
     return "; ".join(refs)
 
 
