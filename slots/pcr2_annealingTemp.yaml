@@ -1,5 +1,8 @@
 name: pcr2_annealingTemp
 title: second PCR annealing temperature
+local_names:
+  tdwg-naming-conventions: secondPCRAnnealingTemp
+  gsc-naming-conventions: pcr2_annealing_temp
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") The reaction temperature during
   the annealing phase of the second step PCR.

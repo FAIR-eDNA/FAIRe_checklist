@@ -1,5 +1,8 @@
 name: verbatimCoordinateSystem
 title: verbatim coordinate system
+local_names:
+  tdwg-naming-conventions: verbatimCoordinateSystem
+  gsc-naming-conventions: verbatim_coord_sys
 description: >-
   The coordinate format of the verbatimLatitude and verbatimLongitude.
 in_subset:

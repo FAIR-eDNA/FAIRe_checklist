@@ -1,5 +1,8 @@
 name: adapter_reverse
 title: reverse sequencing adapter
+local_names:
+  tdwg-naming-conventions: adapterReverse
+  gsc-naming-conventions: adapter_reverse
 description: >-
   Reverse sequencing adapter. The sequence should be reported in uppercase
   letters.

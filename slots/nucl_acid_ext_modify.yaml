@@ -1,5 +1,8 @@
 name: nucl_acid_ext_modify
 title: nucleic acid extraction protocol modifications
+local_names:
+  tdwg-naming-conventions: nucleicAcidExtractionModifications
+  gsc-naming-conventions: nucl_acid_ext_modify
 description: >-
   Description of modification made from a commercial or established protocol
   (nucl_acid_ext), if made.

@@ -1,5 +1,8 @@
 name: lib_conc_meth
 title: library concentration method
+local_names:
+  tdwg-naming-conventions: libraryConcentrationMethod
+  gsc-naming-conventions: lib_conc_meth
 description: >-
   Method to estimate lib_conc.
 in_subset:

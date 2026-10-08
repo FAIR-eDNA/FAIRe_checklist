@@ -1,5 +1,8 @@
 name: pump_flow_rate_unit
 title: pump flow rate unit
+local_names:
+  tdwg-naming-conventions: pumpFlowRateUnit
+  gsc-naming-conventions: pump_flow_rate_unit
 description: >-
   Unit for pump_flow_rate.
 in_subset:

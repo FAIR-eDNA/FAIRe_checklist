@@ -1,5 +1,8 @@
 name: screen_contam_method
 title: contamination screening method
+local_names:
+  tdwg-naming-conventions: contaminationScreeningMethod
+  gsc-naming-conventions: screen_contam_method
 description: >-
   Description of how contamination was screened for, and how the results were applied in data curation,
   analyses or interpretation.

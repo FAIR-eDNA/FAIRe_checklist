@@ -1,5 +1,8 @@
 name: tot_part_carb
 title: total particulate carbon
+local_names:
+  tdwg-naming-conventions: totalParticulateCarbon
+  gsc-naming-conventions: tot_part_carb
 description: >-
   Total particulate carbon content.
 in_subset:

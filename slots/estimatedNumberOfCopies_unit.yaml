@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies_unit
 title: estimated number of copies unit
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopiesUnit
+  gsc-naming-conventions: est_copies_unit
 description: >-
   Unit for estimatedNumberOfCopies.
 in_subset:

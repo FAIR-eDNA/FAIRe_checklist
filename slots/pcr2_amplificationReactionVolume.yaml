@@ -1,5 +1,8 @@
 name: pcr2_amplificationReactionVolume
 title: second PCR reaction volume
+local_names:
+  tdwg-naming-conventions: secondPCRAmplificationReactionVolume
+  gsc-naming-conventions: pcr2_amp_rxn_vol
 description: >-
   The total PCR reaction volume in the second step PCR.
 in_subset:

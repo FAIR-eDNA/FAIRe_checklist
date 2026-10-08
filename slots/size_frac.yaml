@@ -1,5 +1,8 @@
 name: size_frac
 title: size fraction selected
+local_names:
+  tdwg-naming-conventions: sizeFraction
+  gsc-naming-conventions: size_frac
 description: >-
   Filtering pore size used in sample preparation.
 in_subset:

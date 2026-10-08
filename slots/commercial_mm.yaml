@@ -1,5 +1,8 @@
 name: commercial_mm
 title: commercial master mix
+local_names:
+  tdwg-naming-conventions: commercialMasterMix
+  gsc-naming-conventions: commercial_mm
 description: >-
   Name, brand, and manufacture of commercial, pre-made master mix (if commercial
   master mix was used).

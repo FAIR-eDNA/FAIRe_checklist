@@ -1,5 +1,8 @@
 name: merge_min_overlap
 title: minimum overlap for merging reads
+local_names:
+  tdwg-naming-conventions: readMergingMinimumOverlap
+  gsc-naming-conventions: merge_min_overlap
 description: >-
   Minimum overlaps required to merge paired end reads.
 in_subset:

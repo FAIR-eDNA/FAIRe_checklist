@@ -1,5 +1,8 @@
 name: mod_date
 title: date modified
+local_names:
+  tdwg-naming-conventions: modified
+  gsc-naming-conventions: mod_date
 description: >-
   The last date on which the database information was modified, following
   the ISO 8601 format of yyyy-mm-dd. In case no exact time or date is available, the

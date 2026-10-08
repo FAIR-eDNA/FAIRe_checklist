@@ -1,5 +1,8 @@
 name: samp_store_dur
 title: sample storage duration
+local_names:
+  tdwg-naming-conventions: sampleStorageDuration
+  gsc-naming-conventions: samp_store_dur
 description: >-
   Duration for which the sample was stored prior to DNA extraction, written
   in ISO 8601 format (i.e., P14D for 14 days period. P1Y6M for 1 year and 6 months

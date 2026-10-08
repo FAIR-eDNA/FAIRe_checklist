@@ -1,5 +1,8 @@
 name: loq_method
 title: limit of quantification determination method
+local_names:
+  tdwg-naming-conventions: limitOfQuantificationMethod
+  gsc-naming-conventions: loq_method
 description: >-
   Method used for determining LOQ e.g., DOI of a published procedure.
 in_subset:

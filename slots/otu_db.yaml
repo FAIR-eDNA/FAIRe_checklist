@@ -1,5 +1,8 @@
 name: otu_db
 title: OTU database
+local_names:
+  tdwg-naming-conventions: otuDatabase
+  gsc-naming-conventions: otu_db
 description: >-
   List of reference database(s) (i.e. sequences not generated as part of
   the current study) along with version number, that were used to assign taxonomy

@@ -1,5 +1,8 @@
 name: filter_diameter
 title: filter diameter
+local_names:
+  tdwg-naming-conventions: filterDiameter
+  gsc-naming-conventions: filter_diameter
 description: >-
   Diameter of a filter if circular.
 in_subset:

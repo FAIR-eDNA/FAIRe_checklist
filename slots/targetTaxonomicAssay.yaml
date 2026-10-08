@@ -1,5 +1,8 @@
 name: targetTaxonomicAssay
 title: assay target taxa
+local_names:
+  tdwg-naming-conventions: targetTaxonomicAssay
+  gsc-naming-conventions: target_tax_assay
 description: >-
   Taxa or species name targeted by the primers, probes, and/or other approaches
   applied in the PCR.

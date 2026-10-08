@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies_error_type
 title: estimated number of copies error type
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopiesErrorType
+  gsc-naming-conventions: est_copies_err_type
 description: >-
   The specific type of variability measure (e.g., standard error, standard deviation) used to describe estimatedNumberOfCopies_error.
 in_subset:

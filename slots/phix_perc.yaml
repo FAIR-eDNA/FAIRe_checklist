@@ -1,5 +1,8 @@
 name: phix_perc
 title: PhiX percentage
+local_names:
+  tdwg-naming-conventions: phiXPercentage
+  gsc-naming-conventions: phix_perc
 description: >-
   % of PhiX added into a library, if applicable.
 in_subset:

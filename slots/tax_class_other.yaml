@@ -1,5 +1,8 @@
 name: tax_class_other
 title: other taxonomic assignment parameters
+local_names:
+  tdwg-naming-conventions: taxonomicAssignmentOtherParameters
+  gsc-naming-conventions: tax_class_other
 description: >-
   Additional information on parameters and cutoffs used for taxonomic assignment,
   that have not been shared in the given record.

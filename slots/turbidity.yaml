@@ -1,5 +1,8 @@
 name: turbidity
 title: turbidity
+local_names:
+  tdwg-naming-conventions: turbidity
+  gsc-naming-conventions: turbidity
 description: >-
   Measure of the amount of cloudiness or haziness in water caused by individual
   particles.

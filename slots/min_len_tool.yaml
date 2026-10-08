@@ -1,5 +1,8 @@
 name: min_len_tool
 title: minimum read length filtering tool
+local_names:
+  tdwg-naming-conventions: minimumReadLengthTool
+  gsc-naming-conventions: min_len_tool
 description: >-
   Software and the version to remove reads shorter than minimum length
   threshold.

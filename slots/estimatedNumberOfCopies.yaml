@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies
 title: estimated number of copies
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopies
+  gsc-naming-conventions: est_copies
 description: >-
   Estimated concentration of target molecules. Describe the approach taken
   to estimate it under the term estimatedNumberOfCopies_method.

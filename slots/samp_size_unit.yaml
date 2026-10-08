@@ -1,5 +1,8 @@
 name: samp_size_unit
 title: sample size unit
+local_names:
+  tdwg-naming-conventions: sampleSizeUnit
+  gsc-naming-conventions: samp_size_unit
 description: >-
   Unit for samp_size.
 in_subset:

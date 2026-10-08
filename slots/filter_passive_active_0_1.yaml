@@ -1,5 +1,8 @@
 name: filter_passive_active_0_1
 title: passive or active filtration
+local_names:
+  tdwg-naming-conventions: filterActive
+  gsc-naming-conventions: filter_active
 description: >-
   Whether environmental samples were collected using active (i.e. pump, fan) or passive (i.e. submerged materials
   in water/air) filtration approach. Active = 1, Passive = 0.

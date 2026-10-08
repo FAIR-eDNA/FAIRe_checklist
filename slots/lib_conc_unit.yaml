@@ -1,5 +1,8 @@
 name: lib_conc_unit
 title: library concentration unit
+local_names:
+  tdwg-naming-conventions: libraryConcentrationUnit
+  gsc-naming-conventions: lib_conc_unit
 description: >-
   Unit for lib_conc.
 in_subset:

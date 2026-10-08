@@ -1,5 +1,8 @@
 name: automaticBaselineValue
 title: automatic baseline value
+local_names:
+  tdwg-naming-conventions: automaticBaselineValue
+  gsc-naming-conventions: baseline_value_auto
 description: >-
   Whether the baseline value was set by the instrument (1) or manually (0).
 in_subset:

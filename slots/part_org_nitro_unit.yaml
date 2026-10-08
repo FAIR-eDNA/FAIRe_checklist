@@ -1,5 +1,8 @@
 name: part_org_nitro_unit
 title: particulate organic nitrogen unit
+local_names:
+  tdwg-naming-conventions: particulateOrganicNitrogenUnit
+  gsc-naming-conventions: part_org_nitro_unit
 description: >-
   The unit of part_org_nitro.
 in_subset:

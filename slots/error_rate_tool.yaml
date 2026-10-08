@@ -1,5 +1,8 @@
 name: error_rate_tool
 title: error rate filtering tool
+local_names:
+  tdwg-naming-conventions: errorRateTool
+  gsc-naming-conventions: error_rate_tool
 description: >-
   Software to remove reads above error rate threshold.
 in_subset:

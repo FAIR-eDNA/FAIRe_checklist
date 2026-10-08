@@ -1,5 +1,8 @@
 name: screen_geograph_method
 title: geographic distribution screening method
+local_names:
+  tdwg-naming-conventions: geographicDistributionScreeningMethod
+  gsc-naming-conventions: screen_geograph_meth
 description: >-
   Description of how species distribution information was used to screen detections, and how the results
   were applied.

@@ -1,5 +1,8 @@
 name: diss_inorg_carb_unit
 title: dissolved inorganic carbon unit
+local_names:
+  tdwg-naming-conventions: dissolvedInorganicCarbonUnit
+  gsc-naming-conventions: diss_inorg_carb_unit
 description: >-
   The unit of diss_inorg_carb.
 in_subset:

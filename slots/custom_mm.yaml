@@ -1,5 +1,8 @@
 name: custom_mm
 title: custom master mix
+local_names:
+  tdwg-naming-conventions: customMasterMix
+  gsc-naming-conventions: custom_mm
 description: >-
   composition of custom master mix, including the names, volumes and concentrations
   of additives (i.e., salts, buffers, enzyme and other components) (if custom master

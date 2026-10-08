@@ -1,5 +1,8 @@
 name: instrument
 title: sequencing instrument
+local_names:
+  tdwg-naming-conventions: instrument
+  gsc-naming-conventions: instrument
 description: >-
   Sequencing instrument (manufacturer and model) used. Where possible the term should be taken from the OBI list
   of DNA sequencers (https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0002750).

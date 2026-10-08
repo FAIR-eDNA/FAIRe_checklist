@@ -1,5 +1,8 @@
 name: otu_clust_tool
 title: OTU/ASV clustering tool
+local_names:
+  tdwg-naming-conventions: otuClusteringTool
+  gsc-naming-conventions: otu_clust_tool
 description: >-
   Software and the version used for OTU/ASV clustering.
 in_subset:

@@ -1,5 +1,8 @@
 name: std_conc_unit
 title: qPCR standard input quantity unit
+local_names:
+  tdwg-naming-conventions: standardInputQuantityUnit
+  gsc-naming-conventions: std_conc_unit
 description: >-
   Unit for input quantity of qPCR standard DNA.
 in_subset:

@@ -1,5 +1,8 @@
 name: pcr_analysis_software
 title: PCR analysis software
+local_names:
+  tdwg-naming-conventions: pcrAnalysisSoftware
+  gsc-naming-conventions: pcr_analysis_sw
 description: >-
   The program used to analyse the PCR runs. If two-step PCR was applied, report the
   second PCR under the corresponding pcr2_* term.

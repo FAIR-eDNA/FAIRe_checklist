@@ -1,5 +1,8 @@
 name: pcr_assay_lod_LL
 title: assay limit of detection lower confidence limit
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfDetectionLowerLimit
+  gsc-naming-conventions: pcr_assay_lod_ll
 description: >-
   Lower 95% confidence limit for LOD for a given number of technical replicates.
   See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_lod_unit.

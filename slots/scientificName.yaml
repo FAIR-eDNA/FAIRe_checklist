@@ -1,5 +1,8 @@
 name: scientificName
 title: scientific name
+local_names:
+  tdwg-naming-conventions: scientificName
+  gsc-naming-conventions: scientific_name
 description: >-
   The full scientific name of the genus and species.
 in_subset:

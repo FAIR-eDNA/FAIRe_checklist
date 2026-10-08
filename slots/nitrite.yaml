@@ -1,5 +1,8 @@
 name: nitrite
 title: nitrite
+local_names:
+  tdwg-naming-conventions: nitrite
+  gsc-naming-conventions: nitrite
 description: >-
   Concentration of nitrite in the sample.
 in_subset:
