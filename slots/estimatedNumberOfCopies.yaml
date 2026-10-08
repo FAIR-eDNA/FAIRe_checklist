@@ -12,7 +12,7 @@ annotations:
   data_type: ampData | eLowQuantData
   requirement_level: Recommended
   requirement_level_code: R
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
   modifications_made: description
 keywords:
   - MIQE

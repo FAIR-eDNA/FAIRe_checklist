@@ -4,10 +4,11 @@ local_names:
   tdwg-naming-conventions: detectedNotDetected
   gsc-naming-conventions: target_detected
 description: >-
-  Detection of the targeted taxon for each biological replicate, based on the specified detection criteria (detailed
-  under the term 'detection_criteria'). Detected = 1, Not detected = 0. For projects employing multiple assays, this term
-  should be specified separately for each assay. The term name should include the assay identifier in the format detected_notDetected_<assay_name>
-  (e.g., detected_notDetected_eSERU5).
+  Detection of the targeted taxon for each biological replicate, based on the specified detection
+  criteria (detailed under the term 'detection_criteria'). Detected = true (1), not detected =
+  false (0). For projects employing multiple assays, this term should be specified separately for
+  each assay. The term name should include the assay identifier in the format
+  detected_notDetected_<assay_name> (e.g., detected_notDetected_eSERU5).
 in_subset:
 - Targeted assay detection
 annotations:

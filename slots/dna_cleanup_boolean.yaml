@@ -1,19 +1,19 @@
-name: filter_passive_active_0_1
-title: passive or active filtration
+name: dna_cleanup_boolean
+title: DNA clean-up performed
+aliases:
+  - dna_cleanup_0_1
 local_names:
-  tdwg-naming-conventions: filterActive
-  gsc-naming-conventions: filter_active
+  tdwg-naming-conventions: dnaCleanupBoolean
+  gsc-naming-conventions: dna_cleanup_boolean
 description: >-
-  Whether environmental samples were collected using active (i.e. pump, fan) or passive (i.e. submerged materials
-  in water/air) filtration approach. Active = 1, Passive = 0.
+  Whether the extracted DNA was cleaned/purified: yes = true (1), no = false (0).
 in_subset:
-- Sample preparation
+- Nucleic acid extraction
 annotations:
   data_type: sampleMetadata
   requirement_level: Recommended
   requirement_level_code: R
-  sample_type_specificity: Water | Sediment | Air
-slot_uri: faire:0000075
+slot_uri: faire:0000051
 range: Any
 any_of:
 - range: boolean

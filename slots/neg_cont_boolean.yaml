@@ -1,18 +1,21 @@
-name: pos_cont_0_1
-title: positive controls used
+name: neg_cont_boolean
+title: negative controls used
+aliases:
+  - neg_cont_0_1
 local_names:
-  tdwg-naming-conventions: positiveControlsUsed
-  gsc-naming-conventions: pos_cont_0_1
+  tdwg-naming-conventions: negativeControlBoolean
+  gsc-naming-conventions: neg_cont_boolean
 description: >-
-  Were positive controls applied during the project? Yes = 1, No = 0. For further details, record the types of
-  positive controls under the term pos_cont_type in sampleMetadata.
+  Whether negative controls were applied during the project: yes = true (1), no = false (0). For
+  further details, record the types of negative controls under the term neg_cont_type in
+  sampleMetadata.
 in_subset:
 - Project
 annotations:
   data_type: projectMetadata
   requirement_level: Highly recommended
   requirement_level_code: HR
-slot_uri: faire:0000189
+slot_uri: faire:0000114
 range: Any
 any_of:
 - range: boolean
@@ -29,6 +32,6 @@ source:
 exact_mappings: []
 close_mappings: []
 related_mappings:
-- mixs:0001322
+- mixs:0001321
 narrow_mappings: []
 broad_mappings: []

@@ -1,0 +1,36 @@
+name: filter_passive_active_boolean
+title: passive or active filtration
+aliases:
+  - filter_passive_active_0_1
+local_names:
+  tdwg-naming-conventions: filterPassiveActiveBoolean
+  gsc-naming-conventions: filter_pass_act_bool
+description: >-
+  Whether environmental samples were collected using active (i.e. pump, fan) or passive (i.e.
+  submerged materials in water/air) filtration approach. Active = true (1), passive = false (0).
+in_subset:
+- Sample preparation
+annotations:
+  data_type: sampleMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+  sample_type_specificity: Water | Sediment | Air
+slot_uri: faire:0000075
+range: Any
+any_of:
+- range: boolean
+- range: BooleanEnum
+- range: integer
+  minimum_value: 0
+  maximum_value: 1
+required: false
+recommended: true
+examples:
+- value: '1'
+  description: null
+source:
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

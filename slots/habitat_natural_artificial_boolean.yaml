@@ -1,11 +1,14 @@
-name: habitat_natural_artificial_0_1
+name: habitat_natural_artificial_boolean
 title: natural or artificial habitat
+aliases:
+  - habitat_natural_artificial_0_1
 local_names:
-  tdwg-naming-conventions: habitatArtificial
-  gsc-naming-conventions: habitat_artificial
+  tdwg-naming-conventions: habitatNaturalArtificialBoolean
+  gsc-naming-conventions: habitat_nat_art_bool
 description: >-
-  Whether samples were taken from natural (0) or artificial (1) habitat. The examples of artificial habitat include
-  mesocosm tank in lab, enclosure in zoo etc., including semi-natural systems. The definition of natural habitat is locations
+  Whether samples were taken from natural or artificial habitat: artificial = true (1), natural =
+  false (0). The examples of artificial habitat include mesocosm tank in lab, enclosure in zoo
+  etc., including semi-natural systems. The definition of natural habitat is locations
   uncontrolled by researchers.
 in_subset:
 - Sample collection
