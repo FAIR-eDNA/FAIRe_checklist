@@ -1,12 +1,18 @@
-name: custom_mm
-title: custom master mix
+name: master_mix
+title: master mix
+aliases:
+  - commercial_mm
+  - custom_mm
 local_names:
-  tdwg-naming-conventions: customMasterMix
-  gsc-naming-conventions: custom_mm
+  tdwg-naming-conventions: masterMix
+  gsc-naming-conventions: master_mix
 description: >-
-  composition of custom master mix, including the names, volumes and concentrations
-  of additives (i.e., salts, buffers, enzyme and other components) (if custom master
-  mix was used).
+  If commercial master mix was used, provide the product name, brand, manufacture,
+  catalogue number and/or supplier URL to the product page. If custom master mix was
+  used, provide the composition, including the names, volumes and concentrations of
+  additives (i.e., salts, buffers, enzyme and other components).
+comments:
+  - Replaces commercial_mm and custom_mm from FAIRe v1.0 (#42).
 in_subset:
   - PCR
 annotations:
@@ -15,18 +21,20 @@ annotations:
   requirement_level_code: HR
 keywords:
   - MIQE
-slot_uri: faire:0000037
+slot_uri: faire:0000320
 range: string
 required: false
 recommended: true
 examples:
+- value: Luna Universal qPCR Master Mix, New England Biolabs
+  description: commercial master mix
 - value: 'Each PCR reaction comprised: 1 x Taq Gold buffer (Applied Biosystems [ABI],
     USA), 2 nM MgCl2 (ABI, USA), 0.4 mg/mL BSA (Fisher Biotec, Australia), 0.25 mM
     dNTPs (Astral Scientific, Australia), 0.4 µM each of forward and reverse primers
     (Integrated DNA Technologies, Australia), 0.6 µL of 1/10,000 SYBR Green dye (Life
     Technologies, USA), 1 U of Taq polymerase Gold (ABI, USA), 2 µL of DNA, and made
     up to 25 µL with PCR grade water'
-  description: null
+  description: custom master mix
 source: doi:10.1093/clinchem/hvaf043
 see_also:
   - doi:10.1373/clinchem.2008.112797

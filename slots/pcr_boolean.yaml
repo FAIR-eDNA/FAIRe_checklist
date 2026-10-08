@@ -1,17 +1,20 @@
-name: inhibition_check_0_1
-title: PCR inhibition checked
+name: pcr_boolean
+title: PCR performed
+aliases:
+  - pcr_0_1
 local_names:
-  tdwg-naming-conventions: inhibitionChecked
-  gsc-naming-conventions: inhibition_check_0_1
+  tdwg-naming-conventions: pcrBoolean
+  gsc-naming-conventions: pcr_boolean
 description: >-
-  Was the inhibition checked? Yes = 1, No = 0.
+  Was PCR performed in the study? Yes = 1, No (pcr-free approaches including shotgun metagenomics, Nanopore) =
+  0.
 in_subset:
 - PCR
 annotations:
   data_type: projectMetadata
-  requirement_level: Optional
-  requirement_level_code: O
-slot_uri: faire:0000088
+  requirement_level: Mandatory
+  requirement_level_code: M
+slot_uri: faire:0000155
 range: Any
 any_of:
 - range: boolean
@@ -19,7 +22,7 @@ any_of:
 - range: integer
   minimum_value: 0
   maximum_value: 1
-required: false
+required: true
 recommended: false
 examples:
 - value: '1'
