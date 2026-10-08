@@ -2,6 +2,7 @@ name: dna_sequence
 title: DNA sequence
 description: >-
   The DNA sequence.
+  Report the sequence in uppercase IUPAC nucleotide codes (see the DnaSequence type).
 in_subset:
   - OTU/ASV
 annotations:

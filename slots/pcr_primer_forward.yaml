@@ -1,15 +1,17 @@
 name: pcr_primer_forward
 title: forward PCR primer
 description: >-
-  Forward PCR primer (5' - 3') that were used to amplify the sequence of
-  the targeted gene. The primer sequence should NOT contain MIDs and adapter sequences,
-  and should be reported in uppercase letters. If multiple forward primers are present
-  in a single PCR reaction, either report them separately in separate submissions
-  (with separate OTU tables for each primer set), or list the primers here separated
-  by pipe ( | ) and provide one OTU table resulting from all the primers applied here.
-  The latter is recommended only when the multiple primers target the same gene region
-  and thus a single OTU table was generated from the multiplexed PCR. This term is
-  required except for PCR free methods.
+  Forward PCR primer (5' - 3') that were used to amplify the sequence of the targeted
+  gene. The primer sequence should NOT contain MIDs and adapter sequences, and should be
+  reported in uppercase letters. Bases are uppercase IUPAC nucleotide codes, with I for
+  inosine; modifications are written as slash-delimited supplier codes such as /C3/ (see
+  the ModifiedOligoSequence type). If multiple forward primers are present in a single
+  PCR reaction, either report them separately in separate submissions (with separate OTU
+  tables for each primer set), or list the primers here separated by pipe ( | ) and
+  provide one OTU table resulting from all the primers applied here. The latter is
+  recommended only when the multiple primers target the same gene region and thus a
+  single OTU table was generated from the multiplexed PCR. This term is required except
+  for PCR free methods.
 in_subset:
   - PCR
 annotations:

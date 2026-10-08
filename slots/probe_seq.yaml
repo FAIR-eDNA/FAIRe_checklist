@@ -1,11 +1,11 @@
 name: probe_seq
 title: probe sequence
 description: >-
-  If applicable, probe sequence in the 5' to 3' direction. Bases are restricted to
-  uppercase IUPAC nucleotide codes (A C G T U R Y S W K M B D H V N). Non-nucleotide
-  modifications (dyes, quenchers, spacers, inosine) are written as slash-delimited
-  supplier codes in the sequence (e.g. /C3/ or IDT /3SpC3/, /6-FAM/), not as extra
-  letters. Reporter and quencher names may still be recorded in probeReporter and
+  If applicable, probe sequence in the 5' to 3' direction.
+  Bases are uppercase IUPAC nucleotide codes, with I for inosine; modifications are
+  written as slash-delimited supplier codes such as /C3/ (see the
+  ModifiedOligoSequence type).
+  Reporter and quencher names may still be recorded in probeReporter and
   probeQuencher.
 in_subset:
   - PCR

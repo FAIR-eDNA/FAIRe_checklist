@@ -1,11 +1,10 @@
 name: block_seq
 title: blocking primer sequence
 description: >-
-  Blocking primer sequence in the 5' to 3' direction. Bases are restricted to
-  uppercase IUPAC nucleotide codes (A C G T U R Y S W K M B D H V N). Non-nucleotide
-  modifications such as a C3 spacer, which are often used in blocking primers, are
-  written as slash-delimited supplier codes in the sequence (e.g. /C3/ or IDT
-  /3SpC3/), not as extra letters.
+  Blocking primer sequence in the 5' to 3' direction.
+  Bases are uppercase IUPAC nucleotide codes, with I for inosine; modifications are
+  written as slash-delimited supplier codes such as /C3/ (see the
+  ModifiedOligoSequence type).
 in_subset:
   - PCR
 annotations:
