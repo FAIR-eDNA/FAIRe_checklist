@@ -1,6 +1,0 @@
-# Answers for the GSC "MIxS New Term Request Template" (#93).
-# Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#179
-blocked: >-
-  Waits on FAIRe_checklist #42: the working group (2026-07-28) decided to merge
-  commercial_mm and custom_mm (and the pcr2_ pair) into master_mix, and to propose
-  the merged term to the GSC instead.
