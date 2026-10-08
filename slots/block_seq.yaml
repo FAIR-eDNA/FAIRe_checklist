@@ -5,6 +5,9 @@ local_names:
   gsc-naming-conventions: block_seq
 description: >-
   Blocking primer sequence in the 5' to 3' direction.
+  Bases are uppercase IUPAC nucleotide codes, with I for inosine; modifications are
+  written as slash-delimited supplier codes such as /C3/ (see the
+  ModifiedOligoSequence type).
 in_subset:
   - PCR
 annotations:
@@ -12,7 +15,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
 slot_uri: faire:0000022
-range: string
+range: ModifiedOligoSequence
 required: false
 recommended: false
 examples:

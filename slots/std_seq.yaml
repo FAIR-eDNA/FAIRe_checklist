@@ -5,6 +5,7 @@ local_names:
   gsc-naming-conventions: std_seq
 description: >-
   DNA sequences of standard.
+  Report the sequence in uppercase IUPAC nucleotide codes (see the DnaSequence type).
 in_subset:
   - Targeted assay detection
 annotations:
@@ -12,7 +13,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 slot_uri: faire:0000247
-range: string
+range: DnaSequence
 required: false
 recommended: true
 examples:

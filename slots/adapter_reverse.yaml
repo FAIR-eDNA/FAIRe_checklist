@@ -17,7 +17,7 @@ annotations:
   requirement_level_code: R
   modifications_made: field_name | description
 slot_uri: faire:0000004
-range: string
+range: ModifiedOligoSequence
 required: false
 recommended: true
 examples:
