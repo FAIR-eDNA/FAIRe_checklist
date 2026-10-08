@@ -19,7 +19,7 @@ annotations:
   requirement_level_condition: If pcr_0_1 is 1
   modifications_made: description
 slot_uri: faire:0000179
-range: string
+range: DnaSequence
 multivalued: true
 required: true
 recommended: false

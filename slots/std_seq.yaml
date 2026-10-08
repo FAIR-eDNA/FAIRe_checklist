@@ -9,7 +9,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
 slot_uri: faire:0000247
-range: string
+range: DnaSequence
 required: false
 recommended: true
 examples:

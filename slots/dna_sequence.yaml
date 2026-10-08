@@ -10,7 +10,7 @@ annotations:
   requirement_level_code: M
   requirement_level_condition: If assay_type = metabarcoding
 slot_uri: gbif:dna_sequence
-range: string
+range: DnaSequence
 required: true
 recommended: false
 examples:

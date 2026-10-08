@@ -27,3 +27,20 @@ types:
       (doi:10.1002/edn3.220) or a URL (https://...). Same as MIxS's {PMID}|{DOI}|{URL}
       pattern (#97).
     pattern: '^(PMID:\d+|doi:10.\d{2,9}/.*|https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*))$'
+  DnaSequence:
+    typeof: string
+    description: >-
+      An uppercase nucleic acid sequence using only IUPAC nucleotide codes
+      (A C G T U R Y S W K M B D H V N). See IUBMB/IUPAC incomplete nucleic acid
+      sequences (https://iubmb.qmul.ac.uk/misc/naseq.html).
+    pattern: '^[ACGTURYSWKMBDHVN]+$'
+  ModifiedOligoSequence:
+    typeof: string
+    description: >-
+      A DnaSequence that may also include non-nucleotide modifications written as
+      slash-delimited codes in the sequence string, the way oligo suppliers embed
+      mods (IDT: https://www.idtdna.com/page/support-and-education/decoded-plus/ordering-modified-oligonucleotides).
+      Bases are uppercase IUPAC codes, plus I for inosine. A modification token is
+      /code/ with no spaces (e.g. /C3/, IDT /3SpC3/, /iSpC3/, /6-FAM/). Codes are
+      not a closed catalog; they follow supplier spelling.
+    pattern: '^([ACGTURYSWKMBDHVNI]+|/[A-Za-z0-9][A-Za-z0-9._+-]*/)+$'
