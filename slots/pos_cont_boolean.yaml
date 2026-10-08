@@ -6,8 +6,9 @@ local_names:
   tdwg-naming-conventions: positiveControlBoolean
   gsc-naming-conventions: pos_cont_boolean
 description: >-
-  Were positive controls applied during the project? Yes = 1, No = 0. For further details, record the types of
-  positive controls under the term pos_cont_type in sampleMetadata.
+  Whether positive controls were applied during the project: yes = true (1), no = false (0). For
+  further details, record the types of positive controls under the term pos_cont_type in
+  sampleMetadata.
 in_subset:
 - Project
 annotations:
