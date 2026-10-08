@@ -1,5 +1,8 @@
 name: samp_weather
 title: sampling day weather
+local_names:
+  tdwg-naming-conventions: samplingDayWeather
+  gsc-naming-conventions: samp_weather
 description: >-
   The weather on the sampling day.
 in_subset:

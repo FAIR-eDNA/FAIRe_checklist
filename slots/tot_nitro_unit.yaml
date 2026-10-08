@@ -1,5 +1,8 @@
 name: tot_nitro_unit
 title: total nitrogen concentration unit
+local_names:
+  tdwg-naming-conventions: totalNitrogenUnit
+  gsc-naming-conventions: tot_nitro_unit
 description: >-
   The unit of tot_nitro.
 in_subset:

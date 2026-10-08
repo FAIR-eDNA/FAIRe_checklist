@@ -1,5 +1,8 @@
 name: prefilter_material
 title: pre-filter material
+local_names:
+  tdwg-naming-conventions: prefilterMaterial
+  gsc-naming-conventions: prefilter_material
 description: >-
   Material used to pre-filter/pre-sort the sample.
 in_subset:

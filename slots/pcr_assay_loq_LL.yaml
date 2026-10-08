@@ -1,8 +1,11 @@
 name: pcr_assay_loq_LL
 title: assay limit of quantification lower confidence limit
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfQuantificationLowerLimit
+  gsc-naming-conventions: pcr_assay_loq_ll
 description: >-
   Lower 95% confidence limit for LOQ for a given number of technical replicates.
-  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit
+  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_loq_unit.
 in_subset:
   - Targeted assay detection
 annotations:

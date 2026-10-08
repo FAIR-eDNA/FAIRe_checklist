@@ -1,5 +1,8 @@
 name: suspend_part_matter
 title: suspended particulate matter
+local_names:
+  tdwg-naming-conventions: suspendedParticulateMatter
+  gsc-naming-conventions: suspend_part_matter
 description: >-
   Concentration of suspended particulate matter.
 in_subset:

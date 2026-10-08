@@ -1,5 +1,8 @@
 name: pcr_primer_vol_forward
 title: forward PCR primer volume
+local_names:
+  tdwg-naming-conventions: pcrPrimerVolumeForward
+  gsc-naming-conventions: pcr_primer_vol_fwd
 description: >-
   Volume of pcr_primer_forward per reaction.
 in_subset:

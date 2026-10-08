@@ -1,7 +1,12 @@
-name: inhibition_check_0_1
+name: inhibition_check_boolean
 title: PCR inhibition checked
+aliases:
+  - inhibition_check_0_1
+local_names:
+  tdwg-naming-conventions: inhibitionCheckBoolean
+  gsc-naming-conventions: inhib_check_boolean
 description: >-
-  Was the inhibition checked? Yes = 1, No = 0.
+  Whether PCR inhibition was checked: yes = true (1), no = false (0).
 in_subset:
 - PCR
 annotations:

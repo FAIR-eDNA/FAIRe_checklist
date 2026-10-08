@@ -1,5 +1,8 @@
 name: lod_method
 title: limit of detection determination method
+local_names:
+  tdwg-naming-conventions: limitOfDetectionMethod
+  gsc-naming-conventions: lod_method
 description: >-
   Method used for determining LOD e.g., DOI of a published procedure.
 in_subset:

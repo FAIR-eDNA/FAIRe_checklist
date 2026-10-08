@@ -1,5 +1,8 @@
 name: concentration_unit
 title: DNA concentration unit
+local_names:
+  tdwg-naming-conventions: concentrationUnit
+  gsc-naming-conventions: concentration_unit
 description: >-
   The unit of total DNA concentration after extraction.
 in_subset:

@@ -1,5 +1,8 @@
 name: pcr_assay_loq_techreps
 title: assay limit of quantification technical replicates
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfQuantificationTechnicalReplicateCount
+  gsc-naming-conventions: pcr_loq_techreps
 description: >-
   The number of technical replicates that the LOQ is applied to. See DOI:
   10.1002/edn3.220.

@@ -1,5 +1,8 @@
 name: pcr_primer_reference_reverse
 title: reverse PCR primer reference
+local_names:
+  tdwg-naming-conventions: pcrPrimerReferenceReverse
+  gsc-naming-conventions: pcr_primer_ref_rev
 description: >-
   Reference (i.e. DOI) of the pcr_primer_reverse. If multiple primers are
   listed in pcr_primer_reverse, list the references respectively, separated by pipe

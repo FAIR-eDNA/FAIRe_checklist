@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies_unit
 title: estimated number of copies unit
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopiesUnit
+  gsc-naming-conventions: est_copies_unit
 description: >-
   Unit for estimatedNumberOfCopies.
 in_subset:
@@ -8,7 +11,7 @@ annotations:
   data_type: ampData | eLowQuantData
   requirement_level: Recommended
   requirement_level_code: R
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
 slot_uri: faire:0000066
 range: string
 any_of:

@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies
 title: estimated number of copies
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopies
+  gsc-naming-conventions: est_copies
 description: >-
   Estimated concentration of target molecules. Describe the approach taken
   to estimate it under the term estimatedNumberOfCopies_method.
@@ -9,7 +12,7 @@ annotations:
   data_type: ampData | eLowQuantData
   requirement_level: Recommended
   requirement_level_code: R
-  requirement_level_condition: If assay_type = targeted & pcr_0_1 = 1
+  requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
   modifications_made: description
 keywords:
   - MIQE

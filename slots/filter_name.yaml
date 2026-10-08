@@ -1,5 +1,8 @@
 name: filter_name
 title: filter name
+local_names:
+  tdwg-naming-conventions: filterName
+  gsc-naming-conventions: filter_name
 description: >-
   Commercial names and brand of filter.
 in_subset:

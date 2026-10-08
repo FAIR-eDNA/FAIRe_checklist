@@ -1,5 +1,8 @@
 name: nitro_unit
 title: nitrogen unit
+local_names:
+  tdwg-naming-conventions: nitrogenUnit
+  gsc-naming-conventions: nitro_unit
 description: >-
   The unit of nitro.
 in_subset:

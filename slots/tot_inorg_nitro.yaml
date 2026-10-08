@@ -1,5 +1,8 @@
 name: tot_inorg_nitro
 title: total inorganic nitrogen
+local_names:
+  tdwg-naming-conventions: totalInorganicNitrogen
+  gsc-naming-conventions: tot_inorg_nitro
 description: >-
   Total inorganic nitrogen content.
 in_subset:

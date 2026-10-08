@@ -1,5 +1,8 @@
 name: identificationRemarks
 title: identification remarks
+local_names:
+  tdwg-naming-conventions: identificationRemarks
+  gsc-naming-conventions: ident_remarks
 description: >-
   Comments or notes about the taxonomic assignment.
 in_subset:

@@ -1,5 +1,8 @@
 name: demux_max_mismatch
 title: demultiplexing maximum index mismatch
+local_names:
+  tdwg-naming-conventions: demultiplexingMaximumIndexMismatch
+  gsc-naming-conventions: demux_max_mismatch
 description: >-
   Maximum mismatch allowed at the index bases for demultiplexing.
 in_subset:

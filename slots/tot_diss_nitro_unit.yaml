@@ -1,5 +1,8 @@
 name: tot_diss_nitro_unit
 title: total dissolved nitrogen unit
+local_names:
+  tdwg-naming-conventions: totalDissolvedNitrogenUnit
+  gsc-naming-conventions: tot_diss_nitro_unit
 description: >-
   The unit of tot_diss_nitro.
 in_subset:

@@ -1,5 +1,8 @@
 name: pcr_dna_vol
 title: PCR DNA volume
+local_names:
+  tdwg-naming-conventions: pcrDNAVolume
+  gsc-naming-conventions: pcr_dna_vol
 description: >-
   Volume of DNA added in each PCR reaction.
 in_subset:

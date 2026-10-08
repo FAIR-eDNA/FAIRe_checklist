@@ -1,5 +1,8 @@
 name: ph_meth
 title: pH method
+local_names:
+  tdwg-naming-conventions: pHMethod
+  gsc-naming-conventions: ph_meth
 description: >-
   Reference or method used in determining pH.
 in_subset:

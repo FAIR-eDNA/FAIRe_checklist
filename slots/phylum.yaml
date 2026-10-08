@@ -1,5 +1,8 @@
 name: phylum
 title: phylum
+local_names:
+  tdwg-naming-conventions: phylum
+  gsc-naming-conventions: phylum
 description: >-
   The full scientific name of the phylum or division.
 in_subset:

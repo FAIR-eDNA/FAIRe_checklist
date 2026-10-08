@@ -1,5 +1,8 @@
 name: seq_kit
 title: sequencing kit
+local_names:
+  tdwg-naming-conventions: sequencingKit
+  gsc-naming-conventions: seq_kit
 description: >-
   The name of sequencing kit.
 in_subset:

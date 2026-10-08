@@ -1,5 +1,8 @@
 name: sample_composed_of
 title: sample composed of
+local_names:
+  tdwg-naming-conventions: sampleComposedOf
+  gsc-naming-conventions: sample_composed_of
 description: >-
   This term contains a list of samp_name values that represent the original
   samples combined to form the current sample. For example, if environmental samples

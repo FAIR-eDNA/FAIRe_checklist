@@ -1,5 +1,8 @@
 name: license
 title: license
+local_names:
+  tdwg-naming-conventions: license
+  gsc-naming-conventions: license
 description: >-
   A legal document giving official permission to do something with the
   resource.

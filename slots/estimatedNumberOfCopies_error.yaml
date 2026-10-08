@@ -1,5 +1,8 @@
 name: estimatedNumberOfCopies_error
 title: estimated number of copies error
+local_names:
+  tdwg-naming-conventions: estimatedNumberOfCopiesError
+  gsc-naming-conventions: est_copies_error
 description: >-
   The measure of variability (e.g., standard error) associated with the
   estimatedNumberOfCopies value, applicable when the estimatedNumberOfCopies represents

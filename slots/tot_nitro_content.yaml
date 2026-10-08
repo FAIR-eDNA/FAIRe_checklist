@@ -1,5 +1,8 @@
 name: tot_nitro_content
 title: total nitrogen content
+local_names:
+  tdwg-naming-conventions: totalNitrogenContent
+  gsc-naming-conventions: tot_nitro_content
 description: >-
   Total nitrogen content of the sample.
 in_subset:

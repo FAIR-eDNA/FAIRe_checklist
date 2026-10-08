@@ -1,8 +1,11 @@
 name: pcr_assay_lod_UL
 title: assay limit of detection upper confidence limit
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfDetectionUpperLimit
+  gsc-naming-conventions: pcr_assay_lod_ul
 description: >-
   Upper 95% confidence limit for LOD for a given number of technical replicates.
-  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_lod_unit
+  See DOI: 10.1002/edn3.220. Unit = same as pcr_assay_lod_unit.
 in_subset:
   - Targeted assay detection
 annotations:

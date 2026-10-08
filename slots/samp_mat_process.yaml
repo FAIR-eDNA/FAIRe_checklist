@@ -1,5 +1,8 @@
 name: samp_mat_process
 title: sample material processing
+local_names:
+  tdwg-naming-conventions: sampleMaterialProcessing
+  gsc-naming-conventions: samp_mat_process
 description: >-
   A brief description of any processing applied to the sample during or after
   retrieving the sample from environment, or a link to the relevant protocol(s)

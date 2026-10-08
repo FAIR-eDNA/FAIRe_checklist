@@ -1,5 +1,8 @@
 name: annealingTemp
 title: PCR annealing temperature
+local_names:
+  tdwg-naming-conventions: annealingTemp
+  gsc-naming-conventions: annealing_temp
 description: >-
   The reaction temperature during the annealing phase of PCR. If two-step PCR was
   applied, report the second PCR under the corresponding pcr2_* term.

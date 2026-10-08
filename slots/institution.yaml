@@ -1,5 +1,8 @@
 name: institution
 title: institution
+local_names:
+  tdwg-naming-conventions: institution
+  gsc-naming-conventions: institution
 description: >-
   An institution having custody of the object(s) or information referred
   to in the record.

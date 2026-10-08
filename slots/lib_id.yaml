@@ -1,5 +1,8 @@
 name: lib_id
 title: library ID
+local_names:
+  tdwg-naming-conventions: libraryID
+  gsc-naming-conventions: lib_id
 description: >-
   An identifier of a library (an amplicon of a sample with unique MIDs).
 in_subset:

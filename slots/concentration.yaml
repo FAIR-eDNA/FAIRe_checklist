@@ -1,5 +1,8 @@
 name: concentration
 title: DNA concentration after extraction
+local_names:
+  tdwg-naming-conventions: concentration
+  gsc-naming-conventions: concentration
 description: >-
   Concentration of total DNA after extraction.
 in_subset:

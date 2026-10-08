@@ -1,5 +1,8 @@
 name: pcr_primer_name_reverse
 title: reverse PCR primer name
+local_names:
+  tdwg-naming-conventions: pcrPrimerNameReverse
+  gsc-naming-conventions: pcr_primer_name_rev
 description: >-
   Name of the pcr_primer_reverse. If multiple primers are listed in pcr_primer_reverse,
   list the names respectively, separated by pipe ( | ).

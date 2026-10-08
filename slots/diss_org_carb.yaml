@@ -1,5 +1,8 @@
 name: diss_org_carb
 title: dissolved organic carbon
+local_names:
+  tdwg-naming-conventions: dissolvedOrganicCarbon
+  gsc-naming-conventions: diss_org_carb
 description: >-
   Concentration of dissolved organic carbon in the sample, liquid portion
   of the sample, or aqueous phase of the fluid.

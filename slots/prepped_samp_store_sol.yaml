@@ -1,5 +1,8 @@
 name: prepped_samp_store_sol
 title: prepared sample storage solution
+local_names:
+  tdwg-naming-conventions: preparedSampleStorageSolution
+  gsc-naming-conventions: prep_samp_store_sol
 description: >-
   Solution within which the prepared sample was stored prior to DNA extraction. Note: The storage solution of
   the original environmental sample (e.g., water, soil) should be recorded under samp_store_sol, while the current term is

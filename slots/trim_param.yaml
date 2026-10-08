@@ -1,5 +1,8 @@
 name: trim_param
 title: trimming parameters
+local_names:
+  tdwg-naming-conventions: trimmingParameters
+  gsc-naming-conventions: trim_param
 description: >-
   Parameters and cutoffs used to trim if not default.
 in_subset:

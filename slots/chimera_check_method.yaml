@@ -1,5 +1,8 @@
 name: chimera_check_method
 title: chimera check method
+local_names:
+  tdwg-naming-conventions: chimeraCheckMethod
+  gsc-naming-conventions: chimera_check_method
 description: >-
   Description of chimera check approaches (i.e. denovo, reference-based),
   including software and the version used.

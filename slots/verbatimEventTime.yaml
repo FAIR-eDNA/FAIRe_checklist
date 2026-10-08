@@ -1,5 +1,8 @@
 name: verbatimEventTime
 title: verbatim event time
+local_names:
+  tdwg-naming-conventions: verbatimEventTime
+  gsc-naming-conventions: verbatim_event_time
 description: >-
   Sample collection time before formatting to ISO 8601, or at the local
   time (if eventDate time stamp has been converted to UTC time).

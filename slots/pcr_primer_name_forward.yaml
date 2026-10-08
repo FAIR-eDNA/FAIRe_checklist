@@ -1,5 +1,8 @@
 name: pcr_primer_name_forward
 title: forward PCR primer name
+local_names:
+  tdwg-naming-conventions: pcrPrimerNameForward
+  gsc-naming-conventions: pcr_primer_name_fwd
 description: >-
   Name of the pcr_primer_forward. If multiple primers are listed in pcr_primer_forward,
   list the names respectively, separated by pipe ( | ).

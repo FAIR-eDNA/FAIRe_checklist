@@ -1,5 +1,8 @@
 name: barcoding_pcr_appr
 title: metabarcoding PCR approach
+local_names:
+  tdwg-naming-conventions: barcodingPCRApproach
+  gsc-naming-conventions: barcoding_pcr_appr
 description: >-
   PCR approach for metabarcoding.
 in_subset:

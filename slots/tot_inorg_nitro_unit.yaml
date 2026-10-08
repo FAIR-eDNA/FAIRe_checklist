@@ -1,5 +1,8 @@
 name: tot_inorg_nitro_unit
 title: total inorganic nitrogen unit
+local_names:
+  tdwg-naming-conventions: totalInorganicNitrogenUnit
+  gsc-naming-conventions: tot_inorg_nitro_unit
 description: >-
   The unit of tot_inorg_nitro.
 in_subset:
