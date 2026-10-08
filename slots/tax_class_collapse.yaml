@@ -4,8 +4,7 @@ local_names:
   tdwg-naming-conventions: taxonomicCollapseMethod
   gsc-naming-conventions: tax_class_collapse
 description: >-
-  How was the taxa collapsed to higher taxonomic levels? i.e. lowest common
-  ancestor.
+  How the taxa were collapsed to higher taxonomic levels, e.g. lowest common ancestor.
 in_subset:
   - Bioinformatics
 annotations:
