@@ -31,9 +31,9 @@ types:
     typeof: string
     description: >-
       An uppercase nucleic acid sequence using only IUPAC nucleotide codes
-      (A C G T U R Y S W K M B D H V N). See IUBMB/IUPAC incomplete nucleic acid
+      (A C G T R Y S W K M B D H V N). See IUBMB/IUPAC incomplete nucleic acid
       sequences (https://iubmb.qmul.ac.uk/misc/naseq.html).
-    pattern: '^[ACGTURYSWKMBDHVN]+$'
+    pattern: '^[ACGTRYSWKMBDHVN]+$'
   ModifiedOligoSequence:
     typeof: string
     description: >-
@@ -43,4 +43,4 @@ types:
       Bases are uppercase IUPAC codes, plus I for inosine. A modification token is
       /code/ with no spaces (e.g. /C3/, IDT /3SpC3/, /iSpC3/, /6-FAM/). Codes are
       not a closed catalog; they follow supplier spelling.
-    pattern: '^([ACGTURYSWKMBDHVNI]+|/[A-Za-z0-9][A-Za-z0-9._+-]*/)+$'
+    pattern: '^([ACGTRYSWKMBDHVNI]+|/[A-Za-z0-9][A-Za-z0-9._+-]*/)+$'
