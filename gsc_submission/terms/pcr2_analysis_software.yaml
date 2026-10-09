@@ -5,4 +5,4 @@ justification: >-
   In two-step metabarcoding PCR (barcoding_pcr_appr), a second PCR adds indexes and
   adapters. Its conditions differ from the first PCR and also affect amplification bias
   and index misassignment. This term records the second PCR's analysis software,
-  alongside the first-PCR term pcr_analysis_software.
+  alongside the first-PCR term pcr_analysis_sw.

@@ -15,6 +15,6 @@ comments: >-
 submitter_questions: >-
   The recommended format is hard for data providers to fill in and is often filled in
   wrongly (MIxS's own second example does not follow it), so the values are hard to
-  reuse. The main values also have their own terms in this request (annealingTemp,
+  reuse. The main values also have their own terms in this request (annealing_temp,
   pcr_cycles). Should MIxS keep this format, make it stricter, or point users to
   separate terms?

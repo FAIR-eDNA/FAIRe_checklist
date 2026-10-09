@@ -3,6 +3,6 @@
 existing_term_check: New term – no similar MIxS term found
 justification: >-
   The primer volume per reaction, together with the primer concentration and the
-  reaction volume (amplificationReactionVolume), gives the primer concentration in the
+  reaction volume (amp_rxn_vol), gives the primer concentration in the
   reaction, which affects PCR efficiency and specificity (MIQE). Recording it lets
   users compare and repeat PCR protocols.

@@ -25,6 +25,10 @@ python doc_gen_scripts/generate_mixs_term_request.py \
   --template path/to/MIxS_New_Term_Template.xlsx --out FAIRe_MIxS_term_request.xlsx
 ```
 
+The Slot name is the slot's name in GSC naming conventions (`local_names` ->
+`gsc-naming-conventions`, #94). Where that differs from the FAIRe name, the comments
+start with "FAIRe name: <slot>."
+
 A slot with a `requirement_level_condition` (e.g. "If assay_type = targeted") gets the
 level that applies when the condition is not met as its Requirement level (Optional,
 or the level after "Else,"), and a sentence giving FAIRe's rule at the start of its

@@ -130,6 +130,18 @@ def clean_description(text):
     return text
 
 
+def gsc_names_in(text, gsc_names):
+    """Write the terms of this request that text names by their FAIRe name with their
+    GSC-style name instead. Names inside CURIEs or URLs (dwc:..., .../miqe/...) are left."""
+    swapped = []
+    for faire_name, gsc_name in gsc_names.items():
+        pattern = r"(?<![\w:/])" + re.escape(faire_name) + r"(?![\w])"
+        if re.search(pattern, text):
+            text = re.sub(pattern, gsc_name, text)
+            swapped.append(f"{gsc_name} for FAIRe's {faire_name}")
+    return text, swapped
+
+
 def permissible_values(slot, enums):
     values, definitions = [], []
     for r in slot_ranges(slot):
@@ -238,7 +250,7 @@ def external_mappings(slot):
     return "; ".join(curies), mapping_type
 
 
-def build_row(name, slot, answers, enums, mixs_titles):
+def build_row(name, slot, answers, enums, mixs_titles, gsc_names):
     vtype = value_type(slot, enums)
     values, value_definitions = permissible_values(slot, enums)
     if vtype == "Yes / No":
@@ -255,14 +267,28 @@ def build_row(name, slot, answers, enums, mixs_titles):
         comments = f"{sentence} {comments}".strip()
     # A "reuse with changes" row is named after the MIxS term it changes (as in the
     # template's filter_type example); its title comes from the template's MIxS list.
+    # Any other row uses the slot's name in GSC naming conventions (#94); when that
+    # differs from the FAIRe name, the comments say so.
     title = slot.get("title") or ""
+    # The definition is FAIRe's; in the workbook only, it names the other terms of this
+    # request by their GSC-style names. The slot itself keeps the FAIRe names.
+    description, swapped = gsc_names_in(clean_description(slot.get("description")), gsc_names)
+    if swapped:
+        comments = (f"{comments} In this request the definition uses GSC-style names "
+                    f"({'; '.join(swapped)}); the FAIRe checklist's definition uses the FAIRe "
+                    f"names.").strip()
     if answers.get("mixs_term"):
         name = answers["mixs_term"]
         title = mixs_titles[name]
+    else:
+        gsc_name = (slot.get("local_names") or {}).get("gsc-naming-conventions") or name
+        if gsc_name != name:
+            comments = f"FAIRe name: {name}. {comments}".strip()
+            name = gsc_name
     return {
         "Slot name": name,
         "Title": title,
-        "Description": clean_description(slot.get("description")),
+        "Description": description,
         "Value type": vtype,
         "Expected value": EXPECTED_VALUE.get(vtype, ""),
         "Preferred unit(s)": unit_name(slot) if vtype.startswith("Measurement") else "",
@@ -297,7 +323,7 @@ def main():
         for row in workbook[MIXS_TERMS_SHEET].iter_rows(min_row=2, values_only=True)
         if row[0]
     }
-    rows, problems, blocked = [], [], []
+    terms, problems, blocked = [], [], []
     for filename in sorted(os.listdir(TERMS_DIR)):
         if not filename.endswith(".yaml"):
             continue
@@ -316,9 +342,18 @@ def main():
         if answers.get("mixs_term") and answers["mixs_term"] not in mixs_titles:
             problems.append(f"{name}: mixs_term {answers['mixs_term']} is not in the template's MIxS term list")
             continue
-        rows.append(build_row(name, load_yaml(slot_path), answers, enums, mixs_titles))
+        terms.append((name, load_yaml(slot_path), answers))
     if problems:
         sys.exit("\n".join(problems))
+    # FAIRe name -> GSC-style name, for the terms of this request named differently (#94)
+    gsc_names = {
+        name: slot["local_names"]["gsc-naming-conventions"]
+        for name, slot, answers in terms
+        if not answers.get("mixs_term")
+        and (slot.get("local_names") or {}).get("gsc-naming-conventions", name) != name
+    }
+    rows = [build_row(name, slot, answers, enums, mixs_titles, gsc_names)
+            for name, slot, answers in terms]
 
     sheet = workbook[SHEET]
     headers = {str(c.value).rstrip(" *"): c.column_letter for c in sheet[2] if c.value}

@@ -4,7 +4,7 @@ existing_term_check: New term – no similar MIxS term found
 justification: >-
   The taxa a study aims to detect can be narrower than what the assay amplifies
   (e.g. an assay for all chordates used to survey sharks and rays), and users need
-  both to interpret results. It pairs with targetTaxonomicAssay.
+  both to interpret results. It pairs with target_tax_assay.
 submitter_questions: >-
   This is based on Humboldt's eco:targetTaxonomicScope ("The taxonomic group(s)
   targeted for sampling during the dwc:Event"). Could MIxS reuse the Humboldt term,

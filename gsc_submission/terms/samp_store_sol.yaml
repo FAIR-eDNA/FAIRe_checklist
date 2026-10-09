@@ -5,7 +5,7 @@ existing_term_check: Reuse existing MIxS term with changes (describe changes)
 related_mixs_terms: samp_store_sol (MIXS:0001317)
 justification: >-
   Add a note that the storage solution of a processed sample (e.g. a filter) goes
-  under prepped_samp_store_sol, proposed in this request; eDNA studies often store
+  under prep_samp_store_sol, proposed in this request; eDNA studies often store
   the sample and the processed sample differently. Make the value a controlled list
   (ethanol, longmire, lysis buffer, none, sodium acetate, or other) so values can be
   compared between studies.
