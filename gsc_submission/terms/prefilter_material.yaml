@@ -1,12 +1,13 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#227
 existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
-related_mixs_terms: size_frac_low (MIXS:0000735); filter_type (MIXS:0000765)
+related_mixs_terms: size_frac_up (MIXS:0000736); filter_type (MIXS:0000765)
 justification: >-
   Water and air samples are often pre-filtered to remove large particles before the
   main filtration, and the pre-filter material can retain DNA and change what reaches
-  the main filter. size_frac_low records the pre-filter's pore size, not its material,
+  the main filter. size_frac_up records the pre-filter's pore size (following the
+  corrected definitions in GenomicsStandardsConsortium/mixs#1414), not its material,
   and filter_type describes the main filter device.
 comments: >-
-  Pairs with filter_material (the main filter's material), which is submitted
-  separately.
+  Pairs with filter_material (the main filter's material), which FAIRe will propose
+  later.

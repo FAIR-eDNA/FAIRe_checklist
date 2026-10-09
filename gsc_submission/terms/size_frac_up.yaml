@@ -1,6 +1,8 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#280
 blocked: >-
-  Waits on FAIRe_checklist #26: FAIRe says materials larger than the threshold are
-  excluded, MIxS says smaller; the MIxS wording is itself under review
-  (GenomicsStandardsConsortium/mixs#1414).
+  Waits on FAIRe_checklist #106. The name and definition are settled (#26): FAIRe
+  follows the corrected definitions proposed in GenomicsStandardsConsortium/mixs#1414
+  (the pre-filter's mesh/pore size; larger material excluded). Still open: FAIRe takes
+  one number with the unit fixed to micrometres (20), MIxS the number with its unit
+  (20 micrometer).

@@ -1,6 +1,8 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#279
 blocked: >-
-  Waits on FAIRe_checklist #106: FAIRe takes one number in micrometres, MIxS
-  size_frac a range with its unit (0-0.22 micrometer); a row built from FAIRe's slot
-  would propose that change. The description now matches MIxS (#32).
+  Waits on FAIRe_checklist #106. The name and definition are settled (#26): FAIRe
+  follows the corrected definitions proposed in GenomicsStandardsConsortium/mixs#1414
+  (the mesh/pore size that retains the sample; smaller material excluded). Still open:
+  FAIRe takes one number with the unit fixed to micrometres (0.22), MIxS the number
+  with its unit (0.2 micrometer).
