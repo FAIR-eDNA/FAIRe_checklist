@@ -1,6 +1,13 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#39
-blocked: >-
-  Waits on FAIRe_checklist #42: the working group (2026-07-28) decided to merge
-  commercial_mm and custom_mm (and the pcr2_ pair) into master_mix, and to propose
-  the merged term to the GSC instead.
+existing_term_check: New term – similar MIxS term exists (explain why it doesn't fit)
+related_mixs_terms: pcr_cond (MIXS:0000049); lib_polymerase (MIXS:0001390)
+justification: >-
+  The master mix affects PCR efficiency, specificity and tolerance of inhibitors, so
+  re-users need it to compare and repeat results; it is a MIQE checklist item. MIxS's
+  pcr_cond covers all reaction conditions and components in one field, and
+  lib_polymerase records only the polymerase. This term takes either a commercial
+  product or a custom recipe.
+comments: >-
+  Replaces FAIRe v1.0's commercial_mm and custom_mm, which the FAIRe working group
+  merged.
