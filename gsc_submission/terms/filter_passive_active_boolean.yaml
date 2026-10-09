@@ -1,6 +1,11 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#88
-blocked: >-
-  Waits on FAIRe_checklist #31: change "water/ air samples" to "environmental samples"
-  in the description (sediment can also be collected passively or actively), as
-  suggested on the review issue (2026-04-30).
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Passive sampling (material submerged in water or exposed to air for hours or days)
+  and active sampling (a measured volume pumped through a filter) collect DNA over
+  different times and volumes, so detections and quantities can't be compared without
+  knowing which was used. MIxS's filter_type records the filter device, not how the
+  sample reached it.
+comments: >-
+  Yes (1) = active; no (0) = passive.
