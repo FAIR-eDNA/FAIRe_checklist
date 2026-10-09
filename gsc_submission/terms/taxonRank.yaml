@@ -1,6 +1,16 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#339
-blocked: >-
-  Waits on FAIRe_checklist #45: the term review decided to replace FAIRe's list of
-  ranks with the TAXRANK ontology and to propose dwc:taxonRank to the GSC; the row
-  can't be built from the current list.
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  eDNA results report the taxon assigned to each sequence (OTU/ASV), often only to
+  genus or family when reference databases are incomplete, so the rank of the assigned
+  name is needed to interpret it. MIxS has no term for it; host_infra_spec_rank covers
+  only host ranks below subspecies.
+comments: >-
+  Values are the 73 ranks of the Taxonomic Rank Vocabulary (TAXRANK:0000000); the
+  FAIRe working group chose an existing ontology over its own list. Other ranks can be
+  given as other: <rank>.
+submitter_questions: >-
+  This is Darwin Core's taxonRank, with its values restricted to TAXRANK (Darwin Core
+  recommends a controlled vocabulary but doesn't name one). Could MIxS reuse
+  dwc:taxonRank directly, and keep the TAXRANK list?
