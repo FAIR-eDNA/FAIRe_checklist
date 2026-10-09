@@ -1,5 +1,14 @@
 # Answers for the GSC "MIxS New Term Request Template" (#93).
 # Review issue: FAIR-eDNA/FAIRe-GSC-TDWG-term-review#135
-blocked: >-
-  Waits on FAIRe_checklist #107: rename mod_date to modified (dcterms:modified), as
-  decided; the GSC gets Dublin Core's modified, not mod_date.
+existing_term_check: New term – no similar MIxS term found
+justification: >-
+  Records and datasets are updated after submission (e.g. corrected identifications
+  or added samples). The date of the last change tells users which version they
+  have. MIxS has no term for it; NMDC has one (mod_date), and Darwin Core reuses
+  Dublin Core's modified.
+comments: >-
+  Called mod_date (from NMDC) in FAIRe v1.0; the FAIRe working group renamed it to
+  align with Dublin Core.
+submitter_questions: >-
+  This is the Dublin Core term (dcterms:modified), unchanged. Could MIxS reuse it
+  directly instead of minting a new term?
