@@ -1,5 +1,8 @@
 name: samp_store_sol
 title: sample storage solution
+local_names:
+  tdwg-naming-conventions: sampleStorageSolution
+  gsc-naming-conventions: samp_store_sol
 description: >-
   Solution within which the sample was stored. Note: If a sample was processed before DNA extraction (e.g., filtration,
   homogenisation, subsampling), enter the storage solution before the process here, and the storage solution of the processed

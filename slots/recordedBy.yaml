@@ -1,5 +1,8 @@
 name: recordedBy
 title: recorded by
+local_names:
+  tdwg-naming-conventions: recordedBy
+  gsc-naming-conventions: recorded_by
 description: >-
   A list (concatenated and separated) of names of people responsible for
   the submitted dataset.

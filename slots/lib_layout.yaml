@@ -1,5 +1,8 @@
 name: lib_layout
 title: library layout
+local_names:
+  tdwg-naming-conventions: libraryLayout
+  gsc-naming-conventions: lib_layout
 description: >-
   Specify whether to expect single, paired, or other configuration of reads.
 in_subset:

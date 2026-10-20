@@ -1,5 +1,8 @@
 name: diss_inorg_nitro
 title: dissolved inorganic nitrogen
+local_names:
+  tdwg-naming-conventions: dissolvedInorganicNitrogen
+  gsc-naming-conventions: diss_inorg_nitro
 description: >-
   Concentration of dissolved inorganic nitrogen.
 in_subset:

@@ -1,5 +1,8 @@
 name: pcr2_plate_id
 title: second PCR plate ID
+local_names:
+  tdwg-naming-conventions: secondPCRPlateID
+  gsc-naming-conventions: pcr2_plate_id
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") Plate ID in the second step
   PCR.

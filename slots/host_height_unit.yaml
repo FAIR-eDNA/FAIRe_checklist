@@ -1,5 +1,8 @@
 name: host_height_unit
 title: host height unit
+local_names:
+  tdwg-naming-conventions: hostHeightUnit
+  gsc-naming-conventions: host_height_unit
 description: >-
   The unit of host_height.
 in_subset:

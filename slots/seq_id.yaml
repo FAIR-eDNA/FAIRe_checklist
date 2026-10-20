@@ -1,5 +1,8 @@
 name: seq_id
 title: sequence ID
+local_names:
+  tdwg-naming-conventions: sequenceID
+  gsc-naming-conventions: seq_id
 description: >-
   Query sequence ID. Must be unique within the dataset.
 in_subset:

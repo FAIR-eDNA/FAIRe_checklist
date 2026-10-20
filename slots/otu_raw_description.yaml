@@ -1,5 +1,8 @@
 name: otu_raw_description
 title: raw OTU/ASV table processing description
+local_names:
+  tdwg-naming-conventions: otuRawDescription
+  gsc-naming-conventions: otu_raw_description
 description: >-
   A description of the data curation and processing steps applied to the
   raw OTU/ASV table.

@@ -1,5 +1,8 @@
 name: tidal_stage
 title: tidal stage
+local_names:
+  tdwg-naming-conventions: tidalStage
+  gsc-naming-conventions: tidal_stage
 description: >-
   Stage of tide.
 in_subset:

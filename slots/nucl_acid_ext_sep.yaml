@@ -1,5 +1,8 @@
 name: nucl_acid_ext_sep
 title: nucleic acid extraction separation method
+local_names:
+  tdwg-naming-conventions: nucleicAcidExtractionSeparation
+  gsc-naming-conventions: nucl_acid_ext_sep
 description: >-
   The approach used to separate DNA from a mixture.
 in_subset:

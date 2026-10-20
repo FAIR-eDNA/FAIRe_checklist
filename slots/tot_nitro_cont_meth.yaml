@@ -1,5 +1,8 @@
 name: tot_nitro_cont_meth
 title: total nitrogen content method
+local_names:
+  tdwg-naming-conventions: totalNitrogenContentMethod
+  gsc-naming-conventions: tot_nitro_cont_meth
 description: >-
   Reference or method used in determining the total nitrogen.
 in_subset:

@@ -1,5 +1,8 @@
 name: host_tot_mass
 title: host total mass
+local_names:
+  tdwg-naming-conventions: hostTotalMass
+  gsc-naming-conventions: host_tot_mass
 description: >-
   Total mass of the host at collection, the unit depends on host.
 in_subset:

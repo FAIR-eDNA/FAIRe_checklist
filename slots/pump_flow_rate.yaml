@@ -1,5 +1,8 @@
 name: pump_flow_rate
 title: pump flow rate
+local_names:
+  tdwg-naming-conventions: pumpFlowRate
+  gsc-naming-conventions: pump_flow_rate
 description: >-
   Pump flow rate of filtration if applicable.
 in_subset:

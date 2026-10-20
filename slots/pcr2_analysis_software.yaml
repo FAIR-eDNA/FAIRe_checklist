@@ -1,5 +1,8 @@
 name: pcr2_analysis_software
 title: second PCR analysis software
+local_names:
+  tdwg-naming-conventions: secondPCRAnalysisSoftware
+  gsc-naming-conventions: pcr2_analysis_sw
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") The program used to analyse
   the PCR runs in the second step PCR.

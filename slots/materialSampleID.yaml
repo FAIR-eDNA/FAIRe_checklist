@@ -1,5 +1,8 @@
 name: materialSampleID
 title: material sample ID
+local_names:
+  tdwg-naming-conventions: materialSampleID
+  gsc-naming-conventions: material_sample_id
 description: >-
   An identifier for the physical sample (as opposed to the extracted DNA
   sample defined by samp_name). In the absence of a persistent global unique identifier,

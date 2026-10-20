@@ -1,5 +1,8 @@
 name: pool_dna_num
 title: number of pooled DNA extracts
+local_names:
+  tdwg-naming-conventions: pooledDNAExtractCount
+  gsc-naming-conventions: pool_dna_num
 description: >-
   The number of extracts that were pooled into one sample before PCR.
 in_subset:

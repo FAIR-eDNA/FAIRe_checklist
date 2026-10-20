@@ -1,5 +1,8 @@
 name: host_height
 title: host height
+local_names:
+  tdwg-naming-conventions: hostHeight
+  gsc-naming-conventions: host_height
 description: >-
   The height of subject.
 in_subset:

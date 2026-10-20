@@ -1,5 +1,8 @@
 name: probeReporter
 title: probe reporter
+local_names:
+  tdwg-naming-conventions: probeReporter
+  gsc-naming-conventions: probe_reporter
 description: >-
   Type of fluorophore (reporter) used. Probe anneals within amplified target
   DNA. Polymerase activity degrades the probe that has annealed to the template, and

@@ -1,5 +1,8 @@
 name: min_reads_cutoff_unit
 title: minimum read count threshold unit
+local_names:
+  tdwg-naming-conventions: minimumReadCountCutoffUnit
+  gsc-naming-conventions: min_read_cutoff_unit
 description: >-
   The unit of the min_reads_cutoff. i.e. reads, % relative read abundance.
 in_subset:

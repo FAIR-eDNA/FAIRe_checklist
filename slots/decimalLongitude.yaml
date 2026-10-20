@@ -1,5 +1,8 @@
 name: decimalLongitude
 title: decimal longitude
+local_names:
+  tdwg-naming-conventions: decimalLongitude
+  gsc-naming-conventions: decimal_longitude
 description: >-
   The geographic longitude in decimal degrees using WGS84 datum. Positive
   values are east of the Greenwich Meridian, negative values are west of it. Legal

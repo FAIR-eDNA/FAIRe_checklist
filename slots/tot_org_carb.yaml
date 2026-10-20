@@ -1,5 +1,8 @@
 name: tot_org_carb
 title: total organic carbon
+local_names:
+  tdwg-naming-conventions: totalOrganicCarbon
+  gsc-naming-conventions: tot_org_carb
 description: >-
   Total organic carbon content.
 in_subset:

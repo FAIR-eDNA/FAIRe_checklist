@@ -1,5 +1,8 @@
 name: dna_cleanup_method
 title: DNA clean-up method
+local_names:
+  tdwg-naming-conventions: dnaCleanupMethod
+  gsc-naming-conventions: dna_cleanup_method
 description: >-
   A description of DNA clean-up method. Provide the name of a commercial
   kit if used.
@@ -9,7 +12,7 @@ annotations:
   data_type: sampleMetadata
   requirement_level: Recommended
   requirement_level_code: R
-  requirement_level_condition: If dna_cleanup_0_1 is 1
+  requirement_level_condition: If dna_cleanup_boolean is 1
 slot_uri: faire:0000052
 range: string
 required: false

@@ -1,5 +1,8 @@
 name: seq_run_id
 title: sequencing run ID
+local_names:
+  tdwg-naming-conventions: sequencingRunID
+  gsc-naming-conventions: seq_run_id
 description: >-
   A brief, concise identifier for sequencing run with no spaces or special
   characters, ensuring machine readability. This ID will be used in file names as

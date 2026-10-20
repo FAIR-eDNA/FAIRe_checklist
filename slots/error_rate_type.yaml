@@ -1,5 +1,8 @@
 name: error_rate_type
 title: error rate type
+local_names:
+  tdwg-naming-conventions: errorRateType
+  gsc-naming-conventions: error_rate_type
 description: >-
   The type/unit of error rate for the error rate threshold.
 in_subset:

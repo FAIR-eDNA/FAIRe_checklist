@@ -1,5 +1,8 @@
 name: prep_method_additional
 title: additional sample preparation method information
+local_names:
+  tdwg-naming-conventions: samplePreparationMethodAdditional
+  gsc-naming-conventions: prep_meth_add
 description: >-
   Additional information on sample preparation, storage and preservation
   prior to DNA extraction, that has not been shared in the given record.

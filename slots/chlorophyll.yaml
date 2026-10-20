@@ -1,5 +1,8 @@
 name: chlorophyll
 title: chlorophyll
+local_names:
+  tdwg-naming-conventions: chlorophyll
+  gsc-naming-conventions: chlorophyll
 description: >-
   Concentration of chlorophyll.
 in_subset:

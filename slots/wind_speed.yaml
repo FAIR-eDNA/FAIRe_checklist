@@ -1,5 +1,8 @@
 name: wind_speed
 title: wind speed
+local_names:
+  tdwg-naming-conventions: windSpeed
+  gsc-naming-conventions: wind_speed
 description: >-
   Speed of wind measured at the time of sampling.
 in_subset:

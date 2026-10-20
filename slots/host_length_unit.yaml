@@ -1,5 +1,8 @@
 name: host_length_unit
 title: host length unit
+local_names:
+  tdwg-naming-conventions: hostLengthUnit
+  gsc-naming-conventions: host_length_unit
 description: >-
   The unit of host_length.
 in_subset:

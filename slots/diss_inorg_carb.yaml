@@ -1,5 +1,8 @@
 name: diss_inorg_carb
 title: dissolved inorganic carbon
+local_names:
+  tdwg-naming-conventions: dissolvedInorganicCarbon
+  gsc-naming-conventions: diss_inorg_carb
 description: >-
   Dissolved inorganic carbon concentration in the sample, typically measured
   after filtering the sample using a 0.45 micrometre filter.

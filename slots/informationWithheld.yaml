@@ -1,5 +1,8 @@
 name: informationWithheld
 title: information withheld
+local_names:
+  tdwg-naming-conventions: informationWithheld
+  gsc-naming-conventions: information_withheld
 description: >-
   Additional information that exists, but that has not been shared in the
   given record.

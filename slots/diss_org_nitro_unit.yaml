@@ -1,5 +1,8 @@
 name: diss_org_nitro_unit
 title: dissolved organic nitrogen unit
+local_names:
+  tdwg-naming-conventions: dissolvedOrganicNitrogenUnit
+  gsc-naming-conventions: diss_org_nitro_unit
 description: >-
   The unit of diss_org_nitro.
 in_subset:

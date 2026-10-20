@@ -1,5 +1,8 @@
 name: nitro
 title: nitrogen
+local_names:
+  tdwg-naming-conventions: nitrogen
+  gsc-naming-conventions: nitro
 description: >-
   Concentration of nitrogen (total).
 in_subset:

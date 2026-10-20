@@ -1,5 +1,8 @@
 name: env_medium
 title: environmental medium
+local_names:
+  tdwg-naming-conventions: environmentalMedium
+  gsc-naming-conventions: env_medium
 description: >-
   Environmental material or materials (pipe separated) immediately surrounded your sample prior to sampling. Select
   from ENVO's environmental material class (entity/ continuant/ independent continuant/ material entity/ environmental material):

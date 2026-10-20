@@ -1,5 +1,8 @@
 name: taxonID
 title: taxon ID
+local_names:
+  tdwg-naming-conventions: taxonID
+  gsc-naming-conventions: taxon_id
 description: >-
   An identifier for the assigned taxon (or taxa in the case of multiple
   hits). May be a global unique identifier or an identifier specific to the data set.

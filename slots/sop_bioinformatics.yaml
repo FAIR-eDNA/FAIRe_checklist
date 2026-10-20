@@ -1,5 +1,8 @@
 name: sop_bioinformatics
 title: bioinformatics standard operating procedure
+local_names:
+  tdwg-naming-conventions: bioinformaticsSOP
+  gsc-naming-conventions: sop_bioinformatics
 description: >-
   Standard operating procedures, references, link to scripts, that were
   used in quality filtering, assembly and/or annotation of genomes, metagenomes or

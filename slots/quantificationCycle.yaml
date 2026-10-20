@@ -1,5 +1,8 @@
 name: quantificationCycle
 title: quantification cycle
+local_names:
+  tdwg-naming-conventions: quantificationCycle
+  gsc-naming-conventions: quantification_cycle
 description: >-
   The number of cycles required for the fluorescent signal to cross a given
   value threshold above the baseline for each technical replicate. Quantification

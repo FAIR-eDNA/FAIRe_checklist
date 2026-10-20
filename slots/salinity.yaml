@@ -1,5 +1,8 @@
 name: salinity
 title: salinity
+local_names:
+  tdwg-naming-conventions: salinity
+  gsc-naming-conventions: salinity
 description: >-
   The total concentration of all dissolved salts in a liquid or solid sample.
   While salinity can be measured by a complete chemical analysis, this method is difficult

@@ -1,5 +1,8 @@
 name: samp_name
 title: sample name
+local_names:
+  tdwg-naming-conventions: sampleName
+  gsc-naming-conventions: samp_name
 description: >-
   A local identifier or name that for the material sample used for extracting nucleic
   acids, and subsequent sequencing. It can refer either to the original material

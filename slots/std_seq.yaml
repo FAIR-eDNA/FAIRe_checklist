@@ -1,5 +1,8 @@
 name: std_seq
 title: qPCR standard sequence
+local_names:
+  tdwg-naming-conventions: standardSequence
+  gsc-naming-conventions: std_seq
 description: >-
   DNA sequences of standard.
 in_subset:

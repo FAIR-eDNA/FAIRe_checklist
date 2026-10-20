@@ -1,5 +1,8 @@
 name: seq_method_additional
 title: additional library preparation and sequencing method information
+local_names:
+  tdwg-naming-conventions: sequencingMethodAdditional
+  gsc-naming-conventions: seq_meth_add
 description: >-
   Additional information on library preparation and sequencing method,
   that has not been shared in the given record.

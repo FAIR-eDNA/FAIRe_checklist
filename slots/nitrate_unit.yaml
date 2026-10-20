@@ -1,5 +1,8 @@
 name: nitrate_unit
 title: nitrate unit
+local_names:
+  tdwg-naming-conventions: nitrateUnit
+  gsc-naming-conventions: nitrate_unit
 description: >-
   The unit of nitrate.
 in_subset:

@@ -1,5 +1,8 @@
 name: accessRights
 title: access rights
+local_names:
+  tdwg-naming-conventions: accessRights
+  gsc-naming-conventions: access_rights
 description: >-
   Information about who can access the resource or an indication of its
   security status.

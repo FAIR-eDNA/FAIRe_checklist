@@ -1,5 +1,8 @@
 name: parent_project_id
 title: parent project ID
+local_names:
+  tdwg-naming-conventions: parentProjectID
+  gsc-naming-conventions: parent_project_id
 description: >-
   An identifier or name of the overarching (parent) project that encompasses
   and organizes multiple related sub-projects, each identified by a unique project_id.

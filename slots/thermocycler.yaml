@@ -1,5 +1,8 @@
 name: thermocycler
 title: thermocycler
+local_names:
+  tdwg-naming-conventions: thermocycler
+  gsc-naming-conventions: thermocycler
 description: >-
   The manufacturer and model of a thermocycler used.
 in_subset:

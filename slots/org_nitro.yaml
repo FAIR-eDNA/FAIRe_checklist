@@ -1,5 +1,8 @@
 name: org_nitro
 title: organic nitrogen
+local_names:
+  tdwg-naming-conventions: organicNitrogen
+  gsc-naming-conventions: org_nitro
 description: >-
   Concentration of organic nitrogen.
 in_subset:

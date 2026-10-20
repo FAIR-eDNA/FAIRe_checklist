@@ -1,5 +1,8 @@
 name: targetTaxonomicAssay
 title: assay target taxa
+local_names:
+  tdwg-naming-conventions: targetTaxonomicAssay
+  gsc-naming-conventions: target_tax_assay
 description: >-
   Taxa or species name targeted by the primers, probes, and/or other approaches
   applied in the PCR.
@@ -9,7 +12,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Mandatory
   requirement_level_code: M
-  requirement_level_condition: If pcr_0_1 is 1. Else, recommended
+  requirement_level_condition: If pcr_boolean is 1. Else, recommended
 slot_uri: faire:0000254
 range: string
 required: true

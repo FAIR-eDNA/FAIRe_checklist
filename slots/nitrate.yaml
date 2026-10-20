@@ -1,5 +1,8 @@
 name: nitrate
 title: nitrate
+local_names:
+  tdwg-naming-conventions: nitrate
+  gsc-naming-conventions: nitrate
 description: >-
   Concentration of nitrate in the sample.
 in_subset:

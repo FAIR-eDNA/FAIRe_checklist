@@ -1,5 +1,8 @@
 name: amplificationReactionVolume
 title: PCR reaction volume
+local_names:
+  tdwg-naming-conventions: amplificationReactionVolume
+  gsc-naming-conventions: amp_rxn_vol
 description: >-
   The total PCR reaction volume.
 in_subset:

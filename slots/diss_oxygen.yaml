@@ -1,5 +1,8 @@
 name: diss_oxygen
 title: dissolved oxygen
+local_names:
+  tdwg-naming-conventions: dissolvedOxygen
+  gsc-naming-conventions: diss_oxygen
 description: >-
   Concentration of dissolved oxygen.
 in_subset:

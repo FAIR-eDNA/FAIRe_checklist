@@ -1,5 +1,8 @@
 name: std_conc
 title: qPCR standard input quantity
+local_names:
+  tdwg-naming-conventions: standardInputQuantity
+  gsc-naming-conventions: std_conc
 description: >-
   Input quantity of qPCR standard DNA.
 in_subset:

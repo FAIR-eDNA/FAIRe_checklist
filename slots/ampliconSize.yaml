@@ -1,5 +1,8 @@
 name: ampliconSize
 title: amplicon size
+local_names:
+  tdwg-naming-conventions: ampliconSize
+  gsc-naming-conventions: amplicon_size
 description: >-
   The length of the amplicon in basepairs EXCLUDING the primers, adapters
   and MIDs. A range can be entered separated by a hyphen"-" (i.e. 140-160).

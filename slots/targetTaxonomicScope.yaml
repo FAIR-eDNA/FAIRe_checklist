@@ -1,5 +1,8 @@
 name: targetTaxonomicScope
 title: target taxonomic scope
+local_names:
+  tdwg-naming-conventions: targetTaxonomicScope
+  gsc-naming-conventions: target_tax_scope
 description: >-
   The taxonomic group(s) targeted in the study. This can differ from the
   targetTaxonomicAssay. For example, the targetTaxonomicAssay may be Chordata while

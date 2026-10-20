@@ -1,5 +1,8 @@
 name: precip_temp_prep
 title: precipitation temperature
+local_names:
+  tdwg-naming-conventions: precipitationTemperature
+  gsc-naming-conventions: precip_temp_prep
 description: >-
   Temperature used in precipitation at the sample preparation step prior to DNA extraction, if precipitation was
   performed.

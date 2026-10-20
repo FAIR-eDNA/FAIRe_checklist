@@ -1,5 +1,8 @@
 name: org_matter_unit
 title: organic matter unit
+local_names:
+  tdwg-naming-conventions: organicMatterUnit
+  gsc-naming-conventions: org_matter_unit
 description: >-
   The unit of org_matter.
 in_subset:

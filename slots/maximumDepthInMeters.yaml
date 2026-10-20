@@ -1,5 +1,8 @@
 name: maximumDepthInMeters
 title: maximum depth in meters
+local_names:
+  tdwg-naming-conventions: maximumDepthInMeters
+  gsc-naming-conventions: max_depth
 description: >-
   The greater depth of a range of depth (vertical distance below the local
   surface) at which a sample was collected. For sediment or soil samples depth is

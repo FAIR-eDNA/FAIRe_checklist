@@ -1,5 +1,8 @@
 name: pcr_assay_lod_techreps
 title: assay limit of detection technical replicates
+local_names:
+  tdwg-naming-conventions: pcrAssayLimitOfDetectionTechnicalReplicateCount
+  gsc-naming-conventions: pcr_lod_techreps
 description: >-
   The number of technical replicates that the LOD is applied to. See DOI:
   10.1002/edn3.220.

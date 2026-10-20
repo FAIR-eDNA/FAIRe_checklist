@@ -1,5 +1,8 @@
 name: otu_final_description
 title: final OTU/ASV table processing description
+local_names:
+  tdwg-naming-conventions: otuFinalDescription
+  gsc-naming-conventions: otu_final_desc
 description: >-
   A description of the data curation and processing steps applied to the
   final OTU/ASV table.

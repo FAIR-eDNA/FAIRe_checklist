@@ -1,5 +1,8 @@
 name: tot_part_carb_unit
 title: total particulate carbon unit
+local_names:
+  tdwg-naming-conventions: totalParticulateCarbonUnit
+  gsc-naming-conventions: tot_part_carb_unit
 description: >-
   The unit of tot_part_carb.
 in_subset:

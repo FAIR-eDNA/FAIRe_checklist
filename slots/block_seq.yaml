@@ -1,5 +1,8 @@
 name: block_seq
 title: blocking primer sequence
+local_names:
+  tdwg-naming-conventions: blockingPrimerSequence
+  gsc-naming-conventions: block_seq
 description: >-
   Blocking primer sequence in the 5' to 3' direction.
 in_subset:

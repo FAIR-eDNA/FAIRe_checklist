@@ -1,5 +1,8 @@
 name: filename2
 title: reverse sequence reads file name
+local_names:
+  tdwg-naming-conventions: filename2
+  gsc-naming-conventions: filename2
 description: >-
   A raw sequencing data file name of reverse reads if lib_layout = paired
   end.

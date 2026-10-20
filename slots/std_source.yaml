@@ -1,5 +1,8 @@
 name: std_source
 title: qPCR standard source
+local_names:
+  tdwg-naming-conventions: standardSource
+  gsc-naming-conventions: std_source
 description: >-
   The source of standard used for standard curves.
 in_subset:

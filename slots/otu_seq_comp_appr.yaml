@@ -1,5 +1,8 @@
 name: otu_seq_comp_appr
 title: OTU sequence comparison approach
+local_names:
+  tdwg-naming-conventions: otuSequenceComparisonApproach
+  gsc-naming-conventions: otu_seq_comp_appr
 description: >-
   Alignment tool/software used for taxonomic assignment.
 in_subset:

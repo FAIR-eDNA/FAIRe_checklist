@@ -1,5 +1,8 @@
 name: pcr_primer_conc_reverse
 title: reverse PCR primer stock concentration
+local_names:
+  tdwg-naming-conventions: pcrPrimerConcentrationReverse
+  gsc-naming-conventions: pcr_primer_conc_rev
 description: >-
   The stock concentration of the reverse PCR primer (pcr_primer_reverse).
   This refers specifically to the concentration of the primer stock solution, not

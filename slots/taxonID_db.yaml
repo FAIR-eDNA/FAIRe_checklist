@@ -1,5 +1,8 @@
 name: taxonID_db
 title: taxonomy database for taxon ID
+local_names:
+  tdwg-naming-conventions: taxonIDDatabase
+  gsc-naming-conventions: taxon_id_db
 description: >-
   The taxonomy database corresponding to taxonID.
 in_subset:

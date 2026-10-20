@@ -1,5 +1,8 @@
 name: merge_tool
 title: read merging tool
+local_names:
+  tdwg-naming-conventions: readMergingTool
+  gsc-naming-conventions: merge_tool
 description: >-
   Software and the version to merge paired end reads.
 in_subset:

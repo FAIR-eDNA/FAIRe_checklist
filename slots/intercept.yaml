@@ -1,5 +1,8 @@
 name: intercept
 title: qPCR standard curve intercept
+local_names:
+  tdwg-naming-conventions: intercept
+  gsc-naming-conventions: intercept
 description: >-
   Intercept of a qPCR standard curve. This shall be specific to each pcr_plate_id.
 in_subset:

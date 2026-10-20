@@ -1,5 +1,8 @@
 name: biological_rep
 title: number of biological replicates
+local_names:
+  tdwg-naming-conventions: biologicalReplicateCount
+  gsc-naming-conventions: biological_rep
 description: >-
   The number of biological replicates collected at each sampling point
   and/or for each experimental treatment in the study.

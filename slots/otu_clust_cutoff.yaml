@@ -1,5 +1,8 @@
 name: otu_clust_cutoff
 title: OTU/ASV clustering similarity threshold
+local_names:
+  tdwg-naming-conventions: otuClusteringCutoff
+  gsc-naming-conventions: otu_clust_cutoff
 description: >-
   The percentage similarity threshold used for OTU/ASV clustering. For
   ASV clustering, the cutoff is typically 100% similarity.

@@ -1,5 +1,8 @@
 name: org_matter
 title: organic matter
+local_names:
+  tdwg-naming-conventions: organicMatter
+  gsc-naming-conventions: org_matter
 description: >-
   Concentration of organic matter.
 in_subset:

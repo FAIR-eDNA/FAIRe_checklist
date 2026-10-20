@@ -1,5 +1,8 @@
 name: dna_sequence
 title: DNA sequence
+local_names:
+  tdwg-naming-conventions: dnaSequence
+  gsc-naming-conventions: dna_sequence
 description: >-
   The DNA sequence.
 in_subset:

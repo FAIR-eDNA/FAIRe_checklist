@@ -1,5 +1,8 @@
 name: host_length
 title: host length
+local_names:
+  tdwg-naming-conventions: hostLength
+  gsc-naming-conventions: host_length
 description: >-
   The length of subject.
 in_subset:

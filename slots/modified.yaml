@@ -1,0 +1,35 @@
+name: modified
+aliases:
+  - mod_date
+title: date modified
+local_names:
+  tdwg-naming-conventions: modified
+  gsc-naming-conventions: modified
+description: >-
+  Date on which the resource was changed.
+comments:
+  - Recommended best practice is to use a date that conforms to ISO 8601-1:2019 (the Darwin
+    Core comment for dcterms:modified). The date can be right truncated, e.g. 2008-01-23,
+    2008-01 or 2008.
+  - Named mod_date (from NMDC) in FAIRe v1.0 (#107).
+in_subset:
+  - Data management
+annotations:
+  data_type: projectMetadata
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: dcterms:modified
+range: Timestamp
+required: false
+recommended: true
+examples:
+- value: '2014-09-09'
+  description: null
+source: dcterms:modified
+exact_mappings:
+- dcterms:modified
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings:
+- nmdc:mod_date

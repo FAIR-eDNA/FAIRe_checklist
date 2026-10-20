@@ -1,5 +1,8 @@
 name: min_reads_tool
 title: minimum read count filtering tool
+local_names:
+  tdwg-naming-conventions: minimumReadCountTool
+  gsc-naming-conventions: min_reads_tool
 description: >-
   Software and the version to remove reads below minimum read threshold.
 in_subset:

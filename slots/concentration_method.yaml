@@ -1,5 +1,8 @@
 name: concentration_method
 title: DNA concentration measurement method
+local_names:
+  tdwg-naming-conventions: concentrationMethod
+  gsc-naming-conventions: concentration_method
 description: >-
   Description of method/instrument used for concentration measurement.
 in_subset:

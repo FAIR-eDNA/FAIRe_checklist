@@ -1,5 +1,8 @@
 name: taxonRank
 title: taxon rank
+local_names:
+  tdwg-naming-conventions: taxonRank
+  gsc-naming-conventions: taxon_rank
 description: >-
   The taxonomic rank of the most specific name in the scientificName.
 in_subset:

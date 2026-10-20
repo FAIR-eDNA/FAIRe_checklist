@@ -1,5 +1,8 @@
 name: technical_rep_id
 title: technical replicate ID
+local_names:
+  tdwg-naming-conventions: technicalReplicateID
+  gsc-naming-conventions: technical_rep_id
 description: >-
   An integer uniquely identifying a specific PCR technical replicate within
   a sample.

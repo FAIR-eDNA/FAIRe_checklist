@@ -1,5 +1,8 @@
 name: water_current
 title: water current
+local_names:
+  tdwg-naming-conventions: waterCurrent
+  gsc-naming-conventions: water_current
 description: >-
   Measurement of magnitude and direction of flow within a fluid.
 in_subset:

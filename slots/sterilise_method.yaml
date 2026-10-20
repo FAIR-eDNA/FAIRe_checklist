@@ -1,5 +1,8 @@
 name: sterilise_method
 title: sterilization method
+local_names:
+  tdwg-naming-conventions: sterilizationMethod
+  gsc-naming-conventions: sterilise_method
 description: >-
   The protocols to minimise contamination in the field and/or laboratory.
 in_subset:

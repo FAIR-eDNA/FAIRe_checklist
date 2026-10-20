@@ -1,5 +1,8 @@
 name: env_local_scale
 title: local environmental context
+local_names:
+  tdwg-naming-conventions: environmentalLocalScale
+  gsc-naming-conventions: env_local_scale
 description: >-
   The entity or entities which are in your sample or specimen's local vicinity and which you believe have significant
   causal influences on your sample. Select from ENVO's layer class: http://purl.obolibrary.org/obo/ENVO_01000281. Examples

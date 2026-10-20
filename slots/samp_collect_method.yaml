@@ -1,5 +1,8 @@
 name: samp_collect_method
 title: sample collection method
+local_names:
+  tdwg-naming-conventions: sampleCollectionMethod
+  gsc-naming-conventions: samp_collect_method
 description: >-
   The method employed for collecting the sample. Provide a link to a paper/
   handbook/ standard operation protocol if any.

@@ -1,5 +1,8 @@
 name: tot_org_carb_unit
 title: total organic carbon unit
+local_names:
+  tdwg-naming-conventions: totalOrganicCarbonUnit
+  gsc-naming-conventions: tot_org_carb_unit
 description: >-
   The unit of tot_org_carb.
 in_subset:

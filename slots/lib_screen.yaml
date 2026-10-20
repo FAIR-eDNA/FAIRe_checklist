@@ -1,5 +1,8 @@
 name: lib_screen
 title: library screening strategy
+local_names:
+  tdwg-naming-conventions: libraryScreeningStrategy
+  gsc-naming-conventions: lib_screen
 description: >-
   Specific enrichment or screening methods applied before and/or after
   creating libraries.

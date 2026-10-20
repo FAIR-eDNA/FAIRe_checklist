@@ -1,5 +1,8 @@
 name: prefilter_material
 title: pre-filter material
+local_names:
+  tdwg-naming-conventions: prefilterMaterial
+  gsc-naming-conventions: prefilter_material
 description: >-
   Material used to pre-filter/pre-sort the sample.
 in_subset:
@@ -21,6 +24,6 @@ exact_mappings: []
 close_mappings: []
 related_mappings:
 - mixs:0000216
-- mixs:0000735
+- mixs:0000736
 narrow_mappings: []
 broad_mappings: []

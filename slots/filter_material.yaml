@@ -1,5 +1,8 @@
 name: filter_material
 title: filter material
+local_names:
+  tdwg-naming-conventions: filterMaterial
+  gsc-naming-conventions: filter_material
 description: >-
   Material of filter.
 in_subset:

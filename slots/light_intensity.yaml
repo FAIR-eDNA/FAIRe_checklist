@@ -1,5 +1,8 @@
 name: light_intensity
 title: light intensity
+local_names:
+  tdwg-naming-conventions: lightIntensity
+  gsc-naming-conventions: light_intensity
 description: >-
   Measurement of light intensity.
 in_subset:

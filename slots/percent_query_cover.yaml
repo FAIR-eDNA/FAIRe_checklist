@@ -1,5 +1,8 @@
 name: percent_query_cover
 title: percent query coverage
+local_names:
+  tdwg-naming-conventions: percentQueryCoverage
+  gsc-naming-conventions: percent_query_cover
 description: >-
   The percentage coverage of the query sequence that aligns with a reference
   sequence in a database. If multiple species were assigned to one ASV/OTU, a range

@@ -1,5 +1,8 @@
 name: tot_nitro_content_unit
 title: total nitrogen content unit
+local_names:
+  tdwg-naming-conventions: totalNitrogenContentUnit
+  gsc-naming-conventions: tot_nitro_cont_unit
 description: >-
   The unit of tot_nitro_content.
 in_subset:

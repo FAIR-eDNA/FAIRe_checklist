@@ -1,5 +1,8 @@
 name: biological_rep_relation
 title: related biological replicates
+local_names:
+  tdwg-naming-conventions: biologicalReplicateRelation
+  gsc-naming-conventions: biol_rep_relation
 description: >-
   This term lists the samp_name of biological replicates associated with
   the current sample. For example, if three biological replicates ("S01_1", "S01_2",

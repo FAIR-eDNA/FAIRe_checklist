@@ -1,5 +1,8 @@
 name: class
 title: class
+local_names:
+  tdwg-naming-conventions: class
+  gsc-naming-conventions: class
 description: >-
   The full scientific name of the class.
 in_subset:

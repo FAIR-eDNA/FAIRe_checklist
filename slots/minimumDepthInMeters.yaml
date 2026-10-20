@@ -1,5 +1,8 @@
 name: minimumDepthInMeters
 title: minimum depth in meters
+local_names:
+  tdwg-naming-conventions: minimumDepthInMeters
+  gsc-naming-conventions: min_depth
 description: >-
   The lesser depth of a range of depth (vertical distance below the local
   surface) at which a sample was collected. For sediment or soil samples depth is

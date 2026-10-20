@@ -1,5 +1,8 @@
 name: recordedByID
 title: recorded by ID
+local_names:
+  tdwg-naming-conventions: recordedByID
+  gsc-naming-conventions: recorded_by_id
 description: >-
   A list (concatenated and separated) of the globally unique identifier
   for the people responsible for the submitted dataset.

@@ -1,5 +1,8 @@
 name: sequencing_location
 title: sequencing location
+local_names:
+  tdwg-naming-conventions: sequencingLocation
+  gsc-naming-conventions: sequencing_location
 description: >-
   The location the sequencing run was performed. Indicate the name of the
   lab or core facility where samples were sequenced.

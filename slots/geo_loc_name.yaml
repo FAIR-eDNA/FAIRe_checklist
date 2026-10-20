@@ -1,5 +1,8 @@
 name: geo_loc_name
 title: geographic location (country and/or sea,region)
+local_names:
+  tdwg-naming-conventions: geographicLocationName
+  gsc-naming-conventions: geo_loc_name
 description: >-
   The geographical origin of the sample as defined by the country or sea
   name followed by regions and localities. Country or sea names should be chosen from

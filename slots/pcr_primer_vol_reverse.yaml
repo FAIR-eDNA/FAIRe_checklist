@@ -1,5 +1,8 @@
 name: pcr_primer_vol_reverse
 title: reverse PCR primer volume
+local_names:
+  tdwg-naming-conventions: pcrPrimerVolumeReverse
+  gsc-naming-conventions: pcr_primer_vol_rev
 description: >-
   Volume of pcr_primer_reverse per reaction.
 in_subset:

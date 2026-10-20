@@ -1,5 +1,8 @@
 name: pcr_rep
 title: number of PCR replicates
+local_names:
+  tdwg-naming-conventions: pcrReplicateCount
+  gsc-naming-conventions: pcr_rep
 description: >-
   The number of PCR technical replicates. For metabarcoding, each replicate
   should employ an identical MID.

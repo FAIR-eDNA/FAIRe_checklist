@@ -1,5 +1,8 @@
 name: tot_carb
 title: total carbon
+local_names:
+  tdwg-naming-conventions: totalCarbon
+  gsc-naming-conventions: tot_carb
 description: >-
   Total carbon content.
 in_subset:

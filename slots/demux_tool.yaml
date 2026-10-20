@@ -1,5 +1,8 @@
 name: demux_tool
 title: demultiplexing tool
+local_names:
+  tdwg-naming-conventions: demultiplexingTool
+  gsc-naming-conventions: demux_tool
 description: >-
   Software and the version used to demultiplex sequence reads.
 in_subset:

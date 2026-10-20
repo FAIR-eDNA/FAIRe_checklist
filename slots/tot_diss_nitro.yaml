@@ -1,5 +1,8 @@
 name: tot_diss_nitro
 title: total dissolved nitrogen
+local_names:
+  tdwg-naming-conventions: totalDissolvedNitrogen
+  gsc-naming-conventions: tot_diss_nitro
 description: >-
   Total dissolved nitrogen concentration, reported as nitrogen, measured
   by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen.

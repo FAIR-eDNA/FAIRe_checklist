@@ -1,5 +1,8 @@
 name: stationed_sample_dur
 title: stationed sampling duration
+local_names:
+  tdwg-naming-conventions: stationedSamplingDuration
+  gsc-naming-conventions: stationed_sample_dur
 description: >-
   Duration of on-site, stationed sampling (i.e., the filter deployment
   period). This term is recommended to be recorded when filters are deployed directly

@@ -1,5 +1,8 @@
 name: specificEpithet
 title: specific epithet
+local_names:
+  tdwg-naming-conventions: specificEpithet
+  gsc-naming-conventions: specific_epithet
 description: >-
   The name of the first or species epithet of the scientificName.
 in_subset:

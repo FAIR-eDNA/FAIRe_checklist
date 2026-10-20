@@ -1,5 +1,8 @@
 name: trim_method
 title: primer and adapter trimming method
+local_names:
+  tdwg-naming-conventions: trimmingMethod
+  gsc-naming-conventions: trim_method
 description: >-
   Method for trimming primer and/or adapter sequences, including version
   and parameters.

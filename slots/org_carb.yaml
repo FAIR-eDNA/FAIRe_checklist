@@ -1,5 +1,8 @@
 name: org_carb
 title: organic carbon
+local_names:
+  tdwg-naming-conventions: organicCarbon
+  gsc-naming-conventions: org_carb
 description: >-
   Concentration of organic carbon.
 in_subset:

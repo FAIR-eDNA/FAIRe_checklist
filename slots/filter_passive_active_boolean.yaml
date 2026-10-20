@@ -1,8 +1,13 @@
-name: filter_passive_active_0_1
+name: filter_passive_active_boolean
 title: passive or active filtration
+aliases:
+  - filter_passive_active_0_1
+local_names:
+  tdwg-naming-conventions: filterPassiveActiveBoolean
+  gsc-naming-conventions: filter_pass_act_bool
 description: >-
-  Whether environmental samples were collected using active (i.e. pump, fan) or passive (i.e. submerged materials
-  in water/air) filtration approach. Active = 1, Passive = 0.
+  Whether environmental samples were collected using active (i.e. pump, fan) or passive (i.e.
+  submerged materials in water/air) filtration approach. Active = true (1), passive = false (0).
 in_subset:
 - Sample preparation
 annotations:

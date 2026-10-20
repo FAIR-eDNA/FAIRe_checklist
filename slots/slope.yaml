@@ -1,5 +1,8 @@
 name: slope
 title: qPCR standard curve slope
+local_names:
+  tdwg-naming-conventions: slope
+  gsc-naming-conventions: slope
 description: >-
   Slope of a qPCR standard curve. This shall be specific to each pcr_plate_id.
 in_subset:

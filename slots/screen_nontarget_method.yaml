@@ -1,5 +1,8 @@
 name: screen_nontarget_method
 title: non-target species screening method
+local_names:
+  tdwg-naming-conventions: nonTargetSpeciesScreeningMethod
+  gsc-naming-conventions: screen_nontarg_meth
 description: >-
   Description of how non-target species were screened for, and how the results were applied.
 in_subset:

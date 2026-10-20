@@ -1,5 +1,8 @@
 name: kingdom
 title: kingdom
+local_names:
+  tdwg-naming-conventions: kingdom
+  gsc-naming-conventions: kingdom
 description: >-
   The full scientific name of the kingdom.
 in_subset:

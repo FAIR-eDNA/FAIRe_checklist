@@ -1,5 +1,8 @@
 name: verbatimLongitude
 title: verbatim longitude
+local_names:
+  tdwg-naming-conventions: verbatimLongitude
+  gsc-naming-conventions: verbatim_longitude
 description: >-
   The original longitude in any format (i.e. deg/min/sec, UTM) before converting
   to decimal degrees and WGS84. verbatimCoordinateSystem and verbatimSRS should be

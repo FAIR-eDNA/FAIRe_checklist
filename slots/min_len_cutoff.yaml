@@ -1,5 +1,8 @@
 name: min_len_cutoff
 title: minimum read length threshold
+local_names:
+  tdwg-naming-conventions: minimumReadLengthCutoff
+  gsc-naming-conventions: min_len_cutoff
 description: >-
   Minimum length threshold.
 in_subset:

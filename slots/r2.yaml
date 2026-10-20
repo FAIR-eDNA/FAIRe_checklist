@@ -1,5 +1,8 @@
 name: r2
 title: qPCR standard curve R-squared
+local_names:
+  tdwg-naming-conventions: r2
+  gsc-naming-conventions: r2
 description: >-
   R-squared value of a qPCR standard curve. This shall be specific to each
   pcr_plate_id.

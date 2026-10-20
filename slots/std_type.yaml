@@ -1,5 +1,8 @@
 name: std_type
 title: qPCR standard type
+local_names:
+  tdwg-naming-conventions: standardType
+  gsc-naming-conventions: std_type
 description: >-
   The type of standard used for standard curves.
 in_subset:

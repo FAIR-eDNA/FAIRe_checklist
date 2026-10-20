@@ -1,5 +1,8 @@
 name: pcr_primer_reference_forward
 title: forward PCR primer reference
+local_names:
+  tdwg-naming-conventions: pcrPrimerReferenceForward
+  gsc-naming-conventions: pcr_primer_ref_fwd
 description: >-
   Reference (i.e. DOI) of the pcr_primer_forward. If multiple primers are
   listed in pcr_primer_forward, list the references respectively, separated by pipe

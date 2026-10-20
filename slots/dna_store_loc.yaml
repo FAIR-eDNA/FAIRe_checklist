@@ -1,5 +1,8 @@
 name: dna_store_loc
 title: DNA extract storage location
+local_names:
+  tdwg-naming-conventions: dnaStorageLocation
+  gsc-naming-conventions: dna_store_loc
 description: >-
   Location at which extracted DNA was stored, usually name of a specific
   freezer/room.

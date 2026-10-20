@@ -1,5 +1,8 @@
 name: ph
 title: pH
+local_names:
+  tdwg-naming-conventions: pH
+  gsc-naming-conventions: ph
 description: >-
   Ph measurement of the sample, or liquid portion of sample, or aqueous
   phase of the fluid.

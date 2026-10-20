@@ -1,5 +1,8 @@
 name: verbatimIdentification
 title: verbatim identification
+local_names:
+  tdwg-naming-conventions: verbatimIdentification
+  gsc-naming-conventions: verbatim_ident
 description: >-
   A string representing the taxonomic identification as it appeared in
   the original record (i.e. the database used such as NCBI). This could be the identification.

@@ -1,5 +1,8 @@
 name: pcr2_cycles
 title: number of second PCR cycles
+local_names:
+  tdwg-naming-conventions: secondPCRCycleCount
+  gsc-naming-conventions: pcr2_cycles
 description: >-
   (If barcoding_pcr_appr = "two-step PCR") Number of PCR cycles in the
   second step PCR.

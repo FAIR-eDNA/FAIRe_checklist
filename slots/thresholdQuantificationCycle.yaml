@@ -1,5 +1,8 @@
 name: thresholdQuantificationCycle
 title: quantification cycle threshold
+local_names:
+  tdwg-naming-conventions: thresholdQuantificationCycle
+  gsc-naming-conventions: cq_threshold
 description: >-
   Threshold for change in fluorescence signal between cycles. No unit.
 in_subset:

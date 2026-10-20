@@ -1,5 +1,8 @@
 name: project_contact
 title: project contact
+local_names:
+  tdwg-naming-conventions: projectContact
+  gsc-naming-conventions: project_contact
 description: >-
   A contact person and their contact (i.e., email address) for data enquiry.
 in_subset:

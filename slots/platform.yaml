@@ -1,5 +1,8 @@
 name: platform
 title: sequencing platform
+local_names:
+  tdwg-naming-conventions: platform
+  gsc-naming-conventions: platform
 description: >-
   General sequencing platform used.
 in_subset:

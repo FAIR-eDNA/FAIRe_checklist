@@ -1,5 +1,8 @@
 name: bibliographicCitation
 title: bibliographic citation
+local_names:
+  tdwg-naming-conventions: bibliographicCitation
+  gsc-naming-conventions: biblio_citation
 description: >-
   A bibliographic reference for the resource.
 in_subset:

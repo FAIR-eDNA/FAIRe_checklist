@@ -1,5 +1,8 @@
 name: accession_id
 title: accession ID of best matching sequence
+local_names:
+  tdwg-naming-conventions: accessionID
+  gsc-naming-conventions: accession_id
 description: >-
   Accession ID of the best matching sequence from a reference database.
 in_subset:
