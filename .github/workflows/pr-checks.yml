@@ -1,0 +1,29 @@
+name: PR checks
+
+# The checks in VALIDATION_RULES.md (#21, #48). Nothing is committed: if schema.yaml is out of
+# date, rebuild it locally (python doc_gen_scripts/build_schema.py) and commit it.
+on:
+  pull_request:
+    branches: [dev, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml linkml==1.10.0
+
+      - name: Run checks
+        run: python doc_gen_scripts/check_pr.py

@@ -16,6 +16,11 @@ are not checked.
 | B2 | Error | `linkml-lint --validate-only schema.yaml` finds no problems | LinkML's own rules. |
 | B3 | Error | Every slot's examples validate against the built schema (`linkml-validate`) | An example that fails its own slot misleads users (#75, #88). |
 
+**B3 how examples are read:** as a data provider would enter them: text, split on `|` for a multivalued slot
+(#77), and a number read as a number only where the slot allows numbers.
+**B3 known exception:** the `host_life_stage` example is not in `HostLifeStageEnum` (root-only enum), waits on #73.
+Reported as a warning until then.
+
 ## Slot rules
 
 ### S1. `description` is a folded block scalar (`>-`) — Error
