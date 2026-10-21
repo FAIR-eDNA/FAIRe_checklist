@@ -1,0 +1,71 @@
+name: Build schema
+
+# On every push to dev (including merged pull requests): rebuild schema.yaml from slots/,
+# enums.yaml, types.yaml, classes.yaml and schema_header.yaml, commit it if it changed, then
+# run all checks (#21). schema.yaml on origin/dev is the source of truth: don't build or
+# commit it by hand. main is not rebuilt; it gets schema.yaml from dev in the release merge,
+# and pr-checks.yml verifies it there (--strict-build).
+#
+# The commit is pushed with GITHUB_TOKEN, which doesn't start other workflows, so the bot's
+# own commit doesn't trigger this workflow again.
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run at a time, in order, so two quick merges can't push over each other.
+concurrency:
+  group: build-schema-dev
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml linkml==1.10.0
+
+      - name: Build schema.yaml
+        run: python doc_gen_scripts/build_schema.py
+
+      - name: Commit schema.yaml if it changed
+        run: |
+          if git diff --quiet -- schema.yaml; then
+            echo "::notice title=schema.yaml up to date::A fresh build equals the committed schema.yaml; nothing to commit."
+            echo "### schema.yaml already up to date" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          {
+            echo "### schema.yaml rebuilt and committed"
+            echo
+            echo '```'
+            git diff --stat -- schema.yaml
+            echo '```'
+            python doc_gen_scripts/schema_changes.py
+          } >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add schema.yaml
+          git commit -m "Rebuild schema.yaml (automated)" \
+                     -m "Built from $(git rev-parse --short HEAD) by the Build schema workflow (run $GITHUB_RUN_ID)."
+          git push origin HEAD:dev
+          sha=$(git rev-parse --short HEAD)
+          echo "::warning title=schema.yaml rebuilt::schema.yaml was out of date and has been rebuilt and committed to dev as $sha. Pull dev before starting new work."
+          echo >> "$GITHUB_STEP_SUMMARY"
+          echo "Committed to dev as \`$sha\`. Pull dev before starting new work." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run checks
+        run: python doc_gen_scripts/check_pr.py --strict-build

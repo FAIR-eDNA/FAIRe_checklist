@@ -1,13 +1,14 @@
 name: PR checks
 
-# The checks in VALIDATION_RULES.md (#21, #48). Nothing is committed: if schema.yaml is out of
-# date, rebuild it locally (python doc_gen_scripts/build_schema.py) and commit it.
-# Also runs on every push to dev, so changes merged locally without a pull request are checked.
+# The checks in VALIDATION_RULES.md (#21, #48), on a fresh build of schema.yaml. Nothing is
+# committed here. On dev, schema.yaml is rebuilt and committed by build-schema.yml (which also
+# checks every push to dev). Into and on main, the committed schema.yaml must equal a fresh
+# build (--strict-build): main gets it from dev and is never rebuilt.
 on:
   pull_request:
     branches: [dev, main]
   push:
-    branches: [dev]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -29,4 +30,4 @@ jobs:
         run: pip install pyyaml linkml==1.10.0
 
       - name: Run checks
-        run: python doc_gen_scripts/check_pr.py
+        run: python doc_gen_scripts/check_pr.py ${{ (github.base_ref == 'main' || github.ref == 'refs/heads/main') && '--strict-build' || '' }}

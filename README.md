@@ -21,7 +21,7 @@ The next release (planned as v2.0.0) is being prepared on the `dev` branch. It r
 | `slots/` | One YAML file per term (LinkML slot). The source of truth. |
 | `enums.yaml`, `types.yaml`, `classes.yaml` | Controlled vocabularies, value formats, and the tables (classes) each term belongs to. |
 | `schema_header.yaml` | Schema metadata (id, version, license) and prefixes. |
-| `schema.yaml` | **Generated.** The whole schema, built from the files above. Don't edit it by hand. |
+| `schema.yaml` | **Generated.** The whole schema, built from the files above and committed automatically on `dev`. Don't edit or build it by hand. |
 | `doc_gen_scripts/` | Build and check scripts. |
 | `VALIDATION_RULES.md` | The rules every pull request is checked against. |
 | `latest_checklist/`, `FAIRe_checklist_v1.0.2*.xlsx` | The Excel checklist and template of the current release (v1.0.2). |
@@ -30,19 +30,22 @@ The next release (planned as v2.0.0) is being prepared on the `dev` branch. It r
 
 ### Changing a term
 
-1. Work on a branch off `dev`, and edit the term's file in `slots/` (or `enums.yaml`, `types.yaml`, `classes.yaml`).
-2. Rebuild the schema from the repository root (`pip install pyyaml`):
-   ```sh
-   python doc_gen_scripts/build_schema.py
-   ```
-3. Commit `schema.yaml` together with your change, and open a pull request into `dev`.
+1. Pull `dev`, and work on a branch off it.
+2. Edit the term's file in `slots/` (or `enums.yaml`, `types.yaml`, `classes.yaml`). Don't build or commit `schema.yaml`.
+3. Open a pull request into `dev`.
 
-Every pull request is checked automatically (`.github/workflows/pr-checks.yml`): `schema.yaml` must equal a fresh build, the schema must pass `linkml-lint`, every example must be valid, and the slot files must follow the conventions in [VALIDATION_RULES.md](VALIDATION_RULES.md). To run the checks locally (`pip install pyyaml linkml`):
+Every pull request is checked automatically (`.github/workflows/pr-checks.yml`) on a fresh build of the schema: it must build, pass `linkml-lint`, every example must be valid, and the slot files must follow the conventions in [VALIDATION_RULES.md](VALIDATION_RULES.md).
+
+When the pull request is merged, `.github/workflows/build-schema.yml` rebuilds `schema.yaml`, commits it to `dev` (as `github-actions[bot]`; the run's log and summary say what changed) and runs the checks again. `schema.yaml` on `origin/dev` and `origin/main` is the source of truth, so pull `dev` after a merge. If a branch of yours conflicts on `schema.yaml`, take the version from `dev`.
+
+To run the checks locally (`pip install pyyaml linkml`):
 
 ```sh
 python doc_gen_scripts/check_pr.py          # all rules
 python doc_gen_scripts/check_pr.py S B1     # all slot rules, and B1
 ```
+
+To look at the built schema locally: `python doc_gen_scripts/build_schema.py` (`pip install pyyaml`); don't commit the result.
 
 The Excel scripts (`generate_checklist_excel.py`, `generate_FULLtemplate_excel.py`) are being updated for the model (#147). `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
 

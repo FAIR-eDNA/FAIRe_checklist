@@ -5,15 +5,21 @@ The checks run on every pull request (#21, #48). Each rule has an ID, what is ch
 rule has known exceptions that wait on a decision (linked).
 
 The rules check the committed files: `schema_header.yaml`, `slots/*.yaml`, `types.yaml`,
-`enums.yaml`, `classes.yaml` and `schema.yaml`. The Excel files are not a source of truth and
-are not checked.
+`enums.yaml`, `classes.yaml`, and a fresh build of `schema.yaml` made from them. The Excel files
+are not a source of truth and are not checked.
+
+`schema.yaml` is not built by hand. On every push to `dev` (including merged pull requests),
+`.github/workflows/build-schema.yml` rebuilds it, commits it if it changed (as
+`github-actions[bot]`, reported in the run's log and summary) and runs these checks.
+`schema.yaml` on `origin/dev` and `origin/main` is the source of truth. `main` is never rebuilt:
+it gets `schema.yaml` from `dev` in the release merge, and is checked with `--strict-build`.
 
 ## Build checks
 
 | ID | Level | Check | Why |
 |---|---|---|---|
-| B1 | Error | `python doc_gen_scripts/build_schema.py` produces exactly the committed `schema.yaml` | The committed schema always matches its sources, so a rebuild at release gives the same file (#21). Commit `schema.yaml` together with any change to the sources. |
-| B2 | Error | `linkml-lint --validate-only schema.yaml` finds no problems | LinkML's own rules. |
+| B1 | Error | `python doc_gen_scripts/build_schema.py` builds the schema. If the committed `schema.yaml` differs from the build: Warning on pull requests into `dev` (rebuilt on merge); Error into and on `main` (`--strict-build`) | Contributors don't build `schema.yaml`; `dev` rebuilds it, and `main` must hold exactly what `dev` built (#21). |
+| B2 | Error | `linkml-lint --validate-only` finds no problems in the built schema | LinkML's own rules. |
 | B3 | Error | Every slot's examples validate against the built schema (`linkml-validate`) | An example that fails its own slot misleads users (#75, #88). |
 
 **B3 how examples are read:** as a data provider would enter them: text, split on `|` for a multivalued slot
