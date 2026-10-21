@@ -9,7 +9,7 @@ id: https://w3id.org/faire/schema
 name: faire_checklist
 description: A LinkML schema representing the FAIRe checklist, rebuilt from individual
   slots.
-version: 1.0.2
+version: 2.0.0
 license: https://creativecommons.org/licenses/by/4.0/
 prefixes:
   linkml: https://w3id.org/linkml/
