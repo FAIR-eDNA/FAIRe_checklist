@@ -5,8 +5,13 @@ Needs linkml (pip install linkml). The rules and their IDs are in VALIDATION_RUL
 
 Prints one line per problem, e.g. "B3 Error slots/taxonID.yaml: ...". Exits 1 if any rule
 at level Error fails; warnings are printed but don't fail the check.
+
+The build checks run on a fresh build of schema.yaml, not on the committed file: on dev the
+committed schema.yaml is rebuilt by .github/workflows/build-schema.yml. With --strict-build
+(used for main), a committed schema.yaml that differs from the fresh build is an error.
 """
 import argparse
+import atexit
 import json
 import os
 import re
@@ -41,6 +46,9 @@ KNOWN_EXCEPTIONS = {
     ("B3", "slots/host_life_stage.yaml"): "#73",
 }
 
+# Set by --strict-build: B1 fails if the committed schema.yaml differs from a fresh build.
+STRICT_BUILD = False
+
 
 class Problem:
     def __init__(self, rule, level, where, message):
@@ -58,9 +66,15 @@ def load_yaml(path):
 # --- Build checks ---------------------------------------------------------------------
 
 
-def check_b1_build_matches():
-    """B1: a fresh build equals the committed schema.yaml, byte for byte."""
-    with tempfile.TemporaryDirectory() as scratch:
+_BUILD = {}
+
+
+def fresh_build():
+    """Build schema.yaml in a scratch copy, once. Returns (path to the built file, stderr);
+    the path is None if the build failed."""
+    if not _BUILD:
+        scratch = tempfile.mkdtemp()
+        atexit.register(shutil.rmtree, scratch, True)
         for name in BUILD_INPUTS:
             if os.path.isdir(name):
                 shutil.copytree(name, os.path.join(scratch, name),
@@ -69,23 +83,36 @@ def check_b1_build_matches():
                 shutil.copy(name, scratch)
         run = subprocess.run([sys.executable, "doc_gen_scripts/build_schema.py"],
                              cwd=scratch, capture_output=True, text=True)
-        if run.returncode != 0:
-            return [Problem("B1", ERROR, "doc_gen_scripts/build_schema.py",
-                            "build failed:\n" + "\n".join(run.stderr.strip().splitlines()[-4:]))]
-        with open(os.path.join(scratch, SCHEMA), "rb") as handle:
-            built = handle.read()
+        _BUILD["path"] = os.path.join(scratch, SCHEMA) if run.returncode == 0 else None
+        _BUILD["stderr"] = run.stderr
+    return _BUILD["path"], _BUILD["stderr"]
+
+
+def check_b1_build():
+    """B1: the schema builds; the committed schema.yaml equals the build (strict) or is noted."""
+    built_path, stderr = fresh_build()
+    if built_path is None:
+        return [Problem("B1", ERROR, "doc_gen_scripts/build_schema.py",
+                        "build failed:\n" + "\n".join(stderr.strip().splitlines()[-4:]))]
+    with open(built_path, "rb") as handle:
+        built = handle.read()
     with open(SCHEMA, "rb") as handle:
         committed = handle.read()
-    if built != committed:
-        return [Problem("B1", ERROR, SCHEMA,
-                        "differs from a fresh build; run python doc_gen_scripts/build_schema.py "
-                        "and commit schema.yaml")]
-    return []
+    if built == committed:
+        return []
+    if STRICT_BUILD:
+        return [Problem("B1", ERROR, SCHEMA, "differs from a fresh build; schema.yaml must come from dev, "
+                                             "where it is rebuilt automatically")]
+    return [Problem("B1", WARNING, SCHEMA, "differs from a fresh build; it is rebuilt automatically when "
+                                           "merged into dev (the other checks use the fresh build)")]
 
 
 def check_b2_lint():
-    """B2: linkml-lint finds no problems in schema.yaml."""
-    run = subprocess.run(["linkml-lint", "--validate-only", "--format", "json", SCHEMA],
+    """B2: linkml-lint finds no problems in the built schema."""
+    built_path, _ = fresh_build()
+    if built_path is None:
+        return []  # B1 reports the failed build
+    run = subprocess.run(["linkml-lint", "--validate-only", "--format", "json", built_path],
                          capture_output=True, text=True)
     if run.returncode == 0:
         return []
@@ -130,7 +157,10 @@ def check_b3_examples():
     from linkml.validator import Validator
     from linkml.validator.plugins import JsonschemaValidationPlugin
 
-    schema = load_yaml(SCHEMA)
+    built_path, _ = fresh_build()
+    if built_path is None:
+        return []  # B1 reports the failed build
+    schema = load_yaml(built_path)
     slots = schema.get("slots", {})
     # One class with every slot, none required, so each example can be checked on its own.
     schema["classes"]["SlotExample"] = {
@@ -423,7 +453,7 @@ def check_e2_meanings():
 
 
 CHECKS = {
-    "B1": check_b1_build_matches,
+    "B1": check_b1_build,
     "B2": check_b2_lint,
     "B3": check_b3_examples,
     "S1": check_s1_description_block,
@@ -450,7 +480,11 @@ CHECKS = {
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("rules", nargs="*", help="rule IDs or groups to run (e.g. B1, B); default all")
+    parser.add_argument("--strict-build", action="store_true",
+                        help="fail if the committed schema.yaml differs from a fresh build (main)")
     args = parser.parse_args()
+    global STRICT_BUILD
+    STRICT_BUILD = args.strict_build
     selected = [rule for rule in CHECKS
                 if not args.rules or any(rule == r or rule[0] == r for r in args.rules)]
 
