@@ -134,7 +134,7 @@ slots:
       requirement_level_code: R
       modifications_made: field_name | description
     slot_uri: faire:0000003
-    range: string
+    range: ModifiedOligoSequence
     required: false
     recommended: true
     examples:
@@ -166,7 +166,7 @@ slots:
       requirement_level_code: R
       modifications_made: field_name | description
     slot_uri: faire:0000004
-    range: string
+    range: ModifiedOligoSequence
     required: false
     recommended: true
     examples:
@@ -817,7 +817,9 @@ slots:
     local_names:
       tdwg-naming-conventions: blockingPrimerSequence
       gsc-naming-conventions: block_seq
-    description: Blocking primer sequence in the 5' to 3' direction.
+    description: Blocking primer sequence in the 5' to 3' direction. Bases are uppercase
+      IUPAC nucleotide codes, with I for inosine; modifications are written as slash-delimited
+      supplier codes such as /C3/ (see the ModifiedOligoSequence type).
     in_subset:
     - PCR
     annotations:
@@ -825,7 +827,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
     slot_uri: faire:0000022
-    range: string
+    range: ModifiedOligoSequence
     required: false
     recommended: false
     examples:
@@ -1214,34 +1216,6 @@ slots:
     narrow_mappings: []
     broad_mappings:
     - ggbn:concentrationUnit
-  confidence_score:
-    name: confidence_score
-    title: taxonomic assignment confidence score
-    local_names:
-      tdwg-naming-conventions: confidenceScore
-      gsc-naming-conventions: confidence_score
-    description: Confidence score for the taxonomic assignment, such as from bootstrapping.
-      If multiple species were assigned to one ASV/OTU, a range can be entered separated
-      by "-" (e.g., 0.996-0.998).
-    in_subset:
-    - OTU/ASV
-    annotations:
-      data_type: taxaRaw | taxaFinal
-      requirement_level: Recommended
-      requirement_level_code: R
-    slot_uri: faire:0000036
-    range: string
-    required: false
-    recommended: true
-    examples:
-    - value: '0.997'
-      description: null
-    source: null
-    exact_mappings: []
-    close_mappings: []
-    related_mappings: []
-    narrow_mappings: []
-    broad_mappings: []
   dataGeneralizations:
     name: dataGeneralizations
     title: data generalizations
@@ -1891,7 +1865,8 @@ slots:
     local_names:
       tdwg-naming-conventions: dnaSequence
       gsc-naming-conventions: dna_sequence
-    description: The DNA sequence.
+    description: DNA sequence of representative sequence. Report the sequence in uppercase
+      IUPAC nucleotide codes (see the DnaSequence type).
     in_subset:
     - OTU/ASV
     annotations:
@@ -1899,20 +1874,21 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = metabarcoding
-    slot_uri: gbif:dna_sequence
-    range: string
+      modifications_made: description
+    slot_uri: faire:0000324
+    range: DnaSequence
     required: true
     recommended: false
     examples:
     - value: GGTGTTTAAATTTCGGTCTGTAAGAAGTATTGTAATCCCAGCCGCTAGGACTGGAAGGGAAAGAAGGAGAAGGACAGCTGTAATTAGCACGGCTCAGACAAACAAGGGTGTCTGGTATTGGGAAATAGCTGGGGGTTTCATGTTAATAATTGTGGTAATAAAATTGATAGCACCAAGGATTGAAGAGACCCCGGCTAGGTGGAGAGAA
       description: null
     source: gbif:dna_sequence
-    exact_mappings:
-    - gbif:dna_sequence
+    exact_mappings: []
     close_mappings: []
     related_mappings: []
     narrow_mappings: []
-    broad_mappings: []
+    broad_mappings:
+    - gbif:dna_sequence
   dna_store_loc:
     name: dna_store_loc
     title: DNA extract storage location
@@ -3857,7 +3833,7 @@ slots:
       requirement_level_code: O
       modifications_made: field_name | description
     slot_uri: faire:0000105
-    range: string
+    range: DnaSequence
     required: false
     recommended: false
     examples:
@@ -3890,7 +3866,7 @@ slots:
       requirement_level_code: O
       modifications_made: field_name | description
     slot_uri: faire:0000106
-    range: string
+    range: DnaSequence
     required: false
     recommended: false
     examples:
@@ -6224,8 +6200,10 @@ slots:
       gsc-naming-conventions: pcr_primer_forward
     description: Forward PCR primer (5' - 3') that were used to amplify the sequence
       of the targeted gene. The primer sequence should NOT contain MIDs and adapter
-      sequences, and should be reported in uppercase letters. If multiple forward
-      primers are present in a single PCR reaction, either report them separately
+      sequences, and should be reported in uppercase letters. Bases are uppercase
+      IUPAC nucleotide codes, with I for inosine; modifications are written as slash-delimited
+      supplier codes such as /C3/ (see the ModifiedOligoSequence type). If multiple
+      forward primers are present in a single PCR reaction, either report them separately
       in separate submissions (with separate OTU tables for each primer set), or list
       the primers here separated by pipe ( | ) and provide one OTU table resulting
       from all the primers applied here. The latter is recommended only when the multiple
@@ -6240,7 +6218,7 @@ slots:
       requirement_level_condition: If pcr_boolean is 1
       modifications_made: description
     slot_uri: faire:0000174
-    range: string
+    range: ModifiedOligoSequence
     multivalued: true
     required: true
     recommended: false
@@ -6399,8 +6377,10 @@ slots:
       gsc-naming-conventions: pcr_primer_reverse
     description: Reverse PCR primer (5' - 3') that were used to amplify the sequence
       of the targeted gene. The primer sequence should NOT contain MIDs and adapter
-      sequences, and should be reported in uppercase letters. If multiple reverse
-      primers are present in a single PCR reaction, either report them separately
+      sequences, and should be reported in uppercase letters. Bases are uppercase
+      IUPAC nucleotide codes, with I for inosine; modifications are written as slash-delimited
+      supplier codes such as /C3/ (see the ModifiedOligoSequence type). If multiple
+      reverse primers are present in a single PCR reaction, either report them separately
       in separate submissions (with separate OTU tables for each primer set), or list
       the primers here separated by pipe ( | ) and provide one OTU table resulting
       from all the primers applied here. The latter is recommended only when the multiple
@@ -6415,7 +6395,7 @@ slots:
       requirement_level_condition: If pcr_boolean is 1
       modifications_made: description
     slot_uri: faire:0000179
-    range: string
+    range: ModifiedOligoSequence
     multivalued: true
     required: true
     recommended: false
@@ -7296,7 +7276,11 @@ slots:
     local_names:
       tdwg-naming-conventions: probeSequence
       gsc-naming-conventions: probe_seq
-    description: If applicable, probe sequence in the 5' to 3' direction.
+    description: If applicable, probe sequence in the 5' to 3' direction. Bases are
+      uppercase IUPAC nucleotide codes, with I for inosine; modifications are written
+      as slash-delimited supplier codes such as /C3/ (see the ModifiedOligoSequence
+      type). Reporter and quencher names may still be recorded in probeReporter and
+      probeQuencher.
     in_subset:
     - PCR
     annotations:
@@ -7304,7 +7288,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
     slot_uri: faire:0000201
-    range: string
+    range: ModifiedOligoSequence
     required: false
     recommended: true
     examples:
@@ -8923,7 +8907,8 @@ slots:
     local_names:
       tdwg-naming-conventions: standardSequence
       gsc-naming-conventions: std_seq
-    description: DNA sequences of standard.
+    description: DNA sequences of standard. Report the sequence in uppercase IUPAC
+      nucleotide codes (see the DnaSequence type).
     in_subset:
     - Targeted assay detection
     annotations:
@@ -8931,7 +8916,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
     slot_uri: faire:0000247
-    range: string
+    range: DnaSequence
     required: false
     recommended: true
     examples:
@@ -9272,6 +9257,45 @@ slots:
     narrow_mappings: []
     broad_mappings:
     - mixs:0000064
+  tax_assign_conf_score:
+    name: tax_assign_conf_score
+    aliases:
+    - confidence_score
+    title: taxonomic assignment confidence score
+    local_names:
+      tdwg-naming-conventions: taxonomicAssignmentConfidenceScore
+      gsc-naming-conventions: tax_assign_conf
+    description: Numerical confidence, probability, or support value assigned to a
+      taxonomic identification. Interpretation and scale of this value depend directly
+      on the categorization reported in tax_assign_cat (e.g., sequence similarity,
+      sequence composition, probabilistic) and the computational pipeline recorded
+      in otu_seq_comp_appr.
+    comments:
+    - The same number can mean different things, so read it together with tax_assign_cat
+      and otu_seq_comp_appr. For example, 0.97 is a bootstrap confidence (0-1) when
+      tax_assign_cat is "sequence composition" and otu_seq_comp_appr is a naive Bayes
+      classifier such as QIIME 2's classify-sklearn. It is a posterior probability
+      when tax_assign_cat is "probabilistic" and otu_seq_comp_appr is PROTAX.
+    - Named confidence_score in FAIRe v1.0 (#150).
+    in_subset:
+    - OTU/ASV
+    annotations:
+      data_type: taxaRaw | taxaFinal
+      requirement_level: Recommended
+      requirement_level_code: R
+    slot_uri: faire:0000036
+    range: float
+    required: false
+    recommended: true
+    examples:
+    - value: '0.997'
+      description: null
+    source: null
+    exact_mappings: []
+    close_mappings: []
+    related_mappings: []
+    narrow_mappings: []
+    broad_mappings: []
   tax_class_collapse:
     name: tax_class_collapse
     title: taxonomic collapse method
@@ -10600,6 +10624,21 @@ types:
       a DOI (doi:10.1002/edn3.220) or a URL (https://...). Same as MIxS''s {PMID}|{DOI}|{URL}
       pattern (#97).'
     pattern: ^(PMID:\d+|doi:10.\d{2,9}/.*|https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*))$
+  DnaSequence:
+    typeof: string
+    description: An uppercase nucleic acid sequence using only IUPAC nucleotide codes
+      (A C G T R Y S W K M B D H V N). See IUBMB/IUPAC incomplete nucleic acid sequences
+      (https://iubmb.qmul.ac.uk/misc/naseq.html).
+    pattern: ^[ACGTRYSWKMBDHVN]+$
+  ModifiedOligoSequence:
+    typeof: string
+    description: 'A DnaSequence that may also include non-nucleotide modifications
+      written as slash-delimited codes in the sequence string, the way oligo suppliers
+      embed mods (IDT: https://www.idtdna.com/page/support-and-education/decoded-plus/ordering-modified-oligonucleotides).
+      Bases are uppercase IUPAC codes, plus I for inosine. A modification token is
+      /code/ with no spaces (e.g. /C3/, IDT /3SpC3/, /iSpC3/, /6-FAM/). Codes are
+      not a closed catalog; they follow supplier spelling.'
+    pattern: ^([ACGTRYSWKMBDHVNI]+|/[A-Za-z0-9][A-Za-z0-9._+-]*/)+$
 enums:
   AmpVisMethodEnum:
     description: Controlled vocabulary for amp_vis_method.
@@ -11173,7 +11212,7 @@ classes:
     - concentration
     - concentration_method
     - concentration_unit
-    - confidence_score
+    - tax_assign_conf_score
     - dataGeneralizations
     - date_ext
     - decimalLatitude
@@ -11825,7 +11864,7 @@ classes:
     - accession_id
     - accession_id_ref_db
     - class
-    - confidence_score
+    - tax_assign_conf_score
     - dna_sequence
     - family
     - genus
@@ -11849,7 +11888,7 @@ classes:
     - accession_id
     - accession_id_ref_db
     - class
-    - confidence_score
+    - tax_assign_conf_score
     - dna_sequence
     - family
     - genus
