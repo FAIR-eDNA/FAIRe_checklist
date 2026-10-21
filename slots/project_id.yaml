@@ -12,6 +12,7 @@ annotations:
   data_type: projectMetadata
   requirement_level: Mandatory
   requirement_level_code: M
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C8
 keywords:
   - NMDC
   - NOAA

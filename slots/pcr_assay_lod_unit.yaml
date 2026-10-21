@@ -12,6 +12,7 @@ annotations:
   requirement_level: Mandatory
   requirement_level_code: M
   requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C143
 slot_uri: faire:0000161
 range: string
 any_of:

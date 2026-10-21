@@ -19,6 +19,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: Water | Air
   modifications_made: description | field_type
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C66
 slot_uri: faire:0000239
 range: float
 minimum_value: 0

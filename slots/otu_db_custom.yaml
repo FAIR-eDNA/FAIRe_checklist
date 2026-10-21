@@ -13,6 +13,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   modifications_made: field_name | description
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C230
 slot_uri: faire:0000134
 range: string
 required: false

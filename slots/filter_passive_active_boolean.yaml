@@ -15,6 +15,7 @@ annotations:
   requirement_level: Recommended
   requirement_level_code: R
   sample_type_specificity: Water | Sediment | Air
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C61
 slot_uri: faire:0000075
 range: Any
 any_of:

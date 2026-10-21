@@ -13,6 +13,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
   modifications_made: description
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C86
 slot_uri: faire:0000121
 range: string
 required: false
