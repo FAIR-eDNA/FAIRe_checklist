@@ -1,43 +1,56 @@
 # FAIRe_checklist
 
-This repository stores the current and previous versions of the FAIRe metadata checklist, along with a detailed version history.
+The FAIRe (FAIR eDNA) metadata checklist: the terms that make environmental DNA (eDNA), metabarcoding and targeted-assay data Findable, Accessible, Interoperable and Reusable. Guidelines and documentation are on the [FAIRe website](https://fair-edna.github.io).
 
-**Field definitions** are in `slots/` (one YAML per term). The single `.xlsx` in `latest_checklist/` is the authoritative checklist.
-
-### For developers: build from checklist, then regenerate template
-
-The pipeline builds the LinkML schema from the checklist Excel and slots; after that, you regenerate the Excel template from the schema — that’s what researchers use.
-
-From repo root. Dependencies: `pip install openpyxl pyyaml pandas ruamel.yaml`
-
-| What to run | What it does |
-|-------------|--------------|
-| `doc_gen_scripts/build_enums_from_checklist.py` | Reads `latest_checklist/*.xlsx` + slots → writes `enums.yaml` |
-| `doc_gen_scripts/build_classes_from_checklist.py` | Reads checklist Excel + slots → writes `classes.yaml` |
-| `doc_gen_scripts/build_schema.py` | Builds `schema.yaml` from `schema_header.yaml`, slots, types, enums and classes (was `merge_slots.py`) |
-| `doc_gen_scripts/generate_checklist_excel.py` | Reads `schema.yaml` → Excel checklist (for download) |
-| `doc_gen_scripts/generate_FULLtemplate_excel.py` | Reads `schema.yaml` → FULL Excel template (for researchers) |
-
-Run the first three to build the schema; then run the last two to produce the Excel files researchers use.
-
-[![](https://mermaid.ink/img/pako:eNptj8tOwzAQRX_FmhVIaUiaxCReIPUFLFggxIoEIRM7iSUnLn6Ilrb_jpsWFgjLC8_4nLmaHdSKcSDQSPVZd1Rb9PBUDcifWVnBigmLLNc9OvUueNiGyEhlzZXhH2-ChVvay8sKXtFkcoPm3nl0pkNWoTth7927_zmp8yOwf9aibbk2e7QoTwCa1Vao4UwtRmruhGSeWZam7nhPx5AzsRwJMaydRY3Se7QqV5uaS3QrJDf_jvlLQACtFgyI1Y4H0Pv96LGE3dGuwPpMXgHxT8Yb6qStoBoOXlvT4UWp_sfUyrUdkIZK4yu3ZtTypaCtpv1vV_OBcb1QbrBAsqgYhwDZwQZIPJ2GSRqluMijvMD-BrAFgvMwLtICR3GCMxwV-SGArzE2CnGeFNdpkmdTHGdJhg_fItyLHQ?type=png)](https://mermaid.live/edit#pako:eNptj8tOwzAQRX_FmhVIaUiaxCReIPUFLFggxIoEIRM7iSUnLn6Ilrb_jpsWFgjLC8_4nLmaHdSKcSDQSPVZd1Rb9PBUDcifWVnBigmLLNc9OvUueNiGyEhlzZXhH2-ChVvay8sKXtFkcoPm3nl0pkNWoTth7927_zmp8yOwf9aibbk2e7QoTwCa1Vao4UwtRmruhGSeWZam7nhPx5AzsRwJMaydRY3Se7QqV5uaS3QrJDf_jvlLQACtFgyI1Y4H0Pv96LGE3dGuwPpMXgHxT8Yb6qStoBoOXlvT4UWp_sfUyrUdkIZK4yu3ZtTypaCtpv1vV_OBcb1QbrBAsqgYhwDZwQZIPJ2GSRqluMijvMD-BrAFgvMwLtICR3GCMxwV-SGArzE2CnGeFNdpkmdTHGdJhg_fItyLHQ)
-_In an effort to be transparent and controlled, we have created a programmatic workflow for incorporating revisions into the FAIRe checklist._
-
-### Do not edit by hand
-- `schema.yaml` — regenerated from slots + enums + classes.
+The checklist is a [LinkML](https://linkml.io) model. Each term is one YAML file in `slots/`; everything else is built from these files.
 
 ---
 
-### Latest Version
+### Latest version
 
-As described in #16, an issue was found with the excel generation scripts. v.1.02 has been restored as the correct excel files to download. v1.0.3 will be returned when the problem is fixed.
-~~**v1.0.3**, released on 2025-07-31~~
+**v1.0.2** (2025-07-02) is the current release: `FAIRe_checklist_v1.0.2.xlsx` (checklist, also in `latest_checklist/`), `FAIRe_checklist_v1.0.2_FULLtemplate.xlsx` (data template) and `FAIRe_checklist_v1.0.2_JP.xlsx` (Japanese).
+
+The next release (planned as v2.0.0) is being prepared on the `dev` branch. It renames and merges some terms; see the [CHANGELOG](CHANGELOG.md). Its Excel checklist and templates will be generated from the model (#147).
+
+---
+
+### Repository layout
+
+| Path | What it is |
+|---|---|
+| `slots/` | One YAML file per term (LinkML slot). The source of truth. |
+| `enums.yaml`, `types.yaml`, `classes.yaml` | Controlled vocabularies, value formats, and the tables (classes) each term belongs to. |
+| `schema_header.yaml` | Schema metadata (id, version, license) and prefixes. |
+| `schema.yaml` | **Generated.** The whole schema, built from the files above. Don't edit it by hand. |
+| `doc_gen_scripts/` | Build and check scripts. |
+| `VALIDATION_RULES.md` | The rules every pull request is checked against. |
+| `latest_checklist/`, `FAIRe_checklist_v1.0.2*.xlsx` | The Excel checklist and template of the current release (v1.0.2). |
+
+---
+
+### Changing a term
+
+1. Work on a branch off `dev`, and edit the term's file in `slots/` (or `enums.yaml`, `types.yaml`, `classes.yaml`).
+2. Rebuild the schema from the repository root (`pip install pyyaml`):
+   ```sh
+   python doc_gen_scripts/build_schema.py
+   ```
+3. Commit `schema.yaml` together with your change, and open a pull request into `dev`.
+
+Every pull request is checked automatically (`.github/workflows/pr-checks.yml`): `schema.yaml` must equal a fresh build, the schema must pass `linkml-lint`, every example must be valid, and the slot files must follow the conventions in [VALIDATION_RULES.md](VALIDATION_RULES.md). To run the checks locally (`pip install pyyaml linkml`):
+
+```sh
+python doc_gen_scripts/check_pr.py          # all rules
+python doc_gen_scripts/check_pr.py S B1     # all slot rules, and B1
+```
+
+The Excel scripts (`generate_checklist_excel.py`, `generate_FULLtemplate_excel.py`) are being updated for the model (#147). `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
 
 ---
 
 ### Changelog
 
-For a detailed record of updates and corrections in all versions, please see the [CHANGELOG.md](https://github.com/FAIR-eDNA/FAIRe_checklist/blob/main/CHANGELOG.md).
+For a record of changes in all versions, see the [CHANGELOG](CHANGELOG.md).
 
 ---
 
@@ -50,7 +63,7 @@ The build scripts in `doc_gen_scripts/` are licensed under the [MIT License](doc
 
 ### Feedback & Contributions
 
-We welcome your feedback and suggestions to improve the FAIRe checklist and templates.  
+We welcome your feedback and suggestions to improve the FAIRe checklist and templates.
 Please report any errors, typos, or enhancement ideas by [creating an Issue](https://github.com/FAIR-eDNA/FAIRe_checklist/issues) in this repository.
 
 ---
