@@ -1,219 +1,155 @@
+"""Build the classic Excel full template from schema.yaml (#147).
+
+Run from the repository root: python doc_gen_scripts/generate_FULLtemplate_excel.py
+(pip install pyyaml openpyxl pandas). Writes build/FAIRe_checklist_v<version>_FULLtemplate_classic.xlsx.
+
+The classic template keeps the layout of the v1.0 template: the same tabs, the rows of
+projectMetadata and the columns of the data tabs in the v1.0 checklist's row order
+(each term at its v1_row; retired terms keep their row in projectMetadata), and the
+"Drop-down values" sheet with the v1.0 terms first, in v1.0 order, then the terms that
+gained a controlled vocabulary since. Like v1.0, it has no in-cell drop-downs.
+"""
+import argparse
+import os
+from datetime import datetime
 
 import yaml
-from datetime import datetime
 from openpyxl import Workbook
+from openpyxl.comments import Comment
 from openpyxl.styles import Font, PatternFill
 from openpyxl.utils import get_column_letter
-from openpyxl.comments import Comment
-from collections import defaultdict
-from column_order import column_order
 
-# Load schema
-with open("schema.yaml", "r") as f:
-    schema = yaml.safe_load(f)
+from generate_checklist_excel import BUILD_DIR, build_rows
 
-slots = schema.get("slots", {})
-classes = schema.get("classes", {})
+level_colors = {"M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFFFF99", "O": "FFCCFF99"}
+level_names = {"M": "Mandatory", "HR": "Highly recommended", "R": "Recommended", "O": "Optional"}
 
-slot_to_classes = defaultdict(list)
-if isinstance(classes, dict):
-    for class_name, class_def in classes.items():
-        if not isinstance(class_def, dict):
-            continue
-        for slot_name in class_def.get("slots", []) or []:
-            slot_to_classes[slot_name].append(class_name)
-
-
-def slot_sections(slot):
-    subsets = slot.get("in_subset", [])
-    if isinstance(subsets, list):
-        return [s for s in subsets if s]
-    if isinstance(subsets, str) and subsets.strip():
-        return [subsets.strip()]
-    legacy = slot.get("annotations", {}).get("section", "")
-    return [legacy] if legacy else []
-
-# Extract version from schema
-schema_version = schema.get("version", "unknown")
-
-# Setup workbook
-wb = Workbook()
-ws_readme = wb.active
-ws_readme.title = "README"
-
-# README content
-ws_readme["A1"] = f"These templates were generated using the FAIR eDNA checklist version {schema_version}"
-ws_readme["A4"] = "Date/Time generated;"
-ws_readme["A5"] = datetime.now().isoformat()
-ws_readme["A7"] = (
-    "Note: This template includes all data components and terms from the FAIR eDNA checklist, "
-    "encompassing sections for both targeted assays and metabarcoding assay types.")
-ws_readme["A9"] = "Requirement levels;"
-readme_levels = [
-    ("A10", "M = Mandatory", "E26B0A"),
-    ("A11", "HR = Highly recommended", "F6CD46"),
-    ("A12", "R = Recommended", "FFFFA6"),
-    ("A13", "O = Optional", "D6FDA4")
-]
-
-def make_fill(hex_color):
-    return PatternFill(start_color="FF" + hex_color, end_color="FF" + hex_color, fill_type="solid")
-
-for cell, text, color in readme_levels:
-    ws_readme[cell] = text
-    ws_readme[cell].fill = make_fill(color)
-
-level_colors = {
-    "M": "E26B0A",
-    "HR": "F6CD46",
-    "R": "FFFFA6",
-    "O": "D6FDA4"
-}
-bold_font = Font(bold=True)
-
-# ProjectMetadata tab
-ws_proj = wb.create_sheet("projectMetadata")
-ws_proj.append(["requirement_level_code", "section", "term_name", "project_level"])
-for col in range(1, 5):
-    ws_proj.cell(row=1, column=col).font = bold_font
-
-for slot_name, slot in slots.items():
-    slot_classes = [c for c in slot_to_classes.get(slot_name, []) if c != "MetadataChecklist"]
-    if "projectMetadata" not in slot_classes:
-        continue
-    annotations = slot.get("annotations", {})
-    req = annotations.get("requirement_level_code", "")
-    section = " | ".join(slot_sections(slot))
-    ws_proj.append([req, section, slot_name, ""])
-    row = ws_proj.max_row
-    if req in level_colors:
-        ws_proj.cell(row=row, column=1).fill = make_fill(level_colors[req])
-    ws_proj.cell(row=row, column=3).font = bold_font
-    def first_example_value(s):
-        ex = s.get("examples", []) or []
-        if isinstance(ex, list) and ex:
-            item = ex[0]
-            if isinstance(item, dict):
-                return item.get("value", "")
-            return str(item)
-        return ""
-    comment_text = "\n".join(filter(None, [
-        slot.get("description", ""),
-        f"Example: {first_example_value(slot)}" if first_example_value(slot) else "",
-        f"Requirement: {req}" if req else "",
-        f"Field type: {slot.get('range')}" if slot.get("range") else ""
-    ]))
-    if comment_text:
-        ws_proj.cell(row=row, column=3).comment = Comment(comment_text, "FAIRe")
-
-# Prefix values for column A3 in selected tabs
-targeted_prefix = {
+# Tabs after projectMetadata, and the term in column A (row 3) of each.
+DATA_TABS = {
     "sampleMetadata": "samp_name",
     "ampData": "samp_name",
     "stdData": "samp_name",
-    "experimentRunMetadata": "samp_name",
     "eLowQuantData": "assay_name",
+    "experimentRunMetadata": "samp_name",
     "taxaRaw": "seq_id",
-    "taxaFinal": "seq_id"
+    "taxaFinal": "seq_id",
 }
+TAB_ORDER = ["README", "projectMetadata", "Drop-down values", "sampleMetadata", "ampData", "stdData",
+             "eLowQuantData", "experimentRunMetadata", "taxaRaw", "taxaFinal"]
+DROPDOWN_TYPES = ("controlled vocabulary", "Boolean")
 
-# Other data_type tabs
-data_type_slots = defaultdict(list)
-for class_name, class_def in classes.items():
-    if class_name == "MetadataChecklist" or not isinstance(class_def, dict):
-        continue
-    for slot_name in class_def.get("slots", []) or []:
-        slot = slots.get(slot_name)
-        if slot is not None:
-            data_type_slots[class_name].append((slot_name, slot))
 
-for dt, slot_list in sorted(data_type_slots.items()):
-    if dt == "projectMetadata":
-        continue
+def fill(color):
+    return PatternFill(start_color=color, end_color=color, fill_type="solid")
 
-    prefix = targeted_prefix.get(dt, "")
 
-    if dt in column_order:
-        slot_dict = {name: slot for name, slot in slot_list}
-        sorted_slot_list = [(name, slot_dict[name]) for name in column_order[dt] if name in slot_dict]
-    else:
-        sorted_slot_list = sorted(slot_list, key=lambda x: x[0])
+def tables(record):
+    return [t.strip() for t in record["data_type"].split("|") if t.strip()]
 
-    # Remove prefix column if it would be duplicated
-    if prefix and prefix in [name for name, _ in sorted_slot_list]:
-        sorted_slot_list = [(n, s) for n, s in sorted_slot_list if n != prefix]
 
-    ws = wb.create_sheet(title=dt)
-    ws.append(["# requirement_level_code"] + [slot.get("annotations", {}).get("requirement_level_code", "") for _, slot in sorted_slot_list])
-    ws.append(["# section"] + [" | ".join(slot_sections(slot)) for _, slot in sorted_slot_list])
-    ws.append([prefix] + [name for name, _ in sorted_slot_list])
-    for col, (slot_name, slot) in enumerate(sorted_slot_list, start=1):
-        col_letter = get_column_letter(col + 1)  # shift by 1 due to prefix column
-        level = slot.get("annotations", {}).get("requirement_level_code", "")
-        if level in level_colors:
-            for row in range(1, 4):
-                ws[f"{col_letter}{row}"].fill = make_fill(level_colors[level])
-        ws[f"{col_letter}3"].font = bold_font
-        comment_text = "\n".join(filter(None, [
-            slot.get("description", ""),
-            f"Example: {first_example_value(slot)}" if first_example_value(slot) else "",
-            f"Requirement: {level}" if level else ""
-        ]))
-        if comment_text:
-            ws[f"{col_letter}3"].comment = Comment(comment_text, "FAIRe")
+def comment_text(record, tab):
+    """The note on a term's cell, in the v1.0 template's wording."""
+    if not record["requirement_level_code"]:
+        return record["description"]
+    field_type = record["term_type"]
+    detail = record["fixed_format"] or record["controlled_vocabulary_options"]
+    if detail and field_type != "Boolean":
+        field_type += f" ({detail})"
+    lines = [f"Requirement level : {record['requirement_level']}",
+             f"Description : {record['description']}",
+             f"Example : {record['example'].split(' | ')[0] if record['example'] else ''}",
+             f"Field type : {field_type}"]
+    if tab == "sampleMetadata" and record["sample_type_specificity"]:
+        lines.append(f"Sample type(s) : {record['sample_type_specificity']}")
+    return "\n".join(lines) + ("" if tab == "sampleMetadata" and record["sample_type_specificity"] else "\n")
 
-# Drop-down values tab with expansion
-dropdown_rows = []
-max_options = 0
 
-for slot_name, slot in slots.items():
-    enum_values = slot.get("enum_values", {})
-    is_cv = isinstance(enum_values, dict) and bool(enum_values)
-    is_boolean = slot.get("range") == "boolean"
-    if not is_cv and not is_boolean:
-        continue
-    if isinstance(enum_values, dict):
-        options = list(enum_values.keys())
-    elif isinstance(enum_values, list):
-        options = [str(v) for v in enum_values]
-    elif is_boolean:
-        options = ["true", "false"]
-    else:
-        options = []
-    term_type = "controlled vocabulary" if is_cv else "Boolean"
-    max_options = max(max_options, len(options))
-    row = [slot_name, term_type, len(options), "|".join(options)] + options
-    dropdown_rows.append(row)
+def write_readme(ws, version):
+    ws["A1"] = "The templates were generated using the FAIR eDNA checklist version of;"
+    ws["A2"] = f"FAIRe_checklist_v{version}"
+    ws["A4"] = "Date/Time generated;"
+    ws["A5"] = datetime.now().astimezone().isoformat(timespec="seconds")
+    ws["A7"] = ("Note: This template includes all data components and terms from the FAIR eDNA checklist, "
+                "encompassing sections for both targeted assays and metabarcoding assay types.")
+    ws["A9"] = "Requirement levels;"
+    for row, code in enumerate(level_colors, start=10):
+        ws[f"A{row}"] = f"{code} = {level_names[code]}"
+        ws[f"A{row}"].fill = fill(level_colors[code])
 
-ws_dd = wb.create_sheet("Drop-down values")
-base_headers = ["term_name", "term_type", "n_options", "vocab_options"]
-vocab_headers = [f"vocab{i+1}" for i in range(max_options)]
-headers = base_headers + vocab_headers
-ws_dd.append(headers)
-for col in range(1, len(headers) + 1):
-    ws_dd.cell(row=1, column=col).font = bold_font
 
-for row in dropdown_rows:
-    ws_dd.append(row)
+def write_project_tab(ws, rows):
+    bold = Font(bold=True)
+    ws.append(["requirement_level_code", "section", "term_name", "project_level"])
+    for col in range(1, 5):
+        ws.cell(row=1, column=col).font = bold
+    for record in rows:
+        if "projectMetadata" not in tables(record):
+            continue
+        code = record["requirement_level_code"]
+        ws.append([code, record["section"], record["term_name"], None])
+        cell = ws.cell(row=ws.max_row, column=3)
+        cell.font = bold
+        cell.comment = Comment(comment_text(record, "projectMetadata"), "FAIRe")
+        if code in level_colors:
+            ws.cell(row=ws.max_row, column=1).fill = fill(level_colors[code])
 
-# Optional: reorder the tabs to a desired sequence
-desired_order = [
-    "README",
-    "projectMetadata",
-    "Drop-down values",
-    "sampleMetadata",
-    "ampData",
-    "stdData",
-    "experimentRunMetadata",
-    "eLowQuantData",
-    "taxaRaw",
-    "taxaFinal"
-]
 
-# Reorder sheets (only works with openpyxl >= 2.5)
-wb._sheets.sort(key=lambda ws: desired_order.index(ws.title) if ws.title in desired_order else 999)
+def write_data_tab(ws, tab, first_term, rows):
+    bold = Font(bold=True)
+    columns = [r for r in rows if tab in tables(r) and r["term_name"] != first_term]
+    ws.append(["# requirement_level_code"] + [r["requirement_level_code"] for r in columns])
+    ws.append(["# section"] + [r["section"] for r in columns])
+    ws.append([first_term] + [r["term_name"] for r in columns])
+    for col, record in enumerate(columns, start=2):
+        letter = get_column_letter(col)
+        code = record["requirement_level_code"]
+        if code in level_colors:
+            for row in (1, 2, 3):
+                ws[f"{letter}{row}"].fill = fill(level_colors[code])
+        ws[f"{letter}3"].font = bold
+        ws[f"{letter}3"].comment = Comment(comment_text(record, tab), "FAIRe")
 
-# Save final Excel file
-output_filename = f"FAIRe_checklist_v{schema_version}_FULLtemplate.xlsx"
-wb.save(output_filename)
 
+def write_dropdowns(ws, rows, v1_types):
+    """v1.0's drop-down terms first, in v1.0 order, then the ones added since."""
+    bold = Font(bold=True)
+    entries = [(row, r) for row, r in enumerate(rows, start=2) if r["term_type"] in DROPDOWN_TYPES]
+    entries.sort(key=lambda e: (v1_types.get(e[0]) not in DROPDOWN_TYPES, e[0]))
+    options = [[v.strip() for v in r["controlled_vocabulary_options"].split("|")] for _, r in entries]
+    width = max(len(o) for o in options)
+    ws.append(["term_name", "term_type", "vocab_options", "n_options"] + [f"vocab{i + 1}" for i in range(width)])
+    for col in range(1, width + 5):
+        ws.cell(row=1, column=col).font = bold
+    for (_, record), opts in zip(entries, options):
+        ws.append([record["term_name"], record["term_type"], record["controlled_vocabulary_options"],
+                   len(opts)] + opts)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--schema", default="schema.yaml")
+    parser.add_argument("--out-dir", default=BUILD_DIR)
+    args = parser.parse_args()
+
+    with open(args.schema, "r", encoding="utf-8") as handle:
+        schema = yaml.safe_load(handle)
+    rows, _, _, v1 = build_rows(schema)
+    v1_types = {row: v1[row]["term_type"] for row in v1}
+
+    wb = Workbook()
+    wb.active.title = "README"
+    write_readme(wb["README"], schema["version"])
+    write_project_tab(wb.create_sheet("projectMetadata"), rows)
+    write_dropdowns(wb.create_sheet("Drop-down values"), rows, v1_types)
+    for tab, first_term in DATA_TABS.items():
+        write_data_tab(wb.create_sheet(tab), tab, first_term, rows)
+    wb._sheets.sort(key=lambda ws: TAB_ORDER.index(ws.title))
+
+    os.makedirs(args.out_dir, exist_ok=True)
+    path = os.path.join(args.out_dir, f"FAIRe_checklist_v{schema['version']}_FULLtemplate_classic.xlsx")
+    wb.save(path)
+    print(f"Excel file written: {path}")
+
+
+if __name__ == "__main__":
+    main()

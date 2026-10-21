@@ -170,7 +170,7 @@ def slot_record(name, slot, enums, types, prefixes):
 
 
 def build_rows(schema):
-    """Checklist rows in v1.0 row order, and the v1.0 -> v2.0 changes."""
+    """Checklist rows in v1.0 row order, the v1.0 -> v2.0 changes, and the v1.0 URL and rows."""
     slots, enums, prefixes = schema["slots"], schema.get("enums") or {}, schema["prefixes"]
     types = schema.get("types") or {}
     url, by_row = None, {}
@@ -215,7 +215,7 @@ def build_rows(schema):
     extra = sorted(set(by_row) - set(v1))
     if extra:
         raise ValueError(f"v1_row beyond the v1.0 checklist: rows {extra}")
-    return rows, changes, url
+    return rows, changes, url, v1
 
 
 def write_workbook(rows, changes, glossary, v1_url, path):
@@ -274,7 +274,7 @@ def main():
     with open("slots/glossary_annotation.yaml", "r", encoding="utf-8") as handle:
         glossary = yaml.safe_load(handle)["annotations"]["glossary"]
 
-    rows, changes, v1_url = build_rows(schema)
+    rows, changes, v1_url, _ = build_rows(schema)
     os.makedirs(args.out_dir, exist_ok=True)
     path = os.path.join(args.out_dir, f"FAIRe_checklist_v{schema['version']}_classic.xlsx")
     write_workbook(rows, changes, glossary, v1_url, path)
