@@ -2,9 +2,12 @@ name: PR checks
 
 # The checks in VALIDATION_RULES.md (#21, #48). Nothing is committed: if schema.yaml is out of
 # date, rebuild it locally (python doc_gen_scripts/build_schema.py) and commit it.
+# Also runs on every push to dev, so changes merged locally without a pull request are checked.
 on:
   pull_request:
     branches: [dev, main]
+  push:
+    branches: [dev]
   workflow_dispatch:
 
 permissions:
