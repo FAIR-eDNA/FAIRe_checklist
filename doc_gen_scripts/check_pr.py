@@ -25,6 +25,8 @@ NUMERIC_RANGES = {"integer", "float", "double", "decimal"}
 GLOSSARY_FILENAME = "glossary_annotation.yaml"  # in slots/, but not a slot
 # S2: non-ASCII characters that carry meaning (µL is not uL; β is a parameter name).
 NON_ASCII_KEEP = {"µ", "β"}
+MAPPING_KEYS = ["exact_mappings", "close_mappings", "related_mappings", "narrow_mappings", "broad_mappings"]
+RETIRED_KEYS = {"structured_pattern", "settings", "domain_of", "enum_values"}
 
 ERROR = "Error"
 WARNING = "Warning"
@@ -199,6 +201,69 @@ def check_s2_non_ascii():
     return problems
 
 
+def check_s3_annotations_order():
+    """S3: annotations comes directly after in_subset."""
+    problems = []
+    for path, _, slot in slot_files():
+        keys = list(slot)
+        if "in_subset" in keys and "annotations" in keys and \
+                keys.index("annotations") != keys.index("in_subset") + 1:
+            problems.append(Problem("S3", ERROR, path, "annotations doesn't come directly after in_subset"))
+    return problems
+
+
+def check_s4_annotation_values():
+    """S4: annotation values are strings; several values are `|`-separated, never a YAML list."""
+    problems = []
+    for path, _, slot in slot_files():
+        for key, value in (slot.get("annotations") or {}).items():
+            if isinstance(value, list):
+                problems.append(Problem("S4", ERROR, path,
+                                        f"annotation {key} is a list; write the values as 'a | b'"))
+            elif not isinstance(value, str):
+                problems.append(Problem("S4", ERROR, path,
+                                        f"annotation {key} is {value!r} ({type(value).__name__}), not a string"))
+    return problems
+
+
+def check_s5_mapping_lists():
+    """S5: the five mapping lists sit directly on the slot; no mappings: key."""
+    problems = []
+    for path, _, slot in slot_files():
+        if "mappings" in slot:
+            problems.append(Problem("S5", ERROR, path, "has a mappings: key; use the five *_mappings lists"))
+        for key in MAPPING_KEYS:
+            if key not in slot:
+                problems.append(Problem("S5", ERROR, path, f"{key} is missing (write [] if empty)"))
+            elif not isinstance(slot[key], list):
+                problems.append(Problem("S5", ERROR, path, f"{key} is not a list"))
+    return problems
+
+
+def find_keys(value, keys):
+    """Every key in `keys` found anywhere in a nested dict/list."""
+    if isinstance(value, dict):
+        found = {k for k in value if k in keys}
+        for item in value.values():
+            found |= find_keys(item, keys)
+        return found
+    if isinstance(value, list):
+        return set().union(*(find_keys(item, keys) for item in value))
+    return set()
+
+
+def check_s11_retired_keys():
+    """S11: none of the retired keys."""
+    return [Problem("S11", ERROR, path, f"retired key {key}")
+            for path, _, slot in slot_files() for key in sorted(find_keys(slot, RETIRED_KEYS))]
+
+
+def check_s12_title():
+    """S12: every slot has a title."""
+    return [Problem("S12", ERROR, path, "no title")
+            for path, _, slot in slot_files() if not str(slot.get("title") or "").strip()]
+
+
 def check_s13_double_spaces():
     """S13: no double spaces in description."""
     return [Problem("S13", ERROR, path, "description has a double space")
@@ -218,6 +283,11 @@ CHECKS = {
     "B3": check_b3_examples,
     "S1": check_s1_description_block,
     "S2": check_s2_non_ascii,
+    "S3": check_s3_annotations_order,
+    "S4": check_s4_annotation_values,
+    "S5": check_s5_mapping_lists,
+    "S11": check_s11_retired_keys,
+    "S12": check_s12_title,
     "S13": check_s13_double_spaces,
     "S14": check_s14_full_stop,
 }
