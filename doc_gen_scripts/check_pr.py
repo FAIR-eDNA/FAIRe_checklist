@@ -9,6 +9,7 @@ at level Error fails; warnings are printed but don't fail the check.
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -27,6 +28,8 @@ GLOSSARY_FILENAME = "glossary_annotation.yaml"  # in slots/, but not a slot
 NON_ASCII_KEEP = {"µ", "β"}
 MAPPING_KEYS = ["exact_mappings", "close_mappings", "related_mappings", "narrow_mappings", "broad_mappings"]
 RETIRED_KEYS = {"structured_pattern", "settings", "domain_of", "enum_values"}
+CURIE = re.compile(r"^([A-Za-z_][A-Za-z0-9_.-]*):(\S+)$")
+FAIRE_URI = re.compile(r"^faire:\d{7}$")
 
 ERROR = "Error"
 WARNING = "Warning"
@@ -240,6 +243,77 @@ def check_s5_mapping_lists():
     return problems
 
 
+def slot_uris(slot):
+    """(field, value) for every URI on a slot: slot_uri, source, mappings, see_also."""
+    for key in ["slot_uri", "source"]:
+        if slot.get(key) is not None:
+            yield key, slot[key]
+    for key in MAPPING_KEYS + ["see_also"]:
+        for value in slot.get(key) or []:
+            yield key, value
+
+
+def check_s6_curies():
+    """S6: every URI is a CURIE whose prefix is declared in schema_header.yaml."""
+    prefixes = load_yaml("schema_header.yaml").get("prefixes") or {}
+    problems = []
+    for path, _, slot in slot_files():
+        for key, value in slot_uris(slot):
+            if isinstance(value, list):
+                continue  # a source list is S7's to report
+            match = CURIE.match(str(value))
+            if not match or str(value).startswith(("http://", "https://")):
+                problems.append(Problem("S6", ERROR, path, f"{key} {value!r} is not a CURIE"))
+            elif match.group(1) not in prefixes:
+                problems.append(Problem("S6", ERROR, path,
+                                        f"{key} {value!r}: prefix {match.group(1)!r} is not declared "
+                                        "in schema_header.yaml"))
+    return problems
+
+
+def check_s7_single_source():
+    """S7: source is one value or empty."""
+    return [Problem("S7", ERROR, path, f"source is a {type(slot['source']).__name__}, not one CURIE; "
+                                       "put institutions without a URI in keywords")
+            for path, _, slot in slot_files()
+            if slot.get("source") is not None and not isinstance(slot["source"], str)]
+
+
+def check_s8_slot_uri_vs_modifications():
+    """S8: an unmodified slot is its source term; a modified slot has a faire: URI."""
+    problems = []
+    for path, _, slot in slot_files():
+        modified = (slot.get("annotations") or {}).get("modifications_made")
+        source, uri = slot.get("source"), str(slot.get("slot_uri"))
+        if modified and not uri.startswith("faire:"):
+            problems.append(Problem("S8", ERROR, path,
+                                    f"modifications_made is {modified!r} but slot_uri is {uri}, not a faire: URI"))
+        elif not modified and isinstance(source, str) and not source.startswith("doi:") and uri != source:
+            problems.append(Problem("S8", ERROR, path,
+                                    f"no modifications_made, so slot_uri should be the source {source}, not {uri}"))
+    return problems
+
+
+def check_s9_faire_exact_mappings():
+    """S9: a slot with its own faire: URI has no exact mapping."""
+    return [Problem("S9", WARNING, path, f"has a faire: slot_uri and exact_mappings {slot['exact_mappings']}")
+            for path, _, slot in slot_files()
+            if str(slot.get("slot_uri")).startswith("faire:") and slot.get("exact_mappings")]
+
+
+def check_s10_faire_uris():
+    """S10: faire: URIs are faire: + 7 digits; no two slots share a slot_uri."""
+    problems, seen = [], {}
+    for path, _, slot in slot_files():
+        uri = str(slot.get("slot_uri"))
+        if uri.startswith("faire:") and not FAIRE_URI.match(uri):
+            problems.append(Problem("S10", ERROR, path, f"slot_uri {uri} is not faire: + 7 digits"))
+        if uri in seen:
+            problems.append(Problem("S10", ERROR, path, f"slot_uri {uri} is also used by {seen[uri]}"))
+        seen.setdefault(uri, path)
+    return problems
+
+
 def find_keys(value, keys):
     """Every key in `keys` found anywhere in a nested dict/list."""
     if isinstance(value, dict):
@@ -286,6 +360,11 @@ CHECKS = {
     "S3": check_s3_annotations_order,
     "S4": check_s4_annotation_values,
     "S5": check_s5_mapping_lists,
+    "S6": check_s6_curies,
+    "S7": check_s7_single_source,
+    "S8": check_s8_slot_uri_vs_modifications,
+    "S9": check_s9_faire_exact_mappings,
+    "S10": check_s10_faire_uris,
     "S11": check_s11_retired_keys,
     "S12": check_s12_title,
     "S13": check_s13_double_spaces,
