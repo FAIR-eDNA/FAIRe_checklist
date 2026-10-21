@@ -52,8 +52,6 @@ names (`é` in `José`).
 
 **Check:** any character outside ASCII that is not on the keep list.
 **Why.** Every character corrupted in the Excel -> YAML conversion was a typographic one. (#47)
-**Known exceptions:** `®` in `commercial_mm`, `pcr2_commercial_mm` (both removed by #42). Reported as
-warnings until then.
 
 ### S3. `annotations` comes directly after `in_subset` — Error (#44)
 
@@ -102,11 +100,7 @@ Patterns are a type in `types.yaml` or a plain `pattern:` on the slot.
 
 ### S13. No double spaces in `description` — Error (#90)
 
-### S14. `description` ends with a full stop — Warning (#96)
-
-**Known exceptions:** 5 descriptions end with a unit note, left as guidance in #96: the four
-`pcr_assay_lod/loq_LL/UL` slots ("Unit = same as pcr_assay_lod_unit") and `probe_conc` ("Unit = µM";
-its unit question is #109). Waits on a decision: add the full stop or exempt them.
+### S14. `description` ends with a full stop — Error (#96)
 
 ## Class and enum rules
 

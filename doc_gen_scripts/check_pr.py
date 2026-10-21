@@ -13,6 +13,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 
 import yaml
 
@@ -21,6 +22,9 @@ SLOTS_DIR = "slots"
 # Everything build_schema.py reads.
 BUILD_INPUTS = ["schema_header.yaml", "slots", "enums.yaml", "classes.yaml", "types.yaml", "doc_gen_scripts"]
 NUMERIC_RANGES = {"integer", "float", "double", "decimal"}
+GLOSSARY_FILENAME = "glossary_annotation.yaml"  # in slots/, but not a slot
+# S2: non-ASCII characters that carry meaning (µL is not uL; β is a parameter name).
+NON_ASCII_KEEP = {"µ", "β"}
 
 ERROR = "Error"
 WARNING = "Warning"
@@ -140,10 +144,82 @@ def check_b3_examples():
     return problems
 
 
+# --- Slot rules -----------------------------------------------------------------------
+
+
+def slot_files():
+    """(path, raw text, parsed YAML) for every slot file, as build_schema.py reads them."""
+    for name in sorted(os.listdir(SLOTS_DIR)):
+        if name.endswith(".yaml") and name != GLOSSARY_FILENAME:
+            path = f"{SLOTS_DIR}/{name}"
+            with open(path, "r", encoding="utf-8") as handle:
+                text = handle.read()
+            yield path, text, yaml.safe_load(text) or {}
+
+
+def check_s1_description_block():
+    """S1: description is a `>-` block, body indented exactly 2 spaces, no trailing whitespace."""
+    problems = []
+    for path, text, _ in slot_files():
+        lines = text.splitlines()
+        start = next((i for i, line in enumerate(lines) if line.startswith("description:")), None)
+        if start is None:
+            continue  # a missing description is linkml-lint's to report
+        if lines[start] != "description: >-":
+            problems.append(Problem("S1", ERROR, path,
+                                    f"line {start + 1} is {lines[start]!r}, not 'description: >-'"))
+            continue
+        for number, line in enumerate(lines[start + 1:], start + 2):
+            if line and not line[0].isspace():
+                break  # the next key
+            if not line:
+                problems.append(Problem("S1", WARNING, path,
+                                        f"line {number}: blank line inside the description (a newline in the value)"))
+            elif line != line.rstrip():
+                problems.append(Problem("S1", ERROR, path, f"line {number}: trailing whitespace"))
+            elif not line.startswith("  ") or line.startswith("   "):
+                problems.append(Problem("S1", ERROR, path,
+                                        f"line {number}: indented {len(line) - len(line.lstrip())} spaces, not 2"))
+    return problems
+
+
+def check_s2_non_ascii():
+    """S2: no characters outside ASCII except those that carry meaning."""
+    problems = []
+    for path, text, _ in slot_files():
+        for number, line in enumerate(text.splitlines(), 1):
+            for char in sorted(set(line)):
+                if ord(char) < 128 or char in NON_ASCII_KEEP:
+                    continue
+                name = unicodedata.name(char, "unknown")
+                # Accented letters in names (José); not the bare accents (´) or other symbols.
+                if name.startswith(("LATIN SMALL LETTER", "LATIN CAPITAL LETTER")):
+                    continue
+                problems.append(Problem("S2", ERROR, path, f"line {number}: {char!r} ({name})"))
+    return problems
+
+
+def check_s13_double_spaces():
+    """S13: no double spaces in description."""
+    return [Problem("S13", ERROR, path, "description has a double space")
+            for path, _, slot in slot_files() if "  " in str(slot.get("description") or "")]
+
+
+def check_s14_full_stop():
+    """S14: description ends with a full stop."""
+    return [Problem("S14", ERROR, path, "description doesn't end with a full stop")
+            for path, _, slot in slot_files()
+            if slot.get("description") and not str(slot["description"]).endswith(".")]
+
+
 CHECKS = {
     "B1": check_b1_build_matches,
     "B2": check_b2_lint,
     "B3": check_b3_examples,
+    "S1": check_s1_description_block,
+    "S2": check_s2_non_ascii,
+    "S13": check_s13_double_spaces,
+    "S14": check_s14_full_stop,
 }
 
 
@@ -152,7 +228,7 @@ def main():
     parser.add_argument("rules", nargs="*", help="rule IDs or groups to run (e.g. B1, B); default all")
     args = parser.parse_args()
     selected = [rule for rule in CHECKS
-                if not args.rules or any(rule == r or rule.startswith(r) for r in args.rules)]
+                if not args.rules or any(rule == r or rule[0] == r for r in args.rules)]
 
     problems = []
     for rule in selected:
