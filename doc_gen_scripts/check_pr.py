@@ -30,6 +30,7 @@ MAPPING_KEYS = ["exact_mappings", "close_mappings", "related_mappings", "narrow_
 RETIRED_KEYS = {"structured_pattern", "settings", "domain_of", "enum_values"}
 CURIE = re.compile(r"^([A-Za-z_][A-Za-z0-9_.-]*):(\S+)$")
 FAIRE_URI = re.compile(r"^faire:\d{7}$")
+ALL_SLOTS_CLASS = "MetadataChecklist"  # every slot; not a table (C2)
 
 ERROR = "Error"
 WARNING = "Warning"
@@ -351,6 +352,76 @@ def check_s14_full_stop():
             if slot.get("description") and not str(slot["description"]).endswith(".")]
 
 
+# --- Class and enum rules -------------------------------------------------------------
+
+
+def class_slots():
+    """{class name: [slot names]} from classes.yaml."""
+    classes = load_yaml("classes.yaml").get("classes") or {}
+    return {name: (cls or {}).get("slots") or [] for name, cls in classes.items()}
+
+
+def check_c1_classes():
+    """C1: every slot is in a class; classes list only existing slots."""
+    slots = {slot.get("name"): path for path, _, slot in slot_files()}
+    classes = class_slots()
+    used = {name for members in classes.values() for name in members}
+    problems = [Problem("C1", ERROR, path, f"{name} is in no class in classes.yaml")
+                for name, path in slots.items() if name not in used]
+    problems += [Problem("C1", ERROR, "classes.yaml", f"class {cls} lists {name}, which has no slot file")
+                 for cls, members in classes.items() for name in members if name not in slots]
+    return problems
+
+
+def check_c2_data_type():
+    """C2: the data_type annotation names the same tables as classes.yaml."""
+    in_classes = {}
+    for cls, members in class_slots().items():
+        if cls != ALL_SLOTS_CLASS:
+            for name in members:
+                in_classes.setdefault(name, set()).add(cls)
+    problems = []
+    for path, _, slot in slot_files():
+        data_type = str((slot.get("annotations") or {}).get("data_type") or "")
+        annotated = {table.strip() for table in data_type.split("|") if table.strip()}
+        classes = in_classes.get(slot.get("name"), set())
+        if annotated != classes:
+            problems.append(Problem("C2", ERROR, path,
+                                    f"data_type is {' | '.join(sorted(annotated)) or 'empty'} but classes.yaml "
+                                    f"has it in {' | '.join(sorted(classes)) or 'no table'}"))
+    return problems
+
+
+def check_e1_duplicate_enums():
+    """E1: no two enums have the same values."""
+    enums = load_yaml("enums.yaml").get("enums") or {}
+    problems, seen = [], {}
+    for name, enum in enums.items():
+        values = frozenset((enum or {}).get("permissible_values") or {})
+        if values in seen:
+            problems.append(Problem("E1", ERROR, "enums.yaml",
+                                    f"{name} has the same values as {seen[values]}; use one enum"))
+        seen.setdefault(values, name)
+    return problems
+
+
+def check_e2_meanings():
+    """E2: an enum value's meaning is a CURIE with a declared prefix."""
+    prefixes = load_yaml("schema_header.yaml").get("prefixes") or {}
+    problems = []
+    for name, enum in (load_yaml("enums.yaml").get("enums") or {}).items():
+        for value, definition in ((enum or {}).get("permissible_values") or {}).items():
+            meaning = (definition or {}).get("meaning")
+            if meaning is None:
+                continue
+            match = CURIE.match(str(meaning))
+            if not match or str(meaning).startswith(("http://", "https://")) or match.group(1) not in prefixes:
+                problems.append(Problem("E2", WARNING, "enums.yaml",
+                                        f"{name} value {value!r}: meaning {meaning} is not a CURIE with a "
+                                        "prefix declared in schema_header.yaml"))
+    return problems
+
+
 CHECKS = {
     "B1": check_b1_build_matches,
     "B2": check_b2_lint,
@@ -369,6 +440,10 @@ CHECKS = {
     "S12": check_s12_title,
     "S13": check_s13_double_spaces,
     "S14": check_s14_full_stop,
+    "C1": check_c1_classes,
+    "C2": check_c2_data_type,
+    "E1": check_e1_duplicate_enums,
+    "E2": check_e2_meanings,
 }
 
 
