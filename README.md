@@ -41,6 +41,13 @@ For a detailed record of updates and corrections in all versions, please see the
 
 ---
 
+### License
+
+The FAIRe checklist, the schema (`slots/`, `enums.yaml`, `classes.yaml`, `types.yaml`, `schema.yaml`) and the templates are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (see [LICENSE](LICENSE)): reuse and adapt them freely, with attribution.
+The build scripts in `doc_gen_scripts/` are licensed under the [MIT License](doc_gen_scripts/LICENSE).
+
+---
+
 ### Feedback & Contributions
 
 We welcome your feedback and suggestions to improve the FAIRe checklist and templates.  
