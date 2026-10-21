@@ -88,7 +88,14 @@ def ranges(slot):
     return [x.get("range") for x in any_of] if any_of else [slot.get("range")]
 
 
-def term_type(slot, enums):
+def pattern(slot, types):
+    """The slot's own pattern, else the pattern of its type (e.g. Timestamp, EnvoTerm)."""
+    if slot.get("pattern"):
+        return slot["pattern"]
+    return (types.get(slot.get("range")) or {}).get("pattern", "")
+
+
+def term_type(slot, enums, types):
     rs = ranges(slot)
     if "BooleanEnum" in rs:
         return "Boolean"
@@ -101,6 +108,8 @@ def term_type(slot, enums):
         return "numeric"
     if "integer" in rs:
         return "integer"
+    if pattern(slot, types):
+        return "fixed format"
     return "free text"
 
 
@@ -137,7 +146,7 @@ def unit(slot):
     return str(u or "")
 
 
-def slot_record(name, slot, enums, prefixes):
+def slot_record(name, slot, enums, types, prefixes):
     ann = slot.get("annotations") or {}
     subsets = slot.get("in_subset") or []
     return {
@@ -148,9 +157,9 @@ def slot_record(name, slot, enums, prefixes):
         "requirement_level_code": ann.get("requirement_level_code", ""),
         "requirement_level": ann.get("requirement_level", ""),
         "requirement_level_condition": ann.get("requirement_level_condition", ""),
-        "term_type": term_type(slot, enums),
+        "term_type": term_type(slot, enums, types),
         "unit": unit(slot),
-        "fixed_format": "",
+        "fixed_format": pattern(slot, types) if term_type(slot, enums, types) == "fixed format" else "",
         "controlled_vocabulary_options": vocabulary(slot, enums),
         "example": examples(slot),
         "sample_type_specificity": ann.get("sample_type_specificity", ""),
@@ -163,6 +172,7 @@ def slot_record(name, slot, enums, prefixes):
 def build_rows(schema):
     """Checklist rows in v1.0 row order, and the v1.0 -> v2.0 changes."""
     slots, enums, prefixes = schema["slots"], schema.get("enums") or {}, schema["prefixes"]
+    types = schema.get("types") or {}
     url, by_row = None, {}
     for name, slot in slots.items():
         slot_url, row = v1_row(name, slot)
@@ -183,7 +193,7 @@ def build_rows(schema):
         old = v1[row]["term_name"]
         name = by_row.get(row)
         if name:
-            rows.append(slot_record(name, slots[name], enums, prefixes))
+            rows.append(slot_record(name, slots[name], enums, types, prefixes))
             if name != old:
                 aliases = slots[name].get("aliases") or []
                 if old in aliases and len(aliases) > 1:
