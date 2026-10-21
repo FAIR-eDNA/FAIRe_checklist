@@ -12,6 +12,11 @@ description: >-
   composition, probabilistic) and the computational pipeline recorded in
   otu_seq_comp_appr.
 comments:
+  - The same number can mean different things, so read it together with tax_assign_cat
+    and otu_seq_comp_appr. For example, 0.97 is a bootstrap confidence (0-1) when
+    tax_assign_cat is "sequence composition" and otu_seq_comp_appr is a naive Bayes
+    classifier such as QIIME 2's classify-sklearn. It is a posterior probability when
+    tax_assign_cat is "probabilistic" and otu_seq_comp_appr is PROTAX.
   - Named confidence_score in FAIRe v1.0 (#150).
 in_subset:
   - OTU/ASV
