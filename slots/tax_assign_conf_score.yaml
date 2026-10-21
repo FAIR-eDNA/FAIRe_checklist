@@ -1,0 +1,39 @@
+name: tax_assign_conf_score
+aliases:
+  - confidence_score
+title: taxonomic assignment confidence score
+local_names:
+  tdwg-naming-conventions: taxonomicAssignmentConfidenceScore
+  gsc-naming-conventions: tax_assign_conf
+description: >-
+  Numerical confidence, probability, or support value assigned to a taxonomic
+  identification. Interpretation and scale of this value depend directly on the
+  categorization reported in tax_assign_cat (e.g., sequence similarity, sequence
+  composition, probabilistic) and the computational pipeline recorded in
+  otu_seq_comp_appr.
+comments:
+  - The same number can mean different things, so read it together with tax_assign_cat
+    and otu_seq_comp_appr. For example, 0.97 is a bootstrap confidence (0-1) when
+    tax_assign_cat is "sequence composition" and otu_seq_comp_appr is a naive Bayes
+    classifier such as QIIME 2's classify-sklearn. It is a posterior probability when
+    tax_assign_cat is "probabilistic" and otu_seq_comp_appr is PROTAX.
+  - Named confidence_score in FAIRe v1.0 (#150).
+in_subset:
+  - OTU/ASV
+annotations:
+  data_type: taxaRaw | taxaFinal
+  requirement_level: Recommended
+  requirement_level_code: R
+slot_uri: faire:0000036
+range: float
+required: false
+recommended: true
+examples:
+- value: '0.997'
+  description: null
+source:
+exact_mappings: []
+close_mappings: []
+related_mappings: []
+narrow_mappings: []
+broad_mappings: []

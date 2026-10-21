@@ -44,7 +44,7 @@ classes:
     - concentration
     - concentration_method
     - concentration_unit
-    - confidence_score
+    - tax_assign_conf_score
     - dataGeneralizations
     - date_ext
     - decimalLatitude
@@ -696,7 +696,7 @@ classes:
     - accession_id
     - accession_id_ref_db
     - class
-    - confidence_score
+    - tax_assign_conf_score
     - dna_sequence
     - family
     - genus
@@ -720,7 +720,7 @@ classes:
     - accession_id
     - accession_id_ref_db
     - class
-    - confidence_score
+    - tax_assign_conf_score
     - dna_sequence
     - family
     - genus
