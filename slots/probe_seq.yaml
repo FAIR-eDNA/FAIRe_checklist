@@ -5,6 +5,11 @@ local_names:
   gsc-naming-conventions: probe_seq
 description: >-
   If applicable, probe sequence in the 5' to 3' direction.
+  Bases are uppercase IUPAC nucleotide codes, with I for inosine; modifications are
+  written as slash-delimited supplier codes such as /C3/ (see the
+  ModifiedOligoSequence type).
+  Reporter and quencher names may still be recorded in probeReporter and
+  probeQuencher.
 in_subset:
   - PCR
 annotations:
@@ -12,7 +17,7 @@ annotations:
   requirement_level: Highly recommended
   requirement_level_code: HR
 slot_uri: faire:0000201
-range: string
+range: ModifiedOligoSequence
 required: false
 recommended: true
 examples:
