@@ -12,7 +12,7 @@ The checklist is a [LinkML](https://linkml.io) model. Each term is one YAML file
 
 v1.0.2 is archived on Zenodo: [doi:10.5281/zenodo.23573670](https://doi.org/10.5281/zenodo.23573670) (tag `v1.0.2` on the `v1.0.x` branch). The archive is the version as first released on 2025-07-02, with a README, LICENSE and Zenodo metadata added; the Japanese translation, added later, isn't in it.
 
-The next release (planned as v2.0.0) is being prepared on the `dev` branch. It renames and merges some terms; see the [CHANGELOG](CHANGELOG.md). Its Excel checklist and templates will be generated from the model (#147).
+The next release (planned as v2.0.0) is being prepared on the `dev` branch. It renames and merges some terms; see the [CHANGELOG](CHANGELOG.md). Its Excel checklist and template are built from the model into `excel/` (#147). **The files in `excel/` on `dev` are drafts of the version being prepared, not a release**; released versions are on `main`, tagged, and on Zenodo.
 
 ---
 
@@ -26,6 +26,7 @@ The next release (planned as v2.0.0) is being prepared on the `dev` branch. It r
 | `schema.yaml` | **Generated.** The whole schema, built from the files above and committed automatically on `dev`. Don't edit or build it by hand. |
 | `doc_gen_scripts/` | Build and check scripts. |
 | `VALIDATION_RULES.md` | The rules every pull request is checked against. |
+| `excel/` | **Generated.** The Excel checklist and full template, built from `schema.yaml` and committed automatically on `dev` (#147). On `dev` they are drafts of the next release. |
 | `latest_checklist/`, `FAIRe_checklist_v1.0.2*.xlsx` | The Excel checklist and template of the current release (v1.0.2). |
 
 ---
@@ -38,7 +39,7 @@ The next release (planned as v2.0.0) is being prepared on the `dev` branch. It r
 
 Every pull request is checked automatically (`.github/workflows/pr-checks.yml`) on a fresh build of the schema: it must build, pass `linkml-lint`, every example must be valid, and the slot files must follow the conventions in [VALIDATION_RULES.md](VALIDATION_RULES.md).
 
-When the pull request is merged, `.github/workflows/build-schema.yml` rebuilds `schema.yaml`, commits it to `dev` (as `github-actions[bot]`; the run's log and summary say what changed) and runs the checks again. `schema.yaml` on `origin/dev` and `origin/main` is the source of truth, so pull `dev` after a merge. If a branch of yours conflicts on `schema.yaml`, take the version from `dev`.
+When the pull request is merged, `.github/workflows/build-schema.yml` rebuilds `schema.yaml` and the Excel files in `excel/`, commits what changed to `dev` (as `github-actions[bot]`; the run's log and summary say what changed) and runs the checks again. `schema.yaml` and `excel/` on `origin/dev` and `origin/main` are the source of truth, so pull `dev` after a merge. If a branch of yours conflicts on `schema.yaml` or `excel/`, take the version from `dev`.
 
 To run the checks locally (`pip install pyyaml linkml`):
 
@@ -49,7 +50,7 @@ python doc_gen_scripts/check_pr.py S B1     # all slot rules, and B1
 
 To look at the built schema locally: `python doc_gen_scripts/build_schema.py` (`pip install pyyaml`); don't commit the result.
 
-The Excel scripts (`generate_checklist_excel.py`, `generate_FULLtemplate_excel.py`) are being updated for the model (#147). `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
+The Excel files are built by `generate_checklist_excel.py` and `generate_FULLtemplate_excel.py` (`pip install pyyaml openpyxl pandas`; run `build_schema.py` first). They keep the v1.0 layout: the same rows, columns and tabs, so tools that read terms by position keep working. They are dated by the last commit that changed the model or these scripts, so a rebuild only changes them when those change. To look at them locally, build into `build/` (`--out-dir build`, ignored by git); don't commit `excel/` by hand. `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
 
 ---
 

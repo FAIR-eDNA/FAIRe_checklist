@@ -9,12 +9,19 @@ term. Each slot's v1_row annotation links to that row in the published v1.0 Exce
 (sheet checklist, column C). The v1.0 Excel is downloaded once into build/ and used to
 check the rows and to fill the rows of retired terms and the "v1.0 to v2.0" sheet. The
 formatting (fonts, colours, empty cells, text in a shared-strings table) follows v1.0.2.
+
+The files are dated by the last commit that changed what they are built from (the model or
+these two scripts), not by the time of the build, so a rebuild gives byte-identical files
+until one of those changes.
 """
 import argparse
 import os
 import re
+import subprocess
+import sys
 import urllib.request
 import zipfile
+from datetime import datetime, timezone
 
 import pandas as pd
 import yaml
@@ -22,6 +29,9 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
 
 BUILD_DIR = "build"
+# What the Excel files are built from; the last commit that changed any of them dates the files.
+SOURCE_PATHS = ["slots", "enums.yaml", "classes.yaml", "types.yaml", "schema_header.yaml",
+                "doc_gen_scripts/generate_checklist_excel.py", "doc_gen_scripts/generate_FULLtemplate_excel.py"]
 V1_ROW_RE = re.compile(r"^(https://\S+\.xlsx)#checklist!C(\d+)$")
 
 # v1.0.2 sets the font of every cell it writes: Calibri 11, black.
@@ -238,9 +248,26 @@ def set_views(wb):
         ws.sheet_view.showGridLines = True
 
 
-def save(wb, path):
+def source_date():
+    """The date of the last commit on this branch that changed SOURCE_PATHS (a merge into dev
+    counts as the date of the merge). Outside a git checkout: now, with a warning."""
+    try:
+        out = subprocess.run(["git", "log", "-1", "--first-parent", "--format=%cI", "--", *SOURCE_PATHS],
+                             capture_output=True, text=True, check=True).stdout.strip()
+        if out:
+            return datetime.fromisoformat(out)
+    except (OSError, subprocess.CalledProcessError):
+        pass
+    print("Warning: no git history; dating the Excel files now.", file=sys.stderr)
+    return datetime.now().astimezone().replace(microsecond=0)
+
+
+def save(wb, path, date):
     """Save with text in a shared-strings table, as Excel does (openpyxl writes it into
-    each cell as an inline string)."""
+    each cell as an inline string). The file's properties and the zip entries carry the
+    source date, so the same sources always give the same bytes."""
+    utc = date.astimezone(timezone.utc).replace(tzinfo=None)
+    wb.properties.created = wb.properties.modified = utc
     wb.save(path)
     with zipfile.ZipFile(path) as z:
         parts = [(info, z.read(info.filename)) for info in z.infolist()]
@@ -255,10 +282,14 @@ def save(wb, path):
         return b"<c " + match.group(1) + b't="s"><v>' + str(index[text]).encode() + b"</v></c>"
 
     cell = re.compile(rb'<c ([^>]*?)t="inlineStr"\s*(/>|></c>|><is><t(?: [^>]*)?>(.*?)</t></is></c>)', re.S)
+    w3c = utc.strftime("%Y-%m-%dT%H:%M:%SZ").encode()
     out = []
     for info, data in parts:
         if info.filename.startswith("xl/worksheets/sheet"):
             data = cell.sub(shared, data)
+        elif info.filename == "docProps/core.xml":
+            # openpyxl sets "modified" to the time of saving.
+            data = re.sub(rb"(<dcterms:modified[^>]*>)[^<]*", lambda m: m.group(1) + w3c, data)
         elif info.filename == "[Content_Types].xml":
             data = data.replace(b"</Types>", b'<Override PartName="/xl/sharedStrings.xml" ContentType="application/'
                                 b'vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/></Types>')
@@ -272,13 +303,13 @@ def save(wb, path):
     sst = (b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<sst xmlns="http://schemas.openxmlformats.org/'
            b'spreadsheetml/2006/main" count="%d" uniqueCount="%d">' % (refs[0], len(strings))
            + items + b"</sst>")
+    stamp = utc.timetuple()[:6]
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
-        for info, data in out:
-            z.writestr(info, data)
-        z.writestr("xl/sharedStrings.xml", sst)
+        for name, data in [(info.filename, data) for info, data in out] + [("xl/sharedStrings.xml", sst)]:
+            z.writestr(zipfile.ZipInfo(name, date_time=stamp), data, compress_type=zipfile.ZIP_DEFLATED)
 
 
-def write_workbook(rows, changes, glossary, v1_url, path):
+def write_workbook(rows, changes, glossary, v1_url, path, date):
     wb = Workbook()
     ws_readme = wb.active
     ws_readme.title = "README"
@@ -321,7 +352,7 @@ def write_workbook(rows, changes, glossary, v1_url, path):
             put(ws_changes, i, col_num, value)
 
     set_views(wb)
-    save(wb, path)
+    save(wb, path, date)
 
 
 def main():
@@ -338,7 +369,7 @@ def main():
     rows, changes, v1_url, _ = build_rows(schema)
     os.makedirs(args.out_dir, exist_ok=True)
     path = os.path.join(args.out_dir, f"FAIRe_checklist_v{schema['version']}_classic.xlsx")
-    write_workbook(rows, changes, glossary, v1_url, path)
+    write_workbook(rows, changes, glossary, v1_url, path, source_date())
     print(f"Excel file written: {path} ({len(rows)} rows, {len(changes)} changed since v1.0)")
 
 

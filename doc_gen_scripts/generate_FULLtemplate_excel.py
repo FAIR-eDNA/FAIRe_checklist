@@ -13,7 +13,6 @@ notes on the term names have bold labels, with Mandatory and the value list in r
 """
 import argparse
 import os
-from datetime import datetime
 
 import yaml
 from openpyxl import Workbook
@@ -25,7 +24,7 @@ from openpyxl.styles.colors import Color
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-from generate_checklist_excel import BOLD, BUILD_DIR, FONT, build_rows, put, save, set_views
+from generate_checklist_excel import BOLD, BUILD_DIR, FONT, build_rows, put, save, set_views, source_date
 
 level_colors = {"M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFFFF99", "O": "FFCCFF99"}
 level_names = {"M": "Mandatory", "HR": "Highly recommended", "R": "Recommended", "O": "Optional"}
@@ -114,10 +113,11 @@ def comment(record, tab):
     return RichComment(runs, "FAIRe")
 
 
-def write_readme(ws, version):
+def write_readme(ws, version, date):
+    """date: when the sources last changed (see source_date), not the time of the build."""
     lines = ["The templates were generated using the FAIR eDNA checklist version of;",
              f"FAIRe_checklist_v{version}", "", "Date/Time generated;",
-             datetime.now().astimezone().isoformat(timespec="seconds"), "",
+             date.isoformat(timespec="seconds"), "",
              "Note: This template includes all data components and terms from the FAIR eDNA checklist, "
              "encompassing sections for both targeted assays and metabarcoding assay types.", "",
              "Requirement levels;"]
@@ -206,9 +206,10 @@ def main():
     rows, _, _, v1 = build_rows(schema)
     v1_types = {row: v1[row]["term_type"] for row in v1}
 
+    date = source_date()
     wb = Workbook()
     wb.active.title = "README"
-    write_readme(wb["README"], schema["version"])
+    write_readme(wb["README"], schema["version"], date)
     dropdowns = write_dropdowns(wb.create_sheet("Drop-down values"), rows, v1_types)
     write_project_tab(wb.create_sheet("projectMetadata"), rows, dropdowns)
     for tab, first_term in DATA_TABS.items():
@@ -218,7 +219,7 @@ def main():
 
     os.makedirs(args.out_dir, exist_ok=True)
     path = os.path.join(args.out_dir, f"FAIRe_checklist_v{schema['version']}_FULLtemplate_classic.xlsx")
-    save(wb, path)
+    save(wb, path, date)
     print(f"Excel file written: {path}")
 
 

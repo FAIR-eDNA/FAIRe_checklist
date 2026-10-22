@@ -27,7 +27,15 @@ jobs:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        run: pip install pyyaml linkml==1.10.0
+        run: pip install pyyaml linkml==1.10.0 openpyxl==3.1.5 pandas
 
       - name: Run checks
         run: python doc_gen_scripts/check_pr.py ${{ (github.base_ref == 'main' || github.ref == 'refs/heads/main') && '--strict-build' || '' }}
+
+      # The Excel files must still build from this change (#147). They are built into build/
+      # and not kept; build-schema.yml commits them to excel/ after the merge into dev.
+      - name: Build the Excel files
+        run: |
+          python doc_gen_scripts/build_schema.py
+          python doc_gen_scripts/generate_checklist_excel.py --out-dir build
+          python doc_gen_scripts/generate_FULLtemplate_excel.py --out-dir build

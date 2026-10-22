@@ -1,10 +1,15 @@
 name: Build schema
 
 # On every push to dev (including merged pull requests): rebuild schema.yaml from slots/,
-# enums.yaml, types.yaml, classes.yaml and schema_header.yaml, commit it if it changed, then
-# run all checks (#21). schema.yaml on origin/dev is the source of truth: don't build or
-# commit it by hand. main is not rebuilt; it gets schema.yaml from dev in the release merge,
-# and pr-checks.yml verifies it there (--strict-build).
+# enums.yaml, types.yaml, classes.yaml and schema_header.yaml, then the Excel checklist and
+# template in excel/ from schema.yaml (#147), commit whatever changed, then run all checks
+# (#21). schema.yaml and excel/ on origin/dev are the source of truth: don't build or commit
+# them by hand. main is not rebuilt; it gets them from dev in the release merge, and
+# pr-checks.yml verifies schema.yaml there (--strict-build).
+#
+# The Excel files are dated by the last commit that changed the model or the two Excel
+# scripts (not the build time), so they only change, and are only committed, when those do. This needs the full
+# history (fetch-depth: 0) and a pinned openpyxl.
 #
 # The commit is pushed with GITHUB_TOKEN, which doesn't start other workflows, so the bot's
 # own commit doesn't trigger this workflow again.
@@ -29,6 +34,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: dev
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -36,34 +42,44 @@ jobs:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        run: pip install pyyaml linkml==1.10.0
+        run: pip install pyyaml linkml==1.10.0 openpyxl==3.1.5 pandas
 
       - name: Build schema.yaml
         run: python doc_gen_scripts/build_schema.py
 
-      - name: Commit schema.yaml if it changed
+      - name: Build the Excel files
         run: |
-          if git diff --quiet -- schema.yaml; then
-            echo "::notice title=schema.yaml up to date::A fresh build equals the committed schema.yaml; nothing to commit."
-            echo "### schema.yaml already up to date" >> "$GITHUB_STEP_SUMMARY"
+          # Start from an empty excel/, so files of an earlier version number don't linger.
+          rm -f excel/*.xlsx
+          python doc_gen_scripts/generate_checklist_excel.py --out-dir excel
+          python doc_gen_scripts/generate_FULLtemplate_excel.py --out-dir excel
+
+      - name: Commit schema.yaml and the Excel files if they changed
+        run: |
+          git add schema.yaml
+          git add -A excel
+          if git diff --cached --quiet; then
+            echo "::notice title=Build up to date::Fresh builds equal the committed schema.yaml and excel/; nothing to commit."
+            echo "### schema.yaml and excel/ already up to date" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           {
-            echo "### schema.yaml rebuilt and committed"
+            echo "### Rebuilt and committed"
             echo
             echo '```'
-            git diff --stat -- schema.yaml
+            git diff --cached --stat
             echo '```'
-            python doc_gen_scripts/schema_changes.py
+            if ! git diff --cached --quiet -- schema.yaml; then
+              python doc_gen_scripts/schema_changes.py
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add schema.yaml
-          git commit -m "Rebuild schema.yaml (automated)" \
+          git commit -m "Rebuild schema.yaml and Excel files (automated)" \
                      -m "Built from $(git rev-parse --short HEAD) by the Build schema workflow (run $GITHUB_RUN_ID)."
           git push origin HEAD:dev
           sha=$(git rev-parse --short HEAD)
-          echo "::warning title=schema.yaml rebuilt::schema.yaml was out of date and has been rebuilt and committed to dev as $sha. Pull dev before starting new work."
+          echo "::warning title=Build committed::schema.yaml and/or excel/ were out of date and have been rebuilt and committed to dev as $sha. Pull dev before starting new work."
           echo >> "$GITHUB_STEP_SUMMARY"
           echo "Committed to dev as \`$sha\`. Pull dev before starting new work." >> "$GITHUB_STEP_SUMMARY"
 
