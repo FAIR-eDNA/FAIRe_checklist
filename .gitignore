@@ -1,3 +1,4 @@
 .DS_Store
 __pycache__
-temporary_slot_scripts/build/
+temporary_slot_scripts/
+build/
