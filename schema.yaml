@@ -890,8 +890,8 @@ slots:
     required: true
     recommended: false
     examples:
-    - value: doi:10.5281/zenodo.1234567
-      description: Example of the syntax only; not a real DOI.
+    - value: doi:10.5281/zenodo.23573670
+      description: FAIRe checklist v1.0.2.
     source: null
     exact_mappings: []
     close_mappings: []

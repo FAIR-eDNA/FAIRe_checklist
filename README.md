@@ -10,6 +10,8 @@ The checklist is a [LinkML](https://linkml.io) model. Each term is one YAML file
 
 **v1.0.2** (2025-07-02) is the current release: `FAIRe_checklist_v1.0.2.xlsx` (checklist, also in `latest_checklist/`), `FAIRe_checklist_v1.0.2_FULLtemplate.xlsx` (data template) and `FAIRe_checklist_v1.0.2_JP.xlsx` (Japanese).
 
+v1.0.2 is archived on Zenodo: [doi:10.5281/zenodo.23573670](https://doi.org/10.5281/zenodo.23573670) (tag `v1.0.2` on the `v1.0.x` branch). The archive is the version as first released on 2025-07-02, with a README, LICENSE and Zenodo metadata added; the Japanese translation, added later, isn't in it.
+
 The next release (planned as v2.0.0) is being prepared on the `dev` branch. It renames and merges some terms; see the [CHANGELOG](CHANGELOG.md). Its Excel checklist and templates will be generated from the model (#147).
 
 ---
@@ -48,6 +50,14 @@ python doc_gen_scripts/check_pr.py S B1     # all slot rules, and B1
 To look at the built schema locally: `python doc_gen_scripts/build_schema.py` (`pip install pyyaml`); don't commit the result.
 
 The Excel scripts (`generate_checklist_excel.py`, `generate_FULLtemplate_excel.py`) are being updated for the model (#147). `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
+
+---
+
+### How to cite
+
+Cite the checklist by its Zenodo DOI. [doi:10.5281/zenodo.23573669](https://doi.org/10.5281/zenodo.23573669) always points to the latest version; each version also has its own DOI (v1.0.2: [doi:10.5281/zenodo.23573670](https://doi.org/10.5281/zenodo.23573670)). Please also cite the paper:
+
+Takahashi, M., et al. (2025). A Metadata Checklist and Data Formatting Guidelines to Make eDNA FAIR (Findable, Accessible, Interoperable, and Reusable). *Environmental DNA*, 7(3), e70100. https://doi.org/10.1002/edn3.70100
 
 ---
 
