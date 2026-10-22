@@ -12,6 +12,7 @@ annotations:
   requirement_level: Optional
   requirement_level_code: O
   modifications_made: description | field_type
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C157
 keywords:
   - MIQE
 slot_uri: faire:0000015

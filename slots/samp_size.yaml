@@ -16,6 +16,7 @@ annotations:
   requirement_level_code: HR
   sample_type_specificity: ALL
   modifications_made: description
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C51
 slot_uri: faire:0000219
 range: float
 minimum_value: 0

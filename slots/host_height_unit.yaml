@@ -13,6 +13,7 @@ annotations:
   requirement_level_code: O
   sample_type_specificity: HostAssociated | SymbiontAssociated
   modifications_made: field_name | description | field_type
+  v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C294
 slot_uri: faire:0000080
 range: string
 any_of:

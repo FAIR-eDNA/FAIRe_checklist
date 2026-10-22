@@ -1,65 +1,42 @@
-import yaml
+"""Build the classic Excel checklist from schema.yaml (#147).
+
+Run from the repository root: python doc_gen_scripts/generate_checklist_excel.py
+(pip install pyyaml openpyxl pandas). Writes build/FAIRe_checklist_v<version>_classic.xlsx.
+
+The classic checklist keeps the layout of the v1.0 checklist, because tools read terms by
+row number: the same columns in the same order, and every term in the row of its v1.0
+term. Each slot's v1_row annotation links to that row in the published v1.0 Excel
+(sheet checklist, column C). The v1.0 Excel is downloaded once into build/ and used to
+check the rows and to fill the rows of retired terms and the "v1.0 to v2.0" sheet. The
+formatting (fonts, colours, empty cells, text in a shared-strings table) follows v1.0.2.
+"""
+import argparse
+import os
+import re
+import urllib.request
+import zipfile
+
 import pandas as pd
+import yaml
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
-from checklist_term_order import term_order
 
-# === Load glossary_annotation.yaml ===
-with open("slots/glossary_annotation.yaml", "r") as f:
-    glossary_data = yaml.safe_load(f)
+BUILD_DIR = "build"
+V1_ROW_RE = re.compile(r"^(https://\S+\.xlsx)#checklist!C(\d+)$")
 
-# === Extract glossary block safely from nested structure ===
-if (
-    isinstance(glossary_data, dict)
-    and "annotations" in glossary_data
-    and isinstance(glossary_data["annotations"], dict)
-    and "glossary" in glossary_data["annotations"]
-    and isinstance(glossary_data["annotations"]["glossary"], dict)
-):
-    # Correct glossary extraction
-    glossary_block = glossary_data.get("annotations", {}).get("glossary", {})
-    if not isinstance(glossary_block, dict):
-        raise ValueError("Expected annotations.glossary to be a dictionary of term: definition pairs")
-    glossary = glossary_block
+# v1.0.2 sets the font of every cell it writes: Calibri 11, black.
+FONT = Font(name="Calibri", size=11, color="FF000000")
+BOLD = Font(name="Calibri", size=11, color="FF000000", bold=True)
 
-else:
-    raise ValueError("Expected 'annotations.glossary' block in the YAML.")
-
-# === Load schema.yaml ===
-with open("schema.yaml", "r") as f:
-    schema = yaml.safe_load(f)
-slots = schema.get("slots", {})
-classes = schema.get("classes", {})
-
-slot_to_classes = {}
-if isinstance(classes, dict):
-    for class_name, class_def in classes.items():
-        if class_name == "MetadataChecklist" or not isinstance(class_def, dict):
-            continue
-        for slot_name in class_def.get("slots", []) or []:
-            slot_to_classes.setdefault(slot_name, []).append(class_name)
-
-# Extract version from schema
-schema_version = schema.get("version", "unknown")
-
-# === Ordered columns ===
-ordered_columns = [
+COLUMNS = [
     "data_type", "section", "term_name", "description", "requirement_level_code",
     "requirement_level", "requirement_level_condition", "term_type", "unit", "fixed_format",
     "controlled_vocabulary_options", "example", "sample_type_specificity", "source",
     "URI", "modifications_made"
 ]
 
-# === Custom section order and colors ===
-custom_section_order = [
-    "Project", "Data management", "Sample information", "Sample relations", "Sample collection",
-    "Sample storage", "Sample preparation", "Nucleic acid extraction", "PCR",
-    "Targeted assay detection", "Library preparation sequencing", "Bioinformatics",
-    "OTU/ASV", "Environment"
-]
-
 requirement_specific_colors = {
-    "M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFDFD96", "O": "FFCCFF99"
+    "M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFFFF99", "O": "FFCCFF99"
 }
 
 explicit_section_colors = {
@@ -67,86 +44,9 @@ explicit_section_colors = {
     "Sample relations": "FFDECBE4", "Sample collection": "FFFED9A6", "Sample storage": "FFFFFFCC",
     "Sample preparation": "FFE5D8BD", "Nucleic acid extraction": "FFFDDAEC", "PCR": "FFFBB4AE",
     "Targeted assay detection": "FFB3CDE3", "Library preparation sequencing": "FFCCEBC5",
-    "Bioinformatics": "FFDECBE4", "OTU/ASV": "FFFED9A6", "Environment": "FFFFFF99"
+    "Bioinformatics": "FFDECBE4", "OTU/ASV": "FFFED9A6", "Environment": "FFFFFFCC"
 }
 
-# === Build checklist DataFrame ===
-records = []
-for slot_name, slot in slots.items():
-    annotations = slot.get("annotations", {})
-    def get_annot(field): return " | ".join(annotations[field]) if isinstance(annotations.get(field), list) else annotations.get(field, "")
-    def get_data_type():
-        from_classes = slot_to_classes.get(slot_name, [])
-        if from_classes:
-            return " | ".join(from_classes)
-        return get_annot("data_type")
-    def get_section():
-        subsets = slot.get("in_subset", [])
-        if isinstance(subsets, list):
-            return " | ".join(subsets)
-        if isinstance(subsets, str):
-            return subsets
-        return get_annot("section")
-    def get_source():
-        src = slot.get("source", "")
-        return " | ".join(src) if isinstance(src, list) else (src or "")
-    def get_examples():
-        ex = slot.get("examples", []) or []
-        if not isinstance(ex, list):
-            return str(ex)
-        vals = []
-        for item in ex:
-            if isinstance(item, dict):
-                v = item.get("value", "")
-                if v:
-                    vals.append(str(v))
-            elif item:
-                vals.append(str(item))
-        return " | ".join(vals)
-    enum_values = slot.get("enum_values", {})
-    is_enum = isinstance(enum_values, dict) and enum_values
-    term_type = "controlled vocabulary" if is_enum else slot.get("range", "")
-    enum_opts = " | ".join(enum_values.keys()) if is_enum else ""
-    slot_unit = slot.get("unit", "")
-    fixed_format = (
-        slot.get("structured_pattern", {}).get("syntax", "")
-        if isinstance(slot.get("structured_pattern"), dict)
-        else ""
-    )
-    record = {
-        "data_type": get_data_type(),
-        "section": get_section(),
-        "term_name": slot_name,
-        "description": slot.get("description", ""),
-        "requirement_level_code": get_annot("requirement_level_code"),
-        "requirement_level": get_annot("requirement_level"),
-        "requirement_level_condition": get_annot("requirement_level_condition"),
-        "term_type": term_type,
-        "unit": slot_unit,
-        "fixed_format": fixed_format,
-        "controlled_vocabulary_options": enum_opts,
-        "example": get_examples(),
-        "sample_type_specificity": get_annot("sample_type_specificity"),
-        "source": get_source(),
-        "URI": slot.get("slot_uri", ""),
-        "modifications_made": get_annot("modifications_made"),
-    }
-    records.append(record)
-
-checklist_df = pd.DataFrame(records)[ordered_columns]
-checklist_df["section"] = pd.Categorical(checklist_df["section"], categories=custom_section_order, ordered=True)
-if "checklist" in term_order:
-    ordered_terms = term_order["checklist"]
-    checklist_df["__term_index"] = checklist_df["term_name"].apply(lambda x: ordered_terms.index(x) if x in ordered_terms else float("inf"))
-    checklist_df = checklist_df.sort_values("__term_index").drop(columns="__term_index")
-    
-# === Create Excel workbook ===
-wb = Workbook()
-ws_readme = wb.active
-ws_readme.title = "README"
-bold = Font(bold=True)
-
-# === Write instructions ===
 instructions = [
     'Date and time must be recorded following ISO 8601 format (yyyy-mm-ddThh:mm:ss). Time zone must be specified after the timestamp e.g., "2008-01-23T19:23-06:00" in the time zone six hours earlier than UTC, or "2008-01-23T19:23Z" at UTC time. In Excel, format the cell as text to prevent from automatic conversion to other date fromats.',
     "Time duration must be recorded following ISO 8601 durations (PnYnMnWnDTnHnMnS for P<date>T<time>). e.g., P1Y1M1DT1H1M1.1S = One year, one month, one day, one hour, one minute, one second, and 100 milliseconds",
@@ -160,43 +60,287 @@ instructions = [
     "When a value is missing from a mandatory term, it is required to provide the reason using the INSDC missing value controlled vocabulary (https://www.insdc.org/submitting-standards/missing-value-reporting/). See https://fair-edna.github.io/guidelines.html#missing-values for the full list of values."
 ]
 
-ws_readme.cell(row=1, column=1, value="Instructions for data submitters:").font = bold
-for i, line in enumerate(instructions, start=2):
-    ws_readme.cell(row=i, column=2, value=line)
 
-# === Write glossary ===
-start_row = len(instructions) + 3
-ws_readme.cell(row=start_row, column=1, value="Terms and definitions:").font = bold
-ws_readme.cell(row=start_row + 1, column=2, value="Term").font = bold
-ws_readme.cell(row=start_row + 1, column=3, value="Definition").font = bold
-for i, (term, definition) in enumerate(glossary.items(), start=start_row + 2):
-    ws_readme.cell(row=i, column=2, value=str(term))
-    ws_readme.cell(row=i, column=3, value=str(definition))
+def v1_row(slot_name, slot):
+    """The (v1.0 Excel URL, row) a slot's v1_row annotation points to."""
+    link = str((slot.get("annotations") or {}).get("v1_row") or "")
+    match = V1_ROW_RE.match(link)
+    if not match:
+        raise ValueError(f"{slot_name}: v1_row annotation missing or not a link to a cell in "
+                         f"column C of the v1.0 checklist: {link!r}")
+    return match.group(1), int(match.group(2))
 
-# === Add checklist tab ===
-ws_checklists = wb.create_sheet("checklist")
-for col_num, col_name in enumerate(ordered_columns, start=1):
-    cell = ws_checklists.cell(row=1, column=col_num, value=col_name)
-    cell.font = bold
 
-for row_idx, row in enumerate(checklist_df.itertuples(index=False), start=2):
-    row_vals = list(row)
-    section_val = row_vals[1]
-    req_code_val = row_vals[4]
-    section_fill = PatternFill(start_color=explicit_section_colors.get(section_val, ""),
-                               end_color=explicit_section_colors.get(section_val, ""),
-                               fill_type="solid") if section_val else None
-    requirement_fill = PatternFill(start_color=requirement_specific_colors.get(req_code_val, ""),
-                                   end_color=requirement_specific_colors.get(req_code_val, ""),
-                                   fill_type="solid") if req_code_val else None
-    for col_idx, value in enumerate(row_vals, start=1):
-        cell = ws_checklists.cell(row=row_idx, column=col_idx, value=str(value) if value else "")
-        if col_idx == 2 and section_fill:
-            cell.fill = section_fill
-        elif col_idx in (5, 6) and requirement_fill:
-            cell.fill = requirement_fill
+def load_v1(url):
+    """The v1.0 checklist sheet, keyed by Excel row number."""
+    os.makedirs(BUILD_DIR, exist_ok=True)
+    path = os.path.join(BUILD_DIR, "v1.0_" + url.rsplit("/", 1)[1])
+    if not os.path.exists(path):
+        urllib.request.urlretrieve(url, path)
+    df = pd.read_excel(path, sheet_name="checklist", dtype=str).fillna("")
+    return {i + 2: row for i, row in enumerate(df.to_dict("records"))}
 
-# === Save final workbook ===
-output_filename = f"FAIRe_checklist_v{schema_version}.xlsx"
-wb.save(output_filename)
-print(f"Excel file written: {output_filename}")
+
+def expand(curie, prefixes):
+    """A CURIE as a full URI, the way the v1.0 checklist wrote URIs."""
+    if not curie:
+        return ""
+    prefix, _, local = str(curie).partition(":")
+    return prefixes[prefix] + local if prefix in prefixes and local else str(curie)
+
+
+def ranges(slot):
+    any_of = slot.get("any_of") or []
+    return [x.get("range") for x in any_of] if any_of else [slot.get("range")]
+
+
+def pattern(slot, types):
+    """The slot's own pattern, else the pattern of its type (e.g. Timestamp, EnvoTerm)."""
+    if slot.get("pattern"):
+        return slot["pattern"]
+    return (types.get(slot.get("range")) or {}).get("pattern", "")
+
+
+def term_type(slot, enums, types):
+    rs = ranges(slot)
+    if "BooleanEnum" in rs:
+        return "Boolean"
+    has_enum = any(r in enums for r in rs)
+    if has_enum and ("float" in rs or "integer" in rs):
+        return "numeric or controlled vocabulary"
+    if has_enum:
+        return "controlled vocabulary"
+    if "float" in rs:
+        return "numeric"
+    if "integer" in rs:
+        return "integer"
+    if pattern(slot, types):
+        return "fixed format"
+    return "free text"
+
+
+def vocabulary(slot, enums):
+    rs = ranges(slot)
+    if "BooleanEnum" in rs:
+        return "0 | 1"
+    values = []
+    for r in rs:
+        if r in enums:
+            values.extend(str(v) for v in (enums[r].get("permissible_values") or {}))
+    if values and ("float" in rs or "integer" in rs):
+        values.insert(0, "numeric value")
+    if values and "OtherText" in rs:
+        values.append("other:")
+    return " | ".join(values)
+
+
+def examples(slot):
+    values = []
+    for item in slot.get("examples") or []:
+        value = item.get("value", "") if isinstance(item, dict) else item
+        if isinstance(value, list):
+            value = " | ".join(str(v) for v in value)
+        if value not in ("", None):
+            values.append(str(value))
+    return " | ".join(values)
+
+
+def unit(slot):
+    u = slot.get("unit")
+    if isinstance(u, dict):
+        return u.get("descriptive_name") or u.get("ucum_code") or ""
+    return str(u or "")
+
+
+def slot_record(name, slot, enums, types, prefixes):
+    ann = slot.get("annotations") or {}
+    subsets = slot.get("in_subset") or []
+    return {
+        "data_type": ann.get("data_type", ""),
+        "section": " | ".join(subsets) if isinstance(subsets, list) else str(subsets),
+        "term_name": name,
+        "description": slot.get("description", ""),
+        "requirement_level_code": ann.get("requirement_level_code", ""),
+        "requirement_level": ann.get("requirement_level", ""),
+        "requirement_level_condition": ann.get("requirement_level_condition", ""),
+        "term_type": term_type(slot, enums, types),
+        "unit": unit(slot),
+        "fixed_format": pattern(slot, types) if term_type(slot, enums, types) == "fixed format" else "",
+        "controlled_vocabulary_options": vocabulary(slot, enums),
+        "example": examples(slot),
+        "sample_type_specificity": ann.get("sample_type_specificity", ""),
+        "source": expand(slot.get("source"), prefixes),
+        "URI": expand(slot.get("slot_uri"), prefixes),
+        "modifications_made": ann.get("modifications_made", ""),
+    }
+
+
+def build_rows(schema):
+    """Checklist rows in v1.0 row order, the v1.0 -> v2.0 changes, and the v1.0 URL and rows."""
+    slots, enums, prefixes = schema["slots"], schema.get("enums") or {}, schema["prefixes"]
+    types = schema.get("types") or {}
+    url, by_row = None, {}
+    for name, slot in slots.items():
+        slot_url, row = v1_row(name, slot)
+        if url and slot_url != url:
+            raise ValueError(f"{name}: v1_row links to {slot_url}, other slots to {url}")
+        url = slot_url
+        if row in by_row:
+            raise ValueError(f"{name} and {by_row[row]} both have v1.0 row {row}")
+        by_row[row] = name
+    v1 = load_v1(url)
+    renamed_to = {}
+    for name, slot in slots.items():
+        for alias in slot.get("aliases") or []:
+            renamed_to.setdefault(alias, []).append(name)
+
+    rows, changes = [], []
+    for row in sorted(v1):
+        old = v1[row]["term_name"]
+        name = by_row.get(row)
+        if name:
+            rows.append(slot_record(name, slots[name], enums, types, prefixes))
+            if name != old:
+                aliases = slots[name].get("aliases") or []
+                if old in aliases and len(aliases) > 1:
+                    change = f"merged: replaces {' and '.join(aliases)}"
+                elif old in aliases:
+                    change = "renamed"
+                else:
+                    change = "different term name in this row; read the descriptions"
+                changes.append([row, old, name, change])
+        else:
+            successors = renamed_to.get(old)
+            if not successors:
+                raise ValueError(f"v1.0 row {row} ({old}) has no slot, and no slot has {old} in aliases")
+            note = (f"Retired in FAIRe v{schema['version']}: merged into "
+                    f"{' | '.join(successors)}. This row is kept empty so that later rows keep their v1.0 row numbers.")
+            rows.append({**{c: "" for c in COLUMNS}, "data_type": v1[row]["data_type"],
+                         "section": v1[row]["section"], "term_name": old, "description": note})
+            changes.append([row, old, "", f"retired; merged into {' | '.join(successors)}"])
+    extra = sorted(set(by_row) - set(v1))
+    if extra:
+        raise ValueError(f"v1_row beyond the v1.0 checklist: rows {extra}")
+    return rows, changes, url, v1
+
+
+def put(ws, row, column, value, font=FONT):
+    """Write a cell in v1.0.2's font. Empty values stay empty cells, as in v1.0.2."""
+    cell = ws.cell(row=row, column=column, value=value if value not in ("", None) else None)
+    cell.font = font
+    return cell
+
+
+def set_views(wb):
+    """v1.0.2 sheets state zoom 100% and gridlines on."""
+    for ws in wb.worksheets:
+        ws.sheet_view.zoomScale = 100
+        ws.sheet_view.showGridLines = True
+
+
+def save(wb, path):
+    """Save with text in a shared-strings table, as Excel does (openpyxl writes it into
+    each cell as an inline string)."""
+    wb.save(path)
+    with zipfile.ZipFile(path) as z:
+        parts = [(info, z.read(info.filename)) for info in z.infolist()]
+    strings, index, refs = [], {}, [0]
+
+    def shared(match):
+        text = match.group(3) or b""
+        refs[0] += 1
+        if text not in index:
+            index[text] = len(strings)
+            strings.append(text)
+        return b"<c " + match.group(1) + b't="s"><v>' + str(index[text]).encode() + b"</v></c>"
+
+    cell = re.compile(rb'<c ([^>]*?)t="inlineStr"\s*(/>|></c>|><is><t(?: [^>]*)?>(.*?)</t></is></c>)', re.S)
+    out = []
+    for info, data in parts:
+        if info.filename.startswith("xl/worksheets/sheet"):
+            data = cell.sub(shared, data)
+        elif info.filename == "[Content_Types].xml":
+            data = data.replace(b"</Types>", b'<Override PartName="/xl/sharedStrings.xml" ContentType="application/'
+                                b'vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/></Types>')
+        elif info.filename == "xl/_rels/workbook.xml.rels":
+            data = data.replace(b"</Relationships>", b'<Relationship Id="rIdSharedStrings" Type="http://schemas.'
+                                b'openxmlformats.org/officeDocument/2006/relationships/sharedStrings" '
+                                b'Target="sharedStrings.xml"/></Relationships>')
+        out.append((info, data))
+    items = b"".join(b"<si><t" + (b' xml:space="preserve"' if t != t.strip() or b"\n" in t else b"") + b">" + t
+                     + b"</t></si>" for t in strings)
+    sst = (b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<sst xmlns="http://schemas.openxmlformats.org/'
+           b'spreadsheetml/2006/main" count="%d" uniqueCount="%d">' % (refs[0], len(strings))
+           + items + b"</sst>")
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for info, data in out:
+            z.writestr(info, data)
+        z.writestr("xl/sharedStrings.xml", sst)
+
+
+def write_workbook(rows, changes, glossary, v1_url, path):
+    wb = Workbook()
+    ws_readme = wb.active
+    ws_readme.title = "README"
+    put(ws_readme, 1, 1, "Instructions for data submitters:", BOLD)
+    for i, line in enumerate(instructions, start=2):
+        put(ws_readme, i, 2, line)
+    start_row = len(instructions) + 3
+    put(ws_readme, start_row, 1, "Terms and definitions:", BOLD)
+    put(ws_readme, start_row + 1, 2, "Term")
+    put(ws_readme, start_row + 1, 3, "Definition")
+    for i, (term, definition) in enumerate(glossary.items(), start=start_row + 2):
+        put(ws_readme, i, 2, str(term))
+        put(ws_readme, i, 3, str(definition))
+
+    ws = wb.create_sheet("checklist")
+    for col_num, col_name in enumerate(COLUMNS, start=1):
+        put(ws, 1, col_num, col_name, BOLD)
+    for row_idx, record in enumerate(rows, start=2):
+        section, code = record["section"], record["requirement_level_code"]
+        for col_idx, col_name in enumerate(COLUMNS, start=1):
+            value = record[col_name]
+            cell = put(ws, row_idx, col_idx, str(value) if value else None,
+                       BOLD if col_name == "term_name" else FONT)
+            color = None
+            if col_name == "section":
+                color = explicit_section_colors.get(section)
+            elif col_name in ("requirement_level_code", "requirement_level"):
+                color = requirement_specific_colors.get(code)
+            if color:
+                cell.fill = PatternFill(start_color=color, end_color=color, fill_type="solid")
+
+    ws_changes = wb.create_sheet("v1.0 to v2.0")
+    put(ws_changes, 1, 1, f"Rows whose term changed since the v1.0 checklist ({v1_url}). "
+                          "Every other row has the same term name as in v1.0.")
+    header = ["row", "v1.0 term_name", "term_name", "change"]
+    for col_num, col_name in enumerate(header, start=1):
+        put(ws_changes, 3, col_num, col_name, BOLD)
+    for i, change in enumerate(changes, start=4):
+        for col_num, value in enumerate(change, start=1):
+            put(ws_changes, i, col_num, value)
+
+    set_views(wb)
+    save(wb, path)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--schema", default="schema.yaml")
+    parser.add_argument("--out-dir", default=BUILD_DIR)
+    args = parser.parse_args()
+
+    with open(args.schema, "r", encoding="utf-8") as handle:
+        schema = yaml.safe_load(handle)
+    with open("slots/glossary_annotation.yaml", "r", encoding="utf-8") as handle:
+        glossary = yaml.safe_load(handle)["annotations"]["glossary"]
+
+    rows, changes, v1_url, _ = build_rows(schema)
+    os.makedirs(args.out_dir, exist_ok=True)
+    path = os.path.join(args.out_dir, f"FAIRe_checklist_v{schema['version']}_classic.xlsx")
+    write_workbook(rows, changes, glossary, v1_url, path)
+    print(f"Excel file written: {path} ({len(rows)} rows, {len(changes)} changed since v1.0)")
+
+
+if __name__ == "__main__":
+    main()
