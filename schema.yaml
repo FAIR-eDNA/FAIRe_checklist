@@ -47,6 +47,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C19
     slot_uri: faire:0000287
     range: string
     required: false
@@ -74,6 +75,7 @@ slots:
       data_type: taxaRaw | taxaFinal
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C263
     slot_uri: faire:0000001
     range: string
     required: false
@@ -103,6 +105,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C264
     slot_uri: faire:0000002
     range: string
     required: false
@@ -135,6 +138,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C192
     slot_uri: faire:0000003
     range: ModifiedOligoSequence
     required: false
@@ -167,6 +171,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C193
     slot_uri: faire:0000004
     range: ModifiedOligoSequence
     required: false
@@ -200,6 +205,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Air | HostAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C274
     slot_uri: faire:0000311
     range: float
     unit:
@@ -233,6 +239,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C138
     slot_uri: faire:0000005
     range: string
     any_of:
@@ -268,6 +275,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C107
     keywords:
     - MIQE
     slot_uri: faire:0000006
@@ -305,6 +313,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C128
     keywords:
     - MIQE
     slot_uri: faire:0000007
@@ -342,6 +351,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C133
     keywords:
     - MIQE
     slot_uri: faire:0000008
@@ -378,6 +388,7 @@ slots:
       data_type: projectMetadata | ampData | experimentRunMetadata | stdData | eLowQuantData
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C101
     slot_uri: faire:0000009
     range: string
     required: true
@@ -413,6 +424,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C11
     slot_uri: faire:0000010
     range: string
     any_of:
@@ -445,6 +457,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C102
     slot_uri: faire:0000011
     range: string
     required: false
@@ -476,6 +489,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C208
     slot_uri: faire:0000013
     range: string
     multivalued: true
@@ -510,6 +524,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C23
     slot_uri: faire:0000012
     range: string
     required: false
@@ -539,6 +554,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C158
     keywords:
     - MIQE
     slot_uri: faire:0000014
@@ -577,6 +593,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C157
     keywords:
     - MIQE
     slot_uri: faire:0000015
@@ -614,6 +631,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C175
     keywords:
     - MIEM
     slot_uri: faire:0000016
@@ -647,6 +665,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C156
     keywords:
     - MIQE
     slot_uri: faire:0000017
@@ -683,6 +702,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C22
     slot_uri: dcterms:bibliographicCitation
     range: string
     required: false
@@ -711,6 +731,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C243
     slot_uri: faire:0000018
     range: string
     required: false
@@ -739,6 +760,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C53
     slot_uri: faire:0000019
     range: integer
     minimum_value: 1
@@ -771,6 +793,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C33
     slot_uri: faire:0000020
     range: string
     multivalued: true
@@ -800,6 +823,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C126
     slot_uri: faire:0000021
     range: string
     required: false
@@ -828,6 +852,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C125
     slot_uri: faire:0000022
     range: ModifiedOligoSequence
     required: false
@@ -857,6 +882,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C127
     slot_uri: faire:0000023
     range: string
     required: false
@@ -884,6 +910,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C15
     slot_uri: faire:0000024
     range: string
     pattern: ^doi:10\.5281/zenodo\.\d+$
@@ -913,6 +940,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C206
     slot_uri: faire:0000025
     range: string
     required: false
@@ -940,6 +968,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C207
     slot_uri: faire:0000026
     range: string
     required: false
@@ -968,6 +997,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C205
     slot_uri: faire:0000027
     range: string
     any_of:
@@ -999,6 +1029,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C222
     slot_uri: faire:0000028
     range: string
     required: false
@@ -1026,6 +1057,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C223
     slot_uri: faire:0000029
     range: string
     required: false
@@ -1055,6 +1087,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C276
     slot_uri: faire:0000312
     range: float
     minimum_value: 0
@@ -1087,6 +1120,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C252
     slot_uri: faire:0000030
     range: string
     required: false
@@ -1114,6 +1148,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C24
     keywords:
     - NOAA
     slot_uri: faire:0000031
@@ -1144,6 +1179,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C90
     slot_uri: faire:0000033
     range: float
     minimum_value: 0
@@ -1174,6 +1210,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C92
     slot_uri: faire:0000034
     range: string
     required: false
@@ -1201,6 +1238,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C91
     slot_uri: faire:0000035
     range: string
     any_of:
@@ -1235,6 +1273,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C21
     slot_uri: faire:0000038
     range: string
     required: false
@@ -1263,6 +1302,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C80
     slot_uri: faire:0000039
     range: Timestamp
     required: false
@@ -1297,6 +1337,7 @@ slots:
       requirement_level_condition: Mandatory unless specified under the term informationWithheld,
         or samp_category = negative control, positive control, or PCR standard
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C35
     slot_uri: faire:0000040
     range: float
     minimum_value: -90
@@ -1334,6 +1375,7 @@ slots:
       requirement_level_condition: Mandatory unless specified under the term informationWithheld,
         or samp_category = negative control, positive control, or PCR standard
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C34
     slot_uri: faire:0000041
     range: float
     minimum_value: -180
@@ -1365,6 +1407,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C214
     slot_uri: faire:0000042
     range: integer
     minimum_value: 0
@@ -1398,6 +1441,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C213
     slot_uri: faire:0000043
     range: string
     required: false
@@ -1432,6 +1476,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C173
     slot_uri: faire:0000044
     range: Any
     any_of:
@@ -1468,6 +1513,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C139
     keywords:
     - Thalinger
     slot_uri: faire:0000045
@@ -1499,6 +1545,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C297
     slot_uri: faire:0000288
     range: float
     minimum_value: 0
@@ -1529,6 +1576,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C298
     slot_uri: faire:0000046
     range: string
     any_of:
@@ -1561,6 +1609,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C299
     slot_uri: faire:0000289
     range: float
     minimum_value: 0
@@ -1591,6 +1640,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C300
     slot_uri: faire:0000047
     range: string
     any_of:
@@ -1624,6 +1674,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C301
     slot_uri: faire:0000290
     range: float
     minimum_value: 0
@@ -1654,6 +1705,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C302
     slot_uri: faire:0000048
     range: string
     any_of:
@@ -1687,6 +1739,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C303
     slot_uri: faire:0000291
     range: float
     minimum_value: 0
@@ -1717,6 +1770,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C304
     slot_uri: faire:0000049
     range: string
     any_of:
@@ -1749,6 +1803,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C305
     slot_uri: faire:0000292
     range: float
     minimum_value: 0
@@ -1779,6 +1834,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C306
     slot_uri: faire:0000050
     range: string
     any_of:
@@ -1812,6 +1868,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C88
     slot_uri: faire:0000051
     range: Any
     any_of:
@@ -1846,6 +1903,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       requirement_level_condition: If dna_cleanup_boolean is 1
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C89
     slot_uri: faire:0000052
     range: string
     required: false
@@ -1877,6 +1935,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If assay_type = metabarcoding
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C249
     slot_uri: faire:0000324
     range: DnaSequence
     required: true
@@ -1905,6 +1964,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C58
     slot_uri: faire:0000053
     range: string
     required: false
@@ -1932,6 +1992,7 @@ slots:
       data_type: stdData
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C163
     keywords:
     - MIQE
     slot_uri: faire:0000054
@@ -1972,6 +2033,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C273
     slot_uri: faire:0000055
     range: float
     unit:
@@ -2010,6 +2072,7 @@ slots:
       requirement_level_condition: Mandatory unless samp_category = negative control,
         positive control, or PCR standard
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C45
     slot_uri: faire:0000056
     range: EnvoTerm
     multivalued: true
@@ -2045,6 +2108,7 @@ slots:
       requirement_level_condition: Mandatory unless samp_category = negative control,
         positive control, or PCR standard
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C46
     slot_uri: faire:0000057
     range: EnvoTerm
     multivalued: true
@@ -2083,6 +2147,7 @@ slots:
       requirement_level_condition: Mandatory unless samp_category = negative control,
         positive control, or PCR standard
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C47
     slot_uri: faire:0000058
     range: EnvoTerm
     multivalued: true
@@ -2112,6 +2177,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C221
     slot_uri: faire:0000059
     range: float
     required: false
@@ -2140,6 +2206,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C219
     slot_uri: faire:0000060
     range: string
     required: false
@@ -2168,6 +2235,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C220
     slot_uri: faire:0000061
     range: string
     any_of:
@@ -2202,6 +2270,7 @@ slots:
       requirement_level_code: R
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C169
     keywords:
     - MIQE
     slot_uri: faire:0000062
@@ -2236,6 +2305,7 @@ slots:
       data_type: ampData | eLowQuantData
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C171
     slot_uri: faire:0000063
     range: float
     minimum_value: 0
@@ -2264,6 +2334,7 @@ slots:
       data_type: ampData | eLowQuantData
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C172
     slot_uri: faire:0000064
     range: string
     any_of:
@@ -2293,6 +2364,7 @@ slots:
       data_type: ampData
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C168
     keywords:
     - MIQE
     slot_uri: faire:0000065
@@ -2327,6 +2399,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C170
     slot_uri: faire:0000066
     range: string
     any_of:
@@ -2367,6 +2440,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C41
     slot_uri: faire:0000067
     range: string
     pattern: ^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?(/(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?)?$
@@ -2399,6 +2473,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C42
     slot_uri: faire:0000068
     range: string
     required: false
@@ -2428,6 +2503,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C254
     slot_uri: faire:0000069
     range: string
     required: false
@@ -2456,6 +2532,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C203
     slot_uri: faire:0000070
     range: string
     required: false
@@ -2484,6 +2561,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C204
     slot_uri: faire:0000071
     range: string
     required: false
@@ -2512,6 +2590,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C68
     keywords:
     - Thalinger
     slot_uri: faire:0000072
@@ -2546,6 +2625,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Air
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C70
     slot_uri: faire:0000073
     range: string
     any_of:
@@ -2577,6 +2657,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C71
     slot_uri: faire:0000074
     range: string
     required: false
@@ -2609,6 +2690,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: Water | Sediment | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C61
     slot_uri: faire:0000075
     range: Any
     any_of:
@@ -2642,6 +2724,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C69
     keywords:
     - Thalinger
     slot_uri: faire:0000076
@@ -2675,6 +2758,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C255
     slot_uri: faire:0000077
     range: string
     required: false
@@ -2707,6 +2791,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C40
     slot_uri: faire:0000078
     range: string
     required: true
@@ -2740,6 +2825,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C48
     keywords:
     - Thalinger
     slot_uri: faire:0000079
@@ -2777,6 +2863,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C293
     slot_uri: faire:0000293
     range: float
     minimum_value: 0
@@ -2807,6 +2894,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C294
     slot_uri: faire:0000080
     range: string
     any_of:
@@ -2839,6 +2927,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C295
     slot_uri: faire:0000294
     range: float
     minimum_value: 0
@@ -2869,6 +2958,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C296
     slot_uri: faire:0000081
     range: string
     any_of:
@@ -2902,6 +2992,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C290
     slot_uri: faire:0000082
     range: HostLifeStageEnum
     required: false
@@ -2932,6 +3023,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C289
     slot_uri: faire:0000083
     range: string
     required: false
@@ -2961,6 +3053,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C291
     slot_uri: faire:0000295
     range: float
     minimum_value: 0
@@ -2991,6 +3084,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: HostAssociated | SymbiontAssociated
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C292
     slot_uri: faire:0000084
     range: string
     any_of:
@@ -3025,6 +3119,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Air
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C285
     slot_uri: faire:0000085
     range: float
     minimum_value: 0
@@ -3058,6 +3153,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C268
     slot_uri: faire:0000086
     range: string
     required: false
@@ -3087,6 +3183,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C20
     slot_uri: dwc:informationWithheld
     range: string
     required: false
@@ -3116,6 +3213,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C98
     slot_uri: faire:0000087
     range: string
     required: false
@@ -3147,6 +3245,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C97
     slot_uri: faire:0000088
     range: Any
     any_of:
@@ -3180,6 +3279,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C244
     slot_uri: faire:0000089
     range: integer
     minimum_value: 0
@@ -3214,6 +3314,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C5
     slot_uri: faire:0000090
     range: string
     required: false
@@ -3246,6 +3347,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C6
     slot_uri: dwc:institutionID
     range: string
     required: false
@@ -3275,6 +3377,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C189
     keywords:
     - INSDC
     slot_uri: faire:0000091
@@ -3306,6 +3409,7 @@ slots:
       data_type: stdData
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C166
     keywords:
     - MIQE
     slot_uri: faire:0000092
@@ -3335,6 +3439,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C250
     slot_uri: faire:0000093
     range: string
     required: false
@@ -3363,6 +3468,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C197
     slot_uri: faire:0000094
     range: float
     minimum_value: 0
@@ -3390,6 +3496,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C199
     slot_uri: faire:0000095
     range: string
     required: false
@@ -3416,6 +3523,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C198
     slot_uri: faire:0000096
     range: string
     any_of:
@@ -3446,6 +3554,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = metabarcoding
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C195
     slot_uri: faire:0000097
     range: string
     required: true
@@ -3475,6 +3584,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C191
     slot_uri: faire:0000098
     range: string
     any_of:
@@ -3506,6 +3616,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C194
     slot_uri: mixs:0000043
     range: string
     required: false
@@ -3537,6 +3648,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C17
     slot_uri: dcterms:license
     range: string
     required: false
@@ -3567,6 +3679,7 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
         | SymbiontAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C277
     slot_uri: faire:0000313
     range: float
     minimum_value: 0
@@ -3598,6 +3711,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C140
     slot_uri: faire:0000099
     range: string
     required: false
@@ -3624,6 +3738,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C146
     slot_uri: faire:0000100
     range: string
     required: false
@@ -3658,6 +3773,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C123
     keywords:
     - MIQE
     slot_uri: faire:0000320
@@ -3700,6 +3816,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C29
     slot_uri: faire:0000101
     range: string
     required: false
@@ -3735,6 +3852,7 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm
         | SymbiontAssociated
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C271
     slot_uri: faire:0000102
     range: float
     minimum_value: 0
@@ -3767,6 +3885,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C216
     slot_uri: faire:0000103
     range: integer
     minimum_value: 0
@@ -3800,6 +3919,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C215
     slot_uri: faire:0000104
     range: string
     required: false
@@ -3834,6 +3954,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C201
     slot_uri: faire:0000105
     range: DnaSequence
     required: false
@@ -3867,6 +3988,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C202
     slot_uri: faire:0000106
     range: DnaSequence
     required: false
@@ -3894,6 +4016,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C217
     slot_uri: faire:0000107
     range: integer
     minimum_value: 0
@@ -3928,6 +4051,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C218
     slot_uri: faire:0000108
     range: string
     required: false
@@ -3959,6 +4083,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C226
     slot_uri: faire:0000109
     range: Any
     any_of:
@@ -3989,6 +4114,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C227
     slot_uri: faire:0000110
     range: string
     any_of:
@@ -4018,6 +4144,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C228
     slot_uri: faire:0000111
     range: string
     required: false
@@ -4051,6 +4178,7 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | HostAssociated | MicrobialMatBiofilm
         | SymbiontAssociated
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C270
     slot_uri: faire:0000112
     range: float
     minimum_value: 0
@@ -4090,6 +4218,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C16
     slot_uri: dcterms:modified
     range: Timestamp
     required: false
@@ -4122,6 +4251,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C13
     slot_uri: faire:0000114
     range: Any
     any_of:
@@ -4160,6 +4290,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If samp_category = negative control
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C27
     slot_uri: faire:0000115
     range: string
     any_of:
@@ -4199,6 +4330,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C327
     slot_uri: faire:0000296
     range: float
     minimum_value: 0
@@ -4229,6 +4361,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C328
     slot_uri: faire:0000116
     range: string
     any_of:
@@ -4261,6 +4394,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C329
     slot_uri: faire:0000297
     range: float
     minimum_value: 0
@@ -4291,6 +4425,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C330
     slot_uri: faire:0000117
     range: string
     any_of:
@@ -4323,6 +4458,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C331
     slot_uri: faire:0000298
     range: float
     minimum_value: 0
@@ -4353,6 +4489,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C332
     slot_uri: faire:0000118
     range: string
     any_of:
@@ -4385,6 +4522,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C131
     slot_uri: faire:0000119
     range: Reference
     required: false
@@ -4418,6 +4556,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C85
     slot_uri: faire:0000120
     range: Reference
     required: false
@@ -4448,6 +4587,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C86
     slot_uri: faire:0000121
     range: string
     required: false
@@ -4479,6 +4619,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C83
     slot_uri: faire:0000122
     range: string
     any_of:
@@ -4511,6 +4652,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C95
     slot_uri: faire:0000123
     range: string
     required: false
@@ -4541,6 +4683,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C87
     keywords:
     - Thalinger
     slot_uri: faire:0000124
@@ -4571,6 +4714,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C84
     slot_uri: faire:0000125
     range: string
     any_of:
@@ -4602,6 +4746,7 @@ slots:
       data_type: eLowQuantData
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C167
     slot_uri: faire:0000126
     range: integer
     minimum_value: 0
@@ -4630,6 +4775,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C253
     slot_uri: faire:0000127
     range: string
     required: false
@@ -4659,6 +4805,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C333
     slot_uri: faire:0000299
     range: float
     minimum_value: 0
@@ -4689,6 +4836,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C334
     slot_uri: faire:0000128
     range: string
     any_of:
@@ -4721,6 +4869,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C335
     slot_uri: faire:0000300
     range: float
     minimum_value: 0
@@ -4751,6 +4900,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C336
     slot_uri: faire:0000129
     range: string
     any_of:
@@ -4783,6 +4933,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C337
     slot_uri: faire:0000301
     range: float
     minimum_value: 0
@@ -4813,6 +4964,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C338
     slot_uri: faire:0000130
     range: string
     any_of:
@@ -4845,6 +4997,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C225
     slot_uri: faire:0000131
     range: float
     minimum_value: 0
@@ -4877,6 +5030,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C224
     slot_uri: faire:0000132
     range: string
     required: false
@@ -4909,6 +5063,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C229
     slot_uri: faire:0000133
     range: string
     multivalued: true
@@ -4940,6 +5095,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C230
     slot_uri: faire:0000134
     range: string
     required: false
@@ -4969,6 +5125,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C242
     slot_uri: faire:0000135
     range: string
     required: false
@@ -4998,6 +5155,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C247
     slot_uri: faire:0000136
     range: integer
     minimum_value: 0
@@ -5026,6 +5184,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C241
     slot_uri: faire:0000137
     range: string
     required: false
@@ -5054,6 +5213,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C232
     slot_uri: faire:0000138
     range: string
     required: false
@@ -5081,6 +5241,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C246
     slot_uri: faire:0000139
     range: integer
     minimum_value: 0
@@ -5110,6 +5271,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C245
     slot_uri: faire:0000140
     range: integer
     minimum_value: 0
@@ -5143,6 +5305,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C9
     slot_uri: faire:0000141
     range: string
     required: false
@@ -5173,6 +5336,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C323
     slot_uri: faire:0000302
     range: float
     minimum_value: 0
@@ -5203,6 +5367,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C324
     slot_uri: faire:0000142
     range: string
     any_of:
@@ -5235,6 +5400,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C325
     slot_uri: faire:0000303
     range: float
     minimum_value: 0
@@ -5265,6 +5431,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C326
     slot_uri: faire:0000143
     range: string
     any_of:
@@ -5295,6 +5462,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C177
     slot_uri: faire:0000144
     range: float
     minimum_value: 0
@@ -5327,6 +5495,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C184
     slot_uri: faire:0000145
     range: string
     required: false
@@ -5354,6 +5523,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C182
     slot_uri: faire:0000146
     range: float
     unit:
@@ -5387,6 +5557,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C181
     slot_uri: faire:0000148
     range: string
     required: false
@@ -5415,6 +5586,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C183
     slot_uri: faire:0000150
     range: integer
     minimum_value: 1
@@ -5449,6 +5621,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C180
     slot_uri: faire:0000151
     range: float
     minimum_value: 0
@@ -5489,6 +5662,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C178
     slot_uri: faire:0000321
     range: string
     required: false
@@ -5526,6 +5700,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C186
     slot_uri: faire:0000152
     range: string
     required: false
@@ -5552,6 +5727,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C185
     slot_uri: faire:0000153
     range: string
     required: false
@@ -5579,6 +5755,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C176
     slot_uri: faire:0000154
     range: string
     required: false
@@ -5607,6 +5784,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C135
     keywords:
     - MIQE
     slot_uri: faire:0000156
@@ -5641,6 +5819,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C142
     keywords:
     - MIQE
     slot_uri: faire:0000157
@@ -5674,6 +5853,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C145
     slot_uri: faire:0000158
     range: float
     minimum_value: 0
@@ -5702,6 +5882,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C144
     slot_uri: faire:0000160
     range: float
     minimum_value: 0
@@ -5730,6 +5911,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C141
     slot_uri: faire:0000159
     range: integer
     minimum_value: 1
@@ -5758,6 +5940,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C143
     slot_uri: faire:0000161
     range: string
     any_of:
@@ -5791,6 +5974,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C148
     keywords:
     - MIQE
     slot_uri: faire:0000162
@@ -5824,6 +6008,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C151
     slot_uri: faire:0000163
     range: float
     minimum_value: 0
@@ -5852,6 +6037,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C150
     slot_uri: faire:0000165
     range: float
     minimum_value: 0
@@ -5880,6 +6066,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C147
     slot_uri: faire:0000164
     range: integer
     minimum_value: 1
@@ -5908,6 +6095,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C149
     slot_uri: faire:0000166
     range: string
     any_of:
@@ -5940,6 +6128,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C96
     slot_uri: faire:0000155
     range: Any
     any_of:
@@ -5977,6 +6166,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C132
     slot_uri: faire:0000167
     range: string
     required: false
@@ -6006,6 +6196,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C134
     slot_uri: faire:0000168
     range: integer
     minimum_value: 1
@@ -6038,6 +6229,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C129
     keywords:
     - MIQE
     slot_uri: faire:0000169
@@ -6074,6 +6266,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C137
     slot_uri: faire:0000170
     range: string
     required: false
@@ -6103,6 +6296,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C136
     slot_uri: faire:0000171
     range: string
     required: true
@@ -6133,6 +6327,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C116
     keywords:
     - MIQE
     slot_uri: faire:0000172
@@ -6172,6 +6367,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C117
     keywords:
     - MIQE
     slot_uri: faire:0000173
@@ -6219,6 +6415,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If pcr_boolean is 1
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C108
     slot_uri: faire:0000174
     range: ModifiedOligoSequence
     multivalued: true
@@ -6252,6 +6449,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C110
     slot_uri: faire:0000175
     range: string
     multivalued: true
@@ -6283,6 +6481,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C111
     slot_uri: faire:0000176
     range: string
     multivalued: true
@@ -6318,6 +6517,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C112
     slot_uri: faire:0000177
     range: Reference
     multivalued: true
@@ -6354,6 +6554,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C113
     slot_uri: faire:0000178
     range: Reference
     multivalued: true
@@ -6396,6 +6597,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If pcr_boolean is 1
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C109
     slot_uri: faire:0000179
     range: ModifiedOligoSequence
     multivalued: true
@@ -6427,6 +6629,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C114
     slot_uri: faire:0000180
     range: float
     minimum_value: 0
@@ -6458,6 +6661,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C115
     slot_uri: faire:0000181
     range: float
     minimum_value: 0
@@ -6490,6 +6694,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C130
     slot_uri: faire:0000182
     range: integer
     minimum_value: 1
@@ -6520,6 +6725,7 @@ slots:
       data_type: taxaRaw | taxaFinal
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C265
     slot_uri: faire:0000183
     range: string
     unit:
@@ -6551,6 +6757,7 @@ slots:
       data_type: taxaRaw | taxaFinal
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C266
     slot_uri: faire:0000184
     range: string
     unit:
@@ -6582,6 +6789,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C278
     slot_uri: mixs:0001001
     range: float
     unit:
@@ -6613,6 +6821,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C279
     slot_uri: mixs:0001106
     range: Reference
     required: false
@@ -6640,6 +6849,7 @@ slots:
       data_type: experimentRunMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C200
     slot_uri: faire:0000185
     range: float
     minimum_value: 0
@@ -6672,6 +6882,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C251
     slot_uri: faire:0000186
     range: string
     required: false
@@ -6699,6 +6910,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C188
     keywords:
     - INSDC
     slot_uri: faire:0000187
@@ -6733,6 +6945,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description | field_type | field_name
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C94
     slot_uri: faire:0000188
     range: integer
     minimum_value: 1
@@ -6765,6 +6978,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C14
     slot_uri: faire:0000189
     range: Any
     any_of:
@@ -6804,6 +7018,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If samp_category = positive control
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C28
     slot_uri: faire:0000283
     range: string
     required: true
@@ -6835,6 +7050,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Soil | Sediment
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C72
     keywords:
     - Thalinger
     slot_uri: faire:0000190
@@ -6870,6 +7086,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Soil | Sediment
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C73
     keywords:
     - Thalinger
     slot_uri: faire:0000191
@@ -6905,6 +7122,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Soil | Sediment
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C75
     keywords:
     - Thalinger
     slot_uri: faire:0000192
@@ -6943,6 +7161,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Soil | Sediment
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C74
     keywords:
     - Thalinger
     slot_uri: faire:0000193
@@ -6976,6 +7195,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C65
     slot_uri: faire:0000194
     range: string
     required: false
@@ -7007,6 +7227,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C79
     slot_uri: faire:0000195
     range: string
     required: false
@@ -7042,6 +7263,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C78
     slot_uri: faire:0000196
     range: string
     required: false
@@ -7074,6 +7296,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C77
     slot_uri: faire:0000197
     range: string
     any_of:
@@ -7111,6 +7334,7 @@ slots:
       requirement_level_code: R
       sample_type_specificity: ALL
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C76
     keywords:
     - Thalinger
     slot_uri: faire:0000198
@@ -7152,6 +7376,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C119
     keywords:
     - MIQE
     slot_uri: faire:0000202
@@ -7189,6 +7414,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C118
     keywords:
     - MIQE
     slot_uri: faire:0000203
@@ -7224,6 +7450,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C122
     keywords:
     - MIQE
     slot_uri: faire:0000199
@@ -7259,6 +7486,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C121
     slot_uri: faire:0000200
     range: Reference
     required: false
@@ -7289,6 +7517,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C120
     slot_uri: faire:0000201
     range: ModifiedOligoSequence
     required: false
@@ -7316,6 +7545,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C4
     slot_uri: faire:0000204
     range: string
     required: true
@@ -7343,6 +7573,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C8
     keywords:
     - NMDC
     - NOAA
@@ -7374,6 +7605,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C7
     slot_uri: mixs:0000092
     range: string
     required: false
@@ -7403,6 +7635,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C63
     slot_uri: faire:0000206
     range: float
     minimum_value: 0
@@ -7431,6 +7664,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C64
     slot_uri: faire:0000207
     range: string
     any_of:
@@ -7468,6 +7702,7 @@ slots:
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & amp_vis_method = qPCR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C161
     keywords:
     - MIQE
     slot_uri: faire:0000208
@@ -7505,6 +7740,7 @@ slots:
       data_type: stdData
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C164
     keywords:
     - MIQE
     slot_uri: faire:0000209
@@ -7539,6 +7775,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C93
     slot_uri: faire:0000210
     range: float
     minimum_value: 0
@@ -7569,6 +7806,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C2
     slot_uri: faire:0000211
     range: string
     multivalued: true
@@ -7599,6 +7837,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C3
     slot_uri: faire:0000212
     range: string
     multivalued: true
@@ -7628,6 +7867,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C32
     slot_uri: faire:0000213
     range: string
     multivalued: true
@@ -7656,6 +7896,7 @@ slots:
       data_type: ampData | stdData
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C162
     slot_uri: faire:0000214
     range: float
     unit:
@@ -7686,6 +7927,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C18
     slot_uri: dcterms:rightsHolder
     range: string
     required: false
@@ -7721,6 +7963,7 @@ slots:
       sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm
         | SymbiontAssociated
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C280
     slot_uri: faire:0000314
     range: float
     minimum_value: 0
@@ -7756,6 +7999,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C26
     slot_uri: faire:0000215
     range: string
     any_of:
@@ -7792,6 +8036,7 @@ slots:
       requirement_level_code: R
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C50
     slot_uri: faire:0000216
     range: string
     required: false
@@ -7823,6 +8068,7 @@ slots:
       requirement_level_code: R
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C49
     slot_uri: faire:0000217
     range: string
     required: false
@@ -7855,6 +8101,7 @@ slots:
       requirement_level_code: R
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C60
     slot_uri: faire:0000218
     range: string
     required: false
@@ -7890,6 +8137,7 @@ slots:
       data_type: sampleMetadata | ampData | stdData | experimentRunMetadata
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C25
     slot_uri: mixs:0001107
     range: string
     required: true
@@ -7923,6 +8171,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C51
     slot_uri: faire:0000219
     range: float
     minimum_value: 0
@@ -7952,6 +8201,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C52
     slot_uri: faire:0000220
     range: string
     any_of:
@@ -7990,6 +8240,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: ALL
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C56
     slot_uri: faire:0000221
     range: string
     required: false
@@ -8018,6 +8269,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C57
     slot_uri: mixs:0000755
     range: string
     required: false
@@ -8048,6 +8300,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C59
     slot_uri: faire:0000222
     range: string
     required: false
@@ -8080,6 +8333,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: ALL
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C55
     slot_uri: faire:0000223
     range: string
     any_of:
@@ -8118,6 +8372,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: ALL
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C54
     slot_uri: faire:0000224
     range: Any
     any_of:
@@ -8158,6 +8413,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C81
     slot_uri: faire:0000225
     range: float
     minimum_value: 0
@@ -8186,6 +8442,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C82
     slot_uri: faire:0000226
     range: string
     any_of:
@@ -8217,6 +8474,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: ALL
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C269
     slot_uri: mixs:0000827
     range: SampWeatherEnum
     required: false
@@ -8249,6 +8507,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C31
     keywords:
     - INSDC
     slot_uri: faire:0000227
@@ -8284,6 +8543,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C30
     keywords:
     - INSDC
     slot_uri: faire:0000228
@@ -8313,6 +8573,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C257
     slot_uri: faire:0000229
     range: string
     required: false
@@ -8341,6 +8602,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C258
     slot_uri: faire:0000230
     range: string
     required: false
@@ -8369,6 +8631,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C237
     slot_uri: faire:0000231
     range: string
     required: false
@@ -8398,6 +8661,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C238
     slot_uri: faire:0000232
     range: string
     required: false
@@ -8426,6 +8690,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C239
     slot_uri: faire:0000233
     range: string
     required: false
@@ -8454,6 +8719,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C240
     slot_uri: faire:0000234
     range: string
     required: false
@@ -8483,6 +8749,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = metabarcoding
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C248
     slot_uri: faire:0000235
     range: string
     required: true
@@ -8509,6 +8776,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C190
     slot_uri: faire:0000236
     range: string
     required: false
@@ -8539,6 +8807,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C209
     slot_uri: faire:0000237
     range: string
     required: false
@@ -8566,6 +8835,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = metabarcoding
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C196
     slot_uri: faire:0000238
     range: string
     required: true
@@ -8594,6 +8864,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C187
     slot_uri: mixs:0001156
     range: string
     required: false
@@ -8631,6 +8902,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Air
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C67
     slot_uri: faire:0000284
     range: float
     minimum_value: 0
@@ -8672,6 +8944,7 @@ slots:
       requirement_level_code: HR
       sample_type_specificity: Water | Air
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C66
     slot_uri: faire:0000239
     range: float
     minimum_value: 0
@@ -8703,6 +8976,7 @@ slots:
       data_type: stdData
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C165
     keywords:
     - MIQE
     slot_uri: faire:0000240
@@ -8737,6 +9011,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C286
     slot_uri: faire:0000241
     range: string
     required: false
@@ -8767,6 +9042,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C210
     slot_uri: faire:0000242
     range: string
     required: false
@@ -8796,6 +9072,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C256
     slot_uri: faire:0000243
     range: string
     required: false
@@ -8829,6 +9106,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       sample_type_specificity: Water | Air
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C62
     slot_uri: faire:0000244
     range: string
     required: false
@@ -8859,6 +9137,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: if samp_category = PCR standard
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C159
     slot_uri: faire:0000245
     range: float
     minimum_value: 0
@@ -8887,6 +9166,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: if samp_category = PCR standard
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C160
     slot_uri: faire:0000246
     range: string
     any_of:
@@ -8917,6 +9197,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C154
     slot_uri: faire:0000247
     range: DnaSequence
     required: false
@@ -8943,6 +9224,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C153
     slot_uri: faire:0000248
     range: string
     required: false
@@ -8969,6 +9251,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C152
     slot_uri: faire:0000249
     range: string
     any_of:
@@ -8998,6 +9281,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C12
     slot_uri: faire:0000250
     range: string
     required: false
@@ -9029,6 +9313,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C10
     slot_uri: faire:0000251
     range: string
     multivalued: true
@@ -9059,6 +9344,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C281
     slot_uri: faire:0000315
     range: float
     minimum_value: 0
@@ -9092,6 +9378,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If pcr_boolean is 1. Else, recommended
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C103
     slot_uri: faire:0000254
     range: string
     required: true
@@ -9123,6 +9410,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C104
     slot_uri: faire:0000285
     range: string
     required: false
@@ -9151,6 +9439,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C105
     slot_uri: faire:0000252
     range: string
     any_of:
@@ -9184,6 +9473,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C106
     slot_uri: mixs:0000045
     range: string
     required: false
@@ -9214,6 +9504,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C174
     slot_uri: faire:0000253
     range: string
     required: false
@@ -9241,6 +9532,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C231
     slot_uri: faire:0000255
     range: string
     any_of:
@@ -9285,6 +9577,7 @@ slots:
       data_type: taxaRaw | taxaFinal
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C267
     slot_uri: faire:0000036
     range: float
     required: false
@@ -9312,6 +9605,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C235
     slot_uri: faire:0000256
     range: string
     required: false
@@ -9341,6 +9635,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C233
     slot_uri: faire:0000257
     range: float
     minimum_value: 0
@@ -9375,6 +9670,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name | description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C236
     slot_uri: faire:0000258
     range: string
     required: false
@@ -9403,6 +9699,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C234
     slot_uri: faire:0000259
     range: float
     minimum_value: 0
@@ -9438,6 +9735,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C260
     slot_uri: faire:0000260
     range: string
     required: false
@@ -9465,6 +9763,7 @@ slots:
       data_type: taxaRaw | taxaFinal
       requirement_level: Highly recommended
       requirement_level_code: HR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C261
     slot_uri: faire:0000261
     range: string
     required: false
@@ -9493,6 +9792,7 @@ slots:
       requirement_level: Highly recommended
       requirement_level_code: HR
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C259
     slot_uri: faire:0000286
     range: string
     any_of:
@@ -9524,6 +9824,7 @@ slots:
       data_type: ampData | stdData
       requirement_level: Mandatory
       requirement_level_code: M
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C100
     slot_uri: faire:0000262
     range: integer
     minimum_value: 1
@@ -9554,6 +9855,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: ALL
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C275
     slot_uri: faire:0000316
     range: float
     unit:
@@ -9585,6 +9887,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C99
     keywords:
     - MIQE
     slot_uri: faire:0000263
@@ -9616,6 +9919,7 @@ slots:
       requirement_level: Mandatory
       requirement_level_code: M
       requirement_level_condition: If assay_type = targeted & amp_vis_method = qPCR
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C155
     keywords:
     - MIQE
     slot_uri: faire:0000264
@@ -9649,6 +9953,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Sediment
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C282
     slot_uri: mixs:0000750
     range: TidalStageEnum
     required: false
@@ -9678,6 +9983,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C321
     slot_uri: faire:0000304
     range: float
     minimum_value: 0
@@ -9708,6 +10014,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C322
     slot_uri: faire:0000265
     range: string
     any_of:
@@ -9743,6 +10050,7 @@ slots:
       sample_type_specificity: Water | Sediment | HostAssociated | MicrobialMatBiofilm
         | SymbiontAssociated
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C272
     slot_uri: faire:0000266
     range: float
     minimum_value: 0
@@ -9778,6 +10086,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C307
     slot_uri: faire:0000305
     range: float
     minimum_value: 0
@@ -9808,6 +10117,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C308
     slot_uri: faire:0000267
     range: string
     any_of:
@@ -9840,6 +10150,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C309
     slot_uri: faire:0000306
     range: float
     minimum_value: 0
@@ -9870,6 +10181,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C310
     slot_uri: faire:0000268
     range: string
     any_of:
@@ -9904,6 +10216,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C311
     slot_uri: faire:0000307
     range: float
     minimum_value: 0
@@ -9934,6 +10247,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C320
     slot_uri: mixs:0000338
     range: Reference
     required: false
@@ -9963,6 +10277,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C318
     slot_uri: faire:0000308
     range: float
     minimum_value: 0
@@ -9993,6 +10308,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C319
     slot_uri: faire:0000269
     range: string
     any_of:
@@ -10025,6 +10341,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C312
     slot_uri: faire:0000270
     range: string
     any_of:
@@ -10056,6 +10373,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C317
     slot_uri: mixs:0000337
     range: Reference
     required: false
@@ -10085,6 +10403,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C315
     slot_uri: faire:0000309
     range: float
     minimum_value: 0
@@ -10115,6 +10434,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C316
     slot_uri: faire:0000271
     range: string
     any_of:
@@ -10147,6 +10467,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C313
     slot_uri: faire:0000310
     range: float
     minimum_value: 0
@@ -10177,6 +10498,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       modifications_made: field_name | description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C314
     slot_uri: faire:0000272
     range: string
     any_of:
@@ -10209,6 +10531,7 @@ slots:
       requirement_level: Recommended
       requirement_level_code: R
       modifications_made: field_name
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C211
     keywords:
     - NOAA
     slot_uri: faire:0000273
@@ -10239,6 +10562,7 @@ slots:
       data_type: projectMetadata
       requirement_level: Recommended
       requirement_level_code: R
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C212
     slot_uri: faire:0000274
     range: string
     required: false
@@ -10270,6 +10594,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Sediment | MicrobialMatBiofilm
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C283
     slot_uri: faire:0000317
     range: float
     minimum_value: 0
@@ -10305,6 +10630,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C38
     slot_uri: faire:0000275
     range: string
     any_of:
@@ -10336,6 +10662,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C43
     slot_uri: faire:0000276
     range: string
     required: false
@@ -10364,6 +10691,7 @@ slots:
       data_type: sampleMetadata
       requirement_level: Optional
       requirement_level_code: O
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C44
     slot_uri: faire:0000277
     range: string
     required: false
@@ -10395,6 +10723,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C262
     slot_uri: faire:0000278
     range: string
     required: false
@@ -10426,6 +10755,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C37
     slot_uri: faire:0000279
     range: string
     required: false
@@ -10457,6 +10787,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C36
     slot_uri: faire:0000280
     range: string
     required: false
@@ -10487,6 +10818,7 @@ slots:
       requirement_level: Optional
       requirement_level_code: O
       modifications_made: description | field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C39
     slot_uri: faire:0000281
     range: string
     any_of:
@@ -10519,6 +10851,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Sediment
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C284
     slot_uri: faire:0000318
     range: float
     minimum_value: 0
@@ -10553,6 +10886,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air
       modifications_made: description
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C287
     slot_uri: faire:0000282
     range: string
     required: false
@@ -10582,6 +10916,7 @@ slots:
       requirement_level_code: O
       sample_type_specificity: Water | Soil | Sediment | Air
       modifications_made: field_type
+      v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C288
     slot_uri: faire:0000319
     range: float
     minimum_value: 0
