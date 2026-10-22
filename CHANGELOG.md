@@ -39,6 +39,7 @@ Not released: withdrawn because of a problem in the Excel generation (#16); v1.0
    - For version 1.0.3, all terms and metadata should be verbatim. The only change is the update to our workflow.
 
 ### [v1.0.2] - 2025-07-02
+Archived on Zenodo on 2026-10-22 (tag `v1.0.2`): [doi:10.5281/zenodo.23573670](https://doi.org/10.5281/zenodo.23573670).
 #### Fixed description typos and errors:
 - `verbatimLatitude`, `verbatimLongitude`: replaced "verbatimGeodeticDatum" with "verbatimSRS"
 - `verbatimSRS`: removedthe  phrase ", or verbatimCoordinates"
