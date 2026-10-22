@@ -50,7 +50,7 @@ python doc_gen_scripts/check_pr.py S B1     # all slot rules, and B1
 
 To look at the built schema locally: `python doc_gen_scripts/build_schema.py` (`pip install pyyaml`); don't commit the result.
 
-The Excel files are built by `generate_checklist_excel.py` and `generate_FULLtemplate_excel.py` (`pip install pyyaml openpyxl pandas`; run `build_schema.py` first). They keep the v1.0 layout: the same rows, columns and tabs, so tools that read terms by position keep working. They are dated by the last commit that changed the model or these scripts, so a rebuild only changes them when those change. To look at them locally, build into `build/` (`--out-dir build`, ignored by git); don't commit `excel/` by hand. `build_enums_from_checklist.py` and `build_classes_from_checklist.py` are retired: `enums.yaml` and `classes.yaml` are edited by hand.
+The Excel files are built by `generate_checklist_excel.py` and `generate_FULLtemplate_excel.py` (`pip install pyyaml openpyxl pandas`; run `build_schema.py` first). They keep the v1.0 layout: the same rows, columns and tabs, so tools that read terms by position keep working. They are dated by the last commit that changed the model or these scripts, so a rebuild only changes them when those change. To look at them locally, build into `build/` (`--out-dir build`, ignored by git); don't commit `excel/` by hand. `enums.yaml` and `classes.yaml` are edited by hand (#61).
 
 ---
 
