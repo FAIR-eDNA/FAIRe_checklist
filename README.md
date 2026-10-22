@@ -8,7 +8,7 @@ The checklist is a [LinkML](https://linkml.io) model. Each term is one YAML file
 
 ### Latest version
 
-**v1.0.2** (2025-07-02) is the current release. Its Japanese translation is `FAIRe_checklist_v1.0.2_JP.xlsx`.
+**v1.0.2** (2025-07-02) is the current release. A Japanese translation of it exists; where translations are published is open in #161.
 
 v1.0.2 is archived on Zenodo: [doi:10.5281/zenodo.23573670](https://doi.org/10.5281/zenodo.23573670) (tag `v1.0.2` on the `v1.0.x` branch). The archive is the version as first released on 2025-07-02, with a README, LICENSE and Zenodo metadata added; the Japanese translation, added later, isn't in it.
 
@@ -27,7 +27,6 @@ The next release (planned as v2.0.0) is being prepared on the `dev` branch. It r
 | `doc_gen_scripts/` | Build and check scripts. |
 | `VALIDATION_RULES.md` | The rules every pull request is checked against. |
 | `excel/` | **Generated.** The Excel checklist and full template, built from `schema.yaml` and committed automatically on `dev` (#147). On `dev` they are drafts of the next release. |
-| `FAIRe_checklist_v1.0.2_JP.xlsx` | The Japanese translation of the v1.0.2 checklist. |
 
 ---
 
