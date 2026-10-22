@@ -1,0 +1,197 @@
+{
+  "title": "FAIRe (FAIR eDNA) metadata checklist",
+  "version": "v1.0.2",
+  "upload_type": "dataset",
+  "description": "<p>FAIRe (FAIR eDNA) is a metadata checklist and data templates that make environmental DNA (eDNA), metabarcoding and targeted-assay data Findable, Accessible, Interoperable and Reusable.</p><p>This is version 1.0.2 of the checklist, first released on GitHub on 2025-07-02. It contains the checklist (<code>FAIRe_checklist_v1.0.2.xlsx</code>) and the full data template (<code>FAIRe_checklist_v1.0.2_FULLtemplate.xlsx</code>). <code>previous_versions/</code> holds v1.0, published as supplementary material to Takahashi et al. (2025), and v1.0.1. <code>CHANGELOG.md</code> lists the changes since v1.0. The checklist files are unchanged since 2025-07-02; for archiving, the README was rewritten and LICENSE and this metadata were added.</p><p>Guidelines and documentation: <a href=\"https://fair-edna.github.io\">https://fair-edna.github.io</a>.</p>",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Takahashi, Miwa",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0001-8952-051X"
+    },
+    {
+      "name": "Frøslev, Tobias Guldberg",
+      "affiliation": "Global Biodiversity Information Facility (GBIF)",
+      "orcid": "0000-0002-3530-013X"
+    },
+    {
+      "name": "Paupério, Joana",
+      "affiliation": "European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI)",
+      "orcid": "0000-0003-2569-0768"
+    },
+    {
+      "name": "Thalinger, Bettina",
+      "affiliation": "University of Innsbruck",
+      "orcid": "0000-0001-9315-8648"
+    },
+    {
+      "name": "Klymus, Katy",
+      "affiliation": "U.S. Geological Survey",
+      "orcid": "0000-0002-8843-6241"
+    },
+    {
+      "name": "Helbing, Caren C.",
+      "affiliation": "University of Victoria",
+      "orcid": "0000-0002-8861-1070"
+    },
+    {
+      "name": "Villacorta-Rath, Cecilia",
+      "affiliation": "James Cook University",
+      "orcid": "0000-0002-1060-5447"
+    },
+    {
+      "name": "Silliman, Katherine",
+      "affiliation": "NOAA Atlantic Oceanographic and Meteorological Laboratory",
+      "orcid": "0000-0001-5964-3965"
+    },
+    {
+      "name": "Thompson, Luke R.",
+      "affiliation": "NOAA Atlantic Oceanographic and Meteorological Laboratory",
+      "orcid": "0000-0002-3911-1280"
+    },
+    {
+      "name": "Jungbluth, Sean P.",
+      "affiliation": "NOAA Atlantic Oceanographic and Meteorological Laboratory",
+      "orcid": "0000-0001-9265-8341"
+    },
+    {
+      "name": "Yong, Suk Yee",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0002-5204-2902"
+    },
+    {
+      "name": "Formel, Stephen",
+      "affiliation": "U.S. Geological Survey",
+      "orcid": "0000-0001-7418-1244"
+    },
+    {
+      "name": "Jenkins, Gareth",
+      "affiliation": "John Wiley & Sons Ltd",
+      "orcid": "0009-0000-2919-0723"
+    },
+    {
+      "name": "Laporte, Martin",
+      "affiliation": "Université Laval",
+      "orcid": "0000-0002-0622-123X"
+    },
+    {
+      "name": "Deagle, Bruce",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0001-7651-3687"
+    },
+    {
+      "name": "Rajbhandari, Sachit",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0002-9952-0801"
+    },
+    {
+      "name": "Jeppesen, Thomas Stjernegaard",
+      "affiliation": "Global Biodiversity Information Facility (GBIF)",
+      "orcid": "0000-0003-1691-239X"
+    },
+    {
+      "name": "Bissett, Andrew",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0001-7396-1484"
+    },
+    {
+      "name": "Jerde, Christopher",
+      "affiliation": "University of California, Santa Barbara",
+      "orcid": "0000-0002-8074-3466"
+    },
+    {
+      "name": "Hahn, Erin E.",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0001-6459-9508"
+    },
+    {
+      "name": "Schriml, Lynn M.",
+      "affiliation": "University of Maryland School of Medicine",
+      "orcid": "0000-0001-8910-9851"
+    },
+    {
+      "name": "Hunter, Christopher",
+      "affiliation": "GigaScience Press",
+      "orcid": "0000-0002-1335-0881"
+    },
+    {
+      "name": "Newman, Peggy",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0002-9084-5992"
+    },
+    {
+      "name": "Woollard, Peter",
+      "affiliation": "European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI)",
+      "orcid": "0000-0002-7654-6902"
+    },
+    {
+      "name": "Harper, Lynsey R.",
+      "affiliation": "Natural England",
+      "orcid": "0000-0003-0923-1801"
+    },
+    {
+      "name": "Dunn, Nicholas",
+      "affiliation": "Natural England",
+      "orcid": "0000-0002-6231-5222"
+    },
+    {
+      "name": "West, Katrina",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0002-9026-5058"
+    },
+    {
+      "name": "Haderlé, Rachel",
+      "affiliation": "Muséum national d'Histoire naturelle",
+      "orcid": "0009-0004-5752-3336"
+    },
+    {
+      "name": "Wilkinson, Shaun",
+      "affiliation": "Curtin University",
+      "orcid": "0000-0002-7332-7931"
+    },
+    {
+      "name": "Acharya-Patel, Neha",
+      "affiliation": "University of Victoria",
+      "orcid": "0000-0002-3792-4675"
+    },
+    {
+      "name": "Lopez, Mark Louie D.",
+      "affiliation": "University of Victoria",
+      "orcid": "0000-0003-4288-4871"
+    },
+    {
+      "name": "Cochrane, Guy",
+      "affiliation": "European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI)",
+      "orcid": "0000-0001-7954-7057"
+    },
+    {
+      "name": "Berry, Oliver",
+      "affiliation": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+      "orcid": "0000-0001-7545-5083"
+    }
+  ],
+  "keywords": [
+    "eDNA",
+    "environmental DNA",
+    "metabarcoding",
+    "metadata",
+    "checklist",
+    "FAIR",
+    "Darwin Core",
+    "MIxS"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1002/edn3.70100",
+      "relation": "isDescribedBy",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://fair-edna.github.io",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}
