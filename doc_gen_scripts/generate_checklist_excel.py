@@ -7,12 +7,14 @@ The classic checklist keeps the layout of the v1.0 checklist, because tools read
 row number: the same columns in the same order, and every term in the row of its v1.0
 term. Each slot's v1_row annotation links to that row in the published v1.0 Excel
 (sheet checklist, column C). The v1.0 Excel is downloaded once into build/ and used to
-check the rows and to fill the rows of retired terms and the "v1.0 to v2.0" sheet.
+check the rows and to fill the rows of retired terms and the "v1.0 to v2.0" sheet. The
+formatting (fonts, colours, empty cells, text in a shared-strings table) follows v1.0.2.
 """
 import argparse
 import os
 import re
 import urllib.request
+import zipfile
 
 import pandas as pd
 import yaml
@@ -22,6 +24,10 @@ from openpyxl.styles import Font, PatternFill
 BUILD_DIR = "build"
 V1_ROW_RE = re.compile(r"^(https://\S+\.xlsx)#checklist!C(\d+)$")
 
+# v1.0.2 sets the font of every cell it writes: Calibri 11, black.
+FONT = Font(name="Calibri", size=11, color="FF000000")
+BOLD = Font(name="Calibri", size=11, color="FF000000", bold=True)
+
 COLUMNS = [
     "data_type", "section", "term_name", "description", "requirement_level_code",
     "requirement_level", "requirement_level_condition", "term_type", "unit", "fixed_format",
@@ -30,7 +36,7 @@ COLUMNS = [
 ]
 
 requirement_specific_colors = {
-    "M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFDFD96", "O": "FFCCFF99"
+    "M": "FFE26B0A", "HR": "FFFFCC00", "R": "FFFFFF99", "O": "FFCCFF99"
 }
 
 explicit_section_colors = {
@@ -38,7 +44,7 @@ explicit_section_colors = {
     "Sample relations": "FFDECBE4", "Sample collection": "FFFED9A6", "Sample storage": "FFFFFFCC",
     "Sample preparation": "FFE5D8BD", "Nucleic acid extraction": "FFFDDAEC", "PCR": "FFFBB4AE",
     "Targeted assay detection": "FFB3CDE3", "Library preparation sequencing": "FFCCEBC5",
-    "Bioinformatics": "FFDECBE4", "OTU/ASV": "FFFED9A6", "Environment": "FFFFFF99"
+    "Bioinformatics": "FFDECBE4", "OTU/ASV": "FFFED9A6", "Environment": "FFFFFFCC"
 }
 
 instructions = [
@@ -218,30 +224,84 @@ def build_rows(schema):
     return rows, changes, url, v1
 
 
+def put(ws, row, column, value, font=FONT):
+    """Write a cell in v1.0.2's font. Empty values stay empty cells, as in v1.0.2."""
+    cell = ws.cell(row=row, column=column, value=value if value not in ("", None) else None)
+    cell.font = font
+    return cell
+
+
+def set_views(wb):
+    """v1.0.2 sheets state zoom 100% and gridlines on."""
+    for ws in wb.worksheets:
+        ws.sheet_view.zoomScale = 100
+        ws.sheet_view.showGridLines = True
+
+
+def save(wb, path):
+    """Save with text in a shared-strings table, as Excel does (openpyxl writes it into
+    each cell as an inline string)."""
+    wb.save(path)
+    with zipfile.ZipFile(path) as z:
+        parts = [(info, z.read(info.filename)) for info in z.infolist()]
+    strings, index, refs = [], {}, [0]
+
+    def shared(match):
+        text = match.group(3) or b""
+        refs[0] += 1
+        if text not in index:
+            index[text] = len(strings)
+            strings.append(text)
+        return b"<c " + match.group(1) + b't="s"><v>' + str(index[text]).encode() + b"</v></c>"
+
+    cell = re.compile(rb'<c ([^>]*?)t="inlineStr"\s*(/>|></c>|><is><t(?: [^>]*)?>(.*?)</t></is></c>)', re.S)
+    out = []
+    for info, data in parts:
+        if info.filename.startswith("xl/worksheets/sheet"):
+            data = cell.sub(shared, data)
+        elif info.filename == "[Content_Types].xml":
+            data = data.replace(b"</Types>", b'<Override PartName="/xl/sharedStrings.xml" ContentType="application/'
+                                b'vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/></Types>')
+        elif info.filename == "xl/_rels/workbook.xml.rels":
+            data = data.replace(b"</Relationships>", b'<Relationship Id="rIdSharedStrings" Type="http://schemas.'
+                                b'openxmlformats.org/officeDocument/2006/relationships/sharedStrings" '
+                                b'Target="sharedStrings.xml"/></Relationships>')
+        out.append((info, data))
+    items = b"".join(b"<si><t" + (b' xml:space="preserve"' if t != t.strip() or b"\n" in t else b"") + b">" + t
+                     + b"</t></si>" for t in strings)
+    sst = (b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<sst xmlns="http://schemas.openxmlformats.org/'
+           b'spreadsheetml/2006/main" count="%d" uniqueCount="%d">' % (refs[0], len(strings))
+           + items + b"</sst>")
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for info, data in out:
+            z.writestr(info, data)
+        z.writestr("xl/sharedStrings.xml", sst)
+
+
 def write_workbook(rows, changes, glossary, v1_url, path):
     wb = Workbook()
-    bold = Font(bold=True)
     ws_readme = wb.active
     ws_readme.title = "README"
-    ws_readme.cell(row=1, column=1, value="Instructions for data submitters:").font = bold
+    put(ws_readme, 1, 1, "Instructions for data submitters:", BOLD)
     for i, line in enumerate(instructions, start=2):
-        ws_readme.cell(row=i, column=2, value=line)
+        put(ws_readme, i, 2, line)
     start_row = len(instructions) + 3
-    ws_readme.cell(row=start_row, column=1, value="Terms and definitions:").font = bold
-    ws_readme.cell(row=start_row + 1, column=2, value="Term").font = bold
-    ws_readme.cell(row=start_row + 1, column=3, value="Definition").font = bold
+    put(ws_readme, start_row, 1, "Terms and definitions:", BOLD)
+    put(ws_readme, start_row + 1, 2, "Term")
+    put(ws_readme, start_row + 1, 3, "Definition")
     for i, (term, definition) in enumerate(glossary.items(), start=start_row + 2):
-        ws_readme.cell(row=i, column=2, value=str(term))
-        ws_readme.cell(row=i, column=3, value=str(definition))
+        put(ws_readme, i, 2, str(term))
+        put(ws_readme, i, 3, str(definition))
 
     ws = wb.create_sheet("checklist")
     for col_num, col_name in enumerate(COLUMNS, start=1):
-        ws.cell(row=1, column=col_num, value=col_name).font = bold
+        put(ws, 1, col_num, col_name, BOLD)
     for row_idx, record in enumerate(rows, start=2):
         section, code = record["section"], record["requirement_level_code"]
         for col_idx, col_name in enumerate(COLUMNS, start=1):
             value = record[col_name]
-            cell = ws.cell(row=row_idx, column=col_idx, value=str(value) if value else "")
+            cell = put(ws, row_idx, col_idx, str(value) if value else None,
+                       BOLD if col_name == "term_name" else FONT)
             color = None
             if col_name == "section":
                 color = explicit_section_colors.get(section)
@@ -251,16 +311,17 @@ def write_workbook(rows, changes, glossary, v1_url, path):
                 cell.fill = PatternFill(start_color=color, end_color=color, fill_type="solid")
 
     ws_changes = wb.create_sheet("v1.0 to v2.0")
-    ws_changes.cell(row=1, column=1, value=f"Rows whose term changed since the v1.0 checklist ({v1_url}). "
-                                           "Every other row has the same term name as in v1.0.")
+    put(ws_changes, 1, 1, f"Rows whose term changed since the v1.0 checklist ({v1_url}). "
+                          "Every other row has the same term name as in v1.0.")
     header = ["row", "v1.0 term_name", "term_name", "change"]
     for col_num, col_name in enumerate(header, start=1):
-        ws_changes.cell(row=3, column=col_num, value=col_name).font = bold
+        put(ws_changes, 3, col_num, col_name, BOLD)
     for i, change in enumerate(changes, start=4):
         for col_num, value in enumerate(change, start=1):
-            ws_changes.cell(row=i, column=col_num, value=value)
+            put(ws_changes, i, col_num, value)
 
-    wb.save(path)
+    set_views(wb)
+    save(wb, path)
 
 
 def main():
