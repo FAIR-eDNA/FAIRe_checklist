@@ -49,7 +49,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C19
     slot_uri: faire:0000287
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -77,7 +80,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C263
     slot_uri: faire:0000001
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -107,7 +113,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C264
     slot_uri: faire:0000002
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -140,7 +149,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C192
     slot_uri: faire:0000003
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -173,7 +185,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C193
     slot_uri: faire:0000004
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -207,7 +222,10 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C274
     slot_uri: faire:0000311
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: m
       descriptive_name: meter
@@ -241,10 +259,11 @@ slots:
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C138
     slot_uri: faire:0000005
-    range: string
+    range: Any
     any_of:
     - range: AmpVisMethodEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -279,7 +298,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000006
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     unit:
       descriptive_name: base pair
       exact_mappings:
@@ -317,8 +339,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000007
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -355,7 +380,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000008
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -426,10 +454,11 @@ slots:
       requirement_level_code: M
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C11
     slot_uri: faire:0000010
-    range: string
+    range: Any
     any_of:
     - range: AssayTypeEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -459,7 +488,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C102
     slot_uri: faire:0000011
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -491,7 +523,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C208
     slot_uri: faire:0000013
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -526,7 +561,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C23
     slot_uri: faire:0000012
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -565,6 +603,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -604,6 +643,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -635,10 +675,11 @@ slots:
     keywords:
     - MIEM
     slot_uri: faire:0000016
-    range: string
+    range: Any
     any_of:
     - range: BarcodingPcrApprEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -669,8 +710,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000017
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: cycle
       exact_mappings:
@@ -704,7 +748,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C22
     slot_uri: dcterms:bibliographicCitation
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -733,7 +780,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C243
     slot_uri: faire:0000018
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -762,8 +812,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C53
     slot_uri: faire:0000019
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -795,7 +848,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C33
     slot_uri: faire:0000020
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: false
@@ -825,7 +881,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C126
     slot_uri: faire:0000021
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -854,7 +913,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C125
     slot_uri: faire:0000022
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -884,7 +946,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C127
     slot_uri: faire:0000023
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -912,8 +977,11 @@ slots:
       requirement_level_code: M
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C15
     slot_uri: faire:0000024
-    range: string
-    pattern: ^doi:10\.5281/zenodo\.\d+$
+    range: Any
+    any_of:
+    - range: string
+      pattern: ^doi:10\.5281/zenodo\.\d+$
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -942,7 +1010,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C206
     slot_uri: faire:0000025
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -970,7 +1041,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C207
     slot_uri: faire:0000026
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -999,10 +1073,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C205
     slot_uri: faire:0000027
-    range: string
+    range: Any
     any_of:
     - range: ChecksumMethodEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1031,7 +1106,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C222
     slot_uri: faire:0000028
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1059,7 +1137,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C223
     slot_uri: faire:0000029
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1089,8 +1170,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C276
     slot_uri: faire:0000312
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: mg/m3
       descriptive_name: milligram per cubic meter
@@ -1122,7 +1206,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C252
     slot_uri: faire:0000030
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1152,7 +1239,10 @@ slots:
     keywords:
     - NOAA
     slot_uri: faire:0000031
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1181,8 +1271,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C90
     slot_uri: faire:0000033
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1212,7 +1305,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C92
     slot_uri: faire:0000034
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1240,10 +1336,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C91
     slot_uri: faire:0000035
-    range: string
+    range: Any
     any_of:
     - range: DnaConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1275,7 +1372,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C21
     slot_uri: faire:0000038
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1304,7 +1404,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C80
     slot_uri: faire:0000039
-    range: Timestamp
+    range: Any
+    any_of:
+    - range: Timestamp
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1339,9 +1442,12 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C35
     slot_uri: faire:0000040
-    range: float
-    minimum_value: -90
-    maximum_value: 90
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: -90
+      maximum_value: 90
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -1377,9 +1483,12 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C34
     slot_uri: faire:0000041
-    range: float
-    minimum_value: -180
-    maximum_value: 180
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: -180
+      maximum_value: 180
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -1409,8 +1518,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C214
     slot_uri: faire:0000042
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: base pair
       exact_mappings:
@@ -1443,7 +1555,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C213
     slot_uri: faire:0000043
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1485,6 +1600,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -1517,7 +1633,10 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000045
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -1547,8 +1666,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C297
     slot_uri: faire:0000288
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1578,10 +1700,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C298
     slot_uri: faire:0000046
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1611,8 +1734,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C299
     slot_uri: faire:0000289
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1642,10 +1768,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C300
     slot_uri: faire:0000047
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1676,8 +1803,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C301
     slot_uri: faire:0000290
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1707,10 +1837,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C302
     slot_uri: faire:0000048
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1741,8 +1872,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C303
     slot_uri: faire:0000291
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1772,10 +1906,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C304
     slot_uri: faire:0000049
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1805,8 +1940,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C305
     slot_uri: faire:0000292
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1836,10 +1974,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C306
     slot_uri: faire:0000050
-    range: string
+    range: Any
     any_of:
     - range: DissOxygenUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1877,6 +2016,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1905,7 +2045,10 @@ slots:
       requirement_level_condition: If dna_cleanup_boolean is 1
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C89
     slot_uri: faire:0000052
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -1937,7 +2080,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C249
     slot_uri: faire:0000324
-    range: DnaSequence
+    range: Any
+    any_of:
+    - range: DnaSequence
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -1966,7 +2112,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C58
     slot_uri: faire:0000053
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -1996,8 +2145,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000054
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -2035,7 +2187,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C273
     slot_uri: faire:0000055
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: m
       descriptive_name: meter
@@ -2074,7 +2229,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C45
     slot_uri: faire:0000056
-    range: EnvoTerm
+    range: Any
+    any_of:
+    - range: EnvoTerm
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -2110,7 +2268,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C46
     slot_uri: faire:0000057
-    range: EnvoTerm
+    range: Any
+    any_of:
+    - range: EnvoTerm
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -2149,7 +2310,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C47
     slot_uri: faire:0000058
-    range: EnvoTerm
+    range: Any
+    any_of:
+    - range: EnvoTerm
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -2179,7 +2343,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C221
     slot_uri: faire:0000059
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2208,7 +2375,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C219
     slot_uri: faire:0000060
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2237,10 +2407,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C220
     slot_uri: faire:0000061
-    range: string
+    range: Any
     any_of:
     - range: ErrorRateTypeEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2274,8 +2445,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000062
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2307,8 +2481,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C171
     slot_uri: faire:0000063
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2336,10 +2513,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C172
     slot_uri: faire:0000064
-    range: string
+    range: Any
     any_of:
     - range: EstimatedNumberOfCopiesErrorTypeEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2368,10 +2546,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000065
-    range: string
+    range: Any
     any_of:
     - range: EstimatedNumberOfCopiesMethodEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2401,10 +2580,11 @@ slots:
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C170
     slot_uri: faire:0000066
-    range: string
+    range: Any
     any_of:
     - range: AssayQuantityUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2442,8 +2622,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C41
     slot_uri: faire:0000067
-    range: string
-    pattern: ^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?(/(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?)?$
+    range: Any
+    any_of:
+    - range: string
+      pattern: ^(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?(/(\d{4})(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01])(T([01]\d|2[0-3]):([0-5]\d)(:([0-5]\d))?(\.\d+)?(Z|([+-][01]\d:[0-5]\d)))?)?)?)?$
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -2475,7 +2658,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C42
     slot_uri: faire:0000068
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -2505,7 +2691,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C254
     slot_uri: faire:0000069
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2534,7 +2723,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C203
     slot_uri: faire:0000070
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2563,7 +2755,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C204
     slot_uri: faire:0000071
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2594,8 +2789,11 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000072
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: mm
       descriptive_name: millimeter
@@ -2627,10 +2825,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C70
     slot_uri: faire:0000073
-    range: string
+    range: Any
     any_of:
     - range: FilterMaterialEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2659,7 +2858,10 @@ slots:
       sample_type_specificity: Water | Air
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C71
     slot_uri: faire:0000074
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2699,6 +2901,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2728,8 +2931,11 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000076
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: mm2
       descriptive_name: square millimeter
@@ -2760,7 +2966,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C255
     slot_uri: faire:0000077
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2793,7 +3002,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C40
     slot_uri: faire:0000078
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -2836,6 +3048,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -2865,8 +3078,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C293
     slot_uri: faire:0000293
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -2896,10 +3112,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C294
     slot_uri: faire:0000080
-    range: string
+    range: Any
     any_of:
     - range: LengthUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -2929,8 +3146,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C295
     slot_uri: faire:0000294
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -2960,10 +3180,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C296
     slot_uri: faire:0000081
-    range: string
+    range: Any
     any_of:
     - range: LengthUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -2994,7 +3215,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C290
     slot_uri: faire:0000082
-    range: HostLifeStageEnum
+    range: Any
+    any_of:
+    - range: HostLifeStageEnum
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3025,7 +3249,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C289
     slot_uri: faire:0000083
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3055,8 +3282,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C291
     slot_uri: faire:0000295
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3086,10 +3316,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C292
     slot_uri: faire:0000084
-    range: string
+    range: Any
     any_of:
     - range: HostTotMassUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3121,9 +3352,12 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C285
     slot_uri: faire:0000085
-    range: float
-    minimum_value: 0
-    maximum_value: 100
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 100
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -3155,7 +3389,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C268
     slot_uri: faire:0000086
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3185,7 +3422,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C20
     slot_uri: dwc:informationWithheld
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3215,7 +3455,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C98
     slot_uri: faire:0000087
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3254,6 +3497,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3281,8 +3525,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C244
     slot_uri: faire:0000089
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: read
       exact_mappings:
@@ -3316,7 +3563,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C5
     slot_uri: faire:0000090
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3349,7 +3599,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C6
     slot_uri: dwc:institutionID
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3381,8 +3634,11 @@ slots:
     keywords:
     - INSDC
     slot_uri: faire:0000091
-    range: string
-    pattern: ^([^\s\[\]]([^\[\]]*[^\s\[\]])?|[^\s\[\]|]([^\[\]|]*[^\s\[\]|])? \[(OBI|GENEPIO):\d{7}\])$
+    range: Any
+    any_of:
+    - range: string
+      pattern: ^([^\s\[\]]([^\[\]]*[^\s\[\]])?|[^\s\[\]|]([^\[\]|]*[^\s\[\]|])? \[(OBI|GENEPIO):\d{7}\])$
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3413,7 +3669,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000092
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3441,7 +3700,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C250
     slot_uri: faire:0000093
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3470,8 +3732,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C197
     slot_uri: faire:0000094
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3498,7 +3763,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C199
     slot_uri: faire:0000095
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3525,10 +3793,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C198
     slot_uri: faire:0000096
-    range: string
+    range: Any
     any_of:
     - range: LibConcUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3586,10 +3855,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C191
     slot_uri: faire:0000098
-    range: string
+    range: Any
     any_of:
     - range: LibLayoutEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3618,7 +3888,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C194
     slot_uri: mixs:0000043
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3650,7 +3923,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C17
     slot_uri: dcterms:license
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3681,8 +3957,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C277
     slot_uri: faire:0000313
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: lx
       descriptive_name: lux
@@ -3713,7 +3992,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C140
     slot_uri: faire:0000099
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3740,7 +4022,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C146
     slot_uri: faire:0000100
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3777,7 +4062,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000320
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3818,7 +4106,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C29
     slot_uri: faire:0000101
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3854,8 +4145,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C271
     slot_uri: faire:0000102
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: m
       descriptive_name: meter
@@ -3887,8 +4181,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C216
     slot_uri: faire:0000103
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: base pair
       exact_mappings:
@@ -3921,7 +4218,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C215
     slot_uri: faire:0000104
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -3956,7 +4256,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C201
     slot_uri: faire:0000105
-    range: DnaSequence
+    range: Any
+    any_of:
+    - range: DnaSequence
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -3990,7 +4293,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C202
     slot_uri: faire:0000106
-    range: DnaSequence
+    range: Any
+    any_of:
+    - range: DnaSequence
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4018,8 +4324,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C217
     slot_uri: faire:0000107
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: base pair
       exact_mappings:
@@ -4053,7 +4362,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C218
     slot_uri: faire:0000108
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4090,6 +4402,7 @@ slots:
     - range: float
     - range: MinReadsCutoffEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4116,10 +4429,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C227
     slot_uri: faire:0000110
-    range: string
+    range: Any
     any_of:
     - range: MinReadsCutoffUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4146,7 +4460,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C228
     slot_uri: faire:0000111
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4180,8 +4497,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C270
     slot_uri: faire:0000112
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: m
       descriptive_name: meter
@@ -4220,7 +4540,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C16
     slot_uri: dcterms:modified
-    range: Timestamp
+    range: Any
+    any_of:
+    - range: Timestamp
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4260,6 +4583,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4292,10 +4616,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C27
     slot_uri: faire:0000115
-    range: string
+    range: Any
     any_of:
     - range: NegContTypeEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -4332,8 +4657,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C327
     slot_uri: faire:0000296
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4363,10 +4691,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C328
     slot_uri: faire:0000116
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4396,8 +4725,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C329
     slot_uri: faire:0000297
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4427,10 +4759,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C330
     slot_uri: faire:0000117
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4460,8 +4793,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C331
     slot_uri: faire:0000298
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4491,10 +4827,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C332
     slot_uri: faire:0000118
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4524,7 +4861,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C131
     slot_uri: faire:0000119
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4558,7 +4898,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C85
     slot_uri: faire:0000120
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4589,7 +4932,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C86
     slot_uri: faire:0000121
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4621,10 +4967,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C83
     slot_uri: faire:0000122
-    range: string
+    range: Any
     any_of:
     - range: NuclAcidExtLysisEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4654,7 +5001,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C95
     slot_uri: faire:0000123
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4687,7 +5037,10 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000124
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4716,10 +5069,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C84
     slot_uri: faire:0000125
-    range: string
+    range: Any
     any_of:
     - range: NuclAcidExtSepEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4748,8 +5102,11 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C167
     slot_uri: faire:0000126
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4777,7 +5134,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C253
     slot_uri: faire:0000127
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -4807,8 +5167,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C333
     slot_uri: faire:0000299
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4838,10 +5201,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C334
     slot_uri: faire:0000128
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4871,8 +5235,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C335
     slot_uri: faire:0000300
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4902,10 +5269,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C336
     slot_uri: faire:0000129
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4935,8 +5303,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C337
     slot_uri: faire:0000301
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4966,10 +5337,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C338
     slot_uri: faire:0000130
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -4999,9 +5371,12 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C225
     slot_uri: faire:0000131
-    range: float
-    minimum_value: 0
-    maximum_value: 100
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 100
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -5032,7 +5407,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C224
     slot_uri: faire:0000132
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5065,7 +5443,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C229
     slot_uri: faire:0000133
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -5097,7 +5478,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C230
     slot_uri: faire:0000134
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5127,7 +5511,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C242
     slot_uri: faire:0000135
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5157,8 +5544,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C247
     slot_uri: faire:0000136
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5186,7 +5576,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C241
     slot_uri: faire:0000137
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5215,7 +5608,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C232
     slot_uri: faire:0000138
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5243,8 +5639,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C246
     slot_uri: faire:0000139
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5273,8 +5672,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C245
     slot_uri: faire:0000140
-    range: integer
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: read
       exact_mappings:
@@ -5307,7 +5709,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C9
     slot_uri: faire:0000141
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5338,8 +5743,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C323
     slot_uri: faire:0000302
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5369,10 +5777,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C324
     slot_uri: faire:0000142
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5402,8 +5811,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C325
     slot_uri: faire:0000303
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5433,10 +5845,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C326
     slot_uri: faire:0000143
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5464,8 +5877,11 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C177
     slot_uri: faire:0000144
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -5497,7 +5913,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C184
     slot_uri: faire:0000145
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5525,7 +5944,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C182
     slot_uri: faire:0000146
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -5559,7 +5981,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C181
     slot_uri: faire:0000148
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5588,8 +6013,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C183
     slot_uri: faire:0000150
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     unit:
       descriptive_name: cycle
       exact_mappings:
@@ -5623,8 +6051,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C180
     slot_uri: faire:0000151
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -5664,7 +6095,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C178
     slot_uri: faire:0000321
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5702,7 +6136,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C186
     slot_uri: faire:0000152
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples: []
@@ -5757,7 +6194,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C176
     slot_uri: faire:0000154
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5788,7 +6228,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000156
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -5823,8 +6266,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000157
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -5855,8 +6301,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C145
     slot_uri: faire:0000158
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5884,8 +6333,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C144
     slot_uri: faire:0000160
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5913,8 +6365,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C141
     slot_uri: faire:0000159
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -5942,10 +6397,11 @@ slots:
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C143
     slot_uri: faire:0000161
-    range: string
+    range: Any
     any_of:
     - range: AssayLimitUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -5978,8 +6434,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000162
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -6010,8 +6469,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C151
     slot_uri: faire:0000163
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6039,8 +6501,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C150
     slot_uri: faire:0000165
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6068,8 +6533,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C147
     slot_uri: faire:0000164
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6097,10 +6565,11 @@ slots:
       requirement_level_condition: If assay_type = targeted & pcr_boolean = 1
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C149
     slot_uri: faire:0000166
-    range: string
+    range: Any
     any_of:
     - range: AssayLimitUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -6137,6 +6606,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -6168,7 +6638,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C132
     slot_uri: faire:0000167
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6198,8 +6671,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C134
     slot_uri: faire:0000168
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     unit:
       descriptive_name: cycle
       exact_mappings:
@@ -6233,8 +6709,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000169
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -6268,7 +6747,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C137
     slot_uri: faire:0000170
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples: []
@@ -6331,8 +6813,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000172
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: umol/L
       descriptive_name: micromole per liter
@@ -6371,8 +6856,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000173
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: umol/L
       descriptive_name: micromole per liter
@@ -6417,7 +6905,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C108
     slot_uri: faire:0000174
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -6451,7 +6942,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C110
     slot_uri: faire:0000175
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -6483,7 +6977,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C111
     slot_uri: faire:0000176
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -6519,7 +7016,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C112
     slot_uri: faire:0000177
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -6556,7 +7056,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C113
     slot_uri: faire:0000178
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -6599,7 +7102,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C109
     slot_uri: faire:0000179
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -6631,8 +7137,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C114
     slot_uri: faire:0000180
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -6663,8 +7172,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C115
     slot_uri: faire:0000181
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: uL
       descriptive_name: microliter
@@ -6696,8 +7208,11 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C130
     slot_uri: faire:0000182
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6727,7 +7242,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C265
     slot_uri: faire:0000183
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -6759,7 +7277,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C266
     slot_uri: faire:0000184
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -6791,7 +7312,10 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C278
     slot_uri: mixs:0001001
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: '[pH]'
       descriptive_name: pH
@@ -6823,7 +7347,10 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C279
     slot_uri: mixs:0001106
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -6851,9 +7378,12 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C200
     slot_uri: faire:0000185
-    range: float
-    minimum_value: 0
-    maximum_value: 100
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 100
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -6884,7 +7414,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C251
     slot_uri: faire:0000186
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6914,10 +7447,11 @@ slots:
     keywords:
     - INSDC
     slot_uri: faire:0000187
-    range: string
+    range: Any
     any_of:
     - range: PlatformEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6947,8 +7481,11 @@ slots:
       modifications_made: description | field_type | field_name
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C94
     slot_uri: faire:0000188
-    range: integer
-    minimum_value: 1
+    range: Any
+    any_of:
+    - range: integer
+      minimum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -6987,6 +7524,7 @@ slots:
     - range: integer
       minimum_value: 0
       maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7020,7 +7558,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C28
     slot_uri: faire:0000283
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -7054,10 +7595,11 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000190
-    range: string
+    range: Any
     any_of:
     - range: PrecipChemPrepEnum
     - range: OtherText
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -7090,8 +7632,11 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000191
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: '[g]'
       descriptive_name: standard gravity (x g)
@@ -7131,6 +7676,7 @@ slots:
     - range: float
     - range: StorageTemperatureEnum
     - range: OtherText
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -7165,8 +7711,11 @@ slots:
     keywords:
     - Thalinger
     slot_uri: faire:0000193
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: min
       descriptive_name: minute
@@ -7197,7 +7746,10 @@ slots:
       sample_type_specificity: Water | Air
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C65
     slot_uri: faire:0000194
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -7229,7 +7781,10 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C79
     slot_uri: faire:0000195
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -7265,7 +7820,10 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C78
     slot_uri: faire:0000196
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7298,10 +7856,11 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C77
     slot_uri: faire:0000197
-    range: string
+    range: Any
     any_of:
     - range: StorageSolutionEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7343,6 +7902,7 @@ slots:
     - range: float
     - range: StorageTemperatureEnum
     - range: OtherText
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -7380,10 +7940,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000202
-    range: string
+    range: Any
     any_of:
     - range: ProbeQuencherEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7418,7 +7979,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000203
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7454,8 +8018,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000199
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: nmol/L
       descriptive_name: nanomole per liter
@@ -7488,7 +8055,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C121
     slot_uri: faire:0000200
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7519,7 +8089,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C120
     slot_uri: faire:0000201
-    range: ModifiedOligoSequence
+    range: Any
+    any_of:
+    - range: ModifiedOligoSequence
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7547,7 +8120,10 @@ slots:
       requirement_level_code: M
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C4
     slot_uri: faire:0000204
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -7607,7 +8183,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C7
     slot_uri: mixs:0000092
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7637,8 +8216,11 @@ slots:
       sample_type_specificity: Water | Air
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C63
     slot_uri: faire:0000206
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -7666,10 +8248,11 @@ slots:
       sample_type_specificity: Water | Air
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C64
     slot_uri: faire:0000207
-    range: string
+    range: Any
     any_of:
     - range: PumpFlowRateUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -7706,8 +8289,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000208
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: PCR quantification cycle
       exact_mappings:
@@ -7744,9 +8330,12 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000209
-    range: float
-    minimum_value: 0
-    maximum_value: 1
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 1
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7777,8 +8366,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C93
     slot_uri: faire:0000210
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -7808,7 +8400,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C2
     slot_uri: faire:0000211
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: true
     recommended: false
@@ -7839,7 +8434,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C3
     slot_uri: faire:0000212
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -7869,7 +8467,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C32
     slot_uri: faire:0000213
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: true
@@ -7898,7 +8499,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C162
     slot_uri: faire:0000214
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       descriptive_name: relative fluorescence unit
       exact_mappings:
@@ -7929,7 +8533,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C18
     slot_uri: dcterms:rightsHolder
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -7965,8 +8572,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C280
     slot_uri: faire:0000314
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       descriptive_name: practical salinity unit
       exact_mappings:
@@ -8001,10 +8611,11 @@ slots:
       requirement_level_code: M
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C26
     slot_uri: faire:0000215
-    range: string
+    range: Any
     any_of:
     - range: SampCategoryEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -8038,7 +8649,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C50
     slot_uri: faire:0000216
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8070,7 +8684,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C49
     slot_uri: faire:0000217
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8103,7 +8720,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C60
     slot_uri: faire:0000218
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8173,8 +8793,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C51
     slot_uri: faire:0000219
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8203,10 +8826,11 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C52
     slot_uri: faire:0000220
-    range: string
+    range: Any
     any_of:
     - range: SampleSizeUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8242,7 +8866,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C56
     slot_uri: faire:0000221
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8271,7 +8898,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C57
     slot_uri: mixs:0000755
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -8302,7 +8932,10 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C59
     slot_uri: faire:0000222
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -8335,10 +8968,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C55
     slot_uri: faire:0000223
-    range: string
+    range: Any
     any_of:
     - range: StorageSolutionEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8379,6 +9013,7 @@ slots:
     - range: float
     - range: StorageTemperatureEnum
     - range: OtherText
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -8415,8 +9050,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C81
     slot_uri: faire:0000225
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8444,10 +9082,11 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C82
     slot_uri: faire:0000226
-    range: string
+    range: Any
     any_of:
     - range: SampleSizeUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8476,7 +9115,10 @@ slots:
       sample_type_specificity: ALL
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C269
     slot_uri: mixs:0000827
-    range: SampWeatherEnum
+    range: Any
+    any_of:
+    - range: SampWeatherEnum
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -8511,7 +9153,10 @@ slots:
     keywords:
     - INSDC
     slot_uri: faire:0000227
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: false
@@ -8547,7 +9192,10 @@ slots:
     keywords:
     - INSDC
     slot_uri: faire:0000228
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -8575,7 +9223,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C257
     slot_uri: faire:0000229
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8604,7 +9255,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C258
     slot_uri: faire:0000230
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8633,7 +9287,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C237
     slot_uri: faire:0000231
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8663,7 +9320,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C238
     slot_uri: faire:0000232
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8692,7 +9352,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C239
     slot_uri: faire:0000233
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8721,7 +9384,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C240
     slot_uri: faire:0000234
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8778,7 +9444,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C190
     slot_uri: faire:0000236
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -8809,7 +9478,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C209
     slot_uri: faire:0000237
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples: []
@@ -8866,7 +9538,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C187
     slot_uri: mixs:0001156
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -8904,8 +9579,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C67
     slot_uri: faire:0000284
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: um
       descriptive_name: micrometer
@@ -8946,8 +9624,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C66
     slot_uri: faire:0000239
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: um
       descriptive_name: micrometer
@@ -8980,7 +9661,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000240
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9013,7 +9697,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C286
     slot_uri: faire:0000241
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -9044,7 +9731,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C210
     slot_uri: faire:0000242
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9074,7 +9764,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C256
     slot_uri: faire:0000243
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9108,7 +9801,10 @@ slots:
       sample_type_specificity: Water | Air
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C62
     slot_uri: faire:0000244
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9139,8 +9835,11 @@ slots:
       requirement_level_condition: if samp_category = PCR standard
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C159
     slot_uri: faire:0000245
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -9168,10 +9867,11 @@ slots:
       requirement_level_condition: if samp_category = PCR standard
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C160
     slot_uri: faire:0000246
-    range: string
+    range: Any
     any_of:
     - range: AssayQuantityUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -9199,7 +9899,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C154
     slot_uri: faire:0000247
-    range: DnaSequence
+    range: Any
+    any_of:
+    - range: DnaSequence
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9226,7 +9929,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C153
     slot_uri: faire:0000248
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -9253,10 +9959,11 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C152
     slot_uri: faire:0000249
-    range: string
+    range: Any
     any_of:
     - range: StdTypeEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9283,7 +9990,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C12
     slot_uri: faire:0000250
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9315,7 +10025,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C10
     slot_uri: faire:0000251
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     multivalued: true
     required: false
     recommended: false
@@ -9346,8 +10059,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C281
     slot_uri: faire:0000315
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: mg/L
       descriptive_name: milligram per liter
@@ -9380,7 +10096,10 @@ slots:
       requirement_level_condition: If pcr_boolean is 1. Else, recommended
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C103
     slot_uri: faire:0000254
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -9412,7 +10131,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C104
     slot_uri: faire:0000285
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9441,10 +10163,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C105
     slot_uri: faire:0000252
-    range: string
+    range: Any
     any_of:
     - range: TargetGeneEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9475,7 +10198,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C106
     slot_uri: mixs:0000045
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -9506,7 +10232,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C174
     slot_uri: faire:0000253
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples: []
@@ -9534,10 +10263,11 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C231
     slot_uri: faire:0000255
-    range: string
+    range: Any
     any_of:
     - range: TaxAssignCatEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9579,7 +10309,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C267
     slot_uri: faire:0000036
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9607,7 +10340,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C235
     slot_uri: faire:0000256
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9637,9 +10373,12 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C233
     slot_uri: faire:0000257
-    range: float
-    minimum_value: 0
-    maximum_value: 100
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 100
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -9672,7 +10411,10 @@ slots:
       modifications_made: field_name | description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C236
     slot_uri: faire:0000258
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9701,9 +10443,12 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C234
     slot_uri: faire:0000259
-    range: float
-    minimum_value: 0
-    maximum_value: 100
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+      maximum_value: 100
+    - range: MissingValueEnum
     unit:
       ucum_code: '%'
       descriptive_name: percent
@@ -9737,7 +10482,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C260
     slot_uri: faire:0000260
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9765,7 +10513,10 @@ slots:
       requirement_level_code: HR
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C261
     slot_uri: faire:0000261
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9794,10 +10545,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C259
     slot_uri: faire:0000286
-    range: string
+    range: Any
     any_of:
     - range: TaxonRankEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -9857,7 +10609,10 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C275
     slot_uri: faire:0000316
-    range: float
+    range: Any
+    any_of:
+    - range: float
+    - range: MissingValueEnum
     unit:
       ucum_code: Cel
       descriptive_name: degree Celsius
@@ -9891,7 +10646,10 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000263
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -9923,8 +10681,11 @@ slots:
     keywords:
     - MIQE
     slot_uri: faire:0000264
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: true
     recommended: false
     examples:
@@ -9955,7 +10716,10 @@ slots:
       sample_type_specificity: Water | Sediment
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C282
     slot_uri: mixs:0000750
-    range: TidalStageEnum
+    range: Any
+    any_of:
+    - range: TidalStageEnum
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -9985,8 +10749,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C321
     slot_uri: faire:0000304
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10016,10 +10783,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C322
     slot_uri: faire:0000265
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10052,8 +10820,11 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C272
     slot_uri: faire:0000266
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: m
       descriptive_name: meter
@@ -10088,8 +10859,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C307
     slot_uri: faire:0000305
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10119,10 +10893,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C308
     slot_uri: faire:0000267
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10152,8 +10927,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C309
     slot_uri: faire:0000306
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10183,10 +10961,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C310
     slot_uri: faire:0000268
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10218,8 +10997,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C311
     slot_uri: faire:0000307
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10249,7 +11031,10 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C320
     slot_uri: mixs:0000338
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10279,8 +11064,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C318
     slot_uri: faire:0000308
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10310,10 +11098,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C319
     slot_uri: faire:0000269
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10343,10 +11132,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C312
     slot_uri: faire:0000270
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10375,7 +11165,10 @@ slots:
       sample_type_specificity: Water | Soil | Sediment | Air | MicrobialMatBiofilm
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C317
     slot_uri: mixs:0000337
-    range: Reference
+    range: Any
+    any_of:
+    - range: Reference
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10405,8 +11198,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C315
     slot_uri: faire:0000309
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10436,10 +11232,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C316
     slot_uri: faire:0000271
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10469,8 +11266,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C313
     slot_uri: faire:0000310
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10500,10 +11300,11 @@ slots:
       modifications_made: field_name | description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C314
     slot_uri: faire:0000272
-    range: string
+    range: Any
     any_of:
     - range: ChemicalConcentrationUnitEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10535,7 +11336,10 @@ slots:
     keywords:
     - NOAA
     slot_uri: faire:0000273
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -10564,7 +11368,10 @@ slots:
       requirement_level_code: R
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C212
     slot_uri: faire:0000274
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: true
     examples:
@@ -10596,8 +11403,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C283
     slot_uri: faire:0000317
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: '[NTU]'
       descriptive_name: nephelometric turbidity unit
@@ -10632,10 +11442,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C38
     slot_uri: faire:0000275
-    range: string
+    range: Any
     any_of:
     - range: VerbatimCoordinateSystemEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10664,7 +11475,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C43
     slot_uri: faire:0000276
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10693,7 +11507,10 @@ slots:
       requirement_level_code: O
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C44
     slot_uri: faire:0000277
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10725,7 +11542,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C262
     slot_uri: faire:0000278
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10757,7 +11577,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C37
     slot_uri: faire:0000279
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10789,7 +11612,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C36
     slot_uri: faire:0000280
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10820,10 +11646,11 @@ slots:
       modifications_made: description | field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C39
     slot_uri: faire:0000281
-    range: string
+    range: Any
     any_of:
     - range: VerbatimSRSEnum
     - range: OtherText
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10853,8 +11680,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C284
     slot_uri: faire:0000318
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: m/s
       descriptive_name: meter per second
@@ -10888,7 +11718,10 @@ slots:
       modifications_made: description
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C287
     slot_uri: faire:0000282
-    range: string
+    range: Any
+    any_of:
+    - range: string
+    - range: MissingValueEnum
     required: false
     recommended: false
     examples:
@@ -10918,8 +11751,11 @@ slots:
       modifications_made: field_type
       v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C288
     slot_uri: faire:0000319
-    range: float
-    minimum_value: 0
+    range: Any
+    any_of:
+    - range: float
+      minimum_value: 0
+    - range: MissingValueEnum
     unit:
       ucum_code: m/s
       descriptive_name: meter per second
@@ -11147,12 +11983,51 @@ enums:
       '%': null
       reads: null
   MissingValueEnum:
-    description: A controlled vocabulary for reporting why a value is missing.
+    description: Why a value is missing, using the INSDC missing value reporting terms.
+      Use the term with the finest granularity. A slot accepts one of these in place
+      of a value.
     annotations:
-      source: https://terminology.hl7.org/3.0.0/ValueSet-v3-NullFlavor.html
+      source: https://www.insdc.org/technical-specifications/missing-value-reporting/
     permissible_values:
-      unknown:
-        description: 'TODO: map preferred null-flavor codes.'
+      not applicable:
+        description: Information is inappropriate to report, can indicate that the
+          standard itself fails to model or represent the information appropriately.
+      missing: null
+      not collected:
+        description: Information of an expected format was not given because it has
+          not been collected.
+      not provided:
+        description: Information of an expected format was not given, a value may
+          be given at the later stage.
+      restricted access:
+        description: Information exists but can not be released openly because of
+          privacy concerns.
+      'missing: control sample':
+        description: Information is not applicable as the sample represents a negative
+          control sample collected in a lab.
+      'missing: sample group':
+        description: Information is not applicable as the sample represents a group
+          of samples that do not have a single origin. E.g. for co-assembly or transcriptome
+          assembly.
+      'missing: synthetic construct':
+        description: Information does not exist as the sample represents an ab-initio
+          synthetic construct.
+      'missing: lab stock':
+        description: Information was not collected as the sample represents a cultured
+          cell line or model organism under long-term lab control.
+      'missing: third party data':
+        description: Information does not exist as the metadata was not collected
+          or reported in records predating the 2023 agreement. For use in Third Party
+          data submissions.
+      'missing: data agreement established pre-2023':
+        description: Data agreements were established before the 2023 INSDC standard
+          and metadata can not be provided. A value may be given at a later stage.
+      'missing: endangered species':
+        description: Information can not be reported as the target organism is endangered
+          e.g. on the IUCN red-list.
+      'missing: human-identifiable':
+        description: Information can not be reported as the metadata would make the
+          sample human-identifiable.
   NegContTypeEnum:
     description: Controlled vocabulary for neg_cont_type.
     permissible_values:
