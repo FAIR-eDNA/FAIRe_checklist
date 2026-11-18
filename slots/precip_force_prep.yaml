@@ -18,8 +18,11 @@ annotations:
 keywords:
   - Thalinger
 slot_uri: faire:0000191
-range: float
-minimum_value: 0
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   ucum_code: '[g]'
   descriptive_name: standard gravity (x g)

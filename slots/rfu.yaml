@@ -13,7 +13,10 @@ annotations:
   requirement_level_code: O
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C162
 slot_uri: faire:0000214
-range: float
+range: Any
+any_of:
+- range: float
+- range: MissingValueEnum
 unit:
   descriptive_name: relative fluorescence unit
   exact_mappings:

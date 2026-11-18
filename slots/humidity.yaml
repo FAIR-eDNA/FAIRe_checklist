@@ -17,9 +17,12 @@ annotations:
   modifications_made: description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C285
 slot_uri: faire:0000085
-range: float
-minimum_value: 0
-maximum_value: 100
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+  maximum_value: 100
+- range: MissingValueEnum
 unit:
   ucum_code: '%'
   descriptive_name: percent

@@ -16,8 +16,11 @@ annotations:
 keywords:
   - Thalinger
 slot_uri: faire:0000072
-range: float
-minimum_value: 0
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   ucum_code: mm
   descriptive_name: millimeter

@@ -23,6 +23,7 @@ any_of:
 - range: float
 - range: StorageTemperatureEnum
 - range: OtherText
+- range: MissingValueEnum
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius

@@ -15,7 +15,10 @@ annotations:
 keywords:
   - NOAA
 slot_uri: faire:0000031
-range: Reference
+range: Any
+any_of:
+- range: Reference
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

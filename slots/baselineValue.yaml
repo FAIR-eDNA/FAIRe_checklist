@@ -16,8 +16,11 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000017
-range: integer
-minimum_value: 0
+range: Any
+any_of:
+- range: integer
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   descriptive_name: cycle
   exact_mappings:

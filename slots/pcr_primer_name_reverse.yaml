@@ -15,7 +15,10 @@ annotations:
   modifications_made: description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C111
 slot_uri: faire:0000176
-range: string
+range: Any
+any_of:
+- range: string
+- range: MissingValueEnum
 multivalued: true
 required: false
 recommended: true

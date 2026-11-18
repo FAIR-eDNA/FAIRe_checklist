@@ -14,8 +14,11 @@ annotations:
   requirement_level_code: R
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C247
 slot_uri: faire:0000136
-range: integer
-minimum_value: 0
+range: Any
+any_of:
+- range: integer
+  minimum_value: 0
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

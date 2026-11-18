@@ -15,10 +15,11 @@ annotations:
   modifications_made: field_name | description | field_type
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C336
 slot_uri: faire:0000129
-range: string
+range: Any
 any_of:
 - range: ChemicalConcentrationUnitEnum
 - range: OtherText
+- range: MissingValueEnum
 required: false
 recommended: false
 examples:

@@ -19,9 +19,12 @@ annotations:
   modifications_made: description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C34
 slot_uri: faire:0000041
-range: float
-minimum_value: -180
-maximum_value: 180
+range: Any
+any_of:
+- range: float
+  minimum_value: -180
+  maximum_value: 180
+- range: MissingValueEnum
 required: true
 recommended: false
 examples:

@@ -17,10 +17,11 @@ annotations:
   requirement_level_code: M
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C11
 slot_uri: faire:0000010
-range: string
+range: Any
 any_of:
 - range: AssayTypeEnum
 - range: OtherText
+- range: MissingValueEnum
 required: true
 recommended: false
 examples:

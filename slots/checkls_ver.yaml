@@ -14,8 +14,11 @@ annotations:
   requirement_level_code: M
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C15
 slot_uri: faire:0000024
-range: string
-pattern: '^doi:10\.5281/zenodo\.\d+$'
+range: Any
+any_of:
+- range: string
+  pattern: '^doi:10\.5281/zenodo\.\d+$'
+- range: MissingValueEnum
 required: true
 recommended: false
 examples:

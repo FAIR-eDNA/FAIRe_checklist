@@ -18,7 +18,10 @@ annotations:
   modifications_made: field_name | description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C202
 slot_uri: faire:0000106
-range: DnaSequence
+range: Any
+any_of:
+- range: DnaSequence
+- range: MissingValueEnum
 required: false
 recommended: false
 examples:

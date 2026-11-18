@@ -104,15 +104,29 @@ def ranges(slot):
     return [x.get("range") for x in any_of] if any_of else [slot.get("range")]
 
 
+def own_ranges(slot):
+    """Ranges for the value itself. MissingValueEnum stands in for an absent value."""
+    return [r for r in ranges(slot) if r != "MissingValueEnum"]
+
+
 def pattern(slot, types):
     """The slot's own pattern, else the pattern of its type (e.g. Timestamp, EnvoTerm)."""
     if slot.get("pattern"):
         return slot["pattern"]
-    return (types.get(slot.get("range")) or {}).get("pattern", "")
+    for option in slot.get("any_of") or []:
+        if option.get("range") == "MissingValueEnum":
+            continue
+        if option.get("pattern"):
+            return option["pattern"]
+    for r in own_ranges(slot):
+        found = (types.get(r) or {}).get("pattern", "")
+        if found:
+            return found
+    return ""
 
 
 def term_type(slot, enums, types):
-    rs = ranges(slot)
+    rs = own_ranges(slot)
     if "BooleanEnum" in rs:
         return "Boolean"
     has_enum = any(r in enums for r in rs)
@@ -130,7 +144,7 @@ def term_type(slot, enums, types):
 
 
 def vocabulary(slot, enums):
-    rs = ranges(slot)
+    rs = own_ranges(slot)
     if "BooleanEnum" in rs:
         return "0 | 1"
     values = []

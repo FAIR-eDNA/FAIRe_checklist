@@ -15,10 +15,11 @@ annotations:
 keywords:
   - MIEM
 slot_uri: faire:0000016
-range: string
+range: Any
 any_of:
 - range: BarcodingPcrApprEnum
 - range: OtherText
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

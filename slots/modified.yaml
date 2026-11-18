@@ -20,7 +20,10 @@ annotations:
   requirement_level_code: R
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C16
 slot_uri: dcterms:modified
-range: Timestamp
+range: Any
+any_of:
+- range: Timestamp
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

@@ -20,6 +20,7 @@ any_of:
 - range: float
 - range: MinReadsCutoffEnum
 - range: OtherText
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

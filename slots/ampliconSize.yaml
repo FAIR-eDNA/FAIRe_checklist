@@ -20,7 +20,10 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000006
-range: string
+range: Any
+any_of:
+- range: string
+- range: MissingValueEnum
 unit:
   descriptive_name: base pair
   exact_mappings:

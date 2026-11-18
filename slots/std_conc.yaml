@@ -14,8 +14,11 @@ annotations:
   requirement_level_condition: if samp_category = PCR standard
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C159
 slot_uri: faire:0000245
-range: float
-minimum_value: 0
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+- range: MissingValueEnum
 required: true
 recommended: false
 examples:

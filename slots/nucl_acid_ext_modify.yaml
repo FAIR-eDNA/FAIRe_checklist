@@ -17,7 +17,10 @@ annotations:
 keywords:
   - Thalinger
 slot_uri: faire:0000124
-range: string
+range: Any
+any_of:
+- range: string
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

@@ -16,9 +16,12 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000209
-range: float
-minimum_value: 0
-maximum_value: 1
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+  maximum_value: 1
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

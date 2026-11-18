@@ -14,8 +14,11 @@ annotations:
   modifications_made: description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C244
 slot_uri: faire:0000089
-range: integer
-minimum_value: 0
+range: Any
+any_of:
+- range: integer
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   descriptive_name: read
   exact_mappings:

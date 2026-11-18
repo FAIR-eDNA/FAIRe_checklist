@@ -17,7 +17,10 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000156
-range: string
+range: Any
+any_of:
+- range: string
+- range: MissingValueEnum
 required: false
 recommended: false
 examples:

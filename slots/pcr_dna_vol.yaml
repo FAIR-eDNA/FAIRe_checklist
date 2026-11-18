@@ -15,8 +15,11 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000169
-range: float
-minimum_value: 0
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   ucum_code: uL
   descriptive_name: microliter

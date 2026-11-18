@@ -19,8 +19,11 @@ annotations:
   modifications_made: description
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C270
 slot_uri: faire:0000112
-range: float
-minimum_value: 0
+range: Any
+any_of:
+- range: float
+  minimum_value: 0
+- range: MissingValueEnum
 unit:
   ucum_code: m
   descriptive_name: meter

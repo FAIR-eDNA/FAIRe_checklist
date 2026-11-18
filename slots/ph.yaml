@@ -15,7 +15,10 @@ annotations:
   sample_type_specificity: Water | Soil | Sediment | MicrobialMatBiofilm
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C278
 slot_uri: mixs:0001001
-range: float
+range: Any
+any_of:
+- range: float
+- range: MissingValueEnum
 unit:
   ucum_code: '[pH]'
   descriptive_name: pH

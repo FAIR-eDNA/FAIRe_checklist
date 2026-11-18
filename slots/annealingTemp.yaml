@@ -16,7 +16,10 @@ annotations:
 keywords:
   - MIQE
 slot_uri: faire:0000008
-range: float
+range: Any
+any_of:
+- range: float
+- range: MissingValueEnum
 unit:
   ucum_code: Cel
   descriptive_name: degree Celsius

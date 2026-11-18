@@ -14,7 +14,10 @@ annotations:
   sample_type_specificity: ALL
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C269
 slot_uri: mixs:0000827
-range: SampWeatherEnum
+range: Any
+any_of:
+- range: SampWeatherEnum
+- range: MissingValueEnum
 required: false
 recommended: false
 examples:

@@ -14,8 +14,11 @@ annotations:
   modifications_made: description | field_type | field_name
   v1_row: https://github.com/FAIR-eDNA/FAIR-eDNA.github.io/raw/20dd1e9/docs/checklist/FAIRe_checklist_v1.0.xlsx#checklist!C94
 slot_uri: faire:0000188
-range: integer
-minimum_value: 1
+range: Any
+any_of:
+- range: integer
+  minimum_value: 1
+- range: MissingValueEnum
 required: false
 recommended: true
 examples:

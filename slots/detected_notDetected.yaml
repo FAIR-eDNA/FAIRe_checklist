@@ -25,6 +25,7 @@ any_of:
 - range: integer
   minimum_value: 0
   maximum_value: 1
+- range: MissingValueEnum
 required: true
 recommended: false
 examples:

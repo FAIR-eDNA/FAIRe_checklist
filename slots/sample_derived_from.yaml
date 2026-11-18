@@ -19,7 +19,10 @@ annotations:
 keywords:
   - INSDC
 slot_uri: faire:0000228
-range: string
+range: Any
+any_of:
+- range: string
+- range: MissingValueEnum
 required: false
 recommended: false
 examples:
